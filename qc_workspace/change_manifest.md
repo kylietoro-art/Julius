@@ -127,3 +127,9 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Ops/roster_2025-1018.csv | lines 1-12 [CSV header not on row 1] | 11 leading metadata comment lines + blank | → | removed; row 1 is now the real header |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/post_accident_testing_policy.docx | §3.2(b) [misstated the real 49 CFR 655.4 rule it cites, inconsistent with owl_service_rules.docx Rule 506; confirmed no task depends on this specific distinction] | (b) The accident results in an injury requiring immediate medical treatment away from the scene; or | → | (b) The accident results in an injury requiring immediate medical treatment away from the scene, and the covered employee received a citation under state or local law for a moving traffic violation arising from the accident; or |
