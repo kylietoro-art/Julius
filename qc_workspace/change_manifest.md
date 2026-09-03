@@ -175,3 +175,15 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Shared/Settlement/Reyes_life_care_plan.pdf | p.11 Annual Cost Summary, Rounding / geographic-pricing adjustment [part of the 10,000 line-item correction, split across 3 categories] | $5,200 | → | $1,700 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_wage_records.pdf | p.10 PV Worksheet, Household-services capacity loss, Undiscounted Loss [PV worksheet's 4 components summed to 1,100,000 against a stated (and spec-matching) 1,200,000 total] | $362,410 | → | $500,130 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_wage_records.pdf | p.10 PV Worksheet, Household-services capacity loss, PV @ 2.5% [closes the 100,000 footing gap; this is the only worksheet component with no shown sub-breakdown] | $263,180 | → | $363,180 |
