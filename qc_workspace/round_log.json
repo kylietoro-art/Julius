@@ -76,8 +76,24 @@
         }
       },
       "repeats": [],
-      "disposition": null,
-      "note": ""
+      "disposition": {
+        "fixed": 6,
+        "expanded": 4,
+        "traps": 1,
+        "false": 3,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-03T23:53:22",
+      "changed": "Renamed the banned name Meridian across 4 files, fixed a Halstead email typo and Melinda Torres's contact details, filled MatterHub's blank answer-due field, corrected two overstated AVL/video timestamps and a stale row-count claim, restructured 7 CSVs to a proper header-first format, canonicalized 3 conflicting matter numbers, fixed an out-of-sequence bus-schedule time, corrected footing errors in the life-care-plan and wage-records present-value worksheets, trimmed spelled-out legal reasoning from a discovery tracker and a leaked legal conclusion from the final incident report, corrected a misstated federal testing-trigger citation, fixed white-on-gray table headers, and closed out 3 pre-existing markdown-header leaks found before this round.",
+      "disputes": [
+        "World Realism placeholder finding: the video log's placeholder signature and fake hash were real and fixed, but no bracket placeholder exists anywhere in RFP_set.pdf or retainer.pdf as claimed; verified by searching every page of both files and the whole corpus cache.",
+        "Onboard-video MP4 reference: A53 is registered as App Data (vendor-hosted), not a File artifact; the still-log PDF is the filesystem companion this same AutoQC pass already called a justified A52/A53 companion export. The missing native clip is a filesystem/App-Data scope gap, not a filesystem defect.",
+        "MatterHub's case-wide 10/18/2027 suit deadline is A62's declared trap and the entire point of Task 1; left untouched.",
+        "Medical ledger vs EOB adjustment accounting: verified the pattern is systematic across all 9 providers (ledger's adjustments = EOB's contractual adjustment + patient responsibility, every row), not a computational error. This is a downstream detail of the already-registered billed-vs-paid trap (A34/A35): A35 is designed to be the sole controlling, negotiated source, and the ledger's coarser internal categorization is expected to diverge from it.",
+        "Draft incident report's missing tracked-changes: A03 is a never-finalized on-scene draft that gets wholly superseded by a separately-authored final report (A02), not a document edited in place via Track Changes. Adding fake revision history would misrepresent how the document came to exist.",
+        "tran_text_thread.pdf text legibility: rendered all 5 pages; header/footer chrome is normal, readable medium-gray throughout, not washed out as claimed."
+      ]
     }
   ]
 }
