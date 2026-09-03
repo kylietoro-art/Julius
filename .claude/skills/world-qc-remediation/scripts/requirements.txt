@@ -1,0 +1,13 @@
+# world-qc-remediation, Python dependencies
+# Install from this folder:  pip install -r requirements.txt
+#
+# If a script prints a "not installed / skipping" note at runtime, the check it was doing is
+# INCOMPLETE, install the missing library and re-run before trusting the result.
+
+openpyxl        # xlsx read/write (spec + world spreadsheets)
+pandas          # reconcile_entities (exhaustive tabular reconciliation + footing)
+pypdf           # PDF metadata read + clean (revision collapse)
+pdfplumber      # PDF text extraction (spec_check ties, a_scrub); falls back to pypdf if absent
+python-docx     # docx read/edit (a_scrub, pdf_markup_scan, spec_check)
+python-pptx     # pptx text extraction (spec_check ties)
+PyMuPDF         # in-place PDF string replacement (pdf_replace), imported as `fitz`

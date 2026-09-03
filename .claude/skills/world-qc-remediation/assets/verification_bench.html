@@ -1,0 +1,2109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verification Bench</title>
+<style>
+  :root{
+    --paper:#fcfcfa; --ink:#1a1c1e; --muted:#6b706e; --rule:#dcdcd6; --tint:#f2f2ee;
+    --steel:#35566b; --oxide:#8c4a2f; --ok:#1f6f4a; --shade:rgba(26,28,30,.06);
+    --edge:#9aa3a0; --fact:#35566b; --trap:#8c4a2f; --task:#1f6f4a; --anch:#6b5a8c;
+    --serif:ui-serif,Georgia,"Iowan Old Style","Times New Roman",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --paper:#15171a; --ink:#e6e7e3; --muted:#9aa09d; --rule:#2c3034; --tint:#1c1f23;
+    --steel:#83aac4; --oxide:#cf9070; --ok:#5bbf8e; --shade:rgba(230,231,227,.07);
+    --edge:#69726f; --fact:#83aac4; --trap:#cf9070; --task:#5bbf8e; --anch:#a894c9;}}
+  :root[data-theme="dark"]{
+    --paper:#15171a; --ink:#e6e7e3; --muted:#9aa09d; --rule:#2c3034; --tint:#1c1f23;
+    --steel:#83aac4; --oxide:#cf9070; --ok:#5bbf8e; --shade:rgba(230,231,227,.07);
+    --edge:#69726f; --fact:#83aac4; --trap:#cf9070; --task:#5bbf8e; --anch:#a894c9;}
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;
+    line-height:1.5;margin:0;padding:0 clamp(.9rem,4vw,2rem) 5rem;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:62rem;margin:0 auto}
+  header{padding:clamp(1.4rem,4vw,2.4rem) 0 1rem;border-bottom:2px solid var(--ink)}
+  h1{font-family:var(--serif);font-size:clamp(1.6rem,4.5vw,2.2rem);margin:0 0 .5rem;
+    font-weight:600;letter-spacing:-.015em;text-wrap:balance}
+  header p{margin:0;color:var(--muted);max-width:44rem}
+
+  .steps{margin:2rem 0;display:flex;flex-direction:column;gap:1rem}
+  .step{border:1px dashed var(--rule);border-radius:5px;background:var(--tint);
+    padding:1.25rem 1.3rem;display:flex;gap:1.1rem;align-items:flex-start}
+  .step.done{border-style:solid;border-color:var(--ok);background:transparent}
+  .n{font-family:var(--mono);font-size:.72rem;font-weight:700;color:var(--paper);
+    background:var(--steel);width:1.5rem;height:1.5rem;border-radius:50%;flex:none;
+    display:grid;place-items:center;margin-top:.1rem}
+  .step.done .n{background:var(--ok)}
+  .step h2{font-family:var(--serif);font-size:1.08rem;margin:0 0 .25rem;font-weight:600}
+  .step p{margin:0 0 .8rem;color:var(--muted);font-size:.93rem;max-width:40rem}
+  .big{font:700 12px/1 var(--mono);letter-spacing:.03em;padding:11px 18px;border-radius:4px;
+    border:1px solid var(--steel);background:var(--steel);color:var(--paper);cursor:pointer}
+  .big:hover{filter:brightness(1.12)}
+  .big.ghost{background:none;color:var(--steel)}
+  .alt{font:600 11px/1 var(--mono);background:none;border:0;color:var(--muted);cursor:pointer;
+    text-decoration:underline;text-underline-offset:3px;padding:0;margin-left:.9rem}
+  .alt:hover{color:var(--ink)}
+  .ok-line{font-family:var(--mono);font-size:.74rem;color:var(--ok);margin:.55rem 0 0}
+  .hide{display:none !important}
+
+  .bar{position:sticky;top:0;z-index:6;background:var(--paper);border-bottom:1px solid var(--rule);
+    padding:.7rem 0;display:flex;gap:.9rem;align-items:center;flex-wrap:wrap}
+  .prog{flex:1;min-width:8rem;height:6px;background:var(--tint);border-radius:3px;overflow:hidden}
+  .prog i{display:block;height:100%;background:var(--ok);width:0;transition:width .2s}
+  .stat{font-family:var(--mono);font-size:.76rem;letter-spacing:.04em;color:var(--muted);
+    font-variant-numeric:tabular-nums;white-space:nowrap}
+  .bar button{font:600 12px/1 var(--mono);padding:7px 11px;border:1px solid var(--rule);
+    background:var(--paper);color:var(--ink);border-radius:3px;cursor:pointer}
+  .bar button:hover{border-color:var(--ink)}
+  .root{font-family:var(--mono);font-size:.72rem;color:var(--muted);margin:.9rem 0 0;
+    display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap}
+  .root b{color:var(--ink);font-size:.8rem}
+  .root .spec{color:var(--anch)}
+
+  .srch{display:flex;align-items:center;gap:.6rem;margin:1rem 0 0;padding:.6rem .85rem;
+    border:1px solid var(--rule);border-radius:4px;background:var(--tint)}
+  .srch:focus-within{border-color:var(--steel)}
+  .srch svg{width:17px;height:17px;flex:none;stroke:var(--muted);stroke-width:2;fill:none;stroke-linecap:round}
+  #filter{flex:1;min-width:6rem;font:inherit;font-size:1rem;border:0;background:transparent;
+    color:var(--ink);padding:.15rem 0;outline:none}
+  #hits{font-family:var(--mono);font-size:.72rem;color:var(--muted);white-space:nowrap}
+  #clearq{font:600 11px/1 var(--mono);padding:5px 9px;border:1px solid var(--rule);
+    background:var(--paper);color:var(--ink);border-radius:3px;cursor:pointer;flex:none}
+  .nohit{color:var(--muted);font-size:.95rem;padding:1.4rem 0;text-align:center}
+
+  .fold{font-family:var(--mono);font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--muted);margin:2.1rem 0 .5rem;padding-bottom:.4rem;border-bottom:1px solid var(--rule);
+    display:flex;gap:.8rem;align-items:baseline;cursor:pointer;user-select:none}
+  .fold:hover{color:var(--ink)}
+  .fold .tw{flex:none;transition:transform .15s}
+  .fold.shut .tw{transform:rotate(-90deg)}
+  .cnt{margin-left:auto;flex:none}
+
+  .f{border-bottom:1px solid var(--rule);padding:.85rem 0;display:flex;flex-direction:column;gap:.5rem}
+  .f.done{opacity:.62}
+  .f.done .fn{text-decoration:line-through;text-decoration-color:var(--muted)}
+  .f.flag{border-left:3px solid var(--oxide);padding-left:.75rem}
+  .f.cited{border-left:3px solid #b3261e;padding-left:.75rem;background:rgba(179,38,30,.045)}
+  .cite{font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;
+    color:#fff;background:#b3261e;border-radius:2px;padding:.08rem .34rem;flex:none;cursor:pointer}
+  .verdict{font-size:.86rem;margin:.45rem 0 0;padding:.5rem .7rem;border-radius:3px;
+    border-left:3px solid var(--rule);background:var(--shade)}
+  .verdict.no{border-left-color:var(--ok)}
+  .verdict.yes{border-left-color:#b3261e}
+  .verdict b{font-family:var(--mono);font-size:.78rem}
+  .hl{background:#b3261e;color:#fff;border-radius:2px;padding:0 .15em}
+  .fbox{width:100%;min-height:11rem;font:12px/1.5 var(--mono);padding:.8rem;
+    border:1px solid var(--rule);border-radius:3px;background:var(--paper);color:var(--ink)}
+  .fh{display:flex;gap:.55rem;align-items:baseline;flex-wrap:wrap}
+  .fn{font-weight:600;word-break:break-word}
+  .fmt,.sz{font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--muted);flex:none}
+  .sz{margin-left:auto;font-variant-numeric:tabular-nums;text-transform:none}
+  .aid{font-family:var(--mono);font-size:.66rem;font-weight:700;color:var(--anch);flex:none;
+    border:1px solid var(--anch);border-radius:2px;padding:.04rem .3rem}
+  .pth{font-family:var(--mono);font-size:.66rem;color:var(--muted);word-break:break-all;margin-top:-.25rem}
+  .act{display:flex;gap:.4rem;align-items:flex-start;flex-wrap:wrap}
+  .act button{font:600 11px/1 var(--mono);padding:6px 10px;border:1px solid var(--rule);
+    background:var(--paper);color:var(--ink);border-radius:3px;cursor:pointer;flex:none}
+  .act button.open{border-color:var(--steel);color:var(--steel);font-weight:700}
+  .act button.open:hover{background:var(--steel);color:var(--paper)}
+  .act button.trace{border-color:var(--anch);color:var(--anch);font-weight:700}
+  .act button.trace:hover{background:var(--anch);color:var(--paper)}
+  .act button.trace[disabled]{opacity:.35;cursor:not-allowed}
+  .act button.on[data-v="ok"]{background:var(--ok);border-color:var(--ok);color:#fff}
+  .act button.on[data-v="issue"]{background:var(--oxide);border-color:var(--oxide);color:#fff}
+  .act button.on[data-v="na"]{background:var(--muted);border-color:var(--muted);color:var(--paper)}
+  .act textarea{flex:1;min-width:11rem;font:inherit;font-size:.9rem;padding:6px 9px;
+    border:1px solid var(--rule);border-radius:3px;background:var(--paper);color:var(--ink);
+    resize:vertical;font-family:var(--sans)}
+
+  #mode{font-family:var(--mono);font-size:.72rem;color:var(--muted);padding:.55rem .75rem;
+    border:1px dashed var(--rule);border-radius:3px;margin:.9rem 0 0;line-height:1.55}
+  #mode b{color:var(--oxide)}
+  #rep{width:100%;margin-top:1rem;font:12px/1.5 var(--mono);padding:.8rem;border:1px solid var(--rule);
+    border-radius:3px;background:var(--tint);color:var(--ink);white-space:pre;overflow:auto;min-height:9rem}
+  footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.88rem}
+
+  /* ---- trace panel ---- */
+  .scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:20;display:grid;
+    place-items:center;padding:1rem}
+  .panel{background:var(--paper);border:1px solid var(--rule);border-radius:6px;
+    max-width:min(72rem,96vw);max-height:92vh;overflow:auto;padding:1.4rem 1.5rem 1.8rem;
+    box-shadow:0 18px 50px rgba(0,0,0,.3)}
+  .panel h2{font-family:var(--serif);font-size:1.3rem;margin:0 0 .2rem;font-weight:600}
+  .panel .sub{color:var(--muted);font-size:.9rem;margin:0 0 1rem;font-family:var(--mono)}
+  .panel .close{position:sticky;top:0;float:right;font:600 11px/1 var(--mono);padding:6px 10px;
+    border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:3px;cursor:pointer}
+  .panel.viewer{width:min(78rem,96vw)}
+  .vbody{max-height:72vh;overflow:auto;border:1px solid var(--rule);border-radius:4px;
+    padding:.9rem;background:var(--paper)}
+  .vtext{font-family:var(--mono);font-size:.8rem;line-height:1.6;white-space:pre-wrap;
+    word-break:break-word;margin:0}
+  .vhtml{font-size:.9rem}
+  .vhtml img{max-width:100%}
+  .vhtml table{border-collapse:collapse;width:100%;font-size:.85rem}
+  .vhtml td,.vhtml th{border:1px solid var(--rule);padding:.3rem .5rem;text-align:left}
+  .panel.viewer img{max-width:100%;max-height:74vh;display:block;margin:0 auto;
+    border:1px solid var(--rule);border-radius:4px}
+  .vnote{font-size:.82rem;color:var(--muted);margin:.7rem 0 0}
+  .vnote code{font-family:var(--mono);background:var(--shade);padding:.08em .32em;border-radius:2px}
+  .flowwrap{overflow-x:auto;border:1px solid var(--rule);border-radius:4px;background:var(--tint);
+    padding:.6rem;margin:0 0 1.2rem}
+  .fl-col{font-family:var(--mono);font-size:9px;letter-spacing:.11em;fill:var(--muted);text-transform:uppercase}
+  .fl-box{fill:var(--paper);stroke:var(--rule);stroke-width:1}
+  .fl-box.fact{stroke:var(--fact)} .fl-box.trap{stroke:var(--trap);stroke-width:1.6}
+  .fl-box.doc{stroke:var(--ink);stroke-width:1.8;fill:var(--shade)}
+  .fl-box.task{stroke:var(--task)} .fl-box.anchor{stroke:var(--anch)}
+  .fl-box.rel{stroke:var(--rule);stroke-dasharray:4 3}
+  .fl-t{font-family:var(--sans);font-size:11.5px;fill:var(--ink);font-weight:600}
+  .fl-s{font-family:var(--mono);font-size:9.5px;fill:var(--muted)}
+  .fl-tag{font-family:var(--mono);font-size:8.5px;letter-spacing:.09em;fill:var(--muted)}
+  .fl-tag.trap{fill:var(--trap);font-weight:700} .fl-tag.fact{fill:var(--fact)}
+  .fl-tag.task{fill:var(--task)} .fl-tag.anchor{fill:var(--anch)}
+  .fl-edge{fill:none;stroke:var(--edge);stroke-width:1.3}
+  .fl-edge.dim{stroke-dasharray:4 3;opacity:.6}
+  .tsec{margin:1.3rem 0 0}
+  .tsec h3{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--muted);margin:0 0 .45rem;padding-bottom:.3rem;border-bottom:1px solid var(--rule)}
+  .tbl{width:100%;border-collapse:collapse;font-size:.87rem}
+  .tbl th,.tbl td{text-align:left;padding:.4rem .6rem;border-bottom:1px solid var(--rule);vertical-align:top}
+  .tbl th{font-family:var(--mono);font-size:.63rem;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted);background:var(--shade);white-space:nowrap}
+  .tbl td.k{font-family:var(--mono);font-size:.78rem;white-space:nowrap}
+  .tbl tr:last-child td{border-bottom:0}
+  .tbl button{font:600 11px/1 var(--mono);padding:5px 9px;border:1px solid var(--anch);
+    background:var(--paper);color:var(--anch);border-radius:3px;cursor:pointer;white-space:nowrap}
+  .tbl button:hover{background:var(--anch);color:var(--paper)}
+  .pill{font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;
+    border:1px solid currentColor;border-radius:2px;padding:.04rem .3rem;white-space:nowrap}
+  .pill.trap{color:var(--trap)} .pill.fact{color:var(--fact)}
+  .none{color:var(--muted);font-size:.9rem;font-style:italic}
+  .stabs{display:flex;flex-wrap:wrap;gap:.3rem;margin:.8rem 0 .7rem}
+  .stab{font-family:var(--mono);font-size:.68rem;padding:.26rem .62rem;border:1px solid var(--rule);
+    background:transparent;color:var(--muted);border-radius:2px;cursor:pointer;letter-spacing:.03em}
+  .stab:hover{color:var(--ink)}
+  .stab.on{color:var(--paper);background:var(--ink);border-color:var(--ink)}
+  .spane.hide{display:none}
+  .dbtn{font-family:var(--mono);font-size:.68rem;padding:.26rem .62rem;border:1px solid var(--anch);
+    background:transparent;color:var(--anch);border-radius:2px;cursor:pointer}
+  .dbtn:hover{background:var(--anch);color:var(--paper)}
+  .doc .dh{font-family:var(--sans);font-size:.86rem;letter-spacing:.04em;text-transform:uppercase;
+    margin:1.15rem 0 .4rem;color:var(--ink)}
+  .doc .dp{margin:0 0 .55rem;line-height:1.6;font-size:.92rem}
+  .doc .scroll{margin:.6rem 0 1rem}
+  .slide{border:1px solid var(--rule);border-radius:3px;padding:.85rem 1.05rem;margin:0 0 .8rem}
+  .sno{font-family:var(--mono);font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:.45rem}
+  .scsum{display:flex;gap:.4rem;margin:.9rem 0 1.2rem}
+  .sctag{font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;
+    border-radius:2px;padding:.14rem .42rem;white-space:nowrap}
+  .sctag.pass{background:#1f6f43;color:#fff} .sctag.warn{background:#8a6a12;color:#fff}
+  .sctag.fail{background:#b3261e;color:#fff}
+  .scrow{border-top:1px solid var(--rule);padding:.75rem 0}
+  .scrow.pass{opacity:.62}
+  .schead{display:flex;align-items:baseline;gap:.5rem}
+  .schead b{font-size:.94rem}
+  .scdet{color:var(--muted);font-size:.8rem;margin:.25rem 0 0 3.2rem}
+  .sclist{margin:.45rem 0 0 3.2rem;padding:0;list-style:none}
+  .sclist li{font-family:var(--mono);font-size:.74rem;line-height:1.5;color:var(--ink);
+    padding:.1rem 0;border-bottom:1px dotted var(--rule)}
+  .sclist li:last-child{border-bottom:0}
+  .pg{margin:0 0 1.1rem}
+  .pgno{font-family:var(--mono);font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--muted);margin:0 0 .35rem}
+  .sheet{border:1px solid var(--rule);border-radius:2px;background:#fff;overflow:hidden}
+  .sheet svg{display:block;width:100%;height:auto}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>Verification Bench</h1>
+  <p>Point it at a world spec and a folder. It lists every file for you to open, look at and mark —
+  and for any file the spec knows about, it traces what that document is carrying: the registered
+  values, the traps, the tasks that consume it, the reference anchor behind it, and the sibling
+  documents it has to agree with. Nothing is uploaded; both stay on this machine.</p>
+</header>
+
+<div class="steps" id="steps">
+  <div class="step" id="step1">
+    <span class="n">1</span>
+    <div>
+      <h2>Locate the World Spec</h2>
+      <p>The <code>.xlsx</code> workbook with the ① World &amp; Scenario, ② Canonical Values,
+      ③ Tasks and ④ Artifacts tabs. It is read here in the browser and never sent anywhere.
+      Tracing needs it; the checklist works without it.</p>
+      <button class="big" id="pickspec">Choose the spec…</button>
+      <button class="alt" id="skipspec">skip — check files without tracing</button>
+      <p class="ok-line hide" id="specok"></p>
+    </div>
+  </div>
+  <div class="step" id="step2a">
+    <span class="n">2</span>
+    <div>
+      <h2>Locate the reference anchors</h2>
+      <p>The folder of external reference documents the spec points at — the standards and
+      published reports behind the world. Optional: without it the trace still names the
+      reference, but cannot open it or tell you one is missing.</p>
+      <button class="big" id="pickanch">Choose the anchor folder…</button>
+      <button class="alt" id="skipanch">skip</button>
+      <p class="ok-line hide" id="anchok"></p>
+    </div>
+  </div>
+  <div class="step" id="step2">
+    <span class="n">3</span>
+    <div>
+      <h2>Choose the file system folder</h2>
+      <p>Pick the top of the tree. Sub-folders are walked and become the section headings.
+      Dot-files are skipped.</p>
+      <button class="big" id="pick">Choose folder…</button>
+      <button class="alt" id="alt">or use the plain folder picker</button>
+      <p class="ok-line hide" id="folderok"></p>
+    </div>
+  </div>
+</div>
+<input type="file" id="specfile" accept=".xlsx" hidden>
+<input type="file" id="anchnative" webkitdirectory directory multiple hidden>
+<input type="file" id="native" webkitdirectory directory multiple hidden>
+
+<div class="bar hide" id="bar">
+  <div class="prog"><i id="pbar"></i></div>
+  <span class="stat" id="stat">0 of 0</span>
+  <button id="jump">Next unchecked</button>
+  <button id="export">Build report</button>
+  <button id="paste">Paste findings</button>
+  <button id="speccheck">Check the spec</button>
+  <button id="log">Log</button>
+  <button id="repick">Change folder</button>
+  <button id="reset">Clear marks</button>
+</div>
+<div class="root hide" id="rootline"></div>
+
+<div class="srch hide" id="srch">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+  <input id="filter" type="search" autocomplete="off" spellcheck="false"
+         placeholder="Search file names, paths and artifact IDs">
+  <span id="hits"></span>
+  <button id="clearq" hidden>Clear</button>
+</div>
+
+<div id="mode"></div>
+<div id="groups" class="hide"></div>
+<div class="nohit hide" id="nohit">Nothing matches that.</div>
+
+<footer id="foot" class="hide">
+  Marks are kept in this browser under the folder's name, so closing the tab does not lose them.
+  <b>Trace</b> is available on any file the spec maps to an artifact. <b>Build report</b> writes a
+  plain-text summary below and copies it to the clipboard.
+</footer>
+</div>
+
+<script>
+// ── a minimal zip reader and xlsx parser, no libraries ─────────────────────
+// The browser can inflate raw deflate natively, which is the only hard part of
+// reading a .xlsx: the rest is XML we can pick apart with regular expressions.
+
+async function unzip(buf){
+  const dv = new DataView(buf), u8 = new Uint8Array(buf);
+  let eocd = -1;
+  for (let i = u8.length - 22; i >= 0 && i > u8.length - 66000; i--)
+    if (dv.getUint32(i, true) === 0x06054b50) { eocd = i; break; }
+  if (eocd < 0) throw new Error("not a zip file");
+  const count = dv.getUint16(eocd + 10, true);
+  let p = dv.getUint32(eocd + 16, true);
+  const out = {};
+  for (let n = 0; n < count; n++){
+    if (dv.getUint32(p, true) !== 0x02014b50) break;
+    const method = dv.getUint16(p + 10, true);
+    const csize  = dv.getUint32(p + 20, true);
+    const nlen   = dv.getUint16(p + 28, true);
+    const elen   = dv.getUint16(p + 30, true);
+    const clen   = dv.getUint16(p + 32, true);
+    const lho    = dv.getUint32(p + 42, true);
+    const name   = new TextDecoder().decode(u8.subarray(p + 46, p + 46 + nlen));
+    const lnlen  = dv.getUint16(lho + 26, true);
+    const lelen  = dv.getUint16(lho + 28, true);
+    const start  = lho + 30 + lnlen + lelen;
+    const raw    = u8.subarray(start, start + csize);
+    out[name] = { method, raw };
+    p += 46 + nlen + elen + clen;
+  }
+  const res = {};
+  for (const [name, e] of Object.entries(out)){
+    if (e.method === 0){ res[name] = e.raw; continue; }
+    const ds = new DecompressionStream("deflate-raw");
+    const stream = new Blob([e.raw]).stream().pipeThrough(ds);
+    res[name] = new Uint8Array(await new Response(stream).arrayBuffer());
+  }
+  return res;
+}
+
+const dec = b => new TextDecoder().decode(b);
+const unesc = s => s.replace(/&lt;/g,"<").replace(/&gt;/g,">")
+                    .replace(/&quot;/g,'"').replace(/&apos;/g,"'")
+                    .replace(/&#(\d+);/g,(m,d)=>String.fromCharCode(+d))
+                    .replace(/&amp;/g,"&");
+
+function sharedStrings(xml){
+  if (!xml) return [];
+  return (xml.match(/<si>[\s\S]*?<\/si>/g) || []).map(si => {
+    const parts = si.match(/<t[^>]*>([\s\S]*?)<\/t>/g) || [];
+    return parts.map(t => unesc(t.replace(/<[^>]+>/g, ""))).join("");
+  });
+}
+
+function colOf(ref){
+  const m = /^([A-Z]+)/.exec(ref); let n = 0;
+  for (const ch of m[1]) n = n * 26 + (ch.charCodeAt(0) - 64);
+  return n - 1;
+}
+
+function sheetRows(xml, ss){
+  const rows = [];
+  for (const rm of xml.match(/<row[^>]*>[\s\S]*?<\/row>|<row[^>]*\/>/g) || []){
+    const rn = +(/<row[^>]*\sr="(\d+)"/.exec(rm) || [0,0])[1];
+    const cells = [];
+    for (const cm of rm.match(/<c[^>]*\/>|<c[^>]*>[\s\S]*?<\/c>/g) || []){
+      const ref = (/\sr="([A-Z]+\d+)"/.exec(cm) || [])[1];
+      if (!ref) continue;
+      const t = (/\st="([^"]+)"/.exec(cm) || [])[1];
+      let v = null;
+      if (t === "inlineStr"){
+        const im = /<t[^>]*>([\s\S]*?)<\/t>/.exec(cm);
+        v = im ? unesc(im[1]) : null;
+      } else {
+        const vm = /<v>([\s\S]*?)<\/v>/.exec(cm);
+        if (vm) v = t === "s" ? (ss[+vm[1]] ?? null) : unesc(vm[1]);
+      }
+      if (v !== null && v !== "") cells[colOf(ref)] = v;
+    }
+    if (cells.length) rows[rn - 1] = cells;
+  }
+  return rows;
+}
+
+async function readXlsx(buf){
+  const f = await unzip(buf);
+  const get = n => f[n] ? dec(f[n]) : null;
+  const ss = sharedStrings(get("xl/sharedStrings.xml"));
+  // Attribute order is not fixed by the format, so pull each one by name
+  // rather than assuming Id precedes Target (openpyxl and hand-built files differ).
+  const attr = (tag, n) => (new RegExp('\\s' + n + '="([^"]*)"').exec(tag) || [])[1];
+  const rels = {};
+  for (const t of ((get("xl/_rels/workbook.xml.rels") || "")
+        .match(/<Relationship\b[^>]*>/g) || [])){
+    const id = attr(t, "Id"), tgt = attr(t, "Target");
+    if (id && tgt) rels[id] = tgt;
+  }
+  const sheets = {};
+  for (const t of ((get("xl/workbook.xml") || "")
+        .match(/<sheet\b[^>]*>/g) || [])){
+    const name = attr(t, "name"), rid = attr(t, "r:id") || attr(t, "id");
+    if (!name || !rid) continue;
+    const target = (rels[rid] || "").replace(/^\/?xl\//, "");
+    const xml = get("xl/" + target);
+    if (xml) sheets[unesc(name)] = sheetRows(xml, ss);
+  }
+  return sheets;
+}
+
+if (false) module.exports = { readXlsx, unzip };
+
+// ── build a trace model from the four spec tabs ────────────────────────────
+function norm(p){ return String(p||"").replace(/^\/+/, "").replace(/\\/g,"/").toLowerCase(); }
+function ids(s){ return (String(s||"").match(/A\d{2}/g) || []); }
+
+// Columns are resolved by header text, not by position: a spec with a column
+// removed (the worker-facing copy) must not silently shift every field.
+function colsOf(rows){
+  const hdr = rows[0] || [];
+  const at = (...names) => {
+    for (const n of names){
+      const i = hdr.findIndex(h => String(h || "").toLowerCase().includes(n));
+      if (i >= 0) return i;
+    }
+    return -1;
+  };
+  return { at };
+}
+const cell = (r, i) => (i >= 0 && r && r[i] != null) ? r[i] : "";
+
+function buildModel(sheets){
+  const A = sheets["④ Artifacts"] || [], V = sheets["② Canonical Values"] || [],
+        T = sheets["③ Tasks"] || [];
+  const ac = colsOf(A), vc = colsOf(V), tc = colsOf(T);
+  const aI = ac.at("id"), aNm = ac.at("name"), aFmt = ac.at("format"),
+        aLoc = ac.at("location"), aLbl = ac.at("label"), aDsc = ac.at("description"),
+        aRel = ac.at("relates to"), aTrp = ac.at("trap content", "trap"),
+        aTsk = ac.at("tasks"), aAnc = ac.at("reference doc");
+  const artifacts = [];
+  for (let i = 2; i < A.length; i++){
+    const r = A[i]; if (!r || !r[aI] || !/^A\d{2}$/.test(String(r[aI]).trim())) continue;
+    artifacts.push({ id:String(r[aI]).trim(), name:cell(r,aNm), fmt:cell(r,aFmt),
+      loc:cell(r,aLoc), label:cell(r,aLbl), desc:cell(r,aDsc),
+      rel:ids(cell(r,aRel)), trap:String(cell(r,aTrp)).trim(),
+      tasks:String(cell(r,aTsk)).match(/T\d+/g)||[], anchor:cell(r,aAnc) });
+  }
+  const vNm = vc.at("value name"), vTy = vc.at("type"), vVal = vc.at("value"),
+        vSrc = vc.at("source artifact"), vMust = vc.at("must match"), vNote = vc.at("note");
+  const values = [];
+  for (let i = 2; i < V.length; i++){
+    const r = V[i]; if (!r || !r[vNm] || !r[vTy]) continue;
+    values.push({ name:cell(r,vNm), type:String(cell(r,vTy)).trim(), value:cell(r,vVal),
+      src:String(cell(r,vSrc)).trim(), must:ids(cell(r,vMust)), note:cell(r,vNote) });
+  }
+  const tI = tc.at("task #"), tNm = tc.at("task name"), tWf = tc.at("workflow"),
+        tF = tc.at("primary files");
+  const tasks = [];
+  for (let i = 2; i < T.length; i++){
+    const r = T[i]; if (!r || !/^T\d+$/.test(String(cell(r,tI)).trim())) continue;
+    tasks.push({ id:String(r[tI]).trim(), name:cell(r,tNm), wf:cell(r,tWf),
+                 files:ids(cell(r,tF)) });
+  }
+  const byId = Object.fromEntries(artifacts.map(a=>[a.id,a]));
+  const byLoc = {}; artifacts.forEach(a => { if (a.loc) byLoc[norm(a.loc)] = a; });
+  return { artifacts, values, tasks, byId, byLoc };
+}
+
+function matchArtifact(model, relPath){
+  const n = norm(relPath);
+  if (model.byLoc[n]) return model.byLoc[n];
+  const base = n.split("/").pop();
+  const hits = model.artifacts.filter(a => norm(a.loc).split("/").pop() === base);
+  return hits.length === 1 ? hits[0] : null;
+}
+
+function trace(model, art){
+  if (!art) return null;
+  const sourced = model.values.filter(v => v.src === art.id);
+  const carried = model.values.filter(v => v.must.includes(art.id));
+  const tasks   = model.tasks.filter(t => t.files.includes(art.id) || art.tasks.includes(t.id));
+  const related = art.rel.map(id => model.byId[id]).filter(Boolean);
+  const feeders = model.values.filter(v => v.must.includes(art.id) && v.src && v.src !== art.id)
+                    .map(v => model.byId[v.src]).filter(Boolean);
+  return { art, sourced, carried, tasks, related, anchor: art.anchor,
+           trap: art.trap && !/^none\.?$/i.test(art.trap) ? art.trap : null,
+           feeders: [...new Map(feeders.map(f=>[f.id,f])).values()] };
+}
+if (false) module.exports = { buildModel, matchArtifact, trace };
+
+// ── match a spec "Reference Doc (title only)" to a file in the anchor folder ──
+// Nothing here is world-specific: it scores a designation match first (MIL-STD-29A,
+// QQ-Z-325C, ASTM B850 …) and falls back to distinctive-word overlap.
+const STOP = new Set(("a an and the of for to in on with by from at as its "
+ + "pdf doc docx report reports technical memorandum note notes paper title only")
+ .split(/\s+/));
+
+function designations(s){
+  const out = new Set();
+  const re = /\b[A-Z]{2,4}[-–][A-Z0-9]{1,6}(?:[-–][A-Z0-9]{1,8})?\b/g;
+  for (const m of String(s||"").toUpperCase().matchAll(re)) out.add(m[0].replace(/–/g,"-"));
+  return out;
+}
+function words(s){
+  return new Set(String(s||"").toLowerCase().split(/[^a-z0-9]+/)
+    .filter(w => w.length >= 4 && !STOP.has(w)));
+}
+function score(title, filename){
+  const dt = designations(title), df = designations(filename.replace(/\.[a-z0-9]+$/i,""));
+  let s = 0;
+  for (const d of dt) if (df.has(d)) s += 10;
+  const wt = words(title), wf = words(filename.replace(/\.[a-z0-9]+$/i,""));
+  let shared = 0; for (const w of wt) if (wf.has(w)) shared++;
+  s += shared * 2;
+  return s;
+}
+function matchAnchors(artifacts, files){
+  // files: [{name, rel}]
+  const out = {};            // artifact id -> {file, score} | null
+  const used = {};
+  artifacts.forEach(a => {
+    const title = a.anchor || "";
+    if (!title.trim()) { out[a.id] = null; return; }
+    let best = null;
+    files.forEach(f => {
+      const sc = score(title, f.name);
+      if (sc >= 4 && (!best || sc > best.score)) best = { file: f, score: sc };
+    });
+    out[a.id] = best;
+    if (best) used[best.file.rel] = (used[best.file.rel] || 0) + 1;
+  });
+  return { map: out, used };
+}
+if (false) module.exports = { matchAnchors, score, designations };
+
+// ── a small layered flowchart renderer, drawn as SVG ──────────────────────
+// Mermaid is not available offline and cannot be fetched from an artifact, so
+// the diagram is laid out and drawn here: columns of boxes, bezier edges.
+const CW = 0.545;                                   // mean glyph width / font size
+
+function wrap(text, size, width, max){
+  const per = Math.max(6, Math.floor(width / (size * CW)));
+  // a filename has no spaces to break on, so oversized tokens are split by hand
+  const words = [];
+  String(text).split(/\s+/).forEach(w => {
+    while (w.length > per){
+      const cut = w.slice(0, per - 1);
+      words.push(/[-\/_.]$/.test(cut) ? cut : cut + "-");
+      w = w.slice(per - 1);
+    }
+    if (w) words.push(w);
+  });
+  const out = []; let line = "";
+  for (const w of words){
+    if (out.length >= max) break;
+    if ((line + " " + w).trim().length > per){ out.push(line.trim()); line = w; }
+    else line = (line + " " + w).trim();
+  }
+  if (line && out.length < max) out.push(line.trim());
+  const shown = out.join(" ").replace(/-/g, "").length;
+  if (out.length === max && String(text).replace(/\s|-/g, "").length > shown)
+    out[max - 1] = out[max - 1].replace(/.{1,2}$/, "…");
+  return out.filter(Boolean);
+}
+
+function mkNode(o){
+  const w = o.w || 190;
+  const tl = wrap(o.title, 11.5, w - 20, 3);
+  // subtitles are set in a monospace face, whose glyphs are wider than the
+  // proportional estimate, so they get a narrower measuring width
+  const sl = o.sub ? wrap(o.sub, 9.5, (w - 22) * 0.86, o.subMax || 3) : [];
+  const h = 14 + tl.length * 14 + (sl.length ? 4 + sl.length * 12 : 0) + (o.tag ? 14 : 0) + 12;
+  return { ...o, w, h, tl, sl };
+}
+
+function layout(cols, gapX, gapY){
+  let x = 0, W = 0, H = 0;
+  cols.forEach(col => {
+    col.nodes.forEach(n => n.h = n.h || 40);
+    col.h = col.nodes.reduce((a, n) => a + n.h + gapY, -gapY);
+    col.w = Math.max(...col.nodes.map(n => n.w), 0);
+    col.x = x; x += col.w + (col.gapAfter == null ? gapX : col.gapAfter);
+    H = Math.max(H, col.h);
+  });
+  W = x - (cols.length ? (cols[cols.length-1].gapAfter == null ? gapX : cols[cols.length-1].gapAfter) : 0);
+  cols.forEach(col => {
+    let y = (H - col.h) / 2;
+    col.nodes.forEach(n => { n.x = col.x + (col.w - n.w) / 2; n.y = y; y += n.h + gapY; });
+  });
+  return { W, H };
+}
+
+// A band is one logical group. When it holds more than `per` nodes it is packed
+// into side-by-side sub-columns rather than truncated, so every item is shown.
+function band(label, nodes, per){
+  if (!nodes.length) return [];
+  const cols = [];
+  for (let i = 0; i < nodes.length; i += per)
+    cols.push({ nodes: nodes.slice(i, i + per), gapAfter: 22 });
+  cols[0].label = label + (cols.length > 1 ? "  (" + nodes.length + ")" : "");
+  delete cols[cols.length - 1].gapAfter;
+  return cols;
+}
+
+function esc(s){ return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+
+function renderFlow(cols, edges, opt){
+  const gapX = opt.gapX || 76, gapY = opt.gapY || 16, pad = 30;
+  const { W, H } = layout(cols, gapX, gapY);
+  const w = W + pad * 2, h = H + pad * 2 + 26;
+  let s = `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="${esc(opt.aria||"trace")}">`;
+  s += `<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+        orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="var(--edge)"/></marker></defs>`;
+  cols.forEach(c => {
+    if (!c.label) return;
+    s += `<text x="${pad + c.x + c.w/2}" y="${pad - 12}" class="fl-col" text-anchor="middle">${esc(c.label)}</text>`;
+  });
+  const find = id => { for (const c of cols) for (const n of c.nodes) if (n.id === id) return n; };
+  edges.forEach(e => {
+    const a = find(e.from), b = find(e.to); if (!a || !b) return;
+    const x1 = pad + a.x + a.w, y1 = pad + a.y + a.h/2;
+    const x2 = pad + b.x,       y2 = pad + b.y + b.h/2;
+    const mx = (x1 + x2) / 2;
+    s += `<path d="M${x1} ${y1} C${mx} ${y1} ${mx} ${y2} ${x2} ${y2}" class="fl-edge${e.dim?" dim":""}"
+          marker-end="url(#ah)"/>`;
+  });
+  cols.forEach(c => c.nodes.forEach(n => {
+    const X = pad + n.x, Y = pad + n.y;
+    s += `<rect x="${X}" y="${Y}" width="${n.w}" height="${n.h}" rx="5" class="fl-box ${n.kind||""}"/>`;
+    let ty = Y + 20;
+    n.tl.forEach(t => { s += `<text x="${X+10}" y="${ty}" class="fl-t">${esc(t)}</text>`; ty += 14; });
+    if (n.sl.length){ ty += 2;
+      n.sl.forEach(t => { s += `<text x="${X+10}" y="${ty}" class="fl-s">${esc(t)}</text>`; ty += 12; }); }
+    if (n.tag) s += `<text x="${X+10}" y="${Y+n.h-9}" class="fl-tag ${n.kind||""}">${esc(n.tag)}</text>`;
+  }));
+  return s + "</svg>";
+}
+if (false) module.exports = { mkNode, renderFlow, wrap, band };
+
+// ── show a file's contents without an iframe ──────────────────────────────
+// The hosted page's CSP blocks blob: in a frame, so nothing can be embedded.
+// Everything here is built as DOM in the page instead.
+
+function a85(bytes){                       // ASCII85, as reportlab writes it
+  var out=[], tuple=0, count=0;
+  for (var i=0;i<bytes.length;i++){
+    var c=bytes[i];
+    if (c===0x7E) break;                   // ~> terminator
+    if (c<=32) continue;
+    if (c===0x7A && count===0){ out.push(0,0,0,0); continue; }
+    tuple = tuple*85 + (c-33); count++;
+    if (count===5){
+      out.push((tuple>>>24)&255,(tuple>>>16)&255,(tuple>>>8)&255,tuple&255);
+      tuple=0; count=0;
+    }
+  }
+  if (count>0){
+    for (var j=count;j<5;j++) tuple = tuple*85 + 84;
+    var b=[(tuple>>>24)&255,(tuple>>>16)&255,(tuple>>>8)&255,tuple&255];
+    for (var k=0;k<count-1;k++) out.push(b[k]);
+  }
+  return new Uint8Array(out);
+}
+
+async function inflate(u8){
+  var ds = new DecompressionStream("deflate");
+  var s  = new Blob([u8]).stream().pipeThrough(ds);
+  return new Uint8Array(await new Response(s).arrayBuffer());
+}
+
+// Pull the visible strings out of a PDF's content streams. Works on the
+// vector sheets in this corpus; a scanned page has no text to find.
+async function pdfText(buf){
+  var u8 = new Uint8Array(buf);
+  var latin = new TextDecoder("latin1");
+  var raw = latin.decode(u8);
+  var out = [];
+  var re = /stream\r?\n/g, m;
+  while ((m = re.exec(raw))){
+    var start = m.index + m[0].length;
+    var end   = raw.indexOf("endstream", start);
+    if (end < 0) continue;
+    var seg = u8.subarray(start, end);
+    var txt = null;
+    for (var attempt = 0; attempt < 3 && txt === null; attempt++){
+      try {
+        if (attempt === 0)      txt = latin.decode(await inflate(a85(seg)));
+        else if (attempt === 1) txt = latin.decode(await inflate(seg));
+        else                    txt = latin.decode(seg);
+      } catch (e) { txt = null; }
+    }
+    if (txt && /(Tj|TJ)/.test(txt)) out.push(txt);
+  }
+  var joined = out.join("\n"), strs = [], sre = /\((?:\\.|[^\\()])*\)/g, s2;
+  while ((s2 = sre.exec(joined)))
+    strs.push(s2[0].slice(1,-1).replace(/\\([()\\])/g,"$1").replace(/\\(\d{3})/g,
+      function(_,o){ return String.fromCharCode(parseInt(o,8)); }));
+  return strs.join(" ").replace(/\s{2,}/g," ").trim();
+}
+
+function pdfPageCount(buf){
+  var t = new TextDecoder("latin1").decode(new Uint8Array(buf));
+  var n = (t.match(/\/Type\s*\/Page[^s]/g) || []).length;
+  if (!n){ var c = /\/Count\s+(\d+)/.exec(t); n = c ? +c[1] : 0; }
+  return n;
+}
+
+function csvTable(text, cap){
+  var rows = text.split(/\r?\n/).filter(Boolean).slice(0, cap || 400)
+    .map(function(l){
+      var out=[], cur="", q=false;
+      for (var i=0;i<l.length;i++){
+        var c=l[i];
+        if (c === '"'){ if (q && l[i+1] === '"'){ cur+='"'; i++; } else q=!q; }
+        else if (c === "," && !q){ out.push(cur); cur=""; }
+        else cur+=c;
+      }
+      out.push(cur); return out;
+    });
+  var h = '<div class="scroll"><table class="tbl">';
+  rows.forEach(function(r,i){
+    h += "<tr>" + r.map(function(c){
+      return (i ? "<td>" : "<th>") + String(c).replace(/[&<>]/g,function(x){
+        return {"&":"&amp;","<":"&lt;",">":"&gt;"}[x]; }) + (i ? "</td>" : "</th>");
+    }).join("") + "</tr>";
+  });
+  return h + "</table></div>";
+}
+if (false) module.exports = { pdfText, csvTable, a85, pdfPageCount };
+
+// ── draw a vector PDF page as SVG, with no library ────────────────────────
+// The drawings in this corpus are ReportLab output: pure vector, standard
+// fonts, no images. That is a small enough subset of PDF to execute directly —
+// path construction, painting, the graphics state stack, and text placement.
+// Anything outside that subset is ignored rather than guessed at.
+
+function _objs(u8){                          // object number -> byte offset
+  const latin = new TextDecoder("latin1");
+  const raw = latin.decode(u8), map = {};
+  const re = /(\d+)\s+(\d+)\s+obj\b/g;
+  let m;
+  while ((m = re.exec(raw))) map[+m[1]] = m.index;
+  return { raw, map };
+}
+
+function _dict(raw, at){                     // the << >> that starts at/after `at`
+  const i = raw.indexOf("<<", at);
+  if (i < 0) return "";
+  let d = 0, j = i;
+  while (j < raw.length){
+    if (raw.startsWith("<<", j)){ d++; j += 2; continue; }
+    if (raw.startsWith(">>", j)){ d--; j += 2; if (!d) return raw.slice(i, j); continue; }
+    j++;
+  }
+  return raw.slice(i);
+}
+
+async function _streamOf(u8, raw, at){
+  const s = raw.indexOf("stream", at);
+  if (s < 0) return null;
+  let b = s + 6;
+  if (raw[b] === "\r") b++;
+  if (raw[b] === "\n") b++;
+  const e = raw.indexOf("endstream", b);
+  const seg = u8.subarray(b, e);
+  const head = raw.slice(at, s);
+  let data = seg;
+  try {
+    if (/ASCII85Decode/.test(head)) data = a85(data);
+    if (/FlateDecode/.test(head))   data = await inflate(data);
+  } catch (err) {
+    try { data = await inflate(seg); } catch (e2) { return null; }
+  }
+  return new TextDecoder("latin1").decode(data);
+}
+
+// Collect every page's content stream and media box, in document order.
+async function pdfPages(buf){
+  const u8 = new Uint8Array(buf);
+  const { raw, map } = _objs(u8);
+  const pages = [];
+  for (const num of Object.keys(map).map(Number).sort((a, b) => a - b)){
+    const d = _dict(raw, map[num]);
+    if (!/\/Type\s*\/Page[^s]/.test(d)) continue;
+    let mb = /\/MediaBox\s*\[([^\]]+)\]/.exec(d);
+    let box = mb ? mb[1].trim().split(/\s+/).map(Number) : null;
+    if (!box){                                   // inherited from the Pages node
+      const p = /\/MediaBox\s*\[([^\]]+)\]/.exec(raw);
+      box = p ? p[1].trim().split(/\s+/).map(Number) : [0, 0, 612, 792];
+    }
+    const cm = /\/Contents\s+(\d+)\s+\d+\s+R/.exec(d);
+    let content = "";
+    if (cm && map[+cm[1]] != null){
+      content = (await _streamOf(u8, raw, map[+cm[1]])) || "";
+    } else {
+      const arr = /\/Contents\s*\[([^\]]+)\]/.exec(d);
+      if (arr){
+        for (const r of arr[1].matchAll(/(\d+)\s+\d+\s+R/g))
+          if (map[+r[1]] != null) content += (await _streamOf(u8, raw, map[+r[1]])) || "";
+      }
+    }
+    if (content) pages.push({ box, content });
+  }
+  return pages;
+}
+
+function _tokens(s){
+  const out = [];
+  const re = /\((?:\\.|[^\\()])*\)|<[0-9A-Fa-f\s]*>|\/[^\s\/\[\]<>()]+|[-+]?[0-9.]+|[A-Za-z'"*]+|\[|\]/g;
+  let m;
+  while ((m = re.exec(s))) out.push(m[0]);
+  return out;
+}
+
+function _pdfstr(t){
+  if (t[0] === "<") return t.slice(1, -1).replace(/\s/g, "")
+    .replace(/../g, h => String.fromCharCode(parseInt(h, 16)));
+  return t.slice(1, -1)
+    .replace(/\\(\d{1,3})/g, (_, o) => String.fromCharCode(parseInt(o, 8)))
+    .replace(/\\([()\\nrt])/g, (_, c) => ({ n: "\n", r: "\r", t: "\t" }[c] || c));
+}
+
+const _mul = (a, b) => [                       // 2x3 matrix concat, PDF order
+  a[0]*b[0] + a[1]*b[2],       a[0]*b[1] + a[1]*b[3],
+  a[2]*b[0] + a[3]*b[2],       a[2]*b[1] + a[3]*b[3],
+  a[4]*b[0] + a[5]*b[2] + b[4], a[4]*b[1] + a[5]*b[3] + b[5]];
+const _apply = (m, x, y) => [m[0]*x + m[2]*y + m[4], m[1]*x + m[3]*y + m[5]];
+
+// Execute one page's content stream into SVG markup.
+function pdfPageSvg(page, opt){
+  const [x0, y0, x1, y1] = page.box;
+  const W = x1 - x0, H = y1 - y0;
+  const esc = s => String(s).replace(/[&<>"]/g,
+    c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  let gs = { ctm: [1, 0, 0, 1, 0, 0], w: 1, fill: "#000", stroke: "#000",
+             size: 10, font: "Helvetica", tm: null, tlm: null };
+  const stack = [];
+  const out = [];
+  let path = [], cur = [0, 0], start = [0, 0];
+  // Clipping matters here: section hatching is drawn wide and clipped to the
+  // cut face, so without it the hatch bleeds across the sheet.
+  let pendingClip = false, clipId = 0;
+  let level = { groups: 0 };
+  const levels = [];
+
+  const P = (x, y) => { const p = _apply(gs.ctm, x, y); return [p[0] - x0, y1 - p[1]]; };
+  const num = t => parseFloat(t);
+  const scale = () => Math.sqrt(Math.abs(gs.ctm[0] * gs.ctm[3] - gs.ctm[1] * gs.ctm[2])) || 1;
+
+  const emit = (mode) => {
+    if (!path.length) return;
+    const d = path.join(" ");
+    const sw = Math.max(gs.w * scale(), 0.28);
+    if (mode === "f")
+      out.push(`<path d="${d}" fill="${gs.fill}" stroke="none"/>`);
+    else if (mode === "B")
+      out.push(`<path d="${d}" fill="${gs.fill}" stroke="${gs.stroke}" stroke-width="${sw.toFixed(2)}"/>`);
+    else
+      out.push(`<path d="${d}" fill="none" stroke="${gs.stroke}" stroke-width="${sw.toFixed(2)}"/>`);
+    path = [];
+  };
+
+  const gray = v => { const n = Math.round(v * 255); return `rgb(${n},${n},${n})`; };
+  const rgb  = (r, g, b) => `rgb(${Math.round(r*255)},${Math.round(g*255)},${Math.round(b*255)})`;
+
+  const showText = (s) => {
+    if (!gs.tm || !s) return;
+    const p = _apply(_mul(gs.tm, gs.ctm), 0, 0);
+    const sz = gs.size * scale() * Math.sqrt(Math.abs(gs.tm[0]*gs.tm[3] - gs.tm[1]*gs.tm[2]) || 1);
+    const fam = /Courier|Mono/i.test(gs.font) ? "monospace"
+              : /Times|Serif/i.test(gs.font)  ? "serif" : "sans-serif";
+    const bold = /Bold/i.test(gs.font) ? ' font-weight="bold"' : "";
+    const rot = Math.atan2(gs.tm[1], gs.tm[0]) * 180 / Math.PI;
+    const x = p[0] - x0, y = y1 - p[1];
+    const tr = Math.abs(rot) > 0.5 ? ` transform="rotate(${(-rot).toFixed(2)} ${x.toFixed(2)} ${y.toFixed(2)})"` : "";
+    out.push(`<text x="${x.toFixed(2)}" y="${y.toFixed(2)}" font-family="${fam}"${bold}`
+           + ` font-size="${sz.toFixed(2)}" fill="${gs.fill}"${tr}>${esc(s)}</text>`);
+    gs.tm = _mul([1, 0, 0, 1, sz * 0.5 * s.length / scale(), 0], gs.tm);
+  };
+
+  const tk = _tokens(page.content);
+  let st = [];
+  for (let i = 0; i < tk.length; i++){
+    const t = tk[i];
+    if (/^[-+]?[0-9.]+$/.test(t) || t[0] === "/" || t[0] === "(" || t[0] === "<"
+        || t === "[" || t === "]"){ st.push(t); continue; }
+    const n = st.map(num);
+    switch (t){
+      case "q": stack.push(Object.assign({}, gs)); levels.push(level); level = { groups: 0 }; break;
+      case "Q": for (let k = 0; k < level.groups; k++) out.push("</g>");
+                level = levels.pop() || { groups: 0 };
+                if (stack.length) gs = stack.pop(); break;
+      case "cm": gs.ctm = _mul(n.slice(-6), gs.ctm); break;
+      case "w": gs.w = n[n.length-1]; break;
+      case "m": { cur = [n[n.length-2], n[n.length-1]]; start = cur;
+                  const p = P(cur[0], cur[1]); path.push(`M${p[0].toFixed(2)} ${p[1].toFixed(2)}`); break; }
+      case "l": { cur = [n[n.length-2], n[n.length-1]];
+                  const p = P(cur[0], cur[1]); path.push(`L${p[0].toFixed(2)} ${p[1].toFixed(2)}`); break; }
+      case "c": { const a = P(n[0], n[1]), b = P(n[2], n[3]), c = P(n[4], n[5]);
+                  path.push(`C${a[0].toFixed(2)} ${a[1].toFixed(2)} ${b[0].toFixed(2)} ${b[1].toFixed(2)} ${c[0].toFixed(2)} ${c[1].toFixed(2)}`);
+                  cur = [n[4], n[5]]; break; }
+      case "v": { const b = P(n[0], n[1]), c = P(n[2], n[3]), a = P(cur[0], cur[1]);
+                  path.push(`C${a[0].toFixed(2)} ${a[1].toFixed(2)} ${b[0].toFixed(2)} ${b[1].toFixed(2)} ${c[0].toFixed(2)} ${c[1].toFixed(2)}`);
+                  cur = [n[2], n[3]]; break; }
+      case "y": { const a = P(n[0], n[1]), c = P(n[2], n[3]);
+                  path.push(`C${a[0].toFixed(2)} ${a[1].toFixed(2)} ${c[0].toFixed(2)} ${c[1].toFixed(2)} ${c[0].toFixed(2)} ${c[1].toFixed(2)}`);
+                  cur = [n[2], n[3]]; break; }
+      case "h": path.push("Z"); cur = start; break;
+      case "re": { const [rx, ry, rw, rh] = n.slice(-4);
+                   const a = P(rx, ry), b = P(rx+rw, ry), c = P(rx+rw, ry+rh), d = P(rx, ry+rh);
+                   path.push(`M${a[0].toFixed(2)} ${a[1].toFixed(2)}L${b[0].toFixed(2)} ${b[1].toFixed(2)}`
+                           + `L${c[0].toFixed(2)} ${c[1].toFixed(2)}L${d[0].toFixed(2)} ${d[1].toFixed(2)}Z`);
+                   break; }
+      case "n":
+        if (pendingClip && path.length){
+          const id = "clip" + (++clipId);
+          out.push(`<clipPath id="${id}"><path d="${path.join(" ")}"/></clipPath>`
+                 + `<g clip-path="url(#${id})">`);
+          level.groups++;
+        }
+        pendingClip = false; path = []; break;
+      case "S": emit("S"); break;
+      case "s": path.push("Z"); emit("S"); break;
+      case "f": case "F": case "f*": emit("f"); break;
+      case "B": case "B*": case "b": case "b*": emit("B"); break;
+      case "W": case "W*": pendingClip = true; break;
+      case "g":  gs.fill   = gray(n[n.length-1]); break;
+      case "G":  gs.stroke = gray(n[n.length-1]); break;
+      case "rg": gs.fill   = rgb(n[n.length-3], n[n.length-2], n[n.length-1]); break;
+      case "RG": gs.stroke = rgb(n[n.length-3], n[n.length-2], n[n.length-1]); break;
+      case "k":  gs.fill   = rgb(1-Math.min(1,n[0]+n[3]), 1-Math.min(1,n[1]+n[3]), 1-Math.min(1,n[2]+n[3])); break;
+      case "K":  gs.stroke = rgb(1-Math.min(1,n[0]+n[3]), 1-Math.min(1,n[1]+n[3]), 1-Math.min(1,n[2]+n[3])); break;
+      case "BT": gs.tm = [1,0,0,1,0,0]; gs.tlm = gs.tm; break;
+      case "ET": gs.tm = null; break;
+      case "Tf": { const f = st.filter(x => x[0] === "/").pop();
+                   if (f) gs.font = f.slice(1);
+                   gs.size = n[n.length-1] || gs.size; break; }
+      case "Td": gs.tlm = _mul([1,0,0,1,n[n.length-2],n[n.length-1]], gs.tlm || [1,0,0,1,0,0]);
+                 gs.tm = gs.tlm.slice(); break;
+      case "TD": gs.tlm = _mul([1,0,0,1,n[n.length-2],n[n.length-1]], gs.tlm || [1,0,0,1,0,0]);
+                 gs.tm = gs.tlm.slice(); break;
+      case "Tm": gs.tlm = n.slice(-6); gs.tm = gs.tlm.slice(); break;
+      case "T*": gs.tlm = _mul([1,0,0,1,0,-gs.size], gs.tlm || [1,0,0,1,0,0]);
+                 gs.tm = gs.tlm.slice(); break;
+      case "Tj": case "'": case '"': {
+        const s = st.filter(x => x[0] === "(" || x[0] === "<").pop();
+        if (t !== "Tj"){ gs.tlm = _mul([1,0,0,1,0,-gs.size], gs.tlm || [1,0,0,1,0,0]); gs.tm = gs.tlm.slice(); }
+        if (s) showText(_pdfstr(s));
+        break; }
+      case "TJ": {
+        let s = "";
+        for (const x of st) if (x[0] === "(" || x[0] === "<") s += _pdfstr(x);
+        showText(s); break; }
+      default: break;
+    }
+    st = [];
+  }
+  emit("S");
+  for (let k = 0; k < level.groups; k++) out.push("</g>");
+  while (levels.length){ const l = levels.pop(); for (let k = 0; k < l.groups; k++) out.push("</g>"); }
+  return { w: W, h: H,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W.toFixed(0)} ${H.toFixed(0)}" `
+       + `width="100%" style="background:#fff;height:auto" preserveAspectRatio="xMidYMid meet"><g stroke-linecap="round" stroke-linejoin="round">`
+       + out.join("") + `</g></svg>` };
+}
+
+if (false)
+  module.exports = { pdfPages, pdfPageSvg };
+
+// ── Office formats, rendered in the page ──────────────────────────────────
+// xlsx/docx/pptx are zips of XML. Nothing is downloaded and nothing is
+// embedded: the parts are unzipped in the browser and turned into DOM.
+
+function _e(s){
+  return String(s).replace(/[&<>]/g, function(x){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;"}[x]; });
+}
+function _u(s){
+  return s.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"')
+          .replace(/&apos;/g,"'")
+          .replace(/&#(\d+);/g, function(_,d){ return String.fromCharCode(+d); })
+          .replace(/&amp;/g,"&");
+}
+
+function gridTable(rows){
+  var w = 0, i;
+  for (i = 0; i < rows.length; i++)
+    if (rows[i] && rows[i].length > w) w = rows[i].length;
+  if (!w) return '<p class="vnote">This sheet is empty.</p>';
+  var h = '<div class="scroll"><table class="tbl">';
+  for (i = 0; i < rows.length; i++){
+    var row = rows[i] || [];
+    h += "<tr>";
+    for (var c = 0; c < w; c++){
+      var v = (row[c] == null) ? "" : String(row[c]);
+      h += i === 0 ? "<th>" + _e(v) + "</th>" : "<td>" + _e(v) + "</td>";
+    }
+    h += "</tr>";
+  }
+  return h + "</table></div>";
+}
+
+async function xlsxView(buf){
+  var sheets = await readXlsx(buf);
+  var names  = Object.keys(sheets);
+  if (!names.length) return '<p class="vnote">No sheets found in this workbook.</p>';
+  var h = '<div class="stabs">';
+  names.forEach(function(n,i){
+    h += '<button type="button" class="stab' + (i ? "" : " on") + '" data-i="' + i + '">'
+       + _e(n) + "</button>";
+  });
+  h += "</div>";
+  names.forEach(function(n,i){
+    h += '<div class="spane' + (i ? " hide" : "") + '" data-i="' + i + '">'
+       + gridTable(sheets[n] || []) + "</div>";
+  });
+  return h;
+}
+
+function _wt(frag){
+  var out = "", m, re = /<w:t(?:\s[^>]*)?>([\s\S]*?)<\/w:t>/g;
+  while ((m = re.exec(frag))) out += m[1];
+  return _u(out);
+}
+
+async function docxView(buf){
+  var f = await unzip(buf);
+  var raw = f["word/document.xml"];
+  if (!raw) return '<p class="vnote">No document part in this file.</p>';
+  var xml = new TextDecoder().decode(raw);
+  var bm  = /<w:body[^>]*>([\s\S]*)<\/w:body>/.exec(xml);
+  var src = bm ? bm[1] : xml, h = "", m;
+  var re = /<w:tbl\b[^>]*>[\s\S]*?<\/w:tbl>|<w:p\b[^>]*\/>|<w:p\b[^>]*>[\s\S]*?<\/w:p>/g;
+  while ((m = re.exec(src))){
+    var blk = m[0];
+    if (/^<w:tbl\b/.test(blk)){
+      h += '<div class="scroll"><table class="tbl">';
+      (blk.match(/<w:tr\b[^>]*>[\s\S]*?<\/w:tr>/g) || []).forEach(function(tr, ri){
+        h += "<tr>";
+        (tr.match(/<w:tc\b[^>]*>[\s\S]*?<\/w:tc>/g) || []).forEach(function(tc){
+          var t = _e(_wt(tc));
+          h += ri === 0 ? "<th>" + t + "</th>" : "<td>" + t + "</td>";
+        });
+        h += "</tr>";
+      });
+      h += "</table></div>";
+    } else {
+      var t = _wt(blk);
+      if (!t.trim()) continue;
+      // a heading is short, numbered, and is not a sentence
+      var head = t.length < 70 && /^\d+(\.\d+)*\.?\s+\S/.test(t) && !/[.;,:]$/.test(t);
+      h += head ? '<h3 class="dh">' + _e(t) + "</h3>"
+                : '<p class="dp">'  + _e(t) + "</p>";
+    }
+  }
+  return h || '<p class="vnote">This document has no readable text.</p>';
+}
+
+async function pptxView(buf){
+  var f = await unzip(buf);
+  var names = Object.keys(f)
+    .filter(function(n){ return /^ppt\/slides\/slide\d+\.xml$/.test(n); })
+    .sort(function(a,b){ return (+/(\d+)/.exec(a)[1]) - (+/(\d+)/.exec(b)[1]); });
+  if (!names.length) return '<p class="vnote">No slides found.</p>';
+  var h = "";
+  names.forEach(function(n,i){
+    var xml = new TextDecoder().decode(f[n]), lines = [], m;
+    var re = /<a:t>([\s\S]*?)<\/a:t>/g;
+    while ((m = re.exec(xml))){ var t = _u(m[1]); if (t.trim()) lines.push(t); }
+    h += '<div class="slide"><div class="sno">Slide ' + (i+1) + "</div>"
+       + lines.map(function(l,j){
+           return j === 0 ? '<h3 class="dh">' + _e(l) + "</h3>"
+                          : '<p class="dp">'  + _e(l) + "</p>";
+         }).join("")
+       + "</div>";
+  });
+  return h;
+}
+
+// Highlight the disputed strings without touching markup: walk text nodes only.
+function markDom(root, quotes){
+  if (!quotes || !quotes.length) return;
+  var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+  var nodes = [], n;
+  while ((n = walker.nextNode())) nodes.push(n);
+  nodes.forEach(function(t){
+    var s = t.nodeValue, hit = false;
+    quotes.forEach(function(q){ if (q && q.length >= 3 && s.indexOf(q) >= 0) hit = true; });
+    if (!hit) return;
+    var html = _e(s);
+    quotes.forEach(function(q){
+      if (!q || q.length < 3) return;
+      var re = new RegExp(_e(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g");
+      html = html.replace(re, '<span class="hl">' + _e(q) + "</span>");
+    });
+    var span = document.createElement("span");
+    span.innerHTML = html;
+    t.parentNode.replaceChild(span, t);
+  });
+}
+
+if (false)
+  module.exports = { gridTable, xlsxView, docxView, pptxView, markDom };
+
+// ── parse pasted AutoQC output into per-file claims ───────────────────────
+// The report is prose, so this looks for the three things it reliably names:
+// artifact IDs, filenames, and quoted or numeric assertions.
+
+function parseFindings(text){
+  var blocks = text.split(/\n(?=Finding #\d|\[P[01]\]|Major\b|Minor\b)/);
+  var out = [];
+  blocks.forEach(function(b){
+    if (!b.trim()) return;
+    var ids   = (b.match(/\bA\d{2}\b/g) || []);
+    var files = (b.match(/[A-Za-z0-9_\-\.]+\.(?:pdf|docx|xlsx|pptx|csv|html|eml)/g) || []);
+    var quoted= (b.match(/[“"]([^”"]{2,80})[”"]/g) || []).map(function(q){ return q.slice(1,-1); });
+    // "A12 and A13 are 7 and 8 pages", "have 2, 2, 3, and 4 pages"
+    var pageClaims = [];
+    var pm = /\b(?:are|is|have|has)\s+((?:\d+(?:,\s*|,?\s*and\s+|\s+)?)+)pages?\b/gi, m;
+    while ((m = pm.exec(b))) (m[1].match(/\d+/g)||[]).forEach(function(n){ pageClaims.push(+n); });
+    var sev = /major/i.test(b) ? "major" : (/minor/i.test(b) ? "minor" : "");
+    var title = (b.match(/Finding #\d+:\s*(.+)/) || [,""])[1].trim()
+             || b.trim().split("\n")[0].slice(0,90);
+    if (!ids.length && !files.length) return;
+    out.push({ title:title, sev:sev, text:b.trim(),
+               ids:[...new Set(ids)], files:[...new Set(files)],
+               quoted:[...new Set(quoted)], pageClaims:pageClaims });
+  });
+  return out;
+}
+
+// which of the mounted files does a finding point at?
+function targetsFor(f, recs, model){
+  var hit = new Set();
+  recs.forEach(function(r){
+    var base = r.name.toLowerCase();
+    var stem = base.replace(/\.[a-z0-9]+$/,"").replace(/_\d{4}-\d{2}(-\d{2})?$/,"");
+    f.files.forEach(function(n){
+      var nb = n.toLowerCase(), ns = nb.replace(/\.[a-z0-9]+$/,"").replace(/_\d{4}-\d{2}(-\d{2})?$/,"");
+      if (nb === base || ns === stem) hit.add(r.rel);
+    });
+    if (r.art && f.ids.indexOf(r.art.id) >= 0) hit.add(r.rel);
+  });
+  return [...hit];
+}
+if (false) module.exports = { parseFindings, targetsFor };
+
+// ── check the spec itself, not just the files it points at ────────────────
+// Everything here is computed from the four tabs plus the mounted folder.
+// A check either passes or lists the exact rows that fail it.
+
+function checkSpec(model, recs){
+  var A = model.artifacts, V = model.values, T = model.tasks;
+  var out = [];
+  var add = function(level, name, detail, items){
+    out.push({ level: level, name: name, detail: detail, items: items || [] });
+  };
+  var have = {};                       // rel path (lower) -> record
+  (recs || []).forEach(function(r){ have[norm(r.rel)] = r; });
+  var used = {};                       // artifact id -> why it is reachable
+
+  // ── registration ───────────────────────────────────────────────────────
+  var blank = [];
+  A.forEach(function(a){
+    var miss = [];
+    if (!String(a.name).trim()) miss.push("name");
+    if (!String(a.fmt).trim())  miss.push("format");
+    if (!String(a.loc).trim())  miss.push("location");
+    if (!String(a.desc).trim()) miss.push("description");
+    if (miss.length) blank.push(a.id + " — no " + miss.join(", "));
+  });
+  add(blank.length ? "fail" : "pass", "Every artifact is fully registered",
+      A.length + " artifacts, each needing a name, format, location and description", blank);
+
+  var seen = {}, dupId = [];
+  A.forEach(function(a){ if (seen[a.id]) dupId.push(a.id); seen[a.id] = 1; });
+  var nums = A.map(function(a){ return +a.id.slice(1); }).sort(function(x,y){ return x-y; });
+  var gaps = [];
+  for (var i = 1; i < nums.length; i++)
+    if (nums[i] - nums[i-1] > 1)
+      gaps.push("A" + String(nums[i-1]).padStart(2,"0") + " → A" + String(nums[i]).padStart(2,"0"));
+  add((dupId.length || gaps.length) ? "warn" : "pass", "Artifact IDs are unique and unbroken",
+      "IDs run A" + String(nums[0]||0).padStart(2,"0") + " to A" + String(nums[nums.length-1]||0).padStart(2,"0"),
+      dupId.map(function(d){ return "duplicate " + d; })
+        .concat(gaps.map(function(g){ return "gap " + g; })));
+
+  var locSeen = {}, dupLoc = [];
+  A.forEach(function(a){
+    var n = norm(a.loc); if (!n) return;
+    if (locSeen[n]) dupLoc.push(locSeen[n] + " and " + a.id + " both point at " + a.loc);
+    locSeen[n] = a.id;
+  });
+  add(dupLoc.length ? "fail" : "pass", "No two artifacts claim the same file",
+      "each Location should be claimed once", dupLoc);
+
+  // ── the spec against the mounted corpus ────────────────────────────────
+  if (recs && recs.length){
+    var missing = [], wrongFmt = [];
+    A.forEach(function(a){
+      if (!a.loc) return;
+      var r = have[norm(a.loc)] || null;
+      if (!r){
+        var base = norm(a.loc).split("/").pop();
+        var hits = (recs || []).filter(function(x){ return norm(x.rel).split("/").pop() === base; });
+        r = hits.length === 1 ? hits[0] : null;
+        if (r) missing.push(a.id + " — found as " + r.rel + ", registered as " + a.loc);
+      }
+      if (!r){ missing.push(a.id + " — nothing at " + a.loc); return; }
+      var ext = (r.name.split(".").pop() || "").toLowerCase();
+      var f   = String(a.fmt).toLowerCase();
+      if (f && ext && f.indexOf(ext) < 0 && ext.indexOf(f) < 0)
+        wrongFmt.push(a.id + " — registered " + a.fmt + ", file is ." + ext);
+    });
+    add(missing.length ? "fail" : "pass", "Every registered Location resolves to a file",
+        A.length + " locations checked against the mounted folder", missing);
+    add(wrongFmt.length ? "warn" : "pass", "Registered format matches the file on disk",
+        "Format column against the file extension", wrongFmt);
+
+    var claimed = {};
+    A.forEach(function(a){ if (a.loc) claimed[norm(a.loc)] = 1; });
+    var extra = (recs || []).filter(function(r){ return !claimed[norm(r.rel)]; })
+                            .map(function(r){ return r.rel; });
+    add(extra.length ? "warn" : "pass", "Every mounted file is registered",
+        recs.length + " files in the folder, " + A.length + " registered in the spec", extra);
+  }
+
+  // ── canonical values ───────────────────────────────────────────────────
+  var noSrc = [], badSrc = [], selfAttr = [], badMust = [];
+  V.forEach(function(v){
+    var label = '"' + String(v.name).slice(0,54) + '"';
+    if (!v.src) { noSrc.push(label + " — no source artifact"); return; }
+    if (!model.byId[v.src]) badSrc.push(label + " — source " + v.src + " is not an artifact");
+    else used[v.src] = 1;
+    if (v.must.indexOf(v.src) >= 0)
+      selfAttr.push(label + " — " + v.src + " is both its source and in must-match");
+    v.must.forEach(function(id){
+      if (!model.byId[id]) badMust.push(label + " — must-match " + id + " is not an artifact");
+      else used[id] = 1;
+    });
+  });
+  add(noSrc.length ? "fail" : "pass", "Every canonical value names a source artifact",
+      V.length + " values", noSrc);
+  add((badSrc.length || badMust.length) ? "fail" : "pass",
+      "Value references point at artifacts that exist",
+      "source and must-match IDs resolved against tab ④", badSrc.concat(badMust));
+  add(selfAttr.length ? "fail" : "pass", "No value is its own corroborator",
+      "the source artifact must not also appear in its must-match list", selfAttr);
+
+  var oneWitness = V.filter(function(v){ return v.src && v.must.length === 0; })
+                    .map(function(v){ return '"' + String(v.name).slice(0,54) + '" — only ' + v.src; });
+  add(oneWitness.length ? "warn" : "pass", "Values are carried by more than one artifact",
+      "a value appearing in a single file cannot be cross-checked", oneWitness);
+
+  // ── tasks ──────────────────────────────────────────────────────────────
+  var noEv = [], badEv = [];
+  T.forEach(function(t){
+    if (!t.files.length){ noEv.push(t.id + " — no evidence files"); return; }
+    t.files.forEach(function(id){
+      if (!model.byId[id]) badEv.push(t.id + " — evidence " + id + " is not an artifact");
+      else used[id] = 1;
+    });
+  });
+  add(noEv.length ? "fail" : "pass", "Every task names its evidence",
+      T.length + " tasks", noEv);
+  add(badEv.length ? "fail" : "pass", "Task evidence points at artifacts that exist",
+      "evidence IDs resolved against tab ④", badEv);
+
+  var taskIds = {}; T.forEach(function(t){ taskIds[t.id] = 1; });
+  var badTask = [];
+  A.forEach(function(a){
+    a.tasks.forEach(function(tid){
+      if (!taskIds[tid]) badTask.push(a.id + " — names task " + tid + ", which is not in tab ③");
+      else used[a.id] = 1;
+    });
+    a.rel.forEach(function(id){
+      if (model.byId[id]) used[id] = 1;
+      else badTask.push(a.id + " — related artifact " + id + " does not exist");
+    });
+  });
+  add(badTask.length ? "fail" : "pass", "Artifact cross-references resolve",
+      "task and related-artifact IDs on tab ④", badTask);
+
+  var orphans = A.filter(function(a){ return !used[a.id]; })
+                 .map(function(a){ return a.id + " — " + String(a.name).slice(0,58); });
+  add(orphans.length ? "warn" : "pass", "Every artifact is reachable",
+      "an artifact no value, task or relation refers to is doing no work", orphans);
+
+  // ── traps and anchors ──────────────────────────────────────────────────
+  var isTrap = function(a){ return a.trap && !/^none\.?$/i.test(a.trap); };
+  var traps  = A.filter(isTrap);
+  var thin   = traps.filter(function(a){ return String(a.trap).trim().length < 40; })
+                    .map(function(a){ return a.id + " — trap noted in " + String(a.trap).trim().length + " characters"; });
+  add(thin.length ? "warn" : "pass", "Registered traps are described, not just flagged",
+      traps.length + " artifacts carry a trap", thin);
+
+  var noAnchor = A.filter(function(a){ return !String(a.anchor||"").trim(); })
+                  .map(function(a){ return a.id + " — " + String(a.name).slice(0,58); });
+  add(noAnchor.length ? "warn" : "pass", "Artifacts name a reference anchor",
+      A.length - noAnchor.length + " of " + A.length + " carry an anchor", noAnchor);
+
+  return out;
+}
+
+if (false) module.exports = { checkSpec };
+
+// ── an append-only record of what was done in this bench ──────────────────
+// Kept per corpus folder, survives reload, and is never rewritten in place:
+// a correction is a new entry, so the sequence of decisions stays readable.
+
+var LOGK = "", LOG = [];
+
+function logKey(root){ return "benchlog:" + root; }
+
+function logLoad(root){
+  LOGK = logKey(root);
+  try { LOG = JSON.parse(localStorage.getItem(LOGK) || "[]"); } catch (e) { LOG = []; }
+  if (!Array.isArray(LOG)) LOG = [];
+}
+
+function logSave(){
+  try { localStorage.setItem(LOGK, JSON.stringify(LOG.slice(-4000))); } catch (e) {}
+}
+
+// kind: what happened. what: the file or subject. from/to: a changed value.
+function logEvent(kind, what, from, to, extra){
+  if (!LOGK) return;
+  var e = { t: Date.now(), kind: kind };
+  if (what  != null && what  !== "") e.what  = String(what);
+  if (from  != null && from  !== "") e.from  = String(from);
+  if (to    != null && to    !== "") e.to    = String(to);
+  if (extra != null && extra !== "") e.extra = String(extra);
+  LOG.push(e);
+  logSave();
+}
+
+function logStamp(ms){
+  var d = new Date(ms), p = function(n){ return String(n).padStart(2,"0"); };
+  return d.getFullYear() + "-" + p(d.getMonth()+1) + "-" + p(d.getDate())
+       + " " + p(d.getHours()) + ":" + p(d.getMinutes()) + ":" + p(d.getSeconds());
+}
+
+var LOGWORD = {
+  session:  "session started",
+  spec:     "spec loaded",
+  anchors:  "anchors loaded",
+  folder:   "folder opened",
+  open:     "opened",
+  trace:    "traced",
+  mark:     "mark",
+  note:     "note",
+  findings: "findings pasted",
+  cite:     "findings viewed",
+  speccheck:"spec checked",
+  report:   "report built",
+  handover: "handed to desktop app",
+  reset:    "marks cleared"
+};
+
+function logLine(e){
+  var s = logStamp(e.t) + "  " + (LOGWORD[e.kind] || e.kind);
+  if (e.what) s += "  " + e.what;
+  if (e.from || e.to) s += "  [" + (e.from || "—") + " → " + (e.to || "—") + "]";
+  if (e.extra) s += "  " + e.extra;
+  return s;
+}
+
+function logText(root){
+  var head = "VERIFICATION BENCH — ACTIVITY LOG\n"
+           + (root ? root + "\n" : "")
+           + "written " + logStamp(Date.now()) + "\n"
+           + LOG.length + " entries\n"
+           + new Array(74).join("=") + "\n\n";
+  return head + LOG.map(logLine).join("\n") + "\n";
+}
+
+// A short reverse-chronological summary: how many of each kind, and when.
+function logSummary(){
+  var by = {}, first = null, last = null;
+  LOG.forEach(function(e){
+    by[e.kind] = (by[e.kind] || 0) + 1;
+    if (first === null || e.t < first) first = e.t;
+    if (last  === null || e.t > last)  last  = e.t;
+  });
+  return { counts: by, first: first, last: last, n: LOG.length };
+}
+
+if (false)
+  module.exports = { logLoad, logEvent, logText, logSummary, logLine, logStamp };
+
+// ── the bench ─────────────────────────────────────────────────────────────
+(function(){
+"use strict";
+var $ = function(id){ return document.getElementById(id); };
+var esc = function(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){
+  return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); };
+
+var ANCH={files:[],map:{},used:{},name:""};   // the reference-anchor folder
+var SPECKEY="bench:spec";
+var FIND=[], CITED={};   // pasted AutoQC findings, and rel -> [finding index]
+
+function cacheSpec(name,m){
+  try{ localStorage.setItem(SPECKEY, JSON.stringify(
+    {name:name, artifacts:m.artifacts, values:m.values, tasks:m.tasks})); }catch(e){}
+}
+function loadCachedSpec(){
+  try{
+    var raw=localStorage.getItem(SPECKEY); if(!raw) return null;
+    var d=JSON.parse(raw);
+    var byId={}; d.artifacts.forEach(function(a){ byId[a.id]=a; });
+    var byLoc={}; d.artifacts.forEach(function(a){
+      if(a.loc) byLoc[String(a.loc).replace(/^\/+/,"").toLowerCase()]=a; });
+    return {name:d.name, model:{artifacts:d.artifacts, values:d.values, tasks:d.tasks,
+                                byId:byId, byLoc:byLoc}};
+  }catch(e){ return null; }
+}
+
+var MODEL=null, recs=[], rootName="", S={}, K="", hasFSA=typeof window.showDirectoryPicker==="function";
+function anchorFor(id){ return ANCH.map[id] || null; }
+function remapAnchors(){
+  if(!MODEL||!ANCH.files.length) return;
+  var r=matchAnchors(MODEL.artifacts,ANCH.files);
+  ANCH.map={}; Object.keys(r.map).forEach(function(k){ if(r.map[k]) ANCH.map[k]=r.map[k].file; });
+  ANCH.used=r.used;
+}
+
+/* ---------- step 1: the spec ---------- */
+$("pickspec").addEventListener("click", function(){ $("specfile").click(); });
+(function(){
+  var c=loadCachedSpec(); if(!c) return;
+  MODEL=c.model;
+  if(typeof LOGK!=="undefined"&&LOGK) logEvent("spec",c.name||"world spec");
+  $("step1").classList.add("done");
+  $("specok").classList.remove("hide");
+  $("specok").textContent="remembered "+c.name+" — "+MODEL.artifacts.length+" artifacts, "
+    + MODEL.values.length+" registered values, "+MODEL.tasks.length
+    + " tasks. Choose the spec again to replace it.";
+})();
+$("skipspec").addEventListener("click", function(){
+  $("step1").classList.add("done");
+  $("specok").classList.remove("hide");
+  $("specok").textContent = "skipped — tracing will be unavailable";
+});
+$("specfile").addEventListener("change", function(e){
+  var f=e.target.files[0]; if(!f) return;
+  f.arrayBuffer().then(readXlsx).then(function(sheets){
+    var need=["② Canonical Values","③ Tasks","④ Artifacts"];
+    var missing=need.filter(function(n){ return !sheets[n]; });
+    if (missing.length) throw new Error("that workbook has no "+missing.join(" / ")+" tab");
+    MODEL = buildModel(sheets);
+    cacheSpec(f.name, MODEL);
+    $("step1").classList.add("done");
+    $("specok").classList.remove("hide");
+    $("specok").textContent = "read "+f.name+" — "+MODEL.artifacts.length+" artifacts, "
+      + MODEL.values.length+" registered values, "+MODEL.tasks.length+" tasks";
+    remapAnchors();
+    if (recs.length) build();
+  }).catch(function(err){
+    $("specok").classList.remove("hide");
+    $("specok").style.color="var(--oxide)";
+    $("specok").textContent = "could not read that file: "+err.message;
+  });
+});
+
+
+/* ---------- step 2: the anchor folder ---------- */
+$("pickanch").addEventListener("click", chooseAnchors);
+$("skipanch").addEventListener("click", function(){
+  $("step2a").classList.add("done");
+  $("anchok").classList.remove("hide");
+  $("anchok").textContent="skipped — the trace will name references but cannot open them";
+});
+$("anchnative").addEventListener("change", function(e){
+  var fs=Array.prototype.slice.call(e.target.files||[]); if(!fs.length) return;
+  adoptAnchors((fs[0].webkitRelativePath||fs[0].name).split("/")[0],
+    fs.filter(function(f){ return f.name.charAt(0)!=="."; })
+      .map(function(f){ return {name:f.name, rel:f.name, file:f}; }));
+});
+function chooseAnchors(){
+  if(hasFSA){
+    window.showDirectoryPicker({mode:"read"}).then(function(dh){
+      var out=[];
+      walk(dh,"",out).then(function(){
+        adoptAnchors(dh.name,out.map(function(r){ return {name:r.name, rel:r.rel, handle:r.handle}; }));
+      });
+    }).catch(function(err){ if(err&&err.name==="AbortError") return; $("anchnative").click(); });
+  } else $("anchnative").click();
+}
+function adoptAnchors(name,files){
+  ANCH.files=files; ANCH.name=name; remapAnchors();
+  var linked=Object.keys(ANCH.map).length;
+  $("step2a").classList.add("done");
+  $("anchok").classList.remove("hide");
+  $("anchok").textContent="read "+name+" — "+files.length+" documents, "+linked+" linked to a spec artifact";
+  if(recs.length) build();
+}
+
+/* ---------- step 3: the folder ---------- */
+$("pick").addEventListener("click", choose);
+$("repick").addEventListener("click", choose);
+$("alt").addEventListener("click", function(){ $("native").click(); });
+$("native").addEventListener("change", function(e){
+  var fs=Array.prototype.slice.call(e.target.files||[]); if(!fs.length) return;
+  var root=(fs[0].webkitRelativePath||fs[0].name).split("/")[0], out=[];
+  fs.forEach(function(f){
+    var p=f.webkitRelativePath||f.name;
+    var rel=p.indexOf("/")>=0?p.slice(p.indexOf("/")+1):p;
+    if (rel.split("/").some(function(s){return s.charAt(0)==="."})) return;
+    out.push({rel:rel,name:f.name,size:f.size,file:f});
+  });
+  adopt(root,out);
+});
+function choose(){
+  if (hasFSA){
+    window.showDirectoryPicker({mode:"read"}).then(function(dh){
+      var out=[];
+      walk(dh,"",out).then(function(){
+        return Promise.all(out.map(function(r){
+          return r.handle.getFile().then(function(f){ r.size=f.size; }); }));
+      }).then(function(){ adopt(dh.name,out); })
+        .catch(function(err){ note("Could not read that folder: "+err.message); });
+    }).catch(function(err){ if(err&&err.name==="AbortError") return; $("native").click(); });
+  } else $("native").click();
+}
+function walk(dir,base,out){
+  var it=dir.values();
+  function step(){
+    return it.next().then(function(res){
+      if (res.done) return;
+      var h=res.value;
+      if (h.name.charAt(0)===".") return step();
+      var rel=base?base+"/"+h.name:h.name;
+      if (h.kind==="directory") return walk(h,rel,out).then(step);
+      out.push({rel:rel,name:h.name,handle:h});
+      return step();
+    });
+  }
+  return step();
+}
+function adopt(root,out){
+  if(!out.length){ note("That folder has no readable files in it."); return; }
+  out.sort(function(a,b){ return a.rel.localeCompare(b.rel,undefined,{numeric:true}); });
+  out.forEach(function(r){ var i=r.rel.lastIndexOf("/"); r.dir=i<0?"":r.rel.slice(0,i); });
+  recs=out; rootName=root; K="bench:"+root;
+  logLoad(root);
+  logEvent("session","",null,null,out.length+" files");
+  try{ S=JSON.parse(localStorage.getItem(K)||"{}"); }catch(e){ S={}; }
+  var live={}; recs.forEach(function(r){ live[r.rel]=1; });
+  Object.keys(S).forEach(function(k){ if(!live[k]) delete S[k]; });
+  $("step2").classList.add("done");
+  $("folderok").classList.remove("hide");
+  $("folderok").textContent = "read "+root+" — "+out.length+" files";
+  build();
+}
+function note(m){ $("mode").innerHTML="<b>"+esc(m)+"</b>"; }
+function fmtSize(n){ return n==null?"":n.toLocaleString()+" B"; }
+
+/* ---------- the list ---------- */
+function build(){
+  var byDir={}, order=[];
+  recs.forEach(function(r){
+    r.art = MODEL ? matchArtifact(MODEL,r.rel) : null;
+    if(!byDir[r.dir]){ byDir[r.dir]=[]; order.push(r.dir); }
+    byDir[r.dir].push(r);
+  });
+  var html="";
+  order.forEach(function(d,gi){
+    var rows=byDir[d];
+    html+='<div class="fold" data-g="'+gi+'"><span class="tw">▾</span><span>'+esc(d||"top level")
+        + '</span><span class="cnt">'+rows.length+(rows.length===1?" file":" files")+'</span></div>';
+    rows.forEach(function(r){
+      var ext=(r.name.indexOf(".")>0?r.name.split(".").pop():"file").toLowerCase();
+      var cited=CITED[r.rel];
+      html+='<div class="f'+(cited?" cited":"")+'" data-rel="'+esc(r.rel)+'" data-g="'+gi+'" data-q="'
+          + esc((r.rel+" "+r.name+" "+(r.art?r.art.id+" "+r.art.name:"")).toLowerCase())+'">'
+          + '<div class="fh">'+(r.art?'<span class="aid">'+esc(r.art.id)+'</span>':'')
+          + (cited?'<span class="cite" data-cite="'+esc(r.rel)+'">cited '+cited.length+'</span>':'')
+          + '<span class="fn">'+esc(r.name)+'</span><span class="fmt">'+esc(ext)+'</span>'
+          + '<span class="sz">'+fmtSize(r.size)+'</span></div>'
+          + '<div class="pth">'+esc(r.rel)+'</div>'
+          + '<div class="act"><button class="open">Open</button>'
+          + '<button class="trace"'+(r.art?'':' disabled title="the spec does not map this file"')+'>Trace</button>'
+          + '<button data-v="ok">Looks right</button><button data-v="issue">Issue</button>'
+          + '<button data-v="na">Skip</button>'
+          + '<textarea rows="1" placeholder="Note (optional)"></textarea></div></div>';
+    });
+  });
+  $("groups").innerHTML=html;
+  var total=recs.reduce(function(a,r){ return a+(r.size||0); },0);
+  var mapped=recs.filter(function(r){ return r.art; }).length;
+  $("rootline").innerHTML="<b>"+esc(rootName)+"</b><span>"+recs.length+" files · "+fmtSize(total)+"</span>"
+    + (MODEL?'<span class="spec">'+mapped+" of "+recs.length+" mapped to a spec artifact</span>"
+            :'<span class="spec">no spec loaded — tracing off</span>')
+    + (ANCH.files.length?'<span class="spec">anchors: '+esc(ANCH.name)+' · '
+        +Object.keys(ANCH.map).length+' linked</span>':'');
+  ["steps"].forEach(function(i){ if(recs.length) $(i).classList.add("hide"); });
+  ["bar","srch","groups","foot","rootline"].forEach(function(i){ $(i).classList.remove("hide"); });
+  note(location.protocol==="file:"
+    ? "Open shows each file in a panel on this page; Word, Excel and PowerPoint are handed to their own application."
+    : "Open shows text, CSV, HTML and images in a panel. PDFs show their recovered text only — this hosted page cannot embed a document, so for page layout use the copy at Verification Bench.html on your own machine.");
+  wire(); paint();
+}
+
+/* ---------- interaction ---------- */
+function wire(){
+  var g=$("groups");
+  g.onclick=function(e){
+    var fold=e.target.closest(".fold");
+    if(fold){ var gi=fold.dataset.g, shut=fold.classList.toggle("shut");
+      g.querySelectorAll('.f[data-g="'+gi+'"]').forEach(function(f){ f.classList.toggle("shut",shut);
+        f.style.display=shut?"none":""; });
+      return; }
+    var chip=e.target.closest(".cite");
+    if(chip){ logEvent("cite",chip.dataset.cite); showCite(chip.dataset.cite); return; }
+    var b=e.target.closest("button"); if(!b) return;
+    var row=b.closest(".f"), rel=row.dataset.rel;
+    if(b.classList.contains("open")){ logEvent("open",rel); return openOne(rel); }
+    if(b.classList.contains("trace")){ logEvent("trace",rel); return showTrace(rel); }
+    var v=b.dataset.v; if(!v) return;
+    var st=S[rel]||(S[rel]={});
+    var was=st.v||"";
+    st.v = st.v===v ? null : v; if(!st.v) delete st.v;
+    logEvent("mark",rel,was,st.v||"cleared");
+    save(); paint();
+  };
+  g.oninput=function(e){
+    var ta=e.target.closest("textarea"); if(!ta) return;
+    var rel=ta.closest(".f").dataset.rel, st=S[rel]||(S[rel]={});
+    var was=ta._was!==undefined?ta._was:(st.note||"");
+    if(ta._was===undefined) ta._was=was;
+    st.note=ta.value; if(!st.note) delete st.note;
+    ta.rows=ta.value.length>70?3:1; save();
+    clearTimeout(ta._lt);
+    ta._lt=setTimeout(function(){
+      if((st.note||"")!==ta._was){ logEvent("note",rel,ta._was,st.note||"cleared"); ta._was=st.note||""; }
+    },1200);
+  };
+  $("jump").onclick=function(){
+    var rows=Array.prototype.slice.call($("groups").querySelectorAll(".f"));
+    var next=rows.filter(function(f){ return f.style.display!=="none" && !f.classList.contains("hide")
+      && !(S[f.dataset.rel]||{}).v; })[0];
+    if(next) next.scrollIntoView({behavior:"smooth",block:"center"}); else note("Every visible file is marked.");
+  };
+  $("reset").onclick=function(){ if(!confirm("Clear every mark and note for "+rootName+"?")) return;
+    var n=Object.keys(S).length; S={}; save(); paint();
+  logEvent("reset","",n+" files had marks",""); };
+  $("export").onclick=function(){ report(); logEvent("report"); };
+  $("paste").onclick=pasteFindings;
+  $("speccheck").onclick=showSpecCheck;
+  $("log").onclick=showLog;
+  var fl=$("filter");
+  fl.oninput=function(){ applyFilter(fl.value); };
+  $("clearq").onclick=function(){ fl.value=""; applyFilter(""); fl.focus(); };
+}
+function save(){ try{ localStorage.setItem(K,JSON.stringify(S)); }catch(e){} }
+function paint(){
+  var done=0, iss=0;
+  $("groups").querySelectorAll(".f").forEach(function(f){
+    var st=S[f.dataset.rel]||{};
+    f.querySelectorAll('.act button[data-v]').forEach(function(b){ b.classList.toggle("on",b.dataset.v===st.v); });
+    var ta=f.querySelector("textarea");
+    if(document.activeElement!==ta){ ta.value=st.note||""; ta.rows=(st.note||"").length>70?3:1; }
+    f.classList.toggle("done",st.v==="ok"); f.classList.toggle("flag",st.v==="issue");
+    if(st.v) done++; if(st.v==="issue") iss++;
+  });
+  $("pbar").style.width=(recs.length?done/recs.length*100:0)+"%";
+  $("stat").textContent=done+" of "+recs.length+(iss?"  ·  "+iss+" flagged":"");
+}
+function applyFilter(q){
+  q=q.trim().toLowerCase(); $("clearq").hidden=!q; var shown=0;
+  $("groups").querySelectorAll(".f").forEach(function(f){
+    var hit=!q||f.dataset.q.indexOf(q)>=0;
+    f.classList.toggle("hide",!hit); if(hit) shown++;
+  });
+  $("groups").querySelectorAll(".fold").forEach(function(fold){
+    var any=$("groups").querySelector('.f[data-g="'+fold.dataset.g+'"]:not(.hide)');
+    fold.classList.toggle("hide",!any);
+  });
+  $("hits").textContent=q?shown+(shown===1?" file":" files"):"";
+  $("nohit").classList.toggle("hide",!(q&&shown===0));
+}
+function showSpecCheck(){
+  if(!MODEL){ note("No spec is loaded \u2014 choose the World Spec first."); return; }
+  var res=checkSpec(MODEL,recs);
+  logEvent("speccheck","",null,null,
+    res.filter(function(r){return r.level==="pass";}).length+" pass, "
+    +res.filter(function(r){return r.level==="warn";}).length+" look, "
+    +res.filter(function(r){return r.level==="fail";}).length+" fail");
+  var pass=res.filter(function(r){return r.level==="pass";}).length;
+  var fail=res.filter(function(r){return r.level==="fail";}).length;
+  var warn=res.filter(function(r){return r.level==="warn";}).length;
+  var sc=document.createElement("div"); sc.className="scrim";
+  var h='<div class="panel viewer"><button class="close" id="scclose">Close</button>'
+      + '<h2>The spec, checked against itself</h2>'
+      + '<p class="sub">'+MODEL.artifacts.length+' artifacts \u00b7 '+MODEL.values.length
+      + ' canonical values \u00b7 '+MODEL.tasks.length+' tasks'
+      + (recs.length?' \u00b7 '+recs.length+' files mounted':' \u00b7 no folder chosen, file checks skipped')+'</p>'
+      + '<p class="scsum"><span class="sctag pass">'+pass+' pass</span>'
+      + '<span class="sctag warn">'+warn+' to look at</span>'
+      + '<span class="sctag fail">'+fail+' fail</span></p>';
+  res.forEach(function(r){
+    h+='<div class="scrow '+r.level+'"><div class="schead"><span class="sctag '+r.level+'">'
+     + (r.level==="pass"?"pass":r.level==="warn"?"look":"fail")+'</span>'
+     + '<b>'+esc(r.name)+'</b></div><p class="scdet">'+esc(r.detail)+'</p>';
+    if(r.items.length){
+      h+='<ul class="sclist">'+r.items.slice(0,200).map(function(x){
+        return "<li>"+esc(x)+"</li>"; }).join("")+'</ul>';
+      if(r.items.length>200) h+='<p class="scdet">'+(r.items.length-200)+' more not listed</p>';
+    }
+    h+='</div>';
+  });
+  sc.innerHTML=h+'</div>';
+  sc.addEventListener("click",function(e){ if(e.target===sc||e.target.id==="scclose") sc.remove(); });
+  document.addEventListener("keydown",function k(e){
+    if(e.key==="Escape"){ sc.remove(); document.removeEventListener("keydown",k); } });
+  document.body.appendChild(sc);
+}
+function showLog(){
+  if(!LOGK){ note("Choose the corpus folder first \u2014 the log is kept per folder."); return; }
+  var s=logSummary();
+  var sc=document.createElement("div"); sc.className="scrim";
+  var h='<div class="panel viewer"><button class="close" id="lgclose">Close</button>'
+      + '<h2>Activity log</h2><p class="sub">'+esc(rootName)+'</p>';
+  if(!LOG.length){
+    h+='<p class="vnote">Nothing recorded yet. Marks, notes, opens, traces, pasted '
+     + 'findings and spec checks are all appended here as they happen.</p>';
+  } else {
+    h+='<p class="scsum"><span class="sctag pass">'+s.n+' entries</span>'
+     + '<span class="sctag warn">'+logStamp(s.first)+'</span>'
+     + '<span class="sctag warn">to '+logStamp(s.last)+'</span></p>'
+     + '<p class="vnote"><button type="button" class="dbtn" id="lgcopy">Copy the log</button> '
+     + '<button type="button" class="dbtn" id="lgclear">Clear</button></p>'
+     + '<div class="scroll"><table class="tbl"><tr><th>when</th><th>what</th>'
+     + '<th>subject</th><th>change</th></tr>';
+    for(var i=LOG.length-1;i>=0;i--){
+      var e=LOG[i];
+      h+='<tr><td class="k">'+esc(logStamp(e.t))+'</td><td>'+esc(LOGWORD[e.kind]||e.kind)+'</td>'
+       + '<td class="k">'+esc(e.what||"")+'</td><td>'
+       + esc((e.from||e.to)?((e.from||"\u2014")+" \u2192 "+(e.to||"\u2014")):(e.extra||""))
+       + '</td></tr>';
+    }
+    h+='</table></div>';
+  }
+  sc.innerHTML=h+'</div>';
+  sc.addEventListener("click",function(e){ if(e.target===sc||e.target.id==="lgclose") sc.remove(); });
+  document.addEventListener("keydown",function k(e){
+    if(e.key==="Escape"){ sc.remove(); document.removeEventListener("keydown",k); } });
+  document.body.appendChild(sc);
+  var cp=sc.querySelector("#lgcopy");
+  if(cp) cp.onclick=function(){
+    var t=logText(rootName);
+    if(navigator.clipboard) navigator.clipboard.writeText(t);
+    cp.textContent="Copied \u2014 "+LOG.length+" entries";
+  };
+  var cl=sc.querySelector("#lgclear");
+  if(cl) cl.onclick=function(){
+    if(!confirm("Clear the activity log for "+rootName+"? This cannot be undone.")) return;
+    LOG=[]; logSave(); sc.remove(); showLog();
+  };
+}
+function openOne(rel){
+  var r=recs.filter(function(x){ return x.rel===rel; })[0]; if(!r) return;
+  var ext=(r.name.split(".").pop()||"").toLowerCase();
+  // Legacy binary Office has no readable XML — it can only be handed to an app.
+  var BINARY={xls:1,doc:1,ppt:1};
+  (r.file?Promise.resolve(r.file):r.handle.getFile()).then(function(f){
+    // Running locally, a PDF is better handed to whatever the machine opens PDFs
+    // with — layout is the thing being checked, and a real reader shows it.
+    if(BINARY[ext]) return location.protocol==="file:" ? handover(r,f) : offline(r,ext);
+    return show(r,f,ext);
+  }).catch(function(err){ note("Could not open "+r.name+": "+err.message); });
+}
+function handover(r,f){
+  logEvent("handover",r.rel);
+  var u=URL.createObjectURL(f), a=document.createElement("a");
+  a.href=u; a.download=r.name; document.body.appendChild(a); a.click(); a.remove();
+  note("Handed over "+r.name+" \u2014 it will open in whatever application this machine "
+     + "uses for that format. If your browser saves it instead of opening it, turn off "
+     + "\u201cAsk where to save each file\u201d, or set the browser to open downloads.");
+  setTimeout(function(){ URL.revokeObjectURL(u); },60000);
+}
+function deskNote(kind){
+  return location.protocol==="file:"
+    ? '<p class="vnote"><button type="button" class="dbtn" id="vdesk">Open in the desktop '
+      + 'application</button> \u2014 for fonts, column widths and fills.</p>'
+    : '<p class="vnote">Rendered here from the file itself. '+kind+' are exact; fonts, '
+      + 'column widths and colour fills are not shown.</p>';
+}
+function wireView(box,r,f){
+  var d=box.querySelector("#vdesk");
+  if(d) d.addEventListener("click",function(){ handover(r,f); });
+  Array.prototype.forEach.call(box.querySelectorAll(".stab"),function(b){
+    b.addEventListener("click",function(){
+      Array.prototype.forEach.call(box.querySelectorAll(".stab"),function(x){ x.classList.remove("on"); });
+      b.classList.add("on");
+      Array.prototype.forEach.call(box.querySelectorAll(".spane"),function(p){
+        p.classList.toggle("hide", p.getAttribute("data-i")!==b.getAttribute("data-i"));
+      });
+    });
+  });
+  markDom(box, rel_quotes(r));
+}
+
+// Nothing is embedded: the CSP blocks blob: in a frame, so each format is
+// turned into DOM in the page instead.
+function rel_quotes(r){
+  var qs=[]; (CITED[r.rel]||[]).forEach(function(i){ qs=qs.concat(FIND[i].quoted); });
+  return qs;
+}
+function mark(html,quotes){
+  quotes.forEach(function(q){
+    if(!q || q.length<3) return;
+    var re=new RegExp(esc(q).replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),"g");
+    html=html.replace(re,'<span class="hl">'+esc(q)+'</span>');
+  });
+  return html;
+}
+function show(r,f,ext){
+  var sc=document.createElement("div"); sc.className="scrim";
+  sc.innerHTML='<div class="panel viewer"><button class="close" id="vclose">Close</button>'
+    + '<h2>'+esc(r.name)+'</h2><p class="sub">'+esc(r.rel)+'</p>'
+    + '<div id="vbody" class="vbody">reading…</div></div>';
+  sc.addEventListener("click",function(e){ if(e.target===sc||e.target.id==="vclose") sc.remove(); });
+  document.addEventListener("keydown",function k(e){
+    if(e.key==="Escape"){ sc.remove(); document.removeEventListener("keydown",k); } });
+  document.body.appendChild(sc);
+  var box=sc.querySelector("#vbody");
+
+  if(/^(png|jpg|jpeg|gif|webp|svg)$/.test(ext)){
+    var fr=new FileReader();
+    fr.onload=function(){ box.innerHTML='<img alt="'+esc(r.name)+'" src="'+fr.result+'">'; };
+    fr.readAsDataURL(f); return;
+  }
+  if(ext==="pdf"){
+    f.arrayBuffer().then(function(buf){
+      return pdfPages(buf).then(function(pages){
+        if(!pages.length) throw new Error("no drawable page");
+        var h=deskNote("Vector geometry and text")
+             + pages.map(function(p,i){
+                 var r=pdfPageSvg(p);
+                 return '<div class="pg"><div class="pgno">Page '+(i+1)+'</div>'
+                      + '<div class="sheet">'+r.svg+'</div></div>';
+               }).join("");
+        box.innerHTML=h; wireView(box,r,f);
+      });
+    }).catch(function(){
+      return f.arrayBuffer().then(pdfText).then(function(t){
+      box.innerHTML = t
+        ? '<p class="vnote">Text recovered from the PDF. Page layout — borders, views, '
+          + 'dimensions, where things sit on the sheet — cannot be shown here; open the copy at '
+          + '<code>Verification Bench.html</code> on your own machine for that.</p>'
+          + '<pre class="vtext">'+esc(t)+'</pre>'
+        : '<p class="vnote">No text could be recovered from this PDF. It is most likely a scan. '
+          + 'Open it from the copy at <code>Verification Bench.html</code> on your own machine.</p>';
+      });
+    }).catch(function(e){ box.textContent="Could not read that PDF: "+e.message; });
+    return;
+  }
+  if(ext==="xlsx"||ext==="xlsm"){
+    f.arrayBuffer().then(xlsxView).then(function(h){
+      box.innerHTML=deskNote("Cell values and sheet names")+h; wireView(box,r,f);
+    }).catch(function(e){ box.textContent="Could not read that workbook: "+e.message; });
+    return;
+  }
+  if(ext==="docx"){
+    f.arrayBuffer().then(docxView).then(function(h){
+      box.innerHTML=deskNote("Text and tables")+'<div class="doc">'+h+'</div>'; wireView(box,r,f);
+    }).catch(function(e){ box.textContent="Could not read that document: "+e.message; });
+    return;
+  }
+  if(ext==="pptx"){
+    f.arrayBuffer().then(pptxView).then(function(h){
+      box.innerHTML=deskNote("Slide text")+'<div class="doc">'+h+'</div>'; wireView(box,r,f);
+    }).catch(function(e){ box.textContent="Could not read that deck: "+e.message; });
+    return;
+  }
+  f.text().then(function(t){
+    if(ext==="csv"){ box.innerHTML=csvTable(t,400); return; }
+    if(ext==="html"||ext==="htm"){
+      var d=document.createElement("div"); d.className="vhtml"; d.innerHTML=t;
+      d.querySelectorAll("script,iframe,object,embed").forEach(function(n){ n.remove(); });
+      box.innerHTML=""; box.appendChild(d); return;
+    }
+    box.innerHTML='<pre class="vtext">'+mark(esc(t),rel_quotes(r))+'</pre>';
+  }).catch(function(e){ box.textContent="Could not read that file: "+e.message; });
+}
+
+function showCite(rel){
+  var sc=document.createElement("div"); sc.className="scrim";
+  var h='<div class="panel"><button class="close" id="cclose">Close</button>'
+      + '<h2>Findings naming this file</h2><p class="sub">'+esc(rel)+'</p>';
+  (CITED[rel]||[]).forEach(function(i){
+    var f=FIND[i];
+    h+='<div class="tsec"><h3>'+esc(f.sev||"finding")+' \u00b7 '+esc(f.title)+'</h3>'
+     + '<pre class="vtext">'+esc(f.text)+'</pre></div>';
+  });
+  h+='</div>';
+  sc.innerHTML=h;
+  sc.addEventListener("click",function(e){ if(e.target===sc||e.target.id==="cclose") sc.remove(); });
+  document.body.appendChild(sc);
+}
+function offline(r,ext){
+  var sc=document.createElement("div"); sc.className="scrim";
+  sc.innerHTML='<div class="panel"><button class="close" id="oclose">Close</button>'
+    + '<h2>'+esc(r.name)+'</h2><p class="sub">'+esc(r.rel)+'</p>'
+    + '<p>No browser renders a <b>.'+esc(ext)+'</b> file, and this hosted page is not permitted '
+    + 'to hand you one either.</p><p>Open the same page from your own machine — '
+    + '<code>Verification Bench.html</code> — and this button passes the file straight to Word, '
+    + 'Excel or PowerPoint. Everything else here, Trace included, is identical in both places.</p></div>';
+  sc.addEventListener("click",function(e){ if(e.target===sc||e.target.id==="oclose") sc.remove(); });
+  document.body.appendChild(sc);
+}
+
+/* ---------- the trace ---------- */
+function showTrace(rel){
+  var r=recs.filter(function(x){ return x.rel===rel; })[0];
+  if(!r||!r.art||!MODEL) return;
+  var t=trace(MODEL,r.art), a=t.art, anc=anchorFor(a.id);
+  var left=[], edges=[];
+  if(anc){ left.push(mkNode({id:"anc",title:a.anchor,sub:anc.name,kind:"anchor",tag:"ANCHOR",w:210,subMax:2}));
+           edges.push({from:"anc",to:"doc"}); }
+  var vals=t.sourced.concat(t.carried.filter(function(v){ return t.sourced.indexOf(v)<0; }));
+  vals.forEach(function(v,i){
+    var isTrap=v.type.toLowerCase()==="trap";
+    left.push(mkNode({id:"v"+i,title:v.name,
+      sub:(isTrap?"":String(v.value).slice(0,44))+(v.src!==a.id?"  ← source "+v.src:""),
+      kind:isTrap?"trap":"fact", tag:isTrap?"TRAP":"FACT", w:210, subMax:2}));
+    edges.push({from:"v"+i,to:"doc",dim:v.src!==a.id});
+  });
+  var doc=mkNode({id:"doc",title:a.id+"  "+a.name,
+    sub:a.fmt+" · "+a.label+(t.trap?" · carries a registered trap":""),kind:"doc",w:250,subMax:2});
+  var tasks=t.tasks.map(function(k,i){
+    edges.push({from:"doc",to:"t"+i});
+    return mkNode({id:"t"+i,title:k.id+"  "+k.name,sub:k.wf,kind:"task",tag:"TASK",w:200,subMax:2});
+  });
+  var sibs={}; t.related.concat(t.feeders).forEach(function(x){ if(x&&x.id!==a.id) sibs[x.id]=x; });
+  var sibl=Object.keys(sibs).map(function(k){ return sibs[k]; });
+  var rel4=sibl.map(function(x,i){
+    edges.push({from:"doc",to:"r"+i,dim:true});
+    return mkNode({id:"r"+i,title:x.id+"  "+x.name,kind:"rel",w:200});
+  });
+  // every band is shown in full; over-long ones pack into sub-columns
+  var cols=[].concat(band("Anchor & registered values",left,10),
+                     band("This document",[doc],1),
+                     band("Tasks that use it",tasks,10),
+                     band("Must agree with",rel4,10));
+  var h='<button class="close" id="tclose">Close</button>';
+  h+='<h2>'+esc(a.id)+' — '+esc(a.name)+'</h2>';
+  h+='<p class="sub">'+esc(a.loc)+'</p>';
+  h+='<div class="flowwrap">'+renderFlow(cols,edges,{aria:"trace for "+a.id})+'</div>';
+  if(t.trap) h+='<div class="tsec"><h3>Registered trap</h3><p>'+esc(t.trap)+'</p></div>';
+  h+=sec("Values this document is the source of", t.sourced, a.id);
+  h+=sec("Values it must carry, registered elsewhere", t.carried.filter(function(v){return v.src!==a.id;}), a.id);
+  if(t.tasks.length){
+    h+='<div class="tsec"><h3>Tasks that use it</h3><table class="tbl"><tr><th>Task</th><th>Name</th><th>Workflow</th></tr>';
+    t.tasks.forEach(function(k){ h+='<tr><td class="k">'+esc(k.id)+'</td><td>'+esc(k.name)+'</td><td>'+esc(k.wf)+'</td></tr>'; });
+    h+='</table></div>';
+  }
+  if(anc) h+='<div class="tsec"><h3>Reference anchor</h3><table class="tbl"><tr><td class="k">'
+      + esc(anc.name)+'</td><td>'+esc(a.anchor)+'</td>'
+      + '<td><button class="openanch" data-anch="'+esc(anc.rel)+'">Open anchor</button></td></tr></table></div>';
+  else if(a.anchor && ANCH.files.length)
+    h+='<div class="tsec"><h3>Reference note</h3><p>'+esc(a.anchor)
+      +'</p><p class="none">No document in '+esc(ANCH.name)+' matches this — it reads as an internal note rather than an external reference.</p></div>';
+  else if(a.anchor) h+='<div class="tsec"><h3>Reference note</h3><p>'+esc(a.anchor)+'</p></div>';
+  if(sibl.length){
+    h+='<div class="tsec"><h3>Documents it must agree with</h3><table class="tbl">';
+    sibl.forEach(function(x){ h+='<tr><td class="k">'+esc(x.id)+'</td><td>'+esc(x.name)+'</td><td class="k">'+esc(x.loc)+'</td></tr>'; });
+    h+='</table></div>';
+  }
+  var sc=document.createElement("div"); sc.className="scrim";
+  sc.innerHTML='<div class="panel">'+h+'</div>';
+  sc.addEventListener("click",function(e){
+    if(e.target===sc||e.target.id==="tclose") return sc.remove();
+    var ob=e.target.closest(".openanch"); if(ob) openAnchor(ob.dataset.anch);
+  });
+  document.addEventListener("keydown",function k(e){ if(e.key==="Escape"){ sc.remove(); document.removeEventListener("keydown",k);} });
+  document.body.appendChild(sc);
+}
+function openAnchor(rel){
+  var f=ANCH.files.filter(function(x){ return x.rel===rel; })[0]; if(!f) return;
+  (f.file?Promise.resolve(f.file):f.handle.getFile()).then(function(fl){
+    show({name:f.name,rel:f.rel}, fl, "pdf");
+  }).catch(function(e){ note("Could not open the anchor: "+e.message); });
+}
+function sec(title,list,self){
+  if(!list.length) return '<div class="tsec"><h3>'+esc(title)+'</h3><p class="none">none</p></div>';
+  var h='<div class="tsec"><h3>'+esc(title)+'</h3><table class="tbl">'
+      + '<tr><th>Value</th><th>Type</th><th>Registered as</th><th>Also in</th></tr>';
+  list.forEach(function(v){
+    var isTrap=v.type.toLowerCase()==="trap";
+    h+='<tr><td>'+esc(v.name)+'</td><td><span class="pill '+(isTrap?"trap":"fact")+'">'+esc(v.type)+'</span></td>'
+     + '<td class="k">'+esc(String(v.value).slice(0,60))+'</td>'
+     + '<td class="k">'+esc((v.src!==self?v.src+" → ":"")+v.must.join(", "))+'</td></tr>';
+  });
+  return h+'</table></div>';
+}
+
+/* ---------- pasted AutoQC findings ---------- */
+function pasteFindings(){
+  var sc=document.createElement("div"); sc.className="scrim";
+  sc.innerHTML='<div class="panel"><button class="close" id="pclose">Close</button>'
+    + '<h2>Paste the AutoQC findings</h2>'
+    + '<p class="sub">Any part of the report. It reads the artifact IDs, filenames and page '
+    + 'counts it mentions.</p>'
+    + '<textarea class="fbox" id="ftext" placeholder="Paste here…"></textarea>'
+    + '<div class="act" style="margin-top:.8rem">'
+    + '<button class="open" id="fapply">Apply to the list</button>'
+    + '<button id="fclear">Clear flags</button></div></div>';
+  sc.addEventListener("click",function(e){
+    if(e.target===sc||e.target.id==="pclose") return sc.remove();
+    if(e.target.id==="fclear"){ FIND=[]; CITED={}; build(); sc.remove(); return; }
+    if(e.target.id==="fapply"){
+      FIND=parseFindings(sc.querySelector("#ftext").value);
+      CITED={};
+      FIND.forEach(function(f,i){
+        targetsFor(f,recs,MODEL).forEach(function(rel){
+          (CITED[rel]=CITED[rel]||[]).push(i); });
+      });
+      var n=Object.keys(CITED).length;
+      sc.remove(); build();
+      note(FIND.length+" finding(s) read; "+n+" file(s) in this folder are named. "
+         + "Cited rows are marked in red — press Cited on a row to see the claim and whether it holds.");
+      logEvent("findings","",null,null,FIND.length+" finding(s), "+n+" file(s) named");
+      if(n) checkCited();
+    }
+  });
+  document.body.appendChild(sc);
+  sc.querySelector("#ftext").focus();
+}
+
+// Test each claim against the file. Page counts are compared directly; quoted
+// text is searched for. This is what separates a real defect from a misread.
+function checkCited(){
+  Object.keys(CITED).forEach(function(rel){
+    var r=recs.filter(function(x){ return x.rel===rel; })[0]; if(!r) return;
+    (r.file?Promise.resolve(r.file):r.handle.getFile()).then(function(f){
+      var ext=(r.name.split(".").pop()||"").toLowerCase();
+      if(ext==="pdf") return f.arrayBuffer().then(function(b){
+        r.pages=pdfPageCount(b); return pdfText(b); });
+      if(/^(xlsx|docx|pptx)$/.test(ext)) return f.arrayBuffer().then(function(b){
+        return unzip(b).then(function(parts){
+          return Object.keys(parts).filter(function(n){ return n.endsWith(".xml"); })
+            .map(function(n){ return new TextDecoder().decode(parts[n]); }).join(" ")
+            .replace(/<[^>]+>/g," "); }); });
+      return f.text();
+    }).then(function(t){ r.body=t||""; paintVerdicts(rel); })
+      .catch(function(){ r.body=null; paintVerdicts(rel); });
+  });
+}
+function paintVerdicts(rel){
+  var row=$("groups").querySelector('.f[data-rel="'+CSS.escape(rel)+'"]'); if(!row) return;
+  var r=recs.filter(function(x){ return x.rel===rel; })[0];
+  var old=row.querySelector(".verdict"); if(old) old.remove();
+  var lines=[];
+  (CITED[rel]||[]).forEach(function(i){
+    var f=FIND[i];
+    if(f.pageClaims.length && r.pages!=null){
+      var claimed=f.pageClaims.indexOf(r.pages)>=0;
+      lines.push((claimed?"yes":"no")+"|the finding lists page counts "+f.pageClaims.join(", ")
+        +"; this file has <b>"+r.pages+"</b>"+(claimed?"":" \u2014 not among them"));
+    }
+    f.quoted.forEach(function(q){
+      if(r.body==null){ lines.push("?|could not read this file to check \u201c"+q+"\u201d"); return; }
+      var has=r.body.indexOf(q)>=0;
+      lines.push((has?"yes":"no")+"|\u201c"+esc(q)+"\u201d "+(has?"is present":"does <b>not</b> appear")+" in this file");
+    });
+  });
+  if(!lines.length) return;
+  var any=lines.some(function(l){ return l.charAt(0)==="y"; });
+  var d=document.createElement("div");
+  d.className="verdict "+(any?"yes":"no");
+  d.innerHTML=lines.map(function(l){ return l.split("|")[1]; }).join("<br>");
+  row.appendChild(d);
+}
+
+/* ---------- report ---------- */
+function report(){
+  var ok=[],issue=[],na=[],todo=[];
+  recs.forEach(function(r){
+    var st=S[r.rel]||{}, id=r.art?r.art.id+"  ":"";
+    var line=id+r.rel+(st.note?"\n      "+st.note:"");
+    if(st.v==="ok") ok.push(line); else if(st.v==="issue") issue.push(line);
+    else if(st.v==="na") na.push(line); else todo.push(id+r.rel);
+  });
+  var L=[rootName+" — visual check",""];
+  L.push("verified "+ok.length+" · issues "+issue.length+" · skipped "+na.length+" · unchecked "+todo.length);
+  if(MODEL) L.push("spec: "+MODEL.artifacts.length+" artifacts, "+MODEL.values.length+" registered values");
+  function blk(t,a){ if(a.length){ L.push("",t); a.forEach(function(s){ L.push("  "+s); }); } }
+  blk("ISSUES",issue);
+  blk("VERIFIED, WITH A COMMENT", ok.filter(function(s){ return s.indexOf("\n")>=0; }));
+  blk("SKIPPED",na); blk("NOT YET CHECKED",todo);
+  if(!issue.length) L.push("","All other files verified with no comment.");
+  var text=L.join("\n");
+  var box=$("rep");
+  if(!box){ box=document.createElement("textarea"); box.id="rep"; box.readOnly=true;
+    $("foot").parentNode.insertBefore(box,$("foot")); }
+  box.value=text; box.scrollIntoView({behavior:"smooth",block:"center"}); box.select();
+  if(navigator.clipboard&&navigator.clipboard.writeText)
+    navigator.clipboard.writeText(text).then(function(){ note("Report built and copied to the clipboard."); })
+      .catch(function(){ note("Report built below. Copy it from the box."); });
+  else note("Report built below. Copy it from the box.");
+}
+})();
+
+</script>
+</html>

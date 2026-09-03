@@ -1,0 +1,12 @@
+entry_id,claim_no,claimant,date_set,reserve_amount,reserve_type,set_by,supersedes_entry_id,active_flag,notes
+RL-2025-0087,ACTD-2026-0119,"Reyes, Yolanda",10/28/2025,190000,indemnity,Kendra Briggs (junior adjuster),,N,Initial estimate on limited pre-lab facts — see A42.
+RL-2025-0088,ACTD-2026-0114,"Cho, Devin",10/28/2025,45000,indemnity,Kendra Briggs (junior adjuster),,N,Passenger allocation per Briggs opening note; orthopedic/concussion track.
+RL-2025-0089,ACTD-2026-0115,"Mowbray, Alicia",10/28/2025,10000,indemnity,Kendra Briggs (junior adjuster),,N,Passenger allocation per Briggs opening note; soft-tissue strain.
+RL-2025-0090,ACTD-2026-0119,"Reyes, Yolanda",10/28/2025,5000,expense,Kendra Briggs (junior adjuster),,N,Allocated expense placeholder booked with opening note (A42); superseded on 12/15/2025 reset.
+RL-2025-0104,ACTD-2026-0119,"Reyes, Yolanda",12/15/2025,3150000,indemnity,Gordon Espinoza (senior claims manager),RL-2025-0087,Y,"Reset following C&S finding, lab BAC, LCP workup — see A43. Indemnity component; ALAE booked separately at RL-2025-0107."
+RL-2025-0105,ACTD-2026-0114,"Cho, Devin",12/15/2025,325000,indemnity,Gordon Espinoza (senior claims manager),RL-2025-0088,Y,Revised on maturing ORIF tibia/fibula and Grade 2 concussion picture; separately tracked from Reyes sub-file.
+RL-2025-0106,ACTD-2026-0115,"Mowbray, Alicia",12/15/2025,215000,indemnity,Gordon Espinoza (senior claims manager),RL-2025-0089,Y,Revised on completed PT course and light-duty return; separately tracked from Reyes sub-file; carries litigation-contingency loading.
+RL-2025-0107,ACTD-2026-0119,"Reyes, Yolanda",12/15/2025,100000,expense,Gordon Espinoza (senior claims manager),RL-2025-0090,Y,"LAE — Delfino Marek LLP (defense counsel) — defense assignment, retained life-care planner, economist, vocational expert (embedded in $3.25M memo total)."
+RL-2025-0108,ACTD-2026-0114,"Cho, Devin",12/15/2025,25000,expense,Gordon Espinoza (senior claims manager),,Y,LAE placeholder — passenger track defense costs.
+RL-2025-0109,ACTD-2026-0115,"Mowbray, Alicia",12/15/2025,15000,expense,Gordon Espinoza (senior claims manager),,Y,LAE placeholder — passenger track defense costs.
+RL-2025-0110,ACTD-2026-0117,"City of Rivergate (Dept. of Public Works)",12/15/2025,48500,indemnity,Gordon Espinoza (senior claims manager),,Y,"Property-damage demand — struck light standard SL-M-0312; exempt from Gov. Code § 905; remedy CCP § 338(b) 3-yr SOL; reserved separately per A43."

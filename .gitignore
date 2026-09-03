@@ -1,0 +1,3 @@
+qc_workspace/corpus_cache.json
+__pycache__/
+*.pyc

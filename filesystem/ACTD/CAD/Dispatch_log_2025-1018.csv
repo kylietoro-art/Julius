@@ -1,0 +1,45 @@
+event_timestamp,event_type,operator_badge,block_id,dispatch_supervisor,message
+10/17/2025 22:00,supervisor_note,,,W. Tran,Overnight owl dispatch shift begin. Dispatch Supervisor W. Tran on console for Rivergate Yard (Div. 3) owl service; boards 510/511/512/514 covered from this console.
+10/17/2025 22:12,radio_call,4417,512-OWL,W. Tran,Op badge 4417 (Keeler) signed on for Block 512-OWL. Vehicle 4177 pre-trip complete. Ready for pullout from Div. 3.
+10/17/2025 22:15,checkpoint,4417,512-OWL,W. Tran,Pullout confirmed. Deadhead outbound Div. 3 to S. Main/Fifth. Block 512-OWL in service.
+10/17/2025 22:42,checkpoint,4417,512-OWL,W. Tran,Arrival S. Main/Fifth (start of line). On schedule.
+10/17/2025 22:45,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB departed S. Main/Fifth. On time.
+10/17/2025 22:51,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB timepoint S. Main/Third. On time.
+10/17/2025 22:58,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB timepoint Downtown Loop / Civic Center. On time.
+10/17/2025 23:07,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB timepoint Alder Creek / Broadway. On time.
+10/17/2025 23:19,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB arrived Poplar / Rivergate Plaza. Layover.
+10/17/2025 23:24,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB departed Poplar / Rivergate Plaza. On time.
+10/17/2025 23:35,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB timepoint Alder Creek / Broadway. On time.
+10/17/2025 23:44,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB timepoint Downtown Loop / Civic Center. On time.
+10/17/2025 23:51,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB timepoint S. Main/Third. On time.
+10/17/2025 23:57,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB arrived S. Main/Fifth. Layover.
+10/18/2025 00:05,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB departed S. Main/Fifth. On time.
+10/18/2025 00:11,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB timepoint S. Main/Third. On time.
+10/18/2025 00:18,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB timepoint Downtown Loop / Civic Center. On time.
+10/18/2025 00:27,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB timepoint Alder Creek / Broadway. On time.
+10/18/2025 00:39,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB arrived Poplar / Rivergate Plaza. Layover.
+10/18/2025 00:44,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB departed Poplar / Rivergate Plaza. On time.
+10/18/2025 00:48,radio_call,4417,512-OWL,W. Tran,Op 4417 requested wx/road conditions on downtown corridor NB. Advised light drizzle Main/Third to Fifth; no incidents on Route 512 corridor.
+10/18/2025 00:55,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB timepoint Alder Creek / Broadway. On time.
+10/18/2025 01:04,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB timepoint Downtown Loop / Civic Center. On time.
+10/18/2025 01:11,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB timepoint S. Main/Third. On time.
+10/18/2025 01:17,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB arrived S. Main/Fifth. Layover.
+10/18/2025 01:25,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB departed S. Main/Fifth. On time.
+10/18/2025 01:31,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB timepoint S. Main/Third. On time.
+10/18/2025 01:38,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB timepoint Downtown Loop / Civic Center. On time.
+10/18/2025 01:47,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB timepoint Alder Creek / Broadway. On time.
+10/18/2025 01:59,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB arrived Poplar / Rivergate Plaza. Layover.
+10/18/2025 02:04,checkpoint,4417,512-OWL,W. Tran,Trip 06 NB departed Poplar / Rivergate Plaza. Northbound leg begins on schedule.
+10/18/2025 02:06,radio_call,4417,512-OWL,W. Tran,Silent alarm activation received from onboard MDT/console on Bus 4177 (Block 512-OWL). No voice on channel. Repeated hail unanswered. AVL last position vicinity S. Main at Third Ave (SB reference timepoint 02:05).
+10/18/2025 02:07,emergency_dispatch,,512-OWL,W. Tran,"Emergency dispatch initiated per SOP-24. Rivergate PD and Rivergate Fire/EMS requested Code 3 to S. Main at Third Ave for ACTD Bus #4177, Block 512-OWL, Op badge 4417. RPD Comm acknowledged; EMS Rescue-12 and Engine-3 rolling."
+10/18/2025 02:08,radio_call,,512-OWL,W. Tran,Third hail to Op 4417 with no response. Silent-alarm audio channel held open; ambient sounds only. Farebox/APC log on Bus 4177 queued for download — onboard count pending morning pull. Passenger notification not sent — held pending on-scene assessment.
+10/18/2025 02:09,supervisor_note,,,W. Tran,"Notified Operations Duty Officer (S. Ruiz, on-call) of active alarm on Block 512-OWL and pending RPD/EMS arrival. Bus 4177 GPS stationary at S. Main / Third. Standing by on scene channel."
+10/18/2025 02:10,incident_declared,4417,512-OWL,W. Tran,"INCIDENT DECLARED by dispatcher W. Tran. Category A — bus collision at intersection of South Main Street and Third Avenue, downtown Rivergate. Reported involvement: fixed object (City street-light standard) and one pedestrian at adjacent bus stop. RPD Unit 4-Adam-12 on scene; EMS Rescue-12 on scene. Assigned operator: Badge 4417 (Keeler, R.) on Block 512-OWL, Vehicle 4177. Incident number ACTD-IR-2025-1018-001 opened; on-scene draft report to follow."
+10/18/2025 02:12,supervisor_note,,,W. Tran,Safety Division duty pager (M. Okonkwo) and General Counsel duty pager (D. Farkas) alerted per Rule Book §7.03. Preservation hold entered on AVL/GPS track for Block 512-OWL for the service night.
+10/18/2025 02:14,supervisor_note,,,W. Tran,"EMS on-scene advises airlift request for pedestrian casualty; ground transport for onboard passengers (2 injured, 1 uninjured witness — corroborates on-scene passenger accounting). South Main closed between Second Ave and Fourth Ave by RPD."
+10/18/2025 02:20,supervisor_note,,,W. Tran,"Adjacent owl blocks (511, 514, 517) advised of Main Street closure; short-turn instructions issued via console. Block 512-OWL remaining scheduled trips 06 (NB completion) through 10 suspended pending vehicle recovery. Preliminary on-scene draft incident report (Tran) started."
+10/18/2025 02:35,supervisor_note,,,W. Tran,RPD field supervisor advises Op badge 4417 (Keeler) taken into custody at scene following roadside PBT. Bus #4177 secured on-scene; wrecker requested via ACTD Fleet Ops for tow to Div. 3 secure yard hold.
+10/18/2025 03:10,supervisor_note,,,W. Tran,County Crime Lab evidentiary blood draw performed on Op 4417 per RPD at Rivergate Regional Trauma Center holding area. ACTD BAT en route to complete DOT 49 CFR Part 655 post-accident testing.
+10/18/2025 04:10,supervisor_note,,,W. Tran,ACTD BAT R. Ngo (BAT-4471) commenced DOT post-accident test screening on Op 4417. Chain-of-custody documentation to be filed with Compliance.
+10/18/2025 04:25,supervisor_note,,,W. Tran,DOT post-accident test confirmation reading completed by BAT R. Ngo. Compliance packet closed out at scene.
+10/18/2025 05:00,supervisor_note,,,W. Tran,Overnight owl dispatch shift end. Console hand-off to day dispatcher L. Park. Incident file ACTD-IR-2025-1018-001 open; on-scene draft incident report by W. Tran routed to Safety Division intake for supervisor review and final report.
