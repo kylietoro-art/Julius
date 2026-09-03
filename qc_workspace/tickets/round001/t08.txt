@@ -1,0 +1,10 @@
+TICKET 8 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* Consistent naming fails because Halstead & Cruz uses conflicting matter identifiers for the same Reyes litigation. `Legal/Reyes/intake_memo.docx` says "Reyes Matter File — H&C Matter No. 2026-0117," while `Legal/Reyes/matter_calendar_MatterHub.csv` says "Matter: HC-2026-0087 — Reyes / Cho / Mowbray v. Alder Creek Transit District," and `Shared/Settlement/Reyes_lien_EOB.pdf` labels the same Reyes v. Alder Creek Transit District action "Our File No.: HC-2026-0037." No source provides an alias or cross-reference, so a worker cannot reliably link the intake, deadline, and lien records for this matter.

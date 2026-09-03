@@ -1,0 +1,14 @@
+TICKET 3 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The graded task filesystem contains the Tier-A banned name "Meridian" 20 times, so it fails this deterministic whole-word name check. The occurrences are in the medical-billing ledger, medical-bills PDF, lien/EOB PDF, and witness statement, including the verbatim names "Meridian Outpatient Physical Therapy," "MERIDIAN OUTPATIENT PHYSICAL THERAPY," and "Meridian Grill." Because any single whole-word Tier-A occurrence fails the criterion, these repeated company/place names must be renamed consistently across the files.
+*
+*
+
+Cross-Artifact Consistency

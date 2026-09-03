@@ -1,0 +1,13 @@
+TICKET 9 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* Calculation & Fixture Accuracy fails. In Reyes_life_care_plan.pdf, the listed Annual Cost Summary categories sum to $190,000, but the document states "Total, weighted annual average $180,000"; the stated $6.48M undiscounted total and $4.24M PV are consequently understated (the listed inputs imply $6.84M and about $4.476M PV). Reyes_wage_records.pdf likewise reports $1.2M although the displayed PV components produce $1.1M after the stated rounding, and the medical ledger/EOB pair gives incompatible adjustment accounting for the same billing total. These are computable internal or cross-artifact contradictions, not declared traps.
+*
+
+Leakage And Separation

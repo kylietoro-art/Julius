@@ -1,0 +1,15 @@
+TICKET 10 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The No Solution Or Reasoning Leakage clause fails because ACTD/Litigation/production_tracker.csv is a ready-made discovery response: it labels documents "Confirmed" with final calls such as "Produce" and "Withhold-Privileged," completed Bates ranges, and privilege-log entries. It also gives the legal basis for A43, so it shortcuts T9's required independent document-by-document review. In addition, ACTD/Safety/IR_2025-1018_final.docx directly says Keeler "was acting within scope of his employment," which supplies T5's required conclusion without synthesis.
+*
+*
+*
+
+Factual Integrity

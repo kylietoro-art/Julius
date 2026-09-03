@@ -1,0 +1,10 @@
+TICKET 4 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* Personnel identifiers are not fully consistent. In `Legal/Passengers/claims_0118.pdf`, Nora Halstead's counsel email is `nhalstead@halsteadcruz.com`, while the same attorney's `Legal/Discovery/RFP_set.pdf` letterhead is `nhalstead@halstead-cruz.com`; the claim forms direct statutory notices to that counsel contact. In addition, `Legal/Reyes/employment_verification.pdf` and the embedded verification in `Shared/Settlement/Reyes_wage_records.pdf` give un-reconciled, conflicting professional contact details for Melinda Torres, creating a second identity/contact defect.

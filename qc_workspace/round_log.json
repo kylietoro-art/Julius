@@ -1,0 +1,83 @@
+{
+  "world": "/home/user/Julius/filesystem",
+  "rounds": [
+    {
+      "round": 1,
+      "opened": "2026-09-03T19:17:17",
+      "count": 14,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 3,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "ir_2025-1018_final.docx",
+            "production_tracker.csv"
+          ]
+        },
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": []
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 3,
+          "files": [
+            "intake_memo.docx",
+            "matter_calendar_matterhub.csv",
+            "reyes_lien_eob.pdf",
+            "ir_2025-1018_draft.docx"
+          ]
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 1,
+          "files": [
+            "claims_0118.pdf",
+            "employment_verification.pdf",
+            "reyes_wage_records.pdf",
+            "rfp_set.pdf"
+          ]
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 2,
+          "files": [
+            "keeler_personnel.docx",
+            "tran_text_thread.pdf"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 2,
+          "files": [
+            "adjuster_note.docx",
+            "reserve_memo.docx",
+            "avl_gps_track_2025-1018.csv",
+            "medical_billing_ledger.csv"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 1,
+          "files": [
+            "reyes_life_care_plan.pdf",
+            "reyes_wage_records.pdf"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 1,
+          "files": [
+            "owl_service_rules.docx",
+            "post_accident_testing_policy.docx"
+          ]
+        }
+      },
+      "repeats": [],
+      "disposition": null,
+      "note": ""
+    }
+  ]
+}

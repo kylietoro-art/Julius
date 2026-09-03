@@ -1,0 +1,10 @@
+TICKET 5 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The MatterHub deadline records materially mis-calendar the claimants: they apply a 10/18/2027 accrual-plus-two-years deadline case-wide even though the controlling register sets the rejected passengers' deadline at 08/18/2026, and they leave ACTD's answer deadline blank despite the documented 06/22/2026 due date. The operational records also contain uncorrected numerical conflicts: the AVL export declares 213 data rows but contains 227, its production tracker extends the native AVL window to 02:20 although the file ends at 02:05:12, and the final northbound scheduled trip places a downstream stop at 04:57 after a later stop at 04:54. These disagreements risk missed litigation deadlines and unreliable operational evidence, satisfying the fail criterion.

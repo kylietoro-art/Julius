@@ -1,0 +1,10 @@
+TICKET 13 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* Text legibility fails in two files. In `ACTD/Dispatch/tran_text_thread.pdf`, the five rendered pages show washed-out gray header/footer chrome, including the extracted strings "Messages — exported to PDF" and "Exported from Messages on personal device — outside ACTD retention," against pale local bands. Separately, `ACTD/HR/Keeler_personnel.docx` sets white `FFFFFF` labels such as "Date," "Event," "Item," and "Status" on `D9D9D9` table cells, which is light-on-light and violates the criterion.

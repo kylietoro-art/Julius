@@ -1,0 +1,10 @@
+TICKET 6 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The onboard-video reference is broken: `ACTD/Video/onboard_video_still_log.pdf` says that its still frames were derived from a preserved native MP4, names that clip `4177_20251018_0130-0210_INC.mp4`, and states that the full clip remains available from the custodians. The artifact registry likewise defines A53 as "MP4 (clip export) + still-frame log," yet the staged-file search found only the still-log PDF and no MP4 or alternate video asset. The world therefore points to absent supporting footage, which fails the explicit-and-implied reference criterion.

@@ -1,0 +1,10 @@
+TICKET 2 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* This dimension fails because the attached contingency-fee agreement and RFP PDF retain literal bracketed identity/date placeholders throughout, and the video still-frame log retains both a vendor-signature placeholder and a synthetic purported hash. For example, the RFP begins with "[ATTORNEY NAME], ESQ. SBN [BAR NO.]" and the video log uses "/s/ [Vendor Custodian of Record]" despite presenting a completed certification. These artifacts are obvious template residue/synthetic filler posing as finished work product and should be replaced with populated, verifiable records.

@@ -1,0 +1,13 @@
+TICKET 1 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* All 51 registry File artifacts have a corresponding mounted file in the specified format and with matching authorship, purpose, and draft/final posture; the two additional non-CSV paths are justified A52/A53 companion exports.
+*
+
+World Realism

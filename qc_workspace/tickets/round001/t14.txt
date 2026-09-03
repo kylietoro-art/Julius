@@ -1,0 +1,11 @@
+TICKET 14 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The CSV corpus fails because seven files begin with titles, report metadata, or blank rows rather than column headers. For example, AVL_GPS_track_2025-1018.csv begins with "# ALDER CREEK TRANSIT DISTRICT — CAD/AVL VEHICLE TRACK EXPORT" and does not place its timestamp header until row 15; medical_billing_ledger.csv starts its header at row 16 and appends "# Reconciliation Notes" after the data. This violates the requirement that row 1 be the header and that every later row be a data record with the same schema.
+*

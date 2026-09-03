@@ -1,0 +1,22 @@
+TICKET 11 of 14  |  round 1
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The [Failing - No Synthetic Substitutes For Real-World Facts] clause fails because ACTD's post-accident testing policy materially misstates the real FTA rule it expressly cites. In task_fs/filesystem/ACTD/Compliance/post_accident_testing_policy.docx, § 3.2 makes injury or damage alone trigger a mandatory Part 655 test, whereas task_fs/filesystem/ACTD/Ops/owl_service_rules.docx correctly states that a citation is also required for a nonfatal accident. A federal compliance policy that inconsistently removes a prerequisite from its governing rule undermines the reliability of this U.S.-centered transit world.
+*
+*
+*
+
+Aggregate Risk And Coverage
+
+*
+*
+*
+*
+
+Presentation & Render Integrity (Touch-Up)

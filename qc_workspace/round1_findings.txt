@@ -1,0 +1,49 @@
+World Foundations
+
+* All 51 registry File artifacts have a corresponding mounted file in the specified format and with matching authorship, purpose, and draft/final posture; the two additional non-CSV paths are justified A52/A53 companion exports.
+*
+
+World Realism
+
+* This dimension fails because the attached contingency-fee agreement and RFP PDF retain literal bracketed identity/date placeholders throughout, and the video still-frame log retains both a vendor-signature placeholder and a synthetic purported hash. For example, the RFP begins with "[ATTORNEY NAME], ESQ. SBN [BAR NO.]" and the video log uses "/s/ [Vendor Custodian of Record]" despite presenting a completed certification. These artifacts are obvious template residue/synthetic filler posing as finished work product and should be replaced with populated, verifiable records.
+* The graded task filesystem contains the Tier-A banned name "Meridian" 20 times, so it fails this deterministic whole-word name check. The occurrences are in the medical-billing ledger, medical-bills PDF, lien/EOB PDF, and witness statement, including the verbatim names "Meridian Outpatient Physical Therapy," "MERIDIAN OUTPATIENT PHYSICAL THERAPY," and "Meridian Grill." Because any single whole-word Tier-A occurrence fails the criterion, these repeated company/place names must be renamed consistently across the files.
+*
+*
+
+Cross-Artifact Consistency
+
+* Personnel identifiers are not fully consistent. In `Legal/Passengers/claims_0118.pdf`, Nora Halstead's counsel email is `nhalstead@halsteadcruz.com`, while the same attorney's `Legal/Discovery/RFP_set.pdf` letterhead is `nhalstead@halstead-cruz.com`; the claim forms direct statutory notices to that counsel contact. In addition, `Legal/Reyes/employment_verification.pdf` and the embedded verification in `Shared/Settlement/Reyes_wage_records.pdf` give un-reconciled, conflicting professional contact details for Melinda Torres, creating a second identity/contact defect.
+* The MatterHub deadline records materially mis-calendar the claimants: they apply a 10/18/2027 accrual-plus-two-years deadline case-wide even though the controlling register sets the rejected passengers' deadline at 08/18/2026, and they leave ACTD's answer deadline blank despite the documented 06/22/2026 due date. The operational records also contain uncorrected numerical conflicts: the AVL export declares 213 data rows but contains 227, its production tracker extends the native AVL window to 02:20 although the file ends at 02:05:12, and the final northbound scheduled trip places a downstream stop at 04:57 after a later stop at 04:54. These disagreements risk missed litigation deadlines and unreliable operational evidence, satisfying the fail criterion.
+* The onboard-video reference is broken: `ACTD/Video/onboard_video_still_log.pdf` says that its still frames were derived from a preserved native MP4, names that clip `4177_20251018_0130-0210_INC.mp4`, and states that the full clip remains available from the custodians. The artifact registry likewise defines A53 as "MP4 (clip export) + still-frame log," yet the staged-file search found only the still-log PDF and no MP4 or alternate video asset. The world therefore points to absent supporting footage, which fails the explicit-and-implied reference criterion.
+* Causal order fails in ACTD/Claims/adjuster_note.docx and ACTD/Claims/reserve_memo.docx. Although dated 10/28/2025 and 12/15/2025, respectively, they list per-claimant ACTD-2026 files before the associated 2026 claim events; the earlier note simultaneously says there are no Government Code § 910 claim presentations. The claims tracker dates the passenger presentations to 01/16/2026, the City demand to 02/02/2026, and Reyes's late-claim application to 05/15/2026, so the two contemporaneous notes contain hindsight metadata that could not have existed at their stated dates.
+* Consistent naming fails because Halstead & Cruz uses conflicting matter identifiers for the same Reyes litigation. `Legal/Reyes/intake_memo.docx` says "Reyes Matter File — H&C Matter No. 2026-0117," while `Legal/Reyes/matter_calendar_MatterHub.csv` says "Matter: HC-2026-0087 — Reyes / Cho / Mowbray v. Alder Creek Transit District," and `Shared/Settlement/Reyes_lien_EOB.pdf` labels the same Reyes v. Alder Creek Transit District action "Our File No.: HC-2026-0037." No source provides an alias or cross-reference, so a worker cannot reliably link the intake, deadline, and lien records for this matter.
+* Calculation & Fixture Accuracy fails. In Reyes_life_care_plan.pdf, the listed Annual Cost Summary categories sum to $190,000, but the document states "Total, weighted annual average $180,000"; the stated $6.48M undiscounted total and $4.24M PV are consequently understated (the listed inputs imply $6.84M and about $4.476M PV). Reyes_wage_records.pdf likewise reports $1.2M although the displayed PV components produce $1.1M after the stated rounding, and the medical ledger/EOB pair gives incompatible adjustment accounting for the same billing total. These are computable internal or cross-artifact contradictions, not declared traps.
+*
+
+Leakage And Separation
+
+* The No Solution Or Reasoning Leakage clause fails because ACTD/Litigation/production_tracker.csv is a ready-made discovery response: it labels documents "Confirmed" with final calls such as "Produce" and "Withhold-Privileged," completed Bates ranges, and privilege-log entries. It also gives the legal basis for A43, so it shortcuts T9's required independent document-by-document review. In addition, ACTD/Safety/IR_2025-1018_final.docx directly says Keeler "was acting within scope of his employment," which supplies T5's required conclusion without synthesis.
+*
+*
+*
+
+Factual Integrity
+
+* The [Failing - No Synthetic Substitutes For Real-World Facts] clause fails because ACTD's post-accident testing policy materially misstates the real FTA rule it expressly cites. In task_fs/filesystem/ACTD/Compliance/post_accident_testing_policy.docx, § 3.2 makes injury or damage alone trigger a mandatory Part 655 test, whereas task_fs/filesystem/ACTD/Ops/owl_service_rules.docx correctly states that a citation is also required for a nonfatal accident. A federal compliance policy that inconsistently removes a prerequisite from its governing rule undermines the reliability of this U.S.-centered transit world.
+*
+*
+*
+
+Aggregate Risk And Coverage
+
+*
+*
+*
+*
+
+Presentation & Render Integrity (Touch-Up)
+
+* `ACTD/Safety/IR_2025-1018_draft.docx` visibly identifies itself as "DRAFT — ON-SCENE — SUBJECT TO SUPERVISOR REVIEW." Its package contains no comments and no `<w:ins>` or `<w:del>` tracked-change elements, with `trackRevisions` disabled. A clearly draft Word document therefore has no visible comment or redline machinery, directly failing Format-Native Feature Fidelity sub-check (d).
+* Text legibility fails in two files. In `ACTD/Dispatch/tran_text_thread.pdf`, the five rendered pages show washed-out gray header/footer chrome, including the extracted strings "Messages — exported to PDF" and "Exported from Messages on personal device — outside ACTD retention," against pale local bands. Separately, `ACTD/HR/Keeler_personnel.docx` sets white `FFFFFF` labels such as "Date," "Event," "Item," and "Status" on `D9D9D9` table cells, which is light-on-light and violates the criterion.
+* The CSV corpus fails because seven files begin with titles, report metadata, or blank rows rather than column headers. For example, AVL_GPS_track_2025-1018.csv begins with "# ALDER CREEK TRANSIT DISTRICT — CAD/AVL VEHICLE TRACK EXPORT" and does not place its timestamp header until row 15; medical_billing_ledger.csv starts its header at row 16 and appends "# Reconciliation Notes" after the data. This violates the requirement that row 1 be the header and that every later row be a data record with the same schema.
+*
