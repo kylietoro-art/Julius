@@ -136,8 +136,20 @@
         "other",
         "citation_facts"
       ],
-      "disposition": null,
-      "note": ""
+      "disposition": {
+        "fixed": 5,
+        "expanded": 2,
+        "traps": 0,
+        "false": 0,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-08T18:11:01",
+      "changed": "Filled 6 blank signature lines across 3 named files plus 2 more found by sweeping the same class (a physician declaration and two internal policy approvals), signed a 7th blank line naming a previously-unnamed role at the expert's direction, clarified 3 documents' overclaimed attachments as retained with their originals rather than reproduced in this export, fixed a matter-name/City-conflation drift in one file, blanked the discovery tracker's produce/withhold columns, corrected a Gov Code 911.6(b) grounds-count citation, added a dated supervisor review comment to the draft incident report, deleted a trailing totals row from the medical billing ledger, and fixed a text-order artifact from round 1's Meridian-to-Ashby rename in 3 places (expert-directed cleanup, not an AutoQC finding).",
+      "disputes": [
+        "The DriveCam/MP4 reference is disputed per round 1's standing ruling: A53 is a registered App Data artifact (vendor-hosted), and the still-frame log is its justified filesystem companion, so the missing native clip is a scope gap, not a filesystem defect.",
+        "The life-care plan's Attachments 1-5 are disputed: they are explicitly labeled 'available on request' in the document itself, which is an honest disclosure rather than a false claim of inclusion, unlike the DOT form, FST supplement, and lien/EOB letter's attachments, which were fixed."
+      ]
     }
   ]
 }
