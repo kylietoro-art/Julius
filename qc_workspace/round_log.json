@@ -192,8 +192,16 @@
         "a_code_leakage",
         "other"
       ],
-      "disposition": null,
-      "note": ""
+      "disposition": {
+        "fixed": 4,
+        "expanded": 0,
+        "traps": 0,
+        "false": 0,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-08T18:43:01",
+      "changed": "Rebuilt tran_text_thread.pdf from scratch (was a 5-page, 32-message thread that materially diverged from A52's spec and, worse, had Tran self-correct and retract the off-book claim mid-thread, defeating the trap; now a 1-page, 3-message exchange matching the spec verbatim), removed three sets of dangling attachment/source citations that round 2's rewording had failed to resolve (DOT form's Attachment A-C list, the final incident report's pre-trip-yard-sheet and EMS-run-sheet citations, and the life-care plan's 5-item Attachments section and its Table of Contents entry), colored the RunSchedule Status column to a distinct green encoding, and set explicit white text color on 12 dark-navy-filled header cells across two documents that had no color override."
     }
   ]
 }

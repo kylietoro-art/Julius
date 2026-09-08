@@ -331,3 +331,57 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Shared/Settlement/Reyes_lien_EOB.pdf | p.3: table row 8, Care remains ongoing sentence, Tab 8 label [expert-directed cleanup, not an AutoQC finding. NOTE: text now reads correctly as one phrase when isolated, but still surfaces out of natural reading-order sequence in a raw linear text extraction of the page (visually confirmed correct; a content-stream-level artifact of PyMuPDF's append-only text reinsertion, present since round 1, not fully resolvable without direct content-stream surgery)] | Ashby [visual gap] Outpatient Physical Therapy (3 places, name detached from following text in the PDF text layer since round 1's Meridian->Ashby rename) | → | Ashby Outpatient Physical Therapy (3 places, redacted and reinserted as one unified text run each; visual gap eliminated) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Dispatch/tran_text_thread.pdf | whole file, rebuilt [round3 t01: file materially diverged from A52's registered content/timing and, worse, defeated the off-book trap by having Tran correct himself in-thread] | 5-page, 32-message thread (10/18-10/24), different content, self-resolves the off-book trap when Tran checks the block sheet and retracts his suspicion | → | 1-page, 3-message thread matching the spec verbatim (10/18/2025 03:20-03:40 AM): repeats the off-book suspicion, agrees to stay quiet until sure, does not self-resolve |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/DOT_655_Keeler.pdf | p.2, Printed result tape affixed to form? field [round3 t02: escalating from round2's rewording to full removal of the Attachment-letter reference, per expert direction] | Yes (orig.) -- Att. A | → | Yes |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/DOT_655_Keeler.pdf | p.4, Distribution list [round3 t02: these named attachments are not mounted as files anywhere in the world; removed rather than reworded since round2's rewording did not resolve the finding] | Attachment A / B / C bullets (3 items) in the Distribution list | → | [removed; Copy -- distribution items and Retention note retained] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | table1 r1c2, table1 r11c2, table3 r1c0 [round3 t02: pre-trip yard sheet and EMS run sheets are not mounted as files anywhere in the world; removed the dangling citations and pointed the passenger-table note to content within this same document instead] | Duty roster; pre-trip yard sheet | RPD TC-2025-1018 §IV; EMS run sheets | See APC/farebox export (A11) and on-scene EMS run sheets for... | → | Duty roster | RPD TC-2025-1018 §IV | See APC/farebox export (A11) for the passenger roster and the timeline above for injury dispositions and transport destinations. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | table0 r0, table1 r0, table2 r0, table3 r0 (10 runs) [round3 t04: dark navy fill with no color override left header text unreadable] | header cells (fill 1B2A4E) inherit Normal style color 333944 -- dark text on dark fill | → | header cells (fill 1B2A4E) explicit run color FFFFFF -- white text on dark fill |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | table1 r0c0 'Role', r0c1 'Attorney/Staff' [round3 t04: dark navy fill with no color override left header text unreadable] | table1 r0 header cells (fill 141A2E) inherit Normal style color 4A5266 -- dark text on dark fill | → | table1 r0 header cells (fill 141A2E) explicit run color FFFFFF -- white text on dark fill |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Authorized Owl Routes!F7:F12 [round3 t03: Status column had no distinctive color encoding, violating format-native status-rendering sub-check] | F7:F12 plain alternating white/beige fill (same as other columns) | → | F7:F12 alternating green shades (C6E8C6 / DDF0DD) distinct status-color encoding |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_life_care_plan.pdf | p.2, Table of Contents [round3 t02: matching removal of the attachments section these entries point to] | Attachments / Attachment 1-5 table-of-contents entries | → | [removed] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_life_care_plan.pdf | p.19 (formerly p.17 of 17), ATTACHMENTS section [round3 t02: escalating from round2's dispute (which was rejected) to removal, since these 5 named materials are not mounted as files anywhere in the world] | ATTACHMENTS heading + 5 numbered items, each (available on request) | → | [removed; End of report. retained] |
