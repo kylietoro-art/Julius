@@ -1,0 +1,34 @@
+World Realism
+
+* The world fails because two purportedly completed litigation documents retain unfilled signature-line scaffolding. `Shared/CivilCase/Complaint_Reyes_filed.pdf` shows "By: __________________________________" above Nora Halstead's name, and `Legal/Discovery/RFP_set.pdf` shows an unfilled attorney "By" line as well as an unfilled proof-of-service signature line above Grace Chen's name. These blank execution fields make the documents read as unexecuted templates rather than authentic filed or served work product, meeting the placeholder/template-residue fail criterion.
+*
+*
+*
+
+Cross-Artifact Consistency
+
+* The medical_billing_ledger.csv does not agree with the Settlement/Reyes_lien_EOB.pdf allocation of adjustments and outstanding balance: the ledger totals $2,644,000 adjustments with $0 balance, while the EOB says $2,640,800 adjustments and $3,200 balance. It also bills ACNRI inpatient services through 04/28/2026, although both Med/Reyes/rehab_neuropsych.pdf and the life-care plan record inpatient discharge on 04/06/2026. These are material, unexplained disagreements in calculation-bearing structured data and treatment dates.
+* The world contains two broken document references. First, `ACTD/Video/onboard_video_still_log.pdf` and the production tracker identify a specific preserved, available native MP4, but the complete mounted file inventory contains no MP4 file. Second, `Shared/Settlement/Reyes_lien_EOB.pdf` represents Tabs 1–11 of EOB and lien materials as enclosed and produced, although the supplied PDF has only four pages and no companion EOB, DHCS, or BlueShield materials are mounted. These unresolved supporting materials meet the failing criterion for absent attachments and missing document classes.
+*
+*
+*
+*
+*
+
+Leakage And Separation
+
+* `task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx` fails this dimension because it uses the bold, dark-filled header "Key Timepoint — S. Main / Third (Downtown Rivergate)" for an isolated table containing the 02:05 reference. The workbook otherwise already presents the full route roster, so this extra answer-oriented block selectively guides the reader to the accident-location/time fact. Rename the section neutrally or remove the isolated callout and retain the information only in the complete schedule table.
+*
+*
+*
+
+Factual Integrity
+
+* The intended-traps criterion fails because the collision direction and trip position cannot be resolved from in-world evidence. RunSchedule_Owl512.xlsx identifies the 02:05 S. Main/Third reference as southbound, while AVL_GPS_track_2025-1018.csv logs a 181–188° heading and declining latitude at 02:05; in direct conflict, TC_2025-1018.pdf says the bus was traveling northbound. These are core authoritative records, and no declared trap or correction explains the discrepancy, leaving the worker with no defensible canonical answer.
+*
+*
+*
+
+Aggregate Risk And Coverage
+
+* The corpus fails the coherence-ratio criterion because three independently fixable, unregistered contradictions persist across core operational, employment, and medical/capacity records. The official Route 512 schedule places the northbound Trip 06 S. Main/Third timepoint at 02:31, while the APC and AVL records place the bus there at approximately 02:05 and the final report adopts that account; the schedule's SB-reference note does not reconcile the northbound timing. Separately, the employment documents give incompatible Coastline start dates, and the medical/legal materials conflict over whether Reyes was continuously inpatient through April 6 or already home/outpatient in February, leaving material world facts unresolved across a meaningful share of the corpus.

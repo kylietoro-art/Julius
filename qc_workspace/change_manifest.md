@@ -385,3 +385,69 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Shared/Settlement/Reyes_life_care_plan.pdf | p.19 (formerly p.17 of 17), ATTACHMENTS section [round3 t02: escalating from round2's dispute (which was rejected) to removal, since these 5 named materials are not mounted as files anywhere in the world] | ATTACHMENTS heading + 5 numbered items, each (available on request) | → | [removed; End of report. retained] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/AVL_GPS_track_2025-1018.csv | rows timestamp_local 2025-10-18 02:00:00 through 02:05:12 (25 rows) [round4 factual-integrity: 9 independent sources incl. the canonical final report and police report say northbound; only this AVL window and 2 scheduling notes disagreed] | 02:00:00-02:05:12 window: latitude decreasing 34.08498->34.07852, heading 181-188 deg (southbound telemetry) | → | same window: latitude increasing 34.07194->34.07840, heading 0-8 deg (northbound telemetry, anchored to the same S.Main/Third reference latitude the confirmed-NB Trip 02/04 passes establish) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Route 512 Owl Block!J25, A34, B34, D34 [round4 factual-integrity: reworded to stop implying a southbound movement that contradicted the 9-source northbound consensus] | J25/A34/B34/D34: SB timepoint pass / Southbound reference pass language | → | J25/A34/B34/D34: early control-point pass / early reference pass language, explicitly not a southbound movement |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Route 512 Owl Block!A32:D36 [round4 leakage: isolated answer-oriented callout selectively highlighted the accident time/location] | 'Key Timepoint -- S. Main / Third (Downtown Rivergate)' isolated dark-header callout block (rows 32-36) duplicating the 02:05 fact from the main trip roster | → | [removed; 02:05 fact retained only in the main Trip Roster table row 06] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/Dispatch_log_2025-1018.csv | line 33 (02:06 radio_call entry) [round4 factual-integrity: matching wording fix to RunSchedule's SB-reference language] | SB reference timepoint 02:05 | → | early control-point timepoint 02:05 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CivilCase/Complaint_Reyes_filed.pdf | p.10, jury demand signature block [round4 world-realism: blank signature line on a purportedly filed complaint] | By: [blank underscore rule] | → | By: /s/ Nora Halstead |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CivilCase/Complaint_Reyes_filed.pdf | p.12, closing signature block [round4 world-realism: blank signature line on a purportedly filed complaint] | [blank underscore rule] | → | /s/ Grace Chen |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Discovery/RFP_set.pdf | p.12, attorney signature block [round4 world-realism: blank signature line on a purportedly served discovery document] | By: [blank underscore rule] | → | By: /s/ Nora Halstead |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Discovery/RFP_set.pdf | p.14, proof-of-service signature block [round4 world-realism: blank signature line on a purportedly served discovery document] | [blank underscore rule] | → | /s/ Grace Chen |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | ACNRI-001..008 rows, service_date column [round4 cross-artifact: rehab_neuropsych.pdf confirms inpatient discharge 04/06/2026; ledger billed inpatient services 22 days past that. Dollar amounts left untouched (billed total is a registered trap value, A34).] | ACNRI-001,002,003,004,006,007,008: service_date 2025-12-22 to 2026-04-28; ACNRI-001 description (127 days) | → | service_date 2025-12-22 to 2026-04-06; ACNRI-001 description (105 days) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | RRTC-001, ACNRI-001, SKY-001, RAD-001, ANES-001, NSG-001, TSG-001, ASH-001, HBC-001: adjustments and balance columns [round4 cross-artifact: ledger totals didn't match Reyes_lien_EOB.pdf's adjustments/balance figures. Billed and paid totals (registered trap values) left untouched.] | adjustments totaled 2,644,000, balance totaled 0 across all rows | → | adjustments totaled 2,640,800, balance totaled 3,200 -- reallocated each provider's patient-responsibility amount (per Reyes_lien_EOB.pdf Exhibit A) from adjustments to balance on that provider's first row |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_lien_EOB.pdf | p.3-4 [round4 cross-artifact: escalating from round2's rewording (which round4 still flagged) to full removal, since Tabs 1-11 (EOB/DHCS/BlueShield materials) are not mounted anywhere in the world; the supplied PDF only has 4 pages] | Section 5, Enclosure Index (Tabs 1-8 on p.3, Tabs 9-11 on p.4), plus orphaned Tab-8-label fragment, plus 'Enclosures (Exhibit A; Tabs 1-11)' closing line | → | [section 5 and all 11 Tab bullets removed; closing line reads 'Enclosures (Exhibit A)'; section 6 Reservation renumbered to 5 to close the gap] |

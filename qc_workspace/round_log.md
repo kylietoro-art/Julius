@@ -10,6 +10,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
 | 2 | 2026-09-08T17:16 | 7 | 4 | 4 | fixed 5, widened 2, traps 0, false 0, blocked 0 |
 | 3 | 2026-09-08T18:24 | 4 | 4 | 2 | fixed 4, widened 0, traps 0, false 0, blocked 0 |
+| 4 | 2026-09-08T19:03 | 6 | 5 | 5 | fixed 4, widened 2, traps 0, false 0, blocked 0 |
 
 ## Detail
 
@@ -51,4 +52,17 @@ each one means that class was fixed at the instance level, not the class level.
   - files named: runschedule_owl512.xlsx
 - **File is corrupt, empty, unreadable or won't render**: 1 finding(s)
   - files named: intake_memo.docx, ir_2025-1018_final.docx
+
+### Round 4, 2026-09-08T19:03
+
+- **Totals don't foot / calculations disagree with inputs**: 2 finding(s)  **(REPEAT)**
+  - files named: medical_billing_ledger.csv, rehab_neuropsych.pdf, reyes_lien_eob.pdf
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+  - files named: complaint_reyes_filed.pdf, rfp_set.pdf
+- **A referenced document or value doesn't resolve**: 1 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf, reyes_lien_eob.pdf
+- **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
+  - files named: runschedule_owl512.xlsx
+- **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
+  - files named: avl_gps_track_2025-1018.csv, runschedule_owl512.xlsx, tc_2025-1018.pdf
 

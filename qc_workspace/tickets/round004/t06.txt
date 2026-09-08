@@ -1,0 +1,10 @@
+TICKET 6 of 6  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The corpus fails the coherence-ratio criterion because three independently fixable, unregistered contradictions persist across core operational, employment, and medical/capacity records. The official Route 512 schedule places the northbound Trip 06 S. Main/Third timepoint at 02:31, while the APC and AVL records place the bus there at approximately 02:05 and the final report adopts that account; the schedule's SB-reference note does not reconcile the northbound timing. Separately, the employment documents give incompatible Coastline start dates, and the medical/legal materials conflict over whether Reyes was continuously inpatient through April 6 or already home/outpatient in February, leaving material world facts unresolved across a meaningful share of the corpus.

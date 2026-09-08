@@ -202,6 +202,71 @@
       "note": "",
       "closed": "2026-09-08T18:43:01",
       "changed": "Rebuilt tran_text_thread.pdf from scratch (was a 5-page, 32-message thread that materially diverged from A52's spec and, worse, had Tran self-correct and retract the off-book claim mid-thread, defeating the trap; now a 1-page, 3-message exchange matching the spec verbatim), removed three sets of dangling attachment/source citations that round 2's rewording had failed to resolve (DOT form's Attachment A-C list, the final incident report's pre-trip-yard-sheet and EMS-run-sheet citations, and the life-care plan's 5-item Attachments section and its Table of Contents entry), colored the RunSchedule Status column to a distinct green encoding, and set explicit white text color on 12 dark-navy-filled header cells across two documents that had no color override."
+    },
+    {
+      "round": 4,
+      "opened": "2026-09-08T19:03:00",
+      "count": 6,
+      "classes": {
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": [
+            "complaint_reyes_filed.pdf",
+            "rfp_set.pdf"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 2,
+          "files": [
+            "medical_billing_ledger.csv",
+            "rehab_neuropsych.pdf",
+            "reyes_lien_eob.pdf"
+          ]
+        },
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 1,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "reyes_lien_eob.pdf"
+          ]
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 1,
+          "files": [
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": [
+            "avl_gps_track_2025-1018.csv",
+            "runschedule_owl512.xlsx",
+            "tc_2025-1018.pdf"
+          ]
+        }
+      },
+      "repeats": [
+        "placeholder_synthetic",
+        "math_footing",
+        "broken_reference",
+        "entity_inconsistency",
+        "other"
+      ],
+      "disposition": {
+        "fixed": 4,
+        "expanded": 2,
+        "traps": 0,
+        "false": 0,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-08T19:57:33",
+      "changed": "Fixed blank signature lines, ledger/EOB adjustment-balance and ACNRI treatment-date mismatches, broken DriveCam-MP4 and lien/EOB Tab-enclosure references (swept to every occurrence), the RunSchedule status-color and isolated Key-Timepoint leaks, the AVL/schedule/report collision-direction conflict, and the Coastline hire-date and Reyes inpatient/outpatient contradictions (swept to a third conflicting source each)."
     }
   ]
 }

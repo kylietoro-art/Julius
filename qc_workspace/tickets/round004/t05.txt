@@ -1,0 +1,15 @@
+TICKET 5 of 6  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The intended-traps criterion fails because the collision direction and trip position cannot be resolved from in-world evidence. RunSchedule_Owl512.xlsx identifies the 02:05 S. Main/Third reference as southbound, while AVL_GPS_track_2025-1018.csv logs a 181–188° heading and declining latitude at 02:05; in direct conflict, TC_2025-1018.pdf says the bus was traveling northbound. These are core authoritative records, and no declared trap or correction explains the discrepancy, leaving the worker with no defensible canonical answer.
+*
+*
+*
+
+Aggregate Risk And Coverage
