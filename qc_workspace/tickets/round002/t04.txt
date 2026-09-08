@@ -1,0 +1,14 @@
+TICKET 4 of 7  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The No Solution Or Reasoning clause fails because ACTD/Litigation/production_tracker.csv gives the solver a direct final_call column for discovery decisions. It marks responsive records as Confirmed, Produce and labels A43 Attorney-confirmed, Withhold-Privileged, which supplies central produce/withhold outcomes for the discovery task. The one erroneous first-pass A42 row does not cure the leak: the remaining record-by-record calls are provided as a lookup table, materially collapsing the required reasoning. Remove the review_status, final_call, and prefilled privilege/production conclusions, or leave them genuinely unresolved.
+*
+*
+
+Factual Integrity

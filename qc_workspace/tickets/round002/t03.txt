@@ -1,0 +1,16 @@
+TICKET 3 of 7  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The MatterHub calendar labels HC-2026-0087 "Reyes / Cho / Mowbray v. Alder Creek Transit District," while the docket export with the identical ID calls it "Reyes/Bus DUI Collision" and states that its case-wide entry applies to "Reyes, Cho, Mowbray, City." The claims tracker identifies the City separately as ACTD-2026-0117, a public-entity property-damage claimant, so the label drift can cause a worker to conflate a separate City claim with the three-claimant matter. Standardize both MatterHub records to one matter name and exclude the City from the private-claimant case entry (or create a separately named City matter).
+*
+*
+*
+*
+
+Leakage And Separation

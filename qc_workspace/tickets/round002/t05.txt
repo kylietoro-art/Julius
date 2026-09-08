@@ -1,0 +1,22 @@
+TICKET 5 of 7  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The world fails because the Reyes intake memo misdescribes the statutory authority it cites: it calls Gov. Code § 911.6(b) a list of "four enumerated grounds." The official California text shows subdivisions (b)(1) through (b)(6), so the cited statute does not support that assertion. This is a discrete, fixable external-citation error in a central late-claim artifact.
+*
+*
+*
+
+Aggregate Risk And Coverage
+
+*
+*
+*
+*
+
+Presentation & Render Integrity (Touch-Up)

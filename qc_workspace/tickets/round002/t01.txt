@@ -1,0 +1,15 @@
+TICKET 1 of 7  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* `Shared/CrimeLab/BAC_Keeler.pdf` presents a "LABORATORY CERTIFICATION STATEMENT" and says it was "Executed at Los Angeles, California, on 11/07/2025," yet retains blank "Signed:" rules for both the analyst and technical reviewer. `ACTD/Claims/rejection_0218.pdf` presents a certificate of mailing and two dated rejection notices but leaves the claims assistant and claims manager signature lines blank, while `ACTD/Risk/coverage_summary.pdf` is labeled as issued coverage and leaves both authorization signatures blank. These visibly unfinished execution fields are unresolved template/work-product residue in artifacts that purport to be finalized records, violating the criterion.
+*
+*
+*
+
+Cross-Artifact Consistency

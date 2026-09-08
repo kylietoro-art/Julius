@@ -94,6 +94,50 @@
         "Draft incident report's missing tracked-changes: A03 is a never-finalized on-scene draft that gets wholly superseded by a separately-authored final report (A02), not a document edited in place via Track Changes. Adding fake revision history would misrepresent how the document came to exist.",
         "tran_text_thread.pdf text legibility: rendered all 5 pages; header/footer chrome is normal, readable medium-gray throughout, not washed out as claimed."
       ]
+    },
+    {
+      "round": 2,
+      "opened": "2026-09-08T17:16:17",
+      "count": 7,
+      "classes": {
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 2,
+          "files": [
+            "bac_keeler.pdf",
+            "coverage_summary.pdf",
+            "rejection_0218.pdf",
+            "medical_billing_ledger.csv"
+          ]
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 2,
+          "files": [
+            "production_tracker.csv"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 2,
+          "files": [
+            "ir_2025-1018_draft.docx"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "temporal",
+        "a_code_leakage",
+        "other",
+        "citation_facts"
+      ],
+      "disposition": null,
+      "note": ""
     }
   ]
 }

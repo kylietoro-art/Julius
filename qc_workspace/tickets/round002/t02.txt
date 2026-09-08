@@ -1,0 +1,10 @@
+TICKET 2 of 7  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The reference chain is broken in several places. Most importantly, the final incident report identifies preserved DriveCam video, while the only video-related file is a still-frame log that says the native MP4 remains available from custodians; the world-spec likewise defines A53 as "MP4 (clip export) + still-frame log." The DOT form, FST supplement, lien/EOB letter, and life-care plan each expressly enumerate companion attachments or enclosures that are not embedded or mounted, leaving referenced supporting materials unresolved under this dimension.

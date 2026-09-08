@@ -8,6 +8,7 @@ each one means that class was fixed at the instance level, not the class level.
 | Round | Opened | Findings | Classes | Repeats | Disposition |
 |---|---|---|---|---|---|
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
+| 2 | 2026-09-08T17:16 | 7 | 4 | 4 | _open_ |
 
 ## Detail
 
@@ -28,4 +29,14 @@ each one means that class was fixed at the instance level, not the class level.
   - files named: reyes_life_care_plan.pdf, reyes_wage_records.pdf
 - **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)
   - files named: owl_service_rules.docx, post_accident_testing_policy.docx
+
+### Round 2, 2026-09-08T17:16
+
+- **Dates, chronology or timeline don't hold together**: 2 finding(s)  **(REPEAT)**
+  - files named: bac_keeler.pdf, coverage_summary.pdf, rejection_0218.pdf, medical_billing_ledger.csv
+- **Builder A## codes visible in world files**: 2 finding(s)  **(REPEAT)**
+  - files named: production_tracker.csv
+- **Uncategorised, read the finding text**: 2 finding(s)  **(REPEAT)**
+  - files named: ir_2025-1018_draft.docx
+- **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
 

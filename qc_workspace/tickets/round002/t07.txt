@@ -1,0 +1,10 @@
+TICKET 7 of 7  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The CSV-formatting dimension fails because task_fs/filesystem/ACTD/Claims/medical_billing_ledger.csv ends with a summary row instead of a data record for the header-defined billing fields. Its final row starts "TOTAL,ALL PROVIDERS (9)" and explicitly describes an "aggregate itemized medical billing," followed by aggregate amounts. This mixed-schema bottom summary violates the criterion that every row after the header must be a data record and specifically triggers the prohibition on trailing totals/summary blocks.

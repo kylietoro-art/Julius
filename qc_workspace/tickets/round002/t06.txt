@@ -1,0 +1,10 @@
+TICKET 6 of 7  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* IR_2025-1018_draft.docx fails the draft/redline fidelity sub-check. It expressly states "DRAFT — ON-SCENE — SUBJECT TO SUPERVISOR REVIEW," but the parsed package reports zero actual tracked insertions, zero deletions, and no comments part. A reader is therefore shown a working draft with no visible comments or tracked-change marks, contrary to sub-check (d); add review comments and/or retain Word tracked revisions.

@@ -1,0 +1,40 @@
+World Realism
+
+* `Shared/CrimeLab/BAC_Keeler.pdf` presents a "LABORATORY CERTIFICATION STATEMENT" and says it was "Executed at Los Angeles, California, on 11/07/2025," yet retains blank "Signed:" rules for both the analyst and technical reviewer. `ACTD/Claims/rejection_0218.pdf` presents a certificate of mailing and two dated rejection notices but leaves the claims assistant and claims manager signature lines blank, while `ACTD/Risk/coverage_summary.pdf` is labeled as issued coverage and leaves both authorization signatures blank. These visibly unfinished execution fields are unresolved template/work-product residue in artifacts that purport to be finalized records, violating the criterion.
+*
+*
+*
+
+Cross-Artifact Consistency
+
+* The reference chain is broken in several places. Most importantly, the final incident report identifies preserved DriveCam video, while the only video-related file is a still-frame log that says the native MP4 remains available from custodians; the world-spec likewise defines A53 as "MP4 (clip export) + still-frame log." The DOT form, FST supplement, lien/EOB letter, and life-care plan each expressly enumerate companion attachments or enclosures that are not embedded or mounted, leaving referenced supporting materials unresolved under this dimension.
+* The MatterHub calendar labels HC-2026-0087 "Reyes / Cho / Mowbray v. Alder Creek Transit District," while the docket export with the identical ID calls it "Reyes/Bus DUI Collision" and states that its case-wide entry applies to "Reyes, Cho, Mowbray, City." The claims tracker identifies the City separately as ACTD-2026-0117, a public-entity property-damage claimant, so the label drift can cause a worker to conflate a separate City claim with the three-claimant matter. Standardize both MatterHub records to one matter name and exclude the City from the private-claimant case entry (or create a separately named City matter).
+*
+*
+*
+*
+
+Leakage And Separation
+
+* The No Solution Or Reasoning clause fails because ACTD/Litigation/production_tracker.csv gives the solver a direct final_call column for discovery decisions. It marks responsive records as Confirmed, Produce and labels A43 Attorney-confirmed, Withhold-Privileged, which supplies central produce/withhold outcomes for the discovery task. The one erroneous first-pass A42 row does not cure the leak: the remaining record-by-record calls are provided as a lookup table, materially collapsing the required reasoning. Remove the review_status, final_call, and prefilled privilege/production conclusions, or leave them genuinely unresolved.
+*
+*
+
+Factual Integrity
+
+* The world fails because the Reyes intake memo misdescribes the statutory authority it cites: it calls Gov. Code § 911.6(b) a list of "four enumerated grounds." The official California text shows subdivisions (b)(1) through (b)(6), so the cited statute does not support that assertion. This is a discrete, fixable external-citation error in a central late-claim artifact.
+*
+*
+*
+
+Aggregate Risk And Coverage
+
+*
+*
+*
+*
+
+Presentation & Render Integrity (Touch-Up)
+
+* IR_2025-1018_draft.docx fails the draft/redline fidelity sub-check. It expressly states "DRAFT — ON-SCENE — SUBJECT TO SUPERVISOR REVIEW," but the parsed package reports zero actual tracked insertions, zero deletions, and no comments part. A reader is therefore shown a working draft with no visible comments or tracked-change marks, contrary to sub-check (d); add review comments and/or retain Word tracked revisions.
+* The CSV-formatting dimension fails because task_fs/filesystem/ACTD/Claims/medical_billing_ledger.csv ends with a summary row instead of a data record for the header-defined billing fields. Its final row starts "TOTAL,ALL PROVIDERS (9)" and explicitly describes an "aggregate itemized medical billing," followed by aggregate amounts. This mixed-schema bottom summary violates the criterion that every row after the header must be a data record and specifically triggers the prohibition on trailing totals/summary blocks.
