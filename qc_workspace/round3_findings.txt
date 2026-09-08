@@ -1,0 +1,49 @@
+Built Files Match Spec Inventory
+
+* The build fails the inventory criterion for A52, Tran Personal-Phone Text Thread. The registry requires a 10/18/2025 03:20–03:40 exchange beginning "You seeing this Route 512 thing?" and including "don't say anything til we're sure," but `ACTD/Dispatch/tran_text_thread.pdf` instead shows messages beginning at 2:47 AM and continuing through 3:04 AM with different text. Although the file exists and retains the general off-book theme, it materially diverges from the registered content and timing, preventing the built artifact from matching its specification.
+*
+
+World Realism
+
+*
+*
+*
+*
+
+Cross-Artifact Consistency
+
+* Three separately repairable sets of explicit document references are unresolved. `ACTD/Compliance/DOT_655_Keeler.pdf` lists Attachments A–C; `ACTD/Safety/IR_2025-1018_final.docx` relies on a pre-trip yard sheet, post-collision mechanical inspection, and EMS run sheets; and `Shared/Settlement/Reyes_life_care_plan.pdf` lists five attachments "available on request." None of those named supporting materials is mounted as a file, so the references fail to resolve to real world materials as required.
+*
+*
+*
+*
+*
+
+Leakage And Separation
+
+*
+*
+*
+*
+
+Factual Integrity
+
+*
+*
+*
+*
+*
+
+Aggregate Risk And Coverage
+
+*
+*
+*
+*
+
+Presentation & Render Integrity (Touch-Up)
+
+* `task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx` fails sub-check (a). Its `Authorized Owl Routes` sheet has an explicit `Status` column, but the `Authorized` values in F7:F12 use ordinary white/beige alternating-row fills rather than a clear green/amber/red (or other distinctive) status encoding. That leaves a status-like tracker visually neutral and violates the format-native status-rendering criterion; the formula, visual-slot, and draft/redline sub-checks otherwise did not reveal a failure.
+* `ACTD/Safety/IR_2025-1018_final.docx` places header-row text such as "Incident No.:" and "Time (10/17/2025 → 10/18/2025)" in cells filled `1B2A4E`, while the Normal style color is `333944`; no table-style conditional color overrides it. `Legal/Reyes/intake_memo.docx` similarly places "Role" in a `141A2E` table-header cell while its Normal text inherits `4A5266`, again without a table-style override. Each combination is dark text on a dark local fill and therefore unreadable enough to violate the fail criterion.
+*
+*

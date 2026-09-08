@@ -1,0 +1,20 @@
+TICKET 1 of 4  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The build fails the inventory criterion for A52, Tran Personal-Phone Text Thread. The registry requires a 10/18/2025 03:20–03:40 exchange beginning "You seeing this Route 512 thing?" and including "don't say anything til we're sure," but `ACTD/Dispatch/tran_text_thread.pdf` instead shows messages beginning at 2:47 AM and continuing through 3:04 AM with different text. Although the file exists and retains the general off-book theme, it materially diverges from the registered content and timing, preventing the built artifact from matching its specification.
+*
+
+World Realism
+
+*
+*
+*
+*
+
+Cross-Artifact Consistency

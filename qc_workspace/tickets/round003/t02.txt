@@ -1,0 +1,39 @@
+TICKET 2 of 4  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* Three separately repairable sets of explicit document references are unresolved. `ACTD/Compliance/DOT_655_Keeler.pdf` lists Attachments A–C; `ACTD/Safety/IR_2025-1018_final.docx` relies on a pre-trip yard sheet, post-collision mechanical inspection, and EMS run sheets; and `Shared/Settlement/Reyes_life_care_plan.pdf` lists five attachments "available on request." None of those named supporting materials is mounted as a file, so the references fail to resolve to real world materials as required.
+*
+*
+*
+*
+*
+
+Leakage And Separation
+
+*
+*
+*
+*
+
+Factual Integrity
+
+*
+*
+*
+*
+*
+
+Aggregate Risk And Coverage
+
+*
+*
+*
+*
+
+Presentation & Render Integrity (Touch-Up)

@@ -150,6 +150,50 @@
         "The DriveCam/MP4 reference is disputed per round 1's standing ruling: A53 is a registered App Data artifact (vendor-hosted), and the still-frame log is its justified filesystem companion, so the missing native clip is a scope gap, not a filesystem defect.",
         "The life-care plan's Attachments 1-5 are disputed: they are explicitly labeled 'available on request' in the document itself, which is an honest disclosure rather than a false claim of inclusion, unlike the DOT form, FST supplement, and lien/EOB letter's attachments, which were fixed."
       ]
+    },
+    {
+      "round": 3,
+      "opened": "2026-09-08T18:24:14",
+      "count": 4,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 1,
+          "files": [
+            "tran_text_thread.pdf"
+          ]
+        },
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 1,
+          "files": [
+            "dot_655_keeler.pdf",
+            "ir_2025-1018_final.docx",
+            "reyes_life_care_plan.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": [
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "file_integrity": {
+          "label": "File is corrupt, empty, unreadable or won't render",
+          "n": 1,
+          "files": [
+            "intake_memo.docx",
+            "ir_2025-1018_final.docx"
+          ]
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "other"
+      ],
+      "disposition": null,
+      "note": ""
     }
   ]
 }

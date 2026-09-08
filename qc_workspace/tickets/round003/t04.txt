@@ -1,0 +1,12 @@
+TICKET 4 of 4  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* `ACTD/Safety/IR_2025-1018_final.docx` places header-row text such as "Incident No.:" and "Time (10/17/2025 → 10/18/2025)" in cells filled `1B2A4E`, while the Normal style color is `333944`; no table-style conditional color overrides it. `Legal/Reyes/intake_memo.docx` similarly places "Role" in a `141A2E` table-header cell while its Normal text inherits `4A5266`, again without a table-style override. Each combination is dark text on a dark local fill and therefore unreadable enough to violate the fail criterion.
+*
+*

@@ -9,6 +9,7 @@ each one means that class was fixed at the instance level, not the class level.
 |---|---|---|---|---|---|
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
 | 2 | 2026-09-08T17:16 | 7 | 4 | 4 | fixed 5, widened 2, traps 0, false 0, blocked 0 |
+| 3 | 2026-09-08T18:24 | 4 | 4 | 2 | _open_ |
 
 ## Detail
 
@@ -39,4 +40,15 @@ each one means that class was fixed at the instance level, not the class level.
 - **Uncategorised, read the finding text**: 2 finding(s)  **(REPEAT)**
   - files named: ir_2025-1018_draft.docx
 - **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
+
+### Round 3, 2026-09-08T18:24
+
+- **Builder A## codes visible in world files**: 1 finding(s)  **(REPEAT)**
+  - files named: tran_text_thread.pdf
+- **A referenced document or value doesn't resolve**: 1 finding(s)
+  - files named: dot_655_keeler.pdf, ir_2025-1018_final.docx, reyes_life_care_plan.pdf
+- **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
+  - files named: runschedule_owl512.xlsx
+- **File is corrupt, empty, unreadable or won't render**: 1 finding(s)
+  - files named: intake_memo.docx, ir_2025-1018_final.docx
 
