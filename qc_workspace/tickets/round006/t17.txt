@@ -1,0 +1,11 @@
+TICKET 17 of 21  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] Coherence Flag RatioMajor
+The official RunSchedule_Owl512.xlsx schedules Trip 06 northbound at Poplar/Rivergate Plaza at 02:04 and S. Main/Third at 02:31, yet the AVL record places Bus 4177 on Block 512-OWL at 02:05 and the APC export records it at S. Main/Third at 02:05:37. The final incident report and police report place the collision at S. Main/Third at 02:05; the final report says there was no dispatch-logged deviation or reassignment, and the schedule says none was entered. This leaves an unexplained 26-minute route-position drift among core collision artifacts and meets the coherence-ratio fail standard.

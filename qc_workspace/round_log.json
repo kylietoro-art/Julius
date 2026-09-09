@@ -502,6 +502,73 @@
       "disputes": [
         "The onboard-video native MP4 (A53) is intentionally absent - it is the evidentiary gap that makes Task T7's ESI-preservation-scope trap work; mounting it would resolve a registered trap."
       ]
+    },
+    {
+      "round": 6,
+      "opened": "2026-09-09T21:57:24",
+      "count": 21,
+      "classes": {
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 3,
+          "files": [
+            "claims_tracker.csv",
+            "docket_entry.xlsx"
+          ]
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 2,
+          "files": []
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 9,
+          "files": [
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": []
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 2,
+          "files": [
+            "reyes_lien_eob.pdf",
+            "bills_billed.pdf"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": []
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": []
+        },
+        "pii_copyright": {
+          "label": "Real PII or copyrighted material in world files",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "math_footing",
+        "entity_inconsistency",
+        "other",
+        "temporal",
+        "answer_leakage",
+        "metadata_fingerprint",
+        "citation_facts",
+        "pii_copyright"
+      ],
+      "disposition": null,
+      "note": ""
     }
   ]
 }

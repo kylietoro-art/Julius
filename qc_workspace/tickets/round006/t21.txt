@@ -1,0 +1,11 @@
+TICKET 21 of 21  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] Format-Native Feature FidelityMinor
+`ACTD/Ops/RunSchedule_Owl512.xlsx`, sheet "Authorized Owl Routes," has the explicit header `Status` in F6 and "Authorized" in F7:F12. The audit found F7:F12 styled only with white (`00FFFFFF`) and beige (`00F5F2EB`) alternating row fills, and `CF_RULES []`; there is no green/amber/red or equivalent status encoding. This materially fails sub-check (a): a reader cannot distinguish the Status field visually from the ordinary table striping. The smallest fix is to apply a clearly green status fill/font or an equivalent conditional-formatting rule to the Authorized cells.

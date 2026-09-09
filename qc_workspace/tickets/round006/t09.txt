@@ -1,0 +1,12 @@
+TICKET 9 of 21  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] No Signposting of Load-Bearing FactsMinor
+`task_fs/filesystem/Med/Reyes/bills_billed.pdf` artificially signposts the answer-bearing damages source. Its page 1 cover note tells the reader to "see EOBs for amounts actually paid/accepted," and page 11 repeats that cue after "End of compilation" as a bolded "Reminder — cover-sheet note repeated," rather than simply presenting the billing record. This directs the solver to prefer the paid amount over the prominently totaled billed amount, so the load-bearing fact is highlighted as the answer; remove the repeated end-of-document reminder (and keep any neutral, document-native billing qualifier only once).
+Finding #1: Repeated paid-amount instruction in billed-medical compilationminor

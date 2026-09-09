@@ -691,3 +691,21 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Med/Reyes/bills_billed.pdf | cover sheet row 2 and row 4; Bill 2 Statement Covers line [r5-t07: inpatient rehab dates disagree with ledger/medical record] | Alder Creek Neuro-Rehab dates 12/22/2025-04/28/2026 (128 days); Rivergate Radiology end date 04/28/2026 | → | 12/22/2025-04/06/2026 (106 days) matching ledger and medical record; Radiology end date 04/06/2026. Dollar totals (incl. $358,400 R&B, $612,500 bill total, $2,840,000 grand total) intentionally left unchanged - grand total is A34's registered T4 trap value |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_lien_EOB.pdf | p.2 [r6-t08: settlement EOB states the damages-task answer] | Section 2 heading '(Howell-Recoverable)'; total line '(HOWELL-RECOVERABLE): $196,000.00'; closing sentence explaining Howell addresses the $2,840,000 billed vs $196,000 paid relationship | → | heading 'Total Amounts Paid / Accepted' with no characterization; total line just '$196,000.00'; closing sentence replaced with a neutral pointer to Exhibit A |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Med/Reyes/bills_billed.pdf | p.11 (final page) [r6-t09: repeated paid-amount instruction signposts the load-bearing fact] | p.11 repeated 'Reminder - cover-sheet note repeated: Charges reflect provider chargemaster rates; see EOBs for amounts actually paid/accepted.' after End of compilation | → | removed; the same note remains once, on the p.1 cover sheet |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Authorized Owl Routes!F7:F12 [r6-t21: Status column not visually distinguishable from ordinary table striping] | F7:F12 'Authorized' status cells styled with only plain white/beige row-striping fill and body-text-weight font, no CF_RULES | → | F7:F12 given a light-green fill (#D6EAD7) with bold dark-green (#1E5631) font, a clear status-badge treatment |

@@ -1,0 +1,43 @@
+Cross-Artifact Consistency
+
+* [P0] Numerical Values Constraints And Structured Data Are Consistent
+`Legal/Reyes/docket_entry.xlsx`, Deadlines!E12, records a single case-wide "suit_filing_deadline" of 10/18/2027, based on "accrual + 2 yrs," and its notes say it applies to "all three claimants (Reyes, Cho, Mowbray, City)." That materially disagrees with `ACTD/Claims/claims_tracker.csv`, which records that Cho and Mowbray's claims were rejected and mailed on 02/18/2026 with a 08/18/2026 "reject+6mo" deadline; it also leaves Reyes on a distinct pending late-claim track. The dates therefore misstate a live litigation constraint for two claimants and collapse incompatible claimant positions into one deadline; replace the case-wide entry with separate Cho/Mowbray 08/18/2026 entries and the Reyes late-claim/§946.6 dates.
+Finding #1: Case-wide docket deadline conflicts with rejection-based passenger deadlinesmajor
+* [P1] Domain Reconciliation Ties
+* [P0] Personnel Names Titles Roles And Identifiers Are Consistent
+* [P1] No Broken Document References
+* [P1] World Timeline Holds Together (consolidated)
+* [P1] Consistent Naming And Defined Terms
+* [P1] Calculation & Fixture Accuracy
+
+Leakage And Separation
+
+* [P0] No Reachable Shortcut to the Answer (consolidated)Major
+The No Solution Or Reasoning Leakage clause fails because the worker-readable settlement document `/task_fs/filesystem/Shared/Settlement/Reyes_lien_EOB.pdf` states both the governing legal rule and the precise answer to the paid-versus-billed fork. It labels the total "(HOWELL-RECOVERABLE): $196,000.00," then expressly explains that Howell concerns the relationship between the $2,840,000 billed charges and $196,000 paid/accepted for past-medical special damages. That collapses the core legal-and-valuation reasoning requested by the damages memo; revise the EOB to present the payment, adjustment, and lien data without characterizing an amount as legally recoverable or explaining the resulting Howell/Corenbaum conclusion.
+Finding #1: Settlement EOB states the damages-task answermajor
+* [P1] No Signposting of Load-Bearing FactsMinor
+`task_fs/filesystem/Med/Reyes/bills_billed.pdf` artificially signposts the answer-bearing damages source. Its page 1 cover note tells the reader to "see EOBs for amounts actually paid/accepted," and page 11 repeats that cue after "End of compilation" as a bolded "Reminder — cover-sheet note repeated," rather than simply presenting the billing record. This directs the solver to prefer the paid amount over the prominently totaled billed amount, so the load-bearing fact is highlighted as the answer; remove the repeated end-of-document reminder (and keep any neutral, document-native billing qualifier only once).
+Finding #1: Repeated paid-amount instruction in billed-medical compilationminor
+* [P1] In-World vs Out-Of-World Separation And Metadata Cleanliness
+* [P0] No Out-of-World or Build Artifacts
+
+Factual Integrity
+
+* [P1] Registered Traps Present in the Build (consolidated)
+* [P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+* [P1] External Citations Resolve To Real Content
+* [P1] No Real PII or Copyrighted Material
+* [P1] Intended Traps Are Fair
+
+Aggregate Risk And Coverage
+
+* [P0] Coherence Flag RatioMajor
+The official RunSchedule_Owl512.xlsx schedules Trip 06 northbound at Poplar/Rivergate Plaza at 02:04 and S. Main/Third at 02:31, yet the AVL record places Bus 4177 on Block 512-OWL at 02:05 and the APC export records it at S. Main/Third at 02:05:37. The final incident report and police report place the collision at S. Main/Third at 02:05; the final report says there was no dispatch-logged deviation or reassignment, and the schedule says none was entered. This leaves an unexplained 26-minute route-position drift among core collision artifacts and meets the coherence-ratio fail standard.
+* [P0] File Integrity And Usability Defect Rate (consolidated)
+* [P0] Corpus Reads as Real Work Product (consolidated)
+* [P0] Anomaly Detection Catch-All
+
+Presentation & Render Integrity (Touch-Up)
+
+* [P0] Format-Native Feature FidelityMinor
+`ACTD/Ops/RunSchedule_Owl512.xlsx`, sheet "Authorized Owl Routes," has the explicit header `Status` in F6 and "Authorized" in F7:F12. The audit found F7:F12 styled only with white (`00FFFFFF`) and beige (`00F5F2EB`) alternating row fills, and `CF_RULES []`; there is no green/amber/red or equivalent status encoding. This materially fails sub-check (a): a reader cannot distinguish the Status field visually from the ordinary table striping. The smallest fix is to apply a clearly green status fill/font or an equivalent conditional-formatting rule to the Authorized cells.

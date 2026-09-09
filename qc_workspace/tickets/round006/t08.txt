@@ -1,0 +1,12 @@
+TICKET 8 of 21  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] No Reachable Shortcut to the Answer (consolidated)Major
+The No Solution Or Reasoning Leakage clause fails because the worker-readable settlement document `/task_fs/filesystem/Shared/Settlement/Reyes_lien_EOB.pdf` states both the governing legal rule and the precise answer to the paid-versus-billed fork. It labels the total "(HOWELL-RECOVERABLE): $196,000.00," then expressly explains that Howell concerns the relationship between the $2,840,000 billed charges and $196,000 paid/accepted for past-medical special damages. That collapses the core legal-and-valuation reasoning requested by the damages memo; revise the EOB to present the payment, adjustment, and lien data without characterizing an amount as legally recoverable or explaining the resulting Howell/Corenbaum conclusion.
+Finding #1: Settlement EOB states the damages-task answermajor

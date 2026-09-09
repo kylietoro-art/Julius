@@ -1,0 +1,12 @@
+TICKET 1 of 21  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] Numerical Values Constraints And Structured Data Are Consistent
+`Legal/Reyes/docket_entry.xlsx`, Deadlines!E12, records a single case-wide "suit_filing_deadline" of 10/18/2027, based on "accrual + 2 yrs," and its notes say it applies to "all three claimants (Reyes, Cho, Mowbray, City)." That materially disagrees with `ACTD/Claims/claims_tracker.csv`, which records that Cho and Mowbray's claims were rejected and mailed on 02/18/2026 with a 08/18/2026 "reject+6mo" deadline; it also leaves Reyes on a distinct pending late-claim track. The dates therefore misstate a live litigation constraint for two claimants and collapse incompatible claimant positions into one deadline; replace the case-wide entry with separate Cho/Mowbray 08/18/2026 entries and the Reyes late-claim/§946.6 dates.
+Finding #1: Case-wide docket deadline conflicts with rejection-based passenger deadlinesmajor

@@ -12,6 +12,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 3 | 2026-09-09T17:49 | 23 | 11 | 10 | fixed 8, widened 1, traps 0, false 14, blocked 0 |
 | 4 | 2026-09-09T19:09 | 27 | 11 | 10 | fixed 6, widened 2, traps 0, false 19, blocked 0 |
 | 5 | 2026-09-09T21:07 | 28 | 11 | 11 | fixed 9, widened 0, traps 0, false 19, blocked 0 |
+| 6 | 2026-09-09T21:57 | 21 | 8 | 8 | _open_ |
 
 ## Detail
 
@@ -111,5 +112,19 @@ Note: Self-QA pass (separate from this round's findings) found and fixed 3 regre
 - **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
 - **A referenced document or value doesn't resolve**: 1 finding(s)  **(REPEAT)**
 - **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
+- **Real PII or copyrighted material in world files**: 1 finding(s)  **(REPEAT)**
+
+### Round 6, 2026-09-09T21:57
+
+- **Uncategorised, read the finding text**: 9 finding(s)  **(REPEAT)**
+  - files named: runschedule_owl512.xlsx
+- **Totals don't foot / calculations disagree with inputs**: 3 finding(s)  **(REPEAT)**
+  - files named: claims_tracker.csv, docket_entry.xlsx
+- **Same person/entity named, titled or ID'd differently across files**: 2 finding(s)  **(REPEAT)**
+- **Solution or reasoning leaked into world files**: 2 finding(s)  **(REPEAT)**
+  - files named: reyes_lien_eob.pdf, bills_billed.pdf
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+- **Dates, chronology or timeline don't hold together**: 1 finding(s)  **(REPEAT)**
+- **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
 - **Real PII or copyrighted material in world files**: 1 finding(s)  **(REPEAT)**
 
