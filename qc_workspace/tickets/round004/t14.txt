@@ -1,0 +1,11 @@
+TICKET 14 of 27  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] No Reachable Shortcut to the Answer (consolidated) — Major
+The solver-readable files directly state intended conclusions and reasoning rather than requiring the worker to synthesize the underlying records. `ACTD/Claims/reserve_memo.docx` tells the defense that respondeat superior attaches and that its course-and-scope defense is not viable, which collapses T5's required adverse conclusion; `Legal/Reyes/intake_memo.docx` independently prewrites the same plaintiff-side course-and-scope result used for T2. Separately, `Shared/Settlement/Reyes_lien_EOB.pdf` expressly says the $196,000 paid amount—not the $2.84 million billed amount—is the recoverable trial measure, while `Shared/Settlement/Reyes_life_care_plan.pdf` says the undiscounted total is inappropriate and provides the $4.24 million present-value calculation; together they reveal T4's central reasoning and answer. Removing or recasting these task-specific legal conclusions as neutral source facts would cure the leaks.

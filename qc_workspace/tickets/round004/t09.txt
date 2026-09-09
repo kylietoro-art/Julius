@@ -1,0 +1,12 @@
+TICKET 9 of 27  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] World Timeline Holds Together (consolidated) — Major
+Causal order fails in Legal/Discovery/hold_demand_letter.pdf. Although the letter is dated March 20, 2026, it says a late-claim application "was filed with the Board on 05/15/2026," while Legal/Reyes/late_claim_app.pdf is expressly marked "DATE FILED: May 15, 2026." That puts knowledge of a May filing into a March document, materially breaking the world's chronology; revise the letter to omit the application or redated it to after May 15, 2026.
+Finding #1: Causal-order hindsight in March preservation letter — major

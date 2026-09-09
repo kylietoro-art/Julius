@@ -1,0 +1,14 @@
+TICKET 8 of 27  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] No Broken Document References — Major
+The final incident report's own "Attachments and Referenced Records" names an Authorized Owl Routes register, a 10/17/2025 pre-trip yard sheet, and a 10/18/2025 post-collision mechanical inspection report, none of which appears in the 62-file task filesystem; the mounted rules, roster, and maintenance export do not supply those records. The coverage summary also directs the reader to the "attached Memorandum of Coverage Form SCPERA-MOC-100 (07/23)," but the PDF ends there and no such form is mounted. Further missing attachment packages include the DOT test record's three specified attachments, the FST supplement's four specified attachments, and the life-care plan's five "available on request" attachments; this leaves explicit supporting-document references unresolved and fails P1.
+Finding #1: Final incident report cites unmounted operational records — major
+Finding #2: Coverage summary omits its promised Memorandum of Coverage — major
+Finding #3: Testing and damages documents identify absent attachment packages — major

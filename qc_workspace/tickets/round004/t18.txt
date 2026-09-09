@@ -1,0 +1,12 @@
+TICKET 18 of 27  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated) — Minor
+[Failing – U.S. Regional Requirements] Legal/Passengers/claims_0118.pdf states that each claim would be an unlimited civil case at a "jurisdictional amount over $25,000, Code Civ. Proc. § 88," and each embedded form repeats "Limited ($25,000 or less)" versus "Non-Limited / unlimited-civil (over $25,000)." Official California CCP § 85 instead provides that an action is limited only if "the amount in controversy does not exceed thirty-five thousand dollars ($35,000)," while the official CCP § 88 text merely says a non-limited action may be called an unlimited civil case. Because the world presents these as standard California Government Claims Act forms, the obsolete threshold and incorrect statutory attribution materially misstate the governing California jurisdictional framework; change both forms to the $35,000 threshold and cite CCP § 85 for it (while retaining § 88 only for the label).
+Finding #1: Passenger claim forms use obsolete California civil-jurisdiction threshold — minor

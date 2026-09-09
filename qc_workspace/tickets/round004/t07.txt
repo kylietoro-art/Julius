@@ -1,0 +1,12 @@
+TICKET 7 of 27  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] Numerical Values Constraints And Structured Data Are Consistent — Minor
+Shared financial records largely reconcile, but the sensitivity table in Shared/Settlement/Reyes_life_care_plan.pdf contains multiple incorrect present values under its own stated formula. The plan says it uses a $180,000 annual annuity and PV = C × [(1 − (1 + r)^−n) / r], yet its 36-year 2.0% sensitivity is shown as $4,592,000 rather than the recomputed $4,588,000, and its 36-year 3.0% sensitivity is shown as $3,921,000 rather than $3,930,000; the 30/40-year matrix also misstates multiple cells. These are un-reconciled calculation errors in a central damages-planning artifact and should be corrected by regenerating the sensitivity schedule from the disclosed inputs.
+Finding #1: Life-care plan sensitivity table does not match stated annuity formula — minor

@@ -445,3 +445,105 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Compliance/DOT_655_Keeler.pdf | p.4 Distribution list, 3 bullets [self-QA: same em-dash glyph corruption as the p.2 fix] | Attachment A/B/C (Compliance safe) descriptions [round-3 version: em-dashes corrupted to middle-dot glyphs] | → | Attachment A/B/C (Compliance safe) - descriptions, using a plain ASCII hyphen; each bullet's text redone as one full-line unit (bullet character itself left untouched/original since inserting a replacement bullet glyph via the fallback font corrupts it too) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Med/Reyes/admit_2025-1018.pdf | p.1 vital-signs table, Respirations and SpO2 rows [r4-t03: broken oxygenation glyphs, Document Authenticity Texture And Markings] | FiO[broken glyph] 1.0 / SpO[broken glyph] / 94% on 100% FiO[broken glyph] (subscript-2 character renders as a black box, font/glyph-generation artifact) | → | FiO2 1.0 / SpO2 / 94% on 100% FiO2 (plain-text digit 2, no subscript) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Med/Reyes/admit_2025-1018.pdf | p.2 ABG table [r4-t03 sweep: same broken-glyph class found on a second page of the same document] | PaCO[broken glyph] / PaO[broken glyph] / on 100% FiO[broken glyph] (p.2, same subscript-2 glyph defect as p.1, not named in the finding but same class) | → | PaCO2 / PaO2 / on 100% FiO2 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Med/Reyes/op_reports.pdf | p.13 Technique narrative, tracheostomy section [r4-t03 sweep: same broken-glyph class found in a different document] | end-tidal CO[broken glyph] (x2) / FiO[broken glyph] (p.13, same subscript-2 glyph defect, different file entirely) | → | end-tidal CO2 (x2) / FiO2 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Passengers/claims_0118.pdf | p.1 cover letter paragraph [r4-t18: obsolete CA civil-jurisdiction threshold; fixed with explicit Times-Roman font to match surrounding letter body (pdf_replace.py defaults to Helvetica regardless of source font)] | jurisdictional amount over $25,000, Code Civ. Proc. § 88 (obsolete threshold + wrong section for the dollar figure) | → | jurisdictional amount over $35,000, Code Civ. Proc. §§ 85, 88 (current CCP § 85 threshold; § 88 retained for the unlimited-civil label) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Passengers/claims_0118.pdf | p.3 and p.6, CIVIL CASE TYPE checkboxes [r4-t18: same obsolete threshold on the embedded claim forms (native Helvetica form field, no font mismatch)] | Limited ($25,000 or less) / Non-Limited (over $25,000) -- ×2 (p.3, p.6 claim forms) | → | Limited ($35,000 or less) / Non-Limited (over $35,000) -- ×2 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Discovery/hold_demand_letter.pdf | p.1, paragraph ending the introductory litigation-status recital [r4-t09: causal-order hindsight, second instance not named in the finding but same defect class] | Reyes's late-claim application under Government Code § 911.4 is pending before the Board. [premature -- application not filed until 05/15/2026, letter dated 03/20/2026] | → | (sentence removed; paragraph now ends at '...the District has rejected.') |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Discovery/hold_demand_letter.pdf | p.2, opening recital of claim history [r4-t09: causal-order hindsight in March preservation letter] | ; and a late-claim application on behalf of Ms. Reyes was filed with the Board on 05/15/2026. [May filing referenced in a March letter] | → | (clause removed; sentence now ends '...rejected under Government Code § 913 on 02/18/2026.') |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Dispatch/tran_text_thread.pdf | entire file (full rebuild) [r4-t01: A52 content-intent mismatch vs External Files Registry; spec cannot be edited, so the built file was conformed to it instead] | 5-page, 32-message export spanning 10/18-10/24/2025, beginning 2:47 AM, including a full self-correction arc ('scratch what i said saturday... not off-book after all') -- materially differs from spec registry A52 | → | Rebuilt as a 1-page, 3-message export matching registry A52 exactly: 10/18/2025 03:20-03:40 a.m., the specified off-book exchange, no self-correction (same visual template/style as before -- header, metadata block, message bubbles) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_life_care_plan.pdf | p.16 sensitivity table (36yr only), p.17 sensitivity matrix (30/36/40yr x 2.0/2.5/3.0%) [r4-t07+t10: sensitivity table doesn't match its own stated annuity formula] | Sensitivity table: 36yr/2.0%=$4,592,000; 36yr/3.0%=$3,921,000; 40yr/2.0%=$4,929,000; 40yr/2.5%=$4,517,000; 40yr/3.0%=$4,153,000 (5 cells don't match the document's own stated PV formula) | → | 36yr/2.0%=$4,588,000; 36yr/3.0%=$3,930,000; 40yr/2.0%=$4,924,000; 40yr/2.5%=$4,518,000; 40yr/3.0%=$4,161,000 (recomputed from PV=C*[(1-(1+r)^-n)/r], C=$180,000; adopted 2.5%/36yr=$4,240,000 and the 30-year row were already correct and left untouched -- adopted PV is a spec canonical value) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | paras 24, 25, 43 (body), 63, 64, 72 (Attachments and Referenced Records) [r4-t08 finding #1: final incident report cites unmounted operational records] | Cites 'Div. 3 pre-trip yard sheet' (x3) and 'Bus #4177 post-collision mechanical inspection report' (x2) as attachments/sources -- neither exists as a mounted record; 'Authorized Owl Routes register' cited as if a separate document from the run-schedule workbook already cited above it | → | Pre-trip yard sheet references replaced with the fleet dispatch log's pre-trip completion entry (which genuinely exists); post-collision inspection report references replaced with the actual Fleet Maintenance history (most recent service 10/10/2025); Authorized Owl Routes register bullet now clarifies it is the same workbook's second tab, not a separate file |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | Timeline table, row for 10/17/2025 22:00 [r4-t08 sweep: same phantom-document reference missed in the first pass (table cell, not body text)] | Duty roster; pre-trip yard sheet [table 1 row 2 Source column] | → | Duty roster; dispatch log |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Notes sheet, B9 (Vehicle Assignment) [r4-t08 sweep: same phantom-document reference in a different file] | Vehicle-to-block assignment reconciles to the Div. 3 pre-trip yard sheet and the fleet dispatch log. | → | Vehicle-to-block assignment reconciles to the fleet dispatch log (pre-trip completion entry). |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Risk/coverage_summary.pdf | p.3, closing line after signature block [r4-t08 finding #2: coverage summary claims an attached form that is not mounted anywhere in the corpus] | END OF DECLARATIONS -- SEE ATTACHED MEMORANDUM OF COVERAGE FORM SCPERA-MOC-100 (07/23) FOR GENERAL TERMS AND CONDITIONS | → | END OF DECLARATIONS: GENERAL TERMS AND CONDITIONS ARE GOVERNED BY MEMORANDUM OF COVERAGE FORM SCPERA-MOC-100 (07/23), ON FILE WITH SCPERA |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Police/FST_supplement_2025-1018.pdf | p.4, section 11 header [r4-t08 finding #3: FST supplement's specified attachments not mounted anywhere in the corpus] | 11.  Attachments to This Supplement [implies 4 items are literally attached/mounted; none exist as separate files] | → | 11.  Referenced Records (Retained in RPD Case File) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | Section 2, Liability Assessment paragraph [r4-t14: reserve memo leaks T5's course-and-scope answer and T4's comparative-fault answer as flat legal conclusions] | the District's respondeat superior exposure attaches...a course-and-scope defense is not viable...Comparative-fault posture...appears weak...effect of the collision rather than a cause of it [T5 and T4 legal conclusions stated directly] | → | liability exposure appears substantial; GC separately preparing a formal course-and-scope memo...sequence of impact will bear on the City's exposure, if any [neutral facts retained, legal conclusions removed] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | para 15 [r4-t14: intake memo prewrites T2's plaintiff-side course-and-scope result] | Course and scope. Respondeat superior looks solid...Under Gov. Code § 815.2, vicarious liability against the District should attach. [T2 course-and-scope answer stated directly] | → | Course and scope. [opening conclusion removed]...that comparison will determine whether vicarious liability against the District attaches under Gov. Code § 815.2. [reframed as contingent on the schedule/AVL comparison, not pre-concluded] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_lien_EOB.pdf | p.2, Section 2 (Total Amounts Paid/Accepted) [r4-t14: lien/EOB letter states T4's Howell paid-vs-billed conclusion directly] | Under Howell and its progeny, this figure -- not the $2,840,000.00 chargemaster total -- is the measure of past medical special damages recoverable at trial. [T4 answer stated directly] | → | Howell and its progeny address the relationship between chargemaster billed charges ($2,840,000.00) and amounts paid and accepted ($196,000.00) for past medical special damages. [neutral fact retained, conclusion removed] |

@@ -1,0 +1,61 @@
+* A52 fails the content-intent portion of the inventory criterion. The External Files Registry specifies a roughly one-page 10/18/2025 03:20–03:40 personal-phone thread with the listed short off-book exchange; the built `ACTD/Dispatch/tran_text_thread.pdf` instead begins at 2:47 AM and its final page identifies it as a 32-message export that extends through 10/24. It additionally records that Tran checked the block sheet and says to "scratch what i said saturday," so it is not the specified discrete thread. Replace the A52 export with the registry-described early exchange (or amend the registry's description, time range, and size if the expanded/corrective thread is intended).
+Finding #1: A52 personal-phone text export materially differs from the registry entry — minor
+* File Tree Hygiene
+
+World Realism
+
+* [P1] Documents Look Like What They Claim To Be (consolidated) — Minor
+[Failing — Document Authenticity Texture And Markings] `Med/Reyes/admit_2025-1018.pdf`, page 1, contains broken clinical notation in its vital-signs table: "FiO■ 1.0" and "SpO■ 94% on 100% FiO■." In a hospital trauma record those should render as FiO₂ and SpO₂; the visible black boxes look like a font/glyph-generation artifact and make the record less authentic as a clinical document. Replace the unsupported character with a properly embedded/rendered subscript 2 (or plain-text `FiO2`/`SpO2`) and regenerate the PDF.
+Finding #1: Broken oxygenation glyphs in trauma admission record — minor
+* [P1] Banned AI-Default Or Recurring Names
+* [P1] No Synthetic Markers Template Residue Or Placeholder Data
+* [P1] Corpus Is Broad Enough and Can Be Navigated (consolidated)
+
+Cross-Artifact Consistency
+
+* [P0] Numerical Values Constraints And Structured Data Are Consistent — Minor
+Shared financial records largely reconcile, but the sensitivity table in Shared/Settlement/Reyes_life_care_plan.pdf contains multiple incorrect present values under its own stated formula. The plan says it uses a $180,000 annual annuity and PV = C × [(1 − (1 + r)^−n) / r], yet its 36-year 2.0% sensitivity is shown as $4,592,000 rather than the recomputed $4,588,000, and its 36-year 3.0% sensitivity is shown as $3,921,000 rather than $3,930,000; the 30/40-year matrix also misstates multiple cells. These are un-reconciled calculation errors in a central damages-planning artifact and should be corrected by regenerating the sensitivity schedule from the disclosed inputs.
+Finding #1: Life-care plan sensitivity table does not match stated annuity formula — minor
+* [P1] No Broken Document References — Major
+The final incident report's own "Attachments and Referenced Records" names an Authorized Owl Routes register, a 10/17/2025 pre-trip yard sheet, and a 10/18/2025 post-collision mechanical inspection report, none of which appears in the 62-file task filesystem; the mounted rules, roster, and maintenance export do not supply those records. The coverage summary also directs the reader to the "attached Memorandum of Coverage Form SCPERA-MOC-100 (07/23)," but the PDF ends there and no such form is mounted. Further missing attachment packages include the DOT test record's three specified attachments, the FST supplement's four specified attachments, and the life-care plan's five "available on request" attachments; this leaves explicit supporting-document references unresolved and fails P1.
+Finding #1: Final incident report cites unmounted operational records — major
+Finding #2: Coverage summary omits its promised Memorandum of Coverage — major
+Finding #3: Testing and damages documents identify absent attachment packages — major
+* [P1] World Timeline Holds Together (consolidated) — Major
+Causal order fails in Legal/Discovery/hold_demand_letter.pdf. Although the letter is dated March 20, 2026, it says a late-claim application "was filed with the Board on 05/15/2026," while Legal/Reyes/late_claim_app.pdf is expressly marked "DATE FILED: May 15, 2026." That puts knowledge of a May filing into a March document, materially breaking the world's chronology; revise the letter to omit the application or redated it to after May 15, 2026.
+Finding #1: Causal-order hindsight in March preservation letter — major
+* [P1] Calculation & Fixture Accuracy — Minor
+Shared/Settlement/Reyes_life_care_plan.pdf contains five incorrect values in its sensitivity-analysis fixtures. The document itself states the $180,000 annual cost and provides the annuity formula; direct substitution yields different results for the non-adopted 36-year rates and every 40-year rate listed above. Because the tables contradict their stated underlying inputs, they fail Calculation & Fixture Accuracy even though the adopted present value and principal annual total are correct. The smallest fix is to recalculate and replace the five incorrect sensitivity cells.
+* [P1] Domain Reconciliation Ties
+* [P0] Personnel Names Titles Roles And Identifiers Are Consistent
+* [P1] Consistent Naming And Defined Terms
+
+Leakage And Separation
+
+* [P0] No Reachable Shortcut to the Answer (consolidated) — Major
+The solver-readable files directly state intended conclusions and reasoning rather than requiring the worker to synthesize the underlying records. `ACTD/Claims/reserve_memo.docx` tells the defense that respondeat superior attaches and that its course-and-scope defense is not viable, which collapses T5's required adverse conclusion; `Legal/Reyes/intake_memo.docx` independently prewrites the same plaintiff-side course-and-scope result used for T2. Separately, `Shared/Settlement/Reyes_lien_EOB.pdf` expressly says the $196,000 paid amount—not the $2.84 million billed amount—is the recoverable trial measure, while `Shared/Settlement/Reyes_life_care_plan.pdf` says the undiscounted total is inappropriate and provides the $4.24 million present-value calculation; together they reveal T4's central reasoning and answer. Removing or recasting these task-specific legal conclusions as neutral source facts would cure the leaks.
+* [P1] In-World vs Out-Of-World Separation And Metadata Cleanliness
+* [P0] No Out-of-World or Build Artifacts
+* [P1] No Signposting of Load-Bearing Facts
+
+Factual Integrity
+
+* [P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated) — Minor
+[Failing – U.S. Regional Requirements] Legal/Passengers/claims_0118.pdf states that each claim would be an unlimited civil case at a "jurisdictional amount over $25,000, Code Civ. Proc. § 88," and each embedded form repeats "Limited ($25,000 or less)" versus "Non-Limited / unlimited-civil (over $25,000)." Official California CCP § 85 instead provides that an action is limited only if "the amount in controversy does not exceed thirty-five thousand dollars ($35,000)," while the official CCP § 88 text merely says a non-limited action may be called an unlimited civil case. Because the world presents these as standard California Government Claims Act forms, the obsolete threshold and incorrect statutory attribution materially misstate the governing California jurisdictional framework; change both forms to the $35,000 threshold and cite CCP § 85 for it (while retaining § 88 only for the label).
+Finding #1: Passenger claim forms use obsolete California civil-jurisdiction threshold — minor
+* [P1] Registered Traps Present in the Build (consolidated)
+* [P1] External Citations Resolve To Real Content
+* [P1] No Real PII or Copyrighted Material
+* [P1] Intended Traps Are Fair
+
+Aggregate Risk And Coverage
+
+* [P0] File Integrity And Usability Defect Rate (consolidated)
+* [P0] Coherence Flag Ratio
+* [P0] Corpus Reads as Real Work Product (consolidated)
+* [P0] Anomaly Detection Catch-All
+
+Presentation & Render Integrity (Touch-Up)
+
+* [P1] CSV Formatted Correctly — Minor
+`ACTD/CAD/Dispatch_log_2025-1018.csv` fails the consistent-field-count requirement. Its header defines six columns (`event_timestamp` through `message`), but row 33 contains an unquoted comma after `02:05`, which causes the final message to parse into two separate fields. This makes that subsequent row not a valid record for the header's schema; quote the entire message field on row 33 (or otherwise escape the embedded comma) to restore six fields.

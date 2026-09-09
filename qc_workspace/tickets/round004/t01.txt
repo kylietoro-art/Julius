@@ -1,0 +1,11 @@
+TICKET 1 of 27  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* A52 fails the content-intent portion of the inventory criterion. The External Files Registry specifies a roughly one-page 10/18/2025 03:20–03:40 personal-phone thread with the listed short off-book exchange; the built `ACTD/Dispatch/tran_text_thread.pdf` instead begins at 2:47 AM and its final page identifies it as a 32-message export that extends through 10/24. It additionally records that Tran checked the block sheet and says to "scratch what i said saturday," so it is not the specified discrete thread. Replace the A52 export with the registry-described early exchange (or amend the registry's description, time range, and size if the expanded/corrective thread is intended).
+Finding #1: A52 personal-phone text export materially differs from the registry entry — minor

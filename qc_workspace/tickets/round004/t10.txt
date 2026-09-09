@@ -1,0 +1,11 @@
+TICKET 10 of 27  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] Calculation & Fixture Accuracy — Minor
+Shared/Settlement/Reyes_life_care_plan.pdf contains five incorrect values in its sensitivity-analysis fixtures. The document itself states the $180,000 annual cost and provides the annuity formula; direct substitution yields different results for the non-adopted 36-year rates and every 40-year rate listed above. Because the tables contradict their stated underlying inputs, they fail Calculation & Fixture Accuracy even though the adopted present value and principal annual total are correct. The smallest fix is to recalculate and replace the five incorrect sensitivity cells.

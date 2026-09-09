@@ -1,0 +1,12 @@
+TICKET 3 of 27  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] Documents Look Like What They Claim To Be (consolidated) — Minor
+[Failing — Document Authenticity Texture And Markings] `Med/Reyes/admit_2025-1018.pdf`, page 1, contains broken clinical notation in its vital-signs table: "FiO■ 1.0" and "SpO■ 94% on 100% FiO■." In a hospital trauma record those should render as FiO₂ and SpO₂; the visible black boxes look like a font/glyph-generation artifact and make the record less authentic as a clinical document. Replace the unsupported character with a properly embedded/rendered subscript 2 (or plain-text `FiO2`/`SpO2`) and regenerate the PDF.
+Finding #1: Broken oxygenation glyphs in trauma admission record — minor
