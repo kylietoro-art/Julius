@@ -739,3 +739,9 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Video/onboard_video_still_log.pdf | pages 3-4, Segments A/B/C, rows 001-024 plus segment headers [r6-t17: video log's own Trip 5 timestamps needed to move with the schedule fix] | Segments A/B/C (rows 001-024) timestamped Trip 5's Fifth-departure-to-Poplar-layover sequence 01:30-01:46, already 21 min off the pre-fix schedule's 01:59 Poplar arrival | → | shifted the whole sequence -7:00 to 01:23-01:39, landing the Poplar arrival at 01:31 to match the corrected schedule; segment header dashes also fixed from a font-corrupted middle-dot to plain hyphens |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/AVL_GPS_track_2025-1018.csv | rows 02:01:00 through 02:05:12 (23 old rows replaced by 19 new rows) [follow-up to r6-t17: AVL and the onboard video disagreed about when Trip 6 departed and how fast it was moving during the same 90 seconds; video's narrative is the more detailed, load-bearing forensic record so AVL was brought into line with it, not the reverse] | 02:01:00-02:05:12: bus shown gradually accelerating from a dead stop starting ~02:01, reaching 25mph by 02:05:08, contradicting the onboard video's own account of Trip 6 (stationary until the 02:04:00 departure, then 0-31mph over ~55 sec, first impact at 02:05:04, pedestrian impact 02:05:07, rest at 02:05:10) | → | 02:01:00-02:03:00 stationary (unchanged story, later departure); 02:04:00-02:05:10 rebuilt to match the video's own speed/timing exactly, with position interpolated by cumulative distance between the same layover coordinates and the same police-surveyed collision coordinates (both endpoints unchanged) |
