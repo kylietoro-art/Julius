@@ -10,6 +10,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
 | 2 | 2026-09-09T16:22 | 29 | 10 | 7 | fixed 6, widened 0, traps 0, false 23, blocked 0 |
 | 3 | 2026-09-09T17:49 | 23 | 11 | 10 | fixed 8, widened 1, traps 0, false 14, blocked 0 |
+| 4 | 2026-09-09T19:09 | 27 | 11 | 10 | fixed 6, widened 2, traps 0, false 19, blocked 0 |
 
 ## Detail
 
@@ -69,4 +70,26 @@ Note: blast_radius.py flags a footing break on medical_billing_ledger.csv (TSG-0
   - files named: ir_2025-1018_draft.docx
 
 Note: inventory_check.py's 9 registered-artifact/9 unregistered-file mismatches are pre-existing App-Data-type artifacts (spec Location/Address is an abstract system description, e.g. 'Fare system -> APC boardings table', not a real path) materialized as concrete exported files under different names; unchanged since the round 2 snapshot, not a round-3 regression. The 2 TEXT GROWTH flags are also accounted for: claims_tracker.csv's growth is the already-committed round-2 follow-up fix (commit 7f140cf) landing after that snapshot was taken; production_tracker.csv's growth is the intended uniform review_status/final_call neutralization (replacing varied leaked answers with 'Pending attorney review'/'TBD'), not added reconciliation prose.
+
+### Round 4, 2026-09-09T19:09
+
+- **Uncategorised, read the finding text**: 10 finding(s)  **(REPEAT)**
+  - files named: dispatch_log_2025-1018.csv
+- **Totals don't foot / calculations disagree with inputs**: 4 finding(s)  **(REPEAT)**
+  - files named: reyes_life_care_plan.pdf, intake_memo.docx, reserve_memo.docx, reyes_lien_eob.pdf
+- **Same person/entity named, titled or ID'd differently across files**: 3 finding(s)  **(REPEAT)**
+- **Voice, tone, texture or document authenticity reads machine-made**: 2 finding(s)
+  - files named: admit_2025-1018.pdf
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+  - files named: claims_0118.pdf
+- **Builder A## codes visible in world files**: 1 finding(s)  **(REPEAT)**
+  - files named: tran_text_thread.pdf
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+- **Dates, chronology or timeline don't hold together**: 1 finding(s)  **(REPEAT)**
+  - files named: hold_demand_letter.pdf, late_claim_app.pdf
+- **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
+- **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
+- **Real PII or copyrighted material in world files**: 1 finding(s)  **(REPEAT)**
+
+Note: Self-QA pass (separate from this round's findings) found and fixed 3 regressions from round 3's own edits: a self-introduced CSV comma corruption, an em-dash-to-glyph-corruption + text-stream-order defect in DOT_655_Keeler.pdf (full re-audit of all 29 historical PDF edits found no other instances), and CRLF line endings from csv.writer defaults in two files. Also discovered and now avoid a second systemic pdf_replace.py limitation: it always reinserts text in Helvetica regardless of the source document's actual font, causing a visible font mismatch on Times-Roman documents (9 of 12 edited PDFs); fixed for this round's edits via explicit fontname parameters in manual PyMuPDF redaction, but historical edits across rounds 1-3 were not audited for this specific defect given time constraints.
 

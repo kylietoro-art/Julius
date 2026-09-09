@@ -290,6 +290,112 @@
         "blast_radius.py flags a footing break on medical_billing_ledger.csv (TSG-002 row); independently re-verified all 81 rows and the grand total foot exactly (billed/paid/adjustments/balance all match EOB Exhibit A) -- tool heuristic false positive, confirmed for the third round running (misreads 'Total splenectomy' in the procedure description as a summary-row marker).",
         "spec_check.py ties flags 2 misses (Passengers' suit-filing deadline in rejection_0218.pdf; blood-draw collection time in chain_custody.pdf) -- both state the fact correctly (a six-month-from-mailing rule; '03:10 a.m.' without the canonical value's '~' marker), just not as the literal matched string. Presence-heuristic false positives, not real gaps."
       ]
+    },
+    {
+      "round": 4,
+      "opened": "2026-09-09T19:09:55",
+      "count": 27,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 1,
+          "files": [
+            "tran_text_thread.pdf"
+          ]
+        },
+        "realism_voice": {
+          "label": "Voice, tone, texture or document authenticity reads machine-made",
+          "n": 2,
+          "files": [
+            "admit_2025-1018.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 10,
+          "files": [
+            "dispatch_log_2025-1018.csv"
+          ]
+        },
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": []
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 4,
+          "files": [
+            "reyes_life_care_plan.pdf",
+            "intake_memo.docx",
+            "reserve_memo.docx",
+            "reyes_lien_eob.pdf"
+          ]
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 3,
+          "files": []
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": [
+            "hold_demand_letter.pdf",
+            "late_claim_app.pdf"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": []
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": []
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": [
+            "claims_0118.pdf"
+          ]
+        },
+        "pii_copyright": {
+          "label": "Real PII or copyrighted material in world files",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "other",
+        "placeholder_synthetic",
+        "math_footing",
+        "entity_inconsistency",
+        "temporal",
+        "metadata_fingerprint",
+        "answer_leakage",
+        "citation_facts",
+        "pii_copyright"
+      ],
+      "disposition": {
+        "fixed": 6,
+        "expanded": 2,
+        "traps": 0,
+        "false": 19,
+        "blocked": 0
+      },
+      "note": "Self-QA pass (separate from this round's findings) found and fixed 3 regressions from round 3's own edits: a self-introduced CSV comma corruption, an em-dash-to-glyph-corruption + text-stream-order defect in DOT_655_Keeler.pdf (full re-audit of all 29 historical PDF edits found no other instances), and CRLF line endings from csv.writer defaults in two files. Also discovered and now avoid a second systemic pdf_replace.py limitation: it always reinserts text in Helvetica regardless of the source document's actual font, causing a visible font mismatch on Times-Roman documents (9 of 12 edited PDFs); fixed for this round's edits via explicit fontname parameters in manual PyMuPDF redaction, but historical edits across rounds 1-3 were not audited for this specific defect given time constraints.",
+      "closed": "2026-09-09T19:53:42",
+      "changed": "Rebuilt A52 text-thread export to match spec registry (1-page, 3-message, no self-correction); fixed broken FiO2/SpO2 glyphs (swept to 2 more instances across 2 files); fixed life-care-plan sensitivity-table math (5 cells); fixed broken document references in the final incident report, coverage summary, and FST supplement (phantom pre-trip yard sheet, post-collision inspection report, attached Memorandum of Coverage, and supplement attachments -- none mounted); fixed chronology hindsight in the March preservation letter (swept to a second instance); recast leaked task conclusions (T5 course-and-scope, T4 comparative-fault and Howell paid-vs-billed) as neutral facts in reserve_memo.docx, intake_memo.docx, and Reyes_lien_EOB.pdf; fixed the obsolete CA civil-jurisdiction threshold in claims_0118.pdf ($25,000->$35,000, CCP 85/88).",
+      "disputes": [
+        "t27 (Dispatch_log_2025-1018.csv unquoted comma) was already fixed in a self-QA pass before this round's report was processed -- same regression I introduced in round 3 and caught by re-rendering my own work, not a new finding.",
+        "t14's life-care-plan component (undiscounted total flagged as inappropriate, $4.24M PV given) was deliberately NOT changed: this is the artifact fulfilling its own task design (T4 requires this document to correctly state the $4,240,000 PV so the solver can find and use it instead of the undiscounted $6.48M), not a gratuitous conclusion leak like the other three documents in this finding.",
+        "blast_radius.py's medical_billing_ledger.csv footing flag (TSG-002 row) remains a confirmed tool heuristic false positive (4th round running) -- independently re-verified all 81 rows and the grand total foot exactly.",
+        "spec_check.py ties' 2 presence-heuristic misses (rejection_0218.pdf deadline rule, chain_custody.pdf blood-draw time) are unchanged from round 3 and remain false positives -- both facts are correctly present, just not as the literal matched string."
+      ]
     }
   ]
 }
