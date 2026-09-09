@@ -4,7 +4,7 @@ RRTC-002,Rivergate Regional Trauma Center,2025-10-18,07TP0ZZ / S36.032A,OR facil
 RRTC-003,Rivergate Regional Trauma Center,2025-10-18,00N00ZZ / S06.5X9A,OR facility — decompressive craniotomy,118700,8140,110560,BSCA HMO → Medi-Cal FFS,0
 RRTC-004,Rivergate Regional Trauma Center,2025-10-20,0QS604Z / S72.001A,OR facility — ORIF right femoral neck,67400,4620,62780,BSCA HMO → Medi-Cal FFS,0
 RRTC-005,Rivergate Regional Trauma Center,2025-10-18 to 2025-10-24,5A1935Z / J96.01,Mechanical ventilation greater than 96 consecutive hours (7 days),58700,4030,54670,BSCA HMO → Medi-Cal FFS,0
-RRTC-006,Rivergate Regional Trauma Center,2025-10-18 to 2025-11-29,Rev 0200 / S06.5X9A,ICU room and board — general (42 days),514500,35300,479200,Medi-Cal FFS,0
+RRTC-006,Rivergate Regional Trauma Center,2025-10-18 to 2025-11-29,Rev 0200 / S06.5X9A,ICU room and board — general (42 days),514500,35300,477400,Medi-Cal FFS,1800
 RRTC-007,Rivergate Regional Trauma Center,2025-11-29 to 2025-12-05,Rev 0201 / S06.5X9A,Surgical ICU step-down (6 days),54000,3700,50300,Medi-Cal FFS,0
 RRTC-008,Rivergate Regional Trauma Center,2025-12-05 to 2025-12-22,Rev 0110 / Z51.5,Room and board — semi-private med/surg (18 days),79200,5430,73770,Medi-Cal FFS,0
 RRTC-009,Rivergate Regional Trauma Center,2025-10-18 to 2025-12-22,Rev 0250,Pharmacy — inpatient stay,128400,8810,119590,Medi-Cal FFS,0
@@ -21,15 +21,15 @@ RRTC-019,Rivergate Regional Trauma Center,2025-10-18 to 2025-12-22,Rev 0270,Medi
 RRTC-020,Rivergate Regional Trauma Center,2025-10-18 to 2025-12-22,Rev 0272,Sterile supply — OR,37400,2570,34830,Medi-Cal FFS,0
 RRTC-021,Rivergate Regional Trauma Center,2025-10-18 to 2025-12-22,Rev 0636 / D62,Blood and blood products (packed RBC / FFP / platelets),46300,3180,43120,Medi-Cal FFS,0
 RRTC-022,Rivergate Regional Trauma Center,2025-10-18 to 2025-12-22,Rev 0360,OR ancillary — recovery / post-anesthesia,76000,5210,70790,Medi-Cal FFS,0
-ACNRI-001,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-28,Rev 0128 / S06.5X9S,Inpatient neuro-rehab room and board (127 days),381000,23640,357360,Medi-Cal FFS,0
-ACNRI-002,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-28,97110,Physical therapy — inpatient rehab daily sessions,78400,4865,73535,Medi-Cal FFS,0
-ACNRI-003,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-28,97530,Occupational therapy — ADL retraining,52800,3276,49524,Medi-Cal FFS,0
-ACNRI-004,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-28,92507,Speech-language pathology — cognitive-communication therapy,34600,2147,32453,Medi-Cal FFS,0
-ACNRI-005,Alder Creek Neuro-Rehabilitation Institute,2026-02-03 to 2026-04-15,96132,Neuropsychological evaluation and serial reassessment (Vandenberg),18400,1141,17259,Medi-Cal FFS,0
-ACNRI-006,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-28,99231,Physiatry — daily attending rounding,22700,1408,21292,Medi-Cal FFS,0
-ACNRI-007,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-28,Rev 0250,Pharmacy — rehab admission,16400,1018,15382,Medi-Cal FFS,0
-ACNRI-008,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-28,97535,Recreational and community-reintegration therapy,8200,505,7695,Medi-Cal FFS,0
-SKY-001,Sky Ridge HEMS Inc.,2025-10-18,A0431,Rotor-wing air ambulance base rate — scene to hospital,98000,9600,88400,BSCA HMO → Medi-Cal FFS,0
+ACNRI-001,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-06,Rev 0128 / S06.5X9S,Inpatient neuro-rehab room and board (105 days),381000,23640,356960,Medi-Cal FFS,400
+ACNRI-002,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-06,97110,Physical therapy — inpatient rehab daily sessions,78400,4865,73535,Medi-Cal FFS,0
+ACNRI-003,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-06,97530,Occupational therapy — ADL retraining,52800,3276,49524,Medi-Cal FFS,0
+ACNRI-004,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-06,92507,Speech-language pathology — cognitive-communication therapy,34600,2147,32453,Medi-Cal FFS,0
+ACNRI-005,Alder Creek Neuro-Rehabilitation Institute,2026-02-03 to 2026-04-06,96132,Neuropsychological evaluation and serial reassessment (Vandenberg),18400,1141,17259,Medi-Cal FFS,0
+ACNRI-006,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-06,99231,Physiatry — daily attending rounding,22700,1408,21292,Medi-Cal FFS,0
+ACNRI-007,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-06,Rev 0250,Pharmacy — rehab admission,16400,1018,15382,Medi-Cal FFS,0
+ACNRI-008,Alder Creek Neuro-Rehabilitation Institute,2025-12-22 to 2026-04-06,97535,Recreational and community-reintegration therapy,8200,505,7695,Medi-Cal FFS,0
+SKY-001,Sky Ridge HEMS Inc.,2025-10-18,A0431,Rotor-wing air ambulance base rate — scene to hospital,98000,9600,88100,BSCA HMO → Medi-Cal FFS,300
 SKY-002,Sky Ridge HEMS Inc.,2025-10-18,A0436,Rotor-wing loaded mileage (statute miles),42000,4120,37880,BSCA HMO → Medi-Cal FFS,0
 SKY-003,Sky Ridge HEMS Inc.,2025-10-18,A0225,Advanced airway / critical-care escort surcharge,8000,780,7220,BSCA HMO → Medi-Cal FFS,0
 RAD-001,Rivergate Radiology Associates P.C.,2025-10-18,70450-26,CT head without contrast — professional interpretation,2400,160,2240,BSCA HMO → Medi-Cal FFS,0
@@ -42,29 +42,29 @@ RAD-007,Rivergate Radiology Associates P.C.,2025-10-20,70450-26,CT head without 
 RAD-008,Rivergate Radiology Associates P.C.,2025-10-24,70450-26,CT head without contrast — professional interpretation,2400,160,2240,Medi-Cal FFS,0
 RAD-009,Rivergate Radiology Associates P.C.,2025-10-30,70553-26,MRI brain with and without contrast (follow-up) — professional interpretation,3200,213,2987,Medi-Cal FFS,0
 RAD-010,Rivergate Radiology Associates P.C.,2025-11-14,72148-26,MRI lumbar spine without contrast — professional interpretation,2900,193,2707,Medi-Cal FFS,0
-RAD-011,Rivergate Radiology Associates P.C.,2025-10-18 to 2025-12-22,71046-26,Chest X-ray series — daily portable (professional),18400,1224,17176,Medi-Cal FFS,0
+RAD-011,Rivergate Radiology Associates P.C.,2025-10-18 to 2025-12-22,71046-26,Chest X-ray series — daily portable (professional),18400,1224,16976,Medi-Cal FFS,200
 RAD-012,Rivergate Radiology Associates P.C.,2025-10-18 to 2025-12-22,74022-26,Abdominal X-ray series (professional),12200,811,11389,Medi-Cal FFS,0
 RAD-013,Rivergate Radiology Associates P.C.,2026-01-15,70553-26,MRI brain with and without contrast (rehab-phase) — professional interpretation,3200,213,2987,Medi-Cal FFS,0
 RAD-014,Rivergate Radiology Associates P.C.,2026-03-10,70553-26,MRI brain with and without contrast (rehab follow-up) — professional interpretation,3200,213,2987,Medi-Cal FFS,0
 RAD-015,Rivergate Radiology Associates P.C.,2025-10-18 to 2026-04-28,76942-26,Miscellaneous imaging — echo / ultrasound / fluoroscopy (professional),18200,1207,16993,Medi-Cal FFS,0
 ANES-001,Pacific Coast Anesthesia Group Inc.,2025-10-18,00868 / 07TP0ZZ,Anesthesia — exploratory laparotomy with splenectomy,34200,2270,31930,BSCA HMO → Medi-Cal FFS,0
-ANES-002,Pacific Coast Anesthesia Group Inc.,2025-10-18,00214 / 00N00ZZ,Anesthesia — decompressive craniotomy,38600,2562,36038,BSCA HMO → Medi-Cal FFS,0
+ANES-002,Pacific Coast Anesthesia Group Inc.,2025-10-18,00214 / 00N00ZZ,Anesthesia — decompressive craniotomy,38600,2562,35938,BSCA HMO → Medi-Cal FFS,100
 ANES-003,Pacific Coast Anesthesia Group Inc.,2025-10-20,01214 / 0QS604Z,Anesthesia — ORIF right femoral neck,17400,1155,16245,Medi-Cal FFS,0
 ANES-004,Pacific Coast Anesthesia Group Inc.,2025-11-03,00840,Anesthesia — bedside procedure (tracheostomy conversion),6200,413,5787,Medi-Cal FFS,0
-NSG-001,Rivergate Neurosurgical Consultants Inc.,2025-10-18,61313 / S06.5X9A,Decompressive craniotomy — professional fee,28400,1893,26507,BSCA HMO → Medi-Cal FFS,0
+NSG-001,Rivergate Neurosurgical Consultants Inc.,2025-10-18,61313 / S06.5X9A,Decompressive craniotomy — professional fee,28400,1893,26407,BSCA HMO → Medi-Cal FFS,100
 NSG-002,Rivergate Neurosurgical Consultants Inc.,2025-10-18 to 2025-10-24,61107 / G93.6,ICP monitor placement and daily management,12600,840,11760,Medi-Cal FFS,0
 NSG-003,Rivergate Neurosurgical Consultants Inc.,2025-10-19 to 2025-12-22,99223,Inpatient neurosurgical follow-up (daily rounding),16800,1120,15680,Medi-Cal FFS,0
 NSG-004,Rivergate Neurosurgical Consultants Inc.,2026-01-14,99213,Post-discharge outpatient follow-up visit,2700,180,2520,Medi-Cal FFS,0
 NSG-005,Rivergate Neurosurgical Consultants Inc.,2026-02-11,99213,Post-discharge outpatient follow-up visit,2700,180,2520,Medi-Cal FFS,0
 NSG-006,Rivergate Neurosurgical Consultants Inc.,2026-03-10,99214,Post-discharge outpatient follow-up visit (imaging review),4300,287,4013,Medi-Cal FFS,0
 TSG-001,Rivergate Trauma Surgery Group,2025-10-18,49000 / S36.032A,Exploratory laparotomy — professional fee,16800,1124,15676,BSCA HMO → Medi-Cal FFS,0
-TSG-002,Rivergate Trauma Surgery Group,2025-10-18,38100 / S36.032A,Total splenectomy — professional fee,18400,1231,17169,BSCA HMO → Medi-Cal FFS,0
+TSG-002,Rivergate Trauma Surgery Group,2025-10-18,38100 / S36.032A,Total splenectomy — professional fee,18400,1231,17119,BSCA HMO → Medi-Cal FFS,50
 TSG-003,Rivergate Trauma Surgery Group,2025-10-20,27236 / S72.001A,ORIF right femoral neck — professional fee (co-surgeon),8600,575,8025,Medi-Cal FFS,0
 TSG-004,Rivergate Trauma Surgery Group,2025-10-19 to 2025-12-22,99223,Inpatient trauma-surgery follow-up (daily rounding),10200,683,9517,Medi-Cal FFS,0
 TSG-005,Rivergate Trauma Surgery Group,2026-01-08,99213,Post-discharge outpatient follow-up visit,2100,141,1959,Medi-Cal FFS,0
 TSG-006,Rivergate Trauma Surgery Group,2026-02-12,99213,Post-discharge outpatient follow-up visit (abdominal check),2200,146,2054,Medi-Cal FFS,0
 ASH-001,Ashby Outpatient Physical Therapy,2026-04-29,97161,PT initial evaluation — moderate complexity,340,28,312,Medi-Cal FFS,0
-ASH-002,Ashby Outpatient Physical Therapy,2026-04-30 to 2026-05-06,97110 / 97530 / 97112,PT sessions — week 1 (5 visits),4200,350,3850,Medi-Cal FFS,0
+ASH-002,Ashby Outpatient Physical Therapy,2026-04-30 to 2026-05-06,97110 / 97530 / 97112,PT sessions — week 1 (5 visits),4200,350,3650,Medi-Cal FFS,200
 ASH-003,Ashby Outpatient Physical Therapy,2026-05-07 to 2026-05-13,97110 / 97530 / 97112,PT sessions — week 2 (5 visits),4200,350,3850,Medi-Cal FFS,0
 ASH-004,Ashby Outpatient Physical Therapy,2026-05-14 to 2026-05-20,97110 / 97530 / 97112,PT sessions — week 3 (5 visits),4200,350,3850,Medi-Cal FFS,0
 ASH-005,Ashby Outpatient Physical Therapy,2026-05-21 to 2026-05-27,97110 / 97530 / 97112,PT sessions — week 4 (5 visits),4200,350,3850,Medi-Cal FFS,0
@@ -74,10 +74,10 @@ ASH-008,Ashby Outpatient Physical Therapy,2026-04-29 to 2026-06-10,97542,Wheelch
 ASH-009,Ashby Outpatient Physical Therapy,2026-04-29 to 2026-06-10,97535,Home management and self-care ADL training,3000,250,2750,Medi-Cal FFS,0
 ASH-010,Ashby Outpatient Physical Therapy,2026-05-15 and 2026-06-10,97164,PT re-evaluation,680,57,623,Medi-Cal FFS,0
 ASH-011,Ashby Outpatient Physical Therapy,2026-04-29 to 2026-06-10,97014,Modalities — electrical stimulation / heat / ice,2320,193,2127,Medi-Cal FFS,0
-HBC-001,Rivergate Hospital-Based Consulting Physicians,2025-10-19 to 2025-12-22,99223,Hospitalist daily attendance (acute stay),12400,1325,11075,Medi-Cal FFS,0
+HBC-001,Rivergate Hospital-Based Consulting Physicians,2025-10-19 to 2025-12-22,99223,Hospitalist daily attendance (acute stay),12400,1325,11025,Medi-Cal FFS,50
 HBC-002,Rivergate Hospital-Based Consulting Physicians,2025-10-22,99253,Infectious disease initial consultation,1800,193,1607,Medi-Cal FFS,0
 HBC-003,Rivergate Hospital-Based Consulting Physicians,2025-10-23 to 2025-11-10,99231,Infectious disease daily follow-up (VAP course),4600,493,4107,Medi-Cal FFS,0
 HBC-004,Rivergate Hospital-Based Consulting Physicians,2025-10-18,99253,Pulmonology initial consultation (ARF / hypoxia),1900,203,1697,BSCA HMO → Medi-Cal FFS,0
 HBC-005,Rivergate Hospital-Based Consulting Physicians,2025-10-19 to 2025-11-05,99231,Pulmonology daily follow-up,3200,342,2858,Medi-Cal FFS,0
 HBC-006,Rivergate Hospital-Based Consulting Physicians,2025-11-02,99253,Nephrology initial consultation (AKI review),400,44,356,Medi-Cal FFS,0
-TOTAL,ALL PROVIDERS (9),2025-10-18 to 2026-06-10,---,Yolanda Reyes — aggregate itemized medical billing (open — outpatient PT ongoing),2840000,196000,2644000,Medi-Cal FFS (primary) / BSCA HMO (reversed and reprocessed),0
+TOTAL,ALL PROVIDERS (9),2025-10-18 to 2026-06-10,---,Yolanda Reyes — aggregate itemized medical billing (open — outpatient PT ongoing),2840000,196000,2640800,Medi-Cal FFS (primary) / BSCA HMO (reversed and reprocessed),3200
