@@ -433,3 +433,15 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Legal/Reyes/intake_memo.docx | Table1 row0 [t22: dark-on-dark header text, Text Legibility And Contrast — Major] | Table1 row0 ('Role','Attorney/Staff') on 141A2E dark fill with no explicit run color, inheriting Normal style's dark 4A5266 font | → | Same header row given explicit white (FFFFFF) run-level font color |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/DOT_655_Keeler.pdf | p.2 Step 4 table, 'Printed result tape affixed to form?' [self-QA: found via direct PDF rendering that the round-3 fix had two defects -- an em-dash rendered as a stray middle-dot, and the replacement text was appended to the end of the page's content stream separately from its own continuation lines] | No — Attachment A (retained in Compliance safe) [round-3 version: em-dash corrupted to a middle-dot glyph by pdf_replace.py's base-14 font, AND the replacement text was split from its own trailing continuation lines in the underlying content stream] | → | No - Attachment A (retained in Compliance safe; two-copy EBT thermal printout, screening plus confirmation, sequential numbers 002417 and 002418, device serial ASIV-XL-73142-KN) [full 3-line cell value replaced as one unit via --multiline, plain ASCII hyphen instead of em-dash] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/DOT_655_Keeler.pdf | p.4 Distribution list, 3 bullets [self-QA: same em-dash glyph corruption as the p.2 fix] | Attachment A/B/C (Compliance safe) descriptions [round-3 version: em-dashes corrupted to middle-dot glyphs] | → | Attachment A/B/C (Compliance safe) - descriptions, using a plain ASCII hyphen; each bullet's text redone as one full-line unit (bullet character itself left untouched/original since inserting a replacement bullet glyph via the fallback font corrupts it too) |
