@@ -4,31 +4,31 @@ event_timestamp,event_type,operator_badge,block_id,dispatch_supervisor,message
 10/17/2025 22:15,checkpoint,4417,512-OWL,W. Tran,Pullout confirmed. Deadhead outbound Div. 3 to S. Main/Fifth. Block 512-OWL in service.
 10/17/2025 22:42,checkpoint,4417,512-OWL,W. Tran,Arrival S. Main/Fifth (start of line). On schedule.
 10/17/2025 22:45,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB departed S. Main/Fifth. On time.
-10/17/2025 22:51,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB timepoint S. Main/Third. On time.
-10/17/2025 22:58,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB timepoint Downtown Loop / Civic Center. On time.
-10/17/2025 23:07,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB timepoint Alder Creek / Broadway. On time.
-10/17/2025 23:19,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB arrived Poplar / Rivergate Plaza. Layover.
+10/17/2025 22:46,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB timepoint S. Main/Third. On time.
+10/17/2025 22:47,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB timepoint Downtown Loop / Civic Center. On time.
+10/17/2025 22:49,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB timepoint Alder Creek / Broadway. On time.
+10/17/2025 22:51,checkpoint,4417,512-OWL,W. Tran,Trip 01 SB arrived Poplar / Rivergate Plaza. Layover.
 10/17/2025 23:24,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB departed Poplar / Rivergate Plaza. On time.
-10/17/2025 23:35,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB timepoint Alder Creek / Broadway. On time.
-10/17/2025 23:44,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB timepoint Downtown Loop / Civic Center. On time.
-10/17/2025 23:51,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB timepoint S. Main/Third. On time.
-10/17/2025 23:57,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB arrived S. Main/Fifth. Layover.
+10/17/2025 23:26,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB timepoint Alder Creek / Broadway. On time.
+10/17/2025 23:28,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB timepoint Downtown Loop / Civic Center. On time.
+10/17/2025 23:29,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB timepoint S. Main/Third. On time.
+10/17/2025 23:30,checkpoint,4417,512-OWL,W. Tran,Trip 02 NB arrived S. Main/Fifth. Layover.
 10/18/2025 00:05,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB departed S. Main/Fifth. On time.
-10/18/2025 00:11,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB timepoint S. Main/Third. On time.
-10/18/2025 00:18,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB timepoint Downtown Loop / Civic Center. On time.
-10/18/2025 00:27,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB timepoint Alder Creek / Broadway. On time.
-10/18/2025 00:39,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB arrived Poplar / Rivergate Plaza. Layover.
+10/18/2025 00:06,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB timepoint S. Main/Third. On time.
+10/18/2025 00:07,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB timepoint Downtown Loop / Civic Center. On time.
+10/18/2025 00:09,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB timepoint Alder Creek / Broadway. On time.
+10/18/2025 00:11,checkpoint,4417,512-OWL,W. Tran,Trip 03 SB arrived Poplar / Rivergate Plaza. Layover.
 10/18/2025 00:44,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB departed Poplar / Rivergate Plaza. On time.
+10/18/2025 00:46,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB timepoint Alder Creek / Broadway. On time.
 10/18/2025 00:48,radio_call,4417,512-OWL,W. Tran,Op 4417 requested wx/road conditions on downtown corridor NB. Advised light drizzle Main/Third to Fifth; no incidents on Route 512 corridor.
-10/18/2025 00:55,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB timepoint Alder Creek / Broadway. On time.
-10/18/2025 01:04,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB timepoint Downtown Loop / Civic Center. On time.
-10/18/2025 01:11,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB timepoint S. Main/Third. On time.
-10/18/2025 01:17,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB arrived S. Main/Fifth. Layover.
+10/18/2025 00:48,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB timepoint Downtown Loop / Civic Center. On time.
+10/18/2025 00:49,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB timepoint S. Main/Third. On time.
+10/18/2025 00:50,checkpoint,4417,512-OWL,W. Tran,Trip 04 NB arrived S. Main/Fifth. Layover.
 10/18/2025 01:25,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB departed S. Main/Fifth. On time.
-10/18/2025 01:31,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB timepoint S. Main/Third. On time.
-10/18/2025 01:38,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB timepoint Downtown Loop / Civic Center. On time.
-10/18/2025 01:47,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB timepoint Alder Creek / Broadway. On time.
-10/18/2025 01:59,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB arrived Poplar / Rivergate Plaza. Layover.
+10/18/2025 01:26,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB timepoint S. Main/Third. On time.
+10/18/2025 01:27,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB timepoint Downtown Loop / Civic Center. On time.
+10/18/2025 01:29,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB timepoint Alder Creek / Broadway. On time.
+10/18/2025 01:31,checkpoint,4417,512-OWL,W. Tran,Trip 05 SB arrived Poplar / Rivergate Plaza. Layover.
 10/18/2025 02:04,checkpoint,4417,512-OWL,W. Tran,Trip 06 NB departed Poplar / Rivergate Plaza. Northbound leg begins on schedule.
 10/18/2025 02:06,radio_call,4417,512-OWL,W. Tran,"Silent alarm activation received from onboard MDT/console on Bus 4177 (Block 512-OWL). No voice on channel. Repeated hail unanswered. AVL last position vicinity S. Main at Third Ave at 02:05, ahead of Trip 06's NB schedule."
 10/18/2025 02:07,emergency_dispatch,,512-OWL,W. Tran,"Emergency dispatch initiated per SOP-24. Rivergate PD and Rivergate Fire/EMS requested Code 3 to S. Main at Third Ave for ACTD Bus #4177, Block 512-OWL, Op badge 4417. RPD Comm acknowledged; EMS Rescue-12 and Engine-3 rolling."

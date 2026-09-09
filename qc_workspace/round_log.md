@@ -12,7 +12,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 3 | 2026-09-09T17:49 | 23 | 11 | 10 | fixed 8, widened 1, traps 0, false 14, blocked 0 |
 | 4 | 2026-09-09T19:09 | 27 | 11 | 10 | fixed 6, widened 2, traps 0, false 19, blocked 0 |
 | 5 | 2026-09-09T21:07 | 28 | 11 | 11 | fixed 9, widened 0, traps 0, false 19, blocked 0 |
-| 6 | 2026-09-09T21:57 | 21 | 8 | 8 | _open_ |
+| 6 | 2026-09-09T21:57 | 21 | 8 | 8 | fixed 4, widened 0, traps 1, false 16, blocked 0 |
 
 ## Detail
 

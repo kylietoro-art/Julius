@@ -567,8 +567,19 @@
         "citation_facts",
         "pii_copyright"
       ],
-      "disposition": null,
-      "note": ""
+      "disposition": {
+        "fixed": 4,
+        "expanded": 0,
+        "traps": 1,
+        "false": 16,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-09T22:32:49",
+      "changed": "Fixed 4 tickets: removed the Howell-Recoverable legal characterization and conclusion sentence from the lien/EOB letter, removed the repeated end-of-document billing reminder, gave the Owl-routes status column a clear green badge, and resolved a 26-minute unexplained gap between the published schedule and the AVL/APC/video ground truth by compressing the Poplar-to-S.Main/Third route geography consistently across the schedule, dispatch log, APC boardings, the incident report's own AVL narrative, and the onboard video still-frame log (all 5 files updated together since they cross-reference the same timepoints); 16 tickets were bare category headers carrying no finding text; 1 ticket (the docket's case-wide accrual+2yr deadline) is a registered trap, not a defect.",
+      "disputes": [
+        "docket_entry.xlsx is artifact A41; its lumped, wrong-computation deadline is T1's registered trap (the plaintiff's own docket entry is deliberately wrong so the task can test whether the agent catches it against the served rejection notice) - correcting it would delete the trap."
+      ]
     }
   ]
 }

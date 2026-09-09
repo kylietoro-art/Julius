@@ -709,3 +709,33 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Ops/RunSchedule_Owl512.xlsx | Authorized Owl Routes!F7:F12 [r6-t21: Status column not visually distinguishable from ordinary table striping] | F7:F12 'Authorized' status cells styled with only plain white/beige row-striping fill and body-text-weight font, no CF_RULES | → | F7:F12 given a light-green fill (#D6EAD7) with bold dark-green (#1E5631) font, a clear status-badge treatment |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Route 512 Owl Block! trip roster, all trips [r6-t17: Coherence Flag Ratio - 26-minute unexplained route-position drift between schedule and AVL/APC] | Poplar<->S.Main/Third route geography implied ~27 min one-way (6/7/9/12 min inter-stop legs), physically inconsistent with the AVL/APC ground truth for the collision trip | → | inter-stop legs compressed proportionally to 1/1/2/2 min (Poplar-Third ~5-6 min one-way); every trip's terminus departure time is unchanged, intermediate/arrival timepoints and layover-duration notes recomputed for all 10 trips |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/Dispatch_log_2025-1018.csv | checkpoint rows for Trips 01-05 [r6-t17: keep dispatch log consistent with the corrected schedule] | Trip 01-05 intermediate checkpoint timestamps matched the old 27-min Poplar-Third schedule | → | recomputed to match the compressed schedule; re-sorted chronologically; the coincidental shift-end entry (05:00, unrelated to Trip 10) was left untouched |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Fare/APC_boardings_2025-1018.csv | timestamp column, Trips 01-05 [r6-t17: keep APC boardings consistent with the corrected schedule] | Trip 01-05 per-stop timestamps matched the old 27-min Poplar-Third schedule | → | recomputed to match the compressed schedule, seconds-level jitter preserved; Trip 06's two real (not schedule-derived) rows at 02:04:12 and 02:05:37 were left untouched |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | timeline table rows 6-7; para 27; para 73 [r6-t17: incident report's own AVL narrative referenced the pre-fix schedule numbers] | table1 r6/r7 cited 01:59 for Trip 5 Poplar arrival/layover start; para 27 said Bus 4177 was '~26 minutes ahead of the published S. Main/Third control-point timepoint (02:31)'; para 73 preserved-video range started 01:59 | → | table cells now read 01:31; para 27 now says '~4 minutes ahead ... (02:09)'; para 73's range now starts 01:30 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Video/onboard_video_still_log.pdf | pages 3-4, Segments A/B/C, rows 001-024 plus segment headers [r6-t17: video log's own Trip 5 timestamps needed to move with the schedule fix] | Segments A/B/C (rows 001-024) timestamped Trip 5's Fifth-departure-to-Poplar-layover sequence 01:30-01:46, already 21 min off the pre-fix schedule's 01:59 Poplar arrival | → | shifted the whole sequence -7:00 to 01:23-01:39, landing the Poplar arrival at 01:31 to match the corrected schedule; segment header dashes also fixed from a font-corrupted middle-dot to plain hyphens |
