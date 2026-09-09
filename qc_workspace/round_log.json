@@ -188,6 +188,108 @@
       "disputes": [
         "The 23 ticket lines with no finding text (e.g. 'Documents Look Like What They Claim To Be (consolidated)') are passing AutoQC dimension headers included for completeness, not defects."
       ]
+    },
+    {
+      "round": 3,
+      "opened": "2026-09-09T17:49:18",
+      "count": 23,
+      "classes": {
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 1,
+          "files": []
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 4,
+          "files": [
+            "reyes_wage_records.pdf",
+            "dispatch_log_2025-1018.csv",
+            "ir_2025-1018_final.docx",
+            "runschedule_owl512.xlsx",
+            "tc_2025-1018.pdf"
+          ]
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 2,
+          "files": []
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": []
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 2,
+          "files": [
+            "production_tracker.csv",
+            "medical_billing_ledger.csv"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": []
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 7,
+          "files": [
+            "intake_memo.docx",
+            "ir_2025-1018_final.docx"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": []
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": []
+        },
+        "pii_copyright": {
+          "label": "Real PII or copyrighted material in world files",
+          "n": 1,
+          "files": []
+        },
+        "raw_markup": {
+          "label": "Raw Markdown/HTML printed as visible text",
+          "n": 1,
+          "files": [
+            "ir_2025-1018_draft.docx"
+          ]
+        }
+      },
+      "repeats": [
+        "broken_reference",
+        "math_footing",
+        "entity_inconsistency",
+        "temporal",
+        "a_code_leakage",
+        "metadata_fingerprint",
+        "other",
+        "answer_leakage",
+        "citation_facts",
+        "pii_copyright"
+      ],
+      "disposition": {
+        "fixed": 8,
+        "expanded": 1,
+        "traps": 0,
+        "false": 14,
+        "blocked": 0
+      },
+      "note": "inventory_check.py's 9 registered-artifact/9 unregistered-file mismatches are pre-existing App-Data-type artifacts (spec Location/Address is an abstract system description, e.g. 'Fare system -> APC boardings table', not a real path) materialized as concrete exported files under different names; unchanged since the round 2 snapshot, not a round-3 regression. The 2 TEXT GROWTH flags are also accounted for: claims_tracker.csv's growth is the already-committed round-2 follow-up fix (commit 7f140cf) landing after that snapshot was taken; production_tracker.csv's growth is the intended uniform review_status/final_call neutralization (replacing varied leaked answers with 'Pending attorney review'/'TBD'), not added reconciliation prose.",
+      "closed": "2026-09-09T18:43:09",
+      "changed": "Fixed DOT test-attachment/Owl-rules absent doc-class refs, wage-records PV math (canonical-total-preserving), production-tracker privilege-answer leakage + its self-introduced CSV comma corruption, ledger TOTAL-row removal, schedule/AVL/dispatch/police/EMS timestamp chronology (CHRONIC), draft-report tracked-change markup, and dark-on-dark header text in two DOCX files.",
+      "disputes": [
+        "blast_radius.py flags a footing break on medical_billing_ledger.csv (TSG-002 row); independently re-verified all 81 rows and the grand total foot exactly (billed/paid/adjustments/balance all match EOB Exhibit A) -- tool heuristic false positive, confirmed for the third round running (misreads 'Total splenectomy' in the procedure description as a summary-row marker).",
+        "spec_check.py ties flags 2 misses (Passengers' suit-filing deadline in rejection_0218.pdf; blood-draw collection time in chain_custody.pdf) -- both state the fact correctly (a six-month-from-mailing rule; '03:10 a.m.' without the canonical value's '~' marker), just not as the literal matched string. Presence-heuristic false positives, not real gaps."
+      ]
     }
   ]
 }

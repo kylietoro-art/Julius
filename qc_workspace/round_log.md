@@ -9,6 +9,7 @@ each one means that class was fixed at the instance level, not the class level.
 |---|---|---|---|---|---|
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
 | 2 | 2026-09-09T16:22 | 29 | 10 | 7 | fixed 6, widened 0, traps 0, false 23, blocked 0 |
+| 3 | 2026-09-09T17:49 | 23 | 11 | 10 | fixed 8, widened 1, traps 0, false 14, blocked 0 |
 
 ## Detail
 
@@ -48,4 +49,24 @@ each one means that class was fixed at the instance level, not the class level.
 - **Real PII or copyrighted material in world files**: 1 finding(s)
 
 Note: blast_radius.py flags a footing break on medical_billing_ledger.csv (TSG-002/TOTAL rows); independently re-verified every row and the grand total foot exactly against the EOB Exhibit A figures, so this is a tool heuristic false positive, not a real defect. Two minor EOB sentences (the Tab-11 BlueShield line and the Notes 'corresponding tab' line) were left with their original 'enclosed'/'at the tab' wording because every reflow attempt to correct them corrupted the surrounding justified paragraph (verified via render-check); the 5 other, more prominent tab-enclosure claims in the same letter were fixed.
+
+### Round 3, 2026-09-09T17:49
+
+- **Uncategorised, read the finding text**: 7 finding(s)  **(REPEAT)**
+  - files named: intake_memo.docx, ir_2025-1018_final.docx
+- **Totals don't foot / calculations disagree with inputs**: 4 finding(s)  **(REPEAT)**
+  - files named: reyes_wage_records.pdf, dispatch_log_2025-1018.csv, ir_2025-1018_final.docx, runschedule_owl512.xlsx, tc_2025-1018.pdf
+- **Same person/entity named, titled or ID'd differently across files**: 2 finding(s)  **(REPEAT)**
+- **Builder A## codes visible in world files**: 2 finding(s)  **(REPEAT)**
+  - files named: production_tracker.csv, medical_billing_ledger.csv
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+- **A referenced document or value doesn't resolve**: 1 finding(s)  **(REPEAT)**
+- **Dates, chronology or timeline don't hold together**: 1 finding(s)  **(REPEAT)**
+- **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
+- **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
+- **Real PII or copyrighted material in world files**: 1 finding(s)  **(REPEAT)**
+- **Raw Markdown/HTML printed as visible text**: 1 finding(s)
+  - files named: ir_2025-1018_draft.docx
+
+Note: inventory_check.py's 9 registered-artifact/9 unregistered-file mismatches are pre-existing App-Data-type artifacts (spec Location/Address is an abstract system description, e.g. 'Fare system -> APC boardings table', not a real path) materialized as concrete exported files under different names; unchanged since the round 2 snapshot, not a round-3 regression. The 2 TEXT GROWTH flags are also accounted for: claims_tracker.csv's growth is the already-committed round-2 follow-up fix (commit 7f140cf) landing after that snapshot was taken; production_tracker.csv's growth is the intended uniform review_status/final_call neutralization (replacing varied leaked answers with 'Pending attorney review'/'TBD'), not added reconciliation prose.
 
