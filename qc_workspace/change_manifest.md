@@ -547,3 +547,33 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Shared/Settlement/Reyes_lien_EOB.pdf | p.2, Section 2 (Total Amounts Paid/Accepted) [r4-t14: lien/EOB letter states T4's Howell paid-vs-billed conclusion directly] | Under Howell and its progeny, this figure -- not the $2,840,000.00 chargemaster total -- is the measure of past medical special damages recoverable at trial. [T4 answer stated directly] | → | Howell and its progeny address the relationship between chargemaster billed charges ($2,840,000.00) and amounts paid and accepted ($196,000.00) for past medical special damages. [neutral fact retained, conclusion removed] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CivilCase/Complaint_Reyes_filed.pdf | p.10 jury demand signature block, p.12 proof of service signature [historical font-audit: pdf_replace.py always uses Helvetica regardless of source font; this document is Times-Roman] | Signature lines 'By: /s/ Nora Halstead' and '/s/ Grace Chen' rendered in Helvetica (round-2 signature fix) in an otherwise all-Times-Roman document | → | Same signature lines, rendered in Times-Roman to match the document |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Discovery/RFP_set.pdf | p.12 attorney signature block, p.14 proof of service signature [historical font-audit: pdf_replace.py always uses Helvetica regardless of source font; this document is Times-Roman] | Signature lines 'By: /s/ Nora Halstead' and '/s/ Grace Chen' rendered in Helvetica (round-2 signature fix) in an otherwise all-Times-Roman document | → | Same signature lines, rendered in Times-Roman to match the document |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/employment_verification.pdf | p.1 table + paragraph, p.3 rate-history table [historical font-audit: pdf_replace.py always uses Helvetica regardless of source font; caught and corrected an over-redaction on p.3 mid-fix (adjacent '(hire)' span's bbox overlapped the date span and was wiped, then properly restored)] | '04/2019' (table, p.1), 'since April 2019, working' (paragraph, p.1), '04/2019 (hire)' (rate-history table, p.3) all rendered in Helvetica in an otherwise all-Times-Roman document | → | All three rendered in Times-Roman to match the document |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/reyes_recorded_statement.pdf | p.3 dialogue [historical font-audit: pdf_replace.py always uses Helvetica regardless of source font] | 'A little over six years. I started in the spring of 2019.' rendered in Helvetica in an otherwise all-Times-Roman transcript | → | Same dialogue line, rendered in Times-Roman to match the document |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_wage_records.pdf | p.10 Tab E Section 7 PV worksheet [historical font-audit: pdf_replace.py always uses Helvetica regardless of source font; this is the same PV-worksheet fix from earlier in this engagement, corrected for font only -- figures unchanged] | 7 PV-worksheet cells ($26,892 x2, $215,948, $200,593, $1,194,140, $870,265, +$4,645) rendered in Helvetica/Helvetica-Bold in an otherwise all-Times-Roman document | → | Same 7 cells, rendered in Times-Roman/Times-Bold to match the document and row styling |
