@@ -1,0 +1,12 @@
+TICKET 14 of 28  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] No Reachable Shortcut to the Answer (consolidated)Major
+The No Solution Or Reasoning Leakage clause fails because `ACTD/Litigation/production_tracker.csv` is mounted for the worker and directly assigns `Produce` to the discovery records and `Withhold-Privileged` to A43. Task T9 requires precisely the corresponding produce/withhold decisions, so this tracker collapses the core classification work to copying its labels, even though A42 must be corrected after the fact. The smallest fix is to remove the populated first-pass classification tags (or make them non-dispositive, incomplete routing metadata that does not map to the requested records) while retaining neutral inventory information.
+Finding #1: Production tracker pre-classifies Task T9 discovery decisionsmajor

@@ -1,0 +1,12 @@
+TICKET 9 of 28  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] World Timeline Holds Together (consolidated)Minor
+The anchor-placement bullet fails because `task_fs/filesystem/Legal/Reyes/docket_entry.xlsx` has an OOXML core `created` timestamp of 2026-09-09 20:25:08.637847 and the same `modified` timestamp, whereas the World Spec says the anchor "now" date is 06/18/2026 and that every artifact is dated on or before it. This post-anchor creation date makes an agent-reachable artifact appear to have been created after the stated as-of date; reset the workbook's core creation/modification properties to its intended 03/06/2026 docket-entry date (or another pre-anchor date).
+Finding #1: Post-anchor creation metadata on docket workbookminor

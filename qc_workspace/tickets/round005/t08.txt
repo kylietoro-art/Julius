@@ -1,0 +1,16 @@
+TICKET 8 of 28  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] No Broken Document ReferencesMajor
+The world contains several explicit references to distinct supporting materials that are not mounted. Most significantly, the production tracker says the native onboard-video MP4 is still held by the vendor, while the filesystem has only a PDF still log and no video file; the traffic-collision report also identifies a separately filed diagram supplement that does not exist in the inventory. The life-care plan further lists five attachments as available on request rather than including them, leaving its cited underlying materials unresolved; these are document-class references and therefore meet the fail criterion.
+Finding #1: Native onboard-video record is absentmajor
+Finding #2: Referenced police diagram supplement is missingminor
+Finding #3: Life-care-plan attachment package is unavailablemajor
+Finding #4: Police support-record class is referenced but absentminor
+Finding #5: DOT testing attachments are not suppliedminor

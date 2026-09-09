@@ -1,0 +1,11 @@
+TICKET 7 of 28  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] Numerical Values Constraints And Structured Data Are ConsistentMajor
+The inpatient neuro-rehabilitation service dates materially disagree without an in-world reconciliation. `Med/Reyes/bills_billed.pdf` describes the Alder Creek Neuro-Rehabilitation Institute stay as 12/22/2025–04/28/2026 (128 days), but `ACTD/Claims/medical_billing_ledger.csv` records the facility's inpatient room-and-board and therapy entries only through 04/06/2026; the contemporaneous rehabilitation record independently says Reyes was discharged from inpatient rehabilitation on 04/06/2026. This affects the claimed medical-services period and makes the billed compilation's inpatient dates/days inconsistent with both the structured ledger and medical record; revise the billed compilation to the actual inpatient period or expressly explain and document any separate post-discharge services.

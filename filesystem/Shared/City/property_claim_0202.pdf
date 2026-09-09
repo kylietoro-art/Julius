@@ -1,67 +1,72 @@
-%PDF-1.4
+%PDF-1.3
 %‚„œ”
 1 0 obj
 <<
-/Trapped (\057False)
+/Type /Catalog
+/Pages 2 0 R
+/Outlines 18 0 R
 >>
 endobj
 2 0 obj
 <<
 /Type /Pages
 /Count 3
-/Kids [ 4 0 R 12 0 R 14 0 R ]
+/Kids [ 3 0 R 12 0 R 16 0 R ]
 >>
 endobj
 3 0 obj
 <<
-/Type /Catalog
-/Pages 2 0 R
-/Outlines 16 0 R
->>
-endobj
-4 0 obj
-<<
-/Contents 5 0 R
+/Type /Page
+/Contents [ 4 0 R 5 0 R 6 0 R ]
 /MediaBox [ 0 0 612 792 ]
 /Resources <<
-/Font 6 0 R
-/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+/Font <<
+/F2 7 0 R
+/F3 8 0 R
+/F4 9 0 R
+/F1 10 0 R
+/Times-Roman 11 0 R
+>>
 >>
 /Rotate 0
 /Trans <<
 >>
-/Type /Page
 /Parent 2 0 R
+/Annots [ ]
 >>
+endobj
+4 0 obj
+<<
+/Length 4618
+>>
+stream
+q q 1 0 0 1 70.8 709.6 cm 0 0 0 rg BT/F2 22 Tf 120.305 4 TD (CITY OF RIVERGATE)Tj ET Q q 1 0 0 1 70.8 694.6 cm 0 0 0 rg BT/F2 11 Tf 107.7705 2 TD (OFFICE OF THE DIRECTOR OF PUBLIC WORKS)Tj ET Q q 1 0 0 1 70.8 681.6 cm 0 0 0 rg BT/F3 10 Tf 132.215 2 TD (500 Rivergate Plaza  )Tj <7f>Tj (  Rivergate, California 91766)Tj ET Q q 1 0 0 1 70.8 669.6 cm 0 0 0 rg BT/F3 10 Tf 135.67 2 TD (publicworks@rivergate.ca.gov  )Tj <7f>Tj (  \(626\) 555-0140)Tj ET Q q 1 0 0 1 70.8 662.4 cm 0 0 0 RG 1 J 1.2 w 0 0 m 470.4 0 l S Q q q 1 0 0 1 302.40003 556.4 cm .909804 .909804 .909804 rg 0 96 244.8 -17 re f* q 1 0 0 1 6 82 cm 0 0 0 rg BT/F4 9 Tf 11.145 2 TD <5245434549564544209720414c44455220435245454b205452414e534954204449535452494354>Tj ET Q q 1 0 0 1 6 65 cm 0 0 0 rg BT/F4 9 Tf 0 2 TD (Date:)Tj/F1 9 Tf ( 02/02/2026  )Tj ( )Tj (  )Tj/F4 9 Tf (Time:)Tj/F1 9 Tf ( 3:47 p.m.)Tj ET Q q 1 0 0 1 6 37 cm 0 0 0 rg BT/F4 9 Tf 0 13 TD (Received by:)Tj/F1 9 Tf <204a2e204d696c6c61722c204f6666696365206f662047656e6572616c20436f756e73656c2097>Tj 0 -11 TD (mailroom intake)Tj ET Q q 1 0 0 1 6 20 cm 0 0 0 rg BT/F4 9 Tf 0 2 TD (Routed to:)Tj/F1 9 Tf ( G. Espinoza, Risk & Claims)Tj ET Q q 1 0 0 1 6 3 cm 0 0 0 rg BT/F4 9 Tf 0 2 TD (ACTD File No.:)Tj/F1 9 Tf ( ACTD-2026-0142)Tj ET Q q 0 0 0 RG 1 J 1 j 0 96 m 244.8 96 l S 0 0 m 244.8 0 l S 0 0 m 0 96 l S 244.8 0 m 244.8 96 l S 1 1 1 RG 0 79 m 244.8 79 l S 0 62 m 244.8 62 l S 0 34 m 244.8 34 l S 0 17 m 244.8 17 l S 0 0 0 RG .5 w 0 79 m 244.8 79 l S Q Q Q q 1 0 0 1 70.8 528.4 cm 0 0 0 rg BT/F3 11 Tf 0 3 TD (February 2, 2026)Tj ET Q q 1 0 0 1 70.8 502.4 cm 0 0 0 rg BT/F2 11 Tf 0 3 TD (By hand delivery and certified U.S. mail \(return receipt requested\))Tj ET Q q 1 0 0 1 70.8 471.4 cm 0 0 0 rg BT/F3 11 Tf 0 2 TD (Alder Creek Transit District)Tj ET Q q 1 0 0 1 70.8 458.4 cm 0 0 0 rg BT/F3 11 Tf 0 2 TD (Attn: Diane Farkas, General Counsel)Tj ET Q q 1 0 0 1 70.8 445.4 cm 0 0 0 rg BT/F3 11 Tf 0 2 TD (Attn: Gordon Espinoza, Risk & Claims Manager)Tj ET Q q 1 0 0 1 70.8 432.4 cm 0 0 0 rg BT/F3 11 Tf 0 2 TD (1200 Alder Creek Way)Tj ET Q q 1 0 0 1 70.8 419.4 cm 0 0 0 rg BT/F3 11 Tf 0 2 TD (Rivergate, CA 91766)Tj ET Q q 1 0 0 1 70.8 379.4 cm 0 0 0 rg BT/F2 11 Tf 0 17 TD (Re:)Tj ( )Tj ( )Tj <44656d616e6420666f72205265696d62757273656d656e7420972044616d61676520746f2043697479205374726565742d4c69676874205374616e6461726420617420532e204d61696e2053747265657420616e64>Tj 0 -14 TD (Third Avenue)Tj ET Q q 1 0 0 1 70.8 363.4 cm 0 0 0 rg BT/F2 11 Tf 36 3 TD (Date of Loss:)Tj/F3 11 Tf ( 10/18/2025, approx. 02:05 a.m.)Tj ET Q q 1 0 0 1 70.8 348.4 cm 0 0 0 rg BT/F2 11 Tf 36 3 TD (Responsible Vehicle:)Tj/F3 11 Tf ( ACTD Bus #4177 \(Owl service, Route 512\))Tj ET Q q 1 0 0 1 70.8 333.4 cm 0 0 0 rg BT/F2 11 Tf 36 3 TD (City File No.:)Tj/F3 11 Tf ( RVG-CLM-2026-0007)Tj ET Q q 1 0 0 1 70.8 318.4 cm 0 0 0 rg BT/F2 11 Tf 36 3 TD (Supporting Invoice:)Tj/F3 11 Tf ( RVG-PW-2026-00218 \(enclosed\))Tj ET Q q 1 0 0 1 70.8 291.4 cm 0 0 0 rg BT/F3 11 Tf 0 3 TD (Dear General Counsel Farkas and Mr. Espinoza:)Tj ET Q q 1 0 0 1 70.8 221.4 cm 0 0 0 rg BT .6495 Tw/F3 11 Tf 0 45 TD (The City of Rivergate \()Tj <93>Tj (the City)Tj <94>Tj (\) hereby demands reimbursement from the Alder Creek Transit District)Tj -.076462 Tw 0 -14 TD (\()Tj <93>Tj (the District)Tj <94>Tj (\) in the amount of )Tj/F2 11 Tf ($48,500.00)Tj/F3 11 Tf ( for damage to City-owned street-lighting infrastructure caused)Tj 2.321438 Tw T* (by District Bus #4177 on )Tj/F2 11 Tf (10/18/2025)Tj/F3 11 Tf ( at the intersection of South Main Street and Third Avenue in)Tj 0 Tw T* (downtown Rivergate.)Tj ET Q q 1 0 0 1 70.8 198.4 cm 0 0 0 rg BT/F2 11 Tf 0 2 TD (1.)Tj ( )Tj ( )Tj (Incident)Tj ET Q q 1 0 0 1 70.8 80.4 cm 0 0 0 rg BT .642867 Tw/F3 11 Tf 0 101 TD (At approximately 02:05 a.m. on 10/18/2025, District Bus #4177, operating in Owl service on Route 512,)Tj .560714 Tw 0 -14 TD (departed the northbound travel lane on South Main Street and struck the City-owned street-light standard)Tj 1.592154 Tw T* (\(luminaire designation SL-M-0312\) at the northeast corner of the intersection with Third Avenue. The)Tj .388643 Tw T* (impact severed the pole at its anchor base, destroyed the mast-arm LED luminaire, damaged underground)Tj 3.636462 Tw T* (feeder conduit and wiring, and interrupted service to the intersection lighting circuit, leaving the)Tj 4.434636 Tw T* (intersection dark until temporary lighting could be mobilized. The Rivergate Police Department)Tj 0 Tw 0 -28 TD (incorporated by reference.)Tj ET Q q 1 0 0 1 70.8 57.4 cm 0 0 0 rg BT/F2 11 Tf 0 2 TD (2.)Tj ( )Tj ( )Tj (Items of Damage and Cost of Repair)Tj ET Q Q
+endstream
 endobj
 5 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ]
-/Length 2404
+/Length 63
 >>
 stream
-Gat=,D0+^F(B0n4EG!qhO:HMPg";B^2Z])I9q#A.h46Wk08^?-NF/W#P+2FCpQ8e_K7PpJ&nG.nH-Y/cNae--O&c)eA"p#S5$_B'0ad&R3JKo;/PUi'^X&urV.U\Kr#$D*2IPAmk10&@[T`"GYV4!fN*('4F7hO/1C`+*j)m&Nc=e-oQgV'!T73:)2j_AAS:\L(pm$/bFV+NeT,dq"coDSdeGq/$:rP$eR%E8^CBXC`f@/,8@gIOQd!4hO7_udAT>1;LFZUVkpNur7LCL?)mK9s'<fLl:Nb(#!=k.t<i`dP4JP%/geY#[p1s))f69XpFd$KRgi'[a+cD0KHjbPff\hrE/S>Rj!S;*?m\f8`F&e?+.LW9u#%G*ZFGe&-XAGDIjQg?r:7V.8.GYVW#O?[nnk!#A8^YeLJQ=FgKh2".Geh5@Y]O?WI64_7IoS0iIX4Zo[cB;WJPCp7Q7M.fM*:GpJUu-C^6ajn48;T[tdKmY>YgpP>`mQ=n;MEdF^maA1`m>\89S[f++[L`"]#5QtTkAYH"O2EZKjY9L%G3rW>)).g+_R&]FD0<K+9I%E/0*+`@ieq4N[I#Mr5n#D$N/(3*i8t$j!!oiUL<,^X`O5Ajc\@_%-R\I0nSP^3+"1?]^1a%52h9b+HS(7l7]0'<p+Q+)=MLQ0-$%=7VpSa>G0\V$WP@e8$Mh6'F==K4h^=+r+s`NN$>F9F?cD@:f'3N)j(EF,9!DZ,SO$`kSdAIjt]hK)O!j8rZ[A1A`g`cX.QP8!6rtUTJm'LZDC7C+1qt>a^40I)F[oNfeI:@CB0]r?qf0-'(e\/m"*N%HeQ6'$!<,DchRHSPK4Lp]?6JMaqtP03nGfe:7@/&F0hfo]sA[BKhoZ%hJiE3_tkLBX_0AiB5M9EMd\c,,d(c7e?`p"N..V?^6GgdemI11YO>En\,V0lg/r.N+M01ZG$PN7Wnt9%:MRl!40^DP%ik4f.E$6;M)X*P'$m$+YMO!0P8VV5Uhdt3l%`*6>g=Vsp.s_b+IsAu(J<a=Q%0X4Fitc^J$27pW.$inNnG:0#;A62FW<3l0j2mgF=s>V:c)':]MP8GP0'661<Ypko+Oss-[^#$@%J_^&A]#Gf3H#YXLlY%-fd>e>&IPi?^GkM-YWt!2lW7BaWZtC4.bqSThYTl:II^biogD;g,A\LrdI1q2>i9'm5F78ffgF<K/TqsW,-D)C25MR2RZO&S*_*JY6n@/=lRFFegZ0iNdN#1Vj5Cm/<[ZIdUO?9pu$95ao%\NE`adZh9+nLNX'C]C.91QPTqfEC4T-cFkm?>&o0+,7C"sZF@sg)G3s'W]4G_!ekF\;?2e`j/?>bb[XSMkbpR;"MgN33I(<5@rsTV>$Zt&!=NN0-3J.hcnjTu\Oge,b8)M6OL6:*n<g9\d<CT25BNmbfpMUXT6G9+^,7/H\"Wt$KoOHVtZWc>7h28a/kC:,.NGe3bWbIpY#o(t2/G65N/lSuonk@Nn221>_:qh=\OYCPN>DXVadd/eNj+_b#O4`q)3OdVHZ/BB#d4._oW%E4.e*pT^a2YbZ3R4#BRcEUcJ]Vl%+U2k#ZgKVbYRkBc+tY^^]Z3ci9k)=!7sVL[4mu@FF'8hqT&*=(2*YV"LYLlD=(ilPk'p:09T?Gm)Q)[Yk\9P5Bh-V(fL,gZd49GMMs"9E.SAu^lMTuW]"$3-VR[L-RbME`,3u(D$*&JUdTNC19LkaLk)*Yh'qu?Q'_2t_XJ#eRCh>^$TMP^@W=a(10hU+O[LEE-@0:^g^!MrNfJ^r"[R7Y3AH-,*;JDUmZ)*#Q1P8F_IQ.6i6#P8X/S0-`p3t"b7U$au-D?qQ16.84R)`.N19J!\6bp#/Y3]?:bIh;()+2C,I>c:Vl*o>ph`4t7QUooSfsF2XHLI;C]+)q%IFn*J&8bs_jJo`S^hF+2C[m(.`1u=qi.4FC:cPH1I77\[:n;YZ6&:<%VD\EV7XrL\^/JT<[#/G3,m&081ARI0,%r$8HZqX%f(GaIWWJeX5Z=%"&=*g-]jQ2N5e7t<#+e63!;9gY3d)ZQ`_-f"Aca\fR:2MXL-VQY2$8R@AD7dD:r32c=6Y(>/-_1W=#&N+`jF<j>@lrU?q,gOdcP@:[ggqqo>Y#@br9("bZ;$VlC1alB=A]oR]4h8H`2*=;LVF+FiK27KfH#(Ol3Eh,2^cgXhF*%5cO\T)0"%45j,X=j<@&*e!HTL_<EGd`>r]k:GS(t`2p3/p:oD28AcA_&J]5\:2+cjJ=Gi.b3X)D(K?+tdjUBIL4GHIIi6]@f%*8phlll>jNmm<dOmS<ia2fOljUslGc4Y-\obo(@)ANQ"?`9"kmd%%Jn3GC':BtTZr22>rs-pN*"Gc];l%k95/JbMSPrqJ9F#FbKk_-Zd]B*k+(g_KQNB5F5B.://c~>
+
+q
+70.8 94.30902 470.39997 14.67401 re
+h
+1 1 1 RG 1 1 1 rg B
+Q
+
 endstream
 endobj
 6 0 obj
 <<
-/F1 7 0 R
-/F2 8 0 R
-/F3 9 0 R
-/F4 10 0 R
-/F5 11 0 R
+/Filter /FlateDecode
+/Length 195
 >>
+stream
+x⁄-éÀJ1E˜˘ä¸Äc•û	àA‹9d'.ÜûÓ¡E+Íˇ√‹S$πı»…-ﬂÂiñV	—j–°◊%"ÓuÓÂ~~ÏÎÔ›Èk?÷÷Í‹˛F©ûéˇ‚ÁZﬂ\}s	ÛãõØ°8ï	wwcrAwAå–+j-Ñ…ÿH1©íyŒÍÍ£o™¬a!lÉjPM:√ònûkÄk¡I…öø.ﬁ‡É√‚Ãjå\=íÃRCyd/Óíf:{|ü/Âyñ◊rÿù=«
+endstream
 endobj
 7 0 obj
-<<
-/BaseFont /Helvetica
-/Encoding /WinAnsiEncoding
-/Name /F1
-/Subtype /Type1
-/Type /Font
->>
-endobj
-8 0 obj
 <<
 /BaseFont /Times-Bold
 /Encoding /WinAnsiEncoding
@@ -70,7 +75,7 @@ endobj
 /Type /Font
 >>
 endobj
-9 0 obj
+8 0 obj
 <<
 /BaseFont /Times-Roman
 /Encoding /WinAnsiEncoding
@@ -79,7 +84,7 @@ endobj
 /Type /Font
 >>
 endobj
-10 0 obj
+9 0 obj
 <<
 /BaseFont /Helvetica-Bold
 /Encoding /WinAnsiEncoding
@@ -88,13 +93,21 @@ endobj
 /Type /Font
 >>
 endobj
-11 0 obj
+10 0 obj
 <<
-/BaseFont /Times-Italic
+/BaseFont /Helvetica
 /Encoding /WinAnsiEncoding
-/Name /F5
+/Name /F1
 /Subtype /Type1
 /Type /Font
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
 >>
 endobj
 12 0 obj
@@ -102,7 +115,7 @@ endobj
 /Contents 13 0 R
 /MediaBox [ 0 0 612 792 ]
 /Resources <<
-/Font 6 0 R
+/Font 14 0 R
 /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >>
 /Rotate 0
@@ -123,10 +136,28 @@ endstream
 endobj
 14 0 obj
 <<
-/Contents 15 0 R
+/F1 10 0 R
+/F2 7 0 R
+/F3 8 0 R
+/F4 9 0 R
+/F5 15 0 R
+>>
+endobj
+15 0 obj
+<<
+/BaseFont /Times-Italic
+/Encoding /WinAnsiEncoding
+/Name /F5
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+16 0 obj
+<<
+/Contents 17 0 R
 /MediaBox [ 0 0 612 792 ]
 /Resources <<
-/Font 6 0 R
+/Font 14 0 R
 /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >>
 /Rotate 0
@@ -136,7 +167,7 @@ endobj
 /Parent 2 0 R
 >>
 endobj
-15 0 obj
+17 0 obj
 <<
 /Filter [ /ASCII85Decode /FlateDecode ]
 /Length 645
@@ -145,35 +176,48 @@ stream
 Gau0@d;IYl'RfFOS;1g1$%hQ_,j^MU1/3A&K;a4W,n!K5'p?fr8F5YT4/6S*8u>4=-/5_RI88'N^(eLBlM>T1I#'ME;G`*-!tDmCnI/Lh`Qnqgk@@,raE4+71]_4E6l`[L"<&K@RQqfMR/3K*?:8$s3BAZ/L0_aTdD;%*;m@ue.e("@YdjM]^V9(k_M3J*(l`iD-X*T;fRV>"?,rs$&O-o)\"_4t1L0C_D.JOY;VbDV0c"5tPn;[**kt'T-M';NM]?XIX!Gm4iMFbVA5cn\pTfrnZ0M$*[FiW/p7/i1GS<J.:5DE!3+_3%P_#+Bi/a.h=d!NYH*lj_7j+SW=49q:)FgK*YNItj5:UqXl*7#e^(p:DPdRlh)kdbgC:?4];!q<5CV^Nf`:noUpoMKuTYA>,%Y((KHmb/@$WeC88[0oBaejapN>bJX^`Qd8@q9"1hgNg?lQMTR]i+uDJP9rLST*m)k1jsJ"s6;6Uc<_$phTkr7kN^Y-[-c"89Ln,NSOYJqH&2Q8q!p/$b7''2t*gOKb%O0&eA)SHN!FM+\giQ'ncfQE!458kY[.']kR&^l</fop+<b9B$JV:TnXn'NJ$9$OOZMV8Wi)NQDG?h2#+hMV@O3Tf$hgqr)cceGesk*^B*F_C<H~>
 endstream
 endobj
-16 0 obj
+18 0 obj
 <<
 >>
 endobj
+19 0 obj
+<<
+/Trapped (\057False)
+/Producer ()
+/Creator ()
+/ModDate (D\07220260615000000Z)
+/CreationDate (D\07220260615000000Z)
+>>
+endobj
 xref
-0 17
+0 20
 0000000000 65535 f 
 0000000015 00000 n 
-0000000057 00000 n 
-0000000130 00000 n 
-0000000196 00000 n 
-0000000385 00000 n 
-0000002881 00000 n 
-0000002954 00000 n 
-0000003061 00000 n 
-0000003169 00000 n 
-0000003278 00000 n 
-0000003391 00000 n 
-0000003502 00000 n 
-0000003693 00000 n 
-0000007033 00000 n 
-0000007224 00000 n 
-0000007961 00000 n 
+0000000081 00000 n 
+0000000154 00000 n 
+0000000384 00000 n 
+0000005054 00000 n 
+0000005167 00000 n 
+0000005434 00000 n 
+0000005542 00000 n 
+0000005651 00000 n 
+0000005763 00000 n 
+0000005871 00000 n 
+0000005971 00000 n 
+0000006163 00000 n 
+0000009503 00000 n 
+0000009577 00000 n 
+0000009688 00000 n 
+0000009880 00000 n 
+0000010617 00000 n 
+0000010639 00000 n 
 trailer
 <<
-/Size 17
-/Root 3 0 R
-/Info 1 0 R
+/Size 20
+/Root 1 0 R
+/Info 19 0 R
+/ID [ <5bc3a0747c16c28ac3abc392c3984361> <d18092e0f7310b81b8edd49038111c12> ]
 >>
 startxref
-7983
+10776
 %%EOF

@@ -1,0 +1,12 @@
+TICKET 11 of 28  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] Calculation & Fixture AccuracyMinor
+Shared/Settlement/Reyes_wage_records.pdf contains a wrong rounding adjustment in its present-value worksheet. Its displayed component values total $1,199,355 ($870,265 + $363,180 − $34,090), so the stated $1,200,000 final figure requires a +$645 adjustment, not the printed +$4,645; the latter would produce $1,204,000. This makes a computable figure internally inconsistent with the inputs and final total, satisfying the fail criterion; replacing the adjustment with +$645 fixes it.
+Finding #1: Wage-loss PV rounding adjustment does not reconcileminor

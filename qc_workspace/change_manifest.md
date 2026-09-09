@@ -577,3 +577,117 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Shared/Settlement/Reyes_wage_records.pdf | p.10 Tab E Section 7 PV worksheet [historical font-audit: pdf_replace.py always uses Helvetica regardless of source font; this is the same PV-worksheet fix from earlier in this engagement, corrected for font only -- figures unchanged] | 7 PV-worksheet cells ($26,892 x2, $215,948, $200,593, $1,194,140, $870,265, +$4,645) rendered in Helvetica/Helvetica-Bold in an otherwise all-Times-Roman document | → | Same 7 cells, rendered in Times-Roman/Times-Bold to match the document and row styling |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/docket_entry.xlsx | docProps/core.xml + zip container [r5-t09: post-anchor creation metadata tell] | core.xml created/modified: absent (reads as build time) | → | dcterms:created/modified = 2026-06-15T00:00:00Z; zip entry timestamps also reset to 2026-06-15 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Litigation/production_tracker.csv | first_pass_tag column [r5-t14: production tracker pre-classified T9 discovery decisions] | first_pass_tag: Produce/Withhold-Privileged/Review per row (mirrors T9 answer) | → | first_pass_tag: Review (uniform, non-dispositive, all 22 rows) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/adjuster_note.docx | tables [r5-t27: table extends into margin] | table grid 9360 twips (0.30in over 8928 usable) | → | table grid rescaled to 8928 twips |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | tables [r5-t27: table extends into margin] | 2 tables at 9360 twips (0.30in over 8928 usable) | → | both tables rescaled to 8928 twips |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/HR/Keeler_personnel.docx | tables [r5-t27: table extends into margin] | 5 tables at 9360 twips (288 twips over 9072 usable) | → | all 5 tables rescaled to 9072 twips |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/post_accident_testing_policy.docx | tables [r5-t27: table extends into margin] | 2 tables at 9360 twips (144 twips over 9216 usable) | → | both tables rescaled to 9216 twips |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/post_accident_testing_policy.docx | para 50-53 (Section 3.2) [r5-t18.1: obsolete/non-FTA post-accident testing triggers] | 3.2 Non-Fatal Accidents: 4 triggers incl. disabling damage+tow (a); injury+citation (b); hazmat release (c); vague catch-all (d) | → | 2 triggers matching current FTA rule: (a) injury with immediate off-scene medical treatment; (b) disabling damage requiring tow |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Authorized Owl Routes!A7:A12 [r5-t28: text contrast below WCAG AA] | route numbers A7:A12 font color #B8862B (gold), contrast 2.90-3.24:1 | → | font color #8A5A00, contrast 5.30-5.93:1 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | Table 1 row 6 col 2; Table 2 row 9 col 2 [r5-t28: text contrast below WCAG AA] | Table1 R6C2 and Table2 R9C2 font color #B5651D, contrast 3.97-4.34:1 | → | font color #8B4513, contrast 6.51-7.10:1 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/City/property_claim_0202.pdf | p.1 body [r5-t10: unreconciled police-report number vs canonical TC-2025-1018] | RPD Case No. 2025-1018-0037 | → | RPD Case No. TC-2025-1018 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/City/repair_invoice_0202.pdf | p.1 Referenced Incident block [r5-t10: unreconciled police-report number vs canonical TC-2025-1018] | RPD Case No. 2025-1018-0037 | → | RPD Case No. TC-2025-1018 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_wage_records.pdf | p.10 PV worksheet [r5-t11: wage-loss PV rounding adjustment did not reconcile] | +$4,645 (produces $1,204,000, not the stated $1,200,000) | → | +$645 (reconciles to stated $1,200,000) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/DOT_655_Keeler.pdf | p.1 Basis for on-site collection [r5-t18.2: wrong 655.44 subsection citation] | 49 CFR § 655.44(b)(1)(ii) [wrong subsection for 8-hour alcohol window] | → | 49 CFR § 655.44(a)(2)(ii) [correct subsection] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/DOT_655_Keeler.pdf | p.4 Distribution list [r5-t08 finding 5: DOT testing attachments not supplied] | Distribution list named 3 unmounted physical attachments: Attachment A/B/C (Compliance safe) - EBT tape / calibration log / BAT cert card | → | removed; custody of these items already covered in the Step 5 chain-of-custody narrative on p.3 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Police/TC_2025-1018.pdf | p.5 Photos/evidence paragraph [r5-t08 finding 2: referenced diagram supplement missing] | measurements filed as Diagram Supplement TC-2025-1018-DS (unmounted) | → | measurements incorporated into the scene diagram set out in Section VIII above |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Police/TC_2025-1018.pdf | p.6 Recommendation/Pending items box [r5-t08 finding 2: referenced diagram supplement missing] | Pending items list included: total-station diagram supplement (unmounted) | → | removed trailing clause; list now ends at recorded witness statement of Occupant Blau |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Police/FST_supplement_2025-1018.pdf | p.4, was section 11 (now Officer Certification is 11) [r5-t08 finding 4: police support-record class referenced but absent] | Section 11 'Referenced Records (Retained in RPD Case File)' listed 4 items (field notebook, PAS log, calibration cert, chain-of-custody form) already stated inline in the narrative body | → | removed as redundant; renumbered Officer Certification from 12 to 11 and closed the resulting gap |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_life_care_plan.pdf | p.17 (final page) [r5-t08 finding 3: life-care-plan attachment package unavailable] | ATTACHMENTS: 5 numbered items (2 CVs, documents-reviewed index, sources/methods, PV schedule) each marked available on request | → | PREPARATION AND SOURCES: methodology/qualifications paragraph; notes the PV schedule and sensitivity tables appear earlier in the same report |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Med/Reyes/bills_billed.pdf | cover sheet row 2 and row 4; Bill 2 Statement Covers line [r5-t07: inpatient rehab dates disagree with ledger/medical record] | Alder Creek Neuro-Rehab dates 12/22/2025-04/28/2026 (128 days); Rivergate Radiology end date 04/28/2026 | → | 12/22/2025-04/06/2026 (106 days) matching ledger and medical record; Radiology end date 04/06/2026. Dollar totals (incl. $358,400 R&B, $612,500 bill total, $2,840,000 grand total) intentionally left unchanged - grand total is A34's registered T4 trap value |

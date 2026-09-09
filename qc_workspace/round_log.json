@@ -396,6 +396,112 @@
         "blast_radius.py's medical_billing_ledger.csv footing flag (TSG-002 row) remains a confirmed tool heuristic false positive (4th round running) -- independently re-verified all 81 rows and the grand total foot exactly.",
         "spec_check.py ties' 2 presence-heuristic misses (rejection_0218.pdf deadline rule, chain_custody.pdf blood-draw time) are unchanged from round 3 and remain false positives -- both facts are correctly present, just not as the literal matched string."
       ]
+    },
+    {
+      "round": 5,
+      "opened": "2026-09-09T21:07:18",
+      "count": 28,
+      "classes": {
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 12,
+          "files": [
+            "adjuster_note.docx",
+            "intake_memo.docx",
+            "keeler_personnel.docx",
+            "post_accident_testing_policy.docx"
+          ]
+        },
+        "realism_voice": {
+          "label": "Voice, tone, texture or document authenticity reads machine-made",
+          "n": 1,
+          "files": []
+        },
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": []
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 3,
+          "files": [
+            "bills_billed.pdf",
+            "medical_billing_ledger.csv",
+            "reyes_wage_records.pdf"
+          ]
+        },
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 1,
+          "files": []
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 2,
+          "files": [
+            "docket_entry.xlsx"
+          ]
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 2,
+          "files": []
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 2,
+          "files": [
+            "production_tracker.csv",
+            "reserve_memo.docx",
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": []
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": [
+            "dot_655_keeler.pdf",
+            "post_accident_testing_policy.docx"
+          ]
+        },
+        "pii_copyright": {
+          "label": "Real PII or copyrighted material in world files",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "other",
+        "realism_voice",
+        "placeholder_synthetic",
+        "math_footing",
+        "broken_reference",
+        "metadata_fingerprint",
+        "entity_inconsistency",
+        "a_code_leakage",
+        "answer_leakage",
+        "citation_facts",
+        "pii_copyright"
+      ],
+      "disposition": {
+        "fixed": 9,
+        "expanded": 0,
+        "traps": 0,
+        "false": 19,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-09T21:40:30",
+      "changed": "Fixed 9 tickets: rehab-stay date/day-count mismatch (dates only, dollar totals left intact to protect A34's T4 trap), 4 of 5 broken-document-reference findings (the 5th, the unmounted onboard-video native file, is T7's registered trap and was left alone), docket workbook creation-metadata tell (added explicit dcterms dates and reset zip-entry timestamps), an unreconciled RPD case number in two City documents, a wage-loss PV rounding error, the production tracker's pre-populated first-pass privilege tags for Task T9, obsolete non-FTA post-accident-testing triggers plus a wrong 655.44 subsection citation, table grids overflowing the page margin in 4 documents, and low-contrast text in 2 documents; 19 tickets were bare category headers carrying no finding text to act on.",
+      "disputes": [
+        "The onboard-video native MP4 (A53) is intentionally absent - it is the evidentiary gap that makes Task T7's ESI-preservation-scope trap work; mounting it would resolve a registered trap."
+      ]
     }
   ]
 }

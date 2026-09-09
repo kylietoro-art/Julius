@@ -1,0 +1,11 @@
+TICKET 27 of 28  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] Presentation Does Not Obstruct the Content (consolidated)Minor
+The Page Layout And Overlay Integrity clause fails because fixed tables extend into the document body margins. ACTD/Claims/adjuster_note.docx and Legal/Reyes/intake_memo.docx each have a 9,360-twip grid against an 8,928-twip usable width (0.30 inches too wide); ACTD/HR/Keeler_personnel.docx has five left-aligned tables 288 twips too wide, and ACTD/Compliance/post_accident_testing_policy.docx has two centered tables 144 twips too wide. These fixed tables leave no usable side margin for their quoted header content and can extend toward the print boundary; resizing their grids to the available width (or widening page text areas) is the smallest fix.

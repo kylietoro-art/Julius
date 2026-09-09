@@ -1,0 +1,11 @@
+TICKET 28 of 28  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] Text Legibility And ContrastMinor
+Text contrast fails in two files. In `task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx`, the "Authorized Owl Routes" sheet uses gold `#B8862B` route-number text in A7:A12 against white `#FFFFFF` and pale `#F5F2EB` row fills, with measured contrast of only 2.90–3.24:1. In `task_fs/filesystem/ACTD/Claims/reserve_memo.docx`, Table 1 R6C2 ($250,000) uses `#B5651D` on `#FFFFFF` (4.34:1) and Table 2 R9C2 ("not included above") uses the same orange on `#F4F5F7` (3.97:1); darkening these emphatic text colors would resolve the defect while preserving the intended styling.

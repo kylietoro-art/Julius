@@ -11,6 +11,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 2 | 2026-09-09T16:22 | 29 | 10 | 7 | fixed 6, widened 0, traps 0, false 23, blocked 0 |
 | 3 | 2026-09-09T17:49 | 23 | 11 | 10 | fixed 8, widened 1, traps 0, false 14, blocked 0 |
 | 4 | 2026-09-09T19:09 | 27 | 11 | 10 | fixed 6, widened 2, traps 0, false 19, blocked 0 |
+| 5 | 2026-09-09T21:07 | 28 | 11 | 11 | fixed 9, widened 0, traps 0, false 19, blocked 0 |
 
 ## Detail
 
@@ -92,4 +93,23 @@ Note: inventory_check.py's 9 registered-artifact/9 unregistered-file mismatches 
 - **Real PII or copyrighted material in world files**: 1 finding(s)  **(REPEAT)**
 
 Note: Self-QA pass (separate from this round's findings) found and fixed 3 regressions from round 3's own edits: a self-introduced CSV comma corruption, an em-dash-to-glyph-corruption + text-stream-order defect in DOT_655_Keeler.pdf (full re-audit of all 29 historical PDF edits found no other instances), and CRLF line endings from csv.writer defaults in two files. Also discovered and now avoid a second systemic pdf_replace.py limitation: it always reinserts text in Helvetica regardless of the source document's actual font, causing a visible font mismatch on Times-Roman documents (9 of 12 edited PDFs); fixed for this round's edits via explicit fontname parameters in manual PyMuPDF redaction, but historical edits across rounds 1-3 were not audited for this specific defect given time constraints.
+
+### Round 5, 2026-09-09T21:07
+
+- **Uncategorised, read the finding text**: 12 finding(s)  **(REPEAT)**
+  - files named: adjuster_note.docx, intake_memo.docx, keeler_personnel.docx, post_accident_testing_policy.docx
+- **Totals don't foot / calculations disagree with inputs**: 3 finding(s)  **(REPEAT)**
+  - files named: bills_billed.pdf, medical_billing_ledger.csv, reyes_wage_records.pdf
+- **Tool fingerprints / build dates in file metadata**: 2 finding(s)  **(REPEAT)**
+  - files named: docket_entry.xlsx
+- **Same person/entity named, titled or ID'd differently across files**: 2 finding(s)  **(REPEAT)**
+- **Builder A## codes visible in world files**: 2 finding(s)  **(REPEAT)**
+  - files named: production_tracker.csv, reserve_memo.docx, runschedule_owl512.xlsx
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+  - files named: dot_655_keeler.pdf, post_accident_testing_policy.docx
+- **Voice, tone, texture or document authenticity reads machine-made**: 1 finding(s)  **(REPEAT)**
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+- **A referenced document or value doesn't resolve**: 1 finding(s)  **(REPEAT)**
+- **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
+- **Real PII or copyrighted material in world files**: 1 finding(s)  **(REPEAT)**
 

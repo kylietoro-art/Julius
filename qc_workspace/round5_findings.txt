@@ -1,0 +1,68 @@
+World Foundations
+
+* [P0] Built Files Match Spec Inventory
+* File Tree Hygiene
+
+World Realism
+
+* [P1] No Synthetic Markers Template Residue Or Placeholder Data
+* [P1] Documents Look Like What They Claim To Be (consolidated)
+* [P1] Corpus Is Broad Enough and Can Be Navigated (consolidated)
+* [P1] Banned AI-Default Or Recurring Names
+
+Cross-Artifact Consistency
+
+* [P0] Numerical Values Constraints And Structured Data Are ConsistentMajor
+The inpatient neuro-rehabilitation service dates materially disagree without an in-world reconciliation. `Med/Reyes/bills_billed.pdf` describes the Alder Creek Neuro-Rehabilitation Institute stay as 12/22/2025–04/28/2026 (128 days), but `ACTD/Claims/medical_billing_ledger.csv` records the facility's inpatient room-and-board and therapy entries only through 04/06/2026; the contemporaneous rehabilitation record independently says Reyes was discharged from inpatient rehabilitation on 04/06/2026. This affects the claimed medical-services period and makes the billed compilation's inpatient dates/days inconsistent with both the structured ledger and medical record; revise the billed compilation to the actual inpatient period or expressly explain and document any separate post-discharge services.
+* [P1] No Broken Document ReferencesMajor
+The world contains several explicit references to distinct supporting materials that are not mounted. Most significantly, the production tracker says the native onboard-video MP4 is still held by the vendor, while the filesystem has only a PDF still log and no video file; the traffic-collision report also identifies a separately filed diagram supplement that does not exist in the inventory. The life-care plan further lists five attachments as available on request rather than including them, leaving its cited underlying materials unresolved; these are document-class references and therefore meet the fail criterion.
+Finding #1: Native onboard-video record is absentmajor
+Finding #2: Referenced police diagram supplement is missingminor
+Finding #3: Life-care-plan attachment package is unavailablemajor
+Finding #4: Police support-record class is referenced but absentminor
+Finding #5: DOT testing attachments are not suppliedminor
+* [P1] World Timeline Holds Together (consolidated)Minor
+The anchor-placement bullet fails because `task_fs/filesystem/Legal/Reyes/docket_entry.xlsx` has an OOXML core `created` timestamp of 2026-09-09 20:25:08.637847 and the same `modified` timestamp, whereas the World Spec says the anchor "now" date is 06/18/2026 and that every artifact is dated on or before it. This post-anchor creation date makes an agent-reachable artifact appear to have been created after the stated as-of date; reset the workbook's core creation/modification properties to its intended 03/06/2026 docket-entry date (or another pre-anchor date).
+Finding #1: Post-anchor creation metadata on docket workbookminor
+* [P1] Consistent Naming And Defined TermsMinor
+The City of Rivergate property-demand letter calls the police record "RPD Case No. 2025-1018-0037," and the supporting repair invoice repeats that label as the "RPD Traffic Collision Report." In contrast, the report itself identifies its local report number as "TC-2025-1018," and the criminal docket and production tracker use that same identifier. Because the City materials purport to identify the same RPD report rather than their own City file, the unreconciled change creates real confusion; the smallest fix is to use TC-2025-1018 in the City documents or add an explicit cross-reference if 2025-1018-0037 is a genuine secondary number.
+Finding #1: City materials use an unreconciled police-report numberminor
+* [P1] Calculation & Fixture AccuracyMinor
+Shared/Settlement/Reyes_wage_records.pdf contains a wrong rounding adjustment in its present-value worksheet. Its displayed component values total $1,199,355 ($870,265 + $363,180 − $34,090), so the stated $1,200,000 final figure requires a +$645 adjustment, not the printed +$4,645; the latter would produce $1,204,000. This makes a computable figure internally inconsistent with the inputs and final total, satisfying the fail criterion; replacing the adjustment with +$645 fixes it.
+Finding #1: Wage-loss PV rounding adjustment does not reconcileminor
+* [P1] Domain Reconciliation Ties
+* [P0] Personnel Names Titles Roles And Identifiers Are Consistent
+
+Leakage And Separation
+
+* [P0] No Reachable Shortcut to the Answer (consolidated)Major
+The No Solution Or Reasoning Leakage clause fails because `ACTD/Litigation/production_tracker.csv` is mounted for the worker and directly assigns `Produce` to the discovery records and `Withhold-Privileged` to A43. Task T9 requires precisely the corresponding produce/withhold decisions, so this tracker collapses the core classification work to copying its labels, even though A42 must be corrected after the fact. The smallest fix is to remove the populated first-pass classification tags (or make them non-dispositive, incomplete routing metadata that does not map to the requested records) while retaining neutral inventory information.
+Finding #1: Production tracker pre-classifies Task T9 discovery decisionsmajor
+* [P1] In-World vs Out-Of-World Separation And Metadata Cleanliness
+* [P0] No Out-of-World or Build Artifacts
+* [P1] No Signposting of Load-Bearing Facts
+
+Factual Integrity
+
+* [P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)Major
+Fails the [No Synthetic Substitutes For Real-World Facts] clause. In `ACTD/Compliance/post_accident_testing_policy.docx`, the 2024 ACTD policy says that nonfatal testing is triggered only when, among other conditions, there is disabling damage requiring a tow or immediate off-scene medical treatment plus a citation, and it adds a hazardous-materials-release trigger; those are not the 2025 FTA § 655.44 nonfatal rule. The official current regulation provides that, after a nonfatal accident involving a public transportation vehicle, the employer must test each operating covered employee unless it can completely discount that employee's contribution, so the policy materially misstates the federal compliance framework it claims to implement. Separately, `ACTD/Compliance/DOT_655_Keeler.pdf` attributes the eight-hour alcohol-test window to "49 CFR § 655.44(b)(1)(ii)," while the regulation places that alcohol timing rule at § 655.44(a)(2)(ii) and subsection (b) instead addresses the 32-hour drug-test window; correct the policy trigger and the test-record pinpoint citation.
+Finding #1: ACTD policy uses obsolete/non-FTA post-accident testing triggersmajor
+Finding #2: DOT test record cites the wrong § 655.44 subsection for the alcohol time limitminor
+* [P1] Registered Traps Present in the Build (consolidated)
+* [P1] External Citations Resolve To Real Content
+* [P1] No Real PII or Copyrighted Material
+* [P1] Intended Traps Are Fair
+
+Aggregate Risk And Coverage
+
+* [P0] File Integrity And Usability Defect Rate (consolidated)
+* [P0] Coherence Flag Ratio
+* [P0] Corpus Reads as Real Work Product (consolidated)
+* [P0] Anomaly Detection Catch-All
+
+Presentation & Render Integrity (Touch-Up)
+
+* [P0] Presentation Does Not Obstruct the Content (consolidated)Minor
+The Page Layout And Overlay Integrity clause fails because fixed tables extend into the document body margins. ACTD/Claims/adjuster_note.docx and Legal/Reyes/intake_memo.docx each have a 9,360-twip grid against an 8,928-twip usable width (0.30 inches too wide); ACTD/HR/Keeler_personnel.docx has five left-aligned tables 288 twips too wide, and ACTD/Compliance/post_accident_testing_policy.docx has two centered tables 144 twips too wide. These fixed tables leave no usable side margin for their quoted header content and can extend toward the print boundary; resizing their grids to the available width (or widening page text areas) is the smallest fix.
+* [P0] Text Legibility And ContrastMinor
+Text contrast fails in two files. In `task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx`, the "Authorized Owl Routes" sheet uses gold `#B8862B` route-number text in A7:A12 against white `#FFFFFF` and pale `#F5F2EB` row fills, with measured contrast of only 2.90–3.24:1. In `task_fs/filesystem/ACTD/Claims/reserve_memo.docx`, Table 1 R6C2 ($250,000) uses `#B5651D` on `#FFFFFF` (4.34:1) and Table 2 R9C2 ("not included above") uses the same orange on `#F4F5F7` (3.97:1); darkening these emphatic text colors would resolve the defect while preserving the intended styling.

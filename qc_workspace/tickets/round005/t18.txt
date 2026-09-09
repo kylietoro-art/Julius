@@ -1,0 +1,13 @@
+TICKET 18 of 28  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)Major
+Fails the [No Synthetic Substitutes For Real-World Facts] clause. In `ACTD/Compliance/post_accident_testing_policy.docx`, the 2024 ACTD policy says that nonfatal testing is triggered only when, among other conditions, there is disabling damage requiring a tow or immediate off-scene medical treatment plus a citation, and it adds a hazardous-materials-release trigger; those are not the 2025 FTA § 655.44 nonfatal rule. The official current regulation provides that, after a nonfatal accident involving a public transportation vehicle, the employer must test each operating covered employee unless it can completely discount that employee's contribution, so the policy materially misstates the federal compliance framework it claims to implement. Separately, `ACTD/Compliance/DOT_655_Keeler.pdf` attributes the eight-hour alcohol-test window to "49 CFR § 655.44(b)(1)(ii)," while the regulation places that alcohol timing rule at § 655.44(a)(2)(ii) and subsection (b) instead addresses the 32-hour drug-test window; correct the policy trigger and the test-record pinpoint citation.
+Finding #1: ACTD policy uses obsolete/non-FTA post-accident testing triggersmajor
+Finding #2: DOT test record cites the wrong § 655.44 subsection for the alcohol time limitminor
