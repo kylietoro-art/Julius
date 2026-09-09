@@ -343,3 +343,9 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Legal/Reyes/intake_memo.docx | para 19 (Injuries) | transitioned to outpatient rehab in early February | → | remains an inpatient there as of this memo, with discharge to outpatient care anticipated in early April |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/claims_tracker.csv | rows 2-3, suit_filing_deadline + deadline_basis columns | suit_filing_deadline blank, deadline_basis 'see rejection notice' (Cho + Mowbray rows) | → | 08/18/2026, reject+6mo (Gov. Code § 945.6) |
