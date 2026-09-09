@@ -349,3 +349,87 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Claims/claims_tracker.csv | rows 2-3, suit_filing_deadline + deadline_basis columns | suit_filing_deadline blank, deadline_basis 'see rejection notice' (Cho + Mowbray rows) | → | 08/18/2026, reject+6mo (Gov. Code § 945.6) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Litigation/production_tracker.csv | row 20 (A53) | A53 description field with unquoted comma causing 11-field row | → | properly quoted description field, 10 fields |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Litigation/production_tracker.csv | all data rows | review_status=Confirmed/First-pass/Attorney-confirmed, final_call=Produce/Withhold-Privileged, log_entry=PL-LOG-001/PL-LOG-002 for A42/A43 | → | review_status=Pending attorney review, final_call=TBD (all 22 rows); log_entry='—' for A42/A43 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | last row | TOTAL,ALL PROVIDERS (9),... aggregate row | → | (row removed) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/DOT_655_Keeler.pdf | p.2 Step 4 table | Yes — Attachment A (tape affixed to form) | → | No — Attachment A (retained in Compliance safe) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/DOT_655_Keeler.pdf | p.4 Distribution list | Attachment A/B/C listed as distributed with this copy | → | Attachment A/B/C labeled (Compliance safe), shortened descriptions |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/owl_service_rules.docx | Rule 102 | the general ACTD Operator Rulebook or Standard Bus Operator Bulletin ... the general Rulebook remains in force | → | the District's other operating policies ... those other policies remain in force |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/owl_service_rules.docx | Rule 104 | operator hours-of-service limits set forth in the current ACTD collective bargaining agreement | → | operator hours-of-service limits established under the District's fatigue-management program (Rule 206) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_wage_records.pdf | Tab E, Section 7 PV worksheet | Acute/rehab $27,180/$27,020; Years1-5 $215,970/$198,610; Total $1,194,450/$868,410; Rounding +$2,500 | → | Acute/rehab $26,892/$26,892; Years1-5 $215,948/$200,593; Total $1,194,140/$870,265; Rounding +$4,645 (final $1,200,000 unchanged, matches spec canonical value sourced from this artifact) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | para 13 and para 27 (AVL/GPS Track section) [t17 CHRONIC: false claim that AVL coincides with published schedule timepoint when schedule (Trip 06 J25=02:31) contradicts actual/AVL 02:05] | AVL/GPS telemetry ... at the published S. Main/Third timepoint ... The last valid AVL position log ... at 02:05, coincident with the published S. Main/Third control-point timepoint | → | running ahead of the published timepoint ... at 02:05, approximately 26 minutes ahead of the published S. Main/Third control-point timepoint (02:31) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | Timeline table, rows for PD/EMS arrival [t17 CHRONIC: arrival times must match cited source TC-2025-1018 (PD arrived 0212 per narrative; Medic 11 first EMS unit at 0210)] | Table 1 row: PD first on scene 02:11; EMS on scene 02:15 | → | PD first on scene 02:12; EMS on scene 02:10 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/Dispatch_log_2025-1018.csv | 02:06 radio_call row [t17 CHRONIC: leftover wrong-direction (SB) label on a NB trip (Trip 06), same defect class round 2 fixed in the schedule cell but missed here] | AVL last position vicinity S. Main at Third Ave (SB reference timepoint 02:05). | → | AVL last position vicinity S. Main at Third Ave at 02:05, ahead of Trip 06's NB schedule. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_draft.docx | closing status line (last paragraph) [t21/Finding: draft lacks any visible review markup (comments=[], zero w:ins/w:del) despite being labeled DRAFT/SUBJECT TO SUPERVISOR REVIEW] | (no comments; no w:ins/w:del; zero tracked-change or review markup in the package) | → | Added one Word comment (author: Marlene Okonkwo, Director of Safety, dated 2025-10-18) anchored to the closing 'DRAFT -- pending Safety-Director review' line, acknowledging receipt and instructing to hold the draft's placeholder figures pending confirmation |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | Table0 row0, Table1 row0, Table2 row0, Table3 row0 [t22: dark-on-dark header text, Text Legibility And Contrast — Major] | Header rows (Table0 r0 'Incident No.:'; Table1 r0 'Time/Event/Source'; Table2 r0 'Name'; Table3 r0 'Passenger/Status/Disposition') on 1B2A4E dark fill with no explicit run color, inheriting Normal style's dark 333944 font | → | Same header rows given explicit white (FFFFFF) run-level font color |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | Table1 row0 [t22: dark-on-dark header text, Text Legibility And Contrast — Major] | Table1 row0 ('Role','Attorney/Staff') on 141A2E dark fill with no explicit run color, inheriting Normal style's dark 4A5266 font | → | Same header row given explicit white (FFFFFF) run-level font color |

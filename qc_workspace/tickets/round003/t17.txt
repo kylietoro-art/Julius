@@ -1,0 +1,11 @@
+TICKET 17 of 23  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] Coherence Flag Ratio — Major
+The official RunSchedule_Owl512.xlsx has Trip 06 departing Poplar / Rivergate Plaza at 02:04 and does not put that northbound trip at S. Main / Third until 02:31. In contrast, Dispatch_log_2025-1018.csv, TC_2025-1018.pdf, and the controlling IR_2025-1018_final.docx place the collision at S. Main / Third at 02:05, and the final report says AVL places it at a "published" timepoint despite the schedule disproving that. The final report also gives first police and EMS arrival at 02:11 and 02:15, while the police report gives 02:12 and 02:10/02:14; the world needs a single reconciled route/timestamp chronology, with the schedule, AVL coordinates, dispatch log, police report, and final report corrected or an explicit amendment explaining the variance.

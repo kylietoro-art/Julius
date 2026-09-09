@@ -1,0 +1,13 @@
+TICKET 22 of 23  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] Text Legibility And Contrast — Major
+`task_fs/filesystem/ACTD/Safety/IR_2025-1018_final.docx` has dark `1B2A4E` header cells for text including "Incident No.," "Time (10/17/2025 → 10/18/2025)," and "Passenger," while those paragraphs inherit the Normal style's dark `333944` font color. `task_fs/filesystem/Legal/Reyes/intake_memo.docx` similarly puts "Role" and "Attorney/Staff" on a `141A2E` dark fill while inheriting dark `4A5266` text. These are material dark-on-dark combinations, so the headers are not clearly readable against their immediate backgrounds; explicitly setting these header runs or styles to white would fix both defects.
+Finding #1: Dark inherited header text in final incident report — major
+Finding #2: Dark inherited header text in intake memo — major

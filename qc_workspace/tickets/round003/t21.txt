@@ -1,0 +1,12 @@
+TICKET 21 of 23  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] Format-Native Feature Fidelity — Minor
+`task_fs/filesystem/ACTD/Safety/IR_2025-1018_draft.docx` is expressly presented as a draft but has no visible review markup. Its text labels it "DRAFT — ON-SCENE — SUBJECT TO SUPERVISOR REVIEW," while its package inspection found `comments=[]` and zero `w:ins`, `w:del`, move, or comment-reference elements. This materially fails sub-check (d), because a reader opening the working draft receives neither comments nor tracked changes; add at least one visible comment or tracked insertion/deletion mark to preserve its draft/redline state.
+Finding #1: Draft incident report lacks review markup — minor

@@ -1,0 +1,54 @@
+* The four-page ACTD DOT Post-Accident Test Record expressly lists "Attachment A — EBT printed result tape," "Attachment B — Pre-test external calibration log excerpt," and "Attachment C — BAT Rachel Ngo certification card copy." The record's final page is only a distribution/attachment list, and none of those three attachments exists as a separately mounted file, leaving its stated supporting materials unresolved. Separately, the mounted Owl-service rules state that the manual defers to the "general ACTD Operator Rulebook or Standard Bus Operator Bulletin" and incorporates the current collective-bargaining agreement; neither document class is included in the 62-file task filesystem. These are explicit and implied document references that do not resolve to real world materials.
+Finding #1: DOT alcohol-test attachments are listed but absent — minor
+Finding #2: Owl rules incorporate absent governing document classes — minor
+
+* [P1] Calculation & Fixture Accuracy — Minor
+Shared/Settlement/Reyes_wage_records.pdf, Tab E, states a $41,500 pre-accident annual capacity and 8.0% fringe loading, yielding $44,820, and says the 0.6-year acute/rehab window is fully lost with no residual. Thus the displayed $27,180 acute/rehab loss is wrong: $44,820 times 0.6 equals $26,892. The PDF also specifies a $2,400 residual, 0.6% growth, and 2.5% discount; recomputing years 1-5 gives $215,948.48 undiscounted and $200,592.66 PV, not $215,970 and $198,610. This is an unregistered error in a computable financial fixture.
+Finding #1: Vocational present-value worksheet does not follow its stated inputs — minor
+
+* [P1] Domain Reconciliation Ties
+* [P0] Personnel Names Titles Roles And Identifiers Are Consistent
+* [P0] Numerical Values Constraints And Structured Data Are Consistent
+* [P1] World Timeline Holds Together (consolidated)
+* [P1] Consistent Naming And Defined Terms
+
+Leakage And Separation
+
+* [P0] No Reachable Shortcut to the Answer (consolidated) — Major
+`ACTD/Litigation/production_tracker.csv` is a worker-readable answer-key-style table, not merely an index. Its `review_status` and `final_call` columns mark the responsive documents as `Confirmed` and `Produce`, while A43 is expressly `Attorney-confirmed` and `Withhold-Privileged` with `PL-LOG-002`; those are the core decisions required to prepare the discovery responses and privilege log. This collapses the intended document-by-document privilege analysis for T9, so the world fails the No Solution Or Reasoning Leakage clause. Remove the completed dispositions, final calls, and privilege-log IDs (or leave them genuinely unresolved), retaining only neutral identifiers and source metadata.
+Finding #1: Completed production and privilege answer key exposed in litigation tracker — major
+
+* [P1] In-World vs Out-Of-World Separation And Metadata Cleanliness
+* [P0] No Out-of-World or Build Artifacts
+* [P1] No Signposting of Load-Bearing Facts
+
+Factual Integrity
+
+* [P1] Registered Traps Present in the Build (consolidated)
+* [P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+* [P1] External Citations Resolve To Real Content
+* [P1] No Real PII or Copyrighted Material
+* [P1] Intended Traps Are Fair
+
+Aggregate Risk And Coverage
+
+* [P0] Coherence Flag Ratio — Major
+The official RunSchedule_Owl512.xlsx has Trip 06 departing Poplar / Rivergate Plaza at 02:04 and does not put that northbound trip at S. Main / Third until 02:31. In contrast, Dispatch_log_2025-1018.csv, TC_2025-1018.pdf, and the controlling IR_2025-1018_final.docx place the collision at S. Main / Third at 02:05, and the final report says AVL places it at a "published" timepoint despite the schedule disproving that. The final report also gives first police and EMS arrival at 02:11 and 02:15, while the police report gives 02:12 and 02:10/02:14; the world needs a single reconciled route/timestamp chronology, with the schedule, AVL coordinates, dispatch log, police report, and final report corrected or an explicit amendment explaining the variance.
+
+* [P0] File Integrity And Usability Defect Rate (consolidated)
+* [P0] Corpus Reads as Real Work Product (consolidated)
+* [P0] Anomaly Detection Catch-All
+
+Presentation & Render Integrity (Touch-Up)
+
+* [P0] Format-Native Feature Fidelity — Minor
+`task_fs/filesystem/ACTD/Safety/IR_2025-1018_draft.docx` is expressly presented as a draft but has no visible review markup. Its text labels it "DRAFT — ON-SCENE — SUBJECT TO SUPERVISOR REVIEW," while its package inspection found `comments=[]` and zero `w:ins`, `w:del`, move, or comment-reference elements. This materially fails sub-check (d), because a reader opening the working draft receives neither comments nor tracked changes; add at least one visible comment or tracked insertion/deletion mark to preserve its draft/redline state.
+Finding #1: Draft incident report lacks review markup — minor
+
+* [P0] Text Legibility And Contrast — Major
+`task_fs/filesystem/ACTD/Safety/IR_2025-1018_final.docx` has dark `1B2A4E` header cells for text including "Incident No.," "Time (10/17/2025 → 10/18/2025)," and "Passenger," while those paragraphs inherit the Normal style's dark `333944` font color. `task_fs/filesystem/Legal/Reyes/intake_memo.docx` similarly puts "Role" and "Attorney/Staff" on a `141A2E` dark fill while inheriting dark `4A5266` text. These are material dark-on-dark combinations, so the headers are not clearly readable against their immediate backgrounds; explicitly setting these header runs or styles to white would fix both defects.
+Finding #1: Dark inherited header text in final incident report — major
+Finding #2: Dark inherited header text in intake memo — major
+
+* [P1] CSV Formatted Correctly — Major
+ACTD/Litigation/production_tracker.csv has a 10-field header but parsed row 20 (A53) has 11 fields because the comma before "not yet produced)" is not quoted; that shifts the remaining values out of their header-defined columns. ACTD/Claims/medical_billing_ledger.csv ends with an explicit `TOTAL` / `ALL PROVIDERS (9)` aggregate row, rather than a bill data record, which is prohibited bottom-of-CSV summary content. Quote and escape the entire A53 description field, then move the ledger total to a separate summary artifact or remove it from this records-only CSV.

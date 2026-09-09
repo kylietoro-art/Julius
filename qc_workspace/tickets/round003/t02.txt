@@ -1,0 +1,12 @@
+TICKET 2 of 23  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] Calculation & Fixture Accuracy — Minor
+Shared/Settlement/Reyes_wage_records.pdf, Tab E, states a $41,500 pre-accident annual capacity and 8.0% fringe loading, yielding $44,820, and says the 0.6-year acute/rehab window is fully lost with no residual. Thus the displayed $27,180 acute/rehab loss is wrong: $44,820 times 0.6 equals $26,892. The PDF also specifies a $2,400 residual, 0.6% growth, and 2.5% discount; recomputing years 1-5 gives $215,948.48 undiscounted and $200,592.66 PV, not $215,970 and $198,610. This is an unregistered error in a computable financial fixture.
+Finding #1: Vocational present-value worksheet does not follow its stated inputs — minor

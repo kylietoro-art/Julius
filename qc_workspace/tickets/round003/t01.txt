@@ -1,0 +1,12 @@
+TICKET 1 of 23  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The four-page ACTD DOT Post-Accident Test Record expressly lists "Attachment A — EBT printed result tape," "Attachment B — Pre-test external calibration log excerpt," and "Attachment C — BAT Rachel Ngo certification card copy." The record's final page is only a distribution/attachment list, and none of those three attachments exists as a separately mounted file, leaving its stated supporting materials unresolved. Separately, the mounted Owl-service rules state that the manual defers to the "general ACTD Operator Rulebook or Standard Bus Operator Bulletin" and incorporates the current collective-bargaining agreement; neither document class is included in the 62-file task filesystem. These are explicit and implied document references that do not resolve to real world materials.
+Finding #1: DOT alcohol-test attachments are listed but absent — minor
+Finding #2: Owl rules incorporate absent governing document classes — minor

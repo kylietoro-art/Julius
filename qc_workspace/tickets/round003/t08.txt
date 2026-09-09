@@ -1,0 +1,12 @@
+TICKET 8 of 23  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] No Reachable Shortcut to the Answer (consolidated) — Major
+`ACTD/Litigation/production_tracker.csv` is a worker-readable answer-key-style table, not merely an index. Its `review_status` and `final_call` columns mark the responsive documents as `Confirmed` and `Produce`, while A43 is expressly `Attorney-confirmed` and `Withhold-Privileged` with `PL-LOG-002`; those are the core decisions required to prepare the discovery responses and privilege log. This collapses the intended document-by-document privilege analysis for T9, so the world fails the No Solution Or Reasoning Leakage clause. Remove the completed dispositions, final calls, and privilege-log IDs (or leave them genuinely unresolved), retaining only neutral identifiers and source metadata.
+Finding #1: Completed production and privilege answer key exposed in litigation tracker — major

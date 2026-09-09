@@ -1,0 +1,11 @@
+TICKET 23 of 23  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] CSV Formatted Correctly — Major
+ACTD/Litigation/production_tracker.csv has a 10-field header but parsed row 20 (A53) has 11 fields because the comma before "not yet produced)" is not quoted; that shifts the remaining values out of their header-defined columns. ACTD/Claims/medical_billing_ledger.csv ends with an explicit `TOTAL` / `ALL PROVIDERS (9)` aggregate row, rather than a bill data record, which is prohibited bottom-of-CSV summary content. Quote and escape the entire A53 description field, then move the ledger total to a separate summary artifact or remove it from this records-only CSV.
