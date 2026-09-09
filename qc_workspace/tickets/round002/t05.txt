@@ -1,0 +1,13 @@
+TICKET 5 of 29  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P0] Numerical Values Constraints And Structured Data Are Consistent — Minor
+The medical_billing_ledger.csv does not agree with the Settlement/Reyes_lien_EOB.pdf allocation of adjustments and outstanding balance: the ledger totals $2,644,000 adjustments with $0 balance, while the EOB says $2,640,800 adjustments and $3,200 balance. It also bills ACNRI inpatient services through 04/28/2026, although both Med/Reyes/rehab_neuropsych.pdf and the life-care plan record inpatient discharge on 04/06/2026. These are material, unexplained disagreements in calculation-bearing structured data and treatment dates.
+Finding #1: Billing ledger misstates adjustments and unpaid balance — minor
+Finding #2: Inpatient billing extends 22 days past documented discharge — minor

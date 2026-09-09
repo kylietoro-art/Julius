@@ -1,0 +1,13 @@
+TICKET 6 of 29  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] No Broken Document References — Major
+The world contains two broken document references. First, `ACTD/Video/onboard_video_still_log.pdf` and the production tracker identify a specific preserved, available native MP4, but the complete mounted file inventory contains no MP4 file. Second, `Shared/Settlement/Reyes_lien_EOB.pdf` represents Tabs 1–11 of EOB and lien materials as enclosed and produced, although the supplied PDF has only four pages and no companion EOB, DHCS, or BlueShield materials are mounted. These unresolved supporting materials meet the failing criterion for absent attachments and missing document classes.
+Finding #1: Referenced native onboard-video clip is absent — major
+Finding #2: Lien packet's enclosed EOB and lien attachments are missing — major

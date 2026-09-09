@@ -211,3 +211,135 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/HR/Keeler_personnel.docx | table header rows, 18 runs across 4 tables [white text on light gray D9D9D9 fill was effectively unreadable] | white (FFFFFF) header text on D9D9D9 fill, 4 tables (Date/Event, Item/Status, Cycle/Rating/Notes, Test type/History) | → | black (000000) header text, same fill, same labels |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CivilCase/Complaint_Reyes_filed.pdf | p.10 jury demand signature block | By: __________________________________ (blank) | → | By: /s/ Nora Halstead |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CivilCase/Complaint_Reyes_filed.pdf | p.12 proof of service signature | __________________________________ (blank) | → | /s/ Grace Chen |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Discovery/RFP_set.pdf | p.12 attorney signature block | By: ______________________________ (blank) | → | By: /s/ Nora Halstead |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Discovery/RFP_set.pdf | p.14 proof of service signature | ______________________________ (blank) | → | /s/ Grace Chen |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | row TOTAL, adjustments column | 2644000 (TOTAL adjustments) | → | 2640800 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | row TOTAL, balance column | 0 (TOTAL balance) | → | 3200 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | ACNRI-001,002,003,004,006,007,008 service_date | 2025-12-22 to 2026-04-28 | → | 2025-12-22 to 2026-04-06 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | ACNRI-005 service_date | 2026-02-03 to 2026-04-15 | → | 2026-02-03 to 2026-04-06 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | ACNRI-001 description | (127 days) | → | (105 days) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_lien_EOB.pdf | p.1 opening paragraph | Copies of each underlying EOB, remittance advice, and the DHCS lien notice are enclosed at the tabs indicated. | → | ...are produced separately. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_lien_EOB.pdf | p.2 section 2 | the schedule attached hereto as Exhibit A, with corresponding EOBs at Tabs 1-9. | → | ...as Exhibit A. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_lien_EOB.pdf | p.2 section 3 | DHCS's countersigned reduction letter is enclosed at Tab 10. | → | ...is produced separately. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_lien_EOB.pdf | p.3 section 5 heading | 5.  Enclosure Index (Tabs) | → | 5.  Materials Index (Tabs) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_lien_EOB.pdf | p.4 signature block | Enclosures (Exhibit A; Tabs 1-11) | → | Enclosures (Exhibit A) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Litigation/production_tracker.csv | A53 row, log_entry/description/notes columns | REYES-000369–000377 + native MP4 (REYES-NATIVE-0004) | → | REYES-000369–000377 (native MP4 held by vendor, not yet produced) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/AVL_GPS_track_2025-1018.csv | rows 02:01:00-02:05:12, lat and heading_deg columns | latitude decreasing 34.08498->34.07852, heading 0 then 181-188 (southbound-consistent) | → | latitude increasing 34.08498->34.09144 (mirrored), heading 0 then 1-8 (northbound-consistent) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Trip 06 row, S. Main/Third column (J25) | 02:05 (SB timepoint pass) / 02:31 | → | 02:31 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | rows 32-35 | Key Timepoint - S. Main / Third (Downtown Rivergate) callout table (rows 32-35) | → | (removed, blanked) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/employment_verification.pdf | p.1 table + paragraph, p.3 rate history table | Date of hire 06/2018; since June 2018; 06/2018 (hire) | → | 04/2019; since April 2019; 04/2019 (hire) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/reyes_recorded_statement.pdf | p.3 dialogue | A little over three years. I started in the summer of 2022. | → | A little over six years. I started in the spring of 2019. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | para 9 | sixth week of outpatient rehabilitation...transitioned to outpatient status in early February 2026 | → | eleventh week of inpatient rehabilitation...discharge to outpatient status anticipated in early April 2026 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | para 19 (Injuries) | transitioned to outpatient rehab in early February | → | remains an inpatient there as of this memo, with discharge to outpatient care anticipated in early April |

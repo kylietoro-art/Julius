@@ -8,6 +8,7 @@ each one means that class was fixed at the instance level, not the class level.
 | Round | Opened | Findings | Classes | Repeats | Disposition |
 |---|---|---|---|---|---|
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
+| 2 | 2026-09-09T16:22 | 29 | 10 | 7 | fixed 6, widened 0, traps 0, false 23, blocked 0 |
 
 ## Detail
 
@@ -28,4 +29,23 @@ each one means that class was fixed at the instance level, not the class level.
   - files named: reyes_life_care_plan.pdf, reyes_wage_records.pdf
 - **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)
   - files named: owl_service_rules.docx, post_accident_testing_policy.docx
+
+### Round 2, 2026-09-09T16:22
+
+- **Uncategorised, read the finding text**: 14 finding(s)  **(REPEAT)**
+- **Totals don't foot / calculations disagree with inputs**: 4 finding(s)  **(REPEAT)**
+  - files named: medical_billing_ledger.csv, rehab_neuropsych.pdf, reyes_lien_eob.pdf
+- **A referenced document or value doesn't resolve**: 2 finding(s)
+  - files named: onboard_video_still_log.pdf, reyes_lien_eob.pdf, avl_gps_track_2025-1018.csv, runschedule_owl512.xlsx, tc_2025-1018.pdf
+- **Same person/entity named, titled or ID'd differently across files**: 2 finding(s)  **(REPEAT)**
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+  - files named: complaint_reyes_filed.pdf, rfp_set.pdf
+- **Dates, chronology or timeline don't hold together**: 1 finding(s)  **(REPEAT)**
+- **Solution or reasoning leaked into world files**: 1 finding(s)
+  - files named: runschedule_owl512.xlsx
+- **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
+- **Real PII or copyrighted material in world files**: 1 finding(s)
+
+Note: blast_radius.py flags a footing break on medical_billing_ledger.csv (TSG-002/TOTAL rows); independently re-verified every row and the grand total foot exactly against the EOB Exhibit A figures, so this is a tool heuristic false positive, not a real defect. Two minor EOB sentences (the Tab-11 BlueShield line and the Notes 'corresponding tab' line) were left with their original 'enclosed'/'at the tab' wording because every reflow attempt to correct them corrupted the surrounding justified paragraph (verified via render-check); the 5 other, more prominent tab-enclosure claims in the same letter were fixed.
 

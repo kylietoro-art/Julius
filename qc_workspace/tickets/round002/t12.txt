@@ -1,0 +1,12 @@
+TICKET 12 of 29  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* [P1] No Signposting of Load-Bearing Facts — Minor
+`task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx` fails this dimension because it uses the bold, dark-filled header “Key Timepoint — S. Main / Third (Downtown Rivergate)” for an isolated table containing the 02:05 reference. The workbook otherwise already presents the full route roster, so this extra answer-oriented block selectively guides the reader to the accident-location/time fact. Rename the section neutrally or remove the isolated callout and retain the information only in the complete schedule table.
+Finding #1: Schedule isolates the collision timepoint as “Key” — minor

@@ -94,6 +94,100 @@
         "Draft incident report's missing tracked-changes: A03 is a never-finalized on-scene draft that gets wholly superseded by a separately-authored final report (A02), not a document edited in place via Track Changes. Adding fake revision history would misrepresent how the document came to exist.",
         "tran_text_thread.pdf text legibility: rendered all 5 pages; header/footer chrome is normal, readable medium-gray throughout, not washed out as claimed."
       ]
+    },
+    {
+      "round": 2,
+      "opened": "2026-09-09T16:22:14",
+      "count": 29,
+      "classes": {
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": [
+            "complaint_reyes_filed.pdf",
+            "rfp_set.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 14,
+          "files": []
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 4,
+          "files": [
+            "medical_billing_ledger.csv",
+            "rehab_neuropsych.pdf",
+            "reyes_lien_eob.pdf"
+          ]
+        },
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 2,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "reyes_lien_eob.pdf",
+            "avl_gps_track_2025-1018.csv",
+            "runschedule_owl512.xlsx",
+            "tc_2025-1018.pdf"
+          ]
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 2,
+          "files": []
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": []
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": [
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": []
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": []
+        },
+        "pii_copyright": {
+          "label": "Real PII or copyrighted material in world files",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "placeholder_synthetic",
+        "other",
+        "math_footing",
+        "entity_inconsistency",
+        "temporal",
+        "metadata_fingerprint",
+        "citation_facts"
+      ],
+      "disposition": {
+        "fixed": 6,
+        "expanded": 0,
+        "traps": 0,
+        "false": 23,
+        "blocked": 0
+      },
+      "note": "blast_radius.py flags a footing break on medical_billing_ledger.csv (TSG-002/TOTAL rows); independently re-verified every row and the grand total foot exactly against the EOB Exhibit A figures, so this is a tool heuristic false positive, not a real defect. Two minor EOB sentences (the Tab-11 BlueShield line and the Notes 'corresponding tab' line) were left with their original 'enclosed'/'at the tab' wording because every reflow attempt to correct them corrupted the surrounding justified paragraph (verified via render-check); the 5 other, more prominent tab-enclosure claims in the same letter were fixed.",
+      "closed": "2026-09-09T17:28:11",
+      "changed": "Fixed all 6 substantive finding groups: blank Halstead/Chen signatures, ledger-vs-EOB reconciliation plus ACNRI discharge dates, the false MP4-production and EOB tab-enclosure claims, the schedule's southbound leakage callout plus the AVL heading/direction data, the Coastline hire-date drift across 3 documents, and the intake memo's inpatient/outpatient contradiction.",
+      "disputes": [
+        "The 23 ticket lines with no finding text (e.g. 'Documents Look Like What They Claim To Be (consolidated)') are passing AutoQC dimension headers included for completeness, not defects."
+      ]
     }
   ]
 }

@@ -1,0 +1,12 @@
+TICKET 1 of 29  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+* The world fails because two purportedly completed litigation documents retain unfilled signature-line scaffolding. `Shared/CivilCase/Complaint_Reyes_filed.pdf` shows “By: __________________________________” above Nora Halstead’s name, and `Legal/Discovery/RFP_set.pdf` shows an unfilled attorney “By” line as well as an unfilled proof-of-service signature line above Grace Chen’s name. These blank execution fields make the documents read as unexecuted templates rather than authentic filed or served work product, meeting the placeholder/template-residue fail criterion.
+Finding #1: Filed civil complaint retains a blank attorney signature line — major
+Finding #2: RFP set retains blank attorney and service-declarant signatures — major
