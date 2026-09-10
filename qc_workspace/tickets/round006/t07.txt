@@ -1,0 +1,12 @@
+TICKET 7 of 7  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] CSV Formatted Correctly
+
+ACTD/CAD/Dispatch_log_2025-1018.csv fails the consistent-field-count requirement. Its header declares six columns, but line 33 is an unquoted record whose message contains a comma before "en route to the 02:31 timepoint," causing the CSV parser to produce seven fields. This leaves the tail of the message as an undeclared extra field, so the row is not a data record conforming to the file's column schema; quote the complete message field or otherwise escape the internal comma.

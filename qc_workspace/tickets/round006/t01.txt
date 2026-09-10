@@ -1,0 +1,16 @@
+TICKET 1 of 7  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+The world-spec workbook's Canonical Values sheet identifies A36 as the source for a $180,000 annual future-medical cost, $6,480,000 undiscounted total, and $4,240,000 present value; its A36 artifact row repeats those figures. The mounted source artifact, Shared/Settlement/Reyes_life_care_plan.pdf, instead states a $177,843 annual cost, $6,402,348 undiscounted total, and $4,189,000 present value at the same 36-year, 2.5% assumptions. The source plan's arithmetic also verifies its own values, so this is a real shared-number contradiction that changes the economic damages calculation and has no stated reconciliation.
+Finding #1: Life-care-plan amounts in the world spec do not match the mounted source plan - Major
+
+The @ Canonical Values sheet declares A36-derived future-medical figures of $6,480,000 undiscounted, $180,000 annually, and $4,240,000 present value. The designated source, Shared/Settlement/Reyes_life_care_plan.pdf, instead states $177,843 annually, $6,402,348 undiscounted, and $4,189,000 PV. These incompatible grounding figures will produce different damages results; revise the canonical rows to match the plan or revise and reconcile the plan.
+Finding #1: Canonical future-medical figures contradict the life-care source - Major

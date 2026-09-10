@@ -1,0 +1,16 @@
+TICKET 2 of 7  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+The life-care plan expressly lists five attachments (both experts' CVs, a documents-reviewed index, pricing sources/methods, and a year-by-year present-value schedule) as "available on request," but its 19 pages end immediately after that list and none of those companions is a mounted artifact. The lien/EOB transmittal similarly identifies nine provider EOB packets plus DHCS lien/reduction and BlueShield no-lien materials in its "Supporting Documentation Index (Available on Request)," without supplying them. In addition, the coverage summary directs readers to the governing Memorandum of Coverage and its schedule of endorsements, and the FST supplement enumerates four attachments; neither companion set resolves anywhere in the world. These unresolved named supporting records prevent a reader from following the document references.
+Finding #1: Life-care plan attachments are unavailable - Major
+Finding #2: Lien/EOB support packet is absent - Major
+Finding #3: Coverage form and endorsements are not supplied - Minor
+Finding #4: FST supplement's enumerated attachments are absent - Minor

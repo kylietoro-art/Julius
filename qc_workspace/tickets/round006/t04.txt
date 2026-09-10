@@ -1,0 +1,13 @@
+TICKET 4 of 7  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+ACTD/Compliance/DOT_655_Keeler.pdf states that the Designated Employer Representative received the test record and "reviewed [it] for completeness under 49 CFR § 655.53." The cited regulation is real, but its official title is "Supervisor acting as collection site personnel," so it does not substantiate a completeness-review requirement. This is a discrete erroneous external citation in a compliance record; replace it with the applicable recordkeeping/review authority or remove the unsupported statutory attribution.
+Finding #1: Misapplied 49 C.F.R. § 655.53 in DOT test-form receipt - Minor

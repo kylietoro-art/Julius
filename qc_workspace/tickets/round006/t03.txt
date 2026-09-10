@@ -1,0 +1,15 @@
+TICKET 3 of 7  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The worker-readable file task_fs/filesystem/ACTD/Litigation/production_tracker.csv exposes a first_pass_tag column that directly labels responsive documents Produce or Withhold-Privileged, together with the privilege rationale and intended production/log treatment. The specification's T9 entry states that the task is to produce the listed neutral records and withhold/log A43; the tracker already supplies those outcomes for the corresponding records, so it materially collapses the worker's required analysis. The A42 row is a registered misleading tag and must remain a substantive check, but a single known exception does not prevent the tracker from serving as a ready-made answer key for the other document calls.
+Finding #1: Production tracker gives T9's production decisions - Major
+
+Minor issues:

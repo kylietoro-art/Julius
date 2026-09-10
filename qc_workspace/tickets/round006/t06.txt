@@ -1,0 +1,13 @@
+TICKET 6 of 7  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Text Legibility And Contrast
+
+task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx fails on sheet Authorized Owl Routes: cells A8, A10, and A12 display the route values "511," "514," and "519" in gold #B8862B over the pale-beige striped fill #F5F2EB. The computed local contrast is approximately 2.9:1, which makes these visible route identifiers low-contrast against their immediate cell background and therefore fails the dimension even though the adjacent white-row instances are readable. Change the route-number font to a darker color (or use a substantially darker fill) for the beige striped rows.
+Finding #1: Low-contrast gold route numbers on striped schedule rows - Minor

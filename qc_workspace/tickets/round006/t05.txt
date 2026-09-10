@@ -1,0 +1,12 @@
+TICKET 5 of 7  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Format-Native Feature Fidelity
+
+task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx, sheet "Authorized Owl Routes," is a clear status tracker: F6 is headed "Status" and F7:F12 each show "Authorized." Those status cells have the same 00FFFFFF/00F5F2EB alternating row fills as their neighboring ordinary data cells, and the workbook reports zero conditional-formatting rules, so status is not rendered with green, amber, red, or an equivalent status-specific encoding. Add a green status fill, icon, or conditional-format rule to the Authorized cells (and corresponding distinct encodings for any future states) to make the status field visually recoverable at a glance.

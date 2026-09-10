@@ -12,6 +12,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 3 | 2026-09-10T17:13 | 6 | 3 | 3 | fixed 5, widened 0, traps 1, false 0, blocked 0 |
 | 4 | 2026-09-10T18:02 | 7 | 5 | 5 | fixed 5, widened 0, traps 1, false 1, blocked 0 |
 | 5 | 2026-09-10T19:32 | 5 | 3 | 2 | fixed 4, widened 0, traps 0, false 1, blocked 0 |
+| 6 | 2026-09-10T21:34 | 7 | 4 | 4 | fixed 7, widened 0, traps 0, false 0, blocked 0 |
 
 ## Detail
 
@@ -72,4 +73,14 @@ Note: Also verified via spec_check.py traps that this round's edits do not touch
 - **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
   - files named: production_tracker.csv
 - **A referenced document or value doesn't resolve**: 1 finding(s)
+
+### Round 6, 2026-09-10T21:34
+
+- **Builder A## codes visible in world files**: 3 finding(s)  **(REPEAT)**
+  - files named: reyes_life_care_plan.pdf, production_tracker.csv, runschedule_owl512.xlsx
+- **Uncategorised, read the finding text**: 2 finding(s)  **(REPEAT)**
+  - files named: runschedule_owl512.xlsx, dispatch_log_2025-1018.csv
+- **A referenced document or value doesn't resolve**: 1 finding(s)  **(REPEAT)**
+- **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
+  - files named: dot_655_keeler.pdf
 

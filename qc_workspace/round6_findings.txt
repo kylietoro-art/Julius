@@ -1,0 +1,40 @@
+[P1] Calculation & Fixture Accuracy
+
+The world-spec workbook's Canonical Values sheet identifies A36 as the source for a $180,000 annual future-medical cost, $6,480,000 undiscounted total, and $4,240,000 present value; its A36 artifact row repeats those figures. The mounted source artifact, Shared/Settlement/Reyes_life_care_plan.pdf, instead states a $177,843 annual cost, $6,402,348 undiscounted total, and $4,189,000 present value at the same 36-year, 2.5% assumptions. The source plan's arithmetic also verifies its own values, so this is a real shared-number contradiction that changes the economic damages calculation and has no stated reconciliation.
+Finding #1: Life-care-plan amounts in the world spec do not match the mounted source plan - Major
+
+The @ Canonical Values sheet declares A36-derived future-medical figures of $6,480,000 undiscounted, $180,000 annually, and $4,240,000 present value. The designated source, Shared/Settlement/Reyes_life_care_plan.pdf, instead states $177,843 annually, $6,402,348 undiscounted, and $4,189,000 PV. These incompatible grounding figures will produce different damages results; revise the canonical rows to match the plan or revise and reconcile the plan.
+Finding #1: Canonical future-medical figures contradict the life-care source - Major
+
+[P1] No Broken Document References
+
+The life-care plan expressly lists five attachments (both experts' CVs, a documents-reviewed index, pricing sources/methods, and a year-by-year present-value schedule) as "available on request," but its 19 pages end immediately after that list and none of those companions is a mounted artifact. The lien/EOB transmittal similarly identifies nine provider EOB packets plus DHCS lien/reduction and BlueShield no-lien materials in its "Supporting Documentation Index (Available on Request)," without supplying them. In addition, the coverage summary directs readers to the governing Memorandum of Coverage and its schedule of endorsements, and the FST supplement enumerates four attachments; neither companion set resolves anywhere in the world. These unresolved named supporting records prevent a reader from following the document references.
+Finding #1: Life-care plan attachments are unavailable - Major
+Finding #2: Lien/EOB support packet is absent - Major
+Finding #3: Coverage form and endorsements are not supplied - Minor
+Finding #4: FST supplement's enumerated attachments are absent - Minor
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The worker-readable file task_fs/filesystem/ACTD/Litigation/production_tracker.csv exposes a first_pass_tag column that directly labels responsive documents Produce or Withhold-Privileged, together with the privilege rationale and intended production/log treatment. The specification's T9 entry states that the task is to produce the listed neutral records and withhold/log A43; the tracker already supplies those outcomes for the corresponding records, so it materially collapses the worker's required analysis. The A42 row is a registered misleading tag and must remain a substantive check, but a single known exception does not prevent the tracker from serving as a ready-made answer key for the other document calls.
+Finding #1: Production tracker gives T9's production decisions - Major
+
+Minor issues:
+
+[P1] External Citations Resolve To Real Content
+
+ACTD/Compliance/DOT_655_Keeler.pdf states that the Designated Employer Representative received the test record and "reviewed [it] for completeness under 49 CFR § 655.53." The cited regulation is real, but its official title is "Supervisor acting as collection site personnel," so it does not substantiate a completeness-review requirement. This is a discrete erroneous external citation in a compliance record; replace it with the applicable recordkeeping/review authority or remove the unsupported statutory attribution.
+Finding #1: Misapplied 49 C.F.R. § 655.53 in DOT test-form receipt - Minor
+
+[P0] Format-Native Feature Fidelity
+
+task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx, sheet "Authorized Owl Routes," is a clear status tracker: F6 is headed "Status" and F7:F12 each show "Authorized." Those status cells have the same 00FFFFFF/00F5F2EB alternating row fills as their neighboring ordinary data cells, and the workbook reports zero conditional-formatting rules, so status is not rendered with green, amber, red, or an equivalent status-specific encoding. Add a green status fill, icon, or conditional-format rule to the Authorized cells (and corresponding distinct encodings for any future states) to make the status field visually recoverable at a glance.
+
+[P0] Text Legibility And Contrast
+
+task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx fails on sheet Authorized Owl Routes: cells A8, A10, and A12 display the route values "511," "514," and "519" in gold #B8862B over the pale-beige striped fill #F5F2EB. The computed local contrast is approximately 2.9:1, which makes these visible route identifiers low-contrast against their immediate cell background and therefore fails the dimension even though the adjacent white-row instances are readable. Change the route-number font to a darker color (or use a substantially darker fill) for the beige striped rows.
+Finding #1: Low-contrast gold route numbers on striped schedule rows - Minor
+
+[P1] CSV Formatted Correctly
+
+ACTD/CAD/Dispatch_log_2025-1018.csv fails the consistent-field-count requirement. Its header declares six columns, but line 33 is an unquoted record whose message contains a comma before "en route to the 02:31 timepoint," causing the CSV parser to produce seven fields. This leaves the tail of the message as an undeclared extra field, so the row is not a data record conforming to the file's column schema; quote the complete message field or otherwise escape the internal comma.

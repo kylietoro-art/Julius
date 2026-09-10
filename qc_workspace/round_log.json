@@ -312,6 +312,58 @@
         "Life-care-plan attachments listed as CVs/documents-reviewed/pricing-sources/PV-schedule 'available on request' are standard, realistic expert-report convention (not bundled with every served copy), not a broken reference -- fabricating 5 new files would violate the replace-never-add rule.",
         "coverage_summary.pdf's Schedule of Forms and Endorsements listing SCPERA-MOC-100 by form number without attaching its full text is standard insurance declarations-page convention (the master policy jacket, not the summary, carries full form text) -- not a broken reference."
       ]
+    },
+    {
+      "round": 6,
+      "opened": "2026-09-10T21:34:57",
+      "count": 7,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 3,
+          "files": [
+            "reyes_life_care_plan.pdf",
+            "production_tracker.csv",
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 1,
+          "files": []
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 1,
+          "files": [
+            "dot_655_keeler.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 2,
+          "files": [
+            "runschedule_owl512.xlsx",
+            "dispatch_log_2025-1018.csv"
+          ]
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "broken_reference",
+        "entity_inconsistency",
+        "other"
+      ],
+      "disposition": {
+        "fixed": 7,
+        "expanded": 0,
+        "traps": 0,
+        "false": 0,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-10T21:51:04",
+      "changed": "Reverted Reyes_life_care_plan.pdf's annual/undiscounted/PV figures back to $180,000/$6,480,000/$4,240,000 after discovering my own round-5 arithmetic 'fix' had broken a registered trap and contradicted WORLD_SPEC's Canonical Values sheet (round 1 had already correctly fixed this footing to preserve the canonical figures); removed itemized-but-unmounted attachment/tab/enclosure lists from the life care plan, the lien/EOB letter, and the FST supplement (round 5's softer 'available on request' wording did not hold up), and removed a stray 'SEE MEMORANDUM OF COVERAGE FORM' pointer from the coverage summary; stripped privilege-rationale language from production_tracker.csv's PT-13/PT-14 notes that was pre-packaging T9's CCP 2018.030 analysis; corrected a misapplied 49 CFR 655.53 citation to 655.71; added status-color fill and darkened low-contrast route-number text in RunSchedule_Owl512.xlsx; and fixed a CSV quoting bug I introduced myself in round 5."
     }
   ]
 }
