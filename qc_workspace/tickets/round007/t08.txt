@@ -1,0 +1,13 @@
+TICKET 8 of 10  |  round 7
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+The fixture in Shared/Settlement/Reyes_life_care_plan.pdf has erroneous sensitivity values. Applying its stated formula PV = $180,000 x [(1 - (1 + r)^-n) / r], the correct nearest-$1,000 figures are: 2.0%/36 years $4,588,000 (not $4,592,000); 2.0%/40 $4,924,000 (not $4,929,000); 2.5%/30 $3,767,000 (not $3,766,000); 2.5%/40 $4,518,000 (not $4,517,000); 3.0%/36 $3,930,000 (not $3,921,000); and 3.0%/40 $4,161,000 (not $4,153,000). These incorrect cells contradict the plan's underlying data and formula, so the embedded fixture fails calculation accuracy; replace them with the recomputed rounded figures.
+Finding #1: Life-care plan sensitivity table miscomputes present values - Minor

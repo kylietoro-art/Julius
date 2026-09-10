@@ -1,0 +1,13 @@
+TICKET 3 of 10  |  round 7
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] World Timeline Holds Together (consolidated)
+
+Causal order fails in Legal/Discovery/hold_demand_letter.pdf. The letter is dated "March 20, 2026," yet says that "a late-claim application on behalf of Ms. Reyes was filed with the Board on 05/15/2026"; the World Spec independently fixes that filing as 05/15/2026. A March document cannot report a May filing as complete, which creates obvious hindsight leakage and breaks the world's chronology. Correct the letter's date to after May 15 or change the sentence to a contemporaneous prospective description.
+Finding #1: Causal-order hindsight in March preservation letter - Major

@@ -1,0 +1,13 @@
+TICKET 7 of 10  |  round 7
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Personnel Names Titles Roles And Identifiers Are Consistent
+
+ACTD/Video/onboard_video_still_log.pdf page 5 states that "Cho's torso strikes seatback ahead of him." That conflicts with Shared/Police/TC_2025-1018.pdf, which lists "Occ-1 Devin Cho" with sex "F," and with the claims/rejection records' "Ms. Cho" treatment. No correction, amendment, or other in-world explanation appears in the video log, so the contradictory gender identifier makes the same passenger's identity inconsistent across files. The smallest fix is to change "him" to "her" in the page-5 video-log entry (or supply an explicit correction if the intended identity is otherwise).
+Finding #1: Devin Cho has an unreconciled gender-identifier conflict - Minor

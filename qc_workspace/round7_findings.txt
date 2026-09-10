@@ -1,0 +1,47 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+The reserve ledger contains a material shared-value contradiction. Its active Reyes indemnity entry is $3,150,000 and its superseded opening Reyes entry is $190,000, but the canonical values register says the initial reserve is $250,000 and the controlling reserve is $3,250,000, with both values required to match A16 (the reserve ledger). The internally authored adjuster note and reserve memo likewise state $250,000 and $3,250,000, so this is not an intentional stale-versus-controlling variation; correct the two Reyes indemnity amounts in the ledger (or explicitly amend all related materials if different values are intended).
+Finding #1: Reserve ledger contradicts the controlling and initial reserve figures - Major
+
+[P1] No Broken Document References
+
+The world has broken document references. ACTD/Safety/IR_2025-1018_final.docx expressly lists the "Div. 3 duty roster and pre-trip yard sheet, 10/17/2025," but the mounted operations materials include only roster_2025-1018.csv; no pre-trip yard sheet is present. Separately, ACTD/Litigation/production_tracker.csv names a PDF export for the run schedule, a PDF export for APC/farebox data, a map export for AVL/GPS data, and a native MP4 for the onboard video, while only the native spreadsheet/CSVs and a still-frame log are mounted. These are distinct supporting-material classes, so a reader cannot resolve the references to the actual referenced deliverables; add the missing pre-trip sheet and the identified exports/native video, or amend the documents to accurately identify the materials available.
+Finding #1: Missing pre-trip yard sheet referenced by final incident report - Minor
+Finding #2: Production tracker references absent export and native-media deliverables - Major
+
+[P1] World Timeline Holds Together (consolidated)
+
+Causal order fails in Legal/Discovery/hold_demand_letter.pdf. The letter is dated "March 20, 2026," yet says that "a late-claim application on behalf of Ms. Reyes was filed with the Board on 05/15/2026"; the World Spec independently fixes that filing as 05/15/2026. A March document cannot report a May filing as complete, which creates obvious hindsight leakage and breaks the world's chronology. Correct the letter's date to after May 15 or change the sentence to a contemporaneous prospective description.
+Finding #1: Causal-order hindsight in March preservation letter - Major
+
+[P1] External Citations Resolve To Real Content
+
+ACTD's post_accident_testing_policy.docx labels its nonfatal criteria as "Post-Accident Testing Triggers (49 CFR § 655.44)" but makes testing contingent on specified injury/damage conditions and adds hazardous-material and immovable-object conditions. The GPO's published CFR text for §655.44(a)(2) instead states that, after a nonfatal accident involving a public transportation vehicle, the employer shall test the operator unless it can completely discount the operator's contribution; it does not make the listed thresholds prerequisites. owl_service_rules.docx repeats the same threshold-only proposition under its citation to Part 655, so these documents cite a real authority for a materially inaccurate regulatory claim that affects the scenario's testing obligations.
+
+[P1] Intended Traps Are Fair
+
+The official RunSchedule_Owl512.xlsx gives Trip 06 a 02:04 Poplar departure and a 02:31 S. Main/Third control point. By contrast, the AVL log records the vehicle at the collision location beginning at 02:05, and the police report fixes the collision at 02:05 at S. Main/Third; the final incident report repeats both propositions. This is not a declared trap or an in-world correction, so a reader cannot determine whether the bus was following the official schedule at the collision; amend the published Trip 06 timepoint (or the departure/location facts) and add an explicit reconciliation where appropriate.
+
+[P0] Text Legibility And Contrast
+
+Six DOCX files have dark navy-filled visible table cells whose content uses the Normal paragraph style with no direct RGB font color, while the Normal style itself resolves to a dark foreground. For example, post_accident_testing_policy.docx puts "Record Category" and "Minimum Retention" in #0F2447 cells even though its Normal color is #1F2937; bid_award_512OWL.docx puts "Block ID" and many other labels in #1A2B5C cells while Normal resolves to #2C2C2C. The same defect occurs in owl_service_rules.docx, IR_2025-1018_draft.docx, IR_2025-1018_final.docx, and intake_memo.docx, making those labels effectively dark-on-dark and unreadable; set the affected dark-fill cell runs to white (or change the fills to a light color).
+
+Minor issues:
+
+[P0] Personnel Names Titles Roles And Identifiers Are Consistent
+
+ACTD/Video/onboard_video_still_log.pdf page 5 states that "Cho's torso strikes seatback ahead of him." That conflicts with Shared/Police/TC_2025-1018.pdf, which lists "Occ-1 Devin Cho" with sex "F," and with the claims/rejection records' "Ms. Cho" treatment. No correction, amendment, or other in-world explanation appears in the video log, so the contradictory gender identifier makes the same passenger's identity inconsistent across files. The smallest fix is to change "him" to "her" in the page-5 video-log entry (or supply an explicit correction if the intended identity is otherwise).
+Finding #1: Devin Cho has an unreconciled gender-identifier conflict - Minor
+
+[P1] Calculation & Fixture Accuracy
+
+The fixture in Shared/Settlement/Reyes_life_care_plan.pdf has erroneous sensitivity values. Applying its stated formula PV = $180,000 x [(1 - (1 + r)^-n) / r], the correct nearest-$1,000 figures are: 2.0%/36 years $4,588,000 (not $4,592,000); 2.0%/40 $4,924,000 (not $4,929,000); 2.5%/30 $3,767,000 (not $3,766,000); 2.5%/40 $4,518,000 (not $4,517,000); 3.0%/36 $3,930,000 (not $3,921,000); and 3.0%/40 $4,161,000 (not $4,153,000). These incorrect cells contradict the plan's underlying data and formula, so the embedded fixture fails calculation accuracy; replace them with the recomputed rounded figures.
+Finding #1: Life-care plan sensitivity table miscomputes present values - Minor
+
+[P1] In-World vs Out-Of-World Separation And Metadata Cleanliness
+
+task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx has an accessible XLSX core-property creator set to openpyxl. That value identifies the file-generation tooling rather than an in-world ACTD author or system, so it breaks the requirement that accessible metadata be free of synthetic/out-of-world contamination. Replace the creator property with an appropriate in-world ACTD identity (or clear it) while retaining the workbook content.
+
+[P0] No Out-of-World or Build Artifacts
+
+ACTD/Ops/RunSchedule_Owl512.xlsx contains pipeline-default metadata: its workbook core properties report creator: openpyxl. This generic authoring-library identifier is not an ACTD person, department, or in-world document provenance, and it is exposed in a solver-reachable file. It therefore meets the dimension's fail criterion for pipeline-default metadata; clear or replace the workbook creator property with appropriate in-world provenance.

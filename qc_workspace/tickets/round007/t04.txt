@@ -1,0 +1,12 @@
+TICKET 4 of 10  |  round 7
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+ACTD's post_accident_testing_policy.docx labels its nonfatal criteria as "Post-Accident Testing Triggers (49 CFR § 655.44)" but makes testing contingent on specified injury/damage conditions and adds hazardous-material and immovable-object conditions. The GPO's published CFR text for §655.44(a)(2) instead states that, after a nonfatal accident involving a public transportation vehicle, the employer shall test the operator unless it can completely discount the operator's contribution; it does not make the listed thresholds prerequisites. owl_service_rules.docx repeats the same threshold-only proposition under its citation to Part 655, so these documents cite a real authority for a materially inaccurate regulatory claim that affects the scenario's testing obligations.

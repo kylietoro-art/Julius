@@ -1,0 +1,12 @@
+TICKET 10 of 10  |  round 7
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Out-of-World or Build Artifacts
+
+ACTD/Ops/RunSchedule_Owl512.xlsx contains pipeline-default metadata: its workbook core properties report creator: openpyxl. This generic authoring-library identifier is not an ACTD person, department, or in-world document provenance, and it is exposed in a solver-reachable file. It therefore meets the dimension's fail criterion for pipeline-default metadata; clear or replace the workbook creator property with appropriate in-world provenance.

@@ -364,6 +364,92 @@
       "note": "",
       "closed": "2026-09-10T21:51:04",
       "changed": "Reverted Reyes_life_care_plan.pdf's annual/undiscounted/PV figures back to $180,000/$6,480,000/$4,240,000 after discovering my own round-5 arithmetic 'fix' had broken a registered trap and contradicted WORLD_SPEC's Canonical Values sheet (round 1 had already correctly fixed this footing to preserve the canonical figures); removed itemized-but-unmounted attachment/tab/enclosure lists from the life care plan, the lien/EOB letter, and the FST supplement (round 5's softer 'available on request' wording did not hold up), and removed a stray 'SEE MEMORANDUM OF COVERAGE FORM' pointer from the coverage summary; stripped privilege-rationale language from production_tracker.csv's PT-13/PT-14 notes that was pre-packaging T9's CCP 2018.030 analysis; corrected a misapplied 49 CFR 655.53 citation to 655.71; added status-color fill and darkened low-contrast route-number text in RunSchedule_Owl512.xlsx; and fixed a CSV quoting bug I introduced myself in round 5."
+    },
+    {
+      "round": 7,
+      "opened": "2026-09-10T22:07:14",
+      "count": 10,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 1,
+          "files": []
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 2,
+          "files": [
+            "ir_2025-1018_final.docx",
+            "production_tracker.csv",
+            "roster_2025-1018.csv",
+            "onboard_video_still_log.pdf",
+            "tc_2025-1018.pdf"
+          ]
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": [
+            "hold_demand_letter.pdf"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 1,
+          "files": [
+            "owl_service_rules.docx",
+            "post_accident_testing_policy.docx"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 2,
+          "files": [
+            "runschedule_owl512.xlsx",
+            "reyes_life_care_plan.pdf"
+          ]
+        },
+        "file_integrity": {
+          "label": "File is corrupt, empty, unreadable or won't render",
+          "n": 1,
+          "files": [
+            "bid_award_512owl.docx",
+            "intake_memo.docx",
+            "ir_2025-1018_draft.docx",
+            "ir_2025-1018_final.docx",
+            "owl_service_rules.docx",
+            "post_accident_testing_policy.docx"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 2,
+          "files": [
+            "runschedule_owl512.xlsx"
+          ]
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "entity_inconsistency",
+        "temporal",
+        "citation_facts",
+        "math_footing",
+        "metadata_fingerprint"
+      ],
+      "disposition": {
+        "fixed": 9,
+        "expanded": 2,
+        "traps": 1,
+        "false": 0,
+        "blocked": 0
+      },
+      "note": "Also verified as false positives (no action needed): 2 blast_radius footing flags on files with no real total-row structure (medical_billing_ledger.csv, reserve_ledger.csv), 2 spec_check tie misses that are formatting-only (rejection_0218.pdf states a 6-month rule not a literal date; chain_custody.pdf's time is split across table cells), leak_scan's T1-answer-value hits (bare 911.4/946.6 citations that are pre-established Reyes-track facts, not the task's actual computed conclusion), and inventory_check's 9 registered-artifact/unregistered-file pairs (App Data-type artifacts the spec registers by system description rather than literal filename, pre-dating this round).",
+      "closed": "2026-09-10T22:53:23",
+      "changed": "Fixed the reserve ledger's stale Reyes indemnity figures, restored the missing pre-trip yard sheet and production tracker export/native-media references, corrected causal-order hindsight in the litigation hold letter (both the flagged page and a matching unflagged instance), fixed the 49 CFR 655.44 mischaracterization in two compliance documents, set explicit white font on the two DOCX files whose dark table cells genuinely had no color override, fixed the Cho gender pronoun, recomputed the life-care plan's sensitivity table, and corrected the RunSchedule creator metadata.",
+      "disputes": [
+        "Trip 06's schedule (02:31 S. Main/Third) vs. the AVL/police-corroborated 02:05 collision time is not a real defect: WORLD_SPEC's T5 course-and-scope trap turns on route/block assignment (512-OWL, continuous throughout AVL), not clock punctuality, and the schedule's uniform 11/9/7/6-minute leg timing matches Trips 02/04/08 exactly, so rewriting it would break a deliberate pattern to fix a clock-time gap the trap's own canonical value never keys on."
+      ]
     }
   ]
 }

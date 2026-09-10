@@ -13,6 +13,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 4 | 2026-09-10T18:02 | 7 | 5 | 5 | fixed 5, widened 0, traps 1, false 1, blocked 0 |
 | 5 | 2026-09-10T19:32 | 5 | 3 | 2 | fixed 4, widened 0, traps 0, false 1, blocked 0 |
 | 6 | 2026-09-10T21:34 | 7 | 4 | 4 | fixed 7, widened 0, traps 0, false 0, blocked 0 |
+| 7 | 2026-09-10T22:07 | 10 | 7 | 6 | fixed 9, widened 2, traps 1, false 0, blocked 0 |
 
 ## Detail
 
@@ -83,4 +84,22 @@ Note: Also verified via spec_check.py traps that this round's edits do not touch
 - **A referenced document or value doesn't resolve**: 1 finding(s)  **(REPEAT)**
 - **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
   - files named: dot_655_keeler.pdf
+
+### Round 7, 2026-09-10T22:07
+
+- **Same person/entity named, titled or ID'd differently across files**: 2 finding(s)  **(REPEAT)**
+  - files named: ir_2025-1018_final.docx, production_tracker.csv, roster_2025-1018.csv, onboard_video_still_log.pdf, tc_2025-1018.pdf
+- **Totals don't foot / calculations disagree with inputs**: 2 finding(s)  **(REPEAT)**
+  - files named: runschedule_owl512.xlsx, reyes_life_care_plan.pdf
+- **Tool fingerprints / build dates in file metadata**: 2 finding(s)  **(REPEAT)**
+  - files named: runschedule_owl512.xlsx
+- **Builder A## codes visible in world files**: 1 finding(s)  **(REPEAT)**
+- **Dates, chronology or timeline don't hold together**: 1 finding(s)  **(REPEAT)**
+  - files named: hold_demand_letter.pdf
+- **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
+  - files named: owl_service_rules.docx, post_accident_testing_policy.docx
+- **File is corrupt, empty, unreadable or won't render**: 1 finding(s)
+  - files named: bid_award_512owl.docx, intake_memo.docx, ir_2025-1018_draft.docx, ir_2025-1018_final.docx, owl_service_rules.docx, post_accident_testing_policy.docx
+
+Note: Also verified as false positives (no action needed): 2 blast_radius footing flags on files with no real total-row structure (medical_billing_ledger.csv, reserve_ledger.csv), 2 spec_check tie misses that are formatting-only (rejection_0218.pdf states a 6-month rule not a literal date; chain_custody.pdf's time is split across table cells), leak_scan's T1-answer-value hits (bare 911.4/946.6 citations that are pre-established Reyes-track facts, not the task's actual computed conclusion), and inventory_check's 9 registered-artifact/unregistered-file pairs (App Data-type artifacts the spec registers by system description rather than literal filename, pre-dating this round).
 

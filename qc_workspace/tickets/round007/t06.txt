@@ -1,0 +1,14 @@
+TICKET 6 of 10  |  round 7
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Text Legibility And Contrast
+
+Six DOCX files have dark navy-filled visible table cells whose content uses the Normal paragraph style with no direct RGB font color, while the Normal style itself resolves to a dark foreground. For example, post_accident_testing_policy.docx puts "Record Category" and "Minimum Retention" in #0F2447 cells even though its Normal color is #1F2937; bid_award_512OWL.docx puts "Block ID" and many other labels in #1A2B5C cells while Normal resolves to #2C2C2C. The same defect occurs in owl_service_rules.docx, IR_2025-1018_draft.docx, IR_2025-1018_final.docx, and intake_memo.docx, making those labels effectively dark-on-dark and unreadable; set the affected dark-fill cell runs to white (or change the fills to a light color).
+
+Minor issues:

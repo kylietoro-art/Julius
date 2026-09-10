@@ -1,0 +1,12 @@
+TICKET 5 of 10  |  round 7
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+The official RunSchedule_Owl512.xlsx gives Trip 06 a 02:04 Poplar departure and a 02:31 S. Main/Third control point. By contrast, the AVL log records the vehicle at the collision location beginning at 02:05, and the police report fixes the collision at 02:05 at S. Main/Third; the final incident report repeats both propositions. This is not a declared trap or an in-world correction, so a reader cannot determine whether the bus was following the official schedule at the collision; amend the published Trip 06 timepoint (or the departure/location facts) and add an explicit reconciliation where appropriate.

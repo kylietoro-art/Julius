@@ -1,0 +1,13 @@
+TICKET 1 of 10  |  round 7
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+The reserve ledger contains a material shared-value contradiction. Its active Reyes indemnity entry is $3,150,000 and its superseded opening Reyes entry is $190,000, but the canonical values register says the initial reserve is $250,000 and the controlling reserve is $3,250,000, with both values required to match A16 (the reserve ledger). The internally authored adjuster note and reserve memo likewise state $250,000 and $3,250,000, so this is not an intentional stale-versus-controlling variation; correct the two Reyes indemnity amounts in the ledger (or explicitly amend all related materials if different values are intended).
+Finding #1: Reserve ledger contradicts the controlling and initial reserve figures - Major
