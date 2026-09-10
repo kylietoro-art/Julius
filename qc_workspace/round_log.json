@@ -298,8 +298,20 @@
         "math_footing",
         "answer_leakage"
       ],
-      "disposition": null,
-      "note": ""
+      "disposition": {
+        "fixed": 4,
+        "expanded": 0,
+        "traps": 0,
+        "false": 1,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-10T20:20:37",
+      "changed": "Reverted the Reyes late-claim filing date from 08/07/2026 back to 05/15/2026 across late_claim_app.pdf, matter_calendar_MatterHub.csv, and claims_tracker.csv (proven mathematically impossible to make Gov. Code 911.6(b)(5) time-barred without violating the 06/18/2026 anchor rule, given the fixed capacity-restoration facts), and instead added a genuine causation-based analysis of 911.6(b)(5) to intake_memo.docx citing Harrison v. County of Del Norte; fixed a real arithmetic error in the life care plan's attendant-care overhead and top-line total; removed final-outcome answers from production_tracker.csv's review_status/final_call columns; corrected the AVL heading and schedule/dispatch-log SB-reference mislabeling that made the collision's northbound routing unreconcilable; and removed EOB's false claim of enclosing Tabs 1-11 that do not exist in the world.",
+      "disputes": [
+        "Life-care-plan attachments listed as CVs/documents-reviewed/pricing-sources/PV-schedule 'available on request' are standard, realistic expert-report convention (not bundled with every served copy), not a broken reference -- fabricating 5 new files would violate the replace-never-add rule.",
+        "coverage_summary.pdf's Schedule of Forms and Endorsements listing SCPERA-MOC-100 by form number without attaching its full text is standard insurance declarations-page convention (the master policy jacket, not the summary, carries full form text) -- not a broken reference."
+      ]
     }
   ]
 }
