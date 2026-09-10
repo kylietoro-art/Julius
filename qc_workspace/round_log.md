@@ -10,6 +10,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
 | 2 | 2026-09-10T16:12 | 6 | 4 | 3 | fixed 5, widened 0, traps 1, false 0, blocked 0 |
 | 3 | 2026-09-10T17:13 | 6 | 3 | 3 | fixed 5, widened 0, traps 1, false 0, blocked 0 |
+| 4 | 2026-09-10T18:02 | 7 | 5 | 5 | _open_ |
 
 ## Detail
 
@@ -49,4 +50,15 @@ each one means that class was fixed at the instance level, not the class level.
 - **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
   - files named: bac_keeler.pdf, complaint_reyes_filed.pdf
 - **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
+
+### Round 4, 2026-09-10T18:02
+
+- **Totals don't foot / calculations disagree with inputs**: 3 finding(s)  **(REPEAT)**
+  - files named: reyes_life_care_plan.pdf, medical_billing_ledger.csv, reyes_lien_eob.pdf
+- **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf, production_tracker.csv
+- **Dates, chronology or timeline don't hold together**: 1 finding(s)  **(REPEAT)**
+- **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
+- **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
+  - files named: maintenance_log_bus4177.csv
 

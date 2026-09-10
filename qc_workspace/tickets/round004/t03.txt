@@ -1,0 +1,13 @@
+TICKET 3 of 7  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+ACTD/Claims/medical_billing_ledger.csv totals $2,840,000 billed, $196,000 paid, $2,644,000 adjustments, and $0 balance. In contrast, the provider-level totals in Shared/Settlement/Reyes_lien_EOB.pdf state $2,640,800 in "Contractual Adj. / Write-off," $196,000 "Paid / Accepted," and a separate $3,200 "Patient Resp."; its notes say that patient responsibility was actually paid. The ledger therefore silently classifies the $3,200 payment as an adjustment and omits the paid patient-responsibility component, so its structured payment/write-off fields do not consistently represent the supporting EOB data. Add a patient-responsibility/other-payment field totaling $3,200 and reduce the ledger's adjustments to $2,640,800 (or explicitly document a different aggregation convention).
+Finding #1: Medical billing ledger misclassifies the $3,200 patient-responsibility payment — Minor

@@ -201,6 +201,56 @@
         "Disputed the Major finding that DriveCam footage is unsupplied: DriveCam is the IR's colloquial name for the same onboard camera system documented in the Video folder (its forward-facing/cabin-facing channel descriptions match CAM-03/CAM-01), which is the same A53 App-Data artifact already disputed in round 2 for the same reason (Type=App Data, tied to the T7 ESI-preservation trap).",
         "Disputed the request to delete production_tracker.csv's review_status and final_call columns: A17 is a registered trap whose content is specifically that first-pass tags are unreliable and must be independently verified, evidenced by A42 alone being tagged First-pass against everyone else's Confirmed; deleting the status columns would delete the trap. Fixed the one genuine instance in the same finding (an embedded CCP 2017.210 citation baked into the coverage-summary row's first-pass tag, matching the same over-explanation pattern already fixed for A43 in round 1)."
       ]
+    },
+    {
+      "round": 4,
+      "opened": "2026-09-10T18:02:39",
+      "count": 7,
+      "classes": {
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 3,
+          "files": [
+            "reyes_life_care_plan.pdf",
+            "medical_billing_ledger.csv",
+            "reyes_lien_eob.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "production_tracker.csv"
+          ]
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": []
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 1,
+          "files": []
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 1,
+          "files": [
+            "maintenance_log_bus4177.csv"
+          ]
+        }
+      },
+      "repeats": [
+        "math_footing",
+        "other",
+        "temporal",
+        "entity_inconsistency",
+        "citation_facts"
+      ],
+      "disposition": null,
+      "note": ""
     }
   ]
 }

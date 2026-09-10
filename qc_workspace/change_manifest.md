@@ -524,3 +524,39 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Safety/IR_2025-1018_draft.docx | word/comments.xml | (no comments part) | → | supervisor-review comment added, anchored to DRAFT banner paragraph |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/matter_calendar_MatterHub.csv | row late_claim_45_day [T3 Gov Code 911.6(b)(5) finding: filing date pushed 05/15/2026->08/07/2026 so real-law (b)(5) partial-incapacity ground is genuinely considered and correctly foreclosed by its own 6-month tail (08/05/2026), preserving relief-materially-at-risk design] | late_claim_45_day deadline_date=06/29/2026; entered/modified=05/15/2026 | → | late_claim_45_day deadline_date=09/21/2026; entered/modified=08/07/2026 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/matter_calendar_MatterHub.csv | row 946.6_petition [cascades from late-claim filing date shift to 08/07/2026] | 946.6_petition deadline_date=12/29/2026; entered/modified=05/15/2026 | → | 946.6_petition deadline_date=03/21/2027; entered/modified=08/07/2026 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/matter_calendar_MatterHub.csv | new row inserted before late_claim_45_day [genuine acknowledgment of real Gov Code 911.6(b)(5) partial-incapacity ground per T3 finding; six-month tail runs from conservatorship-termination/capacity-restoration date 02/05/2026] | (row did not exist) | → | 911.6(b)(5)_tail deadline_date=08/05/2026, statutory_basis=Gov. Code Sec 911.6(b)(5) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/claims_tracker.csv | row ACTD-2026-0119 (Reyes), notes field [T3 Gov Code 911.6(b)(5) finding: cascades filing-date shift and records genuine acknowledgment that (b)(5) is real law and correctly foreclosed] | notes: ...filed 05/15/2026...45-day deemed-denial point 06/29/2026... | → | notes: ...filed 08/07/2026...911.6(b)(5) partial-incapacity ground addressed and unavailable, filed after its 08/05/2026 six-month tail...45-day deemed-denial point 09/21/2026... |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/late_claim_app.pdf | DATE FILED block p.1; Sec II presentation-timeliness bullets/paragraphs pp.5-6,8; declaration signature block and dated line p.9; proof of service p.10 [T3 Gov Code 911.6(b)(5) finding: filing date pushed past the (b)(5) six-month tail (08/05/2026) so that ground is genuinely considered and correctly ruled out, preserving relief-materially-at-risk design; court filing itself does not argue (b)(5) since it does not help the applicant] | May 15, 2026 (9 occurrences: pages 1,5,6,8,9x2,10 as printed) | → | August 7, 2026 (same 9 occurrences) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | para 27 (Incapacity ground under 911.6(b)(4)) [911.6(b) actually enumerates six grounds ((1) excusable neglect, (2)-(3) minor, (4)-(5) incapacity, (6) death), not four; numeric correction] | the Board is directed by Gov. Code Sec 911.6(b) to grant the application on any of four enumerated grounds | → | the Board is directed by Gov. Code Sec 911.6(b) to grant the application on any of six enumerated grounds |

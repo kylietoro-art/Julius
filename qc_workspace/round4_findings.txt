@@ -1,0 +1,32 @@
+[P1] Calculation & Fixture Accuracy
+
+Reyes_life_care_plan.pdf miscomputes several of its own annual-cost table figures. The errors cause the document to overstate its $180,000 annual summary and the derived $6,480,000 undiscounted and $4,240,000 PV amounts. Correcting the displayed inputs produces an annual figure of $173,650.82, an undiscounted total of $6,251,429.52, and a 2.5%-discounted PV of $4,090,562.31.
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+[U.S. Regional Requirements] fails. The California-law centerpiece of this U.S.-centered world repeatedly says that restored capacity defeats § 911.6(b)(4)'s "all of the time" ground and that Reyes's relief is materially at risk, while the statutory text separately provides § 911.6(b)(5) for a claimant incapacitated during any part of the § 911.2 period if the application is filed within six months after incapacity ends. The world fixes capacity restoration at February 5, 2026 and filing on May 15, 2026, so omitting the directly applicable route materially distorts the California public-entity claim posture; add and apply § 911.6(b)(5) (or change the timing/facts and reconcile the analysis).
+
+Minor issues:
+
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+ACTD/Claims/medical_billing_ledger.csv totals $2,840,000 billed, $196,000 paid, $2,644,000 adjustments, and $0 balance. In contrast, the provider-level totals in Shared/Settlement/Reyes_lien_EOB.pdf state $2,640,800 in "Contractual Adj. / Write-off," $196,000 "Paid / Accepted," and a separate $3,200 "Patient Resp."; its notes say that patient responsibility was actually paid. The ledger therefore silently classifies the $3,200 payment as an adjustment and omits the paid patient-responsibility component, so its structured payment/write-off fields do not consistently represent the supporting EOB data. Add a patient-responsibility/other-payment field totaling $3,200 and reduce the ledger's adjustments to $2,640,800 (or explicitly document a different aggregation convention).
+Finding #1: Medical billing ledger misclassifies the $3,200 patient-responsibility payment — Minor
+
+[P1] No Broken Document References
+
+The preserved-video reference is broken. ACTD/Video/onboard_video_still_log.pdf identifies the native file 4177_20251018_0130-0210_INC.mp4 and says the "full clip remains available in native format through the custodian(s) named above," while ACTD/Litigation/production_tracker.csv marks the native MP4 as a confirmed production item; the mounted filesystem contains only the PDF still-frame log and no MP4. Because the video is a key described artifact and is expressly available for use, the world points to supporting footage that a user cannot actually open; mount the native MP4 (or an accessible clip export) alongside the log.
+Finding #1: Preserved native onboard-video clip is not mounted — Minor
+
+[P1] World Timeline Holds Together (consolidated)
+
+The causal-order bullet fails because the February 10, 2026 HIPAA authorization identifies Halstead & Cruz as its requesting recipient, while the firm's own records place the client's retention and initial authorization work on March 5, 2026. This creates a visible pre-engagement/hindsight sequencing conflict across agent-reachable documents, rather than a harmless future expiration or a registered trap. Revise either the HIPAA authorization's signature/recipient history or the intake memo's retention and immediate-deliverables chronology so the authorization follows a coherent engagement sequence.
+Finding #1: Causal-order conflict between the HIPAA authorization and stated engagement — Minor
+
+[P1] Consistent Naming And Defined Terms
+
+The police collision report and scene-photo log call the location/signage "MTA/ACTD," but the governing world specification names Alder Creek Transit District (ACTD) as the core transit entity and defines "the District" as ACTD; it never introduces MTA. Because this creates an unexplained second transit-organization label in evidence about the collision location, it is material naming drift rather than an ordinary abbreviation. Replace "MTA/ACTD" in both police documents with the intended ACTD designation, or introduce and consistently explain MTA if it is genuinely a separate entity.
+
+[P1] External Citations Resolve To Real Content
+
+ACTD/Fleet/maintenance_log_bus4177.csv has three brake-inspection records stating "Air-brake inspection per 49 CFR 396.25" and then presenting lining thickness, leak-down specifications, slack-adjuster stroke, and warning/brake test results as though that section is the governing technical standard. The published text of § 396.25 identifies the provision as "Qualifications of brake inspectors" and describes what a qualified inspector must understand or be able to perform; it does not establish those measurements or pass/fail thresholds. This is a repeated, separately fixable mismatch that can mislead a reader assessing the evidence of mechanical compliance; cite the applicable brake-performance/inspection standard or make clear that the listed specifications are OEM/ACTD standards while retaining § 396.25 only for inspector qualification.

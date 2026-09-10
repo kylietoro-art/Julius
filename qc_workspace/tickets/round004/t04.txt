@@ -1,0 +1,13 @@
+TICKET 4 of 7  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+The preserved-video reference is broken. ACTD/Video/onboard_video_still_log.pdf identifies the native file 4177_20251018_0130-0210_INC.mp4 and says the "full clip remains available in native format through the custodian(s) named above," while ACTD/Litigation/production_tracker.csv marks the native MP4 as a confirmed production item; the mounted filesystem contains only the PDF still-frame log and no MP4. Because the video is a key described artifact and is expressly available for use, the world points to supporting footage that a user cannot actually open; mount the native MP4 (or an accessible clip export) alongside the log.
+Finding #1: Preserved native onboard-video clip is not mounted — Minor

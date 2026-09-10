@@ -1,0 +1,12 @@
+TICKET 6 of 7  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Consistent Naming And Defined Terms
+
+The police collision report and scene-photo log call the location/signage "MTA/ACTD," but the governing world specification names Alder Creek Transit District (ACTD) as the core transit entity and defines "the District" as ACTD; it never introduces MTA. Because this creates an unexplained second transit-organization label in evidence about the collision location, it is material naming drift rather than an ordinary abbreviation. Replace "MTA/ACTD" in both police documents with the intended ACTD designation, or introduce and consistently explain MTA if it is genuinely a separate entity.

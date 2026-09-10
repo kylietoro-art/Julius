@@ -1,0 +1,14 @@
+TICKET 2 of 7  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+[U.S. Regional Requirements] fails. The California-law centerpiece of this U.S.-centered world repeatedly says that restored capacity defeats § 911.6(b)(4)'s "all of the time" ground and that Reyes's relief is materially at risk, while the statutory text separately provides § 911.6(b)(5) for a claimant incapacitated during any part of the § 911.2 period if the application is filed within six months after incapacity ends. The world fixes capacity restoration at February 5, 2026 and filing on May 15, 2026, so omitting the directly applicable route materially distorts the California public-entity claim posture; add and apply § 911.6(b)(5) (or change the timing/facts and reconcile the analysis).
+
+Minor issues:

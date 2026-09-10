@@ -1,0 +1,12 @@
+TICKET 1 of 7  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+Reyes_life_care_plan.pdf miscomputes several of its own annual-cost table figures. The errors cause the document to overstate its $180,000 annual summary and the derived $6,480,000 undiscounted and $4,240,000 PV amounts. Correcting the displayed inputs produces an annual figure of $173,650.82, an undiscounted total of $6,251,429.52, and a 2.5%-discounted PV of $4,090,562.31.

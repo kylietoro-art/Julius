@@ -1,0 +1,12 @@
+TICKET 7 of 7  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+ACTD/Fleet/maintenance_log_bus4177.csv has three brake-inspection records stating "Air-brake inspection per 49 CFR 396.25" and then presenting lining thickness, leak-down specifications, slack-adjuster stroke, and warning/brake test results as though that section is the governing technical standard. The published text of § 396.25 identifies the provision as "Qualifications of brake inspectors" and describes what a qualified inspector must understand or be able to perform; it does not establish those measurements or pass/fail thresholds. This is a repeated, separately fixable mismatch that can mislead a reader assessing the evidence of mechanical compliance; cite the applicable brake-performance/inspection standard or make clear that the listed specifications are OEM/ACTD standards while retaining § 396.25 only for inspector qualification.
