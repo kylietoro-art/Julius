@@ -1,0 +1,12 @@
+TICKET 5 of 6  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+[Failing – No Synthetic Substitutes For Real-World Facts] ACTD's actual federal compliance policy incorrectly states: "A confirmed alcohol concentration of 0.02 g/210L or greater is a positive DOT alcohol test for purposes of 49 CFR Part 655." In the same file, it separately provides that "A confirmed alcohol test result of 0.02 g/210L or greater but less than 0.04 g/210L shall result in temporary removal," while identifying 0.04 g/210L as the higher standard. Part 655 does not make a 0.02–<0.04 result a positive alcohol test; that interval has its own temporary-removal consequence. This erroneous representation of the FTA/DOT framework impairs the reliability of a central regulatory artifact; revise the sentence to distinguish the temporary-removal result from a positive test and retain the intermediate-range records accordingly.

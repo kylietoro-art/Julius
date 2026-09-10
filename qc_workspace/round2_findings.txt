@@ -1,0 +1,30 @@
+[P1] No Broken Document References
+
+The native onboard-video evidence does not resolve to a mounted world material. The production tracker identifies A53 as a native MP4 held by a vendor and not yet produced, while the manifest lists only ACTD/Video/onboard_video_still_log.pdf and no MP4, video, or camera-footage file; the still-frame log says the full MP4 and additional channels are merely available from custodians. Separately, the Final Incident Report expressly directs the reader to EMS run sheets for passenger roster, injury disposition, and transport details, but the full manifest inventory contains no EMS, ambulance, triage, or run-sheet artifact. These are missing supporting-document classes rather than vague references, meeting the fail criterion.
+Finding #1: Native onboard video and additional camera channels are absent — Major
+Finding #2: Referenced on-scene EMS run sheets are missing — Minor
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning Leakage clause fails because task_fs/filesystem/ACTD/Safety/IR_2025-1018_final.docx directly supplies the answer to the course-and-scope determination: it says the official run schedule and AVL place Keeler on the assigned route and that the determination is therefore within scope. That is the same evidence-to-conclusion chain the T5 memo is meant to perform, so a worker can copy the result instead of resolving the competing off-book evidence. The leakage is reinforced by task_fs/filesystem/ACTD/Claims/reserve_memo.docx and task_fs/filesystem/Legal/Reyes/intake_memo.docx, which independently say the off-book account does not control and that the schedule/AVL establish the route-and-respondeat-superior path.
+Finding #1: Final incident report directly answers the course-and-scope task — Major
+Finding #2: Internal analysis memos independently pre-resolve the same disputed issue — Major
+
+Minor issues:
+
+[P1] In-World vs Out-Of-World Separation And Metadata Cleanliness
+
+task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx exposes creator: 'openpyxl' in its core properties. That is out-of-world document-generation metadata rather than an in-world author or organizational identity, and the criterion expressly includes accessible file core author properties. Clearing that creator field or replacing it with an appropriate ACTD in-world author would remove the contamination; the other inspected channels did not yield additional out-of-world residue.
+
+[P1] No Signposting of Load-Bearing Facts
+
+Shared/Police/scene_photos_2025-1018.pdf artificially signposts a load-bearing factual resolution by labeling the entry "Controlling Time of Incident: 02:05 a.m." The actual traffic collision report already provides 02:05 in its standard case-identification field and narrative, while the world contains a conflicting draft time; a scene photo log has no natural need to call its incident time "controlling." Rename that field to the neutral "Time of Incident" (or simply rely on the case reference) so the reader must evaluate the competing records rather than being told which time wins.
+Finding #1: Scene-photo log labels the answer-bearing incident time as controlling — Minor
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+[Failing – No Synthetic Substitutes For Real-World Facts] ACTD's actual federal compliance policy incorrectly states: "A confirmed alcohol concentration of 0.02 g/210L or greater is a positive DOT alcohol test for purposes of 49 CFR Part 655." In the same file, it separately provides that "A confirmed alcohol test result of 0.02 g/210L or greater but less than 0.04 g/210L shall result in temporary removal," while identifying 0.04 g/210L as the higher standard. Part 655 does not make a 0.02–<0.04 result a positive alcohol test; that interval has its own temporary-removal consequence. This erroneous representation of the FTA/DOT framework impairs the reliability of a central regulatory artifact; revise the sentence to distinguish the temporary-removal result from a positive test and retain the intermediate-range records accordingly.
+
+[P1] External Citations Resolve To Real Content
+
+task_fs/filesystem/Legal/Passengers/claims_0118.pdf contains two signed claim forms that warn a claimant that false or misleading information may result in a felony punishable by "up to four years in state prison and/or a fine of up to $10,000 (Penal Code § 72)." The California Legislature's official Penal Code § 72 text instead provides county jail of not more than one year and/or a $1,000 fine, or imprisonment under § 1170(h) and/or a $10,000 fine; it does not support the stated four-year maximum. Because this is a legal warning attached to the cited statute on two forms, the citation resolves to real content but materially fails to support the claim made; revise both warnings to state the statutory consequences accurately.

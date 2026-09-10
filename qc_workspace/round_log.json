@@ -94,6 +94,62 @@
         "Draft incident report's missing tracked-changes: A03 is a never-finalized on-scene draft that gets wholly superseded by a separately-authored final report (A02), not a document edited in place via Track Changes. Adding fake revision history would misrepresent how the document came to exist.",
         "tran_text_thread.pdf text legibility: rendered all 5 pages; header/footer chrome is normal, readable medium-gray throughout, not washed out as claimed."
       ]
+    },
+    {
+      "round": 2,
+      "opened": "2026-09-10T16:12:57",
+      "count": 6,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 1,
+          "files": [
+            "onboard_video_still_log.pdf"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 2,
+          "files": [
+            "intake_memo.docx",
+            "ir_2025-1018_final.docx",
+            "reserve_memo.docx",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": [
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": [
+            "claims_0118.pdf"
+          ]
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "metadata_fingerprint",
+        "citation_facts"
+      ],
+      "disposition": {
+        "fixed": 5,
+        "expanded": 0,
+        "traps": 1,
+        "false": 0,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-10T16:59:26",
+      "changed": "Removed the P0 course-and-scope conclusion from IR_2025-1018_final.docx, reserve_memo.docx and intake_memo.docx (T5 is a candor test); fixed the dangling EMS-run-sheet references in the IR by redirecting to the RPD collision report and APC export; swept the whole corpus for the repeat A## build-code class (20 automatic + 14 by-hand fixes across 8 files, including renumbering production_tracker.csv's doc_id column off the spec's own artifact IDs); set an in-world creator on RunSchedule_Owl512.xlsx; de-signposted the scene-photo log's incident-time field; corrected the DOT alcohol-test threshold (0.02 to 0.04 g/210L); and corrected the Penal Code Section 72 consequence on both claim forms in claims_0118.pdf.",
+      "disputes": [
+        "Disputed the Major finding that the native onboard video is a broken reference: A53 is Type=App Data (not File), its format note says the composite export happens only once preserved before the retention loop overwrites, and it is tied to Tasks T7/T9 whose trap is specifically that the agent must recognize this vendor-held, short-retention footage as an ESI domain needing an affirmative preservation request rather than something already mounted; the still-log documents a real request procedure, hash and custodian chain, and the finding also mischaracterizes the production tracker, which already shows this item as Produce/Confirmed with a native Bates number, not held-and-not-yet-produced."
+      ]
     }
   ]
 }

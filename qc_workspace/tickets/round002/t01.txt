@@ -1,0 +1,14 @@
+TICKET 1 of 6  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+The native onboard-video evidence does not resolve to a mounted world material. The production tracker identifies A53 as a native MP4 held by a vendor and not yet produced, while the manifest lists only ACTD/Video/onboard_video_still_log.pdf and no MP4, video, or camera-footage file; the still-frame log says the full MP4 and additional channels are merely available from custodians. Separately, the Final Incident Report expressly directs the reader to EMS run sheets for passenger roster, injury disposition, and transport details, but the full manifest inventory contains no EMS, ambulance, triage, or run-sheet artifact. These are missing supporting-document classes rather than vague references, meeting the fail criterion.
+Finding #1: Native onboard video and additional camera channels are absent — Major
+Finding #2: Referenced on-scene EMS run sheets are missing — Minor

@@ -1,0 +1,12 @@
+TICKET 6 of 6  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+task_fs/filesystem/Legal/Passengers/claims_0118.pdf contains two signed claim forms that warn a claimant that false or misleading information may result in a felony punishable by "up to four years in state prison and/or a fine of up to $10,000 (Penal Code § 72)." The California Legislature's official Penal Code § 72 text instead provides county jail of not more than one year and/or a $1,000 fine, or imprisonment under § 1170(h) and/or a $10,000 fine; it does not support the stated four-year maximum. Because this is a legal warning attached to the cited statute on two forms, the citation resolves to real content but materially fails to support the claim made; revise both warnings to state the statutory consequences accurately.

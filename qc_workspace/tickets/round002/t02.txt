@@ -1,0 +1,16 @@
+TICKET 2 of 6  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning Leakage clause fails because task_fs/filesystem/ACTD/Safety/IR_2025-1018_final.docx directly supplies the answer to the course-and-scope determination: it says the official run schedule and AVL place Keeler on the assigned route and that the determination is therefore within scope. That is the same evidence-to-conclusion chain the T5 memo is meant to perform, so a worker can copy the result instead of resolving the competing off-book evidence. The leakage is reinforced by task_fs/filesystem/ACTD/Claims/reserve_memo.docx and task_fs/filesystem/Legal/Reyes/intake_memo.docx, which independently say the off-book account does not control and that the schedule/AVL establish the route-and-respondeat-superior path.
+Finding #1: Final incident report directly answers the course-and-scope task — Major
+Finding #2: Internal analysis memos independently pre-resolve the same disputed issue — Major
+
+Minor issues:

@@ -1,0 +1,13 @@
+TICKET 4 of 6  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+Shared/Police/scene_photos_2025-1018.pdf artificially signposts a load-bearing factual resolution by labeling the entry "Controlling Time of Incident: 02:05 a.m." The actual traffic collision report already provides 02:05 in its standard case-identification field and narrative, while the world contains a conflicting draft time; a scene photo log has no natural need to call its incident time "controlling." Rename that field to the neutral "Time of Incident" (or simply rely on the case reference) so the reader must evaluate the competing records rather than being told which time wins.
+Finding #1: Scene-photo log labels the answer-bearing incident time as controlling — Minor

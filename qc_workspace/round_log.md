@@ -8,6 +8,7 @@ each one means that class was fixed at the instance level, not the class level.
 | Round | Opened | Findings | Classes | Repeats | Disposition |
 |---|---|---|---|---|---|
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
+| 2 | 2026-09-10T16:12 | 6 | 4 | 3 | fixed 5, widened 0, traps 1, false 0, blocked 0 |
 
 ## Detail
 
@@ -28,4 +29,15 @@ each one means that class was fixed at the instance level, not the class level.
   - files named: reyes_life_care_plan.pdf, reyes_wage_records.pdf
 - **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)
   - files named: owl_service_rules.docx, post_accident_testing_policy.docx
+
+### Round 2, 2026-09-10T16:12
+
+- **Solution or reasoning leaked into world files**: 2 finding(s)
+  - files named: intake_memo.docx, ir_2025-1018_final.docx, reserve_memo.docx, scene_photos_2025-1018.pdf
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+  - files named: claims_0118.pdf
+- **Builder A## codes visible in world files**: 1 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf
+- **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
+  - files named: runschedule_owl512.xlsx
 
