@@ -1,0 +1,12 @@
+TICKET 5 of 5  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+The world has material unresolved cross-file drift rather than rare isolated ambiguity. The selected spec fixes Reyes's §911.4 application as filed on 05/15/2026 and pending at the 06/18/2026 anchor, but the application itself, the claims tracker, and MatterHub instead make it an 08/07/2026 filing, creating deadlines in September 2026 and March 2027; those documents cannot coexist in the stated snapshot. Independent records also conflict over whether Reyes remained an inpatient until 04/06/2026 and whether the bus was traveling northbound or southbound, so the contradictions span procedural posture, medical facts, and collision facts.

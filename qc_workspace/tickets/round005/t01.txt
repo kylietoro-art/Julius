@@ -1,0 +1,17 @@
+TICKET 1 of 5  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+`Legal/Reyes/late_claim_app.pdf` visibly states "DATE FILED: August 7, 2026," while the Canonical Values/world narrative fixes the § 911.4 application as "filed 05/15/2026; pending at anchor (45-day deemed-denial 06/29/2026)." `ACTD/Claims/claims_tracker.csv` and `Legal/Reyes/matter_calendar_MatterHub.csv` propagate the August filing and calculate 09/21/2026 as the 45-day date, rather than correcting it. This is material because the August filing post-dates the world's 06/18/2026 anchor and changes the claimant's current deadline posture; the actual documents contain no reconciliation for the conflicting dates.
+
+The Settlement/Reyes_life_care_plan.pdf ends by listing five separate attachments as "available on request," but none is supplied as a world material. Separately, Settlement/Reyes_lien_EOB.pdf is a four-page transmittal that declares "Enclosures (Exhibit A; Tabs 1-11)," while neither the provider reconciliation schedule nor the EOB/lien tabs appears in the mounted filesystem. Finally, ACTD/Risk/coverage_summary.pdf expressly directs the reader to SCPERA-MOC-100 for the general terms and conditions, but the governing memorandum is absent; these are explicit absent attachments/supporting document classes and therefore break document-reference resolution.
+Finding #1: Life-care-plan attachments are absent - Major
+Finding #2: EOB package declares but omits Exhibit A and Tabs 1-11 - Major
+Finding #3: Governing SCPERA memorandum of coverage is missing - Minor

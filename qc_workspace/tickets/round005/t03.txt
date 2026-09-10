@@ -1,0 +1,13 @@
+TICKET 3 of 5  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The solver-visible file task_fs/filesystem/ACTD/Litigation/production_tracker.csv fails the No Solution Or Reasoning Leakage clause. Its `review_status` and `final_call` fields state final outcomes such as `Confirmed,Produce` for the requested neutral records and `Attorney-confirmed,Withhold-Privileged` for the senior reserve memorandum, which directly gives the core production/withholding results required for T9. Replace the final outcome columns with a non-dispositive inventory (or leave them pending), retaining only facts needed to perform the privilege analysis; keep the junior-note correction as the task's genuine judgment point.
+Finding #1: Production tracker supplies final discovery-disposition answers - Major

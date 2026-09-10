@@ -1,0 +1,28 @@
+[P1] No Broken Document References
+
+`Legal/Reyes/late_claim_app.pdf` visibly states "DATE FILED: August 7, 2026," while the Canonical Values/world narrative fixes the § 911.4 application as "filed 05/15/2026; pending at anchor (45-day deemed-denial 06/29/2026)." `ACTD/Claims/claims_tracker.csv` and `Legal/Reyes/matter_calendar_MatterHub.csv` propagate the August filing and calculate 09/21/2026 as the 45-day date, rather than correcting it. This is material because the August filing post-dates the world's 06/18/2026 anchor and changes the claimant's current deadline posture; the actual documents contain no reconciliation for the conflicting dates.
+
+The Settlement/Reyes_life_care_plan.pdf ends by listing five separate attachments as "available on request," but none is supplied as a world material. Separately, Settlement/Reyes_lien_EOB.pdf is a four-page transmittal that declares "Enclosures (Exhibit A; Tabs 1-11)," while neither the provider reconciliation schedule nor the EOB/lien tabs appears in the mounted filesystem. Finally, ACTD/Risk/coverage_summary.pdf expressly directs the reader to SCPERA-MOC-100 for the general terms and conditions, but the governing memorandum is absent; these are explicit absent attachments/supporting document classes and therefore break document-reference resolution.
+Finding #1: Life-care-plan attachments are absent - Major
+Finding #2: EOB package declares but omits Exhibit A and Tabs 1-11 - Major
+Finding #3: Governing SCPERA memorandum of coverage is missing - Minor
+
+[P1] World Timeline Holds Together (consolidated)
+
+The Anchor placement bullet fails because `Legal/Reyes/late_claim_app.pdf` is expressly dated, executed, and served August 7, 2026, nearly seven weeks after the June 18, 2026 world anchor. `Legal/Reyes/matter_calendar_MatterHub.csv` records the late-claim event as filed and entered/modified on August 7, and `ACTD/Claims/claims_tracker.csv` independently describes it as filed that date, so this is not an isolated PDF typo. The Causal order bullet also fails: those documents expose August post-anchor claim-processing state while the World Spec says the filing occurred May 15 and was pending at the anchor, breaking the stated as-of scenario; revise the three files to the May 15 sequence (and corresponding deadline calculations) or move the world anchor forward and reconcile the entire downstream timeline.
+Finding #1: Post-anchor late-claim filing breaks the world's as-of date - Major
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The solver-visible file task_fs/filesystem/ACTD/Litigation/production_tracker.csv fails the No Solution Or Reasoning Leakage clause. Its `review_status` and `final_call` fields state final outcomes such as `Confirmed,Produce` for the requested neutral records and `Attorney-confirmed,Withhold-Privileged` for the senior reserve memorandum, which directly gives the core production/withholding results required for T9. Replace the final outcome columns with a non-dispositive inventory (or leave them pending), retaining only facts needed to perform the privilege analysis; keep the junior-note correction as the task's genuine judgment point.
+Finding #1: Production tracker supplies final discovery-disposition answers - Major
+
+[P1] Intended Traps Are Fair
+
+The Reyes late-claim timeline is unresolvably contradictory. The world specification fixes a 06/18/2026 anchor and says the §911.4 application was filed 05/15/2026 and pending then, but the actual application says it was filed, executed, and delivered on 08/07/2026; ACTD's tracker and the matter calendar independently adopt the August filing and its later deadlines. Separately, the official run schedule and CAD log label the 02:05 S. Main/Third point as a southbound reference while recording a 02:04 northbound Trip 06 departure from Poplar, whereas the final incident report describes Bus 4177 departing Poplar at 02:04 and being on northbound S. Main/Third at 02:05; the AVL trace instead places it at the collision coordinates travelling with heading 181. No correction, amendment, or declared trap reconciles either conflict.
+Finding #1: Reyes late-claim application is dated after the world anchor - Major
+Finding #2: Collision trip direction and 02:05 routing sequence cannot be reconciled - Major
+
+[P0] Coherence Flag Ratio
+
+The world has material unresolved cross-file drift rather than rare isolated ambiguity. The selected spec fixes Reyes's §911.4 application as filed on 05/15/2026 and pending at the 06/18/2026 anchor, but the application itself, the claims tracker, and MatterHub instead make it an 08/07/2026 filing, creating deadlines in September 2026 and March 2027; those documents cannot coexist in the stated snapshot. Independent records also conflict over whether Reyes remained an inpatient until 04/06/2026 and whether the bus was traveling northbound or southbound, so the contradictions span procedural posture, medical facts, and collision facts.

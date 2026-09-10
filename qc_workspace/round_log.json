@@ -263,6 +263,43 @@
         "Reyes_life_care_plan.pdf: every independently-checkable figure (8 straightforward category subtotals, the contingency subtotal, the 180000 annual total, the 6480000 undiscounted total, and the 4240000 PV calculation) is exact to the penny; the tiered categories' weighted-average figures don't reduce to a simple linear blend, but Attachment 5 (the year-by-year schedule that would show the real survival-weighted methodology) is explicitly available on request, not included -- treating AutoQC's naive-linear recomputation as the false positive, not the document.",
         "Onboard native video MP4 not mounted: A53 is Type=App Data by spec design (tied to T7's ESI-preservation trap), not a filesystem artifact; this is the same finding disputed in rounds 2 and 3 and confirmed structurally clean via blast_radius each time -- adding the MP4 would violate replace-never-add and destroy the registered trap."
       ]
+    },
+    {
+      "round": 5,
+      "opened": "2026-09-10T19:32:04",
+      "count": 5,
+      "classes": {
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 3,
+          "files": [
+            "claims_tracker.csv",
+            "coverage_summary.pdf",
+            "late_claim_app.pdf",
+            "matter_calendar_matterhub.csv",
+            "reyes_lien_eob.pdf",
+            "reyes_life_care_plan.pdf"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": [
+            "production_tracker.csv"
+          ]
+        },
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "math_footing",
+        "answer_leakage"
+      ],
+      "disposition": null,
+      "note": ""
     }
   ]
 }

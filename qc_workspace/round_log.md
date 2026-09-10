@@ -11,6 +11,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 2 | 2026-09-10T16:12 | 6 | 4 | 3 | fixed 5, widened 0, traps 1, false 0, blocked 0 |
 | 3 | 2026-09-10T17:13 | 6 | 3 | 3 | fixed 5, widened 0, traps 1, false 0, blocked 0 |
 | 4 | 2026-09-10T18:02 | 7 | 5 | 5 | fixed 5, widened 0, traps 1, false 1, blocked 0 |
+| 5 | 2026-09-10T19:32 | 5 | 3 | 2 | _open_ |
 
 ## Detail
 
@@ -63,4 +64,12 @@ each one means that class was fixed at the instance level, not the class level.
   - files named: maintenance_log_bus4177.csv
 
 Note: Also verified via spec_check.py traps that this round's edits do not touch any of the registered Reyes capacity/incapacity traps (conservatorship termination date, HIPAA personal-signature date, recorded-statement date, retention-to-window-close gap, intake-memo delay rationale, treating-physician 'much of' hedge) -- all confirmed still intact and untouched. Noted for a future round, out of scope for round 4's findings: spec_check.py ties flagged 3 pre-existing misses (Cho/Mowbray passengers' suit-filing deadline not literally present in A39/A14; blood-draw collection time not in A50/chain_custody.pdf) unrelated to any file touched this round.
+
+### Round 5, 2026-09-10T19:32
+
+- **Totals don't foot / calculations disagree with inputs**: 3 finding(s)  **(REPEAT)**
+  - files named: claims_tracker.csv, coverage_summary.pdf, late_claim_app.pdf, matter_calendar_matterhub.csv, reyes_lien_eob.pdf, reyes_life_care_plan.pdf
+- **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
+  - files named: production_tracker.csv
+- **A referenced document or value doesn't resolve**: 1 finding(s)
 

@@ -1,0 +1,14 @@
+TICKET 4 of 5  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+The Reyes late-claim timeline is unresolvably contradictory. The world specification fixes a 06/18/2026 anchor and says the §911.4 application was filed 05/15/2026 and pending then, but the actual application says it was filed, executed, and delivered on 08/07/2026; ACTD's tracker and the matter calendar independently adopt the August filing and its later deadlines. Separately, the official run schedule and CAD log label the 02:05 S. Main/Third point as a southbound reference while recording a 02:04 northbound Trip 06 departure from Poplar, whereas the final incident report describes Bus 4177 departing Poplar at 02:04 and being on northbound S. Main/Third at 02:05; the AVL trace instead places it at the collision coordinates travelling with heading 181. No correction, amendment, or declared trap reconciles either conflict.
+Finding #1: Reyes late-claim application is dated after the world anchor - Major
+Finding #2: Collision trip direction and 02:05 routing sequence cannot be reconciled - Major

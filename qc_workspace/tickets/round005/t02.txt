@@ -1,0 +1,13 @@
+TICKET 2 of 5  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] World Timeline Holds Together (consolidated)
+
+The Anchor placement bullet fails because `Legal/Reyes/late_claim_app.pdf` is expressly dated, executed, and served August 7, 2026, nearly seven weeks after the June 18, 2026 world anchor. `Legal/Reyes/matter_calendar_MatterHub.csv` records the late-claim event as filed and entered/modified on August 7, and `ACTD/Claims/claims_tracker.csv` independently describes it as filed that date, so this is not an isolated PDF typo. The Causal order bullet also fails: those documents expose August post-anchor claim-processing state while the World Spec says the filing occurred May 15 and was pending at the anchor, breaking the stated as-of scenario; revise the three files to the May 15 sequence (and corresponding deadline calculations) or move the world anchor forward and reconcile the entire downstream timeline.
+Finding #1: Post-anchor late-claim filing breaks the world's as-of date - Major
