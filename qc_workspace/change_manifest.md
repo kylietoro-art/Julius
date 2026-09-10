@@ -560,3 +560,33 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Legal/Reyes/intake_memo.docx | para 27 (Incapacity ground under 911.6(b)(4)) [911.6(b) actually enumerates six grounds ((1) excusable neglect, (2)-(3) minor, (4)-(5) incapacity, (6) death), not four; numeric correction] | the Board is directed by Gov. Code Sec 911.6(b) to grant the application on any of four enumerated grounds | → | the Board is directed by Gov. Code Sec 911.6(b) to grant the application on any of six enumerated grounds |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | column inserted before 'payer'; one row per provider (RRTC-001, ACNRI-001, SKY-001, RAD-001, ANES-001, NSG-001, TSG-001, ASH-001, HBC-001) carries that provider's EOB-stated Patient Resp. total [Reyes_lien_EOB.pdf Exhibit A separately reports Patient Resp. ($3,200, all documented as paid) distinct from Contractual Adj./Write-off ($2,640,800); ledger's adjustments column was silently absorbing the paid patient-responsibility amount, contradicting the EOB's own notes that no provider has an outstanding patient-owed balance] | no patient_responsibility column; adjustments totaled $2,644,000 (silently included $3,200 patient-responsibility paid amount) | → | added patient_responsibility column (total $3,200, one representative row per provider per Reyes_lien_EOB.pdf provider totals); adjustments reduced to $2,640,800 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/HIPAA_auth.pdf | page 1 Section 3; page 3 Section 14 [form was signed and dated 02/10/2026 naming Halstead & Cruz as recipient, but the firm's own records (late_claim_app.pdf paragraph 10, life care plan) place retention at 03/05/2026 -- a pre-engagement/hindsight conflict. Retargeting the recipient to Reyes herself (self-request) is consistent with Section 6's existing purpose language ('at my own request') and avoids cascading the date into the other documents that narrate this milestone] | Section 3 (Recipient) and Section 14 (Form Return) both named: Halstead & Cruz LLP, Attn: Nora Halstead, Esq., 88 South Grand Avenue Suite 2400, Los Angeles CA 90071, (213) 555-0170 | → | Section 3 and Section 14 both changed to: Yolanda M. Reyes (self - records requested for personal use), 612 Poplar Street, Rivergate, CA 91766, (626) 555-0187 (her own address/phone already given in Section 1) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Police/TC_2025-1018.pdf | page 2, narrative field [world spec defines Alder Creek Transit District (ACTD) as the sole transit entity ('the District'); MTA is never introduced elsewhere -- unexplained second transit-org label, naming drift] | Standing at posted MTA/ACTD bus stop, east side of S. Main Street... | → | Standing at posted ACTD bus stop, east side of S. Main Street... |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Police/scene_photos_2025-1018.pdf | page 5, photo log row P-043 [same MTA/ACTD naming-drift fix as police report; em dash also flattened to plain hyphen to avoid base-14 font encoding substitution] | P-043 Description: Bus-stop platform (em dash) overview; shelter, posted MTA/ACTD bus-stop signage, concrete pad, and impact zone at south end of shelter where the bus came to rest. | → | P-043 Description: Bus-stop platform - overview; shelter, posted ACTD bus-stop signage, concrete pad, and impact zone at south end of shelter where the bus came to rest. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Fleet/maintenance_log_bus4177.csv | rows WO-072889, WO-074761, WO-077022 (description field) [49 CFR 396.25 is 'Qualifications of brake inspectors' (what a qualified inspector must know/do), not a source of lining-thickness/leak-down/slack-adjuster/pass-fail thresholds; those performance specs are governed by 49 CFR 393.47 (brake actuators, slack adjusters, linings/pads, drums/rotors) and Part 396 Appendix A (Minimum Periodic Inspection Standards)] | Air-brake inspection per 49 CFR 396.25: [lining thickness / leak-down / slack-adjuster / warning-test specs] | → | Air-brake inspection per 49 CFR Part 396 App. A / Sec 393.47: [same specs] |

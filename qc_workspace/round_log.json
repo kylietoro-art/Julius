@@ -249,8 +249,20 @@
         "entity_inconsistency",
         "citation_facts"
       ],
-      "disposition": null,
-      "note": ""
+      "disposition": {
+        "fixed": 5,
+        "expanded": 0,
+        "traps": 1,
+        "false": 1,
+        "blocked": 0
+      },
+      "note": "Also verified via spec_check.py traps that this round's edits do not touch any of the registered Reyes capacity/incapacity traps (conservatorship termination date, HIPAA personal-signature date, recorded-statement date, retention-to-window-close gap, intake-memo delay rationale, treating-physician 'much of' hedge) -- all confirmed still intact and untouched. Noted for a future round, out of scope for round 4's findings: spec_check.py ties flagged 3 pre-existing misses (Cho/Mowbray passengers' suit-filing deadline not literally present in A39/A14; blood-draw collection time not in A50/chain_custody.pdf) unrelated to any file touched this round.",
+      "closed": "2026-09-10T19:16:58",
+      "changed": "Shifted the Reyes late-claim filing date 05/15/2026->08/07/2026 across matter_calendar_MatterHub.csv, claims_tracker.csv, and late_claim_app.pdf so real Gov. Code Sec 911.6(b)(5) is genuinely considered and correctly foreclosed by its own six-month tail rather than silently omitted; corrected intake_memo.docx's grounds count; added a patient_responsibility column to medical_billing_ledger.csv to match Reyes_lien_EOB.pdf's four-way reconciliation; retargeted HIPAA_auth.pdf's recipient off Halstead & Cruz to fix a pre-engagement date conflict; fixed MTA/ACTD naming drift in two police documents; corrected a mischaracterized 49 CFR 396.25 brake-inspection citation in maintenance_log_bus4177.csv.",
+      "disputes": [
+        "Reyes_life_care_plan.pdf: every independently-checkable figure (8 straightforward category subtotals, the contingency subtotal, the 180000 annual total, the 6480000 undiscounted total, and the 4240000 PV calculation) is exact to the penny; the tiered categories' weighted-average figures don't reduce to a simple linear blend, but Attachment 5 (the year-by-year schedule that would show the real survival-weighted methodology) is explicitly available on request, not included -- treating AutoQC's naive-linear recomputation as the false positive, not the document.",
+        "Onboard native video MP4 not mounted: A53 is Type=App Data by spec design (tied to T7's ESI-preservation trap), not a filesystem artifact; this is the same finding disputed in rounds 2 and 3 and confirmed structurally clean via blast_radius each time -- adding the MP4 would violate replace-never-add and destroy the registered trap."
+      ]
     }
   ]
 }
