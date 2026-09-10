@@ -590,3 +590,9 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Fleet/maintenance_log_bus4177.csv | rows WO-072889, WO-074761, WO-077022 (description field) [49 CFR 396.25 is 'Qualifications of brake inspectors' (what a qualified inspector must know/do), not a source of lining-thickness/leak-down/slack-adjuster/pass-fail thresholds; those performance specs are governed by 49 CFR 393.47 (brake actuators, slack adjusters, linings/pads, drums/rotors) and Part 396 Appendix A (Minimum Periodic Inspection Standards)] | Air-brake inspection per 49 CFR 396.25: [lining thickness / leak-down / slack-adjuster / warning-test specs] | → | Air-brake inspection per 49 CFR Part 396 App. A / Sec 393.47: [same specs] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/claims_tracker.csv | rows ACTD-2026-0114, ACTD-2026-0115 [WORLD_SPEC canonical value "Passengers' suit-filing deadline" (Type=Fact, 08/18/2026, derived from A39's 02/18/2026 rejection mailing + Gov. Code 945.6(a)(1) six-month clock) declares Must-match=A14 (this claims tracker); A14's own spec description says its purpose is tracking a computed deadline field, but the field was blank -- flagged by spec_check.py ties. A39 (rejection_0218.pdf) correctly stays untouched: real Gov. Code 913 rejection notices recite the statutory six-month boilerplate rather than a pre-computed date, and the spec lists only A14 (not A39) as a match target, consistent with A39 supplying the inputs to derive from rather than the computed output] | Cho (ACTD-2026-0114) and Mowbray (ACTD-2026-0115) rows: suit_filing_deadline blank, deadline_basis='see rejection notice' | → | suit_filing_deadline=08/18/2026, deadline_basis='Gov. Code § 945.6(a)(1) - 6 mo. from rejection mailing' for both rows |
