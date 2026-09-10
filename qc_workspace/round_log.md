@@ -9,6 +9,7 @@ each one means that class was fixed at the instance level, not the class level.
 |---|---|---|---|---|---|
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
 | 2 | 2026-09-10T16:12 | 6 | 4 | 3 | fixed 5, widened 0, traps 1, false 0, blocked 0 |
+| 3 | 2026-09-10T17:13 | 6 | 3 | 3 | fixed 5, widened 0, traps 1, false 0, blocked 0 |
 
 ## Detail
 
@@ -40,4 +41,12 @@ each one means that class was fixed at the instance level, not the class level.
   - files named: onboard_video_still_log.pdf
 - **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
   - files named: runschedule_owl512.xlsx
+
+### Round 3, 2026-09-10T17:13
+
+- **Uncategorised, read the finding text**: 4 finding(s)  **(REPEAT)**
+  - files named: coverage_summary.pdf, dot_655_keeler.pdf, ir_2025-1018_final.docx, production_tracker.csv, medical_billing_ledger.csv, ir_2025-1018_draft.docx
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+  - files named: bac_keeler.pdf, complaint_reyes_filed.pdf
+- **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
 

@@ -1,0 +1,13 @@
+TICKET 3 of 6  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+`production_tracker.csv` is a worker-readable litigation-support record that goes beyond indexing: its header expressly includes `review_status` and `final_call`, and it labels the senior reserve memo "Attorney-confirmed,Withhold-Privileged" while labeling the coverage summary and video "Confirmed,Produce." The current task's T9 is expressly "Discovery responses + privilege log" and directs production of the same neutral records and withholding/logging of the senior memo. Thus the tracker gives a decisive, pre-completed classification for most of the requested deliverable rather than requiring the worker to derive it; remove the `review_status`, `final_call`, `log_entry`, and conclusion-bearing notes (or leave them genuinely unreviewed) while retaining a neutral document inventory.
+Finding #1: Production tracker pre-completes T9 discovery classifications — Major

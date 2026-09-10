@@ -150,6 +150,57 @@
       "disputes": [
         "Disputed the Major finding that the native onboard video is a broken reference: A53 is Type=App Data (not File), its format note says the composite export happens only once preserved before the retention loop overwrites, and it is tied to Tasks T7/T9 whose trap is specifically that the agent must recognize this vendor-held, short-retention footage as an ESI domain needing an affirmative preservation request rather than something already mounted; the still-log documents a real request procedure, hash and custodian chain, and the finding also mischaracterizes the production tracker, which already shows this item as Produce/Confirmed with a native Bates number, not held-and-not-yet-produced."
       ]
+    },
+    {
+      "round": 3,
+      "opened": "2026-09-10T17:13:54",
+      "count": 6,
+      "classes": {
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": [
+            "bac_keeler.pdf",
+            "complaint_reyes_filed.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 4,
+          "files": [
+            "coverage_summary.pdf",
+            "dot_655_keeler.pdf",
+            "ir_2025-1018_final.docx",
+            "production_tracker.csv",
+            "medical_billing_ledger.csv",
+            "ir_2025-1018_draft.docx"
+          ]
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "placeholder_synthetic",
+        "other",
+        "entity_inconsistency"
+      ],
+      "disposition": {
+        "fixed": 5,
+        "expanded": 0,
+        "traps": 1,
+        "false": 0,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-10T17:44:44",
+      "changed": "Swept the corpus for the repeat unfilled-signature class (23 fills across 11 files, including two files where the first pass revealed an additional blank the finding hadn't named); reworded the SCPERA coverage summary and the DOT alcohol-test form so they no longer claim physical attachment of forms/exhibits that aren't mounted; consolidated the incident report's references to the duty roster and fleet dispatch log (the actual mounted files) instead of naming several non-existent record types, and added the missing post-collision mechanical-inspection entry to the maintenance log for an event the report already narrates; fixed a CSV-quoting bug I introduced last round in production_tracker.csv and removed medical_billing_ledger.csv's trailing TOTAL row; stripped an embedded CCP 2017.210 citation from the production tracker's coverage-summary row; standardized the dispatch log's incident number to match the rest of the corpus; and added a real supervisor-review comment to the draft incident report.",
+      "disputes": [
+        "Disputed the Major finding that DriveCam footage is unsupplied: DriveCam is the IR's colloquial name for the same onboard camera system documented in the Video folder (its forward-facing/cabin-facing channel descriptions match CAM-03/CAM-01), which is the same A53 App-Data artifact already disputed in round 2 for the same reason (Type=App Data, tied to the T7 ESI-preservation trap).",
+        "Disputed the request to delete production_tracker.csv's review_status and final_call columns: A17 is a registered trap whose content is specifically that first-pass tags are unreliable and must be independently verified, evidenced by A42 alone being tagged First-pass against everyone else's Confirmed; deleting the status columns would delete the trap. Fixed the one genuine instance in the same finding (an embedded CCP 2017.210 citation baked into the coverage-summary row's first-pass tag, matching the same over-explanation pattern already fixed for A43 in round 1)."
+      ]
     }
   ]
 }

@@ -1,0 +1,16 @@
+TICKET 2 of 6  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+The mounted world has multiple broken document references. `ACTD/Risk/coverage_summary.pdf` directs the reader to the "attached" SCPERA-MOC-100 general-terms memorandum, but that separate form is neither embedded in the three-page PDF nor present in the filesystem. `ACTD/Safety/IR_2025-1018_final.docx` also treats the Div. 3 pre-trip yard sheet, fleet/daily assignment records, post-collision mechanical inspection, and preserved DriveCam video as underlying records, but the mounted corpus supplies only related logs and a still-frame log rather than those named materials. In addition, `ACTD/Compliance/DOT_655_Keeler.pdf` lists three explicit attachments—the EBT tape, calibration-log excerpt, and BAT certification card—which are absent. These omissions prevent readers from resolving cited evidence and meet the failing criterion.
+Finding #1: Missing SCPERA general-terms memorandum — Major
+Finding #2: Final incident report cites absent operational and inspection records — Major
+Finding #3: Referenced DriveCam footage is not supplied — Major
+Finding #4: DOT alcohol-test attachments A–C are absent — Minor

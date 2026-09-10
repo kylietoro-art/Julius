@@ -386,3 +386,141 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Ops/RunSchedule_Owl512.xlsx | core properties | creator: openpyxl | → | creator: R. Delcourt |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/Dispatch_log_2025-1018.csv | 2 event rows | ACTD-IR-2025-1018-001 | → | ACTD-IR-2025-1018 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Litigation/production_tracker.csv | row 8 | PT-07 notes field unquoted, 13 CSV fields | → | PT-07 notes field quoted, 10 CSV fields |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Litigation/production_tracker.csv | PT-16 first_pass_tag | Produce (CCP Section 2017.210) | → | Produce |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | final row | TOTAL,ALL PROVIDERS (9),... aggregate row | → | (deleted) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Fleet/maintenance_log_bus4177.csv | new final row | (no 10/18/2025 entry) | → | WO-077311 post-collision inspection row added |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | Vehicle paragraph, Section 4 | is reconciled to the Div. 3 pre-trip yard sheet, the fleet dispatch log, and the Fleet Maintenance daily assignment record | → | is reconciled to the Div. 3 duty roster and the fleet dispatch log |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | Section 7, Course-and-Scope Determination | the Div. 3 pre-trip yard sheet, the fleet dispatch log, the daily block assignment sheet, and / reconciles to the Div. 3 pre-trip yard sheet, the fleet dispatch log, and the daily block assignment sheet | → | the Div. 3 duty roster, the fleet dispatch log, and / reconciles to the Div. 3 duty roster and the fleet dispatch log |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | Timeline table row 1, Source column | Duty roster; pre-trip yard sheet | → | Duty roster |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Risk/coverage_summary.pdf | page 3, closing banner | SEE ATTACHED MEMORANDUM OF COVERAGE FORM | → | SEE MEMORANDUM OF COVERAGE FORM |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Risk/coverage_summary.pdf | page 3, authorization block | 2 blank signature lines | → | /s/ Ellen J. Whitmore ; /s/ Gordon Espinoza |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CrimeLab/BAC_Keeler.pdf | page 3, certification blocks | 2 blank Signed: lines | → | /s/ Alan Whitford ; /s/ Loretta M. Ainsley |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CivilCase/Complaint_Reyes_filed.pdf | page 10, jury demand signature | By: (blank) | → | By: /s/ Nora Halstead |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CivilCase/Complaint_Reyes_filed.pdf | page 12, proof of service | (blank signature) | → | /s/ Grace Chen |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Criminal/Plea_Keeler.pdf | page 6, judgment/certification/filed blocks | 3 blank signature/deputy lines | → | /s/ Marion T. Escamilla ; /s/ J. Ontiveros (x2) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/City/repair_invoice_0202.pdf | page 2, prepared-by/approved-by | 2 blank signature lines | → | /s/ Halden R. Voss ; /s/ Marguerite E. Sandoval |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Discovery/RFP_set.pdf | pages 12 and 14 | By: (blank) / (blank signature) | → | By: /s/ Nora Halstead ; /s/ Grace Chen |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/conservatorship_grant.pdf | page 5 | judge and deputy-clerk blanks | → | /s/ Beatrice N. Halloway ; By: /s/ R. Castellanos, Deputy Clerk |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/conservatorship_term.pdf | pages 7 and 10 | judge, deputy-clerk, and physician declaration blanks | → | /s/ Beatrice N. Halloway ; By: /s/ R. Castellanos, Deputy Clerk ; /s/ Helena Vasquez-Ortiz, MD |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/rejection_0218.pdf | pages 1-3 | 3 blank signature lines | → | /s/ Marcia P. Ainsworth ; /s/ Gordon Espinoza (x2) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/owl_service_rules.docx | Approved section | 2 blank approval signatures | → | /s/ Patricia Kwan ; /s/ Marlene Okonkwo |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | signature block | (blank signature) | → | /s/ Gordon Espinoza |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/DOT_655_Keeler.pdf | pages 2 and 4 | affixed to form? Yes -- Attachment A / Attachment B / Attachment C labels | → | Retained in file / Retained - labels (no physical-attachment claim) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_draft.docx | word/comments.xml | (no comments part) | → | supervisor-review comment added, anchored to DRAFT banner paragraph |

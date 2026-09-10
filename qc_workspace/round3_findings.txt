@@ -1,0 +1,31 @@
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+Multiple purportedly executed documents retain unfilled signature lines. `Shared/CivilCase/Complaint_Reyes_filed.pdf` is styled as a filed complaint but its attorney block reads "By: __________________________________" above Nora Halstead and its proof of service likewise leaves a blank line above Grace Chen; `Shared/CrimeLab/BAC_Keeler.pdf` has two blank "Signed: _______________________________________________" lines for its criminalist certification and technical review. The same residue recurs in the court plea/order, discovery set, City invoice, and ACTD correspondence, so these read as unexecuted templates rather than completed work products; populate the relevant signature/execution blocks (or explicitly mark documents as unsigned drafts where that is intended).
+
+[P1] No Broken Document References
+
+The mounted world has multiple broken document references. `ACTD/Risk/coverage_summary.pdf` directs the reader to the "attached" SCPERA-MOC-100 general-terms memorandum, but that separate form is neither embedded in the three-page PDF nor present in the filesystem. `ACTD/Safety/IR_2025-1018_final.docx` also treats the Div. 3 pre-trip yard sheet, fleet/daily assignment records, post-collision mechanical inspection, and preserved DriveCam video as underlying records, but the mounted corpus supplies only related logs and a still-frame log rather than those named materials. In addition, `ACTD/Compliance/DOT_655_Keeler.pdf` lists three explicit attachments—the EBT tape, calibration-log excerpt, and BAT certification card—which are absent. These omissions prevent readers from resolving cited evidence and meet the failing criterion.
+Finding #1: Missing SCPERA general-terms memorandum — Major
+Finding #2: Final incident report cites absent operational and inspection records — Major
+Finding #3: Referenced DriveCam footage is not supplied — Major
+Finding #4: DOT alcohol-test attachments A–C are absent — Minor
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+`production_tracker.csv` is a worker-readable litigation-support record that goes beyond indexing: its header expressly includes `review_status` and `final_call`, and it labels the senior reserve memo "Attorney-confirmed,Withhold-Privileged" while labeling the coverage summary and video "Confirmed,Produce." The current task's T9 is expressly "Discovery responses + privilege log" and directs production of the same neutral records and withholding/logging of the senior memo. Thus the tracker gives a decisive, pre-completed classification for most of the requested deliverable rather than requiring the worker to derive it; remove the `review_status`, `final_call`, `log_entry`, and conclusion-bearing notes (or leave them genuinely unreviewed) while retaining a neutral document inventory.
+Finding #1: Production tracker pre-completes T9 discovery classifications — Major
+
+[P1] CSV Formatted Correctly
+
+The CSV corpus fails the required one-header/one-record structure in two files. In `ACTD/Litigation/production_tracker.csv`, row 8 (PT-07) has unquoted commas in its notes field, producing 13 fields despite the header defining 10. In `ACTD/Claims/medical_billing_ledger.csv`, the final row is a `TOTAL` aggregate rather than an itemized billing record, which is prohibited bottom-summary content and creates a mixed record type.
+
+Minor issues:
+
+[P1] Consistent Naming And Defined Terms
+
+The dispatch log states that "Incident number ACTD-IR-2025-1018-001 [was] opened" and later that the same suffixed "Incident file" remained open. In contrast, the final safety report certifies itself as the "Final Incident Report of record for Incident No. ACTD-IR-2025-1018," and the onboard video still log identifies that shorter number as its incident reference. Neither source identifies either string as an alias or parent/child record, so a worker searching, requesting, or cross-referencing the incident file can reasonably be left unsure whether the records belong to one collision; standardize the incident number or state the relationship explicitly.
+Finding #1: Unreconciled ACTD incident-number drift — Minor
+
+[P0] Format-Native Feature Fidelity
+
+`ACTD/Safety/IR_2025-1018_draft.docx` visibly presents itself as a draft: its extracted opening text reads "On-Scene Incident Report — Preliminary DRAFT — ON-SCENE — SUBJECT TO SUPERVISOR REVIEW." Package inspection found `comments []` and zero `ins`, `del`, `moveFrom`, and `moveTo` revision elements in that same file. This fails sub-check (d) because a reader of the stated working draft has no visible comments or tracked changes showing its review/working state; adding meaningful comments or tracked revision marks is the smallest repair.
