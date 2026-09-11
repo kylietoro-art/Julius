@@ -1,0 +1,12 @@
+TICKET 14 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Text Legibility And Contrast
+
+ACTD/Dispatch/tran_text_thread.pdf, page 1, uses very pale gray running chrome on an almost-white page. The affected visible text includes the top-left "Messages — exported to PDF," "Page 1," and the bottom lines "End of exported thread · 3 messages," the source statement, and the retention notice. These repeated header/footer/margin elements are washed out in the rendered page and therefore fail the criterion requiring all running chrome to be clearly readable against its immediate background; darkening that chrome to a clearly legible gray or navy would fix it.

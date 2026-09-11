@@ -1,0 +1,15 @@
+TICKET 5 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+Worker-readable files directly supply both the chosen late-claim theories and advocacy for relief, eliminating the central legal analysis and strategy judgment. They also state the Howell treatment for past medical and instruct the reader to reject the undiscounted future-care figure, then provide the exact present-value formula, inputs, arithmetic, and answer. These are decisive, separately remediable shortcuts rather than underlying evidence from which the worker must reason.
+Finding #1 Late-claim theory and deliberate strategy are stated in worker files Major
+Finding #2 Damages materials supply the legal rule and completed future-care valuation Major
+Add to rerun

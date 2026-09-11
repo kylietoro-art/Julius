@@ -1,0 +1,16 @@
+TICKET 8 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+The current `③ Tasks` sheet requires both designated apps for every task: it says that "Every task also incorporates at least one App Data touchpoint … and both of the world's designated apps (Docuseal, Wiki.js)" and that "Nine of ten tasks … require a Docuseal state-change." Individual rows additionally require updates or corrections, including T3's correction of the Wiki.js page and T1's three-entry deadline correction in the firm's practice-management system. Yet the manifest's complete task filesystem inventory contains only ordinary files, and the staged-path sweep found no DocuSeal, Wiki.js, or app-data content; the registry itself says Studio must generate the actual AppData. Without seeded app records/pages in their stated initial conditions, agents cannot complete or verify the mandated routing, archiving, submitter changes, calendar updates, or Wiki corrections.
+Finding #1 Required DocuSeal and Wiki.js states are absent Major
+Add to rerun
+
+Minor issues

@@ -1,0 +1,87 @@
+[P0] Built Files Match Spec Inventory
+
+A22, `Med/Reyes/op_reports.pdf`, materially diverges from its External Files Registry description. The registry requires three operative reports—10/18 decompressive craniectomy plus ICP monitor, 10/21 pelvic ORIF, and 11/03 bilateral lower-extremity ORIF—whereas the built document expressly identifies a five-report compilation dated 10/18, 10/18, 10/22, 10/25, and 11/05, with laparotomy/splenectomy, external fixation, washout, later ORIF, and tracheostomy/PEG instead. This changes the specified content and treatment chronology rather than merely its formatting; replace or revise the built A22 compilation to contain the three registry-described reports, or amend the registry to the intended five-report record.
+Add to rerun
+
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+FAIL. `② Canonical Values` C25-C26 cites A36 while using a $180,000 annual cost and formula-derived $4,240,000 present value over 36 years at 2.5%; the world scenario and A36 artifact description repeat the same $6,480,000/$4,240,000 figures. The actual source file `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` instead states $173,651 per year, $6,251,436 undiscounted, and $4,091,000 present value under the same 36-year/2.5% assumptions; independent recomputation confirms $4,090,567 before rounding. This is a material shared-damages contradiction without an in-world correction or matching trap, and it changes a core valuation used across the world.
+Finding #1 A36 life-care valuation conflicts with its canonical source-linked values Major
+Add to rerun
+
+[P1] No Broken Document References
+
+A53 remains an unresolved document class. The world-spec registry defines "Onboard Video / Camera System Footage" as "MP4 (clip export) + still-frame log," and T7/T9 expressly require preservation or production of that footage; the mounted filesystem contains only `ACTD/Video/onboard_video_still_log.pdf` and no MP4/media file. The current log names `4177_20251018_0130-0210_INC.mp4` yet records the native clip size as "Not yet retrieved from vendor" and its SHA-256 as "Not yet computed - native clip not yet retrieved"; stating that it is available from custodians does not provide accessible world material. Supply the preserved native MP4 with metadata/hash (and, ideally, all referenced channels), or revise A53 and the dependent tasks to make the still-frame log the sole represented video material.
+Finding #1 A53 native onboard-video MP4 is not supplied Major
+Add to rerun
+
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The previously flagged life-care-plan issue is still present: `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` reports a $173,651 weighted annual future-care cost, $6,251,436 undiscounted 36-year total, and a $4,091,000 adopted PV at 2.5%. The controlling `② Canonical Values` sheet instead makes $180,000/year and a rounded $4,240,000 PV binding Facts; its separately registered $6,480,000 row is a trap only for use of the undiscounted recovery figure. The wrong annual fixture propagates through the plan's total, main PV, and sensitivity table, so replace it with $180,000 and recompute each dependent valuation.
+Finding #1 Life-care plan uses noncanonical future-medical fixture and dependent valuations Major
+Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+Worker-readable files directly supply both the chosen late-claim theories and advocacy for relief, eliminating the central legal analysis and strategy judgment. They also state the Howell treatment for past medical and instruct the reader to reject the undiscounted future-care figure, then provide the exact present-value formula, inputs, arithmetic, and answer. These are decisive, separately remediable shortcuts rather than underlying evidence from which the worker must reason.
+Finding #1 Late-claim theory and deliberate strategy are stated in worker files Major
+Finding #2 Damages materials supply the legal rule and completed future-care valuation Major
+Add to rerun
+
+[P1] Intended Traps Are Fair
+
+FAIL. The workbook's Canonical Values sheet presents A36 as authoritative and directs the future-medical analysis to $180,000 annually, $6.480M undiscounted, and $4.240M present value. But task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf—the very A36 source—states $173,651 per year, $6,251,436 undiscounted, and $4,091,000 present value using the same 36-year horizon and 2.5% discount rate. The specified controlling source thus points to a materially different answer, and no in-world correction resolves it; update either the life-care plan or the workbook's canonical figures and dependent task references.
+Finding #1 A36 life-care-plan source contradicts canonical future-medical values Major
+Add to rerun
+
+[P0] Coherence Flag Ratio
+
+FAIL. The workbook's "② Canonical Values" identifies A36 as authoritative and requires future medical of $180,000 per year for 36 years, $6,480,000 undiscounted, and $4,240,000 present value at 2.5%. The actual A36 file, `Shared/Settlement/Reyes_life_care_plan.pdf`, instead states $173,651 annually, $6,251,436 undiscounted, and $4,091,000 present value under the same 36-year horizon and 2.5% rate; its text contains no amendment, correction, or supersession that resolves this. This is a material damages figure repeatedly used by the world specification, so the confirmed cross-file contradiction satisfies the failing criterion despite the other checked load-bearing records being coherent.
+Finding #1 A36 future-medical values contradict the world-spec canonical values Major
+Add to rerun
+
+[P0] Anomaly Detection Catch-All
+
+The current `③ Tasks` sheet requires both designated apps for every task: it says that "Every task also incorporates at least one App Data touchpoint … and both of the world's designated apps (Docuseal, Wiki.js)" and that "Nine of ten tasks … require a Docuseal state-change." Individual rows additionally require updates or corrections, including T3's correction of the Wiki.js page and T1's three-entry deadline correction in the firm's practice-management system. Yet the manifest's complete task filesystem inventory contains only ordinary files, and the staged-path sweep found no DocuSeal, Wiki.js, or app-data content; the registry itself says Studio must generate the actual AppData. Without seeded app records/pages in their stated initial conditions, agents cannot complete or verify the mandated routing, archiving, submitter changes, calendar updates, or Wiki corrections.
+Finding #1 Required DocuSeal and Wiki.js states are absent Major
+Add to rerun
+
+Minor issues
+
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+Current claims records retain visible placeholder terminology: reserve_ledger.csv marks active entries RL-2025-0108 and RL-2025-0109 as "LAE placeholder," and reserve_memo.docx calls its future-medical and lost-earning components "placeholders." Although the initial reserve table is expressly superseded, those active ledger labels and the current memo language remain unfinished-authoring terms in professional reserve materials. Separately, IR_2025-1018_draft.docx labels section 2 "Preliminary Data — placeholder fields"; the document may appropriately be preliminary, but that phrase is visible scaffolding rather than an operational report heading.
+Finding #1 Active reserve materials retain placeholder labels Minor
+Finding #2 Draft incident report exposes a placeholder-fields heading Minor
+Add to rerun
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Visual Genre Fit fails for Shared/Police/scene_photos_2025-1018.pdf. The specification calls A51 a captioned scene-photograph set with a size of about 10 to 15 captioned photos, but the delivered PDF is eight pages of written P-001 through P-061 log entries and contains no embedded image objects; the rendered first and final pages show only tables, narrative entries, and signatures. A plausible textual police photo log does not visually supply the scene-photograph set the artifact claims to be; add representative captioned scene photographs or amend the world specification to call it a text-only log.
+Add to rerun
+
+[P1] No Signposting of Load-Bearing Facts
+
+The final incident report artificially selects the final course-and-scope account over the on-scene draft: its italic subtitle says "Supervisor-Reviewed / Controlling Report of Record," and its certification says it "reflects the controlling documentary record of this collision." Those labels go beyond neutral final-report status and tell the reader which competing record should win. Separately, the reserve memo and production tracker label the $3,250,000 figure as "controlling" and call the competing $250,000 figure "SUPERSEDED," directing the result of the junior-versus-senior reserve comparison; retain the dates, authors, and revision linkage but remove the answer-selecting wording.
+Finding #1 Final incident report labels the outcome of the draft-versus-final comparison Minor
+Finding #2 Reserve records announce the selected reserve figure Minor
+Add to rerun
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The world fails the U.S. Regional Requirements clause because its operational and litigation materials materially misstate the governing federal transportation framework. In ACTD/Ops/owl_service_rules.docx, Rule 302 says the pre-trip is "required by 49 CFR Part 392," while the federal reference check identifies Part 396 as "INSPECTION, REPAIR, AND MAINTENANCE" and § 396.13 as "Driver inspection." The same rules call Part 391 a governing medical-certification requirement, and Legal/Discovery/hold_demand_letter.pdf requests those records on that basis, despite the world describing ACTD as local fixed-route service in Los Angeles County. Replace the incorrect federal citations/assumptions with the applicable California/local transit requirements, or expressly establish a genuine FMCSA interstate basis if that is intended.
+Add to rerun
+
+[P1] External Citations Resolve To Real Content
+
+The Life Care Plan's Medical Summary cites https://profile.tmb.state.tx.us/PublicProfile as the Texas Medical Board source for named physicians, including Mark G. Greene, and cites the ABU verification page for Greene's board status; both exact URLs returned HTTP 404 in the current audit. The same plan repeats the now-dead TMB endpoint for several other physicians, so these citations cannot substantiate the credential attributions. Its attached Sources and Methods material also relies on cited CMS locality, Micromedex RedBook, and TreasuryDirect historical-auction pages that now return 404, leaving material elements of its geographic-pricing and discount-rate methodology unsupported.
+Finding #1 Dead Texas Medical Board credential citation family Minor
+Finding #2 Dead ABU verification citation for Mark G. Greene Minor
+Finding #3 Dead CMS locality-methodology citation Minor
+Finding #4 Dead Micromedex RedBook methodology citation Minor
+Finding #5 Dead TreasuryDirect discount-rate source Minor
+Add to rerun
+
+[P0] Text Legibility And Contrast
+
+ACTD/Dispatch/tran_text_thread.pdf, page 1, uses very pale gray running chrome on an almost-white page. The affected visible text includes the top-left "Messages — exported to PDF," "Page 1," and the bottom lines "End of exported thread · 3 messages," the source statement, and the retention notice. These repeated header/footer/margin elements are washed out in the rendered page and therefore fail the criterion requiring all running chrome to be clearly readable against its immediate background; darkening that chrome to a clearly legible gray or navy would fix it.

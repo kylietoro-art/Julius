@@ -1,0 +1,14 @@
+TICKET 4 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The previously flagged life-care-plan issue is still present: `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` reports a $173,651 weighted annual future-care cost, $6,251,436 undiscounted 36-year total, and a $4,091,000 adopted PV at 2.5%. The controlling `② Canonical Values` sheet instead makes $180,000/year and a rounded $4,240,000 PV binding Facts; its separately registered $6,480,000 row is a trap only for use of the undiscounted recovery figure. The wrong annual fixture propagates through the plan's total, main PV, and sensitivity table, so replace it with $180,000 and recompute each dependent valuation.
+Finding #1 Life-care plan uses noncanonical future-medical fixture and dependent valuations Major
+Add to rerun

@@ -1,0 +1,14 @@
+TICKET 3 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+A53 remains an unresolved document class. The world-spec registry defines "Onboard Video / Camera System Footage" as "MP4 (clip export) + still-frame log," and T7/T9 expressly require preservation or production of that footage; the mounted filesystem contains only `ACTD/Video/onboard_video_still_log.pdf` and no MP4/media file. The current log names `4177_20251018_0130-0210_INC.mp4` yet records the native clip size as "Not yet retrieved from vendor" and its SHA-256 as "Not yet computed - native clip not yet retrieved"; stating that it is available from custodians does not provide accessible world material. Supply the preserved native MP4 with metadata/hash (and, ideally, all referenced channels), or revise A53 and the dependent tasks to make the still-frame log the sole represented video material.
+Finding #1 A53 native onboard-video MP4 is not supplied Major
+Add to rerun

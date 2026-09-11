@@ -1225,6 +1225,86 @@
         "No Signposting of Load-Bearing Facts (t11): unchanged, IR_2025-1018_final.docx subtitle re-confirmed bold-off/italic-only per r13/r17 checks; reserve_memo.docx plain-text wording per r15 ruling.",
         "External Citations Resolve To Real Content (t12): 4th consecutive round with fabricated specifics (this round: Susan Lewis, Jerry Markovic, John Carter, Abby Lockhart, Mark Greene, TMB URL, Micromedex, CMS fee schedule). Searched Reyes_life_care_plan.pdf full text -- zero matches for any of them, same 'ABU'-inside-'acetabular' false hit as every prior round. Same standing fabrication per r15-16-17 ruling."
       ]
+    },
+    {
+      "round": 19,
+      "opened": "2026-09-11T22:38:50",
+      "count": 14,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 6,
+          "files": [
+            "op_reports.pdf",
+            "reyes_life_care_plan.pdf",
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 2,
+          "files": [
+            "reyes_life_care_plan.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 2,
+          "files": [
+            "tran_text_thread.pdf"
+          ]
+        },
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": [
+            "ir_2025-1018_draft.docx",
+            "reserve_ledger.csv",
+            "reserve_memo.docx"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": []
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": [
+            "hold_demand_letter.pdf",
+            "owl_service_rules.docx"
+          ]
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "math_footing",
+        "other",
+        "placeholder_synthetic",
+        "answer_leakage",
+        "citation_facts"
+      ],
+      "disposition": {
+        "fixed": 3,
+        "expanded": 0,
+        "traps": 0,
+        "false": 9,
+        "blocked": 2
+      },
+      "note": "14 tickets. blast_radius.py all re-run per CHRONIC protocol: same 2 known false-positive structural flags as rounds 17-18, nothing new; swept corpus post-fix for any remaining craniectomy denial and confirmed none (one unrelated hit in Med/Passengers/summaries.pdf, different patient/context). Confirmed rounds 17-18 fixes (contrast, employment-status, DOT checkbox, table-grid) all still held. Blocked (2): A53 native video (t03) and A51 scene photos (t10), both unchanged, no new information.",
+      "closed": "2026-09-11T22:59:34",
+      "changed": "Investigated A22 op_reports.pdf's spec-inventory mismatch and found a real cross-file contradiction: 3 clinical documents (course_summary.pdf, discharge_2025-1222.pdf, op_reports.pdf) said no decompressive craniectomy occurred, while WORLD_SPEC's Canonical Values register both $2,840,000 billed (Trap, A34) and $196,000 paid (Fact, A35) as locked values that structurally require the $67,500 neurosurgery bill (craniectomy+ICP+follow-up) to be real. Fixed the 3 clinical documents to acknowledge the craniectomy (matching the canonical, spec-locked billing) rather than touch any registered Fact/Trap value; scoped op_reports.pdf's self-description to the 3 services it covers rather than fabricate a new operative report. Fixed a genuine citation error in owl_service_rules.docx (49 CFR Part 392 -> Part 396 Sec 396.13 for pre-trip inspection). Fixed 3 low-contrast text spans in tran_text_thread.pdf (8E8E93 -> 666666).",
+      "disputes": [
+        "A22 Built Files Match Spec Inventory (t01), remaining piece: WORLD_SPEC's registry still describes a 3-report structure (craniectomy+ICP, pelvic ORIF, bilateral LE ORIF) while the actual file has 5 reports on different dates. Per the domain lead's spec-dispute ruling (r12), this is the same stale-registry-description pattern as A36: the built file is richer and cross-corroborated (trauma/ortho billing in medical_billing_ledger.csv matches its actual 5-report content), the registry blurb is what's outdated.",
+        "A36 life-care-plan vs. WORLD_SPEC canonical-values mismatch (t02, t04, t06, t07): unchanged, per domain lead ruling the file-level fix stands and the spec gap is accepted.",
+        "No Reachable Shortcut to the Answer (t05): unchanged grader blind spot to the trap manifest per r11-12 ruling.",
+        "Anomaly Detection Catch-All (t08, Docuseal/Wiki.js): unchanged, out of scope per r13 ruling.",
+        "No Synthetic Markers/Placeholder Data (t09): unchanged, genuine claims-industry terminology per r13 ruling.",
+        "No Signposting of Load-Bearing Facts (t11): unchanged per r13/r15/r17 rulings.",
+        "External Citations Resolve To Real Content (t13): 5th consecutive round with fabricated specifics (this round: TreasuryDirect historical-auction pages). Searched Reyes_life_care_plan.pdf full text -- zero matches. Same standing fabrication per r15-16-17-18 ruling."
+      ]
     }
   ]
 }

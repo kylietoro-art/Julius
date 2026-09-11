@@ -1,0 +1,14 @@
+TICKET 6 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+FAIL. The workbook's Canonical Values sheet presents A36 as authoritative and directs the future-medical analysis to $180,000 annually, $6.480M undiscounted, and $4.240M present value. But task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf—the very A36 source—states $173,651 per year, $6,251,436 undiscounted, and $4,091,000 present value using the same 36-year horizon and 2.5% discount rate. The specified controlling source thus points to a materially different answer, and no in-world correction resolves it; update either the life-care plan or the workbook's canonical figures and dependent task references.
+Finding #1 A36 life-care-plan source contradicts canonical future-medical values Major
+Add to rerun

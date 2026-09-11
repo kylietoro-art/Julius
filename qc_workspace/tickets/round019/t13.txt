@@ -1,0 +1,18 @@
+TICKET 13 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+The Life Care Plan's Medical Summary cites https://profile.tmb.state.tx.us/PublicProfile as the Texas Medical Board source for named physicians, including Mark G. Greene, and cites the ABU verification page for Greene's board status; both exact URLs returned HTTP 404 in the current audit. The same plan repeats the now-dead TMB endpoint for several other physicians, so these citations cannot substantiate the credential attributions. Its attached Sources and Methods material also relies on cited CMS locality, Micromedex RedBook, and TreasuryDirect historical-auction pages that now return 404, leaving material elements of its geographic-pricing and discount-rate methodology unsupported.
+Finding #1 Dead Texas Medical Board credential citation family Minor
+Finding #2 Dead ABU verification citation for Mark G. Greene Minor
+Finding #3 Dead CMS locality-methodology citation Minor
+Finding #4 Dead Micromedex RedBook methodology citation Minor
+Finding #5 Dead TreasuryDirect discount-rate source Minor
+Add to rerun

@@ -1,0 +1,15 @@
+TICKET 11 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The final incident report artificially selects the final course-and-scope account over the on-scene draft: its italic subtitle says "Supervisor-Reviewed / Controlling Report of Record," and its certification says it "reflects the controlling documentary record of this collision." Those labels go beyond neutral final-report status and tell the reader which competing record should win. Separately, the reserve memo and production tracker label the $3,250,000 figure as "controlling" and call the competing $250,000 figure "SUPERSEDED," directing the result of the junior-versus-senior reserve comparison; retain the dates, authors, and revision linkage but remove the answer-selecting wording.
+Finding #1 Final incident report labels the outcome of the draft-versus-final comparison Minor
+Finding #2 Reserve records announce the selected reserve figure Minor
+Add to rerun

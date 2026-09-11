@@ -1,0 +1,13 @@
+TICKET 10 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Visual Genre Fit fails for Shared/Police/scene_photos_2025-1018.pdf. The specification calls A51 a captioned scene-photograph set with a size of about 10 to 15 captioned photos, but the delivered PDF is eight pages of written P-001 through P-061 log entries and contains no embedded image objects; the rendered first and final pages show only tables, narrative entries, and signatures. A plausible textual police photo log does not visually supply the scene-photograph set the artifact claims to be; add representative captioned scene photographs or amend the world specification to call it a text-only log.
+Add to rerun

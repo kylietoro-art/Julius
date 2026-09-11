@@ -1,0 +1,13 @@
+TICKET 12 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The world fails the U.S. Regional Requirements clause because its operational and litigation materials materially misstate the governing federal transportation framework. In ACTD/Ops/owl_service_rules.docx, Rule 302 says the pre-trip is "required by 49 CFR Part 392," while the federal reference check identifies Part 396 as "INSPECTION, REPAIR, AND MAINTENANCE" and § 396.13 as "Driver inspection." The same rules call Part 391 a governing medical-certification requirement, and Legal/Discovery/hold_demand_letter.pdf requests those records on that basis, despite the world describing ACTD as local fixed-route service in Los Angeles County. Replace the incorrect federal citations/assumptions with the applicable California/local transit requirements, or expressly establish a genuine FMCSA interstate basis if that is intended.
+Add to rerun

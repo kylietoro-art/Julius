@@ -1,0 +1,13 @@
+TICKET 1 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Built Files Match Spec Inventory
+
+A22, `Med/Reyes/op_reports.pdf`, materially diverges from its External Files Registry description. The registry requires three operative reports—10/18 decompressive craniectomy plus ICP monitor, 10/21 pelvic ORIF, and 11/03 bilateral lower-extremity ORIF—whereas the built document expressly identifies a five-report compilation dated 10/18, 10/18, 10/22, 10/25, and 11/05, with laparotomy/splenectomy, external fixation, washout, later ORIF, and tracheostomy/PEG instead. This changes the specified content and treatment chronology rather than merely its formatting; replace or revise the built A22 compilation to contain the three registry-described reports, or amend the registry to the intended five-report record.
+Add to rerun

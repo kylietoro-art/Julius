@@ -25,6 +25,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 16 | 2026-09-11T21:15 | 12 | 7 | 7 | fixed 1, widened 0, traps 0, false 9, blocked 2 |
 | 17 | 2026-09-11T21:58 | 13 | 8 | 8 | fixed 3, widened 0, traps 0, false 9, blocked 1 |
 | 18 | 2026-09-11T22:23 | 12 | 7 | 7 | fixed 1, widened 0, traps 0, false 9, blocked 2 |
+| 19 | 2026-09-11T22:38 | 14 | 6 | 6 | fixed 3, widened 0, traps 0, false 9, blocked 2 |
 
 ## Detail
 
@@ -284,4 +285,20 @@ Note: Blocked (1): A53 native onboard-video MP4 (t02), unchanged, still pending 
 - **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
 
 Note: 12 tickets. blast_radius.py all re-run per CHRONIC protocol: identical 2 structural flags as round 17 (medical_billing_ledger.csv TSG-002 footing false positive, $6,540 coincidental match), already covered by the r17 ruling, nothing new. Confirmed both round-17 fixes held: contrast finding and Personnel/employment-status finding are both fully absent from this round's findings; DOT_655_Keeler.pdf checkbox fix also held (dropped out of the Documents-Look-Like-What-They-Claim finding, leaving only A51). Swept all docx files for the same tblGrid/cell-width mismatch pattern as owl_service_rules.docx -- found only ordinary few-hundred-twip Word authoring variances elsewhere (normal, non-rendering-affecting), none with owl_service_rules.docx's exact 635x EMU/twips signature; no other file needed the fix. Blocked (2): A53 native video (t02) and A51 scene photos (t10), both unchanged, no new information.
+
+### Round 19, 2026-09-11T22:38
+
+- **Builder A## codes visible in world files**: 6 finding(s)  **(REPEAT)**
+  - files named: op_reports.pdf, reyes_life_care_plan.pdf, onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+- **Totals don't foot / calculations disagree with inputs**: 2 finding(s)  **(REPEAT)**
+  - files named: reyes_life_care_plan.pdf
+- **Uncategorised, read the finding text**: 2 finding(s)  **(REPEAT)**
+  - files named: tran_text_thread.pdf
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+  - files named: hold_demand_letter.pdf, owl_service_rules.docx
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+  - files named: ir_2025-1018_draft.docx, reserve_ledger.csv, reserve_memo.docx
+- **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
+
+Note: 14 tickets. blast_radius.py all re-run per CHRONIC protocol: same 2 known false-positive structural flags as rounds 17-18, nothing new; swept corpus post-fix for any remaining craniectomy denial and confirmed none (one unrelated hit in Med/Passengers/summaries.pdf, different patient/context). Confirmed rounds 17-18 fixes (contrast, employment-status, DOT checkbox, table-grid) all still held. Blocked (2): A53 native video (t03) and A51 scene photos (t10), both unchanged, no new information.
 

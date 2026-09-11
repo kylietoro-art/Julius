@@ -1,0 +1,14 @@
+TICKET 7 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+FAIL. The workbook's "② Canonical Values" identifies A36 as authoritative and requires future medical of $180,000 per year for 36 years, $6,480,000 undiscounted, and $4,240,000 present value at 2.5%. The actual A36 file, `Shared/Settlement/Reyes_life_care_plan.pdf`, instead states $173,651 annually, $6,251,436 undiscounted, and $4,091,000 present value under the same 36-year horizon and 2.5% rate; its text contains no amendment, correction, or supersession that resolves this. This is a material damages figure repeatedly used by the world specification, so the confirmed cross-file contradiction satisfies the failing criterion despite the other checked load-bearing records being coherent.
+Finding #1 A36 future-medical values contradict the world-spec canonical values Major
+Add to rerun

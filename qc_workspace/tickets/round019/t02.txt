@@ -1,0 +1,14 @@
+TICKET 2 of 14  |  round 19
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+FAIL. `② Canonical Values` C25-C26 cites A36 while using a $180,000 annual cost and formula-derived $4,240,000 present value over 36 years at 2.5%; the world scenario and A36 artifact description repeat the same $6,480,000/$4,240,000 figures. The actual source file `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` instead states $173,651 per year, $6,251,436 undiscounted, and $4,091,000 present value under the same 36-year/2.5% assumptions; independent recomputation confirms $4,090,567 before rounding. This is a material shared-damages contradiction without an in-world correction or matching trap, and it changes a core valuation used across the world.
+Finding #1 A36 life-care valuation conflicts with its canonical source-linked values Major
+Add to rerun
