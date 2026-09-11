@@ -1,0 +1,14 @@
+TICKET 2 of 8  |  round 10
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+Shared/Settlement/Reyes_life_care_plan.pdf contains multiple erroneous weighted annual averages. Physical therapy is stated as $8,150 despite its listed annual costs producing $7,700 over 36 years; occupational therapy, neurocognitive rehabilitation, and psychotherapy similarly calculate to about $2,458, $4,573, and $7,967, rather than $4,845, $7,320, and $8,275. Those four overstatements flow directly into the $180,000 annual total, $6,480,000 undiscounted total, and $4,240,000 present value; on the document's own inputs, the corresponding figures are approximately $174,108 annually, $6,267,888 undiscounted, and $4.101M at 2.5%. These are material computable errors in a damages fixture and must be corrected at the source, then the aggregate and PV tables regenerated.
+Finding #1: Life-care plan weighted averages and dependent damages totals are overstated - Major
+Add to rerun

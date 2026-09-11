@@ -1,0 +1,12 @@
+TICKET 8 of 8  |  round 10
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+`Legal/Reyes/late_claim_app.pdf` expressly seeks an order that would deem the proposed claim presented "as of the date of the order granting leave, in accordance with Government Code § 912.2." Section 912.2 instead deems the claim presented on the date the late-claim application was presented once the application is granted, so this cited statute does not support the document's requested legal effect. Because the presentment date can affect the statutory claims process, the incorrect attribution is material and should be corrected to the application-presented date.

@@ -1,0 +1,15 @@
+TICKET 3 of 8  |  round 10
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — No Solution Or Reasoning Leakage. Legal/Reyes/intake_memo.docx remains a worker-readable internal case-strategy memorandum that computes the April 20 deadline and directs counsel to let it lapse in favor of a Section 911.4 late-claim strategy; this supplies the decisive procedural reasoning rather than evidence requiring synthesis. Separately, Shared/Settlement/Reyes_lien_EOB.pdf labels $196,000 HOWELL-RECOVERABLE and expressly says it, not $2.84 million, is the recoverable past-medical trial measure. No in-world amendment rescinds either statement, so both remain reachable shortcuts; remove/redact their legal conclusions and strategic recommendations while retaining underlying factual and numerical records.
+Finding #1: Reyes intake memo exposes the late-claim reasoning and strategy - Major
+Finding #2: Settlement lien/EOB letter states the Howell past-medical answer - Major
+Add to rerun

@@ -1,0 +1,13 @@
+TICKET 7 of 8  |  round 10
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The criminal case uses the real Los Angeles County District Attorney's Office but names George Gascón as its District Attorney in a filing dated 11/14/2025. Gascón had left the office in December 2024; Nathan Hochman was the Los Angeles County DA during all of 2025. This is a concrete false attribution of a real public institution and official in a core criminal-court artifact, reducing the reliability of the otherwise California-grounded litigation world; replace Gascón with Hochman in the complaint/abstract source.
+Add to rerun

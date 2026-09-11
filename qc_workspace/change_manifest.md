@@ -878,3 +878,21 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Shared/City/property_claim_0202.pdf | paragraph 1, narrative of the incident [round9 minor: same wrong case-number reference as repair_invoice_0202.pdf, swept as the same defect class] | RPD Case No. 2025-1018-0037 | → | Traffic Collision Report No. TC-2025-1018 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Criminal/Complaint_Keeler.pdf | page 7, DA signature block [round10 P1: filing is dated 11/14/2025; Gascon lost re-election and left office 12/03/2024, Hochman was the actual sitting LA County DA throughout 2025 -- verified via web search] | GEORGE GASCÓN | → | NATHAN HOCHMAN |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | Section 7, Course-and-Scope Determination [round10 P1: missed in round 9's sweep of the same defect class; this paragraph names the exact records (schedule, AVL, roster, dispatch log) that establish course-and-scope and states they reconcile -- bolding it whole-cloth signposted the answer the same way paragraph 35 did before that fix] | paragraph 43 (Course-and-Scope Determination body) entirely bold | → | un-bolded |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | Section 5, Internal Presentation Target [round10 P0 Major, 3rd round on this file: this elaborate four-part justification for the filing delay is not part of A31's spec description (which only calls for stating accrual date, window date, and the bare delay election/target date -- already fully present in paragraphs 26 and 28) and reads as confident strategic reasoning that could itself supply the decisive procedural analysis. Deleted per Rule 2, keeping the spec-mandated bare statement of the delay election intact.] | paragraph: 'Rationale in support of this scheduling choice: (i)...(iv) a single, well-supported package presented under the 911.4 late-claim procedure is preferable...' | → | [paragraph deleted] |

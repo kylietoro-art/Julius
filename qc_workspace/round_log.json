@@ -564,6 +564,74 @@
       "disputes": [
         "Reyes_lien_EOB.pdf stating the Howell/Corenbaum doctrine and the $196,000 paid figure by name is not a leak: its own spec entry (A35) explicitly designs it as the trap-defeating evidence for T4 ('states the controlling paid figures that defeat A34's billed-charges trap', Includes trap: No), and this is realistic settlement-correspondence voice -- the letter never performs the actual valuation synthesis (netting the lien, present-valuing future care, confirming methodology) that T4's memo requires."
       ]
+    },
+    {
+      "round": 10,
+      "opened": "2026-09-11T17:04:09",
+      "count": 8,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 2,
+          "files": [
+            "ir_2025-1018_final.docx",
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 1,
+          "files": [
+            "reyes_life_care_plan.pdf"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 2,
+          "files": [
+            "intake_memo.docx",
+            "reyes_lien_eob.pdf",
+            "ir_2025-1018_final.docx"
+          ]
+        },
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 1,
+          "files": [
+            "dispatch_log_2025-1018.csv",
+            "ir_2025-1018_final.docx",
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 2,
+          "files": [
+            "late_claim_app.pdf"
+          ]
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "math_footing",
+        "answer_leakage",
+        "broken_reference",
+        "temporal"
+      ],
+      "disposition": {
+        "fixed": 3,
+        "expanded": 0,
+        "traps": 0,
+        "false": 2,
+        "blocked": 3
+      },
+      "note": "Two claims in this round's findings were independently verified WRONG and were NOT applied: (1) Reyes_life_care_plan.pdf's four 'weighted annual average' figures, summed with the plan's other 10 category rows, total exactly $180,000 (the canonical annual cost), and the standard level-annuity PV formula on $180,000/2.5%/36yr computes to $4,240,125 (rounds to the canonical $4,240,000) -- changing these four figures to AutoQC's suggested lower values would break WORLD_SPEC's canonical values, repeating round 5's exact mistake. (2) late_claim_app.pdf's citation to Gov. Code 912.2 for deeming the claim presented 'as of the date of the order granting leave' is the CORRECT reading of the statute -- verified the literal statutory text via multiple independent legal-database sources ('the claim shall be deemed to have been presented to the board upon the day that leave to present the claim is granted'); AutoQC's finding has the rule backwards. No changes made to either.\n\nCHRONIC escalation, 4th consecutive round with no resolution: the Trip 06 schedule-vs-collision finding (Intended Traps Are Fair) has now failed dispute (r7), a sentence-level fix (r8), and a factual log entry addition (r9). No canonical value in WORLD_SPEC covers this specific clock-time gap -- only route/block assignment is canonical for the off-book trap. Further attempts risk either fabricating an unauthorized-deviation explanation (a forbidden bridge note) or touching either the heavily cross-referenced 02:05 collision time or the uniform schedule template shared by three other trips. This needs a spec-level decision: either WORLD_SPEC declares an explicit resolution/reconciliation for this gap, or the grading criteria for this dimension needs adjustment. Recommend escalating to the world thread per Gate 9.\n\nAlso unresolved after repeated rounds (4 rounds for the MP4, 2 for the photos), both requiring fabrication I should not attempt: ACTD/Video needs an actual MP4 file (A53 spec format) and Shared/Police/scene_photos_2025-1018.pdf needs ~10-15 real embedded photographs (A51 spec) -- neither can be produced by text-editing, and I cannot edit WORLD_SPEC.xlsx myself to revise either artifact's format requirement. Both need a builder-side decision: supply real media, or revise the spec.\n\nRe-verified as false positives (unchanged from prior rounds): 2 blast_radius footing flags, 2 spec_check tie misses, leak_scan's baseline bare-citation/reconciliation hits. No files gained text this round -- all edits were deletions, formatting removal, or same-length name swaps. Two claims in this round's findings were independently verified WRONG and were NOT applied: (1) Reyes_life_care_plan.pdf's four 'weighted annual average' figures, summed with the plan's other 10 category rows, total exactly $180,000 (the canonical annual cost), and the standard level-annuity PV formula on $180,000/2.5%/36yr computes to $4,240,125 (rounds to the canonical $4,240,000) -- changing these four figures to AutoQC's suggested lower values would break WORLD_SPEC's canonical values, repeating round 5's exact mistake. (2) late_claim_app.pdf's citation to Gov. Code 912.2 for deeming the claim presented 'as of the date of the order granting leave' is the CORRECT reading of the statute -- verified the literal statutory text via multiple independent legal-database sources ('the claim shall be deemed to have been presented to the board upon the day that leave to present the claim is granted'); AutoQC's finding has the rule backwards. No changes made to either.\n\nBLOCKED, needs a spec-level/builder decision, not further file edits: (1) CHRONIC, 4th consecutive round with no resolution -- the Trip 06 schedule-vs-collision finding (Intended Traps Are Fair) has now failed dispute (r7), a sentence-level fix (r8), and a factual log entry addition (r9). No canonical value in WORLD_SPEC covers this specific clock-time gap -- only route/block assignment is canonical for the off-book trap. Further attempts risk either fabricating an unauthorized-deviation explanation (a forbidden bridge note) or touching either the heavily cross-referenced 02:05 collision time or the uniform schedule template shared by three other trips. Recommend escalating to the world thread per Gate 9. (2) 4th round on the MP4: ACTD/Video needs an actual MP4 file per A53's spec format -- cannot be produced by text-editing, and I cannot edit WORLD_SPEC.xlsx myself to revise the format requirement. (3) 2nd round on scene_photos: Shared/Police/scene_photos_2025-1018.pdf needs ~10-15 real embedded photographs per A51's spec -- same constraint. Both (2) and (3) need a builder-side decision: supply real media, or revise the spec.\n\nRe-verified as false positives (unchanged from prior rounds): 2 blast_radius footing flags, 2 spec_check tie misses, leak_scan's baseline bare-citation/reconciliation hits. No files gained text this round -- all edits were deletions, formatting removal, or same-length name swaps.",
+      "closed": "2026-09-11T17:16:04",
+      "changed": "Fixed a real-world fact error (the felony complaint named George Gascon as LA County DA in a Nov 2025 filing; Nathan Hochman had been the sitting DA since Dec 2024, verified by web search), fixed a missed instance of the bold-signposting defect from round 9's own sweep (IR_2025-1018_final.docx paragraph 43, Course-and-Scope Determination), and trimmed a four-part strategic-rationale paragraph from the intake memo that went beyond A31's spec-mandated content (the bare delay-election statement in paragraphs 26/28 already satisfies the spec).",
+      "disputes": [
+        "Reyes_lien_EOB.pdf stating Howell/the $196,000 figure is not a leak, per the same A35 spec-entry reasoning given in round 9 (Includes trap: No, explicitly designed as T4's trap-defeating evidence); nothing new in this round's restatement changes that."
+      ]
     }
   ]
 }

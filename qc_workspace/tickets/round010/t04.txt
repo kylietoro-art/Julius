@@ -1,0 +1,14 @@
+TICKET 4 of 8  |  round 10
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+ACTD/Safety/IR_2025-1018_final.docx directly bolds all of body paragraph 43: it names the Fall 2025 Sign run schedule, AVL/GPS track, duty roster, fleet dispatch log, and Keeler's bid award, then states that the Bus-to-block assignment reconciles to the roster and dispatch log. Those are the exact records that establish the operator was on the assigned route and defeat the competing off-book account, while adjacent factual body paragraphs are not bolded other than their short lead-in labels. Remove the direct bold from paragraph 43 (leaving the normal section heading) so the evidentiary synthesis remains embedded in the report rather than visually marked as the answer.
+Finding #1: Bolded course-and-scope evidence synthesis - Major
+Add to rerun

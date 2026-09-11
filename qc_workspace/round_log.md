@@ -16,6 +16,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 7 | 2026-09-10T22:07 | 10 | 7 | 6 | fixed 9, widened 2, traps 1, false 0, blocked 0 |
 | 8 | 2026-09-11T15:46 | 6 | 4 | 4 | fixed 6, widened 0, traps 0, false 0, blocked 0 |
 | 9 | 2026-09-11T16:27 | 6 | 5 | 4 | fixed 5, widened 1, traps 0, false 1, blocked 0 |
+| 10 | 2026-09-11T17:04 | 8 | 5 | 5 | fixed 3, widened 0, traps 0, false 2, blocked 3 |
 
 ## Detail
 
@@ -130,4 +131,29 @@ Note: Re-verified as false positives (unchanged from round 7, confirmed no new i
 - **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
 
 Note: scene_photos_2025-1018.pdf (minor): could not fix. A51's spec calls for '~10-15 captioned photos' but the built file is a text-only 61-entry photo log with zero embedded images. I cannot fabricate photorealistic evidence photographs of a collision scene (outside Rule 1's bounds and outside what I should attempt), and cannot edit WORLD_SPEC.xlsx myself to accept a text-only log format. This needs a builder-side decision: either the pipeline supplies real photos, or the spec is revised. Re-verified as false positives (unchanged from rounds 7-8): 2 blast_radius footing flags on ledgers with no real total-row structure, 2 spec_check tie misses that are formatting-only, and leak_scan's bare-citation/reconciliation-boilerplate hits. This round's one text-growth delta (Dispatch_log_2025-1018.csv, the new timepoint-exception entry) was verified as the only file that grew and confirmed as a factual entry, not reconciling language, via leak_scan's own reconciling-language category.
+
+### Round 10, 2026-09-11T17:04
+
+- **Builder A## codes visible in world files**: 2 finding(s)  **(REPEAT)**
+  - files named: ir_2025-1018_final.docx, onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+- **Solution or reasoning leaked into world files**: 2 finding(s)  **(REPEAT)**
+  - files named: intake_memo.docx, reyes_lien_eob.pdf, ir_2025-1018_final.docx
+- **Dates, chronology or timeline don't hold together**: 2 finding(s)  **(REPEAT)**
+  - files named: late_claim_app.pdf
+- **Totals don't foot / calculations disagree with inputs**: 1 finding(s)  **(REPEAT)**
+  - files named: reyes_life_care_plan.pdf
+- **A referenced document or value doesn't resolve**: 1 finding(s)  **(REPEAT)**
+  - files named: dispatch_log_2025-1018.csv, ir_2025-1018_final.docx, runschedule_owl512.xlsx
+
+Note: Two claims in this round's findings were independently verified WRONG and were NOT applied: (1) Reyes_life_care_plan.pdf's four 'weighted annual average' figures, summed with the plan's other 10 category rows, total exactly $180,000 (the canonical annual cost), and the standard level-annuity PV formula on $180,000/2.5%/36yr computes to $4,240,125 (rounds to the canonical $4,240,000) -- changing these four figures to AutoQC's suggested lower values would break WORLD_SPEC's canonical values, repeating round 5's exact mistake. (2) late_claim_app.pdf's citation to Gov. Code 912.2 for deeming the claim presented 'as of the date of the order granting leave' is the CORRECT reading of the statute -- verified the literal statutory text via multiple independent legal-database sources ('the claim shall be deemed to have been presented to the board upon the day that leave to present the claim is granted'); AutoQC's finding has the rule backwards. No changes made to either.
+
+CHRONIC escalation, 4th consecutive round with no resolution: the Trip 06 schedule-vs-collision finding (Intended Traps Are Fair) has now failed dispute (r7), a sentence-level fix (r8), and a factual log entry addition (r9). No canonical value in WORLD_SPEC covers this specific clock-time gap -- only route/block assignment is canonical for the off-book trap. Further attempts risk either fabricating an unauthorized-deviation explanation (a forbidden bridge note) or touching either the heavily cross-referenced 02:05 collision time or the uniform schedule template shared by three other trips. This needs a spec-level decision: either WORLD_SPEC declares an explicit resolution/reconciliation for this gap, or the grading criteria for this dimension needs adjustment. Recommend escalating to the world thread per Gate 9.
+
+Also unresolved after repeated rounds (4 rounds for the MP4, 2 for the photos), both requiring fabrication I should not attempt: ACTD/Video needs an actual MP4 file (A53 spec format) and Shared/Police/scene_photos_2025-1018.pdf needs ~10-15 real embedded photographs (A51 spec) -- neither can be produced by text-editing, and I cannot edit WORLD_SPEC.xlsx myself to revise either artifact's format requirement. Both need a builder-side decision: supply real media, or revise the spec.
+
+Re-verified as false positives (unchanged from prior rounds): 2 blast_radius footing flags, 2 spec_check tie misses, leak_scan's baseline bare-citation/reconciliation hits. No files gained text this round -- all edits were deletions, formatting removal, or same-length name swaps. Two claims in this round's findings were independently verified WRONG and were NOT applied: (1) Reyes_life_care_plan.pdf's four 'weighted annual average' figures, summed with the plan's other 10 category rows, total exactly $180,000 (the canonical annual cost), and the standard level-annuity PV formula on $180,000/2.5%/36yr computes to $4,240,125 (rounds to the canonical $4,240,000) -- changing these four figures to AutoQC's suggested lower values would break WORLD_SPEC's canonical values, repeating round 5's exact mistake. (2) late_claim_app.pdf's citation to Gov. Code 912.2 for deeming the claim presented 'as of the date of the order granting leave' is the CORRECT reading of the statute -- verified the literal statutory text via multiple independent legal-database sources ('the claim shall be deemed to have been presented to the board upon the day that leave to present the claim is granted'); AutoQC's finding has the rule backwards. No changes made to either.
+
+BLOCKED, needs a spec-level/builder decision, not further file edits: (1) CHRONIC, 4th consecutive round with no resolution -- the Trip 06 schedule-vs-collision finding (Intended Traps Are Fair) has now failed dispute (r7), a sentence-level fix (r8), and a factual log entry addition (r9). No canonical value in WORLD_SPEC covers this specific clock-time gap -- only route/block assignment is canonical for the off-book trap. Further attempts risk either fabricating an unauthorized-deviation explanation (a forbidden bridge note) or touching either the heavily cross-referenced 02:05 collision time or the uniform schedule template shared by three other trips. Recommend escalating to the world thread per Gate 9. (2) 4th round on the MP4: ACTD/Video needs an actual MP4 file per A53's spec format -- cannot be produced by text-editing, and I cannot edit WORLD_SPEC.xlsx myself to revise the format requirement. (3) 2nd round on scene_photos: Shared/Police/scene_photos_2025-1018.pdf needs ~10-15 real embedded photographs per A51's spec -- same constraint. Both (2) and (3) need a builder-side decision: supply real media, or revise the spec.
+
+Re-verified as false positives (unchanged from prior rounds): 2 blast_radius footing flags, 2 spec_check tie misses, leak_scan's baseline bare-citation/reconciliation hits. No files gained text this round -- all edits were deletions, formatting removal, or same-length name swaps.
 

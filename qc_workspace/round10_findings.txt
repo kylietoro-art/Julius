@@ -1,0 +1,45 @@
+[P1] No Broken Document References
+
+The preserved native DriveCam clip is an unresolved supporting material. `ACTD/Safety/IR_2025-1018_final.docx` lists a "DriveCam still-frame log ...; native clip retained by vendor under litigation hold, not yet retrieved," and `ACTD/Video/onboard_video_still_log.pdf` identifies the file as `4177_20251018_0130-0210_INC.mp4`, stating that the underlying MP4 is preserved and available from the custodians. The mounted inventory contains only the PDF still-frame log and no video/media file, while the selected world spec defines A53 as "MP4 (clip export) + still-frame log"; thus an explicit, material document reference does not resolve. Add the preserved MP4 or a faithful accessible clip export to `ACTD/Video`.
+Add to rerun
+
+[P1] Calculation & Fixture Accuracy
+
+Shared/Settlement/Reyes_life_care_plan.pdf contains multiple erroneous weighted annual averages. Physical therapy is stated as $8,150 despite its listed annual costs producing $7,700 over 36 years; occupational therapy, neurocognitive rehabilitation, and psychotherapy similarly calculate to about $2,458, $4,573, and $7,967, rather than $4,845, $7,320, and $8,275. Those four overstatements flow directly into the $180,000 annual total, $6,480,000 undiscounted total, and $4,240,000 present value; on the document's own inputs, the corresponding figures are approximately $174,108 annually, $6,267,888 undiscounted, and $4.101M at 2.5%. These are material computable errors in a damages fixture and must be corrected at the source, then the aggregate and PV tables regenerated.
+Finding #1: Life-care plan weighted averages and dependent damages totals are overstated - Major
+Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — No Solution Or Reasoning Leakage. Legal/Reyes/intake_memo.docx remains a worker-readable internal case-strategy memorandum that computes the April 20 deadline and directs counsel to let it lapse in favor of a Section 911.4 late-claim strategy; this supplies the decisive procedural reasoning rather than evidence requiring synthesis. Separately, Shared/Settlement/Reyes_lien_EOB.pdf labels $196,000 HOWELL-RECOVERABLE and expressly says it, not $2.84 million, is the recoverable past-medical trial measure. No in-world amendment rescinds either statement, so both remain reachable shortcuts; remove/redact their legal conclusions and strategic recommendations while retaining underlying factual and numerical records.
+Finding #1: Reyes intake memo exposes the late-claim reasoning and strategy - Major
+Finding #2: Settlement lien/EOB letter states the Howell past-medical answer - Major
+Add to rerun
+
+[P1] No Signposting of Load-Bearing Facts
+
+ACTD/Safety/IR_2025-1018_final.docx directly bolds all of body paragraph 43: it names the Fall 2025 Sign run schedule, AVL/GPS track, duty roster, fleet dispatch log, and Keeler's bid award, then states that the Bus-to-block assignment reconciles to the roster and dispatch log. Those are the exact records that establish the operator was on the assigned route and defeat the competing off-book account, while adjacent factual body paragraphs are not bolded other than their short lead-in labels. Remove the direct bold from paragraph 43 (leaving the normal section heading) so the evidentiary synthesis remains embedded in the report rather than visually marked as the answer.
+Finding #1: Bolded course-and-scope evidence synthesis - Major
+Add to rerun
+
+[P1] Intended Traps Are Fair
+
+The current world still contains an unresolvable Trip 06 control-point contradiction. RunSchedule_Owl512.xlsx is marked the official schedule of record and schedules Trip 06 from Poplar at 02:04 to S. Main/Third at 02:31, whereas IR_2025-1018_final.docx places the collision at S. Main/Third at 02:05 and says the bus departed Poplar at 02:04; the AVL telemetry also records the bus at the collision location at 02:05. Dispatch_log_2025-1018.csv labels this a timepoint exception yet says there is "no deviation authorization on file," and the Owl rules require deviations to be authorized and logged. No correction, amendment, reassignment, or matching declared-trap entry resolves those mutually inconsistent timing facts, so the trap cannot be fairly disambiguated from in-world evidence.
+Finding #1: Trip 06 schedule conflicts with the collision's time and location - Major
+Add to rerun
+
+Minor issues:
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+`task_fs/filesystem/Shared/Police/scene_photos_2025-1018.pdf` fails the Document Authenticity Texture And Markings clause. The world-spec row calls A51 a "Captioned scene-photograph set" and says it contains "~10–15 captioned photos," while the current eight-page PDF has zero embedded images and its rendered page 2 is only a boxed text list for P-004 through P-013. A police evidence artifact that repeatedly describes what each alleged image depicts but supplies no photographs has obviously missing document texture for its claimed class; populate the photo panels with the corresponding scene/recovered-parts images, or revise both the artifact and spec into a text-only evidence log.
+Add to rerun
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The criminal case uses the real Los Angeles County District Attorney's Office but names George Gascón as its District Attorney in a filing dated 11/14/2025. Gascón had left the office in December 2024; Nathan Hochman was the Los Angeles County DA during all of 2025. This is a concrete false attribution of a real public institution and official in a core criminal-court artifact, reducing the reliability of the otherwise California-grounded litigation world; replace Gascón with Hochman in the complaint/abstract source.
+Add to rerun
+
+[P1] External Citations Resolve To Real Content
+
+`Legal/Reyes/late_claim_app.pdf` expressly seeks an order that would deem the proposed claim presented "as of the date of the order granting leave, in accordance with Government Code § 912.2." Section 912.2 instead deems the claim presented on the date the late-claim application was presented once the application is granted, so this cited statute does not support the document's requested legal effect. Because the presentment date can affect the statutory claims process, the incorrect attribution is material and should be corrected to the application-presented date.

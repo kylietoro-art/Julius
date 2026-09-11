@@ -1,0 +1,13 @@
+TICKET 6 of 8  |  round 10
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+`task_fs/filesystem/Shared/Police/scene_photos_2025-1018.pdf` fails the Document Authenticity Texture And Markings clause. The world-spec row calls A51 a "Captioned scene-photograph set" and says it contains "~10–15 captioned photos," while the current eight-page PDF has zero embedded images and its rendered page 2 is only a boxed text list for P-004 through P-013. A police evidence artifact that repeatedly describes what each alleged image depicts but supplies no photographs has obviously missing document texture for its claimed class; populate the photo panels with the corresponding scene/recovered-parts images, or revise both the artifact and spec into a text-only evidence log.
+Add to rerun

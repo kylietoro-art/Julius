@@ -1,0 +1,16 @@
+TICKET 5 of 8  |  round 10
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+The current world still contains an unresolvable Trip 06 control-point contradiction. RunSchedule_Owl512.xlsx is marked the official schedule of record and schedules Trip 06 from Poplar at 02:04 to S. Main/Third at 02:31, whereas IR_2025-1018_final.docx places the collision at S. Main/Third at 02:05 and says the bus departed Poplar at 02:04; the AVL telemetry also records the bus at the collision location at 02:05. Dispatch_log_2025-1018.csv labels this a timepoint exception yet says there is "no deviation authorization on file," and the Owl rules require deviations to be authorized and logged. No correction, amendment, reassignment, or matching declared-trap entry resolves those mutually inconsistent timing facts, so the trap cannot be fairly disambiguated from in-world evidence.
+Finding #1: Trip 06 schedule conflicts with the collision's time and location - Major
+Add to rerun
+
+Minor issues:
