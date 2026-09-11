@@ -830,3 +830,51 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Safety/IR_2025-1018_final.docx | paragraph 27, AVL/GPS Track section [round8 P1 Major (partial fix, partial dispute): the report falsely asserted the 02:05 AVL position was temporally coincident with the schedule's published control-point TIME (02:31 per RunSchedule_Owl512.xlsx) -- an outright internal factual error, not just a cross-document gap. Changed the claim from temporal ('coincident with...timepoint') to spatial ('at...location'), which is true and removes the false statement without touching the schedule itself or adding reconciling commentary] | at 02:05, coincident with the published S. Main / Third control-point timepoint for the Trip 05/06 turnaround pair. | → | at 02:05, at the published S. Main / Third control-point location for the Trip 05/06 turnaround pair. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Video/onboard_video_still_log.pdf | cover page, Vendor System Metadata table [round9 P1: an exact byte size and a computed SHA-256 hash are proof-of-possession markers that only exist once a file has actually been downloaded/exported; this contradicted the world's established 'preserved at vendor, not yet retrieved' framing (production_tracker.csv PT-19, IR bullet fixed round 8) and made the missing MP4's absence more conspicuous per AutoQC's finding] | Native Clip Size: 3,412,884,116 bytes; Native Clip SHA-256: 5b5b52667953dc1379b324d48454644350bb458d62ab721cdf7c8b05b72c5f23 | → | Native Clip Size: Not yet retrieved from vendor; Native Clip SHA-256: Not yet computed - native clip not yet retrieved |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | Section 4, Government Claims Act Posture [round9 P0 Major, still failing after round 8's fix: this paragraph selected/concluded that the (b)(4) incapacity ground is available given the client's facts and listed supporting materials being assembled for it -- this is not part of A31's spec description (which only calls for noting the accrual/window dates and the weak internal delay rationale) and performs theory-selection reasoning T3 requires the solver to do. Deleted per Rule 2; the internal-presentation-target paragraph (unchanged) already carries the spec-mandated weak-delay-reason trap content.] | paragraph: 'Incapacity ground under 911.6(b)(4)...Supporting materials in hand or in progress: (a)...(d) a treating-physician capacity letter...' | → | [paragraph deleted] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Route 512 Owl Block sheet, rows 32-35 (deleted; Assignment Sign-Off shifted up to fill the gap) [round9 P1 No Signposting of Load-Bearing Facts: this callout artificially foregrounded exactly the course-and-scope evidence relevant to the off-book trap by isolating and labeling it 'primary reference' outside the ordinary operational schedule, instead of leaving it embedded unremarkably in the roster like every other trip's timepoints] | separate 'Key Timepoint — S. Main / Third' section (rows 32-35) labeling Trip 06 'primary reference' and spelling out the 02:04/02:31 figures again | → | [section deleted -- fully redundant with the Trip 06 row already in the main trip roster] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | Root-Cause Analysis section, paragraphs 35/38/40 [round9 P1 No Signposting of Load-Bearing Facts: these were the only Root-Cause subsections with visual emphasis on their dispositive content, breaking the section's own consistent bold-label-only pattern and telegraphing which facts the reader should weight] | para 35 entirely bold (label+body, incl. 0.14% BAC); para 38 'EFFECT' in caps; para 40 'preventable' bolded mid-sentence | → | para 35 body un-bolded (label only, matching paras 36-39's pattern); 'effect' lower-case; 'preventable' un-bolded |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | Section 4 (window date) and Section 5 (internal target date) [round9 P1 No Signposting of Load-Bearing Facts: isolated bold on these two dates visually flagged exactly the deadline/target gap the task requires the solver to notice unaided] | 'Monday, 04/20/2026' and '05/01/2026' bolded mid-sentence, isolated from surrounding unbolded prose | → | both un-bolded to match surrounding text |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/Dispatch_log_2025-1018.csv | row inserted between the 02:04 and 02:06 entries [round9 P1 Major, 3rd consecutive round on this finding (CHRONIC): owl_service_rules.docx Rule 404 requires the dispatch run log to record timepoint exceptions, and Rule 304 makes an unauthorized deviation a rules violation -- but no such entry existed anywhere, leaving the 02:05-vs-02:31 gap silently unresolved. Added one factual, format-matching checkpoint entry (not a reconciling/bridge sentence -- it documents the raw fact per Rule 404's own pre-existing logging category, explicitly notes no authorization is on file, and does not explain away or resolve the significance of the gap). RunSchedule_Owl512.xlsx's main roster and AVL_GPS_track_2025-1018.csv were not touched.] | [no entry -- gap between 02:04 Poplar departure and 02:06 silent-alarm entries] | → | 10/18/2025 02:05,checkpoint,...,Trip 06 NB timepoint S. Main/Third -- AVL position logged 02:05 vs. 02:31 board time; timepoint exception, no deviation authorization on file. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/City/repair_invoice_0202.pdf | Referenced Incident section [round9 minor: the actual police report's Local Report Number is TC-2025-1018 (used consistently elsewhere in the corpus); RPD Case No. 2025-1018-0037 does not match any real record and would misdirect a reader trying to retrieve the incorporated report] | RPD Case No. 2025-1018-0037 | → | Traffic Collision Report No. TC-2025-1018 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/City/property_claim_0202.pdf | paragraph 1, narrative of the incident [round9 minor: same wrong case-number reference as repair_invoice_0202.pdf, swept as the same defect class] | RPD Case No. 2025-1018-0037 | → | Traffic Collision Report No. TC-2025-1018 |

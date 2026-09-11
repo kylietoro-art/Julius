@@ -1,0 +1,16 @@
+TICKET 4 of 6  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+The previously flagged Trip 06 issue is still present. RunSchedule_Owl512.xlsx identifies itself as the official schedule of record and schedules Trip 06 from Poplar at 02:04 to S. Main/Third at 02:31; its notes say any mid-shift reassignment would be logged, and none was. Yet IR_2025-1018_final.docx states that Trip 06 departed Poplar at 02:04 and that the last AVL position placed the bus at the published S. Main/Third control-point location at 02:05; the police report and dispatch log likewise place the collision there at 02:05, with dispatch saying it was still en route to the 02:31 timepoint. The operating rules require any route or schedule deviation to be authorized and logged, and no such entry, schedule correction, or facts-and-traps registration appears, so the conflict is not resolvable from in-world evidence.
+Finding #1: Trip 06 control-point time conflicts with the collision - Major
+Add to rerun
+
+Minor issues:

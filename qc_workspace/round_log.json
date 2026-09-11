@@ -502,6 +502,68 @@
       "disputes": [
         "The underlying Trip 06 schedule-vs-collision timing gap itself (02:31 scheduled vs. 02:05 actual) is not a defect: T5's course-and-scope trap turns on route/block assignment, not clock punctuality, and the schedule's leg timing matches every other trip's uniform template. Only the incident report's specific false claim of temporal coincidence was fixed; the schedule and AVL data were not touched."
       ]
+    },
+    {
+      "round": 9,
+      "opened": "2026-09-11T16:27:39",
+      "count": 6,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 1,
+          "files": [
+            "ir_2025-1018_final.docx",
+            "onboard_video_still_log.pdf"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 2,
+          "files": [
+            "intake_memo.docx",
+            "reyes_lien_eob.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": [
+            "ir_2025-1018_final.docx",
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "realism_voice": {
+          "label": "Voice, tone, texture or document authenticity reads machine-made",
+          "n": 1,
+          "files": [
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "answer_leakage",
+        "other",
+        "entity_inconsistency"
+      ],
+      "disposition": {
+        "fixed": 5,
+        "expanded": 1,
+        "traps": 0,
+        "false": 1,
+        "blocked": 0
+      },
+      "note": "scene_photos_2025-1018.pdf (minor): could not fix. A51's spec calls for '~10-15 captioned photos' but the built file is a text-only 61-entry photo log with zero embedded images. I cannot fabricate photorealistic evidence photographs of a collision scene (outside Rule 1's bounds and outside what I should attempt), and cannot edit WORLD_SPEC.xlsx myself to accept a text-only log format. This needs a builder-side decision: either the pipeline supplies real photos, or the spec is revised. Re-verified as false positives (unchanged from rounds 7-8): 2 blast_radius footing flags on ledgers with no real total-row structure, 2 spec_check tie misses that are formatting-only, and leak_scan's bare-citation/reconciliation-boilerplate hits. This round's one text-growth delta (Dispatch_log_2025-1018.csv, the new timepoint-exception entry) was verified as the only file that grew and confirmed as a factual entry, not reconciling language, via leak_scan's own reconciling-language category.",
+      "closed": "2026-09-11T16:52:23",
+      "changed": "Fixed the still-frame log's own overclaim of the missing native MP4 (an exact byte size and computed SHA-256 hash implied actual possession of a file that has never been retrieved), deleted the intake memo's remaining (b)(4)-theory-selection paragraph that survived round 8's fix, removed a redundant callout section in the run schedule and de-emphasized bolded/all-caps dispositive facts in the incident report and intake memo that were signposting the answer-bearing content, and fixed the same wrong RPD case-number citation in two City documents. Also, after three consecutive rounds on the Trip 06 schedule-vs-collision finding, found and acted on new evidence: owl_service_rules.docx Rule 404 requires the dispatch run log to record timepoint exceptions and Rule 304 makes an unauthorized deviation a violation, but no such entry existed anywhere. Added one factual, format-matching dispatch-log entry documenting the exception and the absence of authorization, without touching the schedule's main roster or the AVL data.",
+      "disputes": [
+        "Reyes_lien_EOB.pdf stating the Howell/Corenbaum doctrine and the $196,000 paid figure by name is not a leak: its own spec entry (A35) explicitly designs it as the trap-defeating evidence for T4 ('states the controlling paid figures that defeat A34's billed-charges trap', Includes trap: No), and this is realistic settlement-correspondence voice -- the letter never performs the actual valuation synthesis (netting the lien, present-valuing future care, confirming methodology) that T4's memo requires."
+      ]
     }
   ]
 }

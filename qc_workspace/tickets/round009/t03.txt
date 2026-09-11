@@ -1,0 +1,13 @@
+TICKET 3 of 6  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The schedule workbook artificially foregrounds the answer-bearing course-and-scope evidence: after the complete trip roster it adds a separate highlighted block titled "Key Timepoint — S. Main / Third (Downtown Rivergate)" and identifies Trip 06 as the "primary reference," then spells out the 02:04 departure and 02:31 control point. That isolates the precise facts needed to defeat the off-book issue instead of leaving them embedded in the operational schedule. Separately, the final incident report and internal intake memo bold isolated dispositive content inside otherwise unbolded narrative, including the certified 0.14% BAC, the conclusion that reduced lighting was an "EFFECT ... not a cause," and the statutory deadline "Monday, 04/20/2026"; this visual emphasis tells the reader which outcome-bearing facts to use.
+Add to rerun

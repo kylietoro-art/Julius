@@ -1,0 +1,34 @@
+[P1] No Broken Document References
+
+The current final incident report, ACTD/Safety/IR_2025-1018_final.docx, lists a "DriveCam still-frame log (forward-facing and cabin-facing) …; native clip retained by vendor under litigation hold, not yet retrieved," and states that the forward-facing DriveCam video and cabin-facing video have been preserved. The mounted filesystem contains ACTD/Video/onboard_video_still_log.pdf but no MP4; that log identifies the missing native file as "4177_20251018_0130-0210_INC.mp4" and states that its still frames were derived from the preserved MP4. The world-spec's A53 row likewise requires "MP4 (clip export) + still-frame log," so this is an explicit unresolved document/material reference rather than a vague mention.
+Finding #1: Missing preserved native DriveCam clip - Major
+Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning Leakage clause fails. `task_fs/filesystem/Legal/Reyes/intake_memo.docx` is a worker-readable "INTERNAL INTAKE / CASE-STRATEGY MEMORANDUM" that calculates the April 20 deadline, says no timely claim was presented, selects §911.6(b)(4), and explains why the firm would pursue a late-claim route; these are the decisive steps T3 requires the worker to synthesize. The previously flagged intake memo is therefore still present, not fixed. Independently, `task_fs/filesystem/Shared/Settlement/Reyes_lien_EOB.pdf` directly states the Howell/Corenbaum answer to T4's central billed-versus-paid fork, including the legally recoverable $196,000 figure. Remove or redact the legal conclusions and strategy in these documents while retaining the underlying factual records and calculations; no separate environment/filesystem answer artifact was found.
+Finding #1: T3 strategy memo discloses the late-claim analysis - Major
+Finding #2: T4 lien letter directly states the Howell damages conclusion - Major
+Add to rerun
+
+[P1] No Signposting of Load-Bearing Facts
+
+The schedule workbook artificially foregrounds the answer-bearing course-and-scope evidence: after the complete trip roster it adds a separate highlighted block titled "Key Timepoint — S. Main / Third (Downtown Rivergate)" and identifies Trip 06 as the "primary reference," then spells out the 02:04 departure and 02:31 control point. That isolates the precise facts needed to defeat the off-book issue instead of leaving them embedded in the operational schedule. Separately, the final incident report and internal intake memo bold isolated dispositive content inside otherwise unbolded narrative, including the certified 0.14% BAC, the conclusion that reduced lighting was an "EFFECT ... not a cause," and the statutory deadline "Monday, 04/20/2026"; this visual emphasis tells the reader which outcome-bearing facts to use.
+Add to rerun
+
+[P1] Intended Traps Are Fair
+
+The previously flagged Trip 06 issue is still present. RunSchedule_Owl512.xlsx identifies itself as the official schedule of record and schedules Trip 06 from Poplar at 02:04 to S. Main/Third at 02:31; its notes say any mid-shift reassignment would be logged, and none was. Yet IR_2025-1018_final.docx states that Trip 06 departed Poplar at 02:04 and that the last AVL position placed the bus at the published S. Main/Third control-point location at 02:05; the police report and dispatch log likewise place the collision there at 02:05, with dispatch saying it was still en route to the 02:31 timepoint. The operating rules require any route or schedule deviation to be authorized and logged, and no such entry, schedule correction, or facts-and-traps registration appears, so the conflict is not resolvable from in-world evidence.
+Finding #1: Trip 06 control-point time conflicts with the collision - Major
+Add to rerun
+
+Minor issues:
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+`task_fs/filesystem/Shared/Police/scene_photos_2025-1018.pdf` fails the Document Authenticity Texture And Markings clause. The world-spec register describes it as a "Captioned scene-photograph set," while inspection established that all eight pages have zero embedded images; its page 2 render is only a caption table with empty image areas. That makes an artifact claiming to document the damaged street-light, debris, and bus damage look like an unpopulated synthetic evidence packet rather than a plausible police photo set. Add the corresponding scene/recovered-parts photographs to the designated panels (or revise the artifact and spec to a text-only evidence log if photographs are not intended).
+Add to rerun
+
+[P1] Consistent Naming And Defined Terms
+
+The City property-damage claim misnames the police record it incorporates by reference: it cites "RPD Case No. 2025-1018-0037," whereas the actual Rivergate Police traffic-collision report identifies its Local Report Number as "TC-2025-1018" and uses that label throughout. The same TC-2025-1018 identifier is repeated in the criminal docket and ACTD's production tracker, so this is not a harmless shorthand or an established alternate name. It creates real confusion for a worker trying to retrieve the incorporated report; replace the erroneous RPD case reference in the City claim with "Traffic Collision Report No. TC-2025-1018."

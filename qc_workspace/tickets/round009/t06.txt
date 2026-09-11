@@ -1,0 +1,12 @@
+TICKET 6 of 6  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Consistent Naming And Defined Terms
+
+The City property-damage claim misnames the police record it incorporates by reference: it cites "RPD Case No. 2025-1018-0037," whereas the actual Rivergate Police traffic-collision report identifies its Local Report Number as "TC-2025-1018" and uses that label throughout. The same TC-2025-1018 identifier is repeated in the criminal docket and ACTD's production tracker, so this is not a harmless shorthand or an established alternate name. It creates real confusion for a worker trying to retrieve the incorporated report; replace the erroneous RPD case reference in the City claim with "Traffic Collision Report No. TC-2025-1018."

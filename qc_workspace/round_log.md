@@ -15,6 +15,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 6 | 2026-09-10T21:34 | 7 | 4 | 4 | fixed 7, widened 0, traps 0, false 0, blocked 0 |
 | 7 | 2026-09-10T22:07 | 10 | 7 | 6 | fixed 9, widened 2, traps 1, false 0, blocked 0 |
 | 8 | 2026-09-11T15:46 | 6 | 4 | 4 | fixed 6, widened 0, traps 0, false 0, blocked 0 |
+| 9 | 2026-09-11T16:27 | 6 | 5 | 4 | fixed 5, widened 1, traps 0, false 1, blocked 0 |
 
 ## Detail
 
@@ -115,4 +116,18 @@ Note: Also verified as false positives (no action needed): 2 blast_radius footin
 - **Totals don't foot / calculations disagree with inputs**: 1 finding(s)  **(REPEAT)**
 
 Note: Re-verified as false positives (unchanged from round 7, confirmed no new instances from this round's edits): 2 blast_radius footing flags on ledgers with no real total-row structure, 2 spec_check tie misses that are formatting-only, leak_scan's bare-citation and reconciliation-boilerplate hits, and inventory_check's 9 registered-artifact/unregistered-file pairs. Both this round's text-growth deltas (post_accident_testing_policy.docx +238, IR_2025-1018_final.docx +57) were verified character-for-character against the logged edits.
+
+### Round 9, 2026-09-11T16:27
+
+- **Solution or reasoning leaked into world files**: 2 finding(s)  **(REPEAT)**
+  - files named: intake_memo.docx, reyes_lien_eob.pdf
+- **Builder A## codes visible in world files**: 1 finding(s)  **(REPEAT)**
+  - files named: ir_2025-1018_final.docx, onboard_video_still_log.pdf
+- **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
+  - files named: ir_2025-1018_final.docx, runschedule_owl512.xlsx
+- **Voice, tone, texture or document authenticity reads machine-made**: 1 finding(s)
+  - files named: scene_photos_2025-1018.pdf
+- **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
+
+Note: scene_photos_2025-1018.pdf (minor): could not fix. A51's spec calls for '~10-15 captioned photos' but the built file is a text-only 61-entry photo log with zero embedded images. I cannot fabricate photorealistic evidence photographs of a collision scene (outside Rule 1's bounds and outside what I should attempt), and cannot edit WORLD_SPEC.xlsx myself to accept a text-only log format. This needs a builder-side decision: either the pipeline supplies real photos, or the spec is revised. Re-verified as false positives (unchanged from rounds 7-8): 2 blast_radius footing flags on ledgers with no real total-row structure, 2 spec_check tie misses that are formatting-only, and leak_scan's bare-citation/reconciliation-boilerplate hits. This round's one text-growth delta (Dispatch_log_2025-1018.csv, the new timepoint-exception entry) was verified as the only file that grew and confirmed as a factual entry, not reconciling language, via leak_scan's own reconciling-language category.
 

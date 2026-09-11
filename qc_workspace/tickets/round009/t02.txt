@@ -1,0 +1,15 @@
+TICKET 2 of 6  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning Leakage clause fails. `task_fs/filesystem/Legal/Reyes/intake_memo.docx` is a worker-readable "INTERNAL INTAKE / CASE-STRATEGY MEMORANDUM" that calculates the April 20 deadline, says no timely claim was presented, selects §911.6(b)(4), and explains why the firm would pursue a late-claim route; these are the decisive steps T3 requires the worker to synthesize. The previously flagged intake memo is therefore still present, not fixed. Independently, `task_fs/filesystem/Shared/Settlement/Reyes_lien_EOB.pdf` directly states the Howell/Corenbaum answer to T4's central billed-versus-paid fork, including the legally recoverable $196,000 figure. Remove or redact the legal conclusions and strategy in these documents while retaining the underlying factual records and calculations; no separate environment/filesystem answer artifact was found.
+Finding #1: T3 strategy memo discloses the late-claim analysis - Major
+Finding #2: T4 lien letter directly states the Howell damages conclusion - Major
+Add to rerun

@@ -1,0 +1,14 @@
+TICKET 1 of 6  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+The current final incident report, ACTD/Safety/IR_2025-1018_final.docx, lists a "DriveCam still-frame log (forward-facing and cabin-facing) …; native clip retained by vendor under litigation hold, not yet retrieved," and states that the forward-facing DriveCam video and cabin-facing video have been preserved. The mounted filesystem contains ACTD/Video/onboard_video_still_log.pdf but no MP4; that log identifies the missing native file as "4177_20251018_0130-0210_INC.mp4" and states that its still frames were derived from the preserved MP4. The world-spec's A53 row likewise requires "MP4 (clip export) + still-frame log," so this is an explicit unresolved document/material reference rather than a vague mention.
+Finding #1: Missing preserved native DriveCam clip - Major
+Add to rerun
