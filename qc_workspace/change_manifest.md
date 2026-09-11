@@ -932,3 +932,9 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Claims/reserve_memo.docx | paragraph 31 [r12 t07: sweep missed this instance in r11 -- same defect class, same fix. Corpus-wide sweep for B5651D confirms this was the only remaining instance.] | $3,250,000 (paragraph 31, section 4 Reserve) in B5651D (4.34:1 on white) | → | $3,250,000 in 874B15 (6.89:1 on white), matching the r11 fix already applied to the two table cells |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | paragraphs 13-14 [r13 minor t09 finding #2 (No Signposting of Load-Bearing Facts): bold singled out the answer-bearing BAC and reserve figures. Checked siblings -- no other dollar figure in this document is bolded, confirming this was an outlier, not a document-wide style.] | '0.14 g/dL (0.14% w/v)' (para 13), '$250,000', '$3,250,000', 'supersedes' (para 14) -- selectively bolded while no other dollar figures anywhere else in the memo ($2.84M, $8M SIR, $25M pool, etc.) are bold | → | same text, bold removed |

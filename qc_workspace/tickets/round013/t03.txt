@@ -1,0 +1,14 @@
+TICKET 3 of 10  |  round 13
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+Shared/Settlement/Reyes_life_care_plan.pdf contains the wrong annual-cost fixture and therefore the wrong derived future-medical totals. On page 11 it states a $173,651 annual average and $6,251,436 undiscounted total, and on page 14 it states a $4,091,000 present value. The Canonical Values ledger instead requires A36 to carry $180,000 annual cost, $6,480,000 undiscounted, and $4,240,000 present value; replacing the annual fixture and recomputing the displayed total, PV, and sensitivity table would resolve the defect.
+Agree / Dispute / Comment
+Add to rerun

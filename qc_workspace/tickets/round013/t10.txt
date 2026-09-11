@@ -1,0 +1,12 @@
+TICKET 10 of 10  |  round 13
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Text Legibility And Contrast
+
+Shared/Press/news_collision.html fails the text-legibility criterion because its visible footer copyright is styled #888 on the white .container background, producing only 3.54:1 contrast at 12px. The same page's visible publication timestamp is #777 on white (4.48:1), a normal-text near-miss. Darken those two muted text colors (especially the copyright) to compliant values; the previously flagged reserve_memo.docx amount no longer fails because it now uses 874B15, not B5651D.

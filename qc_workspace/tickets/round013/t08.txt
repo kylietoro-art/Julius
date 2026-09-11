@@ -1,0 +1,14 @@
+TICKET 8 of 10  |  round 13
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Document Authenticity Texture And Markings fails for `task_fs/filesystem/Shared/Police/scene_photos_2025-1018.pdf`. The current World Spec describes A51 as a "Captioned scene-photograph set" with "Size: ~10-15 captioned photos," but the PDF is eight pages of text entries such as "P-001 Description: General establishing view" rather than photographs; `pdfimages -list` returned no image rows. A formal photo-log header and detailed captions cannot substitute for the actual scene/recovered-parts photographs, so the document does not look like the evidence-photo artifact it claims to be; add the corresponding captioned images or revise the specification and filename to a text-only evidence log. Previously flagged A51: still present after direct current-file review.
+Agree / Dispute / Comment
+Add to rerun

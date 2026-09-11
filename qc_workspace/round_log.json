@@ -742,6 +742,62 @@
       "disputes": [
         "intake_memo.docx, late_claim_app.pdf, and Reyes_lien_EOB.pdf ('No Reachable Shortcut'): all three are either a registered trap (A31, A33: Includes trap Yes) or an artifact whose spec-defined job is to state the figures that defeat a different trap (A35). No wording change closes this; r11's real trim of A35 already proved that. Grader-level blind spot to the trap manifest -- escalate separately from the WORLD_SPEC EPM channel."
       ]
+    },
+    {
+      "round": 13,
+      "opened": "2026-09-11T20:13:48",
+      "count": 10,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 6,
+          "files": [
+            "reyes_life_care_plan.pdf",
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 2,
+          "files": [
+            "intake_memo.docx",
+            "late_claim_app.pdf",
+            "reyes_lien_eob.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": []
+        },
+        "pii_copyright": {
+          "label": "Real PII or copyrighted material in world files",
+          "n": 1,
+          "files": [
+            "news_collision.html",
+            "reserve_memo.docx"
+          ]
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "answer_leakage",
+        "other"
+      ],
+      "disposition": {
+        "fixed": 2,
+        "expanded": 0,
+        "traps": 0,
+        "false": 6,
+        "blocked": 2
+      },
+      "note": "Blocked on named parties, unchanged: MP4 (A53) and scene photos (A51) still need real media or a spec format revision from the builder side.",
+      "closed": "2026-09-11T20:17:54",
+      "changed": "Fixed news_collision.html's two low-contrast grays (#777/#888 -> #666, both now well above 4.5:1). Fixed reserve_memo.docx's outlier bold formatting on the BAC value and the reserve figures/supersedes -- no other dollar figure in that memo is bold, confirming these were signposting, not house style.",
+      "disputes": [
+        "life-care-plan vs. WORLD_SPEC canonical figures (4 separate dimension names this round: Numerical Values Constraints, Calculation & Fixture Accuracy, Intended Traps Are Fair, Coherence Flag Ratio) -- domain lead ruling 2026-09-11: spec will not be updated, dispute outright going forward. intake_memo.docx / late_claim_app.pdf / Reyes_lien_EOB.pdf ('No Reachable Shortcut') -- confirmed registered traps or spec-mandated trap-defeating content, established r11-r12, no new trim attempted. IR_2025-1018_final.docx / RunSchedule_Owl512.xlsx 'Report of Record' / 'Official schedule of record' labels -- checked formatting, none of it is emphasized, ordinary document-status language. Docuseal/Wiki.js app state missing -- out of scope for filesystem remediation, a separate seeding pipeline."
+      ]
     }
   ]
 }

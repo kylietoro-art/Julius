@@ -1,0 +1,15 @@
+TICKET 6 of 10  |  round 13
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+The current `Shared/Settlement/Reyes_life_care_plan.pdf` directly conflicts with the canonical workbook's values for the very artifact designated A36. It says the 36-year annual cost is $173,651, the undiscounted total is $6,251,436, and the 2.5% present value is $4,091,000; Canonical Values rows 13 and 24-26 instead require $180,000, $6,480,000, and $4,240,000. The figures concern the world's primary future-medical valuation, are not a registered intentional conflict, and have no in-world reconciliation, so they are a material confirmed cross-file inconsistency.
+Finding #1 Canonical life-care valuation contradicts its designated source artifact Major
+Agree / Dispute / Comment
+Add to rerun

@@ -1,0 +1,17 @@
+TICKET 4 of 10  |  round 13
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The prior late-claim issue remains in the current subject. `Legal/Reyes/late_claim_app.pdf` calculates the presentation deadline, applies the one-year limit and incapacity theory, and states that leave should be granted; `Legal/Reyes/intake_memo.docx` also directs the firm to wait until after the window closes for a late-claim track. These records hand a worker the procedural analysis and proposed result instead of requiring synthesis. Separately, `Shared/Settlement/Reyes_lien_EOB.pdf` states the Howell write-off consequence and provides the consolidated paid/accepted total, directly supplying the central past-medical conclusion. No grading scripts, answer keys, goldens, or hidden answer-like files were found within the 62-file solver filesystem.
+Finding #1 Late-claim application states the procedural analysis and requested result Major
+Finding #2 Intake memo directs the late-claim strategy Major
+Finding #3 EOB letter supplies the Howell damages conclusion Major
+Agree / Dispute / Comment
+Add to rerun

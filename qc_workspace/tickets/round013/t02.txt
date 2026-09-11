@@ -1,0 +1,14 @@
+TICKET 2 of 10  |  round 13
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+The required onboard-video evidence class is unresolved. The world-spec's A53 defines "Onboard Video / Camera System Footage" as "MP4 (clip export) + still-frame log," but the mounted ACTD/Video directory contains only `onboard_video_still_log.pdf` and no media file. That log names native file `4177_20251018_0130-0210_INC.mp4` and expressly says it was not yet retrieved; the final incident report and production tracker repeat that its native clip remains with the vendor. Add the preserved native MP4, or an accessible faithful export with its relevant channels and metadata, to resolve the broken document-class reference.
+Agree / Dispute / Comment
+Add to rerun

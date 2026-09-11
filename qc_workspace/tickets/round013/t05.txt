@@ -1,0 +1,15 @@
+TICKET 5 of 10  |  round 13
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+The declared A36 future-medical trap cannot be resolved to the canonical amount from in-world evidence. The World Spec expressly says A36 is authoritative for $6.48M undiscounted and $4.24M present value, while the actual A36 PDF derives and adopts materially different figures from a different annual cost. No correction, amendment, or competing record identifies which amount should control, so a solver faces incompatible answer values rather than a fair distractor.
+Finding #1 A36 life-care values conflict with the World Spec's canonical trap values Major
+Agree / Dispute / Comment
+Add to rerun

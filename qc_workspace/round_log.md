@@ -19,6 +19,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 10 | 2026-09-11T17:04 | 8 | 5 | 5 | fixed 3, widened 0, traps 0, false 2, blocked 3 |
 | 11 | 2026-09-11T17:58 | 6 | 5 | 5 | _open_ |
 | 12 | 2026-09-11T19:50 | 7 | 4 | 4 | fixed 2, widened 0, traps 0, false 1, blocked 4 |
+| 13 | 2026-09-11T20:13 | 10 | 4 | 3 | fixed 2, widened 0, traps 0, false 6, blocked 2 |
 
 ## Detail
 
@@ -183,4 +184,16 @@ Re-verified as false positives (unchanged from prior rounds): 2 blast_radius foo
   - files named: reserve_memo.docx
 
 Note: Blocked on named parties: Trip 06 schedule-vs-collision gap and the life-care-plan/spec figure mismatch are both pending the domain lead's WORLD_SPEC.xlsx update (6-cell table sent r11); MP4 (A53) and scene photos (A51) are pending a builder decision on real media vs. spec-format revision.
+
+### Round 13, 2026-09-11T20:13
+
+- **Builder A## codes visible in world files**: 6 finding(s)  **(REPEAT)**
+  - files named: reyes_life_care_plan.pdf, onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+- **Solution or reasoning leaked into world files**: 2 finding(s)  **(REPEAT)**
+  - files named: intake_memo.docx, late_claim_app.pdf, reyes_lien_eob.pdf
+- **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
+- **Real PII or copyrighted material in world files**: 1 finding(s)
+  - files named: news_collision.html, reserve_memo.docx
+
+Note: Blocked on named parties, unchanged: MP4 (A53) and scene photos (A51) still need real media or a spec format revision from the builder side.
 

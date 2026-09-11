@@ -1,0 +1,68 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Reyes_life_care_plan.pdf materially disagrees with the current selected world-spec workbook on the principal future-medical calculation. The Canonical Values sheet says that A36 is authoritative and fixes a $180,000 annual cost and $4,240,000 PV for 36 years at 2.5%, but the actual Reyes_life_care_plan.pdf uses $173,651 per year and reports $4,091,000 PV using that same horizon and rate. This is an unreconciled disagreement in a load-bearing damages value; update either the plan's annual-cost/PV analysis or the canonical registry so the $6.48M undiscounted total and $4.24M PV are consistently supported.
+Finding #1 Life-care plan conflicts with canonical future-medical calculation Major
+Agree / Dispute / Comment
+Add to rerun
+
+[P1] No Broken Document References
+
+The required onboard-video evidence class is unresolved. The world-spec's A53 defines "Onboard Video / Camera System Footage" as "MP4 (clip export) + still-frame log," but the mounted ACTD/Video directory contains only `onboard_video_still_log.pdf` and no media file. That log names native file `4177_20251018_0130-0210_INC.mp4` and expressly says it was not yet retrieved; the final incident report and production tracker repeat that its native clip remains with the vendor. Add the preserved native MP4, or an accessible faithful export with its relevant channels and metadata, to resolve the broken document-class reference.
+Agree / Dispute / Comment
+Add to rerun
+
+[P1] Calculation & Fixture Accuracy
+
+Shared/Settlement/Reyes_life_care_plan.pdf contains the wrong annual-cost fixture and therefore the wrong derived future-medical totals. On page 11 it states a $173,651 annual average and $6,251,436 undiscounted total, and on page 14 it states a $4,091,000 present value. The Canonical Values ledger instead requires A36 to carry $180,000 annual cost, $6,480,000 undiscounted, and $4,240,000 present value; replacing the annual fixture and recomputing the displayed total, PV, and sensitivity table would resolve the defect.
+Agree / Dispute / Comment
+Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The prior late-claim issue remains in the current subject. `Legal/Reyes/late_claim_app.pdf` calculates the presentation deadline, applies the one-year limit and incapacity theory, and states that leave should be granted; `Legal/Reyes/intake_memo.docx` also directs the firm to wait until after the window closes for a late-claim track. These records hand a worker the procedural analysis and proposed result instead of requiring synthesis. Separately, `Shared/Settlement/Reyes_lien_EOB.pdf` states the Howell write-off consequence and provides the consolidated paid/accepted total, directly supplying the central past-medical conclusion. No grading scripts, answer keys, goldens, or hidden answer-like files were found within the 62-file solver filesystem.
+Finding #1 Late-claim application states the procedural analysis and requested result Major
+Finding #2 Intake memo directs the late-claim strategy Major
+Finding #3 EOB letter supplies the Howell damages conclusion Major
+Agree / Dispute / Comment
+Add to rerun
+
+[P1] Intended Traps Are Fair
+
+The declared A36 future-medical trap cannot be resolved to the canonical amount from in-world evidence. The World Spec expressly says A36 is authoritative for $6.48M undiscounted and $4.24M present value, while the actual A36 PDF derives and adopts materially different figures from a different annual cost. No correction, amendment, or competing record identifies which amount should control, so a solver faces incompatible answer values rather than a fair distractor.
+Finding #1 A36 life-care values conflict with the World Spec's canonical trap values Major
+Agree / Dispute / Comment
+Add to rerun
+
+[P0] Coherence Flag Ratio
+
+The current `Shared/Settlement/Reyes_life_care_plan.pdf` directly conflicts with the canonical workbook's values for the very artifact designated A36. It says the 36-year annual cost is $173,651, the undiscounted total is $6,251,436, and the 2.5% present value is $4,091,000; Canonical Values rows 13 and 24-26 instead require $180,000, $6,480,000, and $4,240,000. The figures concern the world's primary future-medical valuation, are not a registered intentional conflict, and have no in-world reconciliation, so they are a material confirmed cross-file inconsistency.
+Finding #1 Canonical life-care valuation contradicts its designated source artifact Major
+Agree / Dispute / Comment
+Add to rerun
+
+[P0] Anomaly Detection Catch-All
+
+The world is configured as a multi-app task, but no Docuseal or Wiki.js world state is mounted. The task sheet states that every task uses both applications and that nine of ten tasks require a Docuseal state change; individual tasks also require concrete app actions such as correcting a Wiki.js page or routing a document for signature. Supplying only filesystem documents leaves those required deliverable steps unavailable, making the built world materially incomplete; add populated, accessible Docuseal and Wiki.js fixtures with the described initial records/pages and workflows.
+Finding #1 Required Docuseal and Wiki.js application states are absent Major
+Agree / Dispute / Comment
+Add to rerun
+
+Minor issues
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Document Authenticity Texture And Markings fails for `task_fs/filesystem/Shared/Police/scene_photos_2025-1018.pdf`. The current World Spec describes A51 as a "Captioned scene-photograph set" with "Size: ~10-15 captioned photos," but the PDF is eight pages of text entries such as "P-001 Description: General establishing view" rather than photographs; `pdfimages -list` returned no image rows. A formal photo-log header and detailed captions cannot substitute for the actual scene/recovered-parts photographs, so the document does not look like the evidence-photo artifact it claims to be; add the corresponding captioned images or revise the specification and filename to a text-only evidence log. Previously flagged A51: still present after direct current-file review.
+Agree / Dispute / Comment
+Add to rerun
+
+[P1] No Signposting of Load-Bearing Facts
+
+The final safety report explicitly calls itself the "Supervisor-Reviewed / Controlling Report of Record," then later says it "reflects the controlling documentary record of this collision." Its associated run-schedule workbook labels its status "Official schedule of record" and reiterates that it is the official schedule for the relevant service night; together, those labels direct resolution of the off-book/scope conflict. Separately, the senior reserve memo uses bold text to say the $3,250,000 figure "supersedes" the earlier reserve "as the controlling reserve of record," artificially identifying the intended answer-bearing figure rather than embedding it neutrally.
+Finding #1 Report-of-record and official-schedule labels signpost the intended factual resolution Minor
+Finding #2 Bold controlling-reserve language singles out the answer-bearing amount Minor
+Agree / Dispute / Comment
+Add to rerun
+
+[P0] Text Legibility And Contrast
+
+Shared/Press/news_collision.html fails the text-legibility criterion because its visible footer copyright is styled #888 on the white .container background, producing only 3.54:1 contrast at 12px. The same page's visible publication timestamp is #777 on white (4.48:1), a normal-text near-miss. Darken those two muted text colors (especially the copyright) to compliant values; the previously flagged reserve_memo.docx amount no longer fails because it now uses 874B15, not B5651D.

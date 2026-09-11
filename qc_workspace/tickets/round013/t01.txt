@@ -1,0 +1,15 @@
+TICKET 1 of 10  |  round 13
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Reyes_life_care_plan.pdf materially disagrees with the current selected world-spec workbook on the principal future-medical calculation. The Canonical Values sheet says that A36 is authoritative and fixes a $180,000 annual cost and $4,240,000 PV for 36 years at 2.5%, but the actual Reyes_life_care_plan.pdf uses $173,651 per year and reports $4,091,000 PV using that same horizon and rate. This is an unreconciled disagreement in a load-bearing damages value; update either the plan's annual-cost/PV analysis or the canonical registry so the $6.48M undiscounted total and $4.24M PV are consistently supported.
+Finding #1 Life-care plan conflicts with canonical future-medical calculation Major
+Agree / Dispute / Comment
+Add to rerun

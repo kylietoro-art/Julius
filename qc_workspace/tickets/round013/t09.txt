@@ -1,0 +1,16 @@
+TICKET 9 of 10  |  round 13
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The final safety report explicitly calls itself the "Supervisor-Reviewed / Controlling Report of Record," then later says it "reflects the controlling documentary record of this collision." Its associated run-schedule workbook labels its status "Official schedule of record" and reiterates that it is the official schedule for the relevant service night; together, those labels direct resolution of the off-book/scope conflict. Separately, the senior reserve memo uses bold text to say the $3,250,000 figure "supersedes" the earlier reserve "as the controlling reserve of record," artificially identifying the intended answer-bearing figure rather than embedding it neutrally.
+Finding #1 Report-of-record and official-schedule labels signpost the intended factual resolution Minor
+Finding #2 Bold controlling-reserve language singles out the answer-bearing amount Minor
+Agree / Dispute / Comment
+Add to rerun

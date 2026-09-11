@@ -1,0 +1,17 @@
+TICKET 7 of 10  |  round 13
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+The world is configured as a multi-app task, but no Docuseal or Wiki.js world state is mounted. The task sheet states that every task uses both applications and that nine of ten tasks require a Docuseal state change; individual tasks also require concrete app actions such as correcting a Wiki.js page or routing a document for signature. Supplying only filesystem documents leaves those required deliverable steps unavailable, making the built world materially incomplete; add populated, accessible Docuseal and Wiki.js fixtures with the described initial records/pages and workflows.
+Finding #1 Required Docuseal and Wiki.js application states are absent Major
+Agree / Dispute / Comment
+Add to rerun
+
+Minor issues
