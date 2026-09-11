@@ -1,0 +1,14 @@
+TICKET 1 of 6  |  round 11
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+The prior AutoQC finding remains present. The world-spec's A53 entry requires "MP4 (clip export) + still-frame log," yet the current mounted inventory has only `ACTD/Video/onboard_video_still_log.pdf` and no MP4 or other video export. The still-frame log identifies the native file as `4177_20251018_0130-0210_INC.mp4`, states "Native Clip Size Not yet retrieved from vendor" and "Native Clip SHA-256 Not yet computed - native clip not yet retrieved," and the final incident report likewise lists a "native clip retained by vendor under litigation hold, not yet retrieved." This is an explicit, material document-class reference to the collision footage that does not resolve to real mounted world material.
+Finding #1 Native onboard-camera clip is absent Major
+Add to rerun

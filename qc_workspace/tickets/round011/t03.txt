@@ -1,0 +1,17 @@
+TICKET 3 of 6  |  round 11
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — [Failing - No Solution Or Reasoning Leakage]. Legal/Reyes/intake_memo.docx explicitly derives the April 20 deadline and directs counsel to let the ordinary presentation period lapse for a late-claim strategy, collapsing the procedural analysis required by the late-claim task. Shared/Settlement/Reyes_lien_EOB.pdf then labels $196,000 as "HOWELL-RECOVERABLE" and says it, not $2.84 million, is the recoverable trial measure, directly giving the damages conclusion. These remain worker-readable and no correction or amendment in the mounted world retracts them; redact the legal conclusions/recommendations while retaining underlying dates and payment records.
+Finding #1 Reyes intake memo gives the late-claim strategy and computed deadline Major
+Finding #2 Settlement EOB states the Howell past-medical answer Major
+Add to rerun
+
+Minor issues

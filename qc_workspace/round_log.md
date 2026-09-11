@@ -17,6 +17,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 8 | 2026-09-11T15:46 | 6 | 4 | 4 | fixed 6, widened 0, traps 0, false 0, blocked 0 |
 | 9 | 2026-09-11T16:27 | 6 | 5 | 4 | fixed 5, widened 1, traps 0, false 1, blocked 0 |
 | 10 | 2026-09-11T17:04 | 8 | 5 | 5 | fixed 3, widened 0, traps 0, false 2, blocked 3 |
+| 11 | 2026-09-11T17:58 | 6 | 5 | 5 | _open_ |
 
 ## Detail
 
@@ -156,4 +157,16 @@ Re-verified as false positives (unchanged from prior rounds): 2 blast_radius foo
 BLOCKED, needs a spec-level/builder decision, not further file edits: (1) CHRONIC, 4th consecutive round with no resolution -- the Trip 06 schedule-vs-collision finding (Intended Traps Are Fair) has now failed dispute (r7), a sentence-level fix (r8), and a factual log entry addition (r9). No canonical value in WORLD_SPEC covers this specific clock-time gap -- only route/block assignment is canonical for the off-book trap. Further attempts risk either fabricating an unauthorized-deviation explanation (a forbidden bridge note) or touching either the heavily cross-referenced 02:05 collision time or the uniform schedule template shared by three other trips. Recommend escalating to the world thread per Gate 9. (2) 4th round on the MP4: ACTD/Video needs an actual MP4 file per A53's spec format -- cannot be produced by text-editing, and I cannot edit WORLD_SPEC.xlsx myself to revise the format requirement. (3) 2nd round on scene_photos: Shared/Police/scene_photos_2025-1018.pdf needs ~10-15 real embedded photographs per A51's spec -- same constraint. Both (2) and (3) need a builder-side decision: supply real media, or revise the spec.
 
 Re-verified as false positives (unchanged from prior rounds): 2 blast_radius footing flags, 2 spec_check tie misses, leak_scan's baseline bare-citation/reconciliation hits. No files gained text this round -- all edits were deletions, formatting removal, or same-length name swaps.
+
+### Round 11, 2026-09-11T17:58
+
+- **Builder A## codes visible in world files**: 2 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+- **Totals don't foot / calculations disagree with inputs**: 1 finding(s)  **(REPEAT)**
+  - files named: reyes_life_care_plan.pdf
+- **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
+  - files named: intake_memo.docx, reyes_lien_eob.pdf
+- **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
+- **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
+  - files named: reserve_memo.docx
 

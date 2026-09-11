@@ -1,0 +1,44 @@
+The active reserve ledger carries RL-2025-0104 as $3,250,000 of Reyes indemnity and RL-2025-0107 as a further $100,000 expense, while RL-2025-0107 says that expense is "embedded in $3.25M memo total." The controlling reserve memo independently lists future medical ($2,000,000), lost earning capacity ($400,000), non-economic damages ($750,000), and ALAE ($100,000), yet calls their $3,250,000 sum the "Reyes sub-total"; the ledger therefore produces an unreconciled $3.35M combined active reserve. Separately, the official RunSchedule sets Trip 06 at S. Main/Third at 02:31, but the dispatch log, final report, AVL time series, and police report place the collision at that same location at 02:05; no amendment or route change explains the 26-minute discrepancy.
+Finding #1 Reyes active reserve double-books ALAE Major
+Finding #2 Trip 06 official schedule conflicts with collision-time telemetry Major
+Add to rerun
+
+[P1] No Broken Document References
+
+The prior AutoQC finding remains present. The world-spec's A53 entry requires "MP4 (clip export) + still-frame log," yet the current mounted inventory has only `ACTD/Video/onboard_video_still_log.pdf` and no MP4 or other video export. The still-frame log identifies the native file as `4177_20251018_0130-0210_INC.mp4`, states "Native Clip Size Not yet retrieved from vendor" and "Native Clip SHA-256 Not yet computed - native clip not yet retrieved," and the final incident report likewise lists a "native clip retained by vendor under litigation hold, not yet retrieved." This is an explicit, material document-class reference to the collision footage that does not resolve to real mounted world material.
+Finding #1 Native onboard-camera clip is absent Major
+Add to rerun
+
+[P1] Calculation & Fixture Accuracy
+
+FAIL. In Shared/Settlement/Reyes_life_care_plan.pdf pages 6-7, the stated frequency and unit-cost schedules do not produce the displayed weighted averages: physical therapy is $7,700 rather than $8,150; occupational therapy is $2,497.50 rather than $4,845; neurocognitive rehabilitation is $4,573.33 rather than $7,320; and psychotherapy is $7,966.67 rather than $8,275. The same PDF page 7 also calls $11,337 an "11% loading" on $98,912 of base attendant care, although 11% is $10,880.32; these incorrect inputs flow into page 11's $180,000 annual total, page 11's $6,480,000 undiscounted total, and pages 13-15's $4,240,000 PV. These are material computable fixture errors in a damages plan and require correction of the category rows and regeneration of all dependent tables.
+Finding #1 Physical-therapy weighted annual average is overstated Major
+Finding #2 Occupational-therapy weighted annual average is overstated Major
+Finding #3 Neurocognitive-rehabilitation weighted annual average is overstated Major
+Finding #4 Psychotherapy weighted annual average is overstated Major
+Finding #5 Attendant-care 11% loading and dependent damages totals are wrong Major
+Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — [Failing - No Solution Or Reasoning Leakage]. Legal/Reyes/intake_memo.docx explicitly derives the April 20 deadline and directs counsel to let the ordinary presentation period lapse for a late-claim strategy, collapsing the procedural analysis required by the late-claim task. Shared/Settlement/Reyes_lien_EOB.pdf then labels $196,000 as "HOWELL-RECOVERABLE" and says it, not $2.84 million, is the recoverable trial measure, directly giving the damages conclusion. These remain worker-readable and no correction or amendment in the mounted world retracts them; redact the legal conclusions/recommendations while retaining underlying dates and payment records.
+Finding #1 Reyes intake memo gives the late-claim strategy and computed deadline Major
+Finding #2 Settlement EOB states the Howell past-medical answer Major
+Add to rerun
+
+Minor issues
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+task_fs/filesystem/Shared/Police/scene_photos_2025-1018.pdf fails the Document Authenticity Texture And Markings clause. The World Spec declares A51 a "Captioned scene-photograph set" with "~10-15 captioned photos," but the current eight-page PDF contains only boxed, prose entries describing P-001 through P-061; its rendered pages 1, 4, and 8 show no photo panels, and the PDF-wide image-object scan found zero images. A police evidence artifact cannot plausibly claim to be the photograph set while supplying only a narrative index, so add the corresponding scene/recovered-parts photographs (or revise the spec and artifact into a clearly named text-only log).
+Finding #1 A51 photo set contains no photographs Minor
+Add to rerun
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+FAIL — [Failing - No Synthetic Substitutes For Real-World Facts]. ACTD's own personnel file states that Keeler is "a covered safety-sensitive employee under the FTA drug-and-alcohol testing rule," but says his annual safety-sensitive training uses the "49 CFR § 382.601 supervisor curriculum"; its Owl rules also describe a measurable BAC as a violation of "49 CFR Part 382 or Part 655." Federal 49 CFR § 382.103(d)(1) expressly provides that Part 382 shall not apply to employers and drivers required to comply only with FTA Part 655, so these statements wrongly import the FMCSA motor-carrier framework into a central transit-employment compliance record. Replace the Part 382 references with the applicable FTA Part 655 training/discipline framework. The prior Gascón issue was rechecked and is no longer present in the current complaint/abstract.
+Add to rerun
+
+[P0] Text Legibility And Contrast
+
+`task_fs/filesystem/ACTD/Claims/reserve_memo.docx` contains two low-contrast table entries. In Table 0, row 5, the visible amount `$250,000` is brown `B5651D` on a white `FFFFFF` cell (4.34:1); in Table 1, row 8, `not included above` uses the same brown on pale gray `F4F5F7` (3.97:1). Both are below normal text contrast and meet the rubric's explicit near-miss/low-contrast failure rule; darkening the brown text (or adjusting its local fill) fixes each cell without altering the layout.

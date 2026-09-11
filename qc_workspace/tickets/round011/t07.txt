@@ -1,0 +1,17 @@
+TICKET 7 of 7  |  round 11
+==============================================================================
+MANUALLY RECOVERED. The round-log ticket generator dropped this block because
+it has no leading "[P#] category name" header in the paste (every other block
+in this round has one). Treat it with the same rigor as the other six.
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+The active reserve ledger carries RL-2025-0104 as $3,250,000 of Reyes indemnity and RL-2025-0107 as a further $100,000 expense, while RL-2025-0107 says that expense is "embedded in $3.25M memo total." The controlling reserve memo independently lists future medical ($2,000,000), lost earning capacity ($400,000), non-economic damages ($750,000), and ALAE ($100,000), yet calls their $3,250,000 sum the "Reyes sub-total"; the ledger therefore produces an unreconciled $3.35M combined active reserve. Separately, the official RunSchedule sets Trip 06 at S. Main/Third at 02:31, but the dispatch log, final report, AVL time series, and police report place the collision at that same location at 02:05; no amendment or route change explains the 26-minute discrepancy.
+Finding #1 Reyes active reserve double-books ALAE Major
+Finding #2 Trip 06 official schedule conflicts with collision-time telemetry Major
+Add to rerun

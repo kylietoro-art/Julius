@@ -1,0 +1,13 @@
+TICKET 5 of 6  |  round 11
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+FAIL — [Failing - No Synthetic Substitutes For Real-World Facts]. ACTD's own personnel file states that Keeler is "a covered safety-sensitive employee under the FTA drug-and-alcohol testing rule," but says his annual safety-sensitive training uses the "49 CFR § 382.601 supervisor curriculum"; its Owl rules also describe a measurable BAC as a violation of "49 CFR Part 382 or Part 655." Federal 49 CFR § 382.103(d)(1) expressly provides that Part 382 shall not apply to employers and drivers required to comply only with FTA Part 655, so these statements wrongly import the FMCSA motor-carrier framework into a central transit-employment compliance record. Replace the Part 382 references with the applicable FTA Part 655 training/discipline framework. The prior Gascón issue was rechecked and is no longer present in the current complaint/abstract.
+Add to rerun

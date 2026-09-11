@@ -1,0 +1,18 @@
+TICKET 2 of 6  |  round 11
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+FAIL. In Shared/Settlement/Reyes_life_care_plan.pdf pages 6-7, the stated frequency and unit-cost schedules do not produce the displayed weighted averages: physical therapy is $7,700 rather than $8,150; occupational therapy is $2,497.50 rather than $4,845; neurocognitive rehabilitation is $4,573.33 rather than $7,320; and psychotherapy is $7,966.67 rather than $8,275. The same PDF page 7 also calls $11,337 an "11% loading" on $98,912 of base attendant care, although 11% is $10,880.32; these incorrect inputs flow into page 11's $180,000 annual total, page 11's $6,480,000 undiscounted total, and pages 13-15's $4,240,000 PV. These are material computable fixture errors in a damages plan and require correction of the category rows and regeneration of all dependent tables.
+Finding #1 Physical-therapy weighted annual average is overstated Major
+Finding #2 Occupational-therapy weighted annual average is overstated Major
+Finding #3 Neurocognitive-rehabilitation weighted annual average is overstated Major
+Finding #4 Psychotherapy weighted annual average is overstated Major
+Finding #5 Attendant-care 11% loading and dependent damages totals are wrong Major
+Add to rerun

@@ -1,0 +1,12 @@
+TICKET 6 of 6  |  round 11
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Text Legibility And Contrast
+
+`task_fs/filesystem/ACTD/Claims/reserve_memo.docx` contains two low-contrast table entries. In Table 0, row 5, the visible amount `$250,000` is brown `B5651D` on a white `FFFFFF` cell (4.34:1); in Table 1, row 8, `not included above` uses the same brown on pale gray `F4F5F7` (3.97:1). Both are below normal text contrast and meet the rubric's explicit near-miss/low-contrast failure rule; darkening the brown text (or adjusting its local fill) fixes each cell without altering the layout.
