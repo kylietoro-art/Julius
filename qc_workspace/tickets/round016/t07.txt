@@ -1,0 +1,16 @@
+TICKET 7 of 12  |  round 16
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+Required DocuSeal and Wiki.js state is absent from the mounted world. The task metadata identifies it as a multi-app task targeting docuseal and wiki_js, and the workbook's Tasks sheet says every task incorporates both designated apps; it then requires actions such as archiving an earlier DocuSeal submission, updating a submission's submitter, routing documents for signatures or acknowledgments, and correcting a Wiki.js page. The manifest inventory contains the filesystem source documents, workbook, and MCP metadata only, with no application records or seeded state, so agents have no accessible target on which to perform these required deliverable actions. Seed the named Wiki.js pages and DocuSeal submissions/workflows in their specified initial states and make them available in the task environment.
+Finding #1 Required DocuSeal and Wiki.js state is not mounted Major
+Add to rerun
+
+Minor issues

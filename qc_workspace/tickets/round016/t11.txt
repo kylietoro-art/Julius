@@ -1,0 +1,15 @@
+TICKET 11 of 12  |  round 16
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The world fails because it uses "controlling" and "official ... of record" wording to identify the preferred answer to contested operational and valuation questions. The final incident report and schedule select the within-scope operational narrative over the preliminary/off-book material, while the reserve memo and related records select the later $3,250,000 figure over the earlier $250,000 figure. Neutral source, date, author, and revision information would preserve realistic provenance without directing the reader to the intended conclusion.
+Finding #1 Operational documents label the preferred scope evidence as controlling Minor
+Finding #2 Reserve materials explicitly select the $3.25M valuation Minor
+Add to rerun

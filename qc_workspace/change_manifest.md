@@ -1034,3 +1034,9 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Legal/Reyes/employment_verification.pdf | page 1, table and body paragraph [r15 minor (Personnel Names/Identifiers Consistent): conflicted with Reyes_wage_records.pdf's 'Hire Date: April 3, 2019' (a detailed payroll-system production with employee ID CHG-14762). Checked WORLD_SPEC -- neither artifact carries a trap on hire date; both say Trap Content: None. Matched employment_verification.pdf to the more precise payroll record rather than the reverse.] | 'Date of hire 06/2018' and 'continuously employed...since June 2018' | → | 'Date of hire 04/2019' and 'continuously employed...since April 2019' |
+
+## manual edit (PyMuPDF redaction)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/employment_verification.pdf | page 3, Table B row 1 [r16 (Personnel Names/Identifiers Consistent): the r15 fix only caught the main page-1 table and paragraph; missed this third occurrence in the wage-summary attachment. Same disposition as r15 -- matches Reyes_wage_records.pdf's 04/03/2019. Ran a full-corpus search afterward for '06/2018'/'June 2018'; none remain anywhere.] | Table B (attachment, page 3): '06/2018 (hire)' hourly-rate-history row | → | '04/2019 (hire)' |

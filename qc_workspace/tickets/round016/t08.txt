@@ -1,0 +1,15 @@
+TICKET 8 of 12  |  round 16
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+The claims records contain unresolved placeholder wording in substantive reserve fields. ACTD/Claims/adjuster_note.docx describes a booked pedestrian reserve as "placeholder pending medical workup" and lists "Allocated expense placeholder"; ACTD/Claims/reserve_ledger.csv retains "Allocated expense placeholder" and two active "LAE placeholder" entries; and ACTD/Claims/reserve_memo.docx repeats "Pedestrian (Reyes) placeholder" and "Allocated expense placeholder." Separately, ACTD/Safety/IR_2025-1018_draft.docx visibly titles Section 2 "Preliminary Data — placeholder fields." These are obvious authoring artifacts in otherwise in-world records; replace the claims wording with professional preliminary/provisional-reserve language and rename the incident-report section to preliminary information pending verification.
+Finding #1 Literal placeholder labels remain in claims reserve records Minor
+Finding #2 Draft incident report has a placeholder section heading Minor
+Add to rerun

@@ -1,0 +1,72 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Future-medical damages are materially inconsistent between the canonical register and the actual A36 source artifact. In `② Canonical Values`, the workbook calls the $180,000 annual cost and $4,240,000 PV "authoritative" for A36 at a 36-year horizon and 2.5%, but `Shared/Settlement/Reyes_life_care_plan.pdf` states a $173,651 annual stream, $6,251,436 undiscounted total, and $4,091,000 PV under that same horizon and rate. This changes the core damages valuation by roughly $149,000 in present value and is neither an allowable trap nor reconciled by a correction or amendment; synchronize the workbook and life-care plan to one supported annual stream and recompute all dependent figures.
+Finding #1 A36 life-care plan conflicts with canonical future-medical valuation Major
+Add to rerun
+
+[P1] No Broken Document References
+
+A53, "Onboard Video / Camera System Footage," is specified in the current world-spec workbook as "MP4 (clip export) + still-frame log." The supplied `ACTD/Video/onboard_video_still_log.pdf` names the native file `4177_20251018_0130-0210_INC.mp4` but says its size and SHA-256 are unavailable because the "native clip [is] not yet retrieved," and the production tracker independently says the native clip is retained by the vendor and not yet retrieved. The filesystem contains only `onboard_video_still_log.pdf` and no mounted media file, leaving the required onboard-video class unresolved rather than providing the referenced material. Add the preserved native clip with accessible metadata/hash, or revise A53 and dependent references so they no longer represent the unavailable clip as supplied world material.
+Finding #1 Native onboard-video clip absent Major
+Add to rerun
+
+[P1] Calculation & Fixture Accuracy
+
+Reyes_life_care_plan.pdf, PDF page 13 (printed page 11 of 17), reports a "Total, weighted annual average" of $173,651 and an undiscounted total of $6,251,436, although the current authoritative Canonical Values ledger fixes A36 at $180,000 per year over 36 years ($6,480,000). PDF page 16 (printed page 14) then uses that erroneous annual cost to state a 2.5% present value of $4,091,000, and PDF page 17 (printed page 15) repeats dependent sensitivity values. Replace the annual fixture with $180,000 and recompute the undiscounted total, the 2.5% present value ($4,240,000 rounded), and the two sensitivity tables.
+Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The prior late-claim issue is still present. Legal/Reyes/late_claim_app.pdf states that the six-month period "closed on April 20, 2026," calls the May 15 application "well within the one-year outer limit," and argues relief principally for incapacity and alternatively for excusable neglect; Legal/Reyes/intake_memo.docx additionally directs counsel to wait until after the window for a "late-claim application track." Separately, Shared/Settlement/Reyes_lien_EOB.pdf fixes T4's dispositive medical-damages figure at $196,000 paid/accepted and says contractual write-offs are "not recoverable from any source," so these materials supply conclusions rather than merely underlying evidence.
+Finding #1 Late-claim materials pre-state the requested legal analysis Major
+Finding #2 Settlement EOB resolves the past-medical damages fork Major
+Add to rerun
+
+[P1] Intended Traps Are Fair
+
+A36 is an unresolvable canonical-source contradiction. The current World Spec declares A36's future-medical annual cost as $180,000, its undiscounted total as $6,480,000, and its authoritative present value as $4,240,000 for a 36-year annuity at 2.5%. But the mounted Reyes life-care plan instead states an annual cost of $173,651, an undiscounted total of $6,251,436, and a $4,091,000 present value using identical 36-year and 2.5% assumptions. No in-world correction or amendment reconciles those values, so a worker cannot derive the canonical answer from A36; revise either the plan or the canonical ledger and dependent materials to one consistent set of figures.
+Finding #1 A36 future-medical canonical figures contradict the controlling life-care plan Major
+Add to rerun
+
+[P0] Coherence Flag Ratio
+
+The world-spec workbook's `② Canonical Values` sheet designates A36's annual cost as a Fact of $180,000 and its present value as an authoritative $4,240,000 at 2.5% over 36 years; it also describes the A36 artifact as $6,480,000 undiscounted. But `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` repeatedly states the same 36-year/2.5% valuation uses $173,651 per year, $6,251,436 undiscounted, and $4,091,000 present value. Recalculation confirms these are two different value sets rather than rounding, leaving a major damages input contradictory across the corpus and satisfying the fail criterion for confirmed unresolved drift.
+Finding #1 A36 life-care valuation conflicts with the canonical world-spec facts Major
+Add to rerun
+
+[P0] Anomaly Detection Catch-All
+
+Required DocuSeal and Wiki.js state is absent from the mounted world. The task metadata identifies it as a multi-app task targeting docuseal and wiki_js, and the workbook's Tasks sheet says every task incorporates both designated apps; it then requires actions such as archiving an earlier DocuSeal submission, updating a submission's submitter, routing documents for signatures or acknowledgments, and correcting a Wiki.js page. The manifest inventory contains the filesystem source documents, workbook, and MCP metadata only, with no application records or seeded state, so agents have no accessible target on which to perform these required deliverable actions. Seed the named Wiki.js pages and DocuSeal submissions/workflows in their specified initial states and make them available in the task environment.
+Finding #1 Required DocuSeal and Wiki.js state is not mounted Major
+Add to rerun
+
+Minor issues
+
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+The claims records contain unresolved placeholder wording in substantive reserve fields. ACTD/Claims/adjuster_note.docx describes a booked pedestrian reserve as "placeholder pending medical workup" and lists "Allocated expense placeholder"; ACTD/Claims/reserve_ledger.csv retains "Allocated expense placeholder" and two active "LAE placeholder" entries; and ACTD/Claims/reserve_memo.docx repeats "Pedestrian (Reyes) placeholder" and "Allocated expense placeholder." Separately, ACTD/Safety/IR_2025-1018_draft.docx visibly titles Section 2 "Preliminary Data — placeholder fields." These are obvious authoring artifacts in otherwise in-world records; replace the claims wording with professional preliminary/provisional-reserve language and rename the incident-report section to preliminary information pending verification.
+Finding #1 Literal placeholder labels remain in claims reserve records Minor
+Finding #2 Draft incident report has a placeholder section heading Minor
+Add to rerun
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+[Visual Genre Fit] `Shared/Police/scene_photos_2025-1018.pdf` does not look like the photo set declared for it. The World Spec calls A51 a "Captioned scene-photograph set" with "Size: ~10-15 captioned photos," but the delivered eight-page PDF is a text-only "SCENE / RECOVERED-PARTS PHOTO LOG": each page has zero image XObjects and its rendered first and final pages contain tables/prose and custody signatures, not scene photos. This is a plausible police photo log, but it visually impersonates that log rather than supplying the claimed photographic evidence set; embed representative captioned images (or change the artifact declaration/name to a text-only photo log). Previously flagged A51 was rechecked and remains defective.
+Add to rerun
+
+[P0] Personnel Names Titles Roles And Identifiers Are Consistent
+
+Yolanda Reyes's Coastline Home Goods hire date is still internally inconsistent. `Legal/Reyes/employment_verification.pdf` lists "Date of hire 04/2019" and says she has been continuously employed "since April 2019," but its attached Table B states "06/2018 (hire) — Initial hire — Sales Associate." The same claimant is independently identified in `Shared/Settlement/Reyes_wage_records.pdf` as Yolanda M. Reyes, DOB 06/22/1991, with "Hire Date: April 3, 2019"; no correction or reconciliation appears in the world, so the conflicting employment-history identifier fails the criterion. Correct the 06/2018 wage-summary entry or add an explicit in-world reconciliation.
+Finding #1 Yolanda Reyes has conflicting Coastline Home Goods hire dates Minor
+Add to rerun
+
+[P1] No Signposting of Load-Bearing Facts
+
+The world fails because it uses "controlling" and "official ... of record" wording to identify the preferred answer to contested operational and valuation questions. The final incident report and schedule select the within-scope operational narrative over the preliminary/off-book material, while the reserve memo and related records select the later $3,250,000 figure over the earlier $250,000 figure. Neutral source, date, author, and revision information would preserve realistic provenance without directing the reader to the intended conclusion.
+Finding #1 Operational documents label the preferred scope evidence as controlling Minor
+Finding #2 Reserve materials explicitly select the $3.25M valuation Minor
+Add to rerun
+
+[P1] External Citations Resolve To Real Content
+
+The Life Care Plan's "DOCUMENTS RESEARCHED/GENERATED BY RPC" section represents Mark G. Greene, MD as having an American Board of Urology license verification, but supplies only the public verification endpoint; live testing of that exact endpoint returns HTTP 404, so it cannot substantiate the named credential. The attached current-prices methodology also cites Micromedex Red Book as a medication-pricing source, but its exact URL returns HTTP 404. The smallest fix is to replace each dead URL with a current, stable source or archived record that directly supports the asserted credential or pricing-method claim; for credential claims, preserve a provider-specific verification result rather than only a search portal.

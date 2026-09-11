@@ -1,0 +1,14 @@
+TICKET 5 of 12  |  round 16
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+A36 is an unresolvable canonical-source contradiction. The current World Spec declares A36's future-medical annual cost as $180,000, its undiscounted total as $6,480,000, and its authoritative present value as $4,240,000 for a 36-year annuity at 2.5%. But the mounted Reyes life-care plan instead states an annual cost of $173,651, an undiscounted total of $6,251,436, and a $4,091,000 present value using identical 36-year and 2.5% assumptions. No in-world correction or amendment reconciles those values, so a worker cannot derive the canonical answer from A36; revise either the plan or the canonical ledger and dependent materials to one consistent set of figures.
+Finding #1 A36 future-medical canonical figures contradict the controlling life-care plan Major
+Add to rerun

@@ -1,0 +1,14 @@
+TICKET 6 of 12  |  round 16
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+The world-spec workbook's `② Canonical Values` sheet designates A36's annual cost as a Fact of $180,000 and its present value as an authoritative $4,240,000 at 2.5% over 36 years; it also describes the A36 artifact as $6,480,000 undiscounted. But `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` repeatedly states the same 36-year/2.5% valuation uses $173,651 per year, $6,251,436 undiscounted, and $4,091,000 present value. Recalculation confirms these are two different value sets rather than rounding, leaving a major damages input contradictory across the corpus and satisfying the fail criterion for confirmed unresolved drift.
+Finding #1 A36 life-care valuation conflicts with the canonical world-spec facts Major
+Add to rerun

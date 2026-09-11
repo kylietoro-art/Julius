@@ -1,0 +1,14 @@
+TICKET 10 of 12  |  round 16
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Personnel Names Titles Roles And Identifiers Are Consistent
+
+Yolanda Reyes's Coastline Home Goods hire date is still internally inconsistent. `Legal/Reyes/employment_verification.pdf` lists "Date of hire 04/2019" and says she has been continuously employed "since April 2019," but its attached Table B states "06/2018 (hire) — Initial hire — Sales Associate." The same claimant is independently identified in `Shared/Settlement/Reyes_wage_records.pdf` as Yolanda M. Reyes, DOB 06/22/1991, with "Hire Date: April 3, 2019"; no correction or reconciliation appears in the world, so the conflicting employment-history identifier fails the criterion. Correct the 06/2018 wage-summary entry or add an explicit in-world reconciliation.
+Finding #1 Yolanda Reyes has conflicting Coastline Home Goods hire dates Minor
+Add to rerun

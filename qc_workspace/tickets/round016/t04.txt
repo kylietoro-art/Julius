@@ -1,0 +1,15 @@
+TICKET 4 of 12  |  round 16
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The prior late-claim issue is still present. Legal/Reyes/late_claim_app.pdf states that the six-month period "closed on April 20, 2026," calls the May 15 application "well within the one-year outer limit," and argues relief principally for incapacity and alternatively for excusable neglect; Legal/Reyes/intake_memo.docx additionally directs counsel to wait until after the window for a "late-claim application track." Separately, Shared/Settlement/Reyes_lien_EOB.pdf fixes T4's dispositive medical-damages figure at $196,000 paid/accepted and says contractual write-offs are "not recoverable from any source," so these materials supply conclusions rather than merely underlying evidence.
+Finding #1 Late-claim materials pre-state the requested legal analysis Major
+Finding #2 Settlement EOB resolves the past-medical damages fork Major
+Add to rerun

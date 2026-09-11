@@ -1,0 +1,14 @@
+TICKET 1 of 12  |  round 16
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Future-medical damages are materially inconsistent between the canonical register and the actual A36 source artifact. In `② Canonical Values`, the workbook calls the $180,000 annual cost and $4,240,000 PV "authoritative" for A36 at a 36-year horizon and 2.5%, but `Shared/Settlement/Reyes_life_care_plan.pdf` states a $173,651 annual stream, $6,251,436 undiscounted total, and $4,091,000 PV under that same horizon and rate. This changes the core damages valuation by roughly $149,000 in present value and is neither an allowable trap nor reconciled by a correction or amendment; synchronize the workbook and life-care plan to one supported annual stream and recompute all dependent figures.
+Finding #1 A36 life-care plan conflicts with canonical future-medical valuation Major
+Add to rerun

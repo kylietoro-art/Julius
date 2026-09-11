@@ -1,0 +1,13 @@
+TICKET 9 of 12  |  round 16
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+[Visual Genre Fit] `Shared/Police/scene_photos_2025-1018.pdf` does not look like the photo set declared for it. The World Spec calls A51 a "Captioned scene-photograph set" with "Size: ~10-15 captioned photos," but the delivered eight-page PDF is a text-only "SCENE / RECOVERED-PARTS PHOTO LOG": each page has zero image XObjects and its rendered first and final pages contain tables/prose and custody signatures, not scene photos. This is a plausible police photo log, but it visually impersonates that log rather than supplying the claimed photographic evidence set; embed representative captioned images (or change the artifact declaration/name to a text-only photo log). Previously flagged A51 was rechecked and remains defective.
+Add to rerun

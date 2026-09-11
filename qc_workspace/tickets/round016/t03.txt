@@ -1,0 +1,13 @@
+TICKET 3 of 12  |  round 16
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+Reyes_life_care_plan.pdf, PDF page 13 (printed page 11 of 17), reports a "Total, weighted annual average" of $173,651 and an undiscounted total of $6,251,436, although the current authoritative Canonical Values ledger fixes A36 at $180,000 per year over 36 years ($6,480,000). PDF page 16 (printed page 14) then uses that erroneous annual cost to state a 2.5% present value of $4,091,000, and PDF page 17 (printed page 15) repeats dependent sensitivity values. Replace the annual fixture with $180,000 and recompute the undiscounted total, the 2.5% present value ($4,240,000 rounded), and the two sensitivity tables.
+Add to rerun
