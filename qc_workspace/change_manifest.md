@@ -1010,3 +1010,27 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Claims/reserve_memo.docx | paragraphs 28, 30, 31; Table 0 row 5 [r14 minor t09 (No Signposting), 2nd pass: prior round only caught para 13-14. Same test as before -- no other paragraph or table cell in this memo uses bold on a dollar figure or status label, confirming these were outliers.] | 'Prior reserve -- Briggs...:' and 'Controlling reserve -- this memorandum...:' lead-in labels bold, standalone '$3,250,000' bold, Table 0 row 5 'Prior initial reserve -- SUPERSEDED'/'$250,000' bold | → | all bold removed, plain text |
+
+## manual edit (PyMuPDF redaction)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Med/Reyes/bills_billed.pdf | page 11 (0-idx 10), Diagnosis Codes (Box 21) field [r15 P0 Text Legibility: stray out-of-genre text fragment overlapped and garbled the diagnosis field. Confirmed via corpus-wide search this fragment appears nowhere else -- an isolated artifact, not a recurring pattern.] | 'the Plaintiff Paralegal Docket Entry' overlaid on top of the '.9; J18.9; K92.2' diagnosis-code continuation, page 11 | → | stray text removed, diagnosis codes '.9; J18.9; K92.2' restored legibly |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_ledger.csv | rows RL-2025-0104, RL-2025-0110 [r15 P1 World Timeline Holds Together: the Dec 15, 2025 memo/ledger cannot reference a life-care plan (05/20/2026) or a City demand (02/02/2026) that didn't exist yet. Genuine hindsight leak, not a declared trap -- checked WORLD_SPEC, no trap covers either fact.] | RL-2025-0104 note listed 'LCP workup' among what the 12/15/2025 reset followed; RL-2025-0110 (City of Rivergate, $48,500) dated 12/15/2025, noted 'reserved separately per the Senior Claims-Manager Reserve Memo' | → | RL-2025-0104 note drops 'LCP workup' (LCP not completed until 05/20/2026, contradicted the memo's own 'no LCP on file' statement); RL-2025-0110 redated 02/03/2026 (day after the City's 02/02/2026 demand) with a self-contained note citing the actual demand/invoice instead of the Dec memo |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | Table 1 (Reyes reserve breakdown) [r15 P1 World Timeline Holds Together: this Dec 15, 2025 memo cannot state a specific dollar figure for a City demand not made until 02/02/2026. The memo's actual purpose (breaking down the Reyes reserve) doesn't need this row; the passenger-claims separation note in row 7 (Cho/Mowbray, both already reserved by 12/15/2025) stays.] | Table 1 row 8: 'City of Rivergate property claim ($48,500 demand) — RESERVED SEPARATELY' / 'not included above' | → | row removed |
+
+## manual edit (PyMuPDF redaction)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/employment_verification.pdf | page 1, table and body paragraph [r15 minor (Personnel Names/Identifiers Consistent): conflicted with Reyes_wage_records.pdf's 'Hire Date: April 3, 2019' (a detailed payroll-system production with employee ID CHG-14762). Checked WORLD_SPEC -- neither artifact carries a trap on hire date; both say Trap Content: None. Matched employment_verification.pdf to the more precise payroll record rather than the reverse.] | 'Date of hire 06/2018' and 'continuously employed...since June 2018' | → | 'Date of hire 04/2019' and 'continuously employed...since April 2019' |

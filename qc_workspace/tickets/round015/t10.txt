@@ -1,0 +1,14 @@
+TICKET 10 of 14  |  round 15
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+`Shared/Police/scene_photos_2025-1018.pdf` fails the Document Authenticity Texture And Markings / Visual Genre Fit clause. The current document renders as eight pages of police evidence-log tables, narrative descriptions, and chain-of-custody signatures, while the A51 specification calls it a "Captioned scene-photograph set" with "~10-15 captioned photos." The PDF contains no embedded image objects and no photographs on the reviewed first or final pages, so it is a plausible photo log but not the claimed photographic evidence set; embed the referenced scene/recovered-parts images (with captions) or revise the artifact declaration and filename to a text-only photo log.
+Finding #1 A51 claimed scene-photograph set contains no photographs Minor
+Add to rerun

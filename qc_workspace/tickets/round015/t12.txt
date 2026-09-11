@@ -1,0 +1,15 @@
+TICKET 12 of 14  |  round 15
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The current final incident report is labeled "Supervisor-Reviewed / Controlling Report of Record" and certifies that it reflects the "controlling documentary record"; RunSchedule_Owl512.xlsx likewise calls itself the "Official schedule of record" in status metadata and the Notes sheet. These labels do more than identify provenance: alongside draft/off-book evidence, they direct the reader to resolve the course-and-scope and schedule conflicts in favor of the marked documents. Separately, reserve_memo.docx repeatedly identifies the $3,250,000 outcome as the "controlling" reserve and labels the earlier $250,000 value "SUPERSEDED," with the reserve ledger and production tracker reinforcing that choice; ordinary version/provenance information would suffice without telling the reader which valuation to adopt.
+Finding #1 Controlling/official labels resolve the operational-record conflict Minor
+Finding #2 Reserve records direct the reader to the preferred valuation Minor
+Add to rerun

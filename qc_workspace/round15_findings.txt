@@ -1,0 +1,83 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+The current subject still contains a material, unreconciled future-medical valuation conflict. The authoritative `② Canonical Values` workbook identifies A36 as the source for a $180,000 annual cost, $6,480,000 undiscounted total, and $4,240,000 present value over 36 years at 2.5%, whereas `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` states a $173,651 annual stream, $6,251,436 undiscounted total, and $4,091,000 PV under those same assumptions. Because this changes the core damages value and neither artifact supplies a correction or amendment selecting one calculation, the shared numerical values fail the consistency criterion.
+Finding #1 Life-care plan conflicts with canonical future-medical valuation Major
+Add to rerun
+
+[P1] No Broken Document References
+
+A53 in the current world-spec workbook is a key artifact titled "Onboard Video / Camera System Footage" with format "MP4 (clip export) + still-frame log." The mounted `ACTD/Video/onboard_video_still_log.pdf` identifies the native file as `4177_20251018_0130-0210_INC.mp4`, but states its size and SHA-256 are "Not yet retrieved from vendor" / "not yet computed," and says the PDF is only a representative index; a filesystem-wide search found no video or audio file. `ACTD/Litigation/production_tracker.csv` independently says the native clip is "retained by vendor, not yet retrieved," leaving the required onboard-video document class unresolved rather than providing the referenced material.
+Finding #1 Native onboard video clip is absent Major
+Add to rerun
+
+[P1] World Timeline Holds Together (consolidated)
+
+Causal order fails because the Senior Claims-Manager Reserve Memo dated December 15, 2025 states that the City of Rivergate property claim "($48,500 demand)" was already reserved separately, while the actual City invoice is dated February 1, 2026 and the City demand is dated February 2, 2026. The contemporaneous reserve ledger also says its December 15 reset followed "LCP workup," but the memo explicitly says "No defense-directed life-care plan or medical-economic workup is yet on file," and the actual life-care plan is dated May 20, 2026. Those records inject later information into a December decision record, creating material hindsight leakage; revise the December memo/ledger to describe only information then available and make the City-demand and completed-life-care-plan entries later dated updates.
+Finding #1 December reserve records rely on future City claim and life-care information Major
+Add to rerun
+
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The current Reyes life-care plan still contradicts the authoritative A36 fixture: PDF page 11 reports a '$173,651' weighted annual total and '$6,251,436' over 36 years, while the Canonical Values ledger requires $180,000 annually and $6,480,000 over that horizon. PDF page 14 then uses the same wrong base to report a $4,091,000 2.5% present value and page 15 repeats dependent sensitivity figures; the required 2.5% level-annuity calculation is $4,240,125, rounded to $4,240,000. Replace the erroneous annual fixture and recompute every displayed total, PV, and sensitivity value that depends on it.
+Finding #1 A36 life-care-plan annual fixture and dependent valuation are wrong Major
+Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — No Solution Or Reasoning Leakage. `Legal/Reyes/late_claim_app.pdf` explicitly computes the six-month deadline, says the filing is within the one-year outer limit, and argues the exact incapacity and alternative excusable-neglect bases for relief; this supplies the procedural analysis the worker is supposed to perform. `Legal/Reyes/intake_memo.docx` then directs that counsel intentionally wait until after the deadline to pursue a "late-claim application track," while `Shared/Settlement/Reyes_lien_EOB.pdf` provides the consolidated $196,000 paid/accepted number and concludes that write-offs are "not recoverable from any source." These are separately removable legal conclusions and strategy instructions that collapse central judgment work, not merely underlying evidence.
+Add to rerun
+
+[P1] Intended Traps Are Fair
+
+The A36 future-medical trap is not fair because its canonical answer conflicts with the actual controlling life-care plan. The World Spec's Canonical Values names A36 as the source and gives $180,000 annually, $6,480,000 undiscounted, and $4,240,000 present value over 36 years at 2.5%, but `Shared/Settlement/Reyes_life_care_plan.pdf` states $173,651 annually, $6,251,436 undiscounted, and $4,091,000 present value under the same horizon and rate. Nothing in the mounted world corrects the plan or establishes that the incompatible workbook figures govern, so a worker cannot resolve the intended future-medical and reserve calculation from in-world evidence. Update A36 to the canonical figures or revise the canonical ledger and every dependent material to match the plan.
+Finding #1 A36 canonical future-medical figures contradict the life-care plan Major
+Add to rerun
+
+[P0] Coherence Flag Ratio
+
+The current world-spec workbook's Canonical Values sheet identifies A36 as the source for a $180,000 annual stream and an authoritative $4,240,000 present value at 2.5%, while the actual `Shared/Settlement/Reyes_life_care_plan.pdf` repeatedly states a $173,651 annual stream, $6,251,436 undiscounted total, and $4,091,000 present value for the same 36-year/2.5% analysis. This is not a rounding difference: recomputation yields approximately $4.240M from the workbook's $180,000 input and approximately $4.091M from the plan's $173,651 input. Because the workbook's facts-and-traps registry designates only the undiscounted total as a trap and supplies no correction for these contradictory source values, the marquee future-medical valuation is unreliable across the corpus.
+Finding #1 Canonical A36 future-medical valuation contradicts the actual life-care plan Major
+Add to rerun
+
+[P0] Anomaly Detection Catch-All
+
+The current task metadata identifies the task as a multi-app task with target apps `docuseal` and `wiki_js`, while the manifest inventory exposes only custom-field documents, task-filesystem documents, and MCP metadata—there are no app-state records, DocuSeal submissions, or Wiki.js pages. The workbook's Tasks sheet says that every task incorporates both designated apps; nine of ten tasks require a DocuSeal state change, and T3 requires correcting a Wiki.js page. Without seeded, accessible submissions and pages in their specified starting states, the required routing, archival, submitter updates, signature acknowledgments, and Wiki correction cannot be performed, rendering material portions of the task world unusable.
+Finding #1 Required DocuSeal and Wiki.js state is absent from the mounted world Major
+Add to rerun
+
+Minor issues
+
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+The subject fails because current work-product files retain literal placeholder wording in substantive fields. `ACTD/Claims/adjuster_note.docx` labels a $190,000 reserve "placeholder pending medical workup" and a $5,000 amount "Allocated expense placeholder"; `ACTD/Claims/reserve_ledger.csv` further retains "LAE placeholder" for two passenger expense reserves, and `ACTD/Claims/reserve_memo.docx` repeats the old labels. Separately, the reader-facing `ACTD/Safety/IR_2025-1018_draft.docx` has the heading "2. Preliminary Data — placeholder fields," an obvious drafting artifact in an otherwise authentic preliminary report.
+Finding #1 Placeholder terminology remains in claims reserve records Minor
+Finding #2 Placeholder heading remains in preliminary incident report Minor
+Add to rerun
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+`Shared/Police/scene_photos_2025-1018.pdf` fails the Document Authenticity Texture And Markings / Visual Genre Fit clause. The current document renders as eight pages of police evidence-log tables, narrative descriptions, and chain-of-custody signatures, while the A51 specification calls it a "Captioned scene-photograph set" with "~10-15 captioned photos." The PDF contains no embedded image objects and no photographs on the reviewed first or final pages, so it is a plausible photo log but not the claimed photographic evidence set; embed the referenced scene/recovered-parts images (with captions) or revise the artifact declaration and filename to a text-only photo log.
+Finding #1 A51 claimed scene-photograph set contains no photographs Minor
+Add to rerun
+
+[P0] Personnel Names Titles Roles And Identifiers Are Consistent
+
+Yolanda Reyes's employment records conflict as to the start of her employment with Coastline Home Goods. `Legal/Reyes/employment_verification.pdf` identifies her as a Sales Associate, states "Date of hire 06/2018," and says she has been continuously employed since June 2018; `Shared/Settlement/Reyes_wage_records.pdf` identifies the same Yolanda M. Reyes by DOB 06/22/1991 and instead gives "Hire Date: April 3, 2019." The documents provide no in-world correction or other explanation, leaving a material conflict in the employment identity/history of the same claimant; correct one record or add an explicit reconciliation.
+Finding #1 Yolanda Reyes has conflicting Coastline Home Goods hire dates Minor
+Add to rerun
+
+[P1] No Signposting of Load-Bearing Facts
+
+The current final incident report is labeled "Supervisor-Reviewed / Controlling Report of Record" and certifies that it reflects the "controlling documentary record"; RunSchedule_Owl512.xlsx likewise calls itself the "Official schedule of record" in status metadata and the Notes sheet. These labels do more than identify provenance: alongside draft/off-book evidence, they direct the reader to resolve the course-and-scope and schedule conflicts in favor of the marked documents. Separately, reserve_memo.docx repeatedly identifies the $3,250,000 outcome as the "controlling" reserve and labels the earlier $250,000 value "SUPERSEDED," with the reserve ledger and production tracker reinforcing that choice; ordinary version/provenance information would suffice without telling the reader which valuation to adopt.
+Finding #1 Controlling/official labels resolve the operational-record conflict Minor
+Finding #2 Reserve records direct the reader to the preferred valuation Minor
+Add to rerun
+
+[P1] External Citations Resolve To Real Content
+
+The Life Care Plan's "DOCUMENTS RESEARCHED/GENERATED BY RPC" list says that provider credentials were verified, e.g., "Carter, John, MD" under an American Board of Anesthesiology directory and "Greene, Mark G., MD" under an American Board of Urology verification URL, but it supplies only general portals rather than an individual record or stable result. That does not materially substantiate the claimed credential for each named provider. The printed ABU URL returns HTTP 404, and the cited CMS Standard Analytical Files path also returns HTTP 404, so these testable external references do not resolve to content supporting the report's credential and charge-methodology claims.
+Add to rerun
+
+[P0] Text Legibility And Contrast
+
+`Med/Reyes/bills_billed.pdf`, page 11, has the stray words "the Plaintiff Paralegal Docket Entry" printed across the "Diagnosis Codes (Box 21)" value, visibly colliding with the diagnosis text. This is not a contrast-value issue but a direct legibility defect: the overprint obscures the field on an otherwise white, readable page. Remove the stray docket-entry text layer (or reposition it outside the form field) so the diagnosis line is readable.

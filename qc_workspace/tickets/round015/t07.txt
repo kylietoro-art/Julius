@@ -1,0 +1,14 @@
+TICKET 7 of 14  |  round 15
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+The current world-spec workbook's Canonical Values sheet identifies A36 as the source for a $180,000 annual stream and an authoritative $4,240,000 present value at 2.5%, while the actual `Shared/Settlement/Reyes_life_care_plan.pdf` repeatedly states a $173,651 annual stream, $6,251,436 undiscounted total, and $4,091,000 present value for the same 36-year/2.5% analysis. This is not a rounding difference: recomputation yields approximately $4.240M from the workbook's $180,000 input and approximately $4.091M from the plan's $173,651 input. Because the workbook's facts-and-traps registry designates only the undiscounted total as a trap and supplies no correction for these contradictory source values, the marquee future-medical valuation is unreliable across the corpus.
+Finding #1 Canonical A36 future-medical valuation contradicts the actual life-care plan Major
+Add to rerun

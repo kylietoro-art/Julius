@@ -1,0 +1,14 @@
+TICKET 6 of 14  |  round 15
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+The A36 future-medical trap is not fair because its canonical answer conflicts with the actual controlling life-care plan. The World Spec's Canonical Values names A36 as the source and gives $180,000 annually, $6,480,000 undiscounted, and $4,240,000 present value over 36 years at 2.5%, but `Shared/Settlement/Reyes_life_care_plan.pdf` states $173,651 annually, $6,251,436 undiscounted, and $4,091,000 present value under the same horizon and rate. Nothing in the mounted world corrects the plan or establishes that the incompatible workbook figures govern, so a worker cannot resolve the intended future-medical and reserve calculation from in-world evidence. Update A36 to the canonical figures or revise the canonical ledger and every dependent material to match the plan.
+Finding #1 A36 canonical future-medical figures contradict the life-care plan Major
+Add to rerun

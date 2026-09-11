@@ -1,0 +1,16 @@
+TICKET 8 of 14  |  round 15
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+The current task metadata identifies the task as a multi-app task with target apps `docuseal` and `wiki_js`, while the manifest inventory exposes only custom-field documents, task-filesystem documents, and MCP metadata—there are no app-state records, DocuSeal submissions, or Wiki.js pages. The workbook's Tasks sheet says that every task incorporates both designated apps; nine of ten tasks require a DocuSeal state change, and T3 requires correcting a Wiki.js page. Without seeded, accessible submissions and pages in their specified starting states, the required routing, archival, submitter updates, signature acknowledgments, and Wiki correction cannot be performed, rendering material portions of the task world unusable.
+Finding #1 Required DocuSeal and Wiki.js state is absent from the mounted world Major
+Add to rerun
+
+Minor issues

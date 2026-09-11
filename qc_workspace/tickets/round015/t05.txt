@@ -1,0 +1,13 @@
+TICKET 5 of 14  |  round 15
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — No Solution Or Reasoning Leakage. `Legal/Reyes/late_claim_app.pdf` explicitly computes the six-month deadline, says the filing is within the one-year outer limit, and argues the exact incapacity and alternative excusable-neglect bases for relief; this supplies the procedural analysis the worker is supposed to perform. `Legal/Reyes/intake_memo.docx` then directs that counsel intentionally wait until after the deadline to pursue a "late-claim application track," while `Shared/Settlement/Reyes_lien_EOB.pdf` provides the consolidated $196,000 paid/accepted number and concludes that write-offs are "not recoverable from any source." These are separately removable legal conclusions and strategy instructions that collapse central judgment work, not merely underlying evidence.
+Add to rerun

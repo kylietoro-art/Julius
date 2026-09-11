@@ -1,0 +1,12 @@
+TICKET 14 of 14  |  round 15
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Text Legibility And Contrast
+
+`Med/Reyes/bills_billed.pdf`, page 11, has the stray words "the Plaintiff Paralegal Docket Entry" printed across the "Diagnosis Codes (Box 21)" value, visibly colliding with the diagnosis text. This is not a contrast-value issue but a direct legibility defect: the overprint obscures the field on an otherwise white, readable page. Remove the stray docket-entry text layer (or reposition it outside the form field) so the diagnosis line is readable.

@@ -1,0 +1,14 @@
+TICKET 2 of 14  |  round 15
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+A53 in the current world-spec workbook is a key artifact titled "Onboard Video / Camera System Footage" with format "MP4 (clip export) + still-frame log." The mounted `ACTD/Video/onboard_video_still_log.pdf` identifies the native file as `4177_20251018_0130-0210_INC.mp4`, but states its size and SHA-256 are "Not yet retrieved from vendor" / "not yet computed," and says the PDF is only a representative index; a filesystem-wide search found no video or audio file. `ACTD/Litigation/production_tracker.csv` independently says the native clip is "retained by vendor, not yet retrieved," leaving the required onboard-video document class unresolved rather than providing the referenced material.
+Finding #1 Native onboard video clip is absent Major
+Add to rerun

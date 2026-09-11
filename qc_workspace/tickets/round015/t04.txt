@@ -1,0 +1,14 @@
+TICKET 4 of 14  |  round 15
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The current Reyes life-care plan still contradicts the authoritative A36 fixture: PDF page 11 reports a '$173,651' weighted annual total and '$6,251,436' over 36 years, while the Canonical Values ledger requires $180,000 annually and $6,480,000 over that horizon. PDF page 14 then uses the same wrong base to report a $4,091,000 2.5% present value and page 15 repeats dependent sensitivity figures; the required 2.5% level-annuity calculation is $4,240,125, rounded to $4,240,000. Replace the erroneous annual fixture and recompute every displayed total, PV, and sensitivity value that depends on it.
+Finding #1 A36 life-care-plan annual fixture and dependent valuation are wrong Major
+Add to rerun

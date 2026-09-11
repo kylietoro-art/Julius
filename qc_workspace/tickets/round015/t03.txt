@@ -1,0 +1,14 @@
+TICKET 3 of 14  |  round 15
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] World Timeline Holds Together (consolidated)
+
+Causal order fails because the Senior Claims-Manager Reserve Memo dated December 15, 2025 states that the City of Rivergate property claim "($48,500 demand)" was already reserved separately, while the actual City invoice is dated February 1, 2026 and the City demand is dated February 2, 2026. The contemporaneous reserve ledger also says its December 15 reset followed "LCP workup," but the memo explicitly says "No defense-directed life-care plan or medical-economic workup is yet on file," and the actual life-care plan is dated May 20, 2026. Those records inject later information into a December decision record, creating material hindsight leakage; revise the December memo/ledger to describe only information then available and make the City-demand and completed-life-care-plan entries later dated updates.
+Finding #1 December reserve records rely on future City claim and life-care information Major
+Add to rerun
