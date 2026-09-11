@@ -896,3 +896,15 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Legal/Reyes/intake_memo.docx | Section 5, Internal Presentation Target [round10 P0 Major, 3rd round on this file: this elaborate four-part justification for the filing delay is not part of A31's spec description (which only calls for stating accrual date, window date, and the bare delay election/target date -- already fully present in paragraphs 26 and 28) and reads as confident strategic reasoning that could itself supply the decisive procedural analysis. Deleted per Rule 2, keeping the spec-mandated bare statement of the delay election intact.] | paragraph: 'Rationale in support of this scheduling choice: (i)...(iv) a single, well-supported package presented under the 911.4 late-claim procedure is preferable...' | → | [paragraph deleted] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/Dispatch_log_2025-1018.csv | line 33 (02:05 entry) [Builder decision: Trip 06 schedule-vs-collision gap (CHRONIC, r7-r10) needed a real in-world reason for the early arrival rather than a wording patch. Zero-boardings + no-deviation-call is the factual, contemporaneous-dispatch-voice explanation; ties to the already-established impairment/blackout mechanism in the final IR without touching the canonical collision time or the shared schedule template.] | timepoint exception, no deviation authorization on file | → | zero APC/farebox boardings or alightings logged at Alder Creek/Broadway or Downtown Loop on this leg; no deviation call received from Op 4417 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | paragraph 27 (AVL/GPS Track) [Same builder decision as the Dispatch_log fix: gives the controlling incident report its own documented, evidence-backed reason for the 26-minute gap between Trip 06's scheduled S. Main/Third timepoint and the AVL/collision time, consistent across both artifacts.] | departing the Poplar / Rivergate Plaza layover at 02:04 for Trip 06 northbound. The last valid AVL position log | → | departing the Poplar / Rivergate Plaza layover at 02:04 for Trip 06 northbound. The APC/farebox export for this leg records no boardings or alightings at the Alder Creek / Broadway or Downtown Loop / Civic Center timepoints, and Dispatch received no deviation call from Op 4417 on this leg (see dispatch log). The last valid AVL position log |
