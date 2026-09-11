@@ -1,0 +1,16 @@
+TICKET 3 of 7  |  round 12
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — [Failing: No Solution Or Reasoning Leakage]. `Legal/Reyes/late_claim_app.pdf` expressly states that the presentation period closed April 20, that the application is timely under the one-year outer limit, that incapacity supports leave, and that leave "should be granted"; it thereby supplies the late-claim analysis and result rather than leaving a worker to synthesize the dates and capacity record. The previously flagged `Legal/Reyes/intake_memo.docx` still calculates the April 20 deadline and says the firm elected to hold presentation until after the window for a late-claim track, while `Shared/Settlement/Reyes_lien_EOB.pdf` expressly applies Howell to say contractual write-offs are not billable and gives $196,000 paid/accepted against $2.84M billed. Those are worker-readable shortcuts to central procedural and damages conclusions. [Passing: No Environment / Filesystem] The complete task filesystem contains only the 62 ordinary source documents and no executable, hidden, answer-key, golden, grading, or solution file.
+Finding #1 Late-claim procedural result is stated outright Major
+Finding #2 Howell past-medical conclusion is supplied by the EOB Major
+Agree / Dispute / Comment
+Add to rerun

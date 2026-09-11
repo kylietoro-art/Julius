@@ -1,0 +1,45 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+RunSchedule_Owl512.xlsx schedules Trip 06 at S. Main/Third at 02:31, but the dispatch log expressly records that control point at 02:05 with no deviation call, and the police report records the collision there at 02:05. Separately, the selected world-spec's A36 canonical values require a $180,000 annual cost and a $4.24M present value, while Reyes_life_care_plan.pdf calculates $173,651 annually and a $4.091M present value. Both disparities affect core operational and damages values without an in-world explanation.
+Agree / Dispute / Comment
+Add to rerun
+
+[P1] No Broken Document References
+
+The required onboard-video material does not resolve to a real mounted video artifact. In the world-spec workbook, A53 ("Onboard Video / Camera System Footage") specifies the format "MP4 (clip export) + still-frame log," while the current inventory has only `ACTD/Video/onboard_video_still_log.pdf` and no mounted MP4/media export. The still-frame log identifies native file `4177_20251018_0130-0210_INC.mp4` but states that its size and SHA-256 are "Not yet retrieved from vendor" / "not yet computed," and the final incident report likewise says the native clip is retained by the vendor and "not yet retrieved"; add the preserved native MP4 or an accessible faithful clip export to resolve the broken document-class reference.
+Finding #1 Native onboard-camera clip is absent Major
+Agree / Dispute / Comment
+Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — [Failing: No Solution Or Reasoning Leakage]. `Legal/Reyes/late_claim_app.pdf` expressly states that the presentation period closed April 20, that the application is timely under the one-year outer limit, that incapacity supports leave, and that leave "should be granted"; it thereby supplies the late-claim analysis and result rather than leaving a worker to synthesize the dates and capacity record. The previously flagged `Legal/Reyes/intake_memo.docx` still calculates the April 20 deadline and says the firm elected to hold presentation until after the window for a late-claim track, while `Shared/Settlement/Reyes_lien_EOB.pdf` expressly applies Howell to say contractual write-offs are not billable and gives $196,000 paid/accepted against $2.84M billed. Those are worker-readable shortcuts to central procedural and damages conclusions. [Passing: No Environment / Filesystem] The complete task filesystem contains only the 62 ordinary source documents and no executable, hidden, answer-key, golden, grading, or solution file.
+Finding #1 Late-claim procedural result is stated outright Major
+Finding #2 Howell past-medical conclusion is supplied by the EOB Major
+Agree / Dispute / Comment
+Add to rerun
+
+[P0] Coherence Flag Ratio
+
+The canonical-values workbook identifies A36 as the source for a 36-year future-medical calculation based on $180,000 annually, with an undiscounted $6,480,000 and a $4,240,000 present value at 2.5%. The actual A36 file, `Shared/Settlement/Reyes_life_care_plan.pdf`, instead expressly states $173,651 annually, $6,251,436 undiscounted, and $4,091,000 present value using that same 36-year / 2.5% methodology. These figures cannot both be true for the specified artifact, and no correction or amendment reconciles them; this creates material inconsistency in the world's primary damages valuation.
+Agree / Dispute / Comment
+Add to rerun
+
+Minor issues
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Document Authenticity Texture And Markings fails for task_fs/filesystem/Shared/Police/scene_photos_2025-1018.pdf. The World Spec calls A51 a captioned scene-photograph set of roughly 10-15 captioned photos, but the current eight-page PDF contains only boxed prose descriptions for P-001 through P-061 and no image objects; rendered pages 1, 4, and 8 likewise contain no photo panels. A text-only index cannot plausibly serve as the claimed police photograph set, so add the corresponding scene/recovered-parts images with captions or rename and re-specify the artifact as a text-only evidence log.
+Finding #1 A51 photo set contains no photographs Minor
+Agree / Dispute / Comment
+Add to rerun
+
+[P0] Presentation Does Not Obstruct the Content (consolidated)
+
+`task_fs/filesystem/Shared/CrimeLab/BAC_Keeler.pdf`, page 1 fails the Page Layout And Overlay Integrity clause. The line beginning "Chain of Custody Document" runs past the right page edge, visibly clipping the document title rather than wrapping it; its extracted text places "Chain-of-Custody" after the line's main content. This cuts off substantive reference information and makes the page unusable without inference; wrap the reference or reduce its font/indent so the entire title stays inside the right margin.
+Agree / Dispute / Comment
+Add to rerun
+
+[P0] Text Legibility And Contrast
+
+`ACTD/Claims/reserve_memo.docx` still contains a low-contrast body-text amount in section 4, Reserve: the controlling reserve `$3,250,000` is colored `B5651D` against the normal white document background. Its measured contrast is 4.34:1, so this visible amount is a near-miss that fails the text-legibility criterion. Darken that one brown run (or alter its immediate background) to bring it to a compliant contrast level. The two entries previously flagged in the tables no longer support a finding: they now use `874B15` and pass at 6.89:1/6.32:1 on their respective local fills.

@@ -1,0 +1,15 @@
+TICKET 5 of 7  |  round 12
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Document Authenticity Texture And Markings fails for task_fs/filesystem/Shared/Police/scene_photos_2025-1018.pdf. The World Spec calls A51 a captioned scene-photograph set of roughly 10-15 captioned photos, but the current eight-page PDF contains only boxed prose descriptions for P-001 through P-061 and no image objects; rendered pages 1, 4, and 8 likewise contain no photo panels. A text-only index cannot plausibly serve as the claimed police photograph set, so add the corresponding scene/recovered-parts images with captions or rename and re-specify the artifact as a text-only evidence log.
+Finding #1 A51 photo set contains no photographs Minor
+Agree / Dispute / Comment
+Add to rerun

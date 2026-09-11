@@ -1,0 +1,15 @@
+TICKET 2 of 7  |  round 12
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+The required onboard-video material does not resolve to a real mounted video artifact. In the world-spec workbook, A53 ("Onboard Video / Camera System Footage") specifies the format "MP4 (clip export) + still-frame log," while the current inventory has only `ACTD/Video/onboard_video_still_log.pdf` and no mounted MP4/media export. The still-frame log identifies native file `4177_20251018_0130-0210_INC.mp4` but states that its size and SHA-256 are "Not yet retrieved from vendor" / "not yet computed," and the final incident report likewise says the native clip is retained by the vendor and "not yet retrieved"; add the preserved native MP4 or an accessible faithful clip export to resolve the broken document-class reference.
+Finding #1 Native onboard-camera clip is absent Major
+Agree / Dispute / Comment
+Add to rerun

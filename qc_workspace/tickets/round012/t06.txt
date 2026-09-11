@@ -1,0 +1,14 @@
+TICKET 6 of 7  |  round 12
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Presentation Does Not Obstruct the Content (consolidated)
+
+`task_fs/filesystem/Shared/CrimeLab/BAC_Keeler.pdf`, page 1 fails the Page Layout And Overlay Integrity clause. The line beginning "Chain of Custody Document" runs past the right page edge, visibly clipping the document title rather than wrapping it; its extracted text places "Chain-of-Custody" after the line's main content. This cuts off substantive reference information and makes the page unusable without inference; wrap the reference or reduce its font/indent so the entire title stays inside the right margin.
+Agree / Dispute / Comment
+Add to rerun

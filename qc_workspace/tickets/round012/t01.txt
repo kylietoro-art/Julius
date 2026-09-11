@@ -1,0 +1,14 @@
+TICKET 1 of 7  |  round 12
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+RunSchedule_Owl512.xlsx schedules Trip 06 at S. Main/Third at 02:31, but the dispatch log expressly records that control point at 02:05 with no deviation call, and the police report records the collision there at 02:05. Separately, the selected world-spec's A36 canonical values require a $180,000 annual cost and a $4.24M present value, while Reyes_life_care_plan.pdf calculates $173,651 annually and a $4.091M present value. Both disparities affect core operational and damages values without an in-world explanation.
+Agree / Dispute / Comment
+Add to rerun

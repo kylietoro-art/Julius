@@ -1,0 +1,12 @@
+TICKET 7 of 7  |  round 12
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Text Legibility And Contrast
+
+`ACTD/Claims/reserve_memo.docx` still contains a low-contrast body-text amount in section 4, Reserve: the controlling reserve `$3,250,000` is colored `B5651D` against the normal white document background. Its measured contrast is 4.34:1, so this visible amount is a near-miss that fails the text-legibility criterion. Darken that one brown run (or alter its immediate background) to bring it to a compliant contrast level. The two entries previously flagged in the tables no longer support a finding: they now use `874B15` and pass at 6.89:1/6.32:1 on their respective local fills.

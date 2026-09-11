@@ -920,3 +920,15 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Shared/Settlement/Reyes_life_care_plan.pdf | pages 6-7, 11, 13-15 (0-idx 7,8,12,14,15,16) [r11 t02 (Calculation & Fixture Accuracy), builder decision: fix properly, cascade the totals down rather than hold as disputed. Also fixed a pre-existing wrong-font (Helvetica) artifact from an earlier round's sensitivity-table edit on page 13, found while verifying this fix.] | PT $8,150, OT $4,845, Neuro $7,320, Psych $8,275 (weighted annual averages that don't mathematically follow from their own shown frequency/unit-cost schedules even under the most generous reading); attendant-care 11% loading stated as $11,337 when 11% of $98,912 is $10,880; dependent totals $180,000/yr, $6,480,000 undiscounted, $4,240,000 PV, and the full PV sensitivity table (9 values across 3 rates x 3 horizons) | → | PT $7,700, OT $2,458, Neuro $4,573, Psych $7,967 (recomputed from each category's own schedule, reading undated/conditional line items as running the full 36-yr horizon -- 3 of 4 reproduce AutoQC's r11 recomputation exactly); attendant-care loading corrected to $10,880 (11% of $98,912); annual total $173,651, undiscounted $6,251,436, PV $4,091,000, full sensitivity table recomputed at the same 2.5%/36yr methodology (discount rate and horizon unchanged) |
+
+## manual edit (PyMuPDF redaction)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CrimeLab/BAC_Keeler.pdf | page 1, Case and Specimen Information [r12 t06 (Page Layout And Overlay Integrity): line ran past the right margin and was visibly clipped mid-sentence. The trailing clause was also redundant (the form number already identifies the chain-of-custody document), so shortened rather than reflowed to a second line.] | Chain of Custody Document: LASD-SSB Form COC-25-0442117 (attached -- reference the Blood-Draw Chain-of-Custody [text overflows past the 612pt page edge and is truncated/clipped, incomplete sentence] | → | Chain of Custody Document: LASD-SSB Form COC-25-0442117 (attached). |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | paragraph 31 [r12 t07: sweep missed this instance in r11 -- same defect class, same fix. Corpus-wide sweep for B5651D confirms this was the only remaining instance.] | $3,250,000 (paragraph 31, section 4 Reserve) in B5651D (4.34:1 on white) | → | $3,250,000 in 874B15 (6.89:1 on white), matching the r11 fix already applied to the two table cells |

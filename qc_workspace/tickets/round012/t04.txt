@@ -1,0 +1,16 @@
+TICKET 4 of 7  |  round 12
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+The canonical-values workbook identifies A36 as the source for a 36-year future-medical calculation based on $180,000 annually, with an undiscounted $6,480,000 and a $4,240,000 present value at 2.5%. The actual A36 file, `Shared/Settlement/Reyes_life_care_plan.pdf`, instead expressly states $173,651 annually, $6,251,436 undiscounted, and $4,091,000 present value using that same 36-year / 2.5% methodology. These figures cannot both be true for the specified artifact, and no correction or amendment reconciles them; this creates material inconsistency in the world's primary damages valuation.
+Agree / Dispute / Comment
+Add to rerun
+
+Minor issues

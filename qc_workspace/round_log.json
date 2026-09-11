@@ -683,6 +683,65 @@
       ],
       "disposition": null,
       "note": ""
+    },
+    {
+      "round": 12,
+      "opened": "2026-09-11T19:50:06",
+      "count": 7,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 4,
+          "files": [
+            "reyes_life_care_plan.pdf",
+            "runschedule_owl512.xlsx",
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": [
+            "intake_memo.docx",
+            "late_claim_app.pdf",
+            "reyes_lien_eob.pdf"
+          ]
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": [
+            "bac_keeler.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": [
+            "reserve_memo.docx"
+          ]
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "answer_leakage",
+        "temporal",
+        "other"
+      ],
+      "disposition": {
+        "fixed": 2,
+        "expanded": 0,
+        "traps": 0,
+        "false": 1,
+        "blocked": 4
+      },
+      "note": "Blocked on named parties: Trip 06 schedule-vs-collision gap and the life-care-plan/spec figure mismatch are both pending the domain lead's WORLD_SPEC.xlsx update (6-cell table sent r11); MP4 (A53) and scene photos (A51) are pending a builder decision on real media vs. spec-format revision.",
+      "closed": "2026-09-11T19:56:23",
+      "changed": "Fixed BAC_Keeler.pdf's page-1 line overflow (Chain of Custody field) and reserve_memo.docx's remaining low-contrast $3,250,000 (missed in r11's sweep).",
+      "disputes": [
+        "intake_memo.docx, late_claim_app.pdf, and Reyes_lien_EOB.pdf ('No Reachable Shortcut'): all three are either a registered trap (A31, A33: Includes trap Yes) or an artifact whose spec-defined job is to state the figures that defeat a different trap (A35). No wording change closes this; r11's real trim of A35 already proved that. Grader-level blind spot to the trap manifest -- escalate separately from the WORLD_SPEC EPM channel."
+      ]
     }
   ]
 }
