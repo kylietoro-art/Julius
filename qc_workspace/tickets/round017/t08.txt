@@ -1,0 +1,17 @@
+TICKET 8 of 13  |  round 17
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Text Legibility And Contrast
+
+Text contrast fails in four current DOCX files. `ACTD/Ops/owl_service_rules.docx` renders gold `#B8893B` text on unshaded white body paragraphs at 3.14:1, including 10-point bold directions such as "(a) Bring the vehicle to a controlled stop..." and several safety/discipline lists; this is substantive body content and materially hard to read. Three separately correctable accents also remain low contrast on white: `ACTD/HR/Keeler_personnel.docx` (`#B8862E`, 3.24:1, "A Public Agency"), `ACTD/Ops/bid_award_512OWL.docx` (`#B87333`, 3.79:1, "Operations Division — Scheduling & Runcutting"), and `ACTD/Claims/adjuster_note.docx` (`#A86A2D`, 4.41:1, the title and "Junior Claims Adjuster"); darken those fonts or provide a sufficiently contrasting fill.
+Finding #1 Low-contrast operational instructions in owl_service_rules.docx Major
+Finding #2 Low-contrast accent text in three ACTD DOCX files Minor
+Add to rerun
+
+Minor issues

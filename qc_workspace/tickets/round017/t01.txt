@@ -1,0 +1,14 @@
+TICKET 1 of 13  |  round 17
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+The A36 life-care valuation materially disagrees with the world's canonical values register. In the current `② Canonical Values` sheet, the A36 entries call $180,000 the annual cost and identify $4,240,000 as the authoritative 36-year, 2.5% present value; its formula cache confirms that value follows the typed $180,000 input. But `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` states a $173,651 annual cost, $6,251,436 undiscounted total, and $4,091,000 present value for the same 36-year/2.5% assumptions. This is approximately a $149,000 present-value discrepancy in a core damages figure, with no matching intentional-variation registry entry or in-world amendment; synchronize the canonical A36 values and dependent task description with the source PDF (or revise the PDF and all dependent figures consistently).
+Finding #1 A36 life-care valuation conflicts with canonical values register Major
+Add to rerun

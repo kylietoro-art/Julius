@@ -1,0 +1,12 @@
+TICKET 13 of 13  |  round 17
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+The Life Care Plan still cites the ABU URL as support for Mark G. Greene, MD being "board certified in urology," but current testing returns HTTP 404. Its medication-pricing methodology also still cites the Micromedex/RedBook URL, which redirects to an HTTPS page returning HTTP 404. In addition, several named-clinician footnotes use the exact Texas Medical Board /PublicProfile URL, which now returns HTTP 404. These are testable external citations attached to material credential or methodology assertions and therefore do not resolve to content supporting those assertions.

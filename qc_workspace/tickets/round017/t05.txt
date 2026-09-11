@@ -1,0 +1,14 @@
+TICKET 5 of 13  |  round 17
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+A36 is an unresolvable source and canonical conflict. The Canonical Values sheet identifies the A36 economic appendix as authoritative and requires a 180000 annual cost and 4240000 PV, but the actual life-care plan gives 173651 annually and a 4091000 PV under the same 36-year, 2.5% assumptions. The task directs the worker to use the plan's stated PV, and no in-world correction reconciles these values, so the trap cannot be resolved from the evidence. Previously flagged A36 remains present.
+Finding #1 A36 future-medical figures conflict with its controlling plan Major
+Add to rerun

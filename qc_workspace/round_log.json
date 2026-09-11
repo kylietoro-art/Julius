@@ -1040,6 +1040,105 @@
       "disputes": [
         "life-care-plan vs. WORLD_SPEC canonical figures -- domain lead ruling stands. intake_memo.docx/late_claim_app.pdf/Reyes_lien_EOB.pdf -- registered traps, established r11-r12. Docuseal/Wiki.js -- out of scope. Placeholder terminology, Report of Record labels, reserve 'controlling'/'SUPERSEDED' wording -- all established r13-r15, unchanged. External Citations Resolve To Real Content -- fabricated finding, 2nd occurrence with a different set of hallucinated specifics (Greene/ABU/Micromedex this round vs. Carter/CMS last round); re-verified, none of it exists in this world."
       ]
+    },
+    {
+      "round": 17,
+      "opened": "2026-09-11T21:58:57",
+      "count": 13,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 5,
+          "files": [
+            "reyes_life_care_plan.pdf",
+            "onboard_video_still_log.pdf",
+            "dot_655_keeler.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 1,
+          "files": [
+            "reyes_life_care_plan.pdf"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 2,
+          "files": [
+            "intake_memo.docx",
+            "late_claim_app.pdf",
+            "reyes_lien_eob.pdf",
+            "ir_2025-1018_final.docx",
+            "production_tracker.csv",
+            "reserve_ledger.csv",
+            "reserve_memo.docx",
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": []
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": [
+            "adjuster_note.docx",
+            "bid_award_512owl.docx",
+            "keeler_personnel.docx",
+            "owl_service_rules.docx"
+          ]
+        },
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": []
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 1,
+          "files": [
+            "employment_verification.pdf",
+            "reyes_wage_records.pdf"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "math_footing",
+        "answer_leakage",
+        "metadata_fingerprint",
+        "other",
+        "placeholder_synthetic",
+        "entity_inconsistency",
+        "citation_facts"
+      ],
+      "disposition": {
+        "fixed": 3,
+        "expanded": 0,
+        "traps": 0,
+        "false": 9,
+        "blocked": 1
+      },
+      "note": "Blocked (1): A53 native onboard-video MP4 (t02), unchanged, still pending vendor retrieval or a spec-format revision, no new information this round. Fixed ticket t10 (Documents Look Like What They Claim, consolidated) covers 2 sub-findings with split disposition: DOT_655_Keeler.pdf checkbox defect fixed; A51 scene_photos_2025-1018.pdf missing-photos issue remains separately blocked (unchanged for many rounds, counted within the fixed ticket since AutoQC merged it into this ticket this round, not double-counted). 13 tickets total. blast_radius.py all run per CHRONIC protocol (8 classes hit 3rd+ round): both structural flags (medical_billing_ledger.csv TSG-002 footing, $6,540 dependency) verified as tool false positives, recorded as ruling. inventory_check.py run for first time since round 11: 9-artifact two-way mismatch (A11/A12/A16/A17/A18/A49/A52/A53/A62) verified as a matcher limitation on system-sourced artifacts with narrative Location fields, recorded as ruling, no action needed.",
+      "closed": "2026-09-11T22:08:22",
+      "changed": "Fixed 4-file low-contrast accent text (owl_service_rules.docx MAJOR + 3 minor: Keeler_personnel.docx, bid_award_512OWL.docx, adjuster_note.docx), darkening each hex to the same hue/saturation at 5.5:1+ contrast; reconciled employment_verification.pdf's stale 'Sales Associate'/'Active, not separated' status to match the more detailed, later-dated Reyes_wage_records.pdf ('Sales Associate II'/'Separated 04/18/2026'); fixed DOT_655_Keeler.pdf's 'Reason for test' checkboxes, which incorrectly showed all 6 options filled instead of only Post-accident.",
+      "disputes": [
+        "A36 life-care-plan vs. WORLD_SPEC canonical-values mismatch (t01, t03, t05, t06 -- Numerical Values/Calculation/Intended Traps/Coherence): per domain lead ruling (r12, 'thumb down anything that tells you the Spec needs to be fixed'), the file-level fix ($173,651/$6,251,436/$4,091,000) is the mathematically correct one and stands; the spec will not be updated to match, and that gap is accepted, not chased.",
+        "No Reachable Shortcut to the Answer (t04): verified both quoted strings are real (late_claim_app.pdf's stated GC 911.6(b)(4)/(b)(1) grounds; life-care-plan's 'undiscounted...is not the appropriate figure' PV explanation) but each artifact is doing its registered, trap-designed job (A31/A33 Includes trap: Yes; A35 designed to state the controlling paid figures; the PV-vs-undiscounted explanation is the A36 undiscounted trap's own intended contrast), same grader blind spot to the trap manifest established r11-12.",
+        "Anomaly Detection Catch-All (t07, Docuseal/Wiki.js app state): out of scope for filesystem remediation per r13 ruling, unchanged.",
+        "No Synthetic Markers/Placeholder Data (t09): re-verified all quoted strings (RL-2025-0108/0109 LAE placeholder, reserve_memo.docx 'are placeholders' sentence) are real but are genuine claims-industry provisional-reserve terminology per r13 ruling, not build residue.",
+        "No Signposting of Load-Bearing Facts (t12): re-checked IR_2025-1018_final.docx's 'Supervisor-Reviewed / Controlling Report of Record' subtitle run-level formatting directly (bold explicitly OFF, w:val=0; italic only) -- confirms r13 ruling, this is plain unemphasized subtitle styling, not signposting. reserve_memo.docx controlling/SUPERSEDED plain-text wording unchanged per r15 ruling.",
+        "External Citations Resolve To Real Content (t13): 4th consecutive round with fabricated specifics (this round: Greene/ABU/Micromedex/RedBook/Texas-Medical-Board). Searched Reyes_life_care_plan.pdf full text for every quoted string -- zero matches (the one 'ABU' substring hit is inside 'acetabular', unrelated). Same standing fabrication per r15-16 ruling."
+      ]
     }
   ]
 }

@@ -1,0 +1,80 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+The A36 life-care valuation materially disagrees with the world's canonical values register. In the current `② Canonical Values` sheet, the A36 entries call $180,000 the annual cost and identify $4,240,000 as the authoritative 36-year, 2.5% present value; its formula cache confirms that value follows the typed $180,000 input. But `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` states a $173,651 annual cost, $6,251,436 undiscounted total, and $4,091,000 present value for the same 36-year/2.5% assumptions. This is approximately a $149,000 present-value discrepancy in a core damages figure, with no matching intentional-variation registry entry or in-world amendment; synchronize the canonical A36 values and dependent task description with the source PDF (or revise the PDF and all dependent figures consistently).
+Finding #1 A36 life-care valuation conflicts with canonical values register Major
+Add to rerun
+
+[P1] No Broken Document References
+
+A53 in the selected world-spec workbook is defined as "MP4 (clip export) + still-frame log" from the onboard camera system, but the mounted world supplies only `ACTD/Video/onboard_video_still_log.pdf`. Its cover page identifies the native file `4177_20251018_0130-0210_INC.mp4` and says both "Native Clip Size Not yet retrieved from vendor" and "Native Clip SHA-256 Not yet computed - native clip not yet retrieved"; the production tracker likewise calls PT-19 a still-frame log with the "native clip retained by vendor, not yet retrieved." The required onboard-video document class therefore does not resolve to real world material, which prevents the video referenced by the preservation and discovery tasks from being available to the solver.
+Finding #1 A53 native onboard-video clip is absent Major
+Add to rerun
+
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The controlling Canonical Values sheet identifies "Future medical — annual cost" as Fact $180,000 and "Future medical — present value" as the authoritative $4,240,000 rounded result. Yet Reyes_life_care_plan.pdf uses $173,651 annually, prints $6,251,436 undiscounted, and prints $4,091,000 PV; the latter values are dependent on the incorrect fixture, and its rate/horizon sensitivity values are therefore also wrong for the grounded care stream. This remains the specific issue previously flagged; it has not been corrected in the current subject.
+Finding #1 Life-care plan uses the wrong annual future-medical fixture and dependent valuations Major
+Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning Leakage clause fails because multiple worker-readable files disclose the legal strategy and outcome the worker is meant to analyze. `Legal/Reyes/late_claim_app.pdf` states that relief is sought "principally under Government Code § 911.6(b)(4), and, in the alternative, under Government Code § 911.6(b)(1)," while `Legal/Reyes/intake_memo.docx` directs the firm to hold presentation until after the window for a "late-claim application track"; the claims tracker repeats the same grounds and downstream dates. Independently, `Shared/Settlement/Reyes_lien_EOB.pdf` says the paid amount is $196,000 and that contractual write-offs are "not separately billable," while the life-care plan says the undiscounted total "is not the appropriate figure" and gives the present-value calculation and result. These disclosures collapse the task's late-claim and damages reasoning rather than requiring the worker to synthesize the source materials. The No Environment / Filesystem clause was checked and no shortcut artifact was found.
+Finding #1 Reyes late-claim strategy and requested relief are stated in solver files Major
+Finding #2 Damages materials state the paid-versus-billed rule and future-care valuation conclusion Major
+Add to rerun
+
+[P1] Intended Traps Are Fair
+
+A36 is an unresolvable source and canonical conflict. The Canonical Values sheet identifies the A36 economic appendix as authoritative and requires a 180000 annual cost and 4240000 PV, but the actual life-care plan gives 173651 annually and a 4091000 PV under the same 36-year, 2.5% assumptions. The task directs the worker to use the plan's stated PV, and no in-world correction reconciles these values, so the trap cannot be resolved from the evidence. Previously flagged A36 remains present.
+Finding #1 A36 future-medical figures conflict with its controlling plan Major
+Add to rerun
+
+[P0] Coherence Flag Ratio
+
+FAIL. The previously flagged A36 issue is still present: the world-spec workbook's canonical future-medical entries specify $180,000 annually and a $4,240,000 present value over 36 years at 2.5%, but `Shared/Settlement/Reyes_life_care_plan.pdf` specifies $173,651 annually, $6,251,436 undiscounted, and a $4,091,000 present value under those same assumptions. Each set of figures independently recomputes, and the world contains no correction or amendment reconciling them; the mismatch materially changes the marquee plaintiff's damages analysis. Align either the workbook/scenario's canonical values to A36 or amend A36 and add an explicit in-world reconciliation.
+Finding #1 A36 life-care valuation contradicts the canonical damages register Major
+Add to rerun
+
+[P0] Anomaly Detection Catch-All
+
+The current workbook's ③ Tasks sheet states that "Every task also incorporates at least one App Data touchpoint … and both of the world's designated apps (Docuseal, Wiki.js)," and that nine tasks require a Docuseal state change while T3 requires a Wiki.js Update Page. Individual current task instructions require actions such as archiving a prior Docuseal review submission, routing corrected documents for signature, updating a submission's submitter, and correcting a Wiki.js legal playbook page. Yet the complete current manifest inventory provides no DocuSeal/Wiki.js record, page, submission, seed database, or state export—only filesystem documents and MCP metadata—so workers have no accessible target to perform or verify those required actions. Seed and expose the named DocuSeal submissions and Wiki.js pages in their specified starting states.
+Finding #1 Required DocuSeal and Wiki.js state is absent from the mounted world Major
+Add to rerun
+
+[P0] Text Legibility And Contrast
+
+Text contrast fails in four current DOCX files. `ACTD/Ops/owl_service_rules.docx` renders gold `#B8893B` text on unshaded white body paragraphs at 3.14:1, including 10-point bold directions such as "(a) Bring the vehicle to a controlled stop..." and several safety/discipline lists; this is substantive body content and materially hard to read. Three separately correctable accents also remain low contrast on white: `ACTD/HR/Keeler_personnel.docx` (`#B8862E`, 3.24:1, "A Public Agency"), `ACTD/Ops/bid_award_512OWL.docx` (`#B87333`, 3.79:1, "Operations Division — Scheduling & Runcutting"), and `ACTD/Claims/adjuster_note.docx` (`#A86A2D`, 4.41:1, the title and "Junior Claims Adjuster"); darken those fonts or provide a sufficiently contrasting fill.
+Finding #1 Low-contrast operational instructions in owl_service_rules.docx Major
+Finding #2 Low-contrast accent text in three ACTD DOCX files Minor
+Add to rerun
+
+Minor issues
+
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+The claims reserve materials retain literal "placeholder" labels in both narrative and active accounting records: the opening note calls the Reyes allocation a "placeholder pending medical workup," the controlling reserve memo says future-medical and earning-capacity components "are placeholders," and active ledger entries RL-2025-0108 and RL-2025-0109 say "LAE placeholder." These are visible unfinished-authoring labels rather than professional provisional-reserve terminology. Separately, the on-scene draft incident report labels section 2 "Preliminary Data — placeholder fields"; although a preliminary report may properly state that facts are unverified, that heading itself is scaffolding residue.
+Finding #1 Claims reserve documents retain placeholder terminology Minor
+Finding #2 Draft incident report exposes a placeholder-fields heading Minor
+Add to rerun
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+[Visual Genre Fit] A51, `Shared/Police/scene_photos_2025-1018.pdf`, visually impersonates a related but different genre: the spec declares a "Captioned scene-photograph set" of "~10–15 captioned photos," while the built PDF is an eight-page textual "SCENE / RECOVERED-PARTS PHOTO LOG" with no image objects. Its strong log metadata cannot substitute for the photographic evidence set promised by the spec. [Document Authenticity Texture And Markings] `ACTD/Compliance/DOT_655_Keeler.pdf` visibly fills all six choices under "Reason for test (check one — one only)," including Random, Reasonable suspicion, Return-to-duty, Follow-up, and Pre-employment alongside Post-accident; a completed one-choice DOT alcohol test form cannot plausibly show every selection as marked.
+Finding #1 A51 photo set is a text-only evidence log Minor
+Finding #2 DOT alcohol-test form marks every one-choice option Minor
+Add to rerun
+
+[P0] Personnel Names Titles Roles And Identifiers Are Consistent
+
+Personnel information for Yolanda Reyes conflicts across two Coastline Home Goods HR records without a convincing in-world reconciliation. Legal/Reyes/employment_verification.pdf, dated May 25, 2026, calls her a "Sales Associate," says she is "Active — on unpaid medical leave," and expressly says she "has not been separated from employment." Yet Shared/Settlement/Reyes_wage_records.pdf's May 27 HR verification identifies her injury-time position as "Sales Associate II" and its Leave & Separation Timeline says that on 04/18/2026 "employment status changed to separated." These mutually exclusive current statuses, paired with differing job titles, prevent readers from reliably identifying Reyes's employment role/status; amend or replace the stale verification, or add an explicit HR reconciliation stating the controlling status and formal title.
+Finding #1 Yolanda Reyes has unreconciled active-versus-separated employment records Minor
+Add to rerun
+
+[P1] No Signposting of Load-Bearing Facts
+
+The course-and-scope records are signposted as the answer rather than neutrally identified by source and date. IR_2025-1018_final.docx italicizes "Supervisor-Reviewed / Controlling Report of Record" and certifies it as "the controlling documentary record of this collision," while RunSchedule_Owl512.xlsx labels itself "Official schedule of record"; this steers the reader away from Tran's competing preliminary off-book account. Separately, reserve_memo.docx calls $3,250,000 the "controlling indemnity reserve" and labels the earlier $250,000 "SUPERSEDED," with reserve_ledger.csv and production_tracker.csv repeating the controlling/supersedes characterization. These labels select the later valuation in a live comparison rather than merely conveying neutral provenance and revision history.
+Add to rerun
+
+[P1] External Citations Resolve To Real Content
+
+The Life Care Plan still cites the ABU URL as support for Mark G. Greene, MD being "board certified in urology," but current testing returns HTTP 404. Its medication-pricing methodology also still cites the Micromedex/RedBook URL, which redirects to an HTTPS page returning HTTP 404. In addition, several named-clinician footnotes use the exact Texas Medical Board /PublicProfile URL, which now returns HTTP 404. These are testable external citations attached to material credential or methodology assertions and therefore do not resolve to content supporting those assertions.

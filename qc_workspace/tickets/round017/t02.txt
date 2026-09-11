@@ -1,0 +1,14 @@
+TICKET 2 of 13  |  round 17
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+A53 in the selected world-spec workbook is defined as "MP4 (clip export) + still-frame log" from the onboard camera system, but the mounted world supplies only `ACTD/Video/onboard_video_still_log.pdf`. Its cover page identifies the native file `4177_20251018_0130-0210_INC.mp4` and says both "Native Clip Size Not yet retrieved from vendor" and "Native Clip SHA-256 Not yet computed - native clip not yet retrieved"; the production tracker likewise calls PT-19 a still-frame log with the "native clip retained by vendor, not yet retrieved." The required onboard-video document class therefore does not resolve to real world material, which prevents the video referenced by the preservation and discovery tasks from being available to the solver.
+Finding #1 A53 native onboard-video clip is absent Major
+Add to rerun

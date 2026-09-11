@@ -1,0 +1,15 @@
+TICKET 10 of 13  |  round 17
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+[Visual Genre Fit] A51, `Shared/Police/scene_photos_2025-1018.pdf`, visually impersonates a related but different genre: the spec declares a "Captioned scene-photograph set" of "~10–15 captioned photos," while the built PDF is an eight-page textual "SCENE / RECOVERED-PARTS PHOTO LOG" with no image objects. Its strong log metadata cannot substitute for the photographic evidence set promised by the spec. [Document Authenticity Texture And Markings] `ACTD/Compliance/DOT_655_Keeler.pdf` visibly fills all six choices under "Reason for test (check one — one only)," including Random, Reasonable suspicion, Return-to-duty, Follow-up, and Pre-employment alongside Post-accident; a completed one-choice DOT alcohol test form cannot plausibly show every selection as marked.
+Finding #1 A51 photo set is a text-only evidence log Minor
+Finding #2 DOT alcohol-test form marks every one-choice option Minor
+Add to rerun

@@ -1040,3 +1040,33 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Legal/Reyes/employment_verification.pdf | page 3, Table B row 1 [r16 (Personnel Names/Identifiers Consistent): the r15 fix only caught the main page-1 table and paragraph; missed this third occurrence in the wage-summary attachment. Same disposition as r15 -- matches Reyes_wage_records.pdf's 04/03/2019. Ran a full-corpus search afterward for '06/2018'/'June 2018'; none remain anywhere.] | Table B (attachment, page 3): '06/2018 (hire)' hourly-rate-history row | → | '04/2019 (hire)' |
+
+## manual edit: PyMuPDF redact+reinsert (table rows via insert_text, narrative paragraph via insert_textbox)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/employment_verification.pdf | page 1 table (Position, Most recent employment status rows) and page 1 body paragraph [R17 P0 Personnel Names/Titles/Roles finding: conflicted with Reyes_wage_records.pdf which is more detailed and dated 2 days later, showing title 'Sales Associate II' and a Leave & Separation Timeline ending in separation effective 04/18/2026 when the position-hold period expired. Neither artifact is a registered trap (A60/A37 both Trap Content: None), so reconciled employment_verification.pdf to match the more authoritative, more detailed, later-dated wage-records artifact rather than leave two claimant employment histories in conflict.] | Position: Sales Associate; Most recent employment status: Active - on unpaid medical leave...has not been separated from employment | → | Position: Sales Associate II; Most recent employment status: Separated (position closed 04/18/2026); rewrote separation narrative paragraph |
+
+## manual edit: direct hex replacement in word/document.xml (same hue/saturation, reduced lightness)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/owl_service_rules.docx | all headings, section titles, tagline, and numbered operational-directive body text (34 runs) [R17 P0 Text Legibility And Contrast, MAJOR: accent color used across headings and substantive body text (numbered operator directives like Rule 501) fell to 3.14:1, below the 4.5:1 normal-text AA threshold. Darkened same hue/saturation (H37 S51%) to reach 5.50:1, consistent with the #666666 gray-text fix pattern used in earlier rounds.] | #B8893B (3.14:1 on white) | → | #85632B (5.50:1 on white) |
+
+## manual edit: direct hex replacement in word/document.xml (same hue/saturation, reduced lightness)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/HR/Keeler_personnel.docx | 'A Public Agency' tagline [R17 P0 Text Legibility And Contrast: tagline color at 3.24:1, below 4.5:1 AA threshold for 11pt bold (not large text under WCAG). Darkened same hue/saturation to 5.53:1.] | #B8862E (3.24:1 on white) | → | #876222 (5.53:1 on white) |
+
+## manual edit: direct hex replacement in word/document.xml (same hue/saturation, reduced lightness)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/bid_award_512OWL.docx | 'Operations Division — Scheduling & Runcutting' subtitle [R17 P0 Text Legibility And Contrast: subtitle color at 3.79:1, below 4.5:1 AA threshold for 11pt bold (not large text under WCAG). Darkened same hue/saturation to 5.52:1.] | #B87333 (3.79:1 on white) | → | #935C29 (5.52:1 on white) |
+
+## manual edit: direct hex replacement in word/document.xml (same hue/saturation, reduced lightness)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/adjuster_note.docx | 'PRELIMINARY LIABILITY & RESERVE NOTE' title and 'Junior Claims Adjuster' role line [R17 P0 Text Legibility And Contrast: title/role color at 4.41:1, just below the 4.5:1 AA threshold. Darkened same hue/saturation to 5.55:1.] | #A86A2D (4.41:1 on white) | → | #925C27 (5.55:1 on white) |

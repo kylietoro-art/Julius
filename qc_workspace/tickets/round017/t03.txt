@@ -1,0 +1,14 @@
+TICKET 3 of 13  |  round 17
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The controlling Canonical Values sheet identifies "Future medical — annual cost" as Fact $180,000 and "Future medical — present value" as the authoritative $4,240,000 rounded result. Yet Reyes_life_care_plan.pdf uses $173,651 annually, prints $6,251,436 undiscounted, and prints $4,091,000 PV; the latter values are dependent on the incorrect fixture, and its rate/horizon sensitivity values are therefore also wrong for the grounded care stream. This remains the specific issue previously flagged; it has not been corrected in the current subject.
+Finding #1 Life-care plan uses the wrong annual future-medical fixture and dependent valuations Major
+Add to rerun

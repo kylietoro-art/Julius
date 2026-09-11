@@ -23,6 +23,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 14 | 2026-09-11T20:30 | 11 | 6 | 6 | fixed 2, widened 0, traps 0, false 7, blocked 2 |
 | 15 | 2026-09-11T20:57 | 14 | 8 | 8 | fixed 3, widened 0, traps 0, false 9, blocked 2 |
 | 16 | 2026-09-11T21:15 | 12 | 7 | 7 | fixed 1, widened 0, traps 0, false 9, blocked 2 |
+| 17 | 2026-09-11T21:58 | 13 | 8 | 8 | fixed 3, widened 0, traps 0, false 9, blocked 1 |
 
 ## Detail
 
@@ -248,4 +249,22 @@ Note: Blocked on named parties, unchanged: MP4 (A53) and scene photos (A51) stil
 - **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
 
 Note: Blocked on named parties, unchanged: MP4 (A53) and scene photos (A51) still need real media or a spec format revision from the builder side.
+
+### Round 17, 2026-09-11T21:58
+
+- **Builder A## codes visible in world files**: 5 finding(s)  **(REPEAT)**
+  - files named: reyes_life_care_plan.pdf, onboard_video_still_log.pdf, dot_655_keeler.pdf, scene_photos_2025-1018.pdf
+- **Solution or reasoning leaked into world files**: 2 finding(s)  **(REPEAT)**
+  - files named: intake_memo.docx, late_claim_app.pdf, reyes_lien_eob.pdf, ir_2025-1018_final.docx, production_tracker.csv, reserve_ledger.csv, reserve_memo.docx, runschedule_owl512.xlsx
+- **Totals don't foot / calculations disagree with inputs**: 1 finding(s)  **(REPEAT)**
+  - files named: reyes_life_care_plan.pdf
+- **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
+- **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
+  - files named: adjuster_note.docx, bid_award_512owl.docx, keeler_personnel.docx, owl_service_rules.docx
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+- **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
+  - files named: employment_verification.pdf, reyes_wage_records.pdf
+- **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
+
+Note: Blocked (1): A53 native onboard-video MP4 (t02), unchanged, still pending vendor retrieval or a spec-format revision, no new information this round. Fixed ticket t10 (Documents Look Like What They Claim, consolidated) covers 2 sub-findings with split disposition: DOT_655_Keeler.pdf checkbox defect fixed; A51 scene_photos_2025-1018.pdf missing-photos issue remains separately blocked (unchanged for many rounds, counted within the fixed ticket since AutoQC merged it into this ticket this round, not double-counted). 13 tickets total. blast_radius.py all run per CHRONIC protocol (8 classes hit 3rd+ round): both structural flags (medical_billing_ledger.csv TSG-002 footing, $6,540 dependency) verified as tool false positives, recorded as ruling. inventory_check.py run for first time since round 11: 9-artifact two-way mismatch (A11/A12/A16/A17/A18/A49/A52/A53/A62) verified as a matcher limitation on system-sourced artifacts with narrative Location fields, recorded as ruling, no action needed.
 

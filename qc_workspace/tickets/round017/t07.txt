@@ -1,0 +1,14 @@
+TICKET 7 of 13  |  round 17
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+The current workbook's ③ Tasks sheet states that "Every task also incorporates at least one App Data touchpoint … and both of the world's designated apps (Docuseal, Wiki.js)," and that nine tasks require a Docuseal state change while T3 requires a Wiki.js Update Page. Individual current task instructions require actions such as archiving a prior Docuseal review submission, routing corrected documents for signature, updating a submission's submitter, and correcting a Wiki.js legal playbook page. Yet the complete current manifest inventory provides no DocuSeal/Wiki.js record, page, submission, seed database, or state export—only filesystem documents and MCP metadata—so workers have no accessible target to perform or verify those required actions. Seed and expose the named DocuSeal submissions and Wiki.js pages in their specified starting states.
+Finding #1 Required DocuSeal and Wiki.js state is absent from the mounted world Major
+Add to rerun

@@ -1,0 +1,14 @@
+TICKET 6 of 13  |  round 17
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+FAIL. The previously flagged A36 issue is still present: the world-spec workbook's canonical future-medical entries specify $180,000 annually and a $4,240,000 present value over 36 years at 2.5%, but `Shared/Settlement/Reyes_life_care_plan.pdf` specifies $173,651 annually, $6,251,436 undiscounted, and a $4,091,000 present value under those same assumptions. Each set of figures independently recomputes, and the world contains no correction or amendment reconciling them; the mismatch materially changes the marquee plaintiff's damages analysis. Align either the workbook/scenario's canonical values to A36 or amend A36 and add an explicit in-world reconciliation.
+Finding #1 A36 life-care valuation contradicts the canonical damages register Major
+Add to rerun

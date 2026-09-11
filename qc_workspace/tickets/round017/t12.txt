@@ -1,0 +1,13 @@
+TICKET 12 of 13  |  round 17
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The course-and-scope records are signposted as the answer rather than neutrally identified by source and date. IR_2025-1018_final.docx italicizes "Supervisor-Reviewed / Controlling Report of Record" and certifies it as "the controlling documentary record of this collision," while RunSchedule_Owl512.xlsx labels itself "Official schedule of record"; this steers the reader away from Tran's competing preliminary off-book account. Separately, reserve_memo.docx calls $3,250,000 the "controlling indemnity reserve" and labels the earlier $250,000 "SUPERSEDED," with reserve_ledger.csv and production_tracker.csv repeating the controlling/supersedes characterization. These labels select the later valuation in a live comparison rather than merely conveying neutral provenance and revision history.
+Add to rerun

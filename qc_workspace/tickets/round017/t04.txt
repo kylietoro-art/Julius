@@ -1,0 +1,15 @@
+TICKET 4 of 13  |  round 17
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning Leakage clause fails because multiple worker-readable files disclose the legal strategy and outcome the worker is meant to analyze. `Legal/Reyes/late_claim_app.pdf` states that relief is sought "principally under Government Code § 911.6(b)(4), and, in the alternative, under Government Code § 911.6(b)(1)," while `Legal/Reyes/intake_memo.docx` directs the firm to hold presentation until after the window for a "late-claim application track"; the claims tracker repeats the same grounds and downstream dates. Independently, `Shared/Settlement/Reyes_lien_EOB.pdf` says the paid amount is $196,000 and that contractual write-offs are "not separately billable," while the life-care plan says the undiscounted total "is not the appropriate figure" and gives the present-value calculation and result. These disclosures collapse the task's late-claim and damages reasoning rather than requiring the worker to synthesize the source materials. The No Environment / Filesystem clause was checked and no shortcut artifact was found.
+Finding #1 Reyes late-claim strategy and requested relief are stated in solver files Major
+Finding #2 Damages materials state the paid-versus-billed rule and future-care valuation conclusion Major
+Add to rerun
