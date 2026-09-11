@@ -1,0 +1,16 @@
+TICKET 4 of 11  |  round 14
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning clause fails because the current worker-readable `Legal/Reyes/late_claim_app.pdf` computes the Government Claims Act deadline, applies incapacity and excusable-neglect theories, and says the requested late-claim relief "should be granted." `Legal/Reyes/intake_memo.docx` independently directs counsel to wait until after the ordinary period and labels the route a "late-claim application track," rather than leaving the procedural analysis for the worker. `Shared/Settlement/Reyes_lien_EOB.pdf` gives the exact consolidated paid/accepted total ($196,000) and states that contractual write-offs are "not recoverable from any source," directly resolving the Howell past-medical issue. The prior flags were therefore reverified as still present; no distinct answer-key or grading artifact was found in the solver filesystem.
+Finding #1 Late-claim application supplies the procedural analysis and requested result Major
+Finding #2 Intake memo directs a late-filing litigation strategy Major
+Finding #3 EOB provides the Howell past-medical conclusion and consolidated recovery total Major
+Add to rerun

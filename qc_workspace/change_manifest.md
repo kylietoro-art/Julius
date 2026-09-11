@@ -938,3 +938,75 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Claims/reserve_memo.docx | paragraphs 13-14 [r13 minor t09 finding #2 (No Signposting of Load-Bearing Facts): bold singled out the answer-bearing BAC and reserve figures. Checked siblings -- no other dollar figure in this document is bolded, confirming this was an outlier, not a document-wide style.] | '0.14 g/dL (0.14% w/v)' (para 13), '$250,000', '$3,250,000', 'supersedes' (para 14) -- selectively bolded while no other dollar figures anywhere else in the memo ($2.84M, $8M SIR, $25M pool, etc.) are bold | → | same text, bold removed |
+
+## manual edit (PyMuPDF redaction, batch)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_lien_EOB.pdf | all pages, footer [r14 P0 Text Legibility And Contrast: running header/footer text (document title + Page N) at #808080 measured 3.95:1, below the 4.5:1 normal-text threshold. Same fix across all 11 flagged files: darkened to #666666 (5.74:1), same font/size/position, text unchanged.] | running header/footer color #808080 (3.95:1 on white) | → | running header/footer color #666666 (5.74:1 on white) |
+
+## manual edit (PyMuPDF redaction, batch)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_wage_records.pdf | all pages, footer [r14 P0 Text Legibility And Contrast: running header/footer text (document title + Page N) at #808080 measured 3.95:1, below the 4.5:1 normal-text threshold. Same fix across all 11 flagged files: darkened to #666666 (5.74:1), same font/size/position, text unchanged.] | running header/footer color #808080 (3.95:1 on white) | → | running header/footer color #666666 (5.74:1 on white) |
+
+## manual edit (PyMuPDF redaction, batch)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Criminal/Plea_Keeler.pdf | all pages, footer [r14 P0 Text Legibility And Contrast: running header/footer text (document title + Page N) at #808080 measured 3.95:1, below the 4.5:1 normal-text threshold. Same fix across all 11 flagged files: darkened to #666666 (5.74:1), same font/size/position, text unchanged.] | running header/footer color #808080 (3.95:1 on white) | → | running header/footer color #666666 (5.74:1 on white) |
+
+## manual edit (PyMuPDF redaction, batch)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/DOT_655_Keeler.pdf | all pages, footer [r14 P0 Text Legibility And Contrast: running header/footer text (document title + Page N) at #808080 measured 3.95:1, below the 4.5:1 normal-text threshold. Same fix across all 11 flagged files: darkened to #666666 (5.74:1), same font/size/position, text unchanged.] | running header/footer color #808080 (3.95:1 on white) | → | running header/footer color #666666 (5.74:1 on white) |
+
+## manual edit (PyMuPDF redaction, batch)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Video/onboard_video_still_log.pdf | all pages, footer [r14 P0 Text Legibility And Contrast: running header/footer text (document title + Page N) at #808080 measured 3.95:1, below the 4.5:1 normal-text threshold. Same fix across all 11 flagged files: darkened to #666666 (5.74:1), same font/size/position, text unchanged.] | running header/footer color #808080 (3.95:1 on white) | → | running header/footer color #666666 (5.74:1 on white) |
+
+## manual edit (PyMuPDF redaction, batch)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Risk/coverage_summary.pdf | all pages, footer [r14 P0 Text Legibility And Contrast: running header/footer text (document title + Page N) at #808080 measured 3.95:1, below the 4.5:1 normal-text threshold. Same fix across all 11 flagged files: darkened to #666666 (5.74:1), same font/size/position, text unchanged.] | running header/footer color #808080 (3.95:1 on white) | → | running header/footer color #666666 (5.74:1 on white) |
+
+## manual edit (PyMuPDF redaction, batch)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/HIPAA_auth.pdf | all pages, footer [r14 P0 Text Legibility And Contrast: running header/footer text (document title + Page N) at #808080 measured 3.95:1, below the 4.5:1 normal-text threshold. Same fix across all 11 flagged files: darkened to #666666 (5.74:1), same font/size/position, text unchanged.] | running header/footer color #808080 (3.95:1 on white) | → | running header/footer color #666666 (5.74:1 on white) |
+
+## manual edit (PyMuPDF redaction, batch)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Passengers/claims_0118.pdf | all pages, footer [r14 P0 Text Legibility And Contrast: running header/footer text (document title + Page N) at #808080 measured 3.95:1, below the 4.5:1 normal-text threshold. Same fix across all 11 flagged files: darkened to #666666 (5.74:1), same font/size/position, text unchanged.] | running header/footer color #808080 (3.95:1 on white) | → | running header/footer color #666666 (5.74:1 on white) |
+
+## manual edit (PyMuPDF redaction, batch)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Med/Reyes/admit_2025-1018.pdf | all pages, footer [r14 P0 Text Legibility And Contrast: running header/footer text (document title + Page N) at #808080 measured 3.95:1, below the 4.5:1 normal-text threshold. Same fix across all 11 flagged files: darkened to #666666 (5.74:1), same font/size/position, text unchanged.] | running header/footer color #808080 (3.95:1 on white) | → | running header/footer color #666666 (5.74:1 on white) |
+
+## manual edit (PyMuPDF redaction, batch)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Med/Reyes/bills_billed.pdf | all pages, footer [r14 P0 Text Legibility And Contrast: running header/footer text (document title + Page N) at #808080 measured 3.95:1, below the 4.5:1 normal-text threshold. Same fix across all 11 flagged files: darkened to #666666 (5.74:1), same font/size/position, text unchanged.] | running header/footer color #808080 (3.95:1 on white) | → | running header/footer color #666666 (5.74:1 on white) |
+
+## manual edit (PyMuPDF redaction, batch)
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Witness/blau_statement.pdf | all pages, footer [r14 P0 Text Legibility And Contrast: running header/footer text (document title + Page N) at #808080 measured 3.95:1, below the 4.5:1 normal-text threshold. Same fix across all 11 flagged files: darkened to #666666 (5.74:1), same font/size/position, text unchanged.] | running header/footer color #808080 (3.95:1 on white) | → | running header/footer color #666666 (5.74:1 on white) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | paragraphs 28, 30, 31; Table 0 row 5 [r14 minor t09 (No Signposting), 2nd pass: prior round only caught para 13-14. Same test as before -- no other paragraph or table cell in this memo uses bold on a dollar figure or status label, confirming these were outliers.] | 'Prior reserve -- Briggs...:' and 'Controlling reserve -- this memorandum...:' lead-in labels bold, standalone '$3,250,000' bold, Table 0 row 5 'Prior initial reserve -- SUPERSEDED'/'$250,000' bold | → | all bold removed, plain text |

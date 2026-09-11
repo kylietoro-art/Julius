@@ -798,6 +798,77 @@
       "disputes": [
         "life-care-plan vs. WORLD_SPEC canonical figures (4 separate dimension names this round: Numerical Values Constraints, Calculation & Fixture Accuracy, Intended Traps Are Fair, Coherence Flag Ratio) -- domain lead ruling 2026-09-11: spec will not be updated, dispute outright going forward. intake_memo.docx / late_claim_app.pdf / Reyes_lien_EOB.pdf ('No Reachable Shortcut') -- confirmed registered traps or spec-mandated trap-defeating content, established r11-r12, no new trim attempted. IR_2025-1018_final.docx / RunSchedule_Owl512.xlsx 'Report of Record' / 'Official schedule of record' labels -- checked formatting, none of it is emphasized, ordinary document-status language. Docuseal/Wiki.js app state missing -- out of scope for filesystem remediation, a separate seeding pipeline."
       ]
+    },
+    {
+      "round": 14,
+      "opened": "2026-09-11T20:30:04",
+      "count": 11,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 6,
+          "files": [
+            "reyes_life_care_plan.pdf",
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": [
+            "intake_memo.docx",
+            "late_claim_app.pdf",
+            "reyes_lien_eob.pdf"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": []
+        },
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": [
+            "adjuster_note.docx",
+            "ir_2025-1018_draft.docx"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": []
+        },
+        "pii_copyright": {
+          "label": "Real PII or copyrighted material in world files",
+          "n": 1,
+          "files": [
+            "news_collision.html"
+          ]
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "temporal",
+        "metadata_fingerprint",
+        "placeholder_synthetic",
+        "answer_leakage",
+        "pii_copyright"
+      ],
+      "disposition": {
+        "fixed": 2,
+        "expanded": 0,
+        "traps": 0,
+        "false": 7,
+        "blocked": 2
+      },
+      "note": "Blocked on named parties, unchanged: MP4 (A53) and scene photos (A51) still need real media or a spec format revision from the builder side.",
+      "closed": "2026-09-11T20:31:01",
+      "changed": "Fixed the running header/footer #808080 contrast across all 11 flagged PDFs (darkened to #666666, text/font/position unchanged). Fixed reserve_memo.docx's remaining bold-signposting instances (para 28/30/31 lead-ins and value, Table 0 row 5) that the round-13 pass missed.",
+      "disputes": [
+        "life-care-plan vs. WORLD_SPEC canonical figures, raised again under 4 dimension names -- domain lead ruling stands, dispute outright. intake_memo.docx/late_claim_app.pdf/Reyes_lien_EOB.pdf -- confirmed registered traps, established r11-r12. IR_2025-1018_final.docx/RunSchedule 'Report of Record' labels -- checked formatting, not emphasized, ordinary document-status language. Docuseal/Wiki.js -- out of scope for filesystem remediation. adjuster_note.docx/IR_2025-1018_draft.docx 'placeholder' language -- verified as genuine claims-industry and on-scene-draft terminology in context, not build residue; both documents' whole role in the corpus depends on being rough/preliminary."
+      ]
     }
   ]
 }

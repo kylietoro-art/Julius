@@ -1,0 +1,14 @@
+TICKET 3 of 11  |  round 14
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+Shared/Settlement/Reyes_life_care_plan.pdf still conflicts with the authoritative A36 values. Its page 11 summary uses a $173,651 weighted annual cost and derives a $6,251,436 undiscounted total; page 14 uses that same figure to state $4,091,000 present value and page 15 repeats resulting sensitivities. Canonical Values rows 25-26 require $180,000 annually, $6,480,000 over 36 years, and $4,240,000 PV at 2.5%, so the plan's embedded fixture and every displayed figure dependent on it are wrong; replace the annual-cost summary and recompute the total, PV, and sensitivity tables.
+Finding #1 A36 life-care-plan annual fixture and dependent valuation are wrong Major
+Add to rerun

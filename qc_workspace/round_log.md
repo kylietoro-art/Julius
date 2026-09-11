@@ -20,6 +20,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 11 | 2026-09-11T17:58 | 6 | 5 | 5 | _open_ |
 | 12 | 2026-09-11T19:50 | 7 | 4 | 4 | fixed 2, widened 0, traps 0, false 1, blocked 4 |
 | 13 | 2026-09-11T20:13 | 10 | 4 | 3 | fixed 2, widened 0, traps 0, false 6, blocked 2 |
+| 14 | 2026-09-11T20:30 | 11 | 6 | 6 | fixed 2, widened 0, traps 0, false 7, blocked 2 |
 
 ## Detail
 
@@ -194,6 +195,21 @@ Note: Blocked on named parties: Trip 06 schedule-vs-collision gap and the life-c
 - **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
 - **Real PII or copyrighted material in world files**: 1 finding(s)
   - files named: news_collision.html, reserve_memo.docx
+
+Note: Blocked on named parties, unchanged: MP4 (A53) and scene photos (A51) still need real media or a spec format revision from the builder side.
+
+### Round 14, 2026-09-11T20:30
+
+- **Builder A## codes visible in world files**: 6 finding(s)  **(REPEAT)**
+  - files named: reyes_life_care_plan.pdf, onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+- **Dates, chronology or timeline don't hold together**: 1 finding(s)  **(REPEAT)**
+  - files named: intake_memo.docx, late_claim_app.pdf, reyes_lien_eob.pdf
+- **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+  - files named: adjuster_note.docx, ir_2025-1018_draft.docx
+- **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
+- **Real PII or copyrighted material in world files**: 1 finding(s)  **(REPEAT)**
+  - files named: news_collision.html
 
 Note: Blocked on named parties, unchanged: MP4 (A53) and scene photos (A51) still need real media or a spec format revision from the builder side.
 

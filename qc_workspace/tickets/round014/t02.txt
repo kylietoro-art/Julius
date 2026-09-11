@@ -1,0 +1,13 @@
+TICKET 2 of 11  |  round 14
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+A53, "Onboard Video / Camera System Footage," is specified in the current world workbook as "MP4 (clip export) + still-frame log," but the mounted ACTD/Video directory contains only `onboard_video_still_log.pdf`; a filesystem-wide media search returned no MP4 or other video/audio export. The still-frame log identifies the missing native file as `4177_20251018_0130-0210_INC.mp4`, says its size and SHA-256 are "Not yet retrieved from vendor" / "not yet computed," and says the log is only a representative index rather than the full clip. The production tracker independently repeats that the native clip is "retained by vendor, not yet retrieved," although responsive to RFP 23-25. Thus the required onboard-video evidence class is unresolved; add the preserved native MP4 (or an accessible faithful multi-channel export with its metadata) to cure the broken reference.
+Add to rerun

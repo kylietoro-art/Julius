@@ -1,0 +1,67 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+The previous life-care discrepancy is still present. `② Canonical Values` identifies A36 as authoritative and states that annual cost is $180,000 for a 36-year horizon at 2.5%, producing $6,480,000 undiscounted and a $4,240,000 present value. However, `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` states $173,651 per year, $6,251,436 undiscounted, and a $4,091,000 present value under the same horizon and rate, with no in-world correction or amendment. This materially changes the core future-medical damages value; revise the life-care plan or the canonical register and all dependent references to a single supported annual stream and PV.
+Finding #1 Life-care plan conflicts with authoritative future-medical calculation Major
+Add to rerun
+
+[P1] No Broken Document References
+
+A53, "Onboard Video / Camera System Footage," is specified in the current world workbook as "MP4 (clip export) + still-frame log," but the mounted ACTD/Video directory contains only `onboard_video_still_log.pdf`; a filesystem-wide media search returned no MP4 or other video/audio export. The still-frame log identifies the missing native file as `4177_20251018_0130-0210_INC.mp4`, says its size and SHA-256 are "Not yet retrieved from vendor" / "not yet computed," and says the log is only a representative index rather than the full clip. The production tracker independently repeats that the native clip is "retained by vendor, not yet retrieved," although responsive to RFP 23-25. Thus the required onboard-video evidence class is unresolved; add the preserved native MP4 (or an accessible faithful multi-channel export with its metadata) to cure the broken reference.
+Add to rerun
+
+[P1] Calculation & Fixture Accuracy
+
+Shared/Settlement/Reyes_life_care_plan.pdf still conflicts with the authoritative A36 values. Its page 11 summary uses a $173,651 weighted annual cost and derives a $6,251,436 undiscounted total; page 14 uses that same figure to state $4,091,000 present value and page 15 repeats resulting sensitivities. Canonical Values rows 25-26 require $180,000 annually, $6,480,000 over 36 years, and $4,240,000 PV at 2.5%, so the plan's embedded fixture and every displayed figure dependent on it are wrong; replace the annual-cost summary and recompute the total, PV, and sensitivity tables.
+Finding #1 A36 life-care-plan annual fixture and dependent valuation are wrong Major
+Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning clause fails because the current worker-readable `Legal/Reyes/late_claim_app.pdf` computes the Government Claims Act deadline, applies incapacity and excusable-neglect theories, and says the requested late-claim relief "should be granted." `Legal/Reyes/intake_memo.docx` independently directs counsel to wait until after the ordinary period and labels the route a "late-claim application track," rather than leaving the procedural analysis for the worker. `Shared/Settlement/Reyes_lien_EOB.pdf` gives the exact consolidated paid/accepted total ($196,000) and states that contractual write-offs are "not recoverable from any source," directly resolving the Howell past-medical issue. The prior flags were therefore reverified as still present; no distinct answer-key or grading artifact was found in the solver filesystem.
+Finding #1 Late-claim application supplies the procedural analysis and requested result Major
+Finding #2 Intake memo directs a late-filing litigation strategy Major
+Finding #3 EOB provides the Howell past-medical conclusion and consolidated recovery total Major
+Add to rerun
+
+[P1] Intended Traps Are Fair
+
+The A36 future-medical trap is unfair because its canonical answer values conflict with the actual life-care plan that workers must use. The World Spec calls for $180,000/year, $6,480,000 undiscounted, and $4,240,000 PV, but `Shared/Settlement/Reyes_life_care_plan.pdf` expressly calculates $173,651/year, $6,251,436 undiscounted, and $4,091,000 PV at the same 36-year, 2.5% assumptions. No in-world correction or competing controlling document resolves which set governs, producing incompatible damages and reserve answers; revise A36 to the canonical figures or consistently update the ledger and all dependent materials to the plan's figures.
+Finding #1 A36 life-care values conflict with the canonical future-medical trap Major
+Add to rerun
+
+[P0] Coherence Flag Ratio
+
+The current `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` states a weighted annual cost of $173,651, an undiscounted total of $6,251,436, and a 2.5% present value of $4,091,000. In contrast, the selected world-spec workbook's Canonical Values rows 13 and 24-26 designate the same A36 artifact as $6,480,000 undiscounted, $180,000 annually, and $4,240,000 PV. Both figure sets are internally arithmetically consistent, so this is material cross-file source drift rather than a rounding difference; it makes the marquee future-medical valuation unreliable. The prior issue therefore remains present, while the other sampled canonical match targets were aligned or explicitly registered as traps.
+Finding #1 Canonical life-care valuation contradicts its designated A36 source Major
+Add to rerun
+
+[P0] Anomaly Detection Catch-All
+
+The previously flagged app-state absence is still present. The task is marked multi-app with Docuseal and Wiki.js as targets, but the manifest mounts only custom fields, MCP metadata, and the task filesystem. The workbook says every task uses both apps, with nine Docuseal state changes and a Wiki.js page correction required in T3; without seeded accessible records and pages, required routing, archiving, submitter updates, acknowledgments, and correction cannot be performed. Add the specified Docuseal submissions and Wiki.js pages/workflows with their stated starting states.
+Add to rerun
+
+Minor issues
+
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+The claims set contains unresolved literal placeholder labels for real dollar values: `ACTD/Claims/adjuster_note.docx` calls the $190,000 pedestrian reserve a "placeholder pending medical workup" and labels the $5,000 amount "Allocated expense placeholder"; the related reserve ledger and senior reserve memo repeat the terminology. Separately, `ACTD/Safety/IR_2025-1018_draft.docx` labels a substantive section "Preliminary Data — placeholder fields." These phrases are obvious template/authoring artifacts in otherwise reader-facing work products and should be replaced with professional provisional-reserve and preliminary-information descriptions.
+Finding #1 Literal placeholder labels retained in claims reserve records Minor
+Finding #2 Placeholder heading remains in the incident-report draft Minor
+Add to rerun
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+[Document Authenticity Texture And Markings] fails for `task_fs/filesystem/Shared/Police/scene_photos_2025-1018.pdf`. The selected World Spec calls A51 a "Captioned scene-photograph set" and specifies "~10-15 captioned photos," but direct current-file review shows an eight-page text-and-table "SCENE / RECOVERED-PARTS PHOTO LOG," with descriptions of entries P-001 through P-061 and no photographs. The document's log styling is plausible, but it does not look like the visual evidence-photo artifact it claims to be; adding the photos or changing the specification to a text-only log resolves the defect.
+Finding #1 A51 claimed photo set contains only a text photo log Minor
+Add to rerun
+
+[P1] No Signposting of Load-Bearing Facts
+
+The final incident report and run-schedule workbook artificially identify the favored resolution of the scope, timeline, and passenger-count conflicts. The report labels itself "Supervisor-Reviewed / Controlling Report of Record" and certifies that it reflects the "controlling documentary record," while the schedule labels itself "Official schedule of record" and repeats that it is the official schedule for this service night. Separately, the reserve memo foregrounds the desired $3,250,000 figure through a bold "Controlling reserve" heading, a bold "Prior initial reserve — SUPERSEDED" comparison, and text calling it the controlling reserve of record; the ledger and production tracker reinforce this direct answer cue.
+Finding #1 Report and schedule labels designate the preferred factual resolution Minor
+Finding #2 Reserve materials spotlight the preferred reserve amount Minor
+Add to rerun
+
+[P0] Text Legibility And Contrast
+
+The previously flagged Shared/Press/news_collision.html no longer fails: its visible publication line and copyright are both styled #666 on white, rather than the earlier #777/#888 values. A separate current defect remains across eleven PDFs: their visible running headers, footers, Bates labels, or page numbers use #808080 on a white page. That combination is only about 3.95:1 contrast, below the normal-text threshold, so the page chrome is not sufficiently legible under this dimension; darken the gray running-chrome style (for example, to #666 or darker) in each affected document/template.

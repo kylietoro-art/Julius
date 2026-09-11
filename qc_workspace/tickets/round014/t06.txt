@@ -1,0 +1,14 @@
+TICKET 6 of 11  |  round 14
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+The current `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` states a weighted annual cost of $173,651, an undiscounted total of $6,251,436, and a 2.5% present value of $4,091,000. In contrast, the selected world-spec workbook's Canonical Values rows 13 and 24-26 designate the same A36 artifact as $6,480,000 undiscounted, $180,000 annually, and $4,240,000 PV. Both figure sets are internally arithmetically consistent, so this is material cross-file source drift rather than a rounding difference; it makes the marquee future-medical valuation unreliable. The prior issue therefore remains present, while the other sampled canonical match targets were aligned or explicitly registered as traps.
+Finding #1 Canonical life-care valuation contradicts its designated A36 source Major
+Add to rerun
