@@ -1139,6 +1139,92 @@
         "No Signposting of Load-Bearing Facts (t12): re-checked IR_2025-1018_final.docx's 'Supervisor-Reviewed / Controlling Report of Record' subtitle run-level formatting directly (bold explicitly OFF, w:val=0; italic only) -- confirms r13 ruling, this is plain unemphasized subtitle styling, not signposting. reserve_memo.docx controlling/SUPERSEDED plain-text wording unchanged per r15 ruling.",
         "External Citations Resolve To Real Content (t13): 4th consecutive round with fabricated specifics (this round: Greene/ABU/Micromedex/RedBook/Texas-Medical-Board). Searched Reyes_life_care_plan.pdf full text for every quoted string -- zero matches (the one 'ABU' substring hit is inside 'acetabular', unrelated). Same standing fabrication per r15-16 ruling."
       ]
+    },
+    {
+      "round": 18,
+      "opened": "2026-09-11T22:23:41",
+      "count": 12,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 5,
+          "files": [
+            "reyes_life_care_plan.pdf",
+            "onboard_video_still_log.pdf",
+            "production_tracker.csv",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 1,
+          "files": [
+            "reyes_life_care_plan.pdf"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 2,
+          "files": [
+            "intake_memo.docx",
+            "late_claim_app.pdf",
+            "reyes_lien_eob.pdf",
+            "reyes_life_care_plan.pdf",
+            "ir_2025-1018_final.docx",
+            "production_tracker.csv",
+            "reserve_memo.docx"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": []
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": [
+            "owl_service_rules.docx"
+          ]
+        },
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": []
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "math_footing",
+        "answer_leakage",
+        "metadata_fingerprint",
+        "other",
+        "placeholder_synthetic",
+        "citation_facts"
+      ],
+      "disposition": {
+        "fixed": 1,
+        "expanded": 0,
+        "traps": 0,
+        "false": 9,
+        "blocked": 2
+      },
+      "note": "12 tickets. blast_radius.py all re-run per CHRONIC protocol: identical 2 structural flags as round 17 (medical_billing_ledger.csv TSG-002 footing false positive, $6,540 coincidental match), already covered by the r17 ruling, nothing new. Confirmed both round-17 fixes held: contrast finding and Personnel/employment-status finding are both fully absent from this round's findings; DOT_655_Keeler.pdf checkbox fix also held (dropped out of the Documents-Look-Like-What-They-Claim finding, leaving only A51). Swept all docx files for the same tblGrid/cell-width mismatch pattern as owl_service_rules.docx -- found only ordinary few-hundred-twip Word authoring variances elsewhere (normal, non-rendering-affecting), none with owl_service_rules.docx's exact 635x EMU/twips signature; no other file needed the fix. Blocked (2): A53 native video (t02) and A51 scene photos (t10), both unchanged, no new information.",
+      "closed": "2026-09-11T22:27:01",
+      "changed": "Fixed ACTD/Ops/owl_service_rules.docx's two table grids, which declared column widths in EMU instead of twips (a precise 635x unit-conversion bug on all 4 gridCol values, making the tables nominally ~1650 inches wide); reset gridCol to match the already-correct twips cell widths, no text or cell-width changes.",
+      "disputes": [
+        "A36 life-care-plan vs. WORLD_SPEC canonical-values mismatch (t01, t03, t05, t06): unchanged, per domain lead ruling (r12) the file-level fix stands and the spec gap is accepted, not chased.",
+        "No Reachable Shortcut to the Answer (t04): same grader blind spot to the trap manifest (r11-12 ruling). Verified intake_memo.docx's self-description as an 'INTERNAL INTAKE / CASE-STRATEGY MEMORANDUM' is real -- it's the document's own original header, and an internal firm memo being labeled internal is not a leak.",
+        "Anomaly Detection Catch-All (t07, Docuseal/Wiki.js): unchanged, out of scope per r13 ruling.",
+        "No Synthetic Markers/Placeholder Data (t09): unchanged, genuine claims-industry terminology per r13 ruling.",
+        "No Signposting of Load-Bearing Facts (t11): unchanged, IR_2025-1018_final.docx subtitle re-confirmed bold-off/italic-only per r13/r17 checks; reserve_memo.docx plain-text wording per r15 ruling.",
+        "External Citations Resolve To Real Content (t12): 4th consecutive round with fabricated specifics (this round: Susan Lewis, Jerry Markovic, John Carter, Abby Lockhart, Mark Greene, TMB URL, Micromedex, CMS fee schedule). Searched Reyes_life_care_plan.pdf full text -- zero matches for any of them, same 'ABU'-inside-'acetabular' false hit as every prior round. Same standing fabrication per r15-16-17 ruling."
+      ]
     }
   ]
 }

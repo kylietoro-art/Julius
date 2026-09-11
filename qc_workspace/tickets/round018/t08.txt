@@ -1,0 +1,15 @@
+TICKET 8 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Presentation Does Not Obstruct the Content (consolidated)
+
+The Page Layout And Overlay clause fails in `task_fs/filesystem/ACTD/Ops/owl_service_rules.docx`. Its first table grid declares widths of 2,377,440 and 3,566,160 twips, and its second declares 914,400 and 5,029,200 twips, although the same table cells are only 3,744/5,616 and 1,440/7,920 twips wide. This malformed grid makes the tables extend far beyond a normal letter page, so their content cannot be fully visible to a reader; reset each grid column to the corresponding cell width (or recreate the two tables) to restore usable layout.
+Add to rerun
+
+Minor issues

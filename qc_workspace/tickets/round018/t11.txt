@@ -1,0 +1,15 @@
+TICKET 11 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The current source files artificially select the answer-bearing records in two live comparisons. In IR_2025-1018_final.docx, the uniquely italicized subtitle "Supervisor-Reviewed / Controlling Report of Record" and the certification that it "reflects the controlling documentary record of this collision" steer the reader to the final course-and-scope account over Tran's preliminary account. In reserve_memo.docx, the document calls $3,250,000 the "controlling indemnity reserve" and labels the competing $250,000 row "Prior initial reserve — SUPERSEDED"; production_tracker.csv reinforces it as the "controlling $3,250,000 reserve; supersedes the Junior Adjuster Liability Note." Use neutral dates, authors, document statuses, and revision history instead of expressly telling the reader which side of each substantive comparison controls.
+Finding #1 Final incident report signposts the controlling account Minor
+Finding #2 Reserve records announce the selected reserve figure Minor
+Add to rerun

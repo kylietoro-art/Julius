@@ -1,0 +1,15 @@
+TICKET 9 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+The world fails this dimension because its claims reserve materials retain visible, literal placeholder wording in records that pose as completed professional work products. The junior note and senior controlling memo label reserve components as "placeholder(s)," and the active ledger labels the two passenger LAE entries as "LAE placeholder"; the fact that the initial reserve is superseded does not reconcile the active passenger rows or the current memo language. Separately, the on-scene draft incident report's heading says "Preliminary Data — placeholder fields"; preliminary uncertainty is appropriate, but that heading exposes authoring scaffolding rather than an operational report label.
+Finding #1 Claims reserve records retain literal placeholder labels Minor
+Finding #2 Draft incident report exposes a placeholder-fields heading Minor
+Add to rerun

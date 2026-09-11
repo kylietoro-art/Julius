@@ -1,0 +1,12 @@
+TICKET 12 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+The Life Care Plan's medical-summary footnotes identify Mark G. Greene, MD with the ABU verification citation, and its researched-documents section repeats the ABU credential-verification URL; the exact current URL returns HTTP 404. Multiple provider footnotes (including Susan Lewis, Jerry Markovic, John Carter, Abby Lockhart, and Mark Greene) cite `https://profile.tmb.state.tx.us/PublicProfile`, which currently returns HTTP 404 even though the portal root returns 200; the plan therefore cannot substantiate those named credential attributions through the cited source. Its attached pricing-methodology material also cites Micromedex RedBook and an obsolete CMS physician-fee-schedule page, each resolving to HTTP 404, leaving material methodology sources broken. Replace each dead link with a live official provider-specific verification result or current official methodology page.

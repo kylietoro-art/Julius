@@ -1,0 +1,14 @@
+TICKET 1 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+FAIL. The canonical values register (② Canonical Values C25–C26) and the world scenario use an annual future-medical input of $180,000 and a $4,240,000 present value, and the A36 artifact description repeats $6,480,000 undiscounted/$4,240,000 PV. The primary source file `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` instead calculates $173,651 per year × 36 = $6,251,436 and a 2.5%-discounted value of $4,091,000. This approximately $149,000 variance in the present value (and mismatched annual/undiscounted values) changes a core damages figure without in-world reconciliation; update either the life-care plan or all canonical/dependent A36 figures to one consistent valuation.
+Finding #1 A36 life-care valuation conflicts with the canonical register Major
+Add to rerun

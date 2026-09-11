@@ -1070,3 +1070,9 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Claims/adjuster_note.docx | 'PRELIMINARY LIABILITY & RESERVE NOTE' title and 'Junior Claims Adjuster' role line [R17 P0 Text Legibility And Contrast: title/role color at 4.41:1, just below the 4.5:1 AA threshold. Darkened same hue/saturation to 5.55:1.] | #A86A2D (4.41:1 on white) | → | #925C27 (5.55:1 on white) |
+
+## manual edit: direct value replacement in word/document.xml gridCol elements
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/owl_service_rules.docx | tblGrid for both tables (2 tables, gridCol declarations) [R18 P0 Presentation Does Not Obstruct The Content: table grid column widths were written in EMU units (914400 EMU/inch) instead of twips (1440 twips/inch), a file-format unit bug -- every declared gridCol was exactly 635x (=914400/1440) the actual tcW cell width in every row of both tables, making the declared table width ~1650 inches wide. tcW cell widths (which control actual rendering) were already correct in twips and were not touched; only the grid metadata was wrong. Verified no gridSpan/merged cells and all rows share identical widths in each table before fixing.] | tblGrid gridCol widths in EMU (2377440/3566160 and 914400/5029200 -- ~1651in and ~3.6M twips wide, ~635x too wide) | → | tblGrid gridCol widths in twips matching actual cell widths (3744/5616 and 1440/7920) |

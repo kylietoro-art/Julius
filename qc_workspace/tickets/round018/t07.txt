@@ -1,0 +1,13 @@
+TICKET 7 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+The prior app-state issue is still present. In the current workbook, the Tasks sheet says every task uses both designated apps and that nine of ten require a DocuSeal state change, while multiple tasks require reading or correcting named Wiki.js pages. The current inventory lists only filesystem documents and MCP metadata; the final content sweep found `docuseal`/`wiki` only in metadata rather than a usable submission or page. Thus required archive, routing, submitter-update, and page-update actions cannot be performed or verified. Seed the referenced DocuSeal submissions and Wiki.js pages in their stated initial states and expose them to the task environment.
+Add to rerun

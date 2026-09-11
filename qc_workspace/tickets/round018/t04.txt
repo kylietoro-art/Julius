@@ -1,0 +1,15 @@
+TICKET 4 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — No Solution Or Reasoning Leakage. Legal/Reyes/late_claim_app.pdf tells the solver that relief is sought principally under § 911.6(b)(4), alternatively under § 911.6(b)(1), and argues that the facts support granting leave; Legal/Reyes/intake_memo.docx separately labels itself an internal case-strategy memo and directs the firm to wait until after the claim window for the late-claim track. This removes the central statutory-theory and strategy judgment from the late-claim task. Separately, Shared/Settlement/Reyes_lien_EOB.pdf states the paid amount and the Howell write-off rule, and Shared/Settlement/Reyes_life_care_plan.pdf instructs that the undiscounted figure is inappropriate and supplies the present-value formula and result; those are direct shortcuts to the damages valuation. The prior issues are therefore still present. No separate environment/filesystem shortcut was found in the mounted solver tree.
+Finding #1 Late-claim theory and strategy are revealed in worker files Major
+Finding #2 Damages materials state the recoverability rule and calculated future-care answer Major
+Add to rerun

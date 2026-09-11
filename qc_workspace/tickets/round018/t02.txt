@@ -1,0 +1,14 @@
+TICKET 2 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+A53 remains unresolved. The world-spec workbook defines the onboard-footage artifact as "MP4 (clip export) + still-frame log," but the mounted task filesystem contains only `ACTD/Video/onboard_video_still_log.pdf` and no MP4 or other video asset. That log identifies native file `4177_20251018_0130-0210_INC.mp4` while stating "Native Clip Size Not yet retrieved from vendor" and "Native Clip SHA-256 Not yet computed - native clip not yet retrieved"; `ACTD/Litigation/production_tracker.csv` likewise calls PT-19 a still-frame log with the native clip "not yet retrieved." Thus the video document class expressly required by the preservation and discovery tasks does not resolve to accessible world material.
+Finding #1 A53 native onboard-video clip is absent Major
+Add to rerun

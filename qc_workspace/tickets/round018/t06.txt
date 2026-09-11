@@ -1,0 +1,13 @@
+TICKET 6 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+FAIL. The world-spec workbook's `② Canonical Values` identifies A36 as the source for future medical and states that the authoritative value is a level annuity of $180,000 per year over 36 years at 2.5%, producing a $4,240,000 present value. The actual A36 file, `Shared/Settlement/Reyes_life_care_plan.pdf`, instead states $173,651 annually, $6,251,436 undiscounted, and $4,091,000 present value under that same horizon and rate; a search of the plan found no amendment, correction, supersession, or reconciliation. This changes the central future-medical damages figure in an otherwise corroborated corpus, so the confirmed inconsistency is material enough to fail the coherence criterion.
+Add to rerun

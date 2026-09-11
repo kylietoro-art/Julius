@@ -1,0 +1,71 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+FAIL. The canonical values register (② Canonical Values C25–C26) and the world scenario use an annual future-medical input of $180,000 and a $4,240,000 present value, and the A36 artifact description repeats $6,480,000 undiscounted/$4,240,000 PV. The primary source file `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` instead calculates $173,651 per year × 36 = $6,251,436 and a 2.5%-discounted value of $4,091,000. This approximately $149,000 variance in the present value (and mismatched annual/undiscounted values) changes a core damages figure without in-world reconciliation; update either the life-care plan or all canonical/dependent A36 figures to one consistent valuation.
+Finding #1 A36 life-care valuation conflicts with the canonical register Major
+Add to rerun
+
+[P1] No Broken Document References
+
+A53 remains unresolved. The world-spec workbook defines the onboard-footage artifact as "MP4 (clip export) + still-frame log," but the mounted task filesystem contains only `ACTD/Video/onboard_video_still_log.pdf` and no MP4 or other video asset. That log identifies native file `4177_20251018_0130-0210_INC.mp4` while stating "Native Clip Size Not yet retrieved from vendor" and "Native Clip SHA-256 Not yet computed - native clip not yet retrieved"; `ACTD/Litigation/production_tracker.csv` likewise calls PT-19 a still-frame log with the native clip "not yet retrieved." Thus the video document class expressly required by the preservation and discovery tasks does not resolve to accessible world material.
+Finding #1 A53 native onboard-video clip is absent Major
+Add to rerun
+
+[P1] Calculation & Fixture Accuracy
+
+FAIL. `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` still uses a weighted annual cost of $173,651 and consequently states a $6,251,436 undiscounted total and a $4,091,000 36-year PV at 2.5%. The controlling `② Canonical Values` sheet identifies "Future medical — annual cost" as Fact $180,000 and sets the authoritative rounded 36-year/2.5% PV at $4,240,000; only the $6.48M undiscounted amount is a registered Trap. Thus the plan's erroneous annual fixture propagates to its undiscounted total, adopted PV, and sensitivity table, contrary to the required source data. Replace the annual input with $180,000 and recalculate every dependent value.
+Finding #1 Life-care plan uses a noncanonical future-medical annual fixture and dependent valuations Major
+Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — No Solution Or Reasoning Leakage. Legal/Reyes/late_claim_app.pdf tells the solver that relief is sought principally under § 911.6(b)(4), alternatively under § 911.6(b)(1), and argues that the facts support granting leave; Legal/Reyes/intake_memo.docx separately labels itself an internal case-strategy memo and directs the firm to wait until after the claim window for the late-claim track. This removes the central statutory-theory and strategy judgment from the late-claim task. Separately, Shared/Settlement/Reyes_lien_EOB.pdf states the paid amount and the Howell write-off rule, and Shared/Settlement/Reyes_life_care_plan.pdf instructs that the undiscounted figure is inappropriate and supplies the present-value formula and result; those are direct shortcuts to the damages valuation. The prior issues are therefore still present. No separate environment/filesystem shortcut was found in the mounted solver tree.
+Finding #1 Late-claim theory and strategy are revealed in worker files Major
+Finding #2 Damages materials state the recoverability rule and calculated future-care answer Major
+Add to rerun
+
+[P1] Intended Traps Are Fair
+
+FAIL. Previously flagged A36 is still present: the Canonical Values sheet calls A36 authoritative for a $180,000 annual cost and $4,240,000 present value over 36 years at 2.5%, while the actual `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` states $173,651 annually, a $6,251,436 undiscounted total, and $4,091,000 PV under those same 36-year and 2.5% inputs. This is not a rounding variation—recomputation of the plan's stated inputs produces approximately $4.091M—and no in-world correction or amendment resolves it. The designated controlling source therefore points to an answer different from the canonical instruction, making the future-medical trap unfair.
+Finding #1 A36 life-care plan contradicts its canonical future-medical figures Major
+Add to rerun
+
+[P0] Coherence Flag Ratio
+
+FAIL. The world-spec workbook's `② Canonical Values` identifies A36 as the source for future medical and states that the authoritative value is a level annuity of $180,000 per year over 36 years at 2.5%, producing a $4,240,000 present value. The actual A36 file, `Shared/Settlement/Reyes_life_care_plan.pdf`, instead states $173,651 annually, $6,251,436 undiscounted, and $4,091,000 present value under that same horizon and rate; a search of the plan found no amendment, correction, supersession, or reconciliation. This changes the central future-medical damages figure in an otherwise corroborated corpus, so the confirmed inconsistency is material enough to fail the coherence criterion.
+Add to rerun
+
+[P0] Anomaly Detection Catch-All
+
+The prior app-state issue is still present. In the current workbook, the Tasks sheet says every task uses both designated apps and that nine of ten require a DocuSeal state change, while multiple tasks require reading or correcting named Wiki.js pages. The current inventory lists only filesystem documents and MCP metadata; the final content sweep found `docuseal`/`wiki` only in metadata rather than a usable submission or page. Thus required archive, routing, submitter-update, and page-update actions cannot be performed or verified. Seed the referenced DocuSeal submissions and Wiki.js pages in their stated initial states and expose them to the task environment.
+Add to rerun
+
+[P0] Presentation Does Not Obstruct the Content (consolidated)
+
+The Page Layout And Overlay clause fails in `task_fs/filesystem/ACTD/Ops/owl_service_rules.docx`. Its first table grid declares widths of 2,377,440 and 3,566,160 twips, and its second declares 914,400 and 5,029,200 twips, although the same table cells are only 3,744/5,616 and 1,440/7,920 twips wide. This malformed grid makes the tables extend far beyond a normal letter page, so their content cannot be fully visible to a reader; reset each grid column to the corresponding cell width (or recreate the two tables) to restore usable layout.
+Add to rerun
+
+Minor issues
+
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+The world fails this dimension because its claims reserve materials retain visible, literal placeholder wording in records that pose as completed professional work products. The junior note and senior controlling memo label reserve components as "placeholder(s)," and the active ledger labels the two passenger LAE entries as "LAE placeholder"; the fact that the initial reserve is superseded does not reconcile the active passenger rows or the current memo language. Separately, the on-scene draft incident report's heading says "Preliminary Data — placeholder fields"; preliminary uncertainty is appropriate, but that heading exposes authoring scaffolding rather than an operational report label.
+Finding #1 Claims reserve records retain literal placeholder labels Minor
+Finding #2 Draft incident report exposes a placeholder-fields heading Minor
+Add to rerun
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+[Visual Genre Fit] `Shared/Police/scene_photos_2025-1018.pdf` visually supplies the wrong genre for A51. The spec calls it a "Captioned scene-photograph set" with "Size: ~10–15 captioned photos," yet the current eight-page PDF is headed "SCENE / RECOVERED-PARTS PHOTO LOG" and every reviewed page consists solely of written P-001 through P-061 entries, tables, and signatures; `pdfimages -list` returned no image objects. A plausible police log cannot substitute for the photographic evidence set the artifact claims to be; add representative captioned scene photographs, or revise the artifact declaration to a text-only log.
+Finding #1 A51 supplies a text log instead of the declared scene-photograph set Minor
+Add to rerun
+
+[P1] No Signposting of Load-Bearing Facts
+
+The current source files artificially select the answer-bearing records in two live comparisons. In IR_2025-1018_final.docx, the uniquely italicized subtitle "Supervisor-Reviewed / Controlling Report of Record" and the certification that it "reflects the controlling documentary record of this collision" steer the reader to the final course-and-scope account over Tran's preliminary account. In reserve_memo.docx, the document calls $3,250,000 the "controlling indemnity reserve" and labels the competing $250,000 row "Prior initial reserve — SUPERSEDED"; production_tracker.csv reinforces it as the "controlling $3,250,000 reserve; supersedes the Junior Adjuster Liability Note." Use neutral dates, authors, document statuses, and revision history instead of expressly telling the reader which side of each substantive comparison controls.
+Finding #1 Final incident report signposts the controlling account Minor
+Finding #2 Reserve records announce the selected reserve figure Minor
+Add to rerun
+
+[P1] External Citations Resolve To Real Content
+
+The Life Care Plan's medical-summary footnotes identify Mark G. Greene, MD with the ABU verification citation, and its researched-documents section repeats the ABU credential-verification URL; the exact current URL returns HTTP 404. Multiple provider footnotes (including Susan Lewis, Jerry Markovic, John Carter, Abby Lockhart, and Mark Greene) cite `https://profile.tmb.state.tx.us/PublicProfile`, which currently returns HTTP 404 even though the portal root returns 200; the plan therefore cannot substantiate those named credential attributions through the cited source. Its attached pricing-methodology material also cites Micromedex RedBook and an obsolete CMS physician-fee-schedule page, each resolving to HTTP 404, leaving material methodology sources broken. Replace each dead link with a live official provider-specific verification result or current official methodology page.

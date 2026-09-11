@@ -1,0 +1,14 @@
+TICKET 3 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+FAIL. `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` still uses a weighted annual cost of $173,651 and consequently states a $6,251,436 undiscounted total and a $4,091,000 36-year PV at 2.5%. The controlling `② Canonical Values` sheet identifies "Future medical — annual cost" as Fact $180,000 and sets the authoritative rounded 36-year/2.5% PV at $4,240,000; only the $6.48M undiscounted amount is a registered Trap. Thus the plan's erroneous annual fixture propagates to its undiscounted total, adopted PV, and sensitivity table, contrary to the required source data. Replace the annual input with $180,000 and recalculate every dependent value.
+Finding #1 Life-care plan uses a noncanonical future-medical annual fixture and dependent valuations Major
+Add to rerun

@@ -1,0 +1,14 @@
+TICKET 10 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+[Visual Genre Fit] `Shared/Police/scene_photos_2025-1018.pdf` visually supplies the wrong genre for A51. The spec calls it a "Captioned scene-photograph set" with "Size: ~10–15 captioned photos," yet the current eight-page PDF is headed "SCENE / RECOVERED-PARTS PHOTO LOG" and every reviewed page consists solely of written P-001 through P-061 entries, tables, and signatures; `pdfimages -list` returned no image objects. A plausible police log cannot substitute for the photographic evidence set the artifact claims to be; add representative captioned scene photographs, or revise the artifact declaration to a text-only log.
+Finding #1 A51 supplies a text log instead of the declared scene-photograph set Minor
+Add to rerun

@@ -1,0 +1,14 @@
+TICKET 5 of 12  |  round 18
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+FAIL. Previously flagged A36 is still present: the Canonical Values sheet calls A36 authoritative for a $180,000 annual cost and $4,240,000 present value over 36 years at 2.5%, while the actual `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` states $173,651 annually, a $6,251,436 undiscounted total, and $4,091,000 PV under those same 36-year and 2.5% inputs. This is not a rounding variation—recomputation of the plan's stated inputs produces approximately $4.091M—and no in-world correction or amendment resolves it. The designated controlling source therefore points to an answer different from the canonical instruction, making the future-medical trap unfair.
+Finding #1 A36 life-care plan contradicts its canonical future-medical figures Major
+Add to rerun
