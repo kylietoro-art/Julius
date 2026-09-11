@@ -1,0 +1,13 @@
+TICKET 1 of 6  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Built Files Match Spec Inventory
+
+The A52 Tran Personal-Phone Text Thread does not match its registry-specified content or state. The registry calls for a one-page 03:20–03:40 exchange with three quoted messages repeating the uncorrected off-book characterization, but the built five-page PDF begins at 02:47, spans 32 messages over several days, and expressly corrects the core characterization to "so not off-book after all." This changes the registered artifact's evidentiary/trap content and should be replaced with the specified one-page export. Separately, A54 is registered as a DMV driving record "current as of 10/2025," yet the built report's extract and print dates are 08/14/2025; replace it with the October 2025 pull-notice record or correct the registry if August was intended.
+Agree / Dispute / Comment / Add to rerun

@@ -1,0 +1,13 @@
+TICKET 3 of 6  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+`task_fs/filesystem/Legal/Reyes/intake_memo.docx` is a worker-readable case-strategy memorandum in the plaintiff-side file tree, while T3 calls for a late-claim relief assessment and strategy memo. The document already supplies the decisive analysis: it identifies the April 20 claim deadline and no timely claim, recognizes the § 911.6(b)(4) incapacity theory, and then says the § 911.6(b)(5) theory should not be primary because capacity was restored February 5 and counsel was retained with 46 days remaining; it further says the same causation gap limits excusable neglect. That directly yields T3's required at-risk conclusion and recommended approach, collapsing the intended synthesis. Remove this memo from the solver-facing tree for T3 (or redact its conclusions and application of the facts), leaving only the underlying medical, conservatorship, claim, and calendar records.
+Agree / Dispute / Comment / Add to rerun

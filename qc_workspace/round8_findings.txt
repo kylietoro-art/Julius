@@ -1,0 +1,35 @@
+[P0] Built Files Match Spec Inventory
+
+The A52 Tran Personal-Phone Text Thread does not match its registry-specified content or state. The registry calls for a one-page 03:20–03:40 exchange with three quoted messages repeating the uncorrected off-book characterization, but the built five-page PDF begins at 02:47, spans 32 messages over several days, and expressly corrects the core characterization to "so not off-book after all." This changes the registered artifact's evidentiary/trap content and should be replaced with the specified one-page export. Separately, A54 is registered as a DMV driving record "current as of 10/2025," yet the built report's extract and print dates are 08/14/2025; replace it with the October 2025 pull-notice record or correct the registry if August was intended.
+Agree / Dispute / Comment / Add to rerun
+
+[P1] No Broken Document References
+
+The final incident report expressly lists the preserved forward- and cabin-facing DriveCam video as an attachment/referenced record. The mounted still-frame log confirms that it is derived from a separate native MP4, and the world-spec registry requires A53 to comprise both an "MP4 (clip export) + still-frame log"; nevertheless, the task filesystem contains only ACTD/Video/onboard_video_still_log.pdf and no MP4. The referenced video therefore cannot be opened or reviewed as a real world material, which fails the criterion for explicit document references to resolve.
+Agree / Dispute / Comment / Add to rerun
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+`task_fs/filesystem/Legal/Reyes/intake_memo.docx` is a worker-readable case-strategy memorandum in the plaintiff-side file tree, while T3 calls for a late-claim relief assessment and strategy memo. The document already supplies the decisive analysis: it identifies the April 20 claim deadline and no timely claim, recognizes the § 911.6(b)(4) incapacity theory, and then says the § 911.6(b)(5) theory should not be primary because capacity was restored February 5 and counsel was retained with 46 days remaining; it further says the same causation gap limits excusable neglect. That directly yields T3's required at-risk conclusion and recommended approach, collapsing the intended synthesis. Remove this memo from the solver-facing tree for T3 (or redact its conclusions and application of the facts), leaving only the underlying medical, conservatorship, claim, and calendar records.
+Agree / Dispute / Comment / Add to rerun
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The main compliance policy says that every nonfatal accident requires drug and alcohol tests, omitting the injury-treatment and disabling-damage/tow thresholds that control under 49 C.F.R. §655.44. That is a material misstatement of the federal FTA framework used by the U.S.-centered transit district, and it can lead readers to apply mandatory testing where the regulation does not require it. Separately, the criminal complaint charges the Vehicle Code §23558 enhancement by alleging "bodily injury and death" in a scenario with three injured victims and no deaths; §23558 operates when bodily injury or death is caused to more than one victim. Correcting the policy's qualifying-accident rule and changing the complaint's conjunction to "or" would resolve the defects.
+Finding #1: ACTD policy overstates FTA Part 655 nonfatal post-accident testing - Major
+Finding #2: Felony complaint misquotes Vehicle Code §23558's trigger - Minor
+Agree / Dispute / Comment / Add to rerun
+
+[P1] Intended Traps Are Fair
+
+Trip 06 is scheduled to depart Poplar / Rivergate Plaza at 02:04 and to pass S. Main / Third at 02:31, but the police report fixes the collision at S. Main/Third at 02:05. The AVL telemetry reaches the collision location at 02:05, and the final incident report repeats both that the coach departed Poplar at 02:04 and that the collision was at S. Main/Third at 02:05, while calling the latter coincident with the published control point. No file supplies an amended schedule, authorized short-turn/detour, or other reconciliation; the final report and dispatch log instead acknowledge that 02:31 remains the relevant control point. This leaves an apparent factual inconsistency that changes whether the bus was on schedule and cannot be resolved from in-world evidence.
+Finding #1: Trip 06 control-point time conflicts with the collision - Major
+Agree / Dispute / Comment / Add to rerun
+
+Minor issues:
+
+[P1] External Citations Resolve To Real Content
+
+`ACTD/Compliance/DOT_655_Keeler.pdf` misidentifies the source of the post-accident eight-hour alcohol window as "49 CFR § 655.44(b)(1)(ii)," but the official regulation places that rule in §655.44(a)(2)(ii); §655.44(b) instead concerns drug testing within 32 hours. The same record says a ≥0.02 screening result requires confirmation "per 49 CFR § 40.251(b) and § 40.253," but §40.251(b) addresses a different BAT and §40.253 supplies confirmation-test procedures, not the threshold trigger. These incorrect pinpoints appear in the core compliance record and therefore do not materially resolve to the content claimed, even though the policy and Owl Rule 506 correctly reflect §655.44.
+Finding #1: Incorrect §655.44 pinpoint for the eight-hour alcohol-testing limit - Minor
+Finding #2: Incorrect Part 40 pinpoint for the ≥0.02 confirmation-test trigger - Minor

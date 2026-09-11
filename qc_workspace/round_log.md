@@ -14,6 +14,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 5 | 2026-09-10T19:32 | 5 | 3 | 2 | fixed 4, widened 0, traps 0, false 1, blocked 0 |
 | 6 | 2026-09-10T21:34 | 7 | 4 | 4 | fixed 7, widened 0, traps 0, false 0, blocked 0 |
 | 7 | 2026-09-10T22:07 | 10 | 7 | 6 | fixed 9, widened 2, traps 1, false 0, blocked 0 |
+| 8 | 2026-09-11T15:46 | 6 | 4 | 4 | fixed 6, widened 0, traps 0, false 0, blocked 0 |
 
 ## Detail
 
@@ -102,4 +103,16 @@ Note: Also verified via spec_check.py traps that this round's edits do not touch
   - files named: bid_award_512owl.docx, intake_memo.docx, ir_2025-1018_draft.docx, ir_2025-1018_final.docx, owl_service_rules.docx, post_accident_testing_policy.docx
 
 Note: Also verified as false positives (no action needed): 2 blast_radius footing flags on files with no real total-row structure (medical_billing_ledger.csv, reserve_ledger.csv), 2 spec_check tie misses that are formatting-only (rejection_0218.pdf states a 6-month rule not a literal date; chain_custody.pdf's time is split across table cells), leak_scan's T1-answer-value hits (bare 911.4/946.6 citations that are pre-established Reyes-track facts, not the task's actual computed conclusion), and inventory_check's 9 registered-artifact/unregistered-file pairs (App Data-type artifacts the spec registers by system description rather than literal filename, pre-dating this round).
+
+### Round 8, 2026-09-11T15:46
+
+- **Builder A## codes visible in world files**: 2 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+  - files named: dot_655_keeler.pdf
+- **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
+  - files named: intake_memo.docx
+- **Totals don't foot / calculations disagree with inputs**: 1 finding(s)  **(REPEAT)**
+
+Note: Re-verified as false positives (unchanged from round 7, confirmed no new instances from this round's edits): 2 blast_radius footing flags on ledgers with no real total-row structure, 2 spec_check tie misses that are formatting-only, leak_scan's bare-citation and reconciliation-boilerplate hits, and inventory_check's 9 registered-artifact/unregistered-file pairs. Both this round's text-growth deltas (post_accident_testing_policy.docx +238, IR_2025-1018_final.docx +57) were verified character-for-character against the logged edits.
 

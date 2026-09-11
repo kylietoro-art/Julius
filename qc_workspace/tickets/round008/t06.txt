@@ -1,0 +1,14 @@
+TICKET 6 of 6  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+`ACTD/Compliance/DOT_655_Keeler.pdf` misidentifies the source of the post-accident eight-hour alcohol window as "49 CFR § 655.44(b)(1)(ii)," but the official regulation places that rule in §655.44(a)(2)(ii); §655.44(b) instead concerns drug testing within 32 hours. The same record says a ≥0.02 screening result requires confirmation "per 49 CFR § 40.251(b) and § 40.253," but §40.251(b) addresses a different BAT and §40.253 supplies confirmation-test procedures, not the threshold trigger. These incorrect pinpoints appear in the core compliance record and therefore do not materially resolve to the content claimed, even though the policy and Owl Rule 506 correctly reflect §655.44.
+Finding #1: Incorrect §655.44 pinpoint for the eight-hour alcohol-testing limit - Minor
+Finding #2: Incorrect Part 40 pinpoint for the ≥0.02 confirmation-test trigger - Minor

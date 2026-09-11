@@ -1,0 +1,13 @@
+TICKET 2 of 6  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+The final incident report expressly lists the preserved forward- and cabin-facing DriveCam video as an attachment/referenced record. The mounted still-frame log confirms that it is derived from a separate native MP4, and the world-spec registry requires A53 to comprise both an "MP4 (clip export) + still-frame log"; nevertheless, the task filesystem contains only ACTD/Video/onboard_video_still_log.pdf and no MP4. The referenced video therefore cannot be opened or reviewed as a real world material, which fails the criterion for explicit document references to resolve.
+Agree / Dispute / Comment / Add to rerun

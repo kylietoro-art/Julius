@@ -1,0 +1,15 @@
+TICKET 4 of 6  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The main compliance policy says that every nonfatal accident requires drug and alcohol tests, omitting the injury-treatment and disabling-damage/tow thresholds that control under 49 C.F.R. §655.44. That is a material misstatement of the federal FTA framework used by the U.S.-centered transit district, and it can lead readers to apply mandatory testing where the regulation does not require it. Separately, the criminal complaint charges the Vehicle Code §23558 enhancement by alleging "bodily injury and death" in a scenario with three injured victims and no deaths; §23558 operates when bodily injury or death is caused to more than one victim. Correcting the policy's qualifying-accident rule and changing the complaint's conjunction to "or" would resolve the defects.
+Finding #1: ACTD policy overstates FTA Part 655 nonfatal post-accident testing - Major
+Finding #2: Felony complaint misquotes Vehicle Code §23558's trigger - Minor
+Agree / Dispute / Comment / Add to rerun

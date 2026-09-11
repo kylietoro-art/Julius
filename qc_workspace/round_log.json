@@ -450,6 +450,58 @@
       "disputes": [
         "Trip 06's schedule (02:31 S. Main/Third) vs. the AVL/police-corroborated 02:05 collision time is not a real defect: WORLD_SPEC's T5 course-and-scope trap turns on route/block assignment (512-OWL, continuous throughout AVL), not clock punctuality, and the schedule's uniform 11/9/7/6-minute leg timing matches Trips 02/04/08 exactly, so rewriting it would break a deliberate pattern to fix a clock-time gap the trap's own canonical value never keys on."
       ]
+    },
+    {
+      "round": 8,
+      "opened": "2026-09-11T15:46:09",
+      "count": 6,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 2,
+          "files": [
+            "onboard_video_still_log.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": [
+            "intake_memo.docx"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": [
+            "dot_655_keeler.pdf"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "other",
+        "citation_facts",
+        "math_footing"
+      ],
+      "disposition": {
+        "fixed": 6,
+        "expanded": 0,
+        "traps": 0,
+        "false": 0,
+        "blocked": 0
+      },
+      "note": "Re-verified as false positives (unchanged from round 7, confirmed no new instances from this round's edits): 2 blast_radius footing flags on ledgers with no real total-row structure, 2 spec_check tie misses that are formatting-only, leak_scan's bare-citation and reconciliation-boilerplate hits, and inventory_check's 9 registered-artifact/unregistered-file pairs. Both this round's text-growth deltas (post_accident_testing_policy.docx +238, IR_2025-1018_final.docx +57) were verified character-for-character against the logged edits.",
+      "closed": "2026-09-11T16:15:59",
+      "changed": "Replaced the Tran personal-phone text thread with the spec's exact 1-page, 3-message, uncorrected off-book exchange (the built 5-page version had self-corrected the trap in prose, collapsing both the T5 course-and-scope trap and the T7 preservation point), corrected the DMV pull-notice record's dates to October 2025, reworded the incident report's DriveCam attachment claim to match what's actually mounted, deleted the intake memo paragraph that performed T3's full comparative (b)(4)/(b)(5)/(b)(1) causation analysis on the solver's behalf, restored the post-accident-testing policy's real accident-qualifying thresholds after last round's fix over-corrected them, fixed the criminal complaint's disjunctive Vehicle Code 23558 language, fixed four wrong regulatory pinpoint citations in the DOT test form, and removed a false claim in the incident report that the actual 02:05 collision time was temporally coincident with the schedule's published 02:31 control-point time.",
+      "disputes": [
+        "The underlying Trip 06 schedule-vs-collision timing gap itself (02:31 scheduled vs. 02:05 actual) is not a defect: T5's course-and-scope trap turns on route/block assignment, not clock punctuality, and the schedule's leg timing matches every other trip's uniform template. Only the incident report's specific false claim of temporal coincidence was fixed; the schedule and AVL data were not touched."
+      ]
     }
   ]
 }
