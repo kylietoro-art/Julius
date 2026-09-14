@@ -1,0 +1,58 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Bus 4177 mileage data materially disagree across two operational exports. maintenance_log_bus4177.csv records the final pre-incident service (WO-077310, 10/10/2025) at 148,203 miles, while AVL_GPS_track_2025-1018.csv identifies the same Bus 4177 at 187,342.6 miles at 22:00 on 10/17/2025, a 39,139.6-mile increase in seven days. Previously flagged Trip 06 timing was rechecked and is no longer a defect: the schedule now has S. Main/Third at 02:05, consistent with the operational records.
+
+Finding #1: Bus 4177 odometer conflicts with its recent maintenance record. Major.
+
+[P1] No Broken Document References
+
+A53 remains a broken key document reference. The registry requires "MP4 (clip export) + still-frame log," and production_tracker.csv specifies a confirmed native MP4 deliverable (REYES-NATIVE-0004); the filesystem contains only the still-frame log and no MP4.
+
+Finding #1: A53 native onboard-video footage is absent. Major.
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The reachable corpus gives a worker the requested bottom-line legal conclusion and finished economic calculations rather than the underlying source inputs.
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The ACTD Post-Accident Drug & Alcohol Testing Policy misstates the Part 655 nonfatal-accident trigger by requiring tests after every nonfatal revenue-service-vehicle accident, rather than only qualifying accidents involving immediate medical treatment away from the scene or disabling damage requiring tow-away. It separately states every confirmed alcohol concentration of 0.02 g/210L or greater is a "positive DOT alcohol test," even though 0.02-0.039 triggers only temporary removal and 0.04 is the positive threshold; its own section 7.3 recognizes that distinction.
+
+Finding #1: Policy omits the qualifying-accident limits for nonfatal Part 655 testing. Major.
+Finding #2: Policy calls the 0.02 temporary-removal threshold a positive DOT result. Major.
+
+[P0] Anomaly Detection Catch-All
+
+The DocuSeal/Wiki.js issue is still present. No DocuSeal submission records, Wiki.js page/export, AppData directory, or database exists in the corpus.
+
+[P0] Format-Native Feature Fidelity
+
+Sub-check (b) fails in custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf (TCR), page 4: an unpopulated factual-diagram grid and INDICATE NORTH circle.
+
+=== Minor issues ===
+
+[P0] Built Files Match Spec Inventory
+
+A09 and A52 do not match their specified content and attribution. A09 requires specific recipients/subject/body; the built email has different recipients, subject, and narrative. A52 requires a one-page, three-message 03:20-03:40 exchange; the built PDF has five pages starting at 02:47.
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+scene_photos_2025-1018.pdf and onboard_video_still_log.pdf both claim to be photo/still-frame sets but contain zero images on every page.
+
+Finding #1: Police photo set contains no photographs. Minor.
+Finding #2: Onboard still-frame log contains no still frames. Minor.
+
+[P1] No Signposting of Load-Bearing Facts
+
+IR_2025-1018_final.docx's subtitle and certification direct the reader to its account over the draft; reserve_memo.docx and production_tracker.csv label the later reserve "Controlling"/bold and the prior "SUPERSEDED."
+
+Finding #1: Final incident report directs the reader to a disputed account. Minor.
+Finding #2: Reserve records foreground the later reserve as the answer. Minor.
+
+[P1] External Citations Resolve To Real Content
+
+LIFE CARE PLAN.pdf still uses five external sources (TMB, ABU, TreasuryDirect, CMS, Micromedex RedBook) that resolve to 404/505.
+
+[P0] Text Legibility And Contrast
+
+intake_memo.docx table headers ("Role", "Attorney/Staff") and IR_2025-1018_final.docx's incident/timeline/operator/passenger table headers are washed out against their dark local fills.

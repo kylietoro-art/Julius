@@ -358,6 +358,82 @@
         "Built Files Match Spec Inventory (A09, A52): both built files preserve the registry's load-bearing trap content (the off-book mischaracterization, sent before checking the schedule) in fuller, more realistic form than the registry's illustrative excerpt; rewriting them to match verbatim would discard good content for no substantive gain.",
         "No Signposting and External Citations: unchanged from rounds 2-3, re-confirmed."
       ]
+    },
+    {
+      "round": 5,
+      "opened": "2026-09-14T19:04:54",
+      "count": 11,
+      "classes": {
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 2,
+          "files": [
+            "avl_gps_track_2025-1018.csv",
+            "maintenance_log_bus4177.csv"
+          ]
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 2,
+          "files": [
+            "production_tracker.csv"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": [
+            "plan.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 3,
+          "files": [
+            "13.pdf",
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": [
+            "ir_2025-1018_final.docx",
+            "production_tracker.csv",
+            "reserve_memo.docx"
+          ]
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": [
+            "intake_memo.docx",
+            "ir_2025-1018_final.docx"
+          ]
+        }
+      },
+      "repeats": [
+        "math_footing",
+        "a_code_leakage",
+        "citation_facts",
+        "other",
+        "answer_leakage",
+        "temporal"
+      ],
+      "disposition": {
+        "fixed": 3,
+        "expanded": 0,
+        "traps": 1,
+        "false": 4,
+        "blocked": 3
+      },
+      "note": "Blocked, standing items unchanged: A53 native MP4 (5th occurrence, needs a decision beyond this filesystem pass), Docuseal/Wiki.js seeding, A51/onboard-log photography.",
+      "closed": "2026-09-14T19:04:54",
+      "changed": "Rebaselined AVL_GPS_track_2025-1018.csv's odometer column (was 39,139.6 mi ahead of the maintenance log; offset to start at 149,203, consistent with ~1,000 mi over 7 days). Restored the real 49 CFR 655.4 qualifying-accident threshold in both compliance documents (round 3's fix had dropped it entirely) and fixed the 0.02/0.04 positive-test mislabeling to match the policy's own section 7.3. Set explicit white text on dark-navy table headers in intake_memo.docx and IR_2025-1018_final.docx, which had no explicit run color at all and were inheriting a dark default.",
+      "disputes": [
+        "Format-Native Feature Fidelity / TCR.pdf, Built Files Match Spec Inventory (A09/A52), No Signposting, External Citations: all unchanged from prior rounds, same verification holds."
+      ]
     }
   ]
 }

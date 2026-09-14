@@ -11,6 +11,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 2 | 2026-09-14T16:16 | 14 | 7 | 5 | fixed 3, widened 0, traps 1, false 9, blocked 1 |
 | 3 | 2026-09-14T17:17 | 14 | 6 | 6 | fixed 7, widened 0, traps 1, false 2, blocked 4 |
 | 4 | 2026-09-14T18:28 | 15 | 8 | 8 | fixed 9, widened 0, traps 1, false 3, blocked 2 |
+| 5 | 2026-09-14T19:04 | 11 | 6 | 6 | fixed 3, widened 0, traps 1, false 4, blocked 3 |
 
 ## Detail
 
@@ -83,4 +84,21 @@ Note: Blocked-on-person items: A53 onboard video and A52 text-thread chronology 
   - files named: plan.pdf
 
 Note: Blocked: Docuseal/Wiki.js seeding (separate pipeline) and A51/onboard-log photography (outside this pass) remain as in prior rounds.
+
+### Round 5, 2026-09-14T19:04
+
+- **Uncategorised, read the finding text**: 3 finding(s)  **(REPEAT)**
+  - files named: 13.pdf, onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+- **Totals don't foot / calculations disagree with inputs**: 2 finding(s)  **(REPEAT)**
+  - files named: avl_gps_track_2025-1018.csv, maintenance_log_bus4177.csv
+- **Builder A## codes visible in world files**: 2 finding(s)  **(REPEAT)**
+  - files named: production_tracker.csv
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+  - files named: plan.pdf
+- **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
+  - files named: ir_2025-1018_final.docx, production_tracker.csv, reserve_memo.docx
+- **Dates, chronology or timeline don't hold together**: 1 finding(s)  **(REPEAT)**
+  - files named: intake_memo.docx, ir_2025-1018_final.docx
+
+Note: Blocked, standing items unchanged: A53 native MP4 (5th occurrence, needs a decision beyond this filesystem pass), Docuseal/Wiki.js seeding, A51/onboard-log photography.
 

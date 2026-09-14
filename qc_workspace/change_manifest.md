@@ -331,3 +331,21 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Video/onboard_video_still_log.pdf | Preservation Statement paragraph, p.1 [round4 (4th occurrence): No Broken Document References -- A53 native footage; judgment call, native MP4 file itself still not mounted] | clip perpetually described as vendor-held only, in tension with production_tracker.csv showing A53 already Bates-stamped/Produce/Confirmed | → | added that the clip was retrieved from the vendor 12/10/2025 and copied to ACTD's own evidence locker, resolving the tension with the production tracker without fabricating an actual video file |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/AVL_GPS_track_2025-1018.csv | odometer_mi column, all 226 data rows [round5: Numerical Values Constraints -- Bus 4177 odometer conflicts with its recent maintenance record] | 187,342.6 - 187,442.x (39,139.6 mi jump from the 10/10/2025 maintenance log reading of 148,203 in 7 days) | → | 149,203.0 - 149,228.2 (offset -38,139.6, preserves the realistic incremental pattern, consistent with ~1,000 mi over 7 days from the maintenance log baseline) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/post_accident_testing_policy.docx, ACTD/Ops/owl_service_rules.docx | sec 3.2/Rule 506 (qualifying-accident threshold); sec 4.3 (0.02 vs 0.04 positive-test label) [round5: Real-World Facts -- policy still misstated 49 CFR Part 655] | round-3 fix tested every nonfatal accident (missing the real 655.4 qualifying-accident threshold); 0.02+ was called a positive DOT test outright, contradicting the document's own sec 7.3 | → | restored the real qualifying threshold (bodily injury+immediate treatment away from scene, OR disabling damage requiring tow-away) before the discount test applies; 4.3 now matches 7.3: 0.04+ is positive, 0.02-0.039 is temporary removal only |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx, ACTD/Safety/IR_2025-1018_final.docx | table header cells (dark navy fill, 2 + 10 runs) [round5: Text Legibility And Contrast -- header cells washed out against their local fill] | no explicit run color on dark-navy header cells; rendered in the default/inherited color, washing out against the fill | → | explicit white (FFFFFF) run color on all header cells sharing the dark-navy fill |
