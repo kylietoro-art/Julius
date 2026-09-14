@@ -1,0 +1,14 @@
+TICKET 4 of 10  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+FAIL. Previously flagged DocuSeal/Wiki.js issue: still present. mcp/task.json currently sets Apps Type to multi and targets docuseal and wiki_js; the World Spec's T2 requires that the earlier draft's Docuseal review submission is archived and that the corrected complaint be routed for signature, while T3 says the internal Wiki Js playbook currently misstates section 911.6(b)(3) and requires the solver to correct that page. Yet the manifest's full inventory and the staged-directory scan supply only conventional filesystem documents -- there is no AppData directory, app database, DocuSeal submission record, or Wiki.js page/export. With no seeded app objects in their specified erroneous/preexisting states, those stateful actions are impossible to execute and assess.
+
+Finding #1: Required DocuSeal and Wiki.js state is not seeded. Major.

@@ -1,0 +1,15 @@
+TICKET 9 of 10  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+Fails because answer-bearing conclusions are still artificially singled out. `ACTD/Safety/IR_2025-1018_final.docx` calls itself the "Supervisor-Reviewed / Controlling Report of Record," makes the draft relationship a dedicated section, and certifies that it reflects the "controlling documentary record," rather than neutrally conveying the investigation's completion and provenance. Separately, `ACTD/Claims/reserve_memo.docx` calls $3,250,000 the controlling reserve, selectively bolds $250,000, $3,250,000, and "supersedes," and labels the earlier figure "Prior initial reserve -- SUPERSEDED"; `ACTD/Litigation/production_tracker.csv` repeats "controlling $3,250,000 reserve; supersedes A42." These choices disclose which account and reserve comparison the reviewer should accept instead of requiring synthesis of the dated source records.
+
+Finding #1: Final incident report labels its disputed account as controlling. Minor.
+Finding #2: Reserve records foreground the current reserve conclusion. Minor.

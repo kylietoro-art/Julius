@@ -349,3 +349,9 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Legal/Reyes/intake_memo.docx, ACTD/Safety/IR_2025-1018_final.docx | table header cells (dark navy fill, 2 + 10 runs) [round5: Text Legibility And Contrast -- header cells washed out against their local fill] | no explicit run color on dark-navy header cells; rendered in the default/inherited color, washing out against the fill | → | explicit white (FFFFFF) run color on all header cells sharing the dark-navy fill |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/post_accident_testing_policy.docx | sec 7.4 Return-to-Duty Process [round6: Real-World Facts -- policy imposed SAP return-to-duty on the 0.02-0.039 temporary-removal category] | SAP/Subpart O process applied to anyone removed under sec 7.3, which covers both the 0.04+/positive category AND the 0.02-0.039 temporary-removal category | → | SAP/Subpart O scoped to only the sec 655.61/655.62 category (positive/0.04+/refusal); added the distinct, lighter sec 655.35/655.48 return path for 0.02-0.039 (retest below 0.02, no SAP) |

@@ -1,0 +1,14 @@
+TICKET 3 of 10  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The world fails the [Failing -- No Synthetic Substitutes For Real-World Facts] clause because ACTD's current FTA/DOT policy gives the lower 0.02-0.039 alcohol-result category the much more onerous SAP return-to-duty process. In `ACTD/Compliance/post_accident_testing_policy.docx`, section 7.3 identifies that range as a temporary removal under 49 C.F.R. 655.35, but section 7.4 says that no one removed under section 7.3 may return without SAP evaluation, treatment, and a negative return-to-duty test. This materially misstates the federal compliance framework used by a California public transit district; revise section 7.4 to limit the Part 40 Subpart O/SAP process to the 655.61-.62 violation categories and state the distinct 655.35 return timing for 0.02-0.039 results. Previously flagged section 3.2 and section 4.3 issues were rechecked and are no longer present.
+
+Finding #1: Policy imposes SAP return-to-duty requirements on 0.02-0.039 alcohol results. Major.

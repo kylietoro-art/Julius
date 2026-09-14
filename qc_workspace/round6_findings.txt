@@ -1,0 +1,59 @@
+[P1] No Broken Document References
+
+The A53 video reference is broken. The world-spec A53 row requires "MP4 (clip export) + still-frame log," and `ACTD/Litigation/production_tracker.csv` marks the native MP4 as confirmed/produced under `REYES-NATIVE-0004`; however, the only video-related mounted file is `ACTD/Video/onboard_video_still_log.pdf`. That PDF identifies the missing native file as `4177_20251018_0130-0210_INC.mp4` and says the full MP4 remains available from custodians, leaving a key document class unresolved in the world. The final incident report and FST supplement also expressly identify additional attachments that have no mounted counterpart, creating further broken document references.
+
+Finding #1: A53 native onboard-video clip is absent. Major.
+Finding #2: Final incident report cites unmounted operational attachments. Minor.
+Finding #3: FST supplement's listed evidence attachments are unavailable. Minor.
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The worker-readable late-claim application tells the worker that leave "should be granted" under the two precise statutory grounds that the strategy memo is meant to assess. Separately, the settlement materials label $196,000 as the Howell-recoverable trial measure and supply completed present-value totals of $4,240,000 for future care and $1,200,000 for lost earning capacity. Those results collapse the substantive legal and valuation judgment required in the corresponding tasks; removing the conclusion language and completed outputs while retaining source facts, inputs, and supporting records would cure the defect.
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The world fails the [Failing -- No Synthetic Substitutes For Real-World Facts] clause because ACTD's current FTA/DOT policy gives the lower 0.02-0.039 alcohol-result category the much more onerous SAP return-to-duty process. In `ACTD/Compliance/post_accident_testing_policy.docx`, section 7.3 identifies that range as a temporary removal under 49 C.F.R. 655.35, but section 7.4 says that no one removed under section 7.3 may return without SAP evaluation, treatment, and a negative return-to-duty test. This materially misstates the federal compliance framework used by a California public transit district; revise section 7.4 to limit the Part 40 Subpart O/SAP process to the 655.61-.62 violation categories and state the distinct 655.35 return timing for 0.02-0.039 results. Previously flagged section 3.2 and section 4.3 issues were rechecked and are no longer present.
+
+Finding #1: Policy imposes SAP return-to-duty requirements on 0.02-0.039 alcohol results. Major.
+
+[P0] Anomaly Detection Catch-All
+
+FAIL. Previously flagged DocuSeal/Wiki.js issue: still present. mcp/task.json currently sets Apps Type to multi and targets docuseal and wiki_js; the World Spec's T2 requires that the earlier draft's Docuseal review submission is archived and that the corrected complaint be routed for signature, while T3 says the internal Wiki Js playbook currently misstates section 911.6(b)(3) and requires the solver to correct that page. Yet the manifest's full inventory and the staged-directory scan supply only conventional filesystem documents -- there is no AppData directory, app database, DocuSeal submission record, or Wiki.js page/export. With no seeded app objects in their specified erroneous/preexisting states, those stateful actions are impossible to execute and assess.
+
+Finding #1: Required DocuSeal and Wiki.js state is not seeded. Major.
+
+[P0] Format-Native Feature Fidelity
+
+Sub-check (b) materially fails in `custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf` (TCR). Page 4 visibly states, "NOTE: Click in the graph or INDICATE NORTH fields to import a graphic," but the entire factual-diagram grid and the INDICATE NORTH circle are empty; pages 1-3 are likewise blank traffic-collision form pages with no collision, party, vehicle, coding, or witness content. This leaves an ostensibly factual collision-report artifact without its reserved native form/diagram content, so populate the report and factual diagram with the actual collision information (including north indication), or remove the empty form from the world.
+
+Finding #1: TCR is an unpopulated native collision-report form, including its factual diagram. Major.
+
+=== Minor issues ===
+
+[P0] Built Files Match Spec Inventory
+
+A09 fails the registry's content-and-attribution match requirement. The registry requires Tran's 03:15 email to G. Espinoza and D. Farkas, subject "Overnight incident - Route 512," with a brief preliminary off-book message; the built EML instead goes to a dispatch-supervisors list, cc's M. Okonkwo, carries a different subject, and adds a lengthy incident narrative. A52 also fails: the registry requires a one-page, three-message personal-phone exchange from 03:20-03:40, but the built PDF is five pages and contains a 32-message thread beginning at 02:47 and continuing through 10/24; the later in-world correction does not make that artifact match the specified thread. Replace each artifact with the separately specified version while retaining the correct format and relevant preliminary off-book trap.
+
+Finding #1: A09 dispatch email materially diverges from registry attribution and content. Minor.
+Finding #2: A52 personal-phone text export does not match the specified thread. Minor.
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Document Authenticity Texture And Visual Genre Fit fail for two separately repairable files. `Shared/Police/scene_photos_2025-1018.pdf` is required by the spec to be a captioned police scene-photograph set, but all eight rendered pages are a prose/table photo index and the PDF has zero images; its institutional labels and detailed entries cannot substitute for the claimed evidence photographs. `ACTD/Video/onboard_video_still_log.pdf` likewise has six rendered pages of tables and prose and zero images, so a reader sees a textual frame index rather than a still-frame log. Add the actual representative scene photos and video stills (with the existing captions/metadata) or accurately rename and describe both artifacts as text-only indexes.
+
+[P1] Calculation & Fixture Accuracy
+
+ACTD/Claims/medical_billing_ledger.csv contains 81 rows whose billed amounts total $2,840,000, paid amounts total $196,000, adjustments total $2,644,000, and balances total $0; each row follows billed = paid + adjustments + balance. In contrast, Shared/Settlement/Reyes_lien_EOB.pdf Exhibit A reports the same $2,840,000 billed and $196,000 paid/accepted but reports $2,640,800 in contractual adjustments and a separate $3,200 patient-responsibility amount -- the four fields sum correctly only in the PDF. Because the patient responsibility is stated to have been paid and no trap registers this divergence, the ledger and EOB cannot both accurately reflect the underlying financial reconciliation; correcting the ledger's adjustment/paid treatment or aligning the EOB is necessary.
+
+Finding #1: Medical billing ledger omits the EOB's $3,200 patient-responsibility component. Minor.
+
+[P1] No Signposting of Load-Bearing Facts
+
+Fails because answer-bearing conclusions are still artificially singled out. `ACTD/Safety/IR_2025-1018_final.docx` calls itself the "Supervisor-Reviewed / Controlling Report of Record," makes the draft relationship a dedicated section, and certifies that it reflects the "controlling documentary record," rather than neutrally conveying the investigation's completion and provenance. Separately, `ACTD/Claims/reserve_memo.docx` calls $3,250,000 the controlling reserve, selectively bolds $250,000, $3,250,000, and "supersedes," and labels the earlier figure "Prior initial reserve -- SUPERSEDED"; `ACTD/Litigation/production_tracker.csv` repeats "controlling $3,250,000 reserve; supersedes A42." These choices disclose which account and reserve comparison the reviewer should accept instead of requiring synthesis of the dated source records.
+
+Finding #1: Final incident report labels its disputed account as controlling. Minor.
+Finding #2: Reserve records foreground the current reserve conclusion. Minor.
+
+[P1] External Citations Resolve To Real Content
+
+FAIL. The prior LIFE CARE PLAN citation issue remains present in part: the report's citation 167 for the TreasuryDirect historical auction query -- used to derive the nominal rate in its present-value calculation -- now returns an explicit HTTP 505 UnsupportedHttpVersion page rather than the cited data. Separately, the report cites the NY Department of Financial Services' OON_guidance.pdf to support the FAIR Health/UCR methodology, but that endpoint returns HTTP 404. These are separately fixable, material citations, and replacing each with the current official resource would cure the defect.

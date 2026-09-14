@@ -1,0 +1,15 @@
+TICKET 6 of 10  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Built Files Match Spec Inventory
+
+A09 fails the registry's content-and-attribution match requirement. The registry requires Tran's 03:15 email to G. Espinoza and D. Farkas, subject "Overnight incident - Route 512," with a brief preliminary off-book message; the built EML instead goes to a dispatch-supervisors list, cc's M. Okonkwo, carries a different subject, and adds a lengthy incident narrative. A52 also fails: the registry requires a one-page, three-message personal-phone exchange from 03:20-03:40, but the built PDF is five pages and contains a 32-message thread beginning at 02:47 and continuing through 10/24; the later in-world correction does not make that artifact match the specified thread. Replace each artifact with the separately specified version while retaining the correct format and relevant preliminary off-book trap.
+
+Finding #1: A09 dispatch email materially diverges from registry attribution and content. Minor.
+Finding #2: A52 personal-phone text export does not match the specified thread. Minor.

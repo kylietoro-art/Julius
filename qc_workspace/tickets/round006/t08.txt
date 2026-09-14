@@ -1,0 +1,14 @@
+TICKET 8 of 10  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+ACTD/Claims/medical_billing_ledger.csv contains 81 rows whose billed amounts total $2,840,000, paid amounts total $196,000, adjustments total $2,644,000, and balances total $0; each row follows billed = paid + adjustments + balance. In contrast, Shared/Settlement/Reyes_lien_EOB.pdf Exhibit A reports the same $2,840,000 billed and $196,000 paid/accepted but reports $2,640,800 in contractual adjustments and a separate $3,200 patient-responsibility amount -- the four fields sum correctly only in the PDF. Because the patient responsibility is stated to have been paid and no trap registers this divergence, the ledger and EOB cannot both accurately reflect the underlying financial reconciliation; correcting the ledger's adjustment/paid treatment or aligning the EOB is necessary.
+
+Finding #1: Medical billing ledger omits the EOB's $3,200 patient-responsibility component. Minor.

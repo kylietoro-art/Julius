@@ -1,0 +1,12 @@
+TICKET 7 of 10  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Document Authenticity Texture And Visual Genre Fit fail for two separately repairable files. `Shared/Police/scene_photos_2025-1018.pdf` is required by the spec to be a captioned police scene-photograph set, but all eight rendered pages are a prose/table photo index and the PDF has zero images; its institutional labels and detailed entries cannot substitute for the claimed evidence photographs. `ACTD/Video/onboard_video_still_log.pdf` likewise has six rendered pages of tables and prose and zero images, so a reader sees a textual frame index rather than a still-frame log. Add the actual representative scene photos and video stills (with the existing captions/metadata) or accurately rename and describe both artifacts as text-only indexes.

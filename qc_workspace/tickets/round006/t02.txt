@@ -1,0 +1,12 @@
+TICKET 2 of 10  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The worker-readable late-claim application tells the worker that leave "should be granted" under the two precise statutory grounds that the strategy memo is meant to assess. Separately, the settlement materials label $196,000 as the Howell-recoverable trial measure and supply completed present-value totals of $4,240,000 for future care and $1,200,000 for lost earning capacity. Those results collapse the substantive legal and valuation judgment required in the corresponding tasks; removing the conclusion language and completed outputs while retaining source facts, inputs, and supporting records would cure the defect.

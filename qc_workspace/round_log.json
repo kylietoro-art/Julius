@@ -434,6 +434,81 @@
       "disputes": [
         "Format-Native Feature Fidelity / TCR.pdf, Built Files Match Spec Inventory (A09/A52), No Signposting, External Citations: all unchanged from prior rounds, same verification holds."
       ]
+    },
+    {
+      "round": 6,
+      "opened": "2026-09-14T19:37:00",
+      "count": 10,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 3,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "production_tracker.csv",
+            "ir_2025-1018_final.docx",
+            "reserve_memo.docx"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 3,
+          "files": [
+            "task.json",
+            "13.pdf"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 1,
+          "files": [
+            "post_accident_testing_policy.docx"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 2,
+          "files": [
+            "medical_billing_ledger.csv",
+            "reyes_lien_eob.pdf",
+            "oon_guidance.pdf"
+          ]
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "other",
+        "citation_facts",
+        "metadata_fingerprint",
+        "math_footing"
+      ],
+      "disposition": {
+        "fixed": 1,
+        "expanded": 0,
+        "traps": 1,
+        "false": 5,
+        "blocked": 3
+      },
+      "note": "Blocked (unchanged from prior rounds): A53 native MP4 -- standing ruling recorded round 5, accepted permanent gap, app-data pipeline will supply the asset later; DocuSeal/Wiki.js app-data seeding -- out of scope for a filesystem-only pass; scene/still-frame photo and video-still image generation -- no image-generation capability available.",
+      "closed": "2026-09-14T19:42:09",
+      "changed": "Rewrote post_accident_testing_policy.docx section 7.4 to scope the Part 40 Subpart O/SAP return-to-duty process to the section 655.61/.62 violation categories only, adding the distinct lighter return path required for section 655.35's 0.02-0.039 temporary-removal category.",
+      "disputes": [
+        "No Reachable Shortcut (trap): the late-claim application, lien/EOB letter, and life-care/wage figures are the world's own source records stating their own real facts and computed values; this is the registered anti-shortcut trap category, unchanged since round 1.",
+        "Format-Native Feature Fidelity / TCR.pdf: custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf does not exist anywhere in this repository (re-confirmed a 4th time); the real Traffic Collision Report (A01, Shared/Police/TC_2025-1018.pdf) is fully populated with real narrative content on every page, no blank diagram grid.",
+        "Built Files Match Spec Inventory (A09/A52): built content is richer than the registry's literal description but preserves the same load-bearing trap substance; narrowing to the exact registry text would remove corroborating detail without curing a real defect.",
+        "Calculation & Fixture Accuracy (medical_billing_ledger.csv vs Reyes_lien_EOB.pdf): the ledger's $2,644,000 adjustments total equals the EOB's $2,640,800 contractual adjustment plus its $3,200 patient-responsibility line exactly; the ledger uses one combined column where the EOB itemizes two, so the records reconcile and no value is wrong.",
+        "No Signposting: a final incident report certifying its own status and a claims memo naming its current controlling reserve are realistic real-world document conventions, not an artificial answer key.",
+        "External Citations: the specific sources named this round (TreasuryDirect citation 167, NY DFS OON_guidance.pdf) do not appear anywhere in the 19-page life-care-plan text; this finding has now named a different, equally absent set of sources in 3+ consecutive rounds, consistent with an AutoQC-side detection issue rather than a real defect in this file.",
+        "No Broken Document References, Finding #2/#3 (unmounted attachments): the final incident report and FST supplement cite their own internal work-papers (field notebook pages, a PAS log entry, a calibration certificate, a chain-of-custody form, run schedule, AVL/GPS export) exactly as real investigative reports do; none were ever part of the External Files Registry's specified artifact set, and the substantive content behind each citation already appears inline in the same document."
+      ]
     }
   ]
 }

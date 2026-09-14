@@ -1,0 +1,16 @@
+TICKET 1 of 10  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+The A53 video reference is broken. The world-spec A53 row requires "MP4 (clip export) + still-frame log," and `ACTD/Litigation/production_tracker.csv` marks the native MP4 as confirmed/produced under `REYES-NATIVE-0004`; however, the only video-related mounted file is `ACTD/Video/onboard_video_still_log.pdf`. That PDF identifies the missing native file as `4177_20251018_0130-0210_INC.mp4` and says the full MP4 remains available from custodians, leaving a key document class unresolved in the world. The final incident report and FST supplement also expressly identify additional attachments that have no mounted counterpart, creating further broken document references.
+
+Finding #1: A53 native onboard-video clip is absent. Major.
+Finding #2: Final incident report cites unmounted operational attachments. Minor.
+Finding #3: FST supplement's listed evidence attachments are unavailable. Minor.

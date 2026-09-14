@@ -1,0 +1,12 @@
+TICKET 10 of 10  |  round 6
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+FAIL. The prior LIFE CARE PLAN citation issue remains present in part: the report's citation 167 for the TreasuryDirect historical auction query -- used to derive the nominal rate in its present-value calculation -- now returns an explicit HTTP 505 UnsupportedHttpVersion page rather than the cited data. Separately, the report cites the NY Department of Financial Services' OON_guidance.pdf to support the FAIR Health/UCR methodology, but that endpoint returns HTTP 404. These are separately fixable, material citations, and replacing each with the current official resource would cure the defect.

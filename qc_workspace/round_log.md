@@ -12,6 +12,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 3 | 2026-09-14T17:17 | 14 | 6 | 6 | fixed 7, widened 0, traps 1, false 2, blocked 4 |
 | 4 | 2026-09-14T18:28 | 15 | 8 | 8 | fixed 9, widened 0, traps 1, false 3, blocked 2 |
 | 5 | 2026-09-14T19:04 | 11 | 6 | 6 | fixed 3, widened 0, traps 1, false 4, blocked 3 |
+| 6 | 2026-09-14T19:37 | 10 | 5 | 5 | fixed 1, widened 0, traps 1, false 5, blocked 3 |
 
 ## Detail
 
@@ -101,4 +102,19 @@ Note: Blocked: Docuseal/Wiki.js seeding (separate pipeline) and A51/onboard-log 
   - files named: intake_memo.docx, ir_2025-1018_final.docx
 
 Note: Blocked, standing items unchanged: A53 native MP4 (5th occurrence, needs a decision beyond this filesystem pass), Docuseal/Wiki.js seeding, A51/onboard-log photography.
+
+### Round 6, 2026-09-14T19:37
+
+- **Builder A## codes visible in world files**: 3 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf, production_tracker.csv, ir_2025-1018_final.docx, reserve_memo.docx
+- **Uncategorised, read the finding text**: 3 finding(s)  **(REPEAT)**
+  - files named: task.json, 13.pdf
+- **Totals don't foot / calculations disagree with inputs**: 2 finding(s)  **(REPEAT)**
+  - files named: medical_billing_ledger.csv, reyes_lien_eob.pdf, oon_guidance.pdf
+- **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
+  - files named: post_accident_testing_policy.docx
+- **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+
+Note: Blocked (unchanged from prior rounds): A53 native MP4 -- standing ruling recorded round 5, accepted permanent gap, app-data pipeline will supply the asset later; DocuSeal/Wiki.js app-data seeding -- out of scope for a filesystem-only pass; scene/still-frame photo and video-still image generation -- no image-generation capability available.
 
