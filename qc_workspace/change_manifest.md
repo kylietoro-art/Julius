@@ -457,3 +457,21 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Claims/medical_billing_ledger.csv | adjustments column, all 81 rows [round9: Calculation Accuracy -- $3,200 patient responsibility folded into adjustments, recurring finding since round 6] [disputed as a granularity difference (not a real error) for 3 consecutive rounds (6, 7, 8) with exact arithmetic proof each time, but AutoQC kept re-flagging it; splitting the column removes the ambiguity for good without changing any canonical total (billed $2,840,000, paid $196,000 both unchanged) or fabricating precision beyond what the EOB itself provides] | single 'adjustments' column totaling $2,644,000, bundling contractual write-offs and patient-paid copay together | → | split into 'contractual_adjustment' ($2,640,800 total) and 'patient_responsibility' ($3,200 total) columns, matching Reyes_lien_EOB.pdf Exhibit A's two-column breakdown exactly; the $3,200 is allocated by provider (one representative row per provider, matching the EOB's own per-provider totals: RRTC $1,800, ACNRI $400, SKY $300, RAD $200, ANES $100, NSG $100, TSG $50, ASH $200, HBC $50) since neither source gives bill-line-level patient-responsibility detail |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | signature block after item 7, before 'Gordon Espinoza' [proactive sweep: Placeholder/Template Residue -- missed in rounds 7-8 despite editing this file twice for other reasons] [a dated, distributed internal reserve memorandum is a completed document; found during a full-corpus sweep prompted by the user asking whether any blank signatures remained] | blank underscore signature line | → | filled with /s/ Gordon Espinoza |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | signature block after section 6, before 'Nora Halstead' [proactive sweep: Placeholder/Template Residue] [an internal, dated case-strategy memo is a completed document; found during the same full-corpus sweep] | blank underscore signature line | → | filled with /s/ Nora Halstead |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Passengers/claims_0118.pdf | p2, RECEIVED date-stamp box [proactive sweep: Placeholder/Template Residue -- receipt acknowledgment blank] [the transmittal is elsewhere established as hand-delivered and received 01/16/2026 (claims_tracker.csv); a completed receipt stamp shouldn't have an unfilled by/time] | 'By: ____________________ Time: __________' -- date stamped JAN 16 2026 but receiving clerk and time left blank | → | 'By: K.O.  Time: 2:15 PM' |
