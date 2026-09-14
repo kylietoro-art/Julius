@@ -1,0 +1,14 @@
+TICKET 1 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Files Registry Match (heading not captured in paste)
+
+A22, `Med/Reyes/op_reports.pdf`, materially diverges from its External Files Registry description. The registry calls for three operative reports, 10/18 decompressive craniectomy plus ICP monitor, 10/21 pelvic ORIF, and 11/03 bilateral lower-extremity ORIF, whereas the built PDF identifies itself as a five-report compilation dated 10/18, 10/18, 10/22, 10/25, and 11/05 and expressly says neurosurgical reports are separately filed. This is a content and treatment-chronology mismatch, not a formatting variation; replace/revise A22 to the three specified reports or amend the registry to accurately describe the intended five-report compilation.
+
+Finding #1: A22 operative-report compilation does not match registry content. Major.

@@ -1,0 +1,15 @@
+TICKET 10 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+The active reserve ledger has two 12/15/2025 entries labeled "LAE placeholder," and the controlling reserve memo calls its future-medical and lost-earning-capacity components "placeholders." These are visible in current claims materials and read as unfinished authoring terminology rather than business-ready estimates. Separately, the on-scene incident-report draft labels a substantive section "Preliminary Data - placeholder fields," which is explicit scaffolding; ordinary redactions, blank signature lines, checkboxes, and an amount reserved for later determination elsewhere were reviewed and are not the basis of this finding.
+
+Finding #1: Active reserve materials retain placeholder labels. Minor.
+Finding #2: Draft incident report exposes a placeholder-fields heading. Minor.

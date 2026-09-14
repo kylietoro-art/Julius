@@ -1,0 +1,12 @@
+TICKET 11 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Visual Genre Fit fails for `Shared/Police/scene_photos_2025-1018.pdf` (A51). The World Spec calls it a "Captioned scene-photograph set" with "Size: ~10-15 captioned photos," but the current file is an eight-page text/table log: its PDF image inventory has no image entries and every rendered page consists of written P-001 through P-061 entries and custody/signature blocks. A police photo log can plausibly accompany photographs, but this document supplies none, so it visibly impersonates a photo set without delivering the visual genre the specification claims; add representative captioned scene photographs/thumbnails or revise the declared artifact to a text-only photo log.

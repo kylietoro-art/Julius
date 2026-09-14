@@ -1,0 +1,12 @@
+TICKET 14 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+The 139-page supplied Life Care Plan continues to cite dead or unusable official/vendor URLs for material assertions. In its body it attributes Mark G. Greene's Texas Medical Board and American Board of Urology status to the TMB and ABU URLs, and its Sources and Methods attachment uses the CMS locality, Micromedex RedBook, and TreasuryDirect Historical Auction Query citations to support pricing and discount-rate methodology. Current retrieval returned 404 for four of those endpoints and 505 for TreasuryDirect, so the cited sources do not resolve to real supporting content; the document needs live, claim-appropriate replacements.

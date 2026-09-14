@@ -1,0 +1,14 @@
+TICKET 7 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+The current subject still contains the previously flagged A36 discrepancy. The spec workbook's Canonical Values sheet identifies A36 as authoritative for a 36-year, 2.5% future-medical annuity of $180,000 per year, $6,480,000 undiscounted, and $4,240,000 present value, but Shared/Settlement/Reyes_life_care_plan.pdf states $173,651 per year, $6,251,436 undiscounted, and $4,091,000 present value under those same 36-year and 2.5% assumptions. Recalculation confirms each set is internally consistent for its own annual input, leaving an unresolved, material contradiction over the governing damages value; no amendment or supersession was found in the A36 PDF or later records.
+
+Finding #1: A36 future-medical figures conflict with the canonical values. Major.

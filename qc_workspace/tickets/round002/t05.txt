@@ -1,0 +1,16 @@
+TICKET 5 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The "No Solution Or Reasoning" clause fails because `Legal/Reyes/late_claim_app.pdf` directly tells the worker which statutory grounds to pursue and asks for the result, rather than leaving the late-claim theory and strategy for the worker to analyze. Separately, `Shared/Settlement/Reyes_lien_EOB.pdf` gives the legal conclusion for past medical, and `Shared/Settlement/Reyes_life_care_plan.pdf` supplies the formula, substituted inputs, arithmetic, and rounded present-value answer for future care. These are decisive, separately removable shortcuts that collapse material legal and damages reasoning; no environment/filesystem shortcut was found.
+
+Finding #1: Late-claim advocacy and intentional strategy reveal the requested legal path. Major.
+Finding #2: Past-medical settlement letter states the controlling legal conclusion. Major.
+Finding #3: Life-care plan provides a completed future-care valuation. Major.

@@ -1,0 +1,16 @@
+TICKET 9 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Format-Native Feature Fidelity
+
+Format-native feature fidelity fails under sub-check (b) in `custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf` (TCR.pdf). Page 4 visibly reserves a large factual-diagram grid and directs the reader, "Click in the graph or INDICATE NORTH fields to import a graphic," but the entire diagram area is blank. This is an empty reserved visual-content slot rather than a usable collision diagram, so the report materially fails to display the content its layout expects; populate the diagram with the collision scene (or remove the unused page/slot if no diagram is intended).
+
+Finding #1: Blank factual-diagram frame in TCR.pdf. Major.
+
+=== Minor issues ===

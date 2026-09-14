@@ -1,0 +1,12 @@
+TICKET 8 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+The current ③ Tasks sheet says every task incorporates App Data and both designated apps, Docuseal and Wiki.js; it further requires Docuseal state changes in nine tasks and a Wiki.js correction in T3. The full current manifest/task-filesystem sweep finds only static artifacts, 62 files consisting chiefly of PDF, DOCX, CSV, XLSX, plus one EML and one HTML, with no Docuseal submissions, Wiki.js pages, or live/updatable practice-management records. This is a material residual anomaly because multiple required deliverables depend on changing and verifying those initial app states; generate and mount the referenced app records/pages in their stated starting conditions.

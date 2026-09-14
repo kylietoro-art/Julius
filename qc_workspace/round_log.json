@@ -94,6 +94,75 @@
         "Draft incident report's missing tracked-changes: A03 is a never-finalized on-scene draft that gets wholly superseded by a separately-authored final report (A02), not a document edited in place via Track Changes. Adding fake revision history would misrepresent how the document came to exist.",
         "tran_text_thread.pdf text legibility: rendered all 5 pages; header/footer chrome is normal, readable medium-gray throughout, not washed out as claimed."
       ]
+    },
+    {
+      "round": 2,
+      "opened": "2026-09-14T16:16:38",
+      "count": 14,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 7,
+          "files": [
+            "op_reports.pdf",
+            "reyes_life_care_plan.pdf",
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 1,
+          "files": [
+            "late_claim_app.pdf",
+            "reyes_lien_eob.pdf",
+            "reyes_life_care_plan.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 2,
+          "files": [
+            "13.pdf",
+            "tcr.pdf"
+          ]
+        },
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": []
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": [
+            "docket_entry.xlsx"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": [
+            "ir_2025-1018_final.docx",
+            "production_tracker.csv",
+            "reserve_memo.docx"
+          ]
+        },
+        "file_integrity": {
+          "label": "File is corrupt, empty, unreadable or won't render",
+          "n": 1,
+          "files": []
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "math_footing",
+        "other",
+        "placeholder_synthetic",
+        "temporal"
+      ],
+      "disposition": null,
+      "note": ""
     }
   ]
 }

@@ -1,0 +1,14 @@
+TICKET 6 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+The current workbook gives A36 annual cost of 180000 and present value of 4240000. The named A36 Reyes life-care plan instead states annual cost 173651, undiscounted total 6251436, and present value 4091000 for 36 years at 2.5 percent. No mounted correction or amendment reconciles the conflict, so the future-medical trap cannot be resolved from in-world evidence.
+
+Finding #1: A36 life-care-plan source contradicts canonical future-medical values. Major.

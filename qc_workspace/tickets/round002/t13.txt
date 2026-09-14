@@ -1,0 +1,15 @@
+TICKET 13 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+Two answer-signposting patterns remain. In IR_2025-1018_final.docx, the italic subtitle calls the document a "Controlling Report of Record," and the certification says it reflects "the controlling documentary record"; in a corpus containing a contrary preliminary on-scene draft, that wording tells the reader which account to choose. Separately, reserve_memo.docx calls the $3,250,000 value the controlling reserve and labels the $250,000 row "SUPERSEDED," while production_tracker.csv repeats "controlling $3,250,000 reserve"; these labels direct the junior-versus-senior reserve comparison rather than neutrally presenting revision metadata.
+
+Finding #1: Final incident report selects the draft-versus-final account. Minor.
+Finding #2: Reserve records select the $3.25M figure. Minor.

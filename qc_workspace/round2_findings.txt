@@ -1,0 +1,79 @@
+[P1] External Files Registry Match (heading not captured in paste)
+
+A22, `Med/Reyes/op_reports.pdf`, materially diverges from its External Files Registry description. The registry calls for three operative reports, 10/18 decompressive craniectomy plus ICP monitor, 10/21 pelvic ORIF, and 11/03 bilateral lower-extremity ORIF, whereas the built PDF identifies itself as a five-report compilation dated 10/18, 10/18, 10/22, 10/25, and 11/05 and expressly says neurosurgical reports are separately filed. This is a content and treatment-chronology mismatch, not a formatting variation; replace/revise A22 to the three specified reports or amend the registry to accurately describe the intended five-report compilation.
+
+Finding #1: A22 operative-report compilation does not match registry content. Major.
+
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+FAIL. The selected world-spec workbook identifies A36 as authoritative but types $180,000 annual future care, $6,480,000 undiscounted, and a formula-cached $4,240,000 PV; it also repeats those figures in the scenario, A36 artifact description, and T4 damages task. The actual current file `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` says $173,651 per year for 36 years ($6,251,436) and $4,091,000 present value at the same 2.5% rate. This is not a registered trap or an in-world correction and materially changes the damages valuation, so shared structured values are inconsistent.
+
+Finding #1: A36 life-care valuation conflicts with the canonical values and downstream damages instructions. Major.
+
+[P1] No Broken Document References
+
+A53 remains unresolved. The current registry defines the "Onboard Video / Camera System Footage" format as "MP4 (clip export) + still-frame log," and the complete current filesystem inventory has `ACTD/Video/onboard_video_still_log.pdf` but no MP4/media file. The supplied log names `4177_20251018_0130-0210_INC.mp4` yet says "Native Clip Size Not yet retrieved from vendor" and "Native Clip SHA-256 Not yet computed - native clip not yet retrieved"; PT-19 likewise says the native clip is "retained by vendor, not yet retrieved." Because T7 and T9 expressly depend on A53, the required onboard-video document class does not resolve to accessible world material. Add the preserved native MP4 (with retrievable metadata/hash) or revise A53 and its dependent task requirements to make the still-frame log the sole represented video artifact.
+
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The previously flagged life-care-plan defect is still present: `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` (annual-cost summary / PDF page 11, economic appendix PDF pages 13-14) states a $173,651 weighted annual amount, $6,251,436 undiscounted total, and $4,091,000 adopted PV. The current controlling workbook's "② Canonical Values" rows 25-26 instead binds A36 to $180,000 per year and a rounded $4,240,000 PV at 2.5% over 36 years; the $6,480,000 amount is explicitly a Trap, but the alternative annual amount is not. This is a material fixture error that propagates into the plan's annual summary, total, PV calculation, and both sensitivity tables; replace the annual input with $180,000 and recalculate every dependent valuation.
+
+Finding #1: Life-care plan uses the wrong future-medical fixture and dependent valuations. Major.
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The "No Solution Or Reasoning" clause fails because `Legal/Reyes/late_claim_app.pdf` directly tells the worker which statutory grounds to pursue and asks for the result, rather than leaving the late-claim theory and strategy for the worker to analyze. Separately, `Shared/Settlement/Reyes_lien_EOB.pdf` gives the legal conclusion for past medical, and `Shared/Settlement/Reyes_life_care_plan.pdf` supplies the formula, substituted inputs, arithmetic, and rounded present-value answer for future care. These are decisive, separately removable shortcuts that collapse material legal and damages reasoning; no environment/filesystem shortcut was found.
+
+Finding #1: Late-claim advocacy and intentional strategy reveal the requested legal path. Major.
+Finding #2: Past-medical settlement letter states the controlling legal conclusion. Major.
+Finding #3: Life-care plan provides a completed future-care valuation. Major.
+
+[P1] Intended Traps Are Fair
+
+The current workbook gives A36 annual cost of 180000 and present value of 4240000. The named A36 Reyes life-care plan instead states annual cost 173651, undiscounted total 6251436, and present value 4091000 for 36 years at 2.5 percent. No mounted correction or amendment reconciles the conflict, so the future-medical trap cannot be resolved from in-world evidence.
+
+Finding #1: A36 life-care-plan source contradicts canonical future-medical values. Major.
+
+[P0] Coherence Flag Ratio
+
+The current subject still contains the previously flagged A36 discrepancy. The spec workbook's Canonical Values sheet identifies A36 as authoritative for a 36-year, 2.5% future-medical annuity of $180,000 per year, $6,480,000 undiscounted, and $4,240,000 present value, but Shared/Settlement/Reyes_life_care_plan.pdf states $173,651 per year, $6,251,436 undiscounted, and $4,091,000 present value under those same 36-year and 2.5% assumptions. Recalculation confirms each set is internally consistent for its own annual input, leaving an unresolved, material contradiction over the governing damages value; no amendment or supersession was found in the A36 PDF or later records.
+
+Finding #1: A36 future-medical figures conflict with the canonical values. Major.
+
+[P0] Anomaly Detection Catch-All
+
+The current ③ Tasks sheet says every task incorporates App Data and both designated apps, Docuseal and Wiki.js; it further requires Docuseal state changes in nine tasks and a Wiki.js correction in T3. The full current manifest/task-filesystem sweep finds only static artifacts, 62 files consisting chiefly of PDF, DOCX, CSV, XLSX, plus one EML and one HTML, with no Docuseal submissions, Wiki.js pages, or live/updatable practice-management records. This is a material residual anomaly because multiple required deliverables depend on changing and verifying those initial app states; generate and mount the referenced app records/pages in their stated starting conditions.
+
+[P0] Format-Native Feature Fidelity
+
+Format-native feature fidelity fails under sub-check (b) in `custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf` (TCR.pdf). Page 4 visibly reserves a large factual-diagram grid and directs the reader, "Click in the graph or INDICATE NORTH fields to import a graphic," but the entire diagram area is blank. This is an empty reserved visual-content slot rather than a usable collision diagram, so the report materially fails to display the content its layout expects; populate the diagram with the collision scene (or remove the unused page/slot if no diagram is intended).
+
+Finding #1: Blank factual-diagram frame in TCR.pdf. Major.
+
+=== Minor issues ===
+
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+The active reserve ledger has two 12/15/2025 entries labeled "LAE placeholder," and the controlling reserve memo calls its future-medical and lost-earning-capacity components "placeholders." These are visible in current claims materials and read as unfinished authoring terminology rather than business-ready estimates. Separately, the on-scene incident-report draft labels a substantive section "Preliminary Data - placeholder fields," which is explicit scaffolding; ordinary redactions, blank signature lines, checkboxes, and an amount reserved for later determination elsewhere were reviewed and are not the basis of this finding.
+
+Finding #1: Active reserve materials retain placeholder labels. Minor.
+Finding #2: Draft incident report exposes a placeholder-fields heading. Minor.
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Visual Genre Fit fails for `Shared/Police/scene_photos_2025-1018.pdf` (A51). The World Spec calls it a "Captioned scene-photograph set" with "Size: ~10-15 captioned photos," but the current file is an eight-page text/table log: its PDF image inventory has no image entries and every rendered page consists of written P-001 through P-061 entries and custody/signature blocks. A police photo log can plausibly accompany photographs, but this document supplies none, so it visibly impersonates a photo set without delivering the visual genre the specification claims; add representative captioned scene photographs/thumbnails or revise the declared artifact to a text-only photo log.
+
+[P1] World Timeline Holds Together (consolidated)
+
+The anchor-placement bullet fails because the World Spec states: "Anchor 'now' date | 06/18/2026 (Thursday). Every artifact is dated on or before this." Yet `Legal/Reyes/docket_entry.xlsx` has core properties created=2026-09-11 and modified=2026-09-11, making this reachable file materially post-anchor. The small fix is to reset/rebuild that workbook's core timestamps to its stated March 6, 2026 entry date (or another date on or before June 18, 2026); no coherent-timeline or causal-order defect was confirmed.
+
+[P1] No Signposting of Load-Bearing Facts
+
+Two answer-signposting patterns remain. In IR_2025-1018_final.docx, the italic subtitle calls the document a "Controlling Report of Record," and the certification says it reflects "the controlling documentary record"; in a corpus containing a contrary preliminary on-scene draft, that wording tells the reader which account to choose. Separately, reserve_memo.docx calls the $3,250,000 value the controlling reserve and labels the $250,000 row "SUPERSEDED," while production_tracker.csv repeats "controlling $3,250,000 reserve"; these labels direct the junior-versus-senior reserve comparison rather than neutrally presenting revision metadata.
+
+Finding #1: Final incident report selects the draft-versus-final account. Minor.
+Finding #2: Reserve records select the $3.25M figure. Minor.
+
+[P1] External Citations Resolve To Real Content
+
+The 139-page supplied Life Care Plan continues to cite dead or unusable official/vendor URLs for material assertions. In its body it attributes Mark G. Greene's Texas Medical Board and American Board of Urology status to the TMB and ABU URLs, and its Sources and Methods attachment uses the CMS locality, Micromedex RedBook, and TreasuryDirect Historical Auction Query citations to support pricing and discount-rate methodology. Current retrieval returned 404 for four of those endpoints and 505 for TreasuryDirect, so the cited sources do not resolve to real supporting content; the document needs live, claim-appropriate replacements.

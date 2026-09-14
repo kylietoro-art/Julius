@@ -1,0 +1,14 @@
+TICKET 4 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The previously flagged life-care-plan defect is still present: `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` (annual-cost summary / PDF page 11, economic appendix PDF pages 13-14) states a $173,651 weighted annual amount, $6,251,436 undiscounted total, and $4,091,000 adopted PV. The current controlling workbook's "② Canonical Values" rows 25-26 instead binds A36 to $180,000 per year and a rounded $4,240,000 PV at 2.5% over 36 years; the $6,480,000 amount is explicitly a Trap, but the alternative annual amount is not. This is a material fixture error that propagates into the plan's annual summary, total, PV calculation, and both sensitivity tables; replace the annual input with $180,000 and recalculate every dependent valuation.
+
+Finding #1: Life-care plan uses the wrong future-medical fixture and dependent valuations. Major.

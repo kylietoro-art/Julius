@@ -1,0 +1,14 @@
+TICKET 2 of 14  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+FAIL. The selected world-spec workbook identifies A36 as authoritative but types $180,000 annual future care, $6,480,000 undiscounted, and a formula-cached $4,240,000 PV; it also repeats those figures in the scenario, A36 artifact description, and T4 damages task. The actual current file `task_fs/filesystem/Shared/Settlement/Reyes_life_care_plan.pdf` says $173,651 per year for 36 years ($6,251,436) and $4,091,000 present value at the same 2.5% rate. This is not a registered trap or an in-world correction and materially changes the damages valuation, so shared structured values are inconsistent.
+
+Finding #1: A36 life-care valuation conflicts with the canonical values and downstream damages instructions. Major.
