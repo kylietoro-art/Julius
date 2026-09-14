@@ -1,0 +1,15 @@
+TICKET 8 of 12  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+`Shared/Police/scene_photos_2025-1018.pdf` fails the Document Authenticity Texture And Visual Genre Fit clauses. The specification describes it as a "Captioned scene-photograph set," but its eight-page rendered PDF contains only numbered text descriptions and form fields; pdfimages -list returned no image objects. `ACTD/Video/onboard_video_still_log.pdf` separately fails those same clauses: its six pages are a text-only custodian certification and still-frame description tables despite the visible heading "ONBOARD VIDEO / CAMERA SYSTEM -- STILL-FRAME LOG," and likewise have no images. These artifacts function as textual indexes rather than the visual evidence genres they claim to be; embed representative captioned scene photographs and video stills, or accurately rename each as a text-only log/index.
+
+Finding #1: Scene photograph set contains no photographs. Minor.
+Finding #2: Onboard still-frame log contains no still frames. Minor.

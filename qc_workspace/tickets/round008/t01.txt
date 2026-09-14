@@ -1,0 +1,12 @@
+TICKET 1 of 12  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+Several populated legal and evidentiary records retain empty signature placeholders. The served RFP and filed complaint each have both the attorney execution line and proof-of-service signature line blank; the crime-lab report, ACTD rejection notices, coverage memorandum, city invoice, court orders, and criminal plea also retain unfilled signature blocks. These omissions make ostensibly completed work products visibly unfinished and break the criterion against unresolved scaffolding/template residue.

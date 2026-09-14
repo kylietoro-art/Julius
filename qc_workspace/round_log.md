@@ -14,6 +14,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 5 | 2026-09-14T19:04 | 11 | 6 | 6 | fixed 3, widened 0, traps 1, false 4, blocked 3 |
 | 6 | 2026-09-14T19:37 | 10 | 5 | 5 | fixed 1, widened 0, traps 1, false 5, blocked 3 |
 | 7 | 2026-09-14T19:57 | 11 | 6 | 6 | fixed 2, widened 0, traps 2, false 4, blocked 3 |
+| 8 | 2026-09-14T21:26 | 12 | 9 | 7 | fixed 3, widened 0, traps 1, false 5, blocked 3 |
 
 ## Detail
 
@@ -135,4 +136,23 @@ Note: Blocked (unchanged from prior rounds): A53 native MP4 -- standing ruling r
   - files named: oon_guidance.pdf, plan.pdf
 
 Note: Blocked (unchanged): A53 native MP4 (standing ruling), DocuSeal/Wiki.js app-data seeding, scene/still-frame image generation -- no capability available for any of the three.
+
+### Round 8, 2026-09-14T21:26
+
+- **Uncategorised, read the finding text**: 3 finding(s)  **(REPEAT)**
+  - files named: late_claim_app.pdf, reserve_memo.docx, task.json, 13.pdf, tcr.pdf
+- **Totals don't foot / calculations disagree with inputs**: 2 finding(s)  **(REPEAT)**
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+- **A referenced document or value doesn't resolve**: 1 finding(s)
+- **Builder A## codes visible in world files**: 1 finding(s)  **(REPEAT)**
+  - files named: tran_text_thread.pdf
+- **Voice, tone, texture or document authenticity reads machine-made**: 1 finding(s)
+  - files named: onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+- **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
+- **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
+  - files named: ir_2025-1018_final.docx, production_tracker.csv, reserve_ledger.csv, reserve_memo.docx
+- **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
+  - files named: plan.pdf
+
+Note: Blocked (unchanged): A53 native MP4 (standing ruling), DocuSeal/Wiki.js app-data seeding, scene/still-frame image generation.
 

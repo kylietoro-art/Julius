@@ -1,0 +1,16 @@
+TICKET 10 of 12  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The current subject still has the prior medical reconciliation and passenger-deadline problems: the ledger calls the full $2,644,000 residual "adjustments," whereas the EOB identifies $2,640,800 as contractual adjustments and $3,200 as separately paid patient responsibility; neither document allocates that component consistently. The MatterHub calendar and docket workbook also apply 10/18/2027 case-wide even though the 02/18/2026 rejection notice started the six-month clock for Cho and Mowbray, making 08/18/2026 the computed deadline. Separately, the life-care plan's stated unrounded PV is $45.19 below the result of its own formula and inputs. The smallest fixes are to separate/label the $3,200 in the ledger, replace the passenger deadline in both calendaring records with 08/18/2026 while keeping claimant-specific tracks, and correct the unrounded PV (or state it is an intermediate rounded-factor estimate).
+
+Finding #1: Medical-billing ledger misclassifies $3,200 of paid patient responsibility. Minor.
+Finding #2: Passenger suit deadline is incorrectly calendared case-wide. Minor.
+Finding #3: Life-care plan's stated unrounded present value is arithmetically wrong. Minor.

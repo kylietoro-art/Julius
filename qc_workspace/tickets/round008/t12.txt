@@ -1,0 +1,12 @@
+TICKET 12 of 12  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+FAIL. In `LIFE CARE PLAN.pdf`, citation 167 identifies TreasuryDirect's "Historical Auction Query" as the source used to estimate the real risk-free interest rate; the exact cited URL now redirects to the auction-query landing endpoint and returns HTTP 505 rather than the historical data. The Sources and Methods appendix also relies on the NY DFS OON-guidance PDF for its statement that FAIR Health "can 'be used as the independent source to determine UCR'," but that exact URL returns HTTP 404. Separately, the appendix uses a CMS locality-configuration URL for the geographic adjustment factor in its physician-fee method, and that endpoint redirects then returns HTTP 404; replacing each stale link with a live authoritative page supporting the same claim is required.

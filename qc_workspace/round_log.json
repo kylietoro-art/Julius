@@ -589,6 +589,104 @@
         "No Signposting: a final incident report certifying its own status and a claims memo naming its current controlling reserve are realistic real-world document conventions, not an artificial answer key. Unchanged from prior rounds.",
         "External Citations: re-verified with a full-text search of the entire life-care-plan PDF -- zero occurrences of 'TreasuryDirect,' 'OON_guidance,' 'citation 167,' 'FAIR Health,' or even the string 'http' anywhere in the document. This is the second consecutive round with this exact identical claim, both times fully absent from the file -- flagging to the user as likely an AutoQC-side bug rather than a real defect."
       ]
+    },
+    {
+      "round": 8,
+      "opened": "2026-09-14T21:26:16",
+      "count": 12,
+      "classes": {
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": []
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 2,
+          "files": []
+        },
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 1,
+          "files": []
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 3,
+          "files": [
+            "late_claim_app.pdf",
+            "reserve_memo.docx",
+            "task.json",
+            "13.pdf",
+            "tcr.pdf"
+          ]
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 1,
+          "files": [
+            "tran_text_thread.pdf"
+          ]
+        },
+        "realism_voice": {
+          "label": "Voice, tone, texture or document authenticity reads machine-made",
+          "n": 1,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 1,
+          "files": []
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": [
+            "ir_2025-1018_final.docx",
+            "production_tracker.csv",
+            "reserve_ledger.csv",
+            "reserve_memo.docx"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 1,
+          "files": [
+            "plan.pdf"
+          ]
+        }
+      },
+      "repeats": [
+        "placeholder_synthetic",
+        "math_footing",
+        "other",
+        "a_code_leakage",
+        "entity_inconsistency",
+        "answer_leakage",
+        "citation_facts"
+      ],
+      "disposition": {
+        "fixed": 3,
+        "expanded": 0,
+        "traps": 1,
+        "false": 5,
+        "blocked": 3
+      },
+      "note": "Blocked (unchanged): A53 native MP4 (standing ruling), DocuSeal/Wiki.js app-data seeding, scene/still-frame image generation.",
+      "closed": "2026-09-14T21:42:45",
+      "changed": "Fixed signature placeholders in 8 executed/filed/entered documents (RFP proof of service, filed complaint, crime-lab certificate of analysis, ACTD rejection notices, coverage-summary countersignatures, both conservatorship orders, and the Keeler abstract of judgment) using the world's established /s/ Name convention. Standardized the ACTD incident number to ACTD-IR-2025-1018 (dropped the dispatch log's stray -001 suffix) to match the final report and video log. Corrected a present-value arithmetic display in the life-care plan (para 37): the shown annuity factor was truncated to 3 decimals, understating the unrounded PV by $45.19; increased precision so $180,000 x 23.55625 = $4,240,125 matches the formula's true result. The $4,240,000 canonical PV (rounded to the nearest thousand) was never touched.",
+      "disputes": [
+        "Numerical Values / Calculation Accuracy, $3,200 patient responsibility (ledger vs EOB): re-verified the arithmetic a third time -- the ledger's $2,644,000 adjustments total still equals the EOB's $2,640,800 contractual adjustment plus $3,200 patient responsibility exactly. One combined column vs. two itemized ones; every dollar of the $2,840,000 billed total is accounted for exactly once either way. This is not an overage. One named document in this finding's placeholder list (repair_invoice_0202.pdf, the 'city invoice') was deliberately left alone rather than filled with /s/: it already carries an explicit 'Signature on file -- 02/01/2026' note, a standard real-world convention for a reprinted government record, so it doesn't read as an unfinished template the way the other 8 did.",
+        "No Reachable Shortcut, Finding #3 (reserve memorandum): a claims manager's own internal reserve memo stating a candid liability assessment ('a course-and-scope defense is not viable') is exactly what that genre of document is for, same as the settlement/late-claim findings disputed in every prior round.",
+        "No Broken Document References, Findings #2-8 (final report, FST supplement, DOT record, lien/EOB tabs, life-care attachments, coverage summary's general-terms form, passenger-claims transmittal's enclosed claim forms): all seven are documents citing their own ordinary internal enclosures/appendices/forms, none ever part of the 62-artifact registry -- same realistic-document-practice reasoning as rounds 6-7, now checked against two more instances (coverage summary, claims transmittal) with the same result.",
+        "Built Files Match Spec Inventory, A09/A52: re-confirmed again this round -- both still carry their core 'off-book' trap language intact.",
+        "No Signposting and the accrual+2yr lumped passenger deadline: unchanged reasoning from round 7 -- realistic document conventions and a registered T1 trap (A41/A62), respectively.",
+        "Format-Native Feature Fidelity / TCR.pdf: 6th consecutive round confirming custom_fields/.../13.pdf does not exist anywhere in this repository.",
+        "External Citations: this round adds a third citation (CMS locality-configuration URL) to the same pattern -- a full-text search of the entire life-care-plan PDF found zero occurrences of it, exactly like TreasuryDirect and OON_guidance in rounds 6-7. Three rounds running, three different specific source citations claimed present, zero of them ever actually in the file. Flagging again as a likely AutoQC-side bug."
+      ]
     }
   ]
 }

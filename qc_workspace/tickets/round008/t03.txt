@@ -1,0 +1,21 @@
+TICKET 3 of 12  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+The world contains multiple unresolved, explicitly named document references. Most materially, the onboard-video log says the native MP4 is available from custodians, while the mounted filesystem contains no MP4 or accessible video export; the workbook specifies this artifact as an "MP4 (clip export) + still-frame log." The final incident report, FST supplement, DOT record, lien/EOB letter, life-care plan, coverage summary, and passenger-claims transmittal each list specific attachments, enclosures, or records that were not mounted or appended, preventing a reader from obtaining the referenced supporting materials.
+
+Finding #1: Native onboard-video clip is absent. Major.
+Finding #2: Final incident report cites unmounted pre-trip and inspection records. Minor.
+Finding #3: FST supplement attachment packet is missing. Minor.
+Finding #4: DOT testing record's supporting attachments are absent. Minor.
+Finding #5: Lien/EOB enclosure tabs are not mounted. Minor.
+Finding #6: Life-care-plan attachments remain only external requests. Minor.
+Finding #7: Coverage summary omits its attached general-terms memorandum. Minor.
+Finding #8: Passenger-claims transmittal omits both enclosed claim forms. Minor.

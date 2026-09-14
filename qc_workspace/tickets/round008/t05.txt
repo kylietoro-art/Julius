@@ -1,0 +1,12 @@
+TICKET 5 of 12  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+Required multi-app state is absent. `mcp/task.json` declares Apps Type `multi` with App Data Target Apps ['docuseal', 'wiki_js'], but the current staged inventory has only `custom_fields`, `mcp`, and `task_fs`; its complete app-like-path scan finds no DocuSeal submission, Wiki.js page, seed, database, or export. This is not a harmless missing attachment: the current world spec requires T2 to archive an earlier DocuSeal review submission, T3 to correct a currently wrong Wiki.js playbook page, T6 to update an existing settlement-package submission's submitter, and T8 to update an existing reserve-authorization submission. Without those pre-task objects and their stated values, the required app operations cannot be performed or assessed; seed the relevant DocuSeal submissions and Wiki.js pages in the described starting states and make them reachable to the assigned seats.

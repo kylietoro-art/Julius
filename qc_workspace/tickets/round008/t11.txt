@@ -1,0 +1,15 @@
+TICKET 11 of 12  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The previously flagged incident-report issue is still present. `ACTD/Safety/IR_2025-1018_final.docx` calls itself a "Controlling Report of Record," devotes a section to its relationship to the draft, certifies that it reflects the "controlling documentary record," and instructs that the collision facts are as set forth in that report; it also directly bolds the causal alcohol-impairment conclusion. Those labels go beyond neutral final-report provenance and direct the reader to accept one side of an answer-bearing conflict. The reserve issue also remains: `ACTD/Claims/reserve_memo.docx` repeatedly calls $3,250,000 the controlling reserve, bolds the compared amounts and "supersedes," and marks the old amount "SUPERSEDED," while `ACTD/Litigation/production_tracker.csv` repeats the same conclusion. Neutral dates, authors, supersession links, and active status already appear in `reserve_ledger.csv`, so ordinary revision history can replace this answer-directing treatment.
+
+Finding #1: Final incident report declares its disputed account controlling. Minor.
+Finding #2: Reserve records foreground the selected $3.25M figure. Minor.

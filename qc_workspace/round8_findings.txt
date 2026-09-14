@@ -1,0 +1,79 @@
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+Several populated legal and evidentiary records retain empty signature placeholders. The served RFP and filed complaint each have both the attorney execution line and proof-of-service signature line blank; the crime-lab report, ACTD rejection notices, coverage memorandum, city invoice, court orders, and criminal plea also retain unfilled signature blocks. These omissions make ostensibly completed work products visibly unfinished and break the criterion against unresolved scaffolding/template residue.
+
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+The medical-billing ledger and Reyes lien/EOB schedule materially disagree on how the $3,200 patient responsibility is accounted for. The ledger's 81 rows foot to $2,840,000 billed = $196,000 paid + $2,644,000 adjustments with $0 balance, whereas the EOB lists $2,640,800 adjustments plus $196,000 paid and a separate $3,200 patient-responsibility column, even though it says the patient responsibility was paid and no balance remains. This produces a $3,200 overage in the EOB's reconciliation without an in-world correction, leaving shared medical-damages data inconsistent.
+
+Finding #1: Medical ledger and lien/EOB do not reconcile the $3,200 patient responsibility. Major.
+
+[P1] No Broken Document References
+
+The world contains multiple unresolved, explicitly named document references. Most materially, the onboard-video log says the native MP4 is available from custodians, while the mounted filesystem contains no MP4 or accessible video export; the workbook specifies this artifact as an "MP4 (clip export) + still-frame log." The final incident report, FST supplement, DOT record, lien/EOB letter, life-care plan, coverage summary, and passenger-claims transmittal each list specific attachments, enclosures, or records that were not mounted or appended, preventing a reader from obtaining the referenced supporting materials.
+
+Finding #1: Native onboard-video clip is absent. Major.
+Finding #2: Final incident report cites unmounted pre-trip and inspection records. Minor.
+Finding #3: FST supplement attachment packet is missing. Minor.
+Finding #4: DOT testing record's supporting attachments are absent. Minor.
+Finding #5: Lien/EOB enclosure tabs are not mounted. Minor.
+Finding #6: Life-care-plan attachments remain only external requests. Minor.
+Finding #7: Coverage summary omits its attached general-terms memorandum. Minor.
+Finding #8: Passenger-claims transmittal omits both enclosed claim forms. Minor.
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning clause fails because `Legal/Reyes/late_claim_app.pdf` directly says that leave "should be granted" under specified statutory grounds, while the settlement materials identify both the legally governing past-medical measure and the completed present-value results. `ACTD/Claims/reserve_memo.docx` separately supplies the controlling $3.25 million reserve and declares that a course-and-scope defense is not viable, bypassing the required liability and exposure assessment. These are reachable substantive conclusions, not raw source facts requiring the worker's synthesis; the environment/filesystem clause did not independently fail.
+
+Finding #1: Late-claim filing states the requested result and grounds. Major.
+Finding #2: Settlement documents provide completed legal and valuation answers. Major.
+Finding #3: Reserve memorandum pre-decides liability and controlling reserve. Major.
+
+[P0] Anomaly Detection Catch-All
+
+Required multi-app state is absent. `mcp/task.json` declares Apps Type `multi` with App Data Target Apps ['docuseal', 'wiki_js'], but the current staged inventory has only `custom_fields`, `mcp`, and `task_fs`; its complete app-like-path scan finds no DocuSeal submission, Wiki.js page, seed, database, or export. This is not a harmless missing attachment: the current world spec requires T2 to archive an earlier DocuSeal review submission, T3 to correct a currently wrong Wiki.js playbook page, T6 to update an existing settlement-package submission's submitter, and T8 to update an existing reserve-authorization submission. Without those pre-task objects and their stated values, the required app operations cannot be performed or assessed; seed the relevant DocuSeal submissions and Wiki.js pages in the described starting states and make them reachable to the assigned seats.
+
+[P0] Format-Native Feature Fidelity
+
+Sub-check (b) fails in `custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf` (TCR.pdf). Direct rendering of all four pages shows blank collision-report fields throughout, and page 4 preserves an empty factual-diagram grid and empty INDICATE NORTH circle despite the on-page instruction to import a graphic there. This is a material empty reserved-content slot in a case artifact; populate the report and factual diagram with the case facts or remove this blank template from the world.
+
+=== Minor issues ===
+
+[P0] Built Files Match Spec Inventory
+
+Two registry artifacts still fail the content-and-attribution requirement. A09 specifies Tran's short 03:15 email to G. Espinoza and D. Farkas with subject Overnight incident - Route 512, but the built EML is addressed to a dispatch-supervisors list, cc's M. Okonkwo, uses another subject, and supplies an extended incident narrative. A52 specifies a one-page three-message personal-phone exchange from 03:20-03:40 on 10/18/2025, whereas the built tran_text_thread.pdf is five pages and its own export text says it ends with 32 messages across later dates; rebuild each to the registry's prescribed scope and attribution.
+
+Finding #1: A09 dispatch email has incorrect recipients, subject, and expanded content. Minor.
+Finding #2: A52 personal-phone thread is materially overexpanded. Minor.
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+`Shared/Police/scene_photos_2025-1018.pdf` fails the Document Authenticity Texture And Visual Genre Fit clauses. The specification describes it as a "Captioned scene-photograph set," but its eight-page rendered PDF contains only numbered text descriptions and form fields; pdfimages -list returned no image objects. `ACTD/Video/onboard_video_still_log.pdf` separately fails those same clauses: its six pages are a text-only custodian certification and still-frame description tables despite the visible heading "ONBOARD VIDEO / CAMERA SYSTEM -- STILL-FRAME LOG," and likewise have no images. These artifacts function as textual indexes rather than the visual evidence genres they claim to be; embed representative captioned scene photographs and video stills, or accurately rename each as a text-only log/index.
+
+Finding #1: Scene photograph set contains no photographs. Minor.
+Finding #2: Onboard still-frame log contains no still frames. Minor.
+
+[P1] Consistent Naming And Defined Terms
+
+The ACTD dispatch log says the incident number opened and left open is ACTD-IR-2025-1018-001, while the final report certifies itself as the final report of record for ACTD-IR-2025-1018. The onboard-video still log uses the latter identifier as well, yet neither the world specification nor an in-world amendment explains that the suffix was retired. A worker trying to collect the core incident file could reasonably treat these as separate matters or miss the dispatch log; standardize the identifier across the three records or add an explicit cross-reference stating that they are the same incident.
+
+Finding #1: Unreconciled ACTD incident-file number. Minor.
+
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The current subject still has the prior medical reconciliation and passenger-deadline problems: the ledger calls the full $2,644,000 residual "adjustments," whereas the EOB identifies $2,640,800 as contractual adjustments and $3,200 as separately paid patient responsibility; neither document allocates that component consistently. The MatterHub calendar and docket workbook also apply 10/18/2027 case-wide even though the 02/18/2026 rejection notice started the six-month clock for Cho and Mowbray, making 08/18/2026 the computed deadline. Separately, the life-care plan's stated unrounded PV is $45.19 below the result of its own formula and inputs. The smallest fixes are to separate/label the $3,200 in the ledger, replace the passenger deadline in both calendaring records with 08/18/2026 while keeping claimant-specific tracks, and correct the unrounded PV (or state it is an intermediate rounded-factor estimate).
+
+Finding #1: Medical-billing ledger misclassifies $3,200 of paid patient responsibility. Minor.
+Finding #2: Passenger suit deadline is incorrectly calendared case-wide. Minor.
+Finding #3: Life-care plan's stated unrounded present value is arithmetically wrong. Minor.
+
+[P1] No Signposting of Load-Bearing Facts
+
+The previously flagged incident-report issue is still present. `ACTD/Safety/IR_2025-1018_final.docx` calls itself a "Controlling Report of Record," devotes a section to its relationship to the draft, certifies that it reflects the "controlling documentary record," and instructs that the collision facts are as set forth in that report; it also directly bolds the causal alcohol-impairment conclusion. Those labels go beyond neutral final-report provenance and direct the reader to accept one side of an answer-bearing conflict. The reserve issue also remains: `ACTD/Claims/reserve_memo.docx` repeatedly calls $3,250,000 the controlling reserve, bolds the compared amounts and "supersedes," and marks the old amount "SUPERSEDED," while `ACTD/Litigation/production_tracker.csv` repeats the same conclusion. Neutral dates, authors, supersession links, and active status already appear in `reserve_ledger.csv`, so ordinary revision history can replace this answer-directing treatment.
+
+Finding #1: Final incident report declares its disputed account controlling. Minor.
+Finding #2: Reserve records foreground the selected $3.25M figure. Minor.
+
+[P1] External Citations Resolve To Real Content
+
+FAIL. In `LIFE CARE PLAN.pdf`, citation 167 identifies TreasuryDirect's "Historical Auction Query" as the source used to estimate the real risk-free interest rate; the exact cited URL now redirects to the auction-query landing endpoint and returns HTTP 505 rather than the historical data. The Sources and Methods appendix also relies on the NY DFS OON-guidance PDF for its statement that FAIR Health "can 'be used as the independent source to determine UCR'," but that exact URL returns HTTP 404. Separately, the appendix uses a CMS locality-configuration URL for the geographic adjustment factor in its physician-fee method, and that endpoint redirects then returns HTTP 404; replacing each stale link with a live authoritative page supporting the same claim is required.

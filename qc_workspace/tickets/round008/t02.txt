@@ -1,0 +1,14 @@
+TICKET 2 of 12  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+The medical-billing ledger and Reyes lien/EOB schedule materially disagree on how the $3,200 patient responsibility is accounted for. The ledger's 81 rows foot to $2,840,000 billed = $196,000 paid + $2,644,000 adjustments with $0 balance, whereas the EOB lists $2,640,800 adjustments plus $196,000 paid and a separate $3,200 patient-responsibility column, even though it says the patient responsibility was paid and no balance remains. This produces a $3,200 overage in the EOB's reconciliation without an in-world correction, leaving shared medical-damages data inconsistent.
+
+Finding #1: Medical ledger and lien/EOB do not reconcile the $3,200 patient responsibility. Major.

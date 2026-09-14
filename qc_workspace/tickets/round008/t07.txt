@@ -1,0 +1,15 @@
+TICKET 7 of 12  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Built Files Match Spec Inventory
+
+Two registry artifacts still fail the content-and-attribution requirement. A09 specifies Tran's short 03:15 email to G. Espinoza and D. Farkas with subject Overnight incident - Route 512, but the built EML is addressed to a dispatch-supervisors list, cc's M. Okonkwo, uses another subject, and supplies an extended incident narrative. A52 specifies a one-page three-message personal-phone exchange from 03:20-03:40 on 10/18/2025, whereas the built tran_text_thread.pdf is five pages and its own export text says it ends with 32 messages across later dates; rebuild each to the registry's prescribed scope and attribution.
+
+Finding #1: A09 dispatch email has incorrect recipients, subject, and expanded content. Minor.
+Finding #2: A52 personal-phone thread is materially overexpanded. Minor.

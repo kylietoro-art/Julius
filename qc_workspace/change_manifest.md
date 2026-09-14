@@ -373,3 +373,63 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Legal/Reyes/reyes_recorded_statement.pdf | entire file [round7: Built Files Match Spec Inventory -- A29 wrong source/custodian and contrary account] [registry Prepared By/Source is 'Y. Reyes; copy retained in claimant's file,' not an ACTD-certified transcript distributed to defense counsel; the built file's custodian, distribution, and substantive account all diverged from spec] | 7-page ACTD-prepared 'Certified Transcript,' interview conducted and certified by ACTD's own claims manager, distributed to ACTD General Counsel and outside defense counsel; Reyes has zero memory from checking her phone at the stop through waking at the hospital (no mention of the bus at all) | → | rebuilt as a 2-page claimant's personal excerpted copy per the registry (A29): same underlying interview event (Espinoza, 02/18/2026, ACTD file GE-2026-0218-01, pro se, telephonic) but framed and retained as Reyes's own file copy, containing the three registry-specified Q&A excerpts verbatim, including her recalling the bus drift and pole strike as her last clear memory before waking at the hospital |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Discovery/RFP_set.pdf | p12 attorney signature block, p14 proof-of-service signature [round8: Placeholder/Template Residue -- blank signature lines on a served discovery document] [a served RFP with proof of service is a completed, executed document; bare underscores read as an unfinished template] | blank underscore signature lines for Nora Halstead and Grace Chen | → | filled with /s/ Name per the world's established executed-signature convention |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CivilCase/Complaint_Reyes_filed.pdf | p10 attorney signature block [round8: Placeholder/Template Residue] [the complaint is stamped ENDORSED -- FILED; a filed pleading is executed] | blank underscore signature line for Nora Halstead | → | filled with /s/ Nora Halstead |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CrimeLab/BAC_Keeler.pdf | p3 analyst and technical-reviewer certification signatures [round8: Placeholder/Template Residue] [the report is dated, distributed, and relied on throughout the world as an established, executed lab report] | blank underscore signature lines for Alan Whitford and Loretta M. Ainsley on a sworn penalty-of-perjury certificate | → | filled with /s/ Name for both |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/rejection_0218.pdf | p1 certificate of mailing, p2/p3 rejection-notice signatures [round8: Placeholder/Template Residue] [notices were actually mailed 02/18/2026 per the claims tracker and criminal docket; this is a completed, sent document] | blank underscore signature lines for Marcia P. Ainsworth and Gordon Espinoza (x2) | → | filled with /s/ Name for all three |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Risk/coverage_summary.pdf | p3 AUTHORIZATION block, both countersignature lines [round8: Placeholder/Template Residue] [the declarations page is dated (06/24 and 06/27/2025) and referenced elsewhere as the District's active coverage] | blank underscore signature lines for Ellen J. Whitmore and Gordon Espinoza | → | filled with /s/ Name for both |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/conservatorship_grant.pdf | p5 judge's signature and clerk certification [round8: Placeholder/Template Residue] [this is an entered court order relied on elsewhere in the world as an established fact] | blank underscore signature lines for Hon. Beatrice N. Halloway and the deputy clerk | → | filled with /s/ Beatrice N. Halloway and /s/ R. Castellanos, Deputy Clerk |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/conservatorship_term.pdf | p7 judge's signature and clerk certification [round8: Placeholder/Template Residue] [this is an entered court order relied on elsewhere in the world as an established fact] | blank underscore signature lines for Hon. Beatrice N. Halloway and the deputy clerk | → | filled with /s/ Beatrice N. Halloway and /s/ R. Castellanos, Deputy Clerk (same clerk's office as the companion grant order) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Criminal/Plea_Keeler.pdf | p6 judge's signature and deputy clerk certifications (x2) [round8: Placeholder/Template Residue] [this is a FILED abstract of judgment relied on elsewhere in the world (criminal_docket.csv) as an established, entered fact] | blank underscore signature lines for Hon. Marion T. Escamilla and J. Ontiveros (x2) | → | filled with /s/ Name for all three |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/Dispatch_log_2025-1018.csv | rows 37 and 45, incident number references [round8: Consistent Naming -- unreconciled ACTD incident-file number] [same incident, three records, two different ID formats with no cross-reference explaining the discrepancy; standardized to the majority (2 of 3 records already used no-suffix) form] | ACTD-IR-2025-1018-001 (with a -001 suffix) | → | ACTD-IR-2025-1018 (no suffix), matching the identifier used in IR_2025-1018_final.docx and onboard_video_still_log.pdf |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_life_care_plan.pdf | para 37, present-value calculation detail [round8: Calculation Accuracy -- stated unrounded PV $45.19 below the formula's true result] [the rounded-to-nearest-thousand canonical figure ($4,240,000, para 38) is unaffected either way and was not touched; only the displayed intermediate arithmetic was wrong] | annuity factor truncated to 23.556 (3dp), giving PV = $180,000 x 23.556 = $4,240,080, which is $45.19 below the true full-precision result ($4,240,125.19) for r=0.025, n=36 | → | factor shown to 5dp (23.55625), giving PV = $180,000 x 23.55625 = $4,240,125, matching the formula's true result to the nearest dollar |

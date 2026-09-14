@@ -1,0 +1,16 @@
+TICKET 4 of 12  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning clause fails because `Legal/Reyes/late_claim_app.pdf` directly says that leave "should be granted" under specified statutory grounds, while the settlement materials identify both the legally governing past-medical measure and the completed present-value results. `ACTD/Claims/reserve_memo.docx` separately supplies the controlling $3.25 million reserve and declares that a course-and-scope defense is not viable, bypassing the required liability and exposure assessment. These are reachable substantive conclusions, not raw source facts requiring the worker's synthesis; the environment/filesystem clause did not independently fail.
+
+Finding #1: Late-claim filing states the requested result and grounds. Major.
+Finding #2: Settlement documents provide completed legal and valuation answers. Major.
+Finding #3: Reserve memorandum pre-decides liability and controlling reserve. Major.

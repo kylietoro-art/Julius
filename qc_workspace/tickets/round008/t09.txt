@@ -1,0 +1,14 @@
+TICKET 9 of 12  |  round 8
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Consistent Naming And Defined Terms
+
+The ACTD dispatch log says the incident number opened and left open is ACTD-IR-2025-1018-001, while the final report certifies itself as the final report of record for ACTD-IR-2025-1018. The onboard-video still log uses the latter identifier as well, yet neither the world specification nor an in-world amendment explains that the suffix was retired. A worker trying to collect the core incident file could reasonably treat these as separate matters or miss the dispatch log; standardize the identifier across the three records or add an explicit cross-reference stating that they are the same incident.
+
+Finding #1: Unreconciled ACTD incident-file number. Minor.
