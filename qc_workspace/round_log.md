@@ -15,6 +15,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 6 | 2026-09-14T19:37 | 10 | 5 | 5 | fixed 1, widened 0, traps 1, false 5, blocked 3 |
 | 7 | 2026-09-14T19:57 | 11 | 6 | 6 | fixed 2, widened 0, traps 2, false 4, blocked 3 |
 | 8 | 2026-09-14T21:26 | 12 | 9 | 7 | fixed 3, widened 0, traps 1, false 5, blocked 3 |
+| 9 | 2026-09-14T22:09 | 13 | 9 | 9 | fixed 4, widened 0, traps 1, false 5, blocked 3 |
 
 ## Detail
 
@@ -153,6 +154,26 @@ Note: Blocked (unchanged): A53 native MP4 (standing ruling), DocuSeal/Wiki.js ap
   - files named: ir_2025-1018_final.docx, production_tracker.csv, reserve_ledger.csv, reserve_memo.docx
 - **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
   - files named: plan.pdf
+
+Note: Blocked (unchanged): A53 native MP4 (standing ruling), DocuSeal/Wiki.js app-data seeding, scene/still-frame image generation.
+
+### Round 9, 2026-09-14T22:09
+
+- **Totals don't foot / calculations disagree with inputs**: 2 finding(s)  **(REPEAT)**
+  - files named: employment_verification.pdf, medical_billing_ledger.csv, reyes_lien_eob.pdf, reyes_wage_records.pdf
+- **Uncategorised, read the finding text**: 2 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf
+- **Solution or reasoning leaked into world files**: 2 finding(s)  **(REPEAT)**
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+  - files named: plan.pdf
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+- **A referenced document or value doesn't resolve**: 1 finding(s)  **(REPEAT)**
+  - files named: complaint_reyes_filed.pdf, conservatorship_term.pdf
+- **File is corrupt, empty, unreadable or won't render**: 1 finding(s)  **(REPEAT)**
+  - files named: 13.pdf, tcr.pdf
+- **Builder A## codes visible in world files**: 1 finding(s)  **(REPEAT)**
+- **Voice, tone, texture or document authenticity reads machine-made**: 1 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
 
 Note: Blocked (unchanged): A53 native MP4 (standing ruling), DocuSeal/Wiki.js app-data seeding, scene/still-frame image generation.
 

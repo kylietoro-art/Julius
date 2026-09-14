@@ -1,0 +1,13 @@
+TICKET 2 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] fails because two purportedly completed legal records retain unresolved execution signature lines. In `Shared/CivilCase/Complaint_Reyes_filed.pdf`, the proof of service declares it was executed on May 22, 2026, but page 12 presents only a blank line above Grace Chen's name; this leaves a filed-and-served pleading's sworn service declaration visibly unfinished. In `Legal/Reyes/conservatorship_term.pdf`, Exhibit A's physician declaration states it was executed on February 3, 2026, yet page 10 retains a blank line above Dr. Helena Vasquez-Ortiz's name. Add valid signatures or clear signature-on-file attestations to the two execution lines.
+
+Finding #1: Unsigned proof of service in filed civil complaint. Major.
+Finding #2: Unsigned physician declaration attached to termination order. Major.

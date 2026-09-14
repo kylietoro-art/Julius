@@ -1,0 +1,12 @@
+TICKET 13 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+`LIFE CARE PLAN.pdf` still has three separately repairable material citation failures. On PDF p. 40, citation 167 is the stated TreasuryDirect source for the historical auction data used in the plan's discount-rate method, but its printed URL redirects and ends in HTTP 505. On pp. 115-116, the plan says NY DFS guidance permits FAIR Health as an independent UCR source, yet the cited OON-guidance PDF now returns HTTP 404; on p. 120, its CMS locality-configuration/GAF citation also returns HTTP 404. These sources support core current-price and present-value methodology, so inaccessible URLs prevent readers from verifying material claims and meet the fail criterion.

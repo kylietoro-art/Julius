@@ -433,3 +433,27 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Shared/Settlement/Reyes_life_care_plan.pdf | para 37, present-value calculation detail [round8: Calculation Accuracy -- stated unrounded PV $45.19 below the formula's true result] [the rounded-to-nearest-thousand canonical figure ($4,240,000, para 38) is unaffected either way and was not touched; only the displayed intermediate arithmetic was wrong] | annuity factor truncated to 23.556 (3dp), giving PV = $180,000 x 23.556 = $4,240,080, which is $45.19 below the true full-precision result ($4,240,125.19) for r=0.025, n=36 | → | factor shown to 5dp (23.55625), giving PV = $180,000 x 23.55625 = $4,240,125, matching the formula's true result to the nearest dollar |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CivilCase/Complaint_Reyes_filed.pdf | p12 proof-of-service signature [round9: Placeholder/Template Residue -- unsigned proof of service] [the declaration says it was executed 05/22/2026; a sworn, dated proof of service on a filed complaint is a completed document] | blank underscore signature line for Grace Chen | → | filled with /s/ Grace Chen |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/conservatorship_term.pdf | p10, Exhibit A physician declaration signature [round9: Placeholder/Template Residue -- unsigned physician declaration] [the declaration says it was executed 02/03/2026; a sworn capacity declaration attached as an exhibit to an entered order is a completed document] | blank underscore signature line for Dr. Helena Vasquez-Ortiz | → | filled with /s/ Helena Vasquez-Ortiz, MD |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/employment_verification.pdf | letterhead, Date of hire, prose, and Wage Summary Schedule tables A/B [round9: Numerical Values -- payroll facts conflict with Reyes_wage_records.pdf Tab A/B] [two employer verification letters existed for the same person/company/period with materially different hire date, address, and wage history; the current $23.50/hour, 34 hrs/week, ~$41,500 annualized figures (which the registry and the vocational assessment both key off) already matched and were untouched] | hire date 06/2018, employer address 2740 Harbor Boulevard Suite 210, 2023-2025 rate history $21.00 (01/2023)/$22.25 (01/2024)/$23.50 (01/2025), and annual gross wages $41,182.15 (2023)/$41,614.30 (2024)/$32,748.90 (2025) | → | hire date 04/2019, employer address 2245 Harborview Boulevard, rate history $22.75 (03/2023)/$23.50 (03/2024, no further 2025 change), and annual gross wages $40,687.42 (2023)/$41,528.19 (2024)/$32,610.85 (2025), all matching Reyes_wage_records.pdf's Tab A verification letter, W-2 summaries, and paystub samples exactly |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | adjustments column, all 81 rows [round9: Calculation Accuracy -- $3,200 patient responsibility folded into adjustments, recurring finding since round 6] [disputed as a granularity difference (not a real error) for 3 consecutive rounds (6, 7, 8) with exact arithmetic proof each time, but AutoQC kept re-flagging it; splitting the column removes the ambiguity for good without changing any canonical total (billed $2,840,000, paid $196,000 both unchanged) or fabricating precision beyond what the EOB itself provides] | single 'adjustments' column totaling $2,644,000, bundling contractual write-offs and patient-paid copay together | → | split into 'contractual_adjustment' ($2,640,800 total) and 'patient_responsibility' ($3,200 total) columns, matching Reyes_lien_EOB.pdf Exhibit A's two-column breakdown exactly; the $3,200 is allocated by provider (one representative row per provider, matching the EOB's own per-provider totals: RRTC $1,800, ACNRI $400, SKY $300, RAD $200, ANES $100, NSG $100, TSG $50, ASH $200, HBC $50) since neither source gives bill-line-level patient-responsibility detail |

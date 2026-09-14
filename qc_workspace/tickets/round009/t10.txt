@@ -1,0 +1,15 @@
+TICKET 10 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+The Document Authenticity Texture And Markings and Visual Genre Fit clauses fail for two distinct visual-evidence artifacts. `Shared/Police/scene_photos_2025-1018.pdf` is declared in the World Spec as a "Captioned scene-photograph set" with "Size: ~10-15 captioned photos," but it is an eight-page text-only description log with zero embedded images; its rendered first page is headed "SCENE / RECOVERED-PARTS PHOTO LOG" and lists prose entries. `ACTD/Video/onboard_video_still_log.pdf` is likewise a six-page text-only table with zero embedded images despite its title "ONBOARD VIDEO / CAMERA SYSTEM -- STILL-FRAME LOG"; the last page labels entries as descriptions and says "no unit yet in frame." These documents therefore impersonate visual evidence genres while supplying only prose indexes, breaking reader trust; add representative captioned photos/stills or accurately retitle and reclassify them as description logs.
+
+Finding #1: Scene-photo set contains no photographs. Minor.
+Finding #2: Onboard still-frame log contains no still frames. Minor.

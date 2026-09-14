@@ -1,0 +1,12 @@
+TICKET 6 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The late-claim application incorrectly says that incapacity relief is sought "principally under Government Code section 911.6(b)(4)" and later says the facts establish incapacity "within the meaning of Government Code section 911.6(b)(4)." The world specification repeats this by describing the capacity facts as defeating "section 911.6(b)(4) 'all of the time.'" Section 911.6(b)(4) actually concerns the claimant's death, while incapacity is section 911.6(b)(3); because this litigation world makes late-claim strategy a core legal issue, the repeated wrong statutory reference materially breaks the reliability of its California-law framework.

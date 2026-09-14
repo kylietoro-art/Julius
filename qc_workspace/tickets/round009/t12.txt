@@ -1,0 +1,12 @@
+TICKET 12 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The final incident report still artificially privileges its resolution of disputed collision and course-and-scope facts. It calls itself the "Controlling Report of Record," gives itself a "Report of Record; Relationship to Draft Report" section, certifies that it reflects the "controlling documentary record," and directly bolds the full alcohol-impairment causal conclusion; it even directs that the collision facts are "as set forth in this report." Separately, the reserve memo presents the selected $3,250,000 as the "Controlling reserve," bolds both competing figures and "supersedes," marks the older amount "SUPERSEDED," and the production tracker repeats that directive characterization. These devices steer the reader to the intended liability and reserve answers instead of embedding the chronology and evidence neutrally.

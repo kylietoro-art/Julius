@@ -1,0 +1,14 @@
+TICKET 7 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+The current Tasks sheet makes both Docuseal and Wiki.js mandatory for every task and calls for state-changing actions, including archiving an earlier Docuseal submission in T2 and correcting a live Wiki.js page in T3. T6 additionally requires correcting the submitter on an existing reserve-authorization Docuseal submission. Neither those records nor either application's state is present in the complete mounted corpus, so the required reads, corrections, archival, routing, and verification cannot be performed or evaluated; this is a material residual world-build anomaly. Seed and mount the required Wiki.js pages, Docuseal submissions, and Halstead & Cruz matter-calendar records with the stated initial conditions.
+
+Finding #1: Required multi-app records and application state are absent. Major.

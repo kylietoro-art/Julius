@@ -1,0 +1,15 @@
+TICKET 3 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Shared medical-damages accounting materially disagrees without reconciliation. `ACTD/Claims/medical_billing_ledger.csv` recomputes to $2,840,000 billed, $196,000 paid, $2,644,000 adjustments, and zero balance; `Shared/Settlement/Reyes_lien_EOB.pdf` instead shows $2,640,800 adjustments and a separate $3,200 patient-responsibility total while saying that responsibility was paid and no balance remains. The EOB therefore allocates the same charges to $3,200 more than the billed total unless the patient payments are explicitly included in its $196,000 paid/accepted figure. Separately, `Legal/Reyes/employment_verification.pdf` and `Shared/Settlement/Reyes_wage_records.pdf` provide incompatible payroll facts for the same employer and period, undermining the wage/earning-capacity evidence.
+
+Finding #1: Medical ledger and lien/EOB double-count $3,200 patient responsibility. Major.
+Finding #2: Reyes payroll rate history and annual wages conflict across employment sources. Major.

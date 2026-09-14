@@ -1,0 +1,20 @@
+TICKET 4 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+FAIL. Explicit references in the current world do not consistently resolve to real materials. Most materially, `ACTD/Video/onboard_video_still_log.pdf` identifies native clip `4177_20251018_0130-0210_INC.mp4` and says the full native MP4 is available from custodians, while the mounted inventory contains only that six-page still-frame log and no MP4/export. The final incident report, FST supplement, DOT test record, lien/EOB transmittal, life-care plan, and coverage declaration also expressly represent separately identifiable records, enclosures, or attachments that are neither appended nor mounted, preventing a reader from reviewing supporting evidence the world invokes.
+
+Finding #1: Native onboard-video clip is not mounted. Major.
+Finding #2: Final incident report names unmounted operational records and video. Minor.
+Finding #3: FST supplement's four-item attachment packet is absent. Minor.
+Finding #4: DOT record's listed attachments are absent. Minor.
+Finding #5: Lien/EOB enclosure packet is not supplied. Minor.
+Finding #6: Life-care plan's named attachment classes are unavailable. Minor.
+Finding #7: Coverage summary points to an absent attached coverage form. Minor.

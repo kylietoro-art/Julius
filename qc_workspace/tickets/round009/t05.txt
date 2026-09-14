@@ -1,0 +1,20 @@
+TICKET 5 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning Leakage clause fails. The late-claim application directly asks for -- and says the Board should grant -- the specific statutory relief that T3 requires the worker to assess, while the plaintiff intake memo separately calls the same incapacity ground available and says respondeat-superior liability should attach. The reserve memo then gives the defense worker both a controlling reserve recommendation and the conclusion that its course-and-scope defense is unavailable; the settlement documents supply final Howell and present-value answers, and the discovery tracker supplies final produce/withhold calls even though T9 requires an independent privilege analysis. These are material, independently removable shortcuts to core task outcomes. The No Environment / Filesystem clause was checked and no grading or hidden-answer artifact was found in the mounted solver-visible source tree.
+
+Finding #1: Late-claim application pre-decides the requested relief. Major.
+Finding #2: Plaintiff intake memo gives a contradictory completed late-claim and liability analysis. Major.
+Finding #3: Reserve memo supplies the defense conclusion and controlling number. Major.
+Finding #4: Lien/EOB letter states the Howell damages answer. Major.
+Finding #5: Life-care plan gives the completed future-care present value. Major.
+Finding #6: Wage packet gives the completed lost-earnings present value. Major.
+Finding #7: Production tracker contains completed privilege and production calls. Major.

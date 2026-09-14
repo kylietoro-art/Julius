@@ -1,0 +1,14 @@
+TICKET 11 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+`ACTD/Claims/medical_billing_ledger.csv` reports $2,644,000 in the field named `adjustments`, while `Shared/Settlement/Reyes_lien_EOB.pdf`, Exhibit A, reports only $2,640,800 as "Contractual Adj. / Write-off" and separately identifies $3,200 as "Patient Resp." The EOB states that all patient-responsibility balances were paid, so the ledger folds a paid component into a category that purports to be adjustments; this makes its aggregate fixture inconsistent with its underlying reconciliation despite row-level arithmetic balancing. Add a separate patient-responsibility/payment column (or rename and reconcile the combined field) so the ledger accurately reflects the source data.
+
+Finding #1: Medical billing ledger misclassifies paid patient responsibility as adjustments. Minor.

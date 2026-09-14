@@ -1,0 +1,16 @@
+TICKET 8 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Format-Native Feature Fidelity
+
+TCR.pdf (custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf) fails sub-check (b). Its four rendered pages have no populated collision, party, coding, or injury information; critically, page 4 is a blank factual-diagram grid that instructs the preparer to import a graphic and has no north indicator or diagram. This leaves an artifact with multiple empty reserved content slots where the layout plainly expects the case-specific collision report and visual evidence, making it materially unusable. Populate the CHP 555 fields and factual diagram with the case facts, or remove this blank template from the mounted world.
+
+Finding #1: TCR.pdf is an uncompleted collision-report template. Major.
+
+=== Minor issues ===

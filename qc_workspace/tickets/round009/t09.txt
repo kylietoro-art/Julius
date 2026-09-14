@@ -1,0 +1,15 @@
+TICKET 9 of 13  |  round 9
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Built Files Match Spec Inventory
+
+Two current registry artifacts fail the content-and-attribution requirement. A09 requires W. Tran's short 03:15 email to G. Espinoza and D. Farkas with subject "Overnight incident - Route 512," but the built EML addresses dispatch-supervisors@actd.gov, cc's M. Okonkwo, uses a different subject, and has a 295-word incident narrative. A52 requires a one-page, three-message personal-phone thread from 03:20-03:40 on 10/18/2025, whereas the built PDF is five pages, begins at 02:47, continues through October 24, and ends with 32 messages. These are material departures from each artifact's stated scope and attribution, so the build does not fully match the registry.
+
+Finding #1: A09 dispatch email has wrong recipients, subject, and materially expanded content. Minor.
+Finding #2: A52 personal-phone thread is materially overexpanded. Minor.

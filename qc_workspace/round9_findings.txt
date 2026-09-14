@@ -1,0 +1,83 @@
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+[P1] fails because two purportedly completed legal records retain unresolved execution signature lines. In `Shared/CivilCase/Complaint_Reyes_filed.pdf`, the proof of service declares it was executed on May 22, 2026, but page 12 presents only a blank line above Grace Chen's name; this leaves a filed-and-served pleading's sworn service declaration visibly unfinished. In `Legal/Reyes/conservatorship_term.pdf`, Exhibit A's physician declaration states it was executed on February 3, 2026, yet page 10 retains a blank line above Dr. Helena Vasquez-Ortiz's name. Add valid signatures or clear signature-on-file attestations to the two execution lines.
+
+Finding #1: Unsigned proof of service in filed civil complaint. Major.
+Finding #2: Unsigned physician declaration attached to termination order. Major.
+
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Shared medical-damages accounting materially disagrees without reconciliation. `ACTD/Claims/medical_billing_ledger.csv` recomputes to $2,840,000 billed, $196,000 paid, $2,644,000 adjustments, and zero balance; `Shared/Settlement/Reyes_lien_EOB.pdf` instead shows $2,640,800 adjustments and a separate $3,200 patient-responsibility total while saying that responsibility was paid and no balance remains. The EOB therefore allocates the same charges to $3,200 more than the billed total unless the patient payments are explicitly included in its $196,000 paid/accepted figure. Separately, `Legal/Reyes/employment_verification.pdf` and `Shared/Settlement/Reyes_wage_records.pdf` provide incompatible payroll facts for the same employer and period, undermining the wage/earning-capacity evidence.
+
+Finding #1: Medical ledger and lien/EOB double-count $3,200 patient responsibility. Major.
+Finding #2: Reyes payroll rate history and annual wages conflict across employment sources. Major.
+
+[P1] No Broken Document References
+
+FAIL. Explicit references in the current world do not consistently resolve to real materials. Most materially, `ACTD/Video/onboard_video_still_log.pdf` identifies native clip `4177_20251018_0130-0210_INC.mp4` and says the full native MP4 is available from custodians, while the mounted inventory contains only that six-page still-frame log and no MP4/export. The final incident report, FST supplement, DOT test record, lien/EOB transmittal, life-care plan, and coverage declaration also expressly represent separately identifiable records, enclosures, or attachments that are neither appended nor mounted, preventing a reader from reviewing supporting evidence the world invokes.
+
+Finding #1: Native onboard-video clip is not mounted. Major.
+Finding #2: Final incident report names unmounted operational records and video. Minor.
+Finding #3: FST supplement's four-item attachment packet is absent. Minor.
+Finding #4: DOT record's listed attachments are absent. Minor.
+Finding #5: Lien/EOB enclosure packet is not supplied. Minor.
+Finding #6: Life-care plan's named attachment classes are unavailable. Minor.
+Finding #7: Coverage summary points to an absent attached coverage form. Minor.
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning Leakage clause fails. The late-claim application directly asks for -- and says the Board should grant -- the specific statutory relief that T3 requires the worker to assess, while the plaintiff intake memo separately calls the same incapacity ground available and says respondeat-superior liability should attach. The reserve memo then gives the defense worker both a controlling reserve recommendation and the conclusion that its course-and-scope defense is unavailable; the settlement documents supply final Howell and present-value answers, and the discovery tracker supplies final produce/withhold calls even though T9 requires an independent privilege analysis. These are material, independently removable shortcuts to core task outcomes. The No Environment / Filesystem clause was checked and no grading or hidden-answer artifact was found in the mounted solver-visible source tree.
+
+Finding #1: Late-claim application pre-decides the requested relief. Major.
+Finding #2: Plaintiff intake memo gives a contradictory completed late-claim and liability analysis. Major.
+Finding #3: Reserve memo supplies the defense conclusion and controlling number. Major.
+Finding #4: Lien/EOB letter states the Howell damages answer. Major.
+Finding #5: Life-care plan gives the completed future-care present value. Major.
+Finding #6: Wage packet gives the completed lost-earnings present value. Major.
+Finding #7: Production tracker contains completed privilege and production calls. Major.
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The late-claim application incorrectly says that incapacity relief is sought "principally under Government Code section 911.6(b)(4)" and later says the facts establish incapacity "within the meaning of Government Code section 911.6(b)(4)." The world specification repeats this by describing the capacity facts as defeating "section 911.6(b)(4) 'all of the time.'" Section 911.6(b)(4) actually concerns the claimant's death, while incapacity is section 911.6(b)(3); because this litigation world makes late-claim strategy a core legal issue, the repeated wrong statutory reference materially breaks the reliability of its California-law framework.
+
+[P0] Anomaly Detection Catch-All
+
+The current Tasks sheet makes both Docuseal and Wiki.js mandatory for every task and calls for state-changing actions, including archiving an earlier Docuseal submission in T2 and correcting a live Wiki.js page in T3. T6 additionally requires correcting the submitter on an existing reserve-authorization Docuseal submission. Neither those records nor either application's state is present in the complete mounted corpus, so the required reads, corrections, archival, routing, and verification cannot be performed or evaluated; this is a material residual world-build anomaly. Seed and mount the required Wiki.js pages, Docuseal submissions, and Halstead & Cruz matter-calendar records with the stated initial conditions.
+
+Finding #1: Required multi-app records and application state are absent. Major.
+
+[P0] Format-Native Feature Fidelity
+
+TCR.pdf (custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf) fails sub-check (b). Its four rendered pages have no populated collision, party, coding, or injury information; critically, page 4 is a blank factual-diagram grid that instructs the preparer to import a graphic and has no north indicator or diagram. This leaves an artifact with multiple empty reserved content slots where the layout plainly expects the case-specific collision report and visual evidence, making it materially unusable. Populate the CHP 555 fields and factual diagram with the case facts, or remove this blank template from the mounted world.
+
+Finding #1: TCR.pdf is an uncompleted collision-report template. Major.
+
+=== Minor issues ===
+
+[P0] Built Files Match Spec Inventory
+
+Two current registry artifacts fail the content-and-attribution requirement. A09 requires W. Tran's short 03:15 email to G. Espinoza and D. Farkas with subject "Overnight incident - Route 512," but the built EML addresses dispatch-supervisors@actd.gov, cc's M. Okonkwo, uses a different subject, and has a 295-word incident narrative. A52 requires a one-page, three-message personal-phone thread from 03:20-03:40 on 10/18/2025, whereas the built PDF is five pages, begins at 02:47, continues through October 24, and ends with 32 messages. These are material departures from each artifact's stated scope and attribution, so the build does not fully match the registry.
+
+Finding #1: A09 dispatch email has wrong recipients, subject, and materially expanded content. Minor.
+Finding #2: A52 personal-phone thread is materially overexpanded. Minor.
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+The Document Authenticity Texture And Markings and Visual Genre Fit clauses fail for two distinct visual-evidence artifacts. `Shared/Police/scene_photos_2025-1018.pdf` is declared in the World Spec as a "Captioned scene-photograph set" with "Size: ~10-15 captioned photos," but it is an eight-page text-only description log with zero embedded images; its rendered first page is headed "SCENE / RECOVERED-PARTS PHOTO LOG" and lists prose entries. `ACTD/Video/onboard_video_still_log.pdf` is likewise a six-page text-only table with zero embedded images despite its title "ONBOARD VIDEO / CAMERA SYSTEM -- STILL-FRAME LOG"; the last page labels entries as descriptions and says "no unit yet in frame." These documents therefore impersonate visual evidence genres while supplying only prose indexes, breaking reader trust; add representative captioned photos/stills or accurately retitle and reclassify them as description logs.
+
+Finding #1: Scene-photo set contains no photographs. Minor.
+Finding #2: Onboard still-frame log contains no still frames. Minor.
+
+[P1] Calculation & Fixture Accuracy
+
+`ACTD/Claims/medical_billing_ledger.csv` reports $2,644,000 in the field named `adjustments`, while `Shared/Settlement/Reyes_lien_EOB.pdf`, Exhibit A, reports only $2,640,800 as "Contractual Adj. / Write-off" and separately identifies $3,200 as "Patient Resp." The EOB states that all patient-responsibility balances were paid, so the ledger folds a paid component into a category that purports to be adjustments; this makes its aggregate fixture inconsistent with its underlying reconciliation despite row-level arithmetic balancing. Add a separate patient-responsibility/payment column (or rename and reconcile the combined field) so the ledger accurately reflects the source data.
+
+Finding #1: Medical billing ledger misclassifies paid patient responsibility as adjustments. Minor.
+
+[P1] No Signposting of Load-Bearing Facts
+
+The final incident report still artificially privileges its resolution of disputed collision and course-and-scope facts. It calls itself the "Controlling Report of Record," gives itself a "Report of Record; Relationship to Draft Report" section, certifies that it reflects the "controlling documentary record," and directly bolds the full alcohol-impairment causal conclusion; it even directs that the collision facts are "as set forth in this report." Separately, the reserve memo presents the selected $3,250,000 as the "Controlling reserve," bolds both competing figures and "supersedes," marks the older amount "SUPERSEDED," and the production tracker repeats that directive characterization. These devices steer the reader to the intended liability and reserve answers instead of embedding the chronology and evidence neutrally.
+
+[P1] External Citations Resolve To Real Content
+
+`LIFE CARE PLAN.pdf` still has three separately repairable material citation failures. On PDF p. 40, citation 167 is the stated TreasuryDirect source for the historical auction data used in the plan's discount-rate method, but its printed URL redirects and ends in HTTP 505. On pp. 115-116, the plan says NY DFS guidance permits FAIR Health as an independent UCR source, yet the cited OON-guidance PDF now returns HTTP 404; on p. 120, its CMS locality-configuration/GAF citation also returns HTTP 404. These sources support core current-price and present-value methodology, so inaccessible URLs prevent readers from verifying material claims and meet the fail criterion.

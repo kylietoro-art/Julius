@@ -687,6 +687,105 @@
         "Format-Native Feature Fidelity / TCR.pdf: 6th consecutive round confirming custom_fields/.../13.pdf does not exist anywhere in this repository.",
         "External Citations: this round adds a third citation (CMS locality-configuration URL) to the same pattern -- a full-text search of the entire life-care-plan PDF found zero occurrences of it, exactly like TreasuryDirect and OON_guidance in rounds 6-7. Three rounds running, three different specific source citations claimed present, zero of them ever actually in the file. Flagging again as a likely AutoQC-side bug."
       ]
+    },
+    {
+      "round": 9,
+      "opened": "2026-09-14T22:09:48",
+      "count": 13,
+      "classes": {
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": []
+        },
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 1,
+          "files": [
+            "complaint_reyes_filed.pdf",
+            "conservatorship_term.pdf"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 2,
+          "files": [
+            "employment_verification.pdf",
+            "medical_billing_ledger.csv",
+            "reyes_lien_eob.pdf",
+            "reyes_wage_records.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 2,
+          "files": [
+            "onboard_video_still_log.pdf"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 2,
+          "files": []
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": [
+            "plan.pdf"
+          ]
+        },
+        "file_integrity": {
+          "label": "File is corrupt, empty, unreadable or won't render",
+          "n": 1,
+          "files": [
+            "13.pdf",
+            "tcr.pdf"
+          ]
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 1,
+          "files": []
+        },
+        "realism_voice": {
+          "label": "Voice, tone, texture or document authenticity reads machine-made",
+          "n": 1,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        }
+      },
+      "repeats": [
+        "placeholder_synthetic",
+        "broken_reference",
+        "math_footing",
+        "other",
+        "answer_leakage",
+        "citation_facts",
+        "file_integrity",
+        "a_code_leakage",
+        "realism_voice"
+      ],
+      "disposition": {
+        "fixed": 4,
+        "expanded": 0,
+        "traps": 1,
+        "false": 5,
+        "blocked": 3
+      },
+      "note": "Blocked (unchanged): A53 native MP4 (standing ruling), DocuSeal/Wiki.js app-data seeding, scene/still-frame image generation.",
+      "closed": "2026-09-14T22:25:43",
+      "changed": "Fixed 2 more genuine blank signature lines (Complaint_Reyes_filed.pdf proof of service, conservatorship_term.pdf Exhibit A physician declaration). Fixed a real cross-file conflict: employment_verification.pdf and Reyes_wage_records.pdf were two different 'employer verification letters' for the same person/employer/period with a different hire date (06/2018 vs 04/2019), employer street address, and 2023-2024 rate history/W-2 totals; brought employment_verification.pdf into line with wage_records.pdf's more detailed, internally-consistent production (W-2s, paystubs, HR summary all agree with each other). Ended the 4-round-chronic $3,200 ledger/EOB finding by splitting medical_billing_ledger.csv's single 'adjustments' column into 'contractual_adjustment' ($2,640,800) and 'patient_responsibility' ($3,200) columns, allocated by provider to match Reyes_lien_EOB.pdf Exhibit A exactly -- no canonical total changed.",
+      "disputes": [
+        "Real-World Facts, section 911.6(b)(3) vs (b)(4): verified against California Gov. Code directly (converging results from FindLaw, Justia, and CaseMine) -- (b)(4) is incapacity ('all of the period'), (b)(3) is minors, and death is actually (b)(6), which the finding never mentions. The world's late_claim_app.pdf and intake_memo.docx both correctly cite (b)(4) for incapacity throughout; AutoQC's proposed correction would have introduced a real legal error. No change made.",
+        "No Reachable Shortcut, Finding #2 (intake memo) and Finding #7 (production tracker): the intake memo is the plaintiff firm's own internal case-assessment memo, the exact genre that states liability/strategy conclusions, same as every previously-disputed settlement/reserve document. The production tracker is not a leaked answer -- A09's row is explicitly marked 'Pending attorney review' / 'TBD', and A42's 'Withhold-Privileged' final_call is a deliberately WRONG seeded answer (the registered T9 trap: a junior non-attorney's pre-litigation note carries a face-stamped privilege legend that CCP 2018.030 doesn't actually support) that the worker is supposed to catch and correct, not a shortcut to the right answer.",
+        "No Broken Document References, Findings #2-7: same realistic-document-citing-its-own-enclosures reasoning as rounds 6-8, re-confirmed against no new evidence to the contrary.",
+        "Built Files Match Spec Inventory (A09/A52) and Format-Native Feature Fidelity (TCR.pdf/13.pdf): unchanged from every prior round -- trap substance intact for A09/A52; the TCR.pdf path still does not exist anywhere in the repository (7th round confirming).",
+        "No Signposting: unchanged realistic-document-convention reasoning.",
+        "External Citations: LIFE CARE PLAN.pdf has 19 total pages. The finding cites page 40, pages 115-116, and page 120 -- none of which can exist in a 19-page document. This is the clearest evidence yet that this finding's page/citation detection is not actually reading this file."
+      ]
     }
   ]
 }
