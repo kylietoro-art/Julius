@@ -253,3 +253,51 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Legal/Reyes/docket_entry.xlsx | docProps/core.xml (creator/lastModifiedBy) [self-correction: keep the fix minimal, matches inventory_check's text-growth flag] | creator=lastModifiedBy=Grace Chen, Paralegal (over-fix, added info beyond the flagged finding) | → | creator=lastModifiedBy=blank (reverted to original; only created/modified date is the actual fix) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_life_care_plan.pdf | pages 8-9 (category tables), p.13 (Annual Cost Summary), p.16-17 (sensitivity tables) [round3: Calculation & Fixture Accuracy -- weighted annual category figures and PV sensitivity tables don't follow their displayed inputs] | PT $8,150 (should be $7,700); OT $4,845 (should be $2,458); Neurocog $7,320 (should be $4,573); Psychotherapy $8,275 (should be $7,967); rounding/geo adj $1,700; sensitivity cells 2.0%/36yr $4,592,000, 2.0%/40yr $4,929,000, 2.5%/30yr $3,766,000, 2.5%/40yr $4,517,000, 3.0%/36yr $3,921,000, 3.0%/40yr $4,153,000 -- none of these matched the stated line-item inputs or the level-annuity formula | → | PT $7,700; OT $2,458; Neurocog $4,573; Psychotherapy $7,967 (all recomputed as weighted annual averages from the plan's own displayed frequency/unit-cost line items); rounding/geo adj raised to $7,592 so the summary still foots to the canonical $180,000; sensitivity cells recomputed from PV=C*(1-(1+r)^-n)/r and corrected to $4,588,000 / $4,924,000 / $3,767,000 / $4,518,000 / $3,930,000 / $4,161,000; the adopted 2.5%/36yr cell ($4,240,000) was already correct and untouched |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | docProps/core.xml (creator) [round3: In-World vs Out-Of-World Separation -- openpyxl creator leak] | creator=openpyxl (tool fingerprint) | → | creator=blank |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | 'Authorized Owl Routes'!A7:A12 font color [round3: Text Legibility And Contrast -- route-number gold text fails contrast] | gold 00B8862B on white/cream fills (~3.2:1 contrast) | → | dark navy 000E1B2C (matches column B text), same fills |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Discovery/hold_demand_letter.pdf | p.1 closing sentence of opening paragraph; p.2 mid-paragraph clause [round3: World Timeline Holds Together -- March preservation letter contains May hindsight] | Reyes's late-claim application under Government Code § 911.4 is pending before the Board. (p.1) / ...a late-claim application on behalf of Ms. Reyes was filed with the Board on 05/15/2026. (p.2) | → | Reyes's late-claim application under Government Code § 911.4 has not yet been filed. (p.1) / ...a late-claim application on behalf of Ms. Reyes remains unfiled. (p.2) -- both corrected so a 03/20/2026 letter no longer describes the 05/15/2026 filing as already complete |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | row 83 (final row) [round3: CSV Formatted Correctly -- trailing aggregate row is not a per-record data row] | TOTAL,ALL PROVIDERS (9),... aggregate row summing billed/paid/adjustments | → | row removed; canonical $2,840,000/$196,000/$2,644,000 totals remain independently stated in Reyes_lien_EOB.pdf (A35) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_draft.docx | 2 Word comments anchored to the off-book flag and the passenger-count flag [round3 (repeat from round1): Format-Native Feature Fidelity sub-check (d) -- draft has no visible review machinery] | no comments/tracked-changes in a document labeled DRAFT -- SUBJECT TO SUPERVISOR REVIEW | → | added 2 real Word comments from Marlene Okonkwo (Director of Safety, already an established character) asking to confirm the off-book characterization against A08/A12 and to pull APC before finalizing -- consistent with the review the final report actually reflects |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/post_accident_testing_policy.docx | § 3.2 Non-Fatal Accidents (replaced the (a)-(d) list) [round3: Real-World Facts, Institutions and Jurisdiction Stated Correctly -- ACTD policy misstates FTA nonfatal post-accident testing rule] | conditioned nonfatal testing on disabling damage OR (injury + citation for a moving violation) OR hazmat release OR immovable-object damage -- an FMCSA/49 CFR 382.303-style, citation-gated standard that does not apply to FTA-regulated transit operators and can wrongly suppress testing | → | As soon as practicable following a nonfatal accident involving a revenue service vehicle, test the operator unless performance can be completely discounted as a contributing factor -- the actual 49 CFR 655.44(a)(2) standard (verified against the current regulation), with no citation/damage/hazmat gating |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/owl_service_rules.docx | Rule 506, second sentence [round3: Real-World Facts, Institutions and Jurisdiction Stated Correctly -- swept to the class since this file shared the same regulatory error] | same citation-gated / disabling-damage-gated FMCSA-style nonfatal testing description as the compliance policy (round1 aligned the policy to match this file, but this file was itself wrong against real 49 CFR 655.44) | → | Testing is required upon any accident meeting the Part 655 threshold: loss of human life, or any other accident where the operator's performance cannot be completely discounted, per District determination -- matches the corrected policy and the actual regulation |

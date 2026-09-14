@@ -1,0 +1,14 @@
+TICKET 7 of 14  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Built Files Match Spec Inventory
+
+A52, Tran Personal-Phone Text Thread, does not match the registry's specified content. The registry calls for a 10/18/2025 03:20-03:40 conversation in which Tran says, "You seeing this Route 512 thing? I don't think Keeler was even supposed to be on that run tonight," whereas the built `ACTD/Dispatch/tran_text_thread.pdf` begins the pertinent exchange at 02:47, states the off-book concern at 02:54, and extends through later timestamps and dates. This alters the documented chronology and message set for a supporting artifact; revise the PDF to the registry-described thread or amend A52's registry description to accurately identify the built export.
+
+Finding #1: A52 personal-phone text export diverges from specified conversation chronology. Minor.

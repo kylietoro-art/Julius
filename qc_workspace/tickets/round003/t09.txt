@@ -1,0 +1,14 @@
+TICKET 9 of 14  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] World Timeline Holds Together (consolidated)
+
+Causal order fails in `Legal/Discovery/hold_demand_letter.pdf`. The letter is dated March 20, 2026, yet its second page says that Reyes's late-claim application "was filed with the Board on 05/15/2026"; the independently mounted application confirms its DATE FILED is May 15, 2026. A March document cannot truthfully characterize a May filing as already complete, and no amendment or correction reconciles the conflict. The smallest fix is to change the hold letter's date to May 15, 2026 or later, or revise the future-event sentence to a contemporaneously accurate formulation.
+
+Finding #1: March preservation letter contains May hindsight. Minor.

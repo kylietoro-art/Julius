@@ -1,0 +1,18 @@
+TICKET 12 of 14  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+The current LIFE CARE PLAN.pdf still cites the legacy Texas Medical Board PublicProfile URL for Mark G. Greene's credentials, the American Board of Urology verification URL for his board status, and a CMS locality reference for physician-charge methodology. Each resolved retrieval returned HTTP 404. The report also relies on TreasuryDirect's Historical Auction Query to produce its risk-free discount rate and cites Micromedex RedBook for medication-pricing metrics; the former returned HTTP 505 and the latter HTTP 404 after redirect, leaving material claims without resolving supporting content.
+
+Finding #1: Dead Texas Medical Board credential citations. Minor.
+Finding #2: Dead American Board of Urology verification citation. Minor.
+Finding #3: Broken TreasuryDirect discount-rate source. Minor.
+Finding #4: Dead CMS locality methodology citation. Minor.
+Finding #5: Dead Micromedex RedBook methodology citation. Minor.

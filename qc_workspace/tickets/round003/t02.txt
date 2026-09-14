@@ -1,0 +1,15 @@
+TICKET 2 of 14  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The previously flagged $173,651 life-care-plan error is no longer present: `Shared/Settlement/Reyes_life_care_plan.pdf` now states $180,000 annually, $6,480,000 undiscounted, and $4,240,000 PV, matching the controlling Canonical Values workbook. But the same PDF has material errors in its component weighted annual averages: physical therapy should be $7,700 from the displayed 3-year/33-year costs plus aquatic therapy, occupational therapy $2,457.50, neurocognitive rehabilitation about $4,573.33, and psychotherapy about $7,966.67, not $8,150, $4,845, $7,320, and $8,275; its attendant-care subtotal is likewise inconsistent with its stated 11% loading. Those erroneous components feed the $180,000 summary. Its sensitivity tables also contradict the stated level-annuity formula; at $180,000 for 36 years, 3.0% yields $3,929,805 (rounded $3,930,000), rather than the reported $3,921,000, with additional incorrect sensitivity cells. Recalculate each category, the annual summary/undiscounted amount/PV as appropriate, and every sensitivity cell from the stated inputs.
+
+Finding #1: Life-care-plan weighted annual category figures do not follow their displayed inputs. Major.
+Finding #2: Life-care-plan present-value sensitivity tables contain incorrect annuity values. Major.

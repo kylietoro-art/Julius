@@ -1,0 +1,12 @@
+TICKET 14 of 14  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] CSV Formatted Correctly
+
+`task_fs/filesystem/ACTD/Claims/medical_billing_ledger.csv` fails because its final row is not an individual billing data record. Parsed row 83 has bill_id TOTAL, provider ALL PROVIDERS (9), and describes an "aggregate itemized medical billing," while aggregating the amounts across the ledger. That trailing summary row breaks the requirement that every row after the header be a data record for the declared columns; move this aggregate to a separate summary file or remove it from the CSV.

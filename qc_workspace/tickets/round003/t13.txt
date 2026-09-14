@@ -1,0 +1,12 @@
+TICKET 13 of 14  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Text Legibility And Contrast
+
+`task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx`, sheet "Authorized Owl Routes," uses gold 00B8862B text for route numbers in A7:A12. The inspected cells show that A7, A9, and A11 have white 00FFFFFF fills, while A8, A10, and A12 have pale-cream 00F5F2EB fills; the gold is only about 3.2:1 against white and lower against the cream stripe. These are visible body values, so the low local contrast makes the sheet fail the all-visible-text legibility criterion; replacing the gold with a darker brown/navy or using a substantially darker fill would fix it.

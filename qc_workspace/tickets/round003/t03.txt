@@ -1,0 +1,12 @@
+TICKET 3 of 14  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The world contains several independently removable, worker-readable answer shortcuts. `Legal/Reyes/late_claim_app.pdf` selects the requested late-claim grounds and expressly argues the disposition; `Shared/Settlement/Reyes_lien_EOB.pdf` gives the controlling past-medical legal conclusion; and the life-care and wage records provide completed present-value methods, arithmetic, and bottom-line values. These materials collapse material legal and damages reasoning that the T3, T4, and T6 workers are supposed to perform, so the No Solution Or Reasoning clause fails even though no filesystem/environment answer-key shortcut was found.

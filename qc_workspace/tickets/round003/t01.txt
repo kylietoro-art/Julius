@@ -1,0 +1,14 @@
+TICKET 1 of 14  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+A53 remains a broken class-of-document reference. The world-spec defines the key artifact as "Onboard Video / Camera System Footage" in "MP4 (clip export) + still-frame log" format, and the production tracker lists its native deliverable as "native MP4 (REYES-NATIVE-0004)." The mounted filesystem contains only `ACTD/Video/onboard_video_still_log.pdf`; that log identifies the absent file as `4177_20251018_0130-0210_INC.mp4` and says the full native file is available from custodians, so the actual footage is still outside the world rather than resolving to real world material. Add the preserved MP4 (or an accessible equivalent export with the stated metadata) to the filesystem.
+
+Finding #1: A53 native onboard-video footage is absent. Major.

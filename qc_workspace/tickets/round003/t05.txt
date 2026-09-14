@@ -1,0 +1,12 @@
+TICKET 5 of 14  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+The prior Docuseal/Wiki.js flag is still present. The task's selected target-app field is ['docuseal', 'wiki_js'], and the current Tasks sheet requires both apps in every task, with Docuseal state changes in nine tasks and a Wiki.js correction in T3. Yet the 62-file task filesystem is limited to PDFs, CSVs, DOCX, XLSX, one EML, and one HTML file; it contains no Docuseal submissions or Wiki.js pages (nor any app database/export capable of being updated). Static CSV system exports do not make possible the required submission routing/archive/update or page correction, so the world lacks material initial app state; mount and seed the specified Docuseal and Wiki.js records/pages in their stated starting conditions.

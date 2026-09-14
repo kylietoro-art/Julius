@@ -1,0 +1,80 @@
+[P1] No Broken Document References
+
+A53 remains a broken class-of-document reference. The world-spec defines the key artifact as "Onboard Video / Camera System Footage" in "MP4 (clip export) + still-frame log" format, and the production tracker lists its native deliverable as "native MP4 (REYES-NATIVE-0004)." The mounted filesystem contains only `ACTD/Video/onboard_video_still_log.pdf`; that log identifies the absent file as `4177_20251018_0130-0210_INC.mp4` and says the full native file is available from custodians, so the actual footage is still outside the world rather than resolving to real world material. Add the preserved MP4 (or an accessible equivalent export with the stated metadata) to the filesystem.
+
+Finding #1: A53 native onboard-video footage is absent. Major.
+
+[P1] Calculation & Fixture Accuracy
+
+FAIL. The previously flagged $173,651 life-care-plan error is no longer present: `Shared/Settlement/Reyes_life_care_plan.pdf` now states $180,000 annually, $6,480,000 undiscounted, and $4,240,000 PV, matching the controlling Canonical Values workbook. But the same PDF has material errors in its component weighted annual averages: physical therapy should be $7,700 from the displayed 3-year/33-year costs plus aquatic therapy, occupational therapy $2,457.50, neurocognitive rehabilitation about $4,573.33, and psychotherapy about $7,966.67, not $8,150, $4,845, $7,320, and $8,275; its attendant-care subtotal is likewise inconsistent with its stated 11% loading. Those erroneous components feed the $180,000 summary. Its sensitivity tables also contradict the stated level-annuity formula; at $180,000 for 36 years, 3.0% yields $3,929,805 (rounded $3,930,000), rather than the reported $3,921,000, with additional incorrect sensitivity cells. Recalculate each category, the annual summary/undiscounted amount/PV as appropriate, and every sensitivity cell from the stated inputs.
+
+Finding #1: Life-care-plan weighted annual category figures do not follow their displayed inputs. Major.
+Finding #2: Life-care-plan present-value sensitivity tables contain incorrect annuity values. Major.
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The world contains several independently removable, worker-readable answer shortcuts. `Legal/Reyes/late_claim_app.pdf` selects the requested late-claim grounds and expressly argues the disposition; `Shared/Settlement/Reyes_lien_EOB.pdf` gives the controlling past-medical legal conclusion; and the life-care and wage records provide completed present-value methods, arithmetic, and bottom-line values. These materials collapse material legal and damages reasoning that the T3, T4, and T6 workers are supposed to perform, so the No Solution Or Reasoning clause fails even though no filesystem/environment answer-key shortcut was found.
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The world fails the "No Synthetic Substitutes For Real-World Facts" clause because ACTD's written policy asserts that 49 CFR § 655.44 conditions nonfatal post-accident testing on specified damage, injury/citation, hazmat, or immovable-object circumstances. The regulation's actual nonfatal rule requires testing after an accident involving a public transportation vehicle unless the employee's performance can be completely discounted, so the policy both adds non-regulatory requirements and may unlawfully suppress testing. This is a material factual misstatement of a named federal framework in a U.S.-centered public-transit litigation world; revise § 3.2 to track 49 CFR § 655.44(a)(2) and remove the FMCSA-like criteria.
+
+Finding #1: ACTD policy misstates FTA nonfatal post-accident testing rule. Major.
+
+[P0] Anomaly Detection Catch-All
+
+The prior Docuseal/Wiki.js flag is still present. The task's selected target-app field is ['docuseal', 'wiki_js'], and the current Tasks sheet requires both apps in every task, with Docuseal state changes in nine tasks and a Wiki.js correction in T3. Yet the 62-file task filesystem is limited to PDFs, CSVs, DOCX, XLSX, one EML, and one HTML file; it contains no Docuseal submissions or Wiki.js pages (nor any app database/export capable of being updated). Static CSV system exports do not make possible the required submission routing/archive/update or page correction, so the world lacks material initial app state; mount and seed the specified Docuseal and Wiki.js records/pages in their stated starting conditions.
+
+[P0] Format-Native Feature Fidelity
+
+`custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf` (TCR.pdf), page 4, visibly presents an empty CHP 555 Factual Diagram grid with the instruction, "NOTE: Click in the graph or INDICATE NORTH fields to import a graphic." No collision scene or north indicator is displayed in that reserved visual area, so sub-check (b) fails; populate the diagram or remove the unused page. Separately, `task_fs/filesystem/ACTD/Safety/IR_2025-1018_draft.docx` visibly identifies itself as "DRAFT — ON-SCENE — SUBJECT TO SUPERVISOR REVIEW," while its package has no comment/revision parts and no real tracked insertion/deletion marks. That clearly working DOCX therefore fails sub-check (d); retain visible comments or tracked changes, or present it as a clean final rather than a draft.
+
+=== Minor issues ===
+
+[P0] Built Files Match Spec Inventory
+
+A52, Tran Personal-Phone Text Thread, does not match the registry's specified content. The registry calls for a 10/18/2025 03:20-03:40 conversation in which Tran says, "You seeing this Route 512 thing? I don't think Keeler was even supposed to be on that run tonight," whereas the built `ACTD/Dispatch/tran_text_thread.pdf` begins the pertinent exchange at 02:47, states the off-book concern at 02:54, and extends through later timestamps and dates. This alters the documented chronology and message set for a supporting artifact; revise the PDF to the registry-described thread or amend A52's registry description to accurately identify the built export.
+
+Finding #1: A52 personal-phone text export diverges from specified conversation chronology. Minor.
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Visual Genre Fit fails for `Shared/Police/scene_photos_2025-1018.pdf` (A51). The World Spec calls it a "Captioned scene-photograph set" with "Size: ~10-15 captioned photos," but the current eight-page PDF contains zero images on every page and instead presents text-only P-001 through P-061 log entries; it therefore looks like a photo index, not the promised photo set. Separately, `ACTD/Video/onboard_video_still_log.pdf` is labelled "ONBOARD VIDEO / CAMERA SYSTEM - STILL-FRAME LOG" and states that its entries "were derived from that preserved MP4 clip," yet its six pages likewise contain zero images and only written descriptions. Add representative captioned scene photographs to A51 and actual video still frames/thumbnails to the onboard log (or accurately retitle/re-specify each as a text-only index).
+
+Finding #1: Police photo set has no photographs. Minor.
+Finding #2: Onboard still-frame log contains no still frames. Minor.
+
+[P1] World Timeline Holds Together (consolidated)
+
+Causal order fails in `Legal/Discovery/hold_demand_letter.pdf`. The letter is dated March 20, 2026, yet its second page says that Reyes's late-claim application "was filed with the Board on 05/15/2026"; the independently mounted application confirms its DATE FILED is May 15, 2026. A March document cannot truthfully characterize a May filing as already complete, and no amendment or correction reconciles the conflict. The smallest fix is to change the hold letter's date to May 15, 2026 or later, or revise the future-event sentence to a contemporaneously accurate formulation.
+
+Finding #1: March preservation letter contains May hindsight. Minor.
+
+[P1] In-World vs Out-Of-World Separation And Metadata Cleanliness
+
+ACTD/Ops/RunSchedule_Owl512.xlsx exposes creator: openpyxl in its workbook core properties. That is a file-generation library identifier, not an in-world person or organization, so it leaks construction context through agent-accessible metadata. The remaining inspected hidden channels and metadata were clean, but this separately fixable metadata residue meets the fail criterion.
+
+[P1] No Signposting of Load-Bearing Facts
+
+The previously flagged final-report signposting is still present: IR_2025-1018_final.docx presents the italicized subtitle "Supervisor-Reviewed / Controlling Report of Record" and certifies that it "reflects the controlling documentary record of this collision." In a file set that includes an on-scene draft with conflicting time, passenger-count, and route-status facts, this expressly directs the reader to select the final account. The separately flagged reserve issue also remains: reserve_memo.docx labels the later $3,250,000 figure "Controlling reserve," directly bolds that amount, and calls the prior $250,000 "SUPERSEDED"; production_tracker.csv repeats "controlling $3,250,000 reserve; supersedes A42." These cues elevate the desired comparison outcome into the presentation rather than leaving the reader to assess the chronology, authorship, and record contents.
+
+Finding #1: Final incident report selects the disputed account. Minor.
+Finding #2: Reserve records select the $3.25M comparison result. Minor.
+
+[P1] External Citations Resolve To Real Content
+
+The current LIFE CARE PLAN.pdf still cites the legacy Texas Medical Board PublicProfile URL for Mark G. Greene's credentials, the American Board of Urology verification URL for his board status, and a CMS locality reference for physician-charge methodology. Each resolved retrieval returned HTTP 404. The report also relies on TreasuryDirect's Historical Auction Query to produce its risk-free discount rate and cites Micromedex RedBook for medication-pricing metrics; the former returned HTTP 505 and the latter HTTP 404 after redirect, leaving material claims without resolving supporting content.
+
+Finding #1: Dead Texas Medical Board credential citations. Minor.
+Finding #2: Dead American Board of Urology verification citation. Minor.
+Finding #3: Broken TreasuryDirect discount-rate source. Minor.
+Finding #4: Dead CMS locality methodology citation. Minor.
+Finding #5: Dead Micromedex RedBook methodology citation. Minor.
+
+[P0] Text Legibility And Contrast
+
+`task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx`, sheet "Authorized Owl Routes," uses gold 00B8862B text for route numbers in A7:A12. The inspected cells show that A7, A9, and A11 have white 00FFFFFF fills, while A8, A10, and A12 have pale-cream 00F5F2EB fills; the gold is only about 3.2:1 against white and lower against the cream stripe. These are visible body values, so the low local contrast makes the sheet fail the all-visible-text legibility criterion; replacing the gold with a darker brown/navy or using a substantially darker fill would fix it.
+
+[P1] CSV Formatted Correctly
+
+`task_fs/filesystem/ACTD/Claims/medical_billing_ledger.csv` fails because its final row is not an individual billing data record. Parsed row 83 has bill_id TOTAL, provider ALL PROVIDERS (9), and describes an "aggregate itemized medical billing," while aggregating the amounts across the ledger. That trailing summary row breaks the requirement that every row after the header be a data record for the declared columns; move this aggregate to a separate summary file or remove it from the CSV.

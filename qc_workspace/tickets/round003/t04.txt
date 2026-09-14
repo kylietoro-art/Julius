@@ -1,0 +1,14 @@
+TICKET 4 of 14  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The world fails the "No Synthetic Substitutes For Real-World Facts" clause because ACTD's written policy asserts that 49 CFR § 655.44 conditions nonfatal post-accident testing on specified damage, injury/citation, hazmat, or immovable-object circumstances. The regulation's actual nonfatal rule requires testing after an accident involving a public transportation vehicle unless the employee's performance can be completely discounted, so the policy both adds non-regulatory requirements and may unlawfully suppress testing. This is a material factual misstatement of a named federal framework in a U.S.-centered public-transit litigation world; revise § 3.2 to track 49 CFR § 655.44(a)(2) and remove the FMCSA-like criteria.
+
+Finding #1: ACTD policy misstates FTA nonfatal post-accident testing rule. Major.

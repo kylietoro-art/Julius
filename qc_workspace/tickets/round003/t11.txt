@@ -1,0 +1,15 @@
+TICKET 11 of 14  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The previously flagged final-report signposting is still present: IR_2025-1018_final.docx presents the italicized subtitle "Supervisor-Reviewed / Controlling Report of Record" and certifies that it "reflects the controlling documentary record of this collision." In a file set that includes an on-scene draft with conflicting time, passenger-count, and route-status facts, this expressly directs the reader to select the final account. The separately flagged reserve issue also remains: reserve_memo.docx labels the later $3,250,000 figure "Controlling reserve," directly bolds that amount, and calls the prior $250,000 "SUPERSEDED"; production_tracker.csv repeats "controlling $3,250,000 reserve; supersedes A42." These cues elevate the desired comparison outcome into the presentation rather than leaving the reader to assess the chronology, authorship, and record contents.
+
+Finding #1: Final incident report selects the disputed account. Minor.
+Finding #2: Reserve records select the $3.25M comparison result. Minor.

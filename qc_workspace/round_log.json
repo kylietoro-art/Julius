@@ -180,6 +180,90 @@
         "Documents Look Like What They Claim (A51 scene photo log): the log format matches the registry's own reference sample ('Police Evidence Photo Log'); fabricating forensic scene photography is outside what this filesystem pass can responsibly produce, so this is left as a judgment call for the world owner rather than fixed.",
         "No Signposting of Load-Bearing Facts (2 sub-findings): 'Controlling Report of Record' and reserve-memo 'supersedes/controlling' language are standard real-world phrasing for a final safety report and a revised reserve memo, not artificial signposting."
       ]
+    },
+    {
+      "round": 3,
+      "opened": "2026-09-14T17:17:17",
+      "count": 14,
+      "classes": {
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 5,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "tran_text_thread.pdf",
+            "scene_photos_2025-1018.pdf",
+            "ir_2025-1018_final.docx",
+            "production_tracker.csv",
+            "reserve_memo.docx",
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 3,
+          "files": [
+            "reyes_life_care_plan.pdf",
+            "late_claim_app.pdf",
+            "reyes_lien_eob.pdf",
+            "hold_demand_letter.pdf"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": [
+            "plan.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 2,
+          "files": [
+            "13.pdf",
+            "ir_2025-1018_draft.docx",
+            "tcr.pdf"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": [
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": [
+            "medical_billing_ledger.csv"
+          ]
+        }
+      },
+      "repeats": [
+        "a_code_leakage",
+        "math_footing",
+        "citation_facts",
+        "other",
+        "metadata_fingerprint",
+        "temporal"
+      ],
+      "disposition": {
+        "fixed": 7,
+        "expanded": 0,
+        "traps": 1,
+        "false": 2,
+        "blocked": 4
+      },
+      "note": "Blocked-on-person items: A53 onboard video and A52 text-thread chronology are judgment calls put to the world owner rather than guessed at. Anomaly Detection Catch-All (Docuseal/Wiki.js) and A51/onboard-log photos remain blocked on the app-data pipeline and on image-generation capability respectively, same as round 2.",
+      "closed": "2026-09-14T17:48:17",
+      "changed": "Recomputed the life-care plan's 4 wrong category weighted-averages and 6 wrong PV sensitivity cells from the plan's own stated inputs (rebalanced the rounding/geo-pricing line to keep the canonical $180,000 total); rewrote 49 CFR 655.44 nonfatal post-accident testing in both post_accident_testing_policy.docx and owl_service_rules.docx to the actual FTA standard (verified against the current regulation) instead of an FMCSA-style citation-gated one; fixed the March/May chronology conflict in hold_demand_letter.pdf; added 2 real Word comments to the on-scene draft incident report; stripped the openpyxl creator fingerprint and fixed low-contrast gold text in RunSchedule_Owl512.xlsx; removed medical_billing_ledger.csv's non-conforming trailing TOTAL row.",
+      "disputes": [
+        "No Reachable Shortcut (3rd time raised, same as round 2): confirmed by-design against the spec's own trap language for A33/A35/A36 -- no change from last round's verification.",
+        "No Signposting of Load-Bearing Facts (2nd time raised): re-checked via leak_scan's CONCLUSION VOICE and RECONCILING LANGUAGE categories too -- 'supersedes the prior note' and 'reconciled to the Div...' read as standard business/operational-record language for these document types, not artificial signposting.",
+        "External Citations Resolve To Real Content (2nd time raised, unchanged wording): re-confirmed zero occurrences of Greene/Texas Medical Board/RedBook anywhere in this 62-file corpus -- still describes a document that isn't part of this world.",
+        "Format-Native Feature Fidelity / TCR.pdf sub-finding (3rd time raised): the custom_fields path still does not exist anywhere in the filesystem."
+      ]
     }
   ]
 }
