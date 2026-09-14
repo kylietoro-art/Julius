@@ -1,0 +1,90 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+RunSchedule_Owl512.xlsx places Trip 06 northbound at S. Main/Third at 02:31, yet the contemporaneous APC export records the same Bus 4177/Block 512-OWL at S. Main/Third at 02:05:37, and the dispatch record says the 02:04 northbound departure was on schedule before locating the bus at S. Main/Third at 02:06. The final incident report and video log also use the 02:05 collision time, so the workbook's scheduled-time data cannot coexist with the operational records as presented.
+
+Finding #1: Trip 06 official schedule conflicts with corroborated collision timing. Major.
+
+[P1] No Broken Document References
+
+A53 remains a broken reference. The world spec defines A53 as "MP4 (clip export) + still-frame log," and the production tracker requires "native MP4 (REYES-NATIVE-0004)," but the mounted filesystem contains only ACTD/Video/onboard_video_still_log.pdf and no MP4 or other video asset.
+
+Finding #1: A53 native onboard-video footage is absent. Major.
+
+[P1] Calculation & Fixture Accuracy
+
+FAIL. Reyes_life_care_plan.pdf (PDF page 7 of 17) states direct attendant-care costs of $93,440 and $5,472, labels the next row an "11% loading," but prints $11,337 and a $110,249 subtotal. Those inputs mathematically produce a $98,912 base, $10,880.32 loading, and $109,792.32 subtotal; the incorrect subtotal is repeated on PDF page 11 in the weighted annual-cost table used to reach $180,000.
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The current late-claim application still tells the worker that leave "should be granted" under the precise two grounds T3 requires the worker to assess; the settlement records explicitly select the legally recoverable past-medical number and fully perform future-medical and lost-wage present-value calculations.
+
+Finding #1: Late-claim application advocates the required relief. Major.
+Finding #2: Lien/EOB letter states the past-medical legal conclusion. Major.
+Finding #3: Life-care report completes future-medical present-value calculation. Major.
+Finding #4: Wage records complete lost-earning-capacity calculation. Major.
+
+[P1] Intended Traps Are Fair
+
+The litigation-hold demand is dated March 20, 2026 and says Reyes's late-claim application has not yet been filed. On its next page, it instead says an application was filed with the Board on 05/15/2026, postdating the letter by nearly two months.
+
+Finding #1: Preservation demand contains a future filing event. Major.
+
+[P0] Anomaly Detection Catch-All
+
+The DocuSeal/Wiki.js issue is still present. T2/T8 must archive an earlier Docuseal review submission, T3 must correct a Wiki.js page, and remaining tasks require Docuseal routing/submitter changes, but no AppData, Docuseal submission, Wiki.js page, or database export exists in the corpus.
+
+Finding #1: Required DocuSeal and Wiki.js initial state is absent. Major.
+
+[P0] Format-Native Feature Fidelity
+
+TCR.pdf page 4 shows an empty collision-diagram grid with an import instruction. Separately, RunSchedule_Owl512.xlsx's "Authorized Owl Routes" sheet has a Status column (F6:F12) with no color encoding distinguishing Authorized from other states, using only the ordinary alternating-row fills.
+
+=== Minor issues ===
+
+[P0] Built Files Match Spec Inventory
+
+A09 and A52 materially differ from the records specified in the External Files Registry. A09 has a different recipient set, CC, subject, and body, while A52 is a five-page, 32-message export starting at 2:47 AM rather than the stated 03:20-03:40 exchange.
+
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+post_accident_testing_policy.docx and owl_service_rules.docx retain visibly blank signature-line placeholders despite saying they were "Approved and issued" / "APPROVED."
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Scene_photos_2025-1018.pdf (A51) and onboard_video_still_log.pdf both claim to be photo/still-frame sets but contain zero image objects on every page.
+
+Finding #1: Police photo set contains no photographs. Minor.
+Finding #2: Onboard still-frame log contains no still frames. Minor.
+
+[P1] World Timeline Holds Together (consolidated)
+
+hold_demand_letter.pdf, dated March 20, 2026, says on page 2 that Reyes's late-claim application "was filed with the Board on 05/15/2026," while page 1 of the same letter says it "has not yet been filed."
+
+Finding #1: March preservation letter contains May hindsight. Minor.
+
+[P1] In-World vs Out-Of-World Separation And Metadata Cleanliness
+
+RunSchedule_Owl512.xlsx and docket_entry.xlsx each expose "Microsoft Excel Compatible / Openpyxl 3.1.5" in docProps/app.xml.
+
+Finding #1: Openpyxl file-generation metadata exposed in both spreadsheets. Minor.
+
+[P1] No Signposting of Load-Bearing Facts
+
+The final incident report's subtitle calls it the "Controlling Report of Record"; reserve materials label the $3,250,000 reserve "Controlling" and the $250,000 reserve "SUPERSEDED."
+
+Finding #1: Final incident report selects the disputed account. Minor.
+Finding #2: Reserve records select the $3.25M comparison result. Minor.
+
+[P1] External Citations Resolve To Real Content
+
+LIFE CARE PLAN.pdf continues to cite broken TMB, ABU, TreasuryDirect, CMS, and Micromedex RedBook links.
+
+Finding #1: Dead Texas Medical Board citation. Minor.
+Finding #2: Dead American Board of Urology citation. Minor.
+Finding #3: Broken TreasuryDirect source. Minor.
+Finding #4: Dead CMS locality citation. Minor.
+Finding #5: Dead Micromedex RedBook citation. Minor.
+
+[P0] Text Legibility And Contrast
+
+owl_service_rules.docx, Keeler_personnel.docx, and bid_award_512OWL.docx each use low-contrast gold text (~3.1-3.8:1) for unshaded subtitle/TOC/body text against white.

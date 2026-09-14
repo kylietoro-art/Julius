@@ -1,0 +1,14 @@
+TICKET 5 of 15  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+The litigation-hold demand is dated March 20, 2026 and says Reyes's late-claim application has not yet been filed. On its next page, it instead says an application was filed with the Board on 05/15/2026, postdating the letter by nearly two months.
+
+Finding #1: Preservation demand contains a future filing event. Major.

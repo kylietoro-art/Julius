@@ -1,0 +1,18 @@
+TICKET 14 of 15  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+LIFE CARE PLAN.pdf continues to cite broken TMB, ABU, TreasuryDirect, CMS, and Micromedex RedBook links.
+
+Finding #1: Dead Texas Medical Board citation. Minor.
+Finding #2: Dead American Board of Urology citation. Minor.
+Finding #3: Broken TreasuryDirect source. Minor.
+Finding #4: Dead CMS locality citation. Minor.
+Finding #5: Dead Micromedex RedBook citation. Minor.

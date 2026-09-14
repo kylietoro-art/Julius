@@ -1,0 +1,14 @@
+TICKET 1 of 15  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+RunSchedule_Owl512.xlsx places Trip 06 northbound at S. Main/Third at 02:31, yet the contemporaneous APC export records the same Bus 4177/Block 512-OWL at S. Main/Third at 02:05:37, and the dispatch record says the 02:04 northbound departure was on schedule before locating the bus at S. Main/Third at 02:06. The final incident report and video log also use the 02:05 collision time, so the workbook's scheduled-time data cannot coexist with the operational records as presented.
+
+Finding #1: Trip 06 official schedule conflicts with corroborated collision timing. Major.

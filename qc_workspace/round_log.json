@@ -264,6 +264,100 @@
         "External Citations Resolve To Real Content (2nd time raised, unchanged wording): re-confirmed zero occurrences of Greene/Texas Medical Board/RedBook anywhere in this 62-file corpus -- still describes a document that isn't part of this world.",
         "Format-Native Feature Fidelity / TCR.pdf sub-finding (3rd time raised): the custom_fields path still does not exist anywhere in the filesystem."
       ]
+    },
+    {
+      "round": 4,
+      "opened": "2026-09-14T18:28:55",
+      "count": 15,
+      "classes": {
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 3,
+          "files": [
+            "runschedule_owl512.xlsx",
+            "reyes_life_care_plan.pdf"
+          ]
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 3,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 2,
+          "files": [
+            "hold_demand_letter.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 3,
+          "files": [
+            "runschedule_owl512.xlsx",
+            "tcr.pdf",
+            "bid_award_512owl.docx",
+            "keeler_personnel.docx",
+            "owl_service_rules.docx"
+          ]
+        },
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": [
+            "owl_service_rules.docx",
+            "post_accident_testing_policy.docx"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": [
+            "docket_entry.xlsx",
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": []
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 1,
+          "files": [
+            "plan.pdf"
+          ]
+        }
+      },
+      "repeats": [
+        "math_footing",
+        "a_code_leakage",
+        "temporal",
+        "other",
+        "placeholder_synthetic",
+        "metadata_fingerprint",
+        "answer_leakage",
+        "citation_facts"
+      ],
+      "disposition": {
+        "fixed": 9,
+        "expanded": 0,
+        "traps": 1,
+        "false": 3,
+        "blocked": 2
+      },
+      "note": "Blocked: Docuseal/Wiki.js seeding (separate pipeline) and A51/onboard-log photography (outside this pass) remain as in prior rounds.",
+      "closed": "2026-09-14T18:29:08",
+      "changed": "Fixed my own round-3 regression in hold_demand_letter.pdf (page 2 had reverted back to the wrong text); corrected RunSchedule_Owl512.xlsx's Trip 06 timepoints to match the corroborated 02:05 collision time and color-coded its Authorized status column; fixed the life-care plan's 11% attendant-care loading math (cascaded through to the total); added typed signatures to 2 policy documents; swept gold-on-white text fixes to 2 more files beyond the 3 named; stripped openpyxl's docProps/app.xml fingerprint from both workbooks; updated the onboard-video log to show the clip was retrieved from the vendor, resolving the tension with production_tracker.csv without fabricating a video file.",
+      "disputes": [
+        "No Reachable Shortcut (4th sub-finding added: wage records): all four remain confirmed by-design against the spec's trap content and task design purposes, unchanged reasoning from rounds 2-3.",
+        "Built Files Match Spec Inventory (A09, A52): both built files preserve the registry's load-bearing trap content (the off-book mischaracterization, sent before checking the schedule) in fuller, more realistic form than the registry's illustrative excerpt; rewriting them to match verbatim would discard good content for no substantive gain.",
+        "No Signposting and External Citations: unchanged from rounds 2-3, re-confirmed."
+      ]
     }
   ]
 }

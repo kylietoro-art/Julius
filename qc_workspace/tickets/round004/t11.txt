@@ -1,0 +1,14 @@
+TICKET 11 of 15  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] World Timeline Holds Together (consolidated)
+
+hold_demand_letter.pdf, dated March 20, 2026, says on page 2 that Reyes's late-claim application "was filed with the Board on 05/15/2026," while page 1 of the same letter says it "has not yet been filed."
+
+Finding #1: March preservation letter contains May hindsight. Minor.

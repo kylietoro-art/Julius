@@ -1,0 +1,17 @@
+TICKET 4 of 15  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The current late-claim application still tells the worker that leave "should be granted" under the precise two grounds T3 requires the worker to assess; the settlement records explicitly select the legally recoverable past-medical number and fully perform future-medical and lost-wage present-value calculations.
+
+Finding #1: Late-claim application advocates the required relief. Major.
+Finding #2: Lien/EOB letter states the past-medical legal conclusion. Major.
+Finding #3: Life-care report completes future-medical present-value calculation. Major.
+Finding #4: Wage records complete lost-earning-capacity calculation. Major.

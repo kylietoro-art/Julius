@@ -1,0 +1,12 @@
+TICKET 8 of 15  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Built Files Match Spec Inventory
+
+A09 and A52 materially differ from the records specified in the External Files Registry. A09 has a different recipient set, CC, subject, and body, while A52 is a five-page, 32-message export starting at 2:47 AM rather than the stated 03:20-03:40 exchange.

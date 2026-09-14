@@ -10,6 +10,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
 | 2 | 2026-09-14T16:16 | 14 | 7 | 5 | fixed 3, widened 0, traps 1, false 9, blocked 1 |
 | 3 | 2026-09-14T17:17 | 14 | 6 | 6 | fixed 7, widened 0, traps 1, false 2, blocked 4 |
+| 4 | 2026-09-14T18:28 | 15 | 8 | 8 | fixed 9, widened 0, traps 1, false 3, blocked 2 |
 
 ## Detail
 
@@ -62,4 +63,24 @@ each one means that class was fixed at the instance level, not the class level.
   - files named: medical_billing_ledger.csv
 
 Note: Blocked-on-person items: A53 onboard video and A52 text-thread chronology are judgment calls put to the world owner rather than guessed at. Anomaly Detection Catch-All (Docuseal/Wiki.js) and A51/onboard-log photos remain blocked on the app-data pipeline and on image-generation capability respectively, same as round 2.
+
+### Round 4, 2026-09-14T18:28
+
+- **Totals don't foot / calculations disagree with inputs**: 3 finding(s)  **(REPEAT)**
+  - files named: runschedule_owl512.xlsx, reyes_life_care_plan.pdf
+- **Builder A## codes visible in world files**: 3 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+- **Uncategorised, read the finding text**: 3 finding(s)  **(REPEAT)**
+  - files named: runschedule_owl512.xlsx, tcr.pdf, bid_award_512owl.docx, keeler_personnel.docx, owl_service_rules.docx
+- **Dates, chronology or timeline don't hold together**: 2 finding(s)  **(REPEAT)**
+  - files named: hold_demand_letter.pdf
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+  - files named: owl_service_rules.docx, post_accident_testing_policy.docx
+- **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
+  - files named: docket_entry.xlsx, runschedule_owl512.xlsx
+- **Solution or reasoning leaked into world files**: 1 finding(s)  **(REPEAT)**
+- **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
+  - files named: plan.pdf
+
+Note: Blocked: Docuseal/Wiki.js seeding (separate pipeline) and A51/onboard-log photography (outside this pass) remain as in prior rounds.
 

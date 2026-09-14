@@ -1,0 +1,12 @@
+TICKET 3 of 15  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+FAIL. Reyes_life_care_plan.pdf (PDF page 7 of 17) states direct attendant-care costs of $93,440 and $5,472, labels the next row an "11% loading," but prints $11,337 and a $110,249 subtotal. Those inputs mathematically produce a $98,912 base, $10,880.32 loading, and $109,792.32 subtotal; the incorrect subtotal is repeated on PDF page 11 in the weighted annual-cost table used to reach $180,000.

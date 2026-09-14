@@ -1,0 +1,14 @@
+TICKET 7 of 15  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Format-Native Feature Fidelity
+
+TCR.pdf page 4 shows an empty collision-diagram grid with an import instruction. Separately, RunSchedule_Owl512.xlsx's "Authorized Owl Routes" sheet has a Status column (F6:F12) with no color encoding distinguishing Authorized from other states, using only the ordinary alternating-row fills.
+
+=== Minor issues ===

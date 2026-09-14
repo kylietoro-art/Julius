@@ -1,0 +1,12 @@
+TICKET 9 of 15  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+
+post_accident_testing_policy.docx and owl_service_rules.docx retain visibly blank signature-line placeholders despite saying they were "Approved and issued" / "APPROVED."

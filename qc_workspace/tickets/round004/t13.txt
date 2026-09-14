@@ -1,0 +1,15 @@
+TICKET 13 of 15  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The final incident report's subtitle calls it the "Controlling Report of Record"; reserve materials label the $3,250,000 reserve "Controlling" and the $250,000 reserve "SUPERSEDED."
+
+Finding #1: Final incident report selects the disputed account. Minor.
+Finding #2: Reserve records select the $3.25M comparison result. Minor.
