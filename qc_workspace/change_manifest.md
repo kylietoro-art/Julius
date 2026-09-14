@@ -211,3 +211,45 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/HR/Keeler_personnel.docx | table header rows, 18 runs across 4 tables [white text on light gray D9D9D9 fill was effectively unreadable] | white (FFFFFF) header text on D9D9D9 fill, 4 tables (Date/Event, Item/Status, Cycle/Rating/Notes, Test type/History) | → | black (000000) header text, same fill, same labels |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Med/Reyes/op_reports.pdf | whole document (was 13pp/5 reports, now 6pp/3 reports) [round2 finding: A22 operative-report compilation does not match registry content] | Five-report compilation: 10/18 exploratory laparotomy/splenectomy, 10/18 external fixators, 10/22 washout/irrigation, 10/25 definitive pelvic+bilateral-LE ORIF, 11/05 tracheostomy+PEG -- no brain surgery of any kind, contradicting the TBI narrative in reserve_memo.docx and the life-care plan | → | Three-report compilation matching the A22 registry exactly: 10/18 decompressive hemicraniectomy + evacuation of acute SDH + ICP monitor (Neurosurgery), 10/21 pelvic ring ORIF, 11/03 bilateral tibia/fibula ORIF (Orthopedic Trauma Surgery), each with an anesthesia record documenting GA and post-op depressed consciousness |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/docket_entry.xlsx | docProps/core.xml (created/modified) [round2: World Timeline Holds Together — docket_entry.xlsx core properties post-anchor] | created=modified=2026-09-14 (real build/checkout date, post-anchor) | → | created=modified=2026-03-06T09:42:00Z, creator/lastModifiedBy=Grace Chen, Paralegal (matches the sheet's own stated Export date/time and Prepared by fields) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_draft.docx | section 2 heading [round2: No Synthetic Markers/Placeholder Data — draft incident report exposes a placeholder-fields heading] | 2. Preliminary Data — placeholder fields | → | 2. Preliminary Data — unconfirmed, pending verification |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/adjuster_note.docx | body + table1 r2c1/r5c1 [round2: No Synthetic Markers/Placeholder Data — active reserve materials retain placeholder labels] | 'The pedestrian placeholder is expressly...'; 'Pedestrian (Reyes) — placeholder pending medical workup'; 'Allocated expense placeholder' | → | 'The pedestrian figure above is expressly a book-opening estimate...'; 'Pedestrian (Reyes) — opening estimate pending medical workup'; 'Allocated expense reserve' |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | body + table0 r2c1/r5c1 [round2: No Synthetic Markers/Placeholder Data — active reserve materials retain placeholder labels] | '...are placeholders based on preliminary treating-team indications...'; 'Pedestrian (Reyes) placeholder'; 'Allocated expense placeholder' | → | '...are working estimates based on preliminary treating-team indications...'; 'Pedestrian (Reyes) — opening estimate'; 'Allocated expense reserve' |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_ledger.csv | rows RL-2025-0090, RL-2025-0108, RL-2025-0109 (notes column) [round2: No Synthetic Markers/Placeholder Data — active reserve materials retain placeholder labels] | 'Allocated expense placeholder booked with opening note...'; 'LAE placeholder — passenger track defense costs.' (x2) | → | 'Allocated expense estimate booked with opening note...'; 'Estimated LAE — passenger track defense costs.' (x2) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/docket_entry.xlsx | docProps/core.xml (creator/lastModifiedBy) [self-correction: keep the fix minimal, matches inventory_check's text-growth flag] | creator=lastModifiedBy=Grace Chen, Paralegal (over-fix, added info beyond the flagged finding) | → | creator=lastModifiedBy=blank (reverted to original; only created/modified date is the actual fix) |

@@ -161,8 +161,25 @@
         "placeholder_synthetic",
         "temporal"
       ],
-      "disposition": null,
-      "note": ""
+      "disposition": {
+        "fixed": 3,
+        "expanded": 0,
+        "traps": 1,
+        "false": 9,
+        "blocked": 1
+      },
+      "note": "",
+      "closed": "2026-09-14T16:55:03",
+      "changed": "Rebuilt A22 (op_reports.pdf) to the registry's 3 specified operative reports (craniectomy+ICP, pelvic ORIF, bilateral LE ORIF); reworded 'placeholder' language in reserve_ledger.csv, reserve_memo.docx, adjuster_note.docx (swept beyond the named files) and the draft IR heading; reset docket_entry.xlsx's core-property dates from a post-anchor build stamp to the in-world 03/06/2026 export date.",
+      "disputes": [
+        "A36 numeric-mismatch cluster (4 findings: Numerical Values, Calculation and Fixture Accuracy, Intended Traps Are Fair, Coherence Flag Ratio): the cited $173,651/$6,251,436/$4,091,000 figures do not appear anywhere in Reyes_life_care_plan.pdf or the corpus; the file already states the canonical $180,000/$6,480,000/$4,240,000 exactly, arithmetic verified.",
+        "A53 onboard video (No Broken Document References): the still-log's cited 'not yet retrieved from vendor' text does not exist in the current file, which already carries a concrete clip size and SHA-256; the vendor-hold narrative is T7's intended preservation trap, not a defect.",
+        "Format-Native Feature Fidelity (TCR.pdf / custom_fields path): that file path does not exist anywhere in this world's filesystem; a custom_fields/ location is this skill's documented tell for content outside the filesystem entirely.",
+        "External Citations Resolve To Real Content (139-page plan, Mark G. Greene, TMB/ABU): no such names, page count, or citations exist anywhere in this 19-page, 62-file corpus; describes a document from a different world.",
+        "No Reachable Shortcut (3 sub-findings: late-claim grounds, lien/EOB conclusion, life-care PV): all three are confirmed by-design against the spec. A35's registry entry states it carries 'no trap of its own' and exists to state the controlling paid figure; T4's design purpose explicitly requires citing A36's stated PV; T3's trap is testing the late-claim declaration's framing against the record, not concealing its stated grounds.",
+        "Documents Look Like What They Claim (A51 scene photo log): the log format matches the registry's own reference sample ('Police Evidence Photo Log'); fabricating forensic scene photography is outside what this filesystem pass can responsibly produce, so this is left as a judgment call for the world owner rather than fixed.",
+        "No Signposting of Load-Bearing Facts (2 sub-findings): 'Controlling Report of Record' and reserve-memo 'supersedes/controlling' language are standard real-world phrasing for a final safety report and a revised reserve memo, not artificial signposting."
+      ]
     }
   ]
 }
