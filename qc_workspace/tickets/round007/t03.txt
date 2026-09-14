@@ -1,0 +1,15 @@
+TICKET 3 of 11  |  round 7
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL -- No Solution Or Reasoning Leakage. In the worker-readable `Legal/Reyes/late_claim_app.pdf`, the applicant expressly says leave "should be granted principally under Government Code section 911.6(b)(4)" and alternatively under section 911.6(b)(1), directly supplying the conclusion and grounds that the late-claim strategy task requires the worker to assess. Separately, worker-readable settlement materials call $196,000 the Howell-recoverable trial measure and give the completed present-value results of $4,240,000 for future medical care and $1,200,000 for lost earning capacity; these collapse the key legal/valuation judgment in the damages and reserve-exposure tasks. The separate No Environment / Filesystem clause was reviewed and no hidden answer key, grading script, cache, or comparable solver shortcut was identified.
+
+Finding #1: Late-claim application states the requested legal outcome. Major.
+Finding #2: Settlement documents provide completed governing valuation outputs. Major.

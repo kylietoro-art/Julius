@@ -355,3 +355,21 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Compliance/post_accident_testing_policy.docx | sec 7.4 Return-to-Duty Process [round6: Real-World Facts -- policy imposed SAP return-to-duty on the 0.02-0.039 temporary-removal category] | SAP/Subpart O process applied to anyone removed under sec 7.3, which covers both the 0.04+/positive category AND the 0.02-0.039 temporary-removal category | → | SAP/Subpart O scoped to only the sec 655.61/655.62 category (positive/0.04+/refusal); added the distinct, lighter sec 655.35/655.48 return path for 0.02-0.039 (retest below 0.02, no SAP) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | Section 1 (Summary/Recommended Action) [round7: Numerical Values -- controlling reserve misclassified between memo and reserve ledger] [the $3.25M figure mixes $3,150,000 indemnity and $100,000 expense; calling the blended total an indemnity reserve contradicted the memo's own allocation table] | memo called the full $3,250,000 total the 'controlling indemnity reserve' twice, even though its own Section 4 table allocates $100,000 of that total to loss-adjustment expense (matching reserve_ledger.csv's separate indemnity/expense line items) | → | removed the word 'indemnity' from both references so the memo calls it 'the reserve' / 'the controlling reserve' consistently with its own table heading and with reserve_ledger.csv's indemnity+expense split |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_lien_EOB.pdf | page 2, Total Amounts Paid/Accepted paragraph [round7: Numerical Values/Calculation Accuracy -- ledger vs EOB treatment of $3,200 patient responsibility] [internal contradiction within the same document; the canonical $196,000 Howell-recoverable figure and the Exhibit A table/ledger tie were both already correct, only the page-2 narrative sentence was wrong] | the $196,000 Paid/Accepted total was described as inclusive of Medi-Cal, BlueShield, and de minimis patient out-of-pocket copay/coinsurance, contradicting Exhibit A's own table, which treats Patient Resp. $3,200 as a separate, additional column from Paid/Accepted $196,000 | → | removed the patient-copay clause from the inclusive list so the narrative matches Exhibit A's table and the medical_billing_ledger.csv tie: $196,000 Paid/Accepted is third-party payer remittances only, with $3,200 patient responsibility tracked and paid separately |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/reyes_recorded_statement.pdf | entire file [round7: Built Files Match Spec Inventory -- A29 wrong source/custodian and contrary account] [registry Prepared By/Source is 'Y. Reyes; copy retained in claimant's file,' not an ACTD-certified transcript distributed to defense counsel; the built file's custodian, distribution, and substantive account all diverged from spec] | 7-page ACTD-prepared 'Certified Transcript,' interview conducted and certified by ACTD's own claims manager, distributed to ACTD General Counsel and outside defense counsel; Reyes has zero memory from checking her phone at the stop through waking at the hospital (no mention of the bus at all) | → | rebuilt as a 2-page claimant's personal excerpted copy per the registry (A29): same underlying interview event (Espinoza, 02/18/2026, ACTD file GE-2026-0218-01, pro se, telephonic) but framed and retained as Reyes's own file copy, containing the three registry-specified Q&A excerpts verbatim, including her recalling the bus drift and pole strike as her last clear memory before waking at the hospital |

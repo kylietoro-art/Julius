@@ -13,6 +13,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 4 | 2026-09-14T18:28 | 15 | 8 | 8 | fixed 9, widened 0, traps 1, false 3, blocked 2 |
 | 5 | 2026-09-14T19:04 | 11 | 6 | 6 | fixed 3, widened 0, traps 1, false 4, blocked 3 |
 | 6 | 2026-09-14T19:37 | 10 | 5 | 5 | fixed 1, widened 0, traps 1, false 5, blocked 3 |
+| 7 | 2026-09-14T19:57 | 11 | 6 | 6 | fixed 2, widened 0, traps 2, false 4, blocked 3 |
 
 ## Detail
 
@@ -117,4 +118,21 @@ Note: Blocked, standing items unchanged: A53 native MP4 (5th occurrence, needs a
   - files named: onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
 
 Note: Blocked (unchanged from prior rounds): A53 native MP4 -- standing ruling recorded round 5, accepted permanent gap, app-data pipeline will supply the asset later; DocuSeal/Wiki.js app-data seeding -- out of scope for a filesystem-only pass; scene/still-frame photo and video-still image generation -- no image-generation capability available.
+
+### Round 7, 2026-09-14T19:57
+
+- **Builder A## codes visible in world files**: 3 finding(s)  **(REPEAT)**
+  - files named: ir_2025-1018_final.docx, production_tracker.csv, reserve_memo.docx
+- **Totals don't foot / calculations disagree with inputs**: 2 finding(s)  **(REPEAT)**
+  - files named: medical_billing_ledger.csv, reyes_lien_eob.pdf
+- **Solution or reasoning leaked into world files**: 2 finding(s)  **(REPEAT)**
+  - files named: late_claim_app.pdf
+- **Tool fingerprints / build dates in file metadata**: 2 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+- **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
+  - files named: 13.pdf, tcr.pdf
+- **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)  **(REPEAT)**
+  - files named: oon_guidance.pdf, plan.pdf
+
+Note: Blocked (unchanged): A53 native MP4 (standing ruling), DocuSeal/Wiki.js app-data seeding, scene/still-frame image generation -- no capability available for any of the three.
 

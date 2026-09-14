@@ -509,6 +509,86 @@
         "External Citations: the specific sources named this round (TreasuryDirect citation 167, NY DFS OON_guidance.pdf) do not appear anywhere in the 19-page life-care-plan text; this finding has now named a different, equally absent set of sources in 3+ consecutive rounds, consistent with an AutoQC-side detection issue rather than a real defect in this file.",
         "No Broken Document References, Finding #2/#3 (unmounted attachments): the final incident report and FST supplement cite their own internal work-papers (field notebook pages, a PAS log entry, a calibration certificate, a chain-of-custody form, run schedule, AVL/GPS export) exactly as real investigative reports do; none were ever part of the External Files Registry's specified artifact set, and the substantive content behind each citation already appears inline in the same document."
       ]
+    },
+    {
+      "round": 7,
+      "opened": "2026-09-14T19:57:00",
+      "count": 11,
+      "classes": {
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 2,
+          "files": [
+            "medical_billing_ledger.csv",
+            "reyes_lien_eob.pdf"
+          ]
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 3,
+          "files": [
+            "ir_2025-1018_final.docx",
+            "production_tracker.csv",
+            "reserve_memo.docx"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 2,
+          "files": [
+            "late_claim_app.pdf"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 2,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": [
+            "13.pdf",
+            "tcr.pdf"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 1,
+          "files": [
+            "oon_guidance.pdf",
+            "plan.pdf"
+          ]
+        }
+      },
+      "repeats": [
+        "math_footing",
+        "a_code_leakage",
+        "answer_leakage",
+        "metadata_fingerprint",
+        "other",
+        "citation_facts"
+      ],
+      "disposition": {
+        "fixed": 2,
+        "expanded": 0,
+        "traps": 2,
+        "false": 4,
+        "blocked": 3
+      },
+      "note": "Blocked (unchanged): A53 native MP4 (standing ruling), DocuSeal/Wiki.js app-data seeding, scene/still-frame image generation -- no capability available for any of the three.",
+      "closed": "2026-09-14T20:12:03",
+      "changed": "Fixed 3 real defects: (1) reserve_memo.docx no longer calls the blended $3.25M total an 'indemnity reserve' when $100,000 of it is loss-adjustment expense per its own table and reserve_ledger.csv; (2) Reyes_lien_EOB.pdf page 2 no longer claims the $196,000 Paid/Accepted figure includes patient copay, which contradicted its own Exhibit A table and the medical_billing_ledger.csv tie; (3) rebuilt A29 (reyes_recorded_statement.pdf) from an ACTD-certified transcript distributed to defense counsel into the registry-specified claimant's personal excerpted copy, with the three specified Q&A excerpts.",
+      "disputes": [
+        "No Reachable Shortcut (trap) and the accrual+2yr lumped suit deadline in matter_calendar_MatterHub.csv/docket_entry.xlsx (Calculation Accuracy): both are registered T1/T5 trap content per the spec's own Trap Manifest -- A41/A62 are explicitly named as the artifacts meant to carry the wrong lumped accrual+2yr deadline (10/18/2027), and A39/A14 are explicitly meant to withhold the computed 08/18/2026 date so the worker must derive it themselves; filling either in would leak the T1 answer.",
+        "No Broken Document References, Finding #2-6 (final incident report, FST supplement, DOT testing form, EOB Tabs 1-11, life-care plan attachments): checked all five -- each is a document citing its own ordinary internal work-papers/enclosures/appendices (field notebook, EBT tape, EOB tabs, expert CVs marked 'available on request'), none of which were ever part of the External Files Registry's 62-artifact set; this is standard real-world document practice, not a broken reference.",
+        "Built Files Match Spec Inventory, A09/A52: re-verified the actual file content this round -- both still carry their core trap substance (the wrong 'off-book' characterization of Keeler) and cross-reference each other consistently; richer built content than the registry's literal example text, but the load-bearing trap is intact.",
+        "No Signposting: a final incident report certifying its own status and a claims memo naming its current controlling reserve are realistic real-world document conventions, not an artificial answer key. Unchanged from prior rounds.",
+        "External Citations: re-verified with a full-text search of the entire life-care-plan PDF -- zero occurrences of 'TreasuryDirect,' 'OON_guidance,' 'citation 167,' 'FAIR Health,' or even the string 'http' anywhere in the document. This is the second consecutive round with this exact identical claim, both times fully absent from the file -- flagging to the user as likely an AutoQC-side bug rather than a real defect."
+      ]
     }
   ]
 }

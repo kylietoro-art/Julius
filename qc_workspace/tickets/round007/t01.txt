@@ -1,0 +1,15 @@
+TICKET 1 of 11  |  round 7
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+The controlling-reserve records disagree on what the $3,250,000 figure represents. The senior reserve memo calls it a "controlling indemnity reserve," but its own allocation includes $100,000 of loss-adjustment expense, while the active reserve ledger correctly separates the same total into $3,150,000 indemnity and $100,000 expense. Separately, the medical billing ledger totals $2,840,000 billed, $196,000 paid, and $2,644,000 adjustments with zero balance, whereas the lien/EOB schedule says the $196,000 paid total includes patient copays but also shows a separate $3,200 patient-responsibility amount; its adjustment total is therefore $3,200 lower. These are material shared-number/category inconsistencies without an in-world correction.
+
+Finding #1: Controlling reserve misclassified between memo and reserve ledger. Major.
+Finding #2: Medical ledger and lien/EOB use incompatible treatment of $3,200 patient responsibility. Major.
