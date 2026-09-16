@@ -8,7 +8,7 @@ each one means that class was fixed at the instance level, not the class level.
 | Round | Opened | Findings | Classes | Repeats | Disposition |
 |---|---|---|---|---|---|
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
-| 2 | 2026-09-16T16:54 | 12 | 7 | 6 | _open_ |
+| 2 | 2026-09-16T16:54 | 12 | 7 | 6 | fixed 4, widened 0, traps 0, false 8, blocked 0 |
 
 ## Detail
 

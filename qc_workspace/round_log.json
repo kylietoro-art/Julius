@@ -161,8 +161,26 @@
         "temporal",
         "metadata_fingerprint"
       ],
-      "disposition": null,
-      "note": ""
+      "disposition": {
+        "fixed": 4,
+        "expanded": 0,
+        "traps": 0,
+        "false": 8,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-16T18:09:22",
+      "changed": "Fixed the northbound/east-curb direction-and-side conflict across 2 files, the anachronistic $48,500 City demand and LCP-workup ledger note, three documents' unfulfilled attachment/enclosure promises, A09/A52 content to match the registry, and de-signposted the reserve memo and final incident report.",
+      "disputes": [
+        "T01: Reyes lien/EOB 'double-count' is a false positive -- Exhibit A's 4 columns reconcile exactly to billed ($2,640,800 adj + $196,000 paid + $3,200 patient-resp = $2,840,000); ledger's coarser adjustments bucket nets the same gap; same pattern round 1 verified.",
+        "T03: late-claim/intake memo, reserve memo, and settlement docs drawing their own conclusions is not leakage per this round's standing ruling; production tracker's A42-vs-A43 first-pass/confirmed split is A17's registered trap working as designed.",
+        "T04: (b)(4) is the current incapacity-all-the-time ground and (b)(3) a minor savings clause under Gov Code 911.6 as amended (confirmed via FindLaw current 01/01/2026) -- world already has this right, finding uses pre-amendment numbering.",
+        "T06: Docuseal/Wiki.js/A62 live practice-management state is App Data seeded through a separate pipeline this filesystem-only toolkit doesn't cover.",
+        "T07: cited path (custom_fields/.../13.pdf) doesn't exist in this filesystem -- it's a Docuseal attachment slot; the real registered A01 collision report is fully populated.",
+        "T09: scene_photos and onboard_video_still_log match their own registry Name/Style ('Photo Log'/'still-frame log') and each documents where the actual photos/video are archived -- an honest log, not impersonation.",
+        "T11: LIFE CARE PLAN.pdf citations don't match the mounted file -- it's 19 pages not 120+, zero hits anywhere for TreasuryDirect/DFS/CMS/FAIR Health/GAF/any URL.",
+        "T12: the 9 inventory mismatches are the established App-Data-vs-filesystem-companion-export pattern, same as round 1's confirmed A53 precedent."
+      ]
     }
   ]
 }
