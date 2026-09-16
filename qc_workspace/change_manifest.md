@@ -465,3 +465,9 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Claims/medical_billing_ledger.csv | last row [round3: CSV Formatted Correctly, every row after header must be a data record] | trailing TOTAL row (mixed schema, not a bill record) | → | removed; not a Must-match artifact for the billed/paid canonical values (that's A15), and the 82 line items independently foot to the same totals |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | para 13, para 42 [round3: distinguished from reserve_memo.docx (informal claims-manager assessment) -- this is the Director of Safety's OFFICIAL final report, with a section literally titled to match T5's task name and declaring a 'determination,' which a real safety report wouldn't naturally do. Kept all underlying facts (schedule/AVL/telemetry), removed only the legal-conclusion framing and task-name collision.] | 'The course-and-scope determination is therefore that...' sentence (para13); section 7 heading 'Course-and-Scope Determination' | → | sentence removed (redundant restatement using T5's own task-name vocabulary); heading renamed to 'Operator Assignment and Route Verification' |
