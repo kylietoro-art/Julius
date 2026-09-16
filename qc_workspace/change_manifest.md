@@ -411,3 +411,21 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Claims/reserve_ledger.csv | row 5 [round3 CHRONIC: comprehensive A## class-level fix] | opening note (A42) | → | opening note |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | para 31 [round3: missed this in round 2's T10 de-signposting pass (only did para 14 and 30)] | bold: $3,250,000 (para 31) | → | bold removed |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | para 40, para 43 [round3: missed in round 2's T10 pass, only checked paras the finding quoted verbatim rather than sweeping the whole doc] | bold: 'preventable' (para40); entire para43 (Section 7 body) bold | → | bold removed from both |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | para 13 [round3: same self-certification pattern as para 6/77, missed in round 2] | This Final Incident Report is the report of record issued following completion... | → | This Final Incident Report was issued following completion... |
