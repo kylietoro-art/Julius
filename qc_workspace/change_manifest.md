@@ -247,3 +247,15 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Safety/IR_2025-1018_final.docx | para 35 [T10 round2: No Signposting of Load-Bearing Facts] | bold: alcohol-impairment root-cause sentence (para 35) | → | bold removed, text unchanged |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Passengers/claims_0118.pdf | pages 4, 6 [T05(a) round2: Coherence Flag Ratio, conflicted with A01/FST supplement/final incident report (all northbound, east curb)] | Southbound South Main Street (x2, Cho p.4 + Mowbray p.6); west side of South Main Street (x1, Cho p.4) | → | Northbound South Main Street (x2); east side of South Main Street (x1) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Press/news_collision.html | line 204 [T05(a) round2: same coherence conflict as claims_0118.pdf] | street-light standard on the west side of Main | → | street-light standard on the east side of Main |
