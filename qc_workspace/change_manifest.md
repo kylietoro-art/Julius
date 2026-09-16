@@ -441,3 +441,15 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Shared/Witness/blau_statement.pdf | page 3 [round3: Coherence Flag Ratio, original statement said southbound (conflicts with controlling sources); used the addendum's own established correction mechanism rather than silently editing a signed statement] | addendum ends at item 4; closing line 'Everything else... stands as written' | → | added item 5 (Direction of travel, corrects southbound to northbound per AVL/GPS); closing line now 'Except as corrected above...' |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Risk/coverage_summary.pdf | page 3, closing line [round3 T02: standard industry form referenced by number (Item 11 schedule), not claimed as physically attached to this declarations excerpt] | SEE ATTACHED MEMORANDUM OF COVERAGE FORM | → | SEE MEMORANDUM OF COVERAGE FORM |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/CAD/Dispatch_log_2025-1018.csv | lines 37, 45 [round3: Consistent Naming, no trap/subsystem-number justification found in spec] | ACTD-IR-2025-1018-001 (x2) | → | ACTD-IR-2025-1018 (matches all other 10 references in corpus) |
