@@ -245,8 +245,26 @@
         "entity_inconsistency",
         "temporal"
       ],
-      "disposition": null,
-      "note": ""
+      "disposition": {
+        "fixed": 7,
+        "expanded": 1,
+        "traps": 3,
+        "false": 4,
+        "blocked": 0
+      },
+      "note": "Gate 6 blast_radius: 0 stale values; 2 footing flags (medical_billing_ledger.csv TSG-002, reserve_ledger.csv RL-2025-0107) both verified as tool heuristic misfires on flat-list CSVs with no real total rows, not real breaks; 4 dependency-set hits all verified consistent or coincidental. Gate 8 inventory_check: 9/9 artifact-vs-filename mismatches are the same repeat App-Data-companion-export pattern as rounds 1-2; text growth in BAC_Keeler.pdf/Keeler_personnel.docx/production_tracker.csv fully accounted for by the A## scrub, reserve_ledger.csv by round 2/3 notes edits. Gate 8 leak_scan: 4 'task answer' hits (911.4/946.6 in intake_memo/matter_calendar/hold_demand_letter/claims_tracker) verified against T1's Design Purpose -- all are Reyes's own \u00a7911.4/\u00a7946.6 track citations, which the correct T1 memo is explicitly supposed to reference, not the actual hidden passenger-deadline (08/18/2026) or A62-correction answer; 4 trap-defusal hits are coincidental digit matches in unrelated operational sentences, not real reconciliation language.",
+      "closed": "2026-09-16T20:49:11",
+      "changed": "Fixed the northbound-direction contradiction in the complaint and Blau witness statement (via a signed addendum), the ACTD incident-number suffix drift, remaining bold/self-authority signposting (removed 'controlling' reserve-label language from the memo and production tracker, and the final incident report's self-referential 'facts...as set forth in this report' sentence and its T5 course-and-scope conclusion), the coverage summary's false 'ATTACHED' claim, the RunSchedule contrast issue, and the medical ledger's mixed-schema total row; applied a comprehensive corpus-wide A## build-code scrub as the CHRONIC fix after three rounds of instance-only patching.",
+      "disputes": [
+        "T01: Reyes lien/EOB 'double-count' remains a false positive -- Exhibit A's 4 columns reconcile exactly to billed ($2,640,800 adj + $196,000 paid + $3,200 patient-resp = $2,840,000); same verified pattern as rounds 1-2.",
+        "T01/T12: docket_entry.xlsx's uniform 10/18/2027 deadline is the same declared MatterHub/A62 trap family as matter_calendar_MatterHub.csv (both export the wrong case-level date by design, per T1's Design Purpose); not touched.",
+        "T02: DOT attachments, the FST supplement's related records, the final incident report's unmounted operational sheets, and the lien's Tabs 1-11 are realistic cross-references to material retained in a physical/other-system file, the same established pattern as round 2; the native MP4 (A53) absence is the same confirmed App-Data-vs-filesystem-export pattern as round 1's A53 precedent. The coverage summary's false 'ATTACHED' claim was fixed.",
+        "T03: late-claim advocacy, settlement-package figures, and the reserve memo's course-and-scope conclusion are internal/advocacy documents drawing their own conclusions per this world's standing ruling, not leakage; the production tracker's A42 first-pass privilege tag is A17's registered trap working as designed (contrast A43's attorney-confirmed row). The final incident report's course-and-scope language was fixed instead, since it feeds T5's actual failure mode rather than modeling one side's advocacy -- see this round's refined ruling.",
+        "T05: Docuseal/Wiki.js state changes and the A62 live practice-management correction are App Data seeded through a separate pipeline this filesystem-only toolkit doesn't cover -- same as round 2.",
+        "T06: TCR.pdf (TC_2025-1018.pdf) verified directly -- 6 fully populated pages (case ID, vehicle/party data, diagram narrative, impairment investigation, certification), not the blank 4-page CHP 555 form the finding describes; false positive.",
+        "T07: scene_photos_2025-1018.pdf and onboard_video_still_log.pdf match their own registry Name/Style ('Photo Log'/'still-frame log') and each documents where the actual photos/video are archived -- an honest log, not impersonation; same as round 2.",
+        "T10: LIFE CARE PLAN.pdf citations don't match the mounted file -- confirmed again this round on p.37's framing, it's 19 pages not 120+, so the cited pp. 37/40/115-116 don't exist in this file; same as round 2."
+      ]
     }
   ]
 }
