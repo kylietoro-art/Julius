@@ -429,3 +429,15 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Safety/IR_2025-1018_final.docx | para 13 [round3: same self-certification pattern as para 6/77, missed in round 2] | This Final Incident Report is the report of record issued following completion... | → | This Final Incident Report was issued following completion... |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/CivilCase/Complaint_Reyes_filed.pdf | page 4, para 11 [round3: Coherence Flag Ratio, conflicts with controlling northbound sources (police report, final incident report, AVL/schedule)] | in the southbound direction on South Main Street | → | in the northbound direction on South Main Street |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Witness/blau_statement.pdf | page 3 [round3: Coherence Flag Ratio, original statement said southbound (conflicts with controlling sources); used the addendum's own established correction mechanism rather than silently editing a signed statement] | addendum ends at item 4; closing line 'Everything else... stands as written' | → | added item 5 (Direction of travel, corrects southbound to northbound per AVL/GPS); closing line now 'Except as corrected above...' |
