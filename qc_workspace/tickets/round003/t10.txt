@@ -1,0 +1,16 @@
+TICKET 10 of 12  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+FAIL. In LIFE CARE PLAN.pdf, the TreasuryDirect Historical Auction Query citation on PDF p. 40 now redirects to an HTTP 505 page, although p. 37 says the plan uses that source to derive its real risk-free interest rate and resulting present-value calculation. The same current PDF retains the NY DFS OON Guidance citation on pp. 115-116, which returns HTTP 404, and the CMS locality-configuration citation supporting its geographic-adjustment methodology, which also redirects to HTTP 404.
+
+Finding #1: TreasuryDirect discount-rate citation is unavailable (Minor)
+Finding #2: NY DFS FAIR Health/UCR citation is unavailable (Minor)
+Finding #3: CMS locality/GAF citation is unavailable (Minor)

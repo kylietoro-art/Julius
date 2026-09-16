@@ -1,0 +1,19 @@
+TICKET 2 of 12  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+FAIL. ACTD/Video/onboard_video_still_log.pdf identifies a particular preserved native MP4 by filename and SHA-256 and states that the full clip remains available from named custodians; ACTD/Litigation/production_tracker.csv likewise records A53 as including a native MP4, but the complete 62-file mounted inventory contains only the still-frame log and no video asset. Several other documents make concrete unavailable-document references: the DOT record lists retained Attachments A-C, the FST supplement names four related police/testing records, the lien transmittal identifies Tabs 1-11 retained in the claims file, the final incident report names unmounted operational sheets/inspection/DriveCam footage, and the coverage summary directs the reader to an attached memorandum that is not present.
+
+Finding #1: Native onboard-video clip is absent (Major)
+Finding #2: Final incident report lists unmounted operational records and DriveCam footage (Minor)
+Finding #3: DOT post-accident test attachments are unavailable (Minor)
+Finding #4: FST supplement's concrete related records do not resolve (Minor)
+Finding #5: Lien/EOB reference packet is unavailable (Minor)
+Finding #6: Attached coverage memorandum is missing (Minor)

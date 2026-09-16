@@ -1,0 +1,15 @@
+TICKET 9 of 12  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The current world still artificially signposts the liability conclusion in ACTD/Safety/IR_2025-1018_final.docx: it directly bolds "preventable" in the conclusion that Keeler operated while alcohol-impaired, labels the document "the report of record," and bolds the instruction that "The facts underlying this collision are as set forth in this report." Separately, ACTD/Claims/reserve_memo.docx uses a standalone bold $3,250,000 immediately under the prior-reserve comparison and calls it the "controlling reserve," while ACTD/Litigation/production_tracker.csv repeats "controlling $3,250,000 reserve; supersedes A42."
+
+Finding #1: Final incident report designates the liability answer as authoritative (Minor)
+Finding #2: Reserve materials spotlight the selected reserve (Minor)

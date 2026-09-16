@@ -9,6 +9,7 @@ each one means that class was fixed at the instance level, not the class level.
 |---|---|---|---|---|---|
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
 | 2 | 2026-09-16T16:54 | 12 | 7 | 6 | fixed 4, widened 0, traps 0, false 8, blocked 0 |
+| 3 | 2026-09-16T20:05 | 12 | 6 | 6 | _open_ |
 
 ## Detail
 
@@ -44,4 +45,18 @@ each one means that class was fixed at the instance level, not the class level.
   - files named: 13.pdf, tcr.pdf
 - **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
   - files named: onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+
+### Round 3, 2026-09-16T20:05
+
+- **Builder A## codes visible in world files**: 5 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf, production_tracker.csv, matter_calendar_matterhub.csv, ir_2025-1018_final.docx, reserve_memo.docx, runschedule_owl512.xlsx
+- **Totals don't foot / calculations disagree with inputs**: 3 finding(s)  **(REPEAT)**
+  - files named: docket_entry.xlsx, medical_billing_ledger.csv, reyes_lien_eob.pdf, plan.pdf
+- **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
+  - files named: tcr.pdf
+- **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+- **Same person/entity named, titled or ID'd differently across files**: 1 finding(s)  **(REPEAT)**
+- **Dates, chronology or timeline don't hold together**: 1 finding(s)  **(REPEAT)**
+  - files named: medical_billing_ledger.csv
 

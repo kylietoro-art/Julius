@@ -1,0 +1,15 @@
+TICKET 1 of 12  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Shared/Settlement/Reyes_lien_EOB.pdf Exhibit A reports $2,640,800 in adjustments and $196,000 paid/accepted against $2,840,000 billed, while separately reporting $3,200 of patient responsibility as paid. The detailed ACTD/Claims/medical_billing_ledger.csv recomputes to $2,840,000 billed, $196,000 paid, and $2,644,000 adjustments with every line balanced, showing that the EOB double-counts the $3,200 rather than allocating it. Separately, Legal/Reyes/docket_entry.xlsx assigns a single 10/18/2027 filing deadline to Reyes, Cho, Mowbray, and the City, but the claims tracker records mailed 02/18/2026 rejections for Cho and Mowbray; their controlling deadline is 08/18/2026, so the world contains materially conflicting structured deadline data.
+
+Finding #1: Reyes lien/EOB double-counts paid patient responsibility (Major)
+Finding #2: Case-wide docket entry gives passengers the wrong filing deadline (Major)

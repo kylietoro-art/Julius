@@ -1,0 +1,12 @@
+TICKET 12 of 12  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] CSV Formatted Correctly
+
+task_fs/filesystem/ACTD/Claims/medical_billing_ledger.csv ends with a trailing summary row rather than a bill record. Its first field is TOTAL, followed by ALL PROVIDERS (9) and aggregate values such as 2840000, whereas the preceding rows use actual bill IDs such as HBC-004, HBC-005, and HBC-006. This mixed-schema bottom summary block violates the CSV criterion that every row after the header be a data record.

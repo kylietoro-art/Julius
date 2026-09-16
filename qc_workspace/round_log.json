@@ -181,6 +181,72 @@
         "T11: LIFE CARE PLAN.pdf citations don't match the mounted file -- it's 19 pages not 120+, zero hits anywhere for TreasuryDirect/DFS/CMS/FAIR Health/GAF/any URL.",
         "T12: the 9 inventory mismatches are the established App-Data-vs-filesystem-companion-export pattern, same as round 1's confirmed A53 precedent."
       ]
+    },
+    {
+      "round": 3,
+      "opened": "2026-09-16T20:05:47",
+      "count": 12,
+      "classes": {
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 3,
+          "files": [
+            "docket_entry.xlsx",
+            "medical_billing_ledger.csv",
+            "reyes_lien_eob.pdf",
+            "plan.pdf"
+          ]
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 5,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "production_tracker.csv",
+            "matter_calendar_matterhub.csv",
+            "ir_2025-1018_final.docx",
+            "reserve_memo.docx",
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": [
+            "tcr.pdf"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "entity_inconsistency": {
+          "label": "Same person/entity named, titled or ID'd differently across files",
+          "n": 1,
+          "files": []
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": [
+            "medical_billing_ledger.csv"
+          ]
+        }
+      },
+      "repeats": [
+        "math_footing",
+        "a_code_leakage",
+        "other",
+        "metadata_fingerprint",
+        "entity_inconsistency",
+        "temporal"
+      ],
+      "disposition": null,
+      "note": ""
     }
   ]
 }

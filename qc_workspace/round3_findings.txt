@@ -1,0 +1,81 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Shared/Settlement/Reyes_lien_EOB.pdf Exhibit A reports $2,640,800 in adjustments and $196,000 paid/accepted against $2,840,000 billed, while separately reporting $3,200 of patient responsibility as paid. The detailed ACTD/Claims/medical_billing_ledger.csv recomputes to $2,840,000 billed, $196,000 paid, and $2,644,000 adjustments with every line balanced, showing that the EOB double-counts the $3,200 rather than allocating it. Separately, Legal/Reyes/docket_entry.xlsx assigns a single 10/18/2027 filing deadline to Reyes, Cho, Mowbray, and the City, but the claims tracker records mailed 02/18/2026 rejections for Cho and Mowbray; their controlling deadline is 08/18/2026, so the world contains materially conflicting structured deadline data.
+
+Finding #1: Reyes lien/EOB double-counts paid patient responsibility (Major)
+Finding #2: Case-wide docket entry gives passengers the wrong filing deadline (Major)
+
+[P1] No Broken Document References
+
+FAIL. ACTD/Video/onboard_video_still_log.pdf identifies a particular preserved native MP4 by filename and SHA-256 and states that the full clip remains available from named custodians; ACTD/Litigation/production_tracker.csv likewise records A53 as including a native MP4, but the complete 62-file mounted inventory contains only the still-frame log and no video asset. Several other documents make concrete unavailable-document references: the DOT record lists retained Attachments A-C, the FST supplement names four related police/testing records, the lien transmittal identifies Tabs 1-11 retained in the claims file, the final incident report names unmounted operational sheets/inspection/DriveCam footage, and the coverage summary directs the reader to an attached memorandum that is not present.
+
+Finding #1: Native onboard-video clip is absent (Major)
+Finding #2: Final incident report lists unmounted operational records and DriveCam footage (Minor)
+Finding #3: DOT post-accident test attachments are unavailable (Minor)
+Finding #4: FST supplement's concrete related records do not resolve (Minor)
+Finding #5: Lien/EOB reference packet is unavailable (Minor)
+Finding #6: Attached coverage memorandum is missing (Minor)
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning clause fails because the corpus directly supplies outcomes that the tasks require the worker to independently analyze. The current intake/application materials affirmatively advocate that late-claim relief should be granted even though the task's required assessment is that relief is materially at risk; independently, the reserve memo and Final Incident Report conclusively resolve the adverse course-and-scope issue. The settlement package labels the recoverable past-medical figure and supplies both the future-care formula/result and lost-earning-capacity result, while the production tracker gives a finalized withheld-privileged call for A42 even though T9 requires independent review and correction.
+
+Finding #1: Late-claim advocacy pre-decides the required at-risk analysis (Major)
+Finding #2: Settlement package supplies completed damages answers (Major)
+Finding #3: Reserve memo pre-resolves the course-and-scope conclusion (Major)
+Finding #4: Final incident report independently supplies the T5 conclusion (Major)
+Finding #5: Production tracker gives the contested privilege calls a final answer (Major)
+
+[P0] Coherence Flag Ratio
+
+The corpus contains a material, unresolved directional contradiction. The filed Reyes complaint alleges that Keeler was operating Bus #4177 "in the southbound direction on South Main Street," and Blau's signed witness statement independently says "The bus was going southbound on S. Main"; Blau's later signed addendum says that everything else in the original statement remains in force, so it does not reconcile that assertion. In contrast, the police report, final incident report, video still log, dispatch record, run schedule, City demand, and current passenger claims place Trip 06 northbound; neither the complaint nor witness statement is a registered facts-and-traps exception.
+
+Finding #1: Unreconciled southbound direction in Reyes complaint and Blau witness statement (Major)
+
+[P0] Anomaly Detection Catch-All
+
+The current ③ Tasks sheet says that every task uses both designated apps, that nine of ten require a Docuseal state change, and that T3 requires a Wiki.js update. It further requires T1 to enter a correction directly into the firm's practice-management system, while ④ Artifacts identifies A62 as a live system record; yet the manifest's complete mounted inventory contains only documents/text metadata and the sole related file is the static Legal/Reyes/matter_calendar_MatterHub.csv export.
+
+[P0] Format-Native Feature Fidelity
+
+TCR.pdf materially fails sub-check (b) because its layout reserves essential case-content and diagram slots but displays only a blank CHP 555 form across all four pages.
+
+Finding #1: Uncompleted TCR collision-report template (Major)
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+Document Authenticity Texture And Markings and Visual Genre Fit fail for two separately fixable evidence artifacts. Shared/Police/scene_photos_2025-1018.pdf is required by the register to be a "Captioned scene-photograph set" of "~10-15 captioned photos," but its current eight rendered pages contain only a detailed PHOTO ENTRIES text log and chain-of-custody signatures. ACTD/Video/onboard_video_still_log.pdf likewise visibly consists of metadata and timestamp/description tables, with no camera stills across its six pages despite calling itself a "STILL-FRAME LOG."
+
+Finding #1: Scene-photo set contains no photographs (Minor)
+Finding #2: Onboard still-frame log contains no still frames (Minor)
+
+[P1] Consistent Naming And Defined Terms
+
+ACTD's dispatch log creates and carries forward the file number "ACTD-IR-2025-1018-001," but the final report identifies itself as the report of record under "ACTD-IR-2025-1018," and the onboard-video log uses that unsuffixed number for the same Bus #4177 collision. Neither the world specification nor the files inspected explains that the suffix is a subsystem sequence, an alias, or a formally amended reference.
+
+Finding #1: Unreconciled ACTD incident-number suffix drift (Minor)
+
+[P1] No Signposting of Load-Bearing Facts
+
+The current world still artificially signposts the liability conclusion in ACTD/Safety/IR_2025-1018_final.docx: it directly bolds "preventable" in the conclusion that Keeler operated while alcohol-impaired, labels the document "the report of record," and bolds the instruction that "The facts underlying this collision are as set forth in this report." Separately, ACTD/Claims/reserve_memo.docx uses a standalone bold $3,250,000 immediately under the prior-reserve comparison and calls it the "controlling reserve," while ACTD/Litigation/production_tracker.csv repeats "controlling $3,250,000 reserve; supersedes A42."
+
+Finding #1: Final incident report designates the liability answer as authoritative (Minor)
+Finding #2: Reserve materials spotlight the selected reserve (Minor)
+
+[P1] External Citations Resolve To Real Content
+
+FAIL. In LIFE CARE PLAN.pdf, the TreasuryDirect Historical Auction Query citation on PDF p. 40 now redirects to an HTTP 505 page, although p. 37 says the plan uses that source to derive its real risk-free interest rate and resulting present-value calculation. The same current PDF retains the NY DFS OON Guidance citation on pp. 115-116, which returns HTTP 404, and the CMS locality-configuration citation supporting its geographic-adjustment methodology, which also redirects to HTTP 404.
+
+Finding #1: TreasuryDirect discount-rate citation is unavailable (Minor)
+Finding #2: NY DFS FAIR Health/UCR citation is unavailable (Minor)
+Finding #3: CMS locality/GAF citation is unavailable (Minor)
+
+[P0] Text Legibility And Contrast
+
+task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx, sheet "Authorized Owl Routes," cells A8, A10, and A12 use gold #B8862B font text on pale cream #F5F2EB fill; the computed local contrast is approximately 2.9:1.
+
+Finding #1: Gold route numbers have insufficient contrast on the Authorized Owl Routes sheet (Minor)
+
+[P1] CSV Formatted Correctly
+
+task_fs/filesystem/ACTD/Claims/medical_billing_ledger.csv ends with a trailing summary row rather than a bill record. Its first field is TOTAL, followed by ALL PROVIDERS (9) and aggregate values such as 2840000, whereas the preceding rows use actual bill IDs such as HBC-004, HBC-005, and HBC-006. This mixed-schema bottom summary block violates the CSV criterion that every row after the header be a data record.

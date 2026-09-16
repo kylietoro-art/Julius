@@ -1,0 +1,14 @@
+TICKET 4 of 12  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+The corpus contains a material, unresolved directional contradiction. The filed Reyes complaint alleges that Keeler was operating Bus #4177 "in the southbound direction on South Main Street," and Blau's signed witness statement independently says "The bus was going southbound on S. Main"; Blau's later signed addendum says that everything else in the original statement remains in force, so it does not reconcile that assertion. In contrast, the police report, final incident report, video still log, dispatch record, run schedule, City demand, and current passenger claims place Trip 06 northbound; neither the complaint nor witness statement is a registered facts-and-traps exception.
+
+Finding #1: Unreconciled southbound direction in Reyes complaint and Blau witness statement (Major)

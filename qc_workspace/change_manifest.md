@@ -307,3 +307,107 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Dispatch/tran_text_thread.pdf | whole file (A52) [T08 round2: Built Files Match Spec Inventory, built file didn't match registry's narrow personal-device exchange] | 5 pages, 2:47am-Oct 24, 32 messages | → | 1 page, 3:20-3:40am 10/18/2025, 3 messages per registry |
+
+## a_scrub
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_ledger.csv | in-text code | A42 | → | the Junior Adjuster Liability Note |
+| ACTD/Claims/reserve_ledger.csv | in-text code | A43 | → | the Senior Claims-Manager Reserve Memo |
+| ACTD/HR/Keeler_personnel.docx | in-text code | A54 | → | the Keeler DMV Driving Record |
+| ACTD/HR/Keeler_personnel.docx | in-text code | A05 | → | the DOT Post-Accident Test Record |
+| ACTD/Litigation/production_tracker.csv | in-text code | A01 | → | the Police Traffic Collision Report |
+| ACTD/Litigation/production_tracker.csv | in-text code | A08 | → | the Owl Route 512 Run Schedule |
+| ACTD/Litigation/production_tracker.csv | in-text code | A02 | → | the ACTD Final Incident Report |
+| ACTD/Litigation/production_tracker.csv | in-text code | A08 | → | the Owl Route 512 Run Schedule |
+| ACTD/Litigation/production_tracker.csv | in-text code | A12 | → | the AVL / GPS Route Track |
+| ACTD/Litigation/production_tracker.csv | in-text code | A55 | → | the Route 512 Owl Block Bid Award Notice |
+| ACTD/Litigation/production_tracker.csv | in-text code | A11 | → | the APC / Farebox Ridership Log |
+| ACTD/Litigation/production_tracker.csv | in-text code | A12 | → | the AVL / GPS Route Track |
+| ACTD/Litigation/production_tracker.csv | in-text code | A42 | → | the Junior Adjuster Liability Note |
+| ACTD/Litigation/production_tracker.csv | in-text code | A54 | → | the Keeler DMV Driving Record |
+| ACTD/Litigation/production_tracker.csv | in-text code | A55 | → | the Route 512 Owl Block Bid Award Notice |
+| ACTD/Safety/IR_2025-1018_final.docx | in-text code | A05 | → | the DOT Post-Accident Test Record |
+| ACTD/Safety/IR_2025-1018_final.docx | in-text code | A05 | → | the DOT Post-Accident Test Record |
+| Med/Reyes/bills_billed.pdf | in-text code | A41 | → | the Plaintiff Paralegal Docket Entry |
+| Shared/CrimeLab/BAC_Keeler.pdf | in-text code | A50 | → | the Blood-Draw Chain-of-Custody |
+| Shared/CrimeLab/BAC_Keeler.pdf | in-text code | A50 | → | the Blood-Draw Chain-of-Custody |
+
+**Left for you to check (not changed):**
+- ACTD/Claims/medical_billing_ledger.csv: A0431, not in the ④ registry, real invoice/room/part code? left unchanged
+- ACTD/Claims/medical_billing_ledger.csv: A0436, not in the ④ registry, real invoice/room/part code? left unchanged
+- ACTD/Claims/medical_billing_ledger.csv: A0225, not in the ④ registry, real invoice/room/part code? left unchanged
+- ACTD/Claims/reserve_ledger.csv: A42, context already names "Junior Adjuster Liability Note", rewrite by hand (drop the adjacent descriptor, e.g. "…the Junior Adjuster Liability Note")
+- ACTD/Claims/reserve_ledger.csv: A40, context already names "City of Rivergate Property-Damage Claim", rewrite by hand (drop the adjacent descriptor, e.g. "…the City of Rivergate Property-Damage Claim")
+- ACTD/Claims/reserve_ledger.csv: A58, context already names "City of Rivergate Light-Standard Repair Invoice", rewrite by hand (drop the adjacent descriptor, e.g. "…the City of Rivergate Light-Standard Repair Invoice")
+- ACTD/Litigation/production_tracker.csv: A02, context already names "ACTD Final Incident Report", rewrite by hand (drop the adjacent descriptor, e.g. "…the ACTD Final Incident Report")
+- ACTD/Litigation/production_tracker.csv: A03, context already names "ACTD Draft On-Scene Incident Report", rewrite by hand (drop the adjacent descriptor, e.g. "…the ACTD Draft On-Scene Incident Report")
+- ACTD/Litigation/production_tracker.csv: A04, context already names "Crime-Lab Blood BAC Report", rewrite by hand (drop the adjacent descriptor, e.g. "…the Crime-Lab Blood BAC Report")
+- ACTD/Litigation/production_tracker.csv: A05, context already names "DOT Post-Accident Test Record", rewrite by hand (drop the adjacent descriptor, e.g. "…the DOT Post-Accident Test Record")
+- ACTD/Litigation/production_tracker.csv: A09, context already names "Dispatch "Off-Book" Email", rewrite by hand (drop the adjacent descriptor, e.g. "…the Dispatch "Off-Book" Email")
+- ACTD/Litigation/production_tracker.csv: A13, context already names "Dispatch Log", rewrite by hand (drop the adjacent descriptor, e.g. "…the Dispatch Log")
+- ACTD/Litigation/production_tracker.csv: A19, context already names "Keeler Personnel / HR File", rewrite by hand (drop the adjacent descriptor, e.g. "…the Keeler Personnel / HR File")
+- ACTD/Litigation/production_tracker.csv: A20, context already names "Keeler Duty Roster / Timekeeping", rewrite by hand (drop the adjacent descriptor, e.g. "…the Keeler Duty Roster / Timekeeping")
+- ACTD/Litigation/production_tracker.csv: A42, context already names "Junior Adjuster Liability Note", rewrite by hand (drop the adjacent descriptor, e.g. "…the Junior Adjuster Liability Note")
+- ACTD/Litigation/production_tracker.csv: A43, context already names "Senior Claims-Manager Reserve Memo", rewrite by hand (drop the adjacent descriptor, e.g. "…the Senior Claims-Manager Reserve Memo")
+- ACTD/Litigation/production_tracker.csv: A46, context already names "Blau Witness Statement", rewrite by hand (drop the adjacent descriptor, e.g. "…the Blau Witness Statement")
+- ACTD/Litigation/production_tracker.csv: A48, context already names "Excess Risk-Pool Coverage Summary", rewrite by hand (drop the adjacent descriptor, e.g. "…the Excess Risk-Pool Coverage Summary")
+- ACTD/Litigation/production_tracker.csv: A49, context already names "Bus Maintenance / Inspection Log", rewrite by hand (drop the adjacent descriptor, e.g. "…the Bus Maintenance / Inspection Log")
+- ACTD/Litigation/production_tracker.csv: A51, context already names "Recovered Parts / Scene Evidence Photo Log", rewrite by hand (drop the adjacent descriptor, e.g. "…the Recovered Parts / Scene Evidence Photo Log")
+- ACTD/Litigation/production_tracker.csv: A53, context already names "Onboard Video / Camera System Footage", rewrite by hand (drop the adjacent descriptor, e.g. "…the Onboard Video / Camera System Footage")
+- ACTD/Litigation/production_tracker.csv: A57, context already names "ACTD Post-Accident Drug & Alcohol Testing Policy", rewrite by hand (drop the adjacent descriptor, e.g. "…the ACTD Post-Accident Drug & Alcohol Testing Policy")
+- ACTD/Safety/IR_2025-1018_final.docx: A11, context already names "APC / Farebox Ridership Log", rewrite by hand (drop the adjacent descriptor, e.g. "…the APC / Farebox Ridership Log")
+- ACTD/Safety/IR_2025-1018_final.docx: A11, context already names "APC / Farebox Ridership Log", rewrite by hand (drop the adjacent descriptor, e.g. "…the APC / Farebox Ridership Log")
+- Legal/Reyes/intake_memo.docx: A62, context already names "Halstead & Cruz Matter Calendar / Practice-Management System", rewrite by hand (drop the adjacent descriptor, e.g. "…the Halstead & Cruz Matter Calendar / Practice-Management System")
+- Med/Reyes/admit_2025-1018.pdf: A2, not in the ④ registry, real invoice/room/part code? left unchanged
+- Med/Reyes/admit_2025-1018.pdf: A2, not in the ④ registry, real invoice/room/part code? left unchanged
+- Med/Reyes/admit_2025-1018.pdf: A2, not in the ④ registry, real invoice/room/part code? left unchanged
+- Med/Reyes/admit_2025-1018.pdf: A2, not in the ④ registry, real invoice/room/part code? left unchanged
+- Med/Reyes/bills_billed.pdf: A0431, not in the ④ registry, real invoice/room/part code? left unchanged
+- Med/Reyes/bills_billed.pdf: A0436, not in the ④ registry, real invoice/room/part code? left unchanged
+- Med/Reyes/bills_billed.pdf: A0398, not in the ④ registry, real invoice/room/part code? left unchanged
+- Med/Reyes/bills_billed.pdf: A0225, not in the ④ registry, real invoice/room/part code? left unchanged
+- Shared/City/property_claim_0202.pdf: A58, context already names "City of Rivergate Light-Standard Repair Invoice", rewrite by hand (drop the adjacent descriptor, e.g. "…the City of Rivergate Light-Standard Repair Invoice")
+- Shared/Police/scene_photos_2025-1018.pdf: A01, context already names "Police Traffic Collision Report", rewrite by hand (drop the adjacent descriptor, e.g. "…the Police Traffic Collision Report")
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Litigation/production_tracker.csv | doc_id column, 16 rows [round3 CHRONIC: comprehensive A## class-level fix] | doc_id column: bare A02,A03,A04,A05,A09,A13,A19,A20,A42,A43,A46,A48,A49,A51,A53,A57 | → | doc_id column: registry descriptive names, matching the pattern a_scrub.py already applied to A01 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_ledger.csv | row 12 notes [round3 CHRONIC: comprehensive A## class-level fix] | (see A40) ... (see A58) | → | removed, already named in-line |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Legal/Reyes/intake_memo.docx | para 31 [round3 CHRONIC: comprehensive A## class-level fix] | MatterHub deadlines module (A62) to reflect | → | MatterHub deadlines module to reflect |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Police/scene_photos_2025-1018.pdf | page 1 header table [round3 CHRONIC: comprehensive A## class-level fix] | Case Reference (RPD): TC-2025-1018 (Cross-ref: Matter A01) | → | Case Reference (RPD): TC-2025-1018 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/City/property_claim_0202.pdf | page 3 [round3 CHRONIC: comprehensive A## class-level fix] | itemizing the $48,500.00 cost of repair (Artifact A58). | → | itemizing the $48,500.00 cost of repair. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | para 30, table3 r1c0 [round3 CHRONIC: comprehensive A## class-level fix] | see A11 (APC/farebox export) / See APC/farebox export (A11) | → | see the APC/farebox export / See the APC/farebox export |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_ledger.csv | row 5 [round3 CHRONIC: comprehensive A## class-level fix] | opening note (A42) | → | opening note |

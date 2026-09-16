@@ -1,0 +1,18 @@
+TICKET 3 of 12  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The No Solution Or Reasoning clause fails because the corpus directly supplies outcomes that the tasks require the worker to independently analyze. The current intake/application materials affirmatively advocate that late-claim relief should be granted even though the task's required assessment is that relief is materially at risk; independently, the reserve memo and Final Incident Report conclusively resolve the adverse course-and-scope issue. The settlement package labels the recoverable past-medical figure and supplies both the future-care formula/result and lost-earning-capacity result, while the production tracker gives a finalized withheld-privileged call for A42 even though T9 requires independent review and correction.
+
+Finding #1: Late-claim advocacy pre-decides the required at-risk analysis (Major)
+Finding #2: Settlement package supplies completed damages answers (Major)
+Finding #3: Reserve memo pre-resolves the course-and-scope conclusion (Major)
+Finding #4: Final incident report independently supplies the T5 conclusion (Major)
+Finding #5: Production tracker gives the contested privilege calls a final answer (Major)

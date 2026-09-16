@@ -1,0 +1,14 @@
+TICKET 11 of 12  |  round 3
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Text Legibility And Contrast
+
+task_fs/filesystem/ACTD/Ops/RunSchedule_Owl512.xlsx, sheet "Authorized Owl Routes," cells A8, A10, and A12 use gold #B8862B font text on pale cream #F5F2EB fill; the computed local contrast is approximately 2.9:1.
+
+Finding #1: Gold route numbers have insufficient contrast on the Authorized Owl Routes sheet (Minor)
