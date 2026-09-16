@@ -223,3 +223,27 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Claims/reserve_memo.docx | para 14, para 30, table1 row5 [T10 round2: No Signposting of Load-Bearing Facts] | bold: $250,000 / $3,250,000 / supersedes (para 14); Controlling reserve label (para 30); Prior initial reserve — SUPERSEDED (table1 row5) | → | bold removed, text unchanged except table1 row5 label reworded |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | para 6 (subtitle) [T10 round2: self-authority label, not part of A02/A03 trap mechanism (verified against spec)] | Supervisor-Reviewed / Controlling Report of Record | → | Supervisor-Reviewed |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | para 47 (section 8 heading) [T10 round2: same as subtitle] | 8.  Report of Record; Relationship to Draft Report | → | 8.  Relationship to Draft Report |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | para 77 (certification) [T10 round2: drop self-certifying clause, rest of certification unchanged] | ...Scientific Services Bureau, that it reflects the controlling documentary record of this collision. | → | ...Scientific Services Bureau. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_final.docx | para 35 [T10 round2: No Signposting of Load-Bearing Facts] | bold: alcohol-impairment root-cause sentence (para 35) | → | bold removed, text unchanged |
