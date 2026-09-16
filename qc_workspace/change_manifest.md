@@ -259,3 +259,21 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Shared/Press/news_collision.html | line 204 [T05(a) round2: same coherence conflict as claims_0118.pdf] | street-light standard on the west side of Main | → | street-light standard on the east side of Main |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_ledger.csv | row 12 (RL-2025-0110) [T05(b) round2: Coherence Flag Ratio, demand wasn't received until 02/02/2026 (invoice dated 02/01/2026)] | RL-2025-0110 date_set=12/15/2025, notes referenced A43 | → | date_set=02/02/2026, notes reference A40/A58 (actual demand + invoice) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | table2 row 8 [T05(b) round2: 12/15/2025 memo can't state a figure not demanded until 02/02/2026] | City of Rivergate property claim ($48,500 demand) — RESERVED SEPARATELY | → | City of Rivergate property claim (anticipated; demand not yet received) — RESERVED SEPARATELY |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_ledger.csv | row 6 (RL-2025-0104) [T05(c) round2: Coherence Flag Ratio, contradicts A43 (reserve_memo.docx) same-date statement that no LCP is on file yet] | Reset following C&S finding, lab BAC, LCP workup — see A43. | → | Reset following C&S finding, lab BAC, initial catastrophic-injury documentation — see A43. |
