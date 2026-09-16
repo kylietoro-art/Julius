@@ -1,0 +1,17 @@
+TICKET 3 of 12  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The solver-visible corpus directly leaks several core task outcomes. The late-claim application and plaintiff intake memo supply affirmative late-claim and vicarious-liability conclusions even though T3 requires a contrary, at-risk assessment; the reserve memo supplies the adverse course-and-scope conclusion required for T5; and the settlement materials provide the completed Howell, future-care present-value, and lost-earnings results required for T4. Separately, the production tracker marks the key A42/A43 privilege decisions as final even though T9 expressly requires an independent analysis and correction of A42. These are independently removable conclusions/results, not merely underlying evidence, and materially collapse the requested professional judgment.
+
+Finding #1: Late-claim materials pre-decide relief and plaintiff liability theory (Major)
+Finding #2: Reserve memo supplies the required course-and-scope conclusion (Major)
+Finding #3: Settlement documents provide completed damages answers (Major)
+Finding #4: Production tracker pre-resolves privilege calls (Major)

@@ -1,0 +1,12 @@
+TICKET 11 of 12  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+FAIL. `LIFE CARE PLAN.pdf` retains three material external sources that no longer resolve to real content: the TreasuryDirect Historical Auction Query supporting the plan's discount-rate input (PDF p. 40), NY DFS's OON Guidance supporting the statement that FAIR Health may be used as an independent UCR source (pp. 115-116), and CMS's locality-configuration page supporting GAF geographic adjustments (p. 120). Exact resolution checks returned HTTP 505, HTTP 404, and HTTP 404, respectively; therefore readers cannot verify methodology on which the life-care pricing and present-value approach depends. Previously flagged citations were rechecked and remain broken.

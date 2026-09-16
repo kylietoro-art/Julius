@@ -1,0 +1,15 @@
+TICKET 9 of 12  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+The Document Authenticity Texture And Markings and Visual Genre Fit clauses fail. The World Spec describes `Shared/Police/scene_photos_2025-1018.pdf` as a "Captioned scene-photograph set" with "~10-15 captioned photos," but the current eight-page file is headed "SCENE / RECOVERED-PARTS PHOTO LOG" and contains zero embedded image objects across all eight pages; it supplies only written `P-001` etc. descriptions. `ACTD/Video/onboard_video_still_log.pdf` likewise labels itself "ONBOARD VIDEO / CAMERA SYSTEM — STILL-FRAME LOG," but all six current pages are metadata and timestamp/description tables with zero embedded image objects; it visually impersonates a still-frame artifact without any still frames. Add the promised images or clearly retitle/reclassify each as a description/index log.
+
+Finding #1: Scene-photo set contains no photographs (Minor)
+Finding #2: Onboard still-frame log contains no still frames (Minor)

@@ -1,0 +1,12 @@
+TICKET 4 of 12  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The world fails the "No Synthetic Substitutes For Real-World Facts" clause because it repeatedly assigns California's incapacity exception for late government claims to Government Code § 911.6(b)(4). In `task_fs/filesystem/Legal/Reyes/late_claim_app.pdf`, the application says, "Relief is sought principally under Government Code § 911.6(b)(4)" and later says the facts establish incapacity "within the meaning of Government Code § 911.6(b)(4)." The selected world specification also defines the capacity-adverse facts as those that "defeat § 911.6(b)(4) 'all of the time,'" and `Legal/Reyes/intake_memo.docx` calls that subsection the incapacity ground. Because § 911.6(b)(4) is the death-of-claimant provision while incapacity is § 911.6(b)(3), this is a repeated, core California-law error in the world's late-claim strategy; replace each incapacity reference with § 911.6(b)(3) and revise the related explanation.

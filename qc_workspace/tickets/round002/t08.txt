@@ -1,0 +1,12 @@
+TICKET 8 of 12  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Built Files Match Spec Inventory
+
+A09 does not match the registry's required email attribution or content: the registry calls for a 03:15 email from W. Tran to G. Espinoza and D. Farkas with subject "Overnight incident - Route 512," but the built EML is addressed to a dispatch-supervisors list, copies M. Okonkwo, uses a different subject, and contains a substantially expanded incident account. A52 likewise conflicts with the registry's specified personal-device exchange: the built PDF is five pages and begins at 2:47 a.m., runs through October 24, and ends with 32 messages, instead of the narrow 10/18/2025 03:20-03:40 three-message exchange. These are separately fixable material departures from the registry's Purpose & Content / Author requirements.

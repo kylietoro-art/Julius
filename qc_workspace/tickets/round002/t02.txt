@@ -1,0 +1,18 @@
+TICKET 2 of 12  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+FAIL. The video still-frame log expressly identifies a preserved native MP4 and states that the full native file is available through its custodians, but no MP4 or other clip export is mounted; the production tracker likewise claims a native MP4 while the actual filesystem contains only the still-frame log. Separately, the DOT record, FST supplement, and lien/EOB transmittal each represent particular attachment or enclosure packets as part of their materials, yet their documents end after those lists and no matching packet appears in the mounted inventory. The final incident report also identifies specific operational records and DriveCam footage not supplied as the stated records, so a reader cannot resolve or examine all of the documentary material the world invokes.
+
+Finding #1: Native onboard-video clip is not supplied (Major)
+Finding #2: Final incident report names unmounted operational records and DriveCam footage (Minor)
+Finding #3: FST supplement's listed attachment packet is absent (Minor)
+Finding #4: DOT post-accident test attachments are absent (Minor)
+Finding #5: Lien/EOB enclosure packet is not supplied (Minor)

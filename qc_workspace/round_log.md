@@ -8,6 +8,7 @@ each one means that class was fixed at the instance level, not the class level.
 | Round | Opened | Findings | Classes | Repeats | Disposition |
 |---|---|---|---|---|---|
 | 1 | 2026-09-03T19:17 | 14 | 8 | 0 | fixed 6, widened 4, traps 1, false 3, blocked 0 |
+| 2 | 2026-09-16T16:54 | 12 | 7 | 6 | _open_ |
 
 ## Detail
 
@@ -28,4 +29,19 @@ each one means that class was fixed at the instance level, not the class level.
   - files named: reyes_life_care_plan.pdf, reyes_wage_records.pdf
 - **Real-world references, citations or jurisdiction facts are wrong**: 1 finding(s)
   - files named: owl_service_rules.docx, post_accident_testing_policy.docx
+
+### Round 2, 2026-09-16T16:54
+
+- **Builder A## codes visible in world files**: 5 finding(s)  **(REPEAT)**
+  - files named: ir_2025-1018_final.docx, production_tracker.csv, reserve_memo.docx
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+  - files named: intake_memo.docx, late_claim_app.pdf, plan.pdf
+- **Totals don't foot / calculations disagree with inputs**: 1 finding(s)  **(REPEAT)**
+  - files named: medical_billing_ledger.csv, reyes_lien_eob.pdf
+- **Uncategorised, read the finding text**: 1 finding(s)  **(REPEAT)**
+- **Dates, chronology or timeline don't hold together**: 1 finding(s)  **(REPEAT)**
+- **File is corrupt, empty, unreadable or won't render**: 1 finding(s)
+  - files named: 13.pdf, tcr.pdf
+- **Tool fingerprints / build dates in file metadata**: 1 finding(s)  **(REPEAT)**
+  - files named: onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
 

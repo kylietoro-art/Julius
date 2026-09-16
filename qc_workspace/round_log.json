@@ -94,6 +94,75 @@
         "Draft incident report's missing tracked-changes: A03 is a never-finalized on-scene draft that gets wholly superseded by a separately-authored final report (A02), not a document edited in place via Track Changes. Adding fake revision history would misrepresent how the document came to exist.",
         "tran_text_thread.pdf text legibility: rendered all 5 pages; header/footer chrome is normal, readable medium-gray throughout, not washed out as claimed."
       ]
+    },
+    {
+      "round": 2,
+      "opened": "2026-09-16T16:54:35",
+      "count": 12,
+      "classes": {
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 1,
+          "files": [
+            "medical_billing_ledger.csv",
+            "reyes_lien_eob.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": []
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 5,
+          "files": [
+            "ir_2025-1018_final.docx",
+            "production_tracker.csv",
+            "reserve_memo.docx"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": [
+            "intake_memo.docx",
+            "late_claim_app.pdf",
+            "plan.pdf"
+          ]
+        },
+        "temporal": {
+          "label": "Dates, chronology or timeline don't hold together",
+          "n": 1,
+          "files": []
+        },
+        "file_integrity": {
+          "label": "File is corrupt, empty, unreadable or won't render",
+          "n": 1,
+          "files": [
+            "13.pdf",
+            "tcr.pdf"
+          ]
+        },
+        "metadata_fingerprint": {
+          "label": "Tool fingerprints / build dates in file metadata",
+          "n": 1,
+          "files": [
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        }
+      },
+      "repeats": [
+        "math_footing",
+        "other",
+        "a_code_leakage",
+        "citation_facts",
+        "temporal",
+        "metadata_fingerprint"
+      ],
+      "disposition": null,
+      "note": ""
     }
   ]
 }

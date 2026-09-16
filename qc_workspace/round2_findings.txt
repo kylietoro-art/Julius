@@ -1,0 +1,67 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Shared medical-damages accounting materially disagrees without an in-world reconciliation. `ACTD/Claims/medical_billing_ledger.csv` recomputes to $2,840,000 billed, $196,000 paid, $2,644,000 adjustments, and $3,200 patient responsibility, with every row at zero balance. In contrast, Exhibit A of `Shared/Settlement/Reyes_lien_EOB.pdf` states $2,640,800 adjustments plus $196,000 paid/accepted and separately says the $3,200 patient-responsibility total was paid; those allocations exceed the same $2,840,000 billed charges by $3,200. Revise the EOB adjustment/paid columns or state and calculate explicitly that patient responsibility is included in paid/accepted.
+
+Finding #1: Reyes lien/EOB double-counts paid patient responsibility (Major)
+
+[P1] No Broken Document References
+
+FAIL. The video still-frame log expressly identifies a preserved native MP4 and states that the full native file is available through its custodians, but no MP4 or other clip export is mounted; the production tracker likewise claims a native MP4 while the actual filesystem contains only the still-frame log. Separately, the DOT record, FST supplement, and lien/EOB transmittal each represent particular attachment or enclosure packets as part of their materials, yet their documents end after those lists and no matching packet appears in the mounted inventory. The final incident report also identifies specific operational records and DriveCam footage not supplied as the stated records, so a reader cannot resolve or examine all of the documentary material the world invokes.
+
+Finding #1: Native onboard-video clip is not supplied (Major)
+Finding #2: Final incident report names unmounted operational records and DriveCam footage (Minor)
+Finding #3: FST supplement's listed attachment packet is absent (Minor)
+Finding #4: DOT post-accident test attachments are absent (Minor)
+Finding #5: Lien/EOB enclosure packet is not supplied (Minor)
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+The solver-visible corpus directly leaks several core task outcomes. The late-claim application and plaintiff intake memo supply affirmative late-claim and vicarious-liability conclusions even though T3 requires a contrary, at-risk assessment; the reserve memo supplies the adverse course-and-scope conclusion required for T5; and the settlement materials provide the completed Howell, future-care present-value, and lost-earnings results required for T4. Separately, the production tracker marks the key A42/A43 privilege decisions as final even though T9 expressly requires an independent analysis and correction of A42. These are independently removable conclusions/results, not merely underlying evidence, and materially collapse the requested professional judgment.
+
+Finding #1: Late-claim materials pre-decide relief and plaintiff liability theory (Major)
+Finding #2: Reserve memo supplies the required course-and-scope conclusion (Major)
+Finding #3: Settlement documents provide completed damages answers (Major)
+Finding #4: Production tracker pre-resolves privilege calls (Major)
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+
+The world fails the "No Synthetic Substitutes For Real-World Facts" clause because it repeatedly assigns California's incapacity exception for late government claims to Government Code § 911.6(b)(4). In `task_fs/filesystem/Legal/Reyes/late_claim_app.pdf`, the application says, "Relief is sought principally under Government Code § 911.6(b)(4)" and later says the facts establish incapacity "within the meaning of Government Code § 911.6(b)(4)." The selected world specification also defines the capacity-adverse facts as those that "defeat § 911.6(b)(4) 'all of the time,'" and `Legal/Reyes/intake_memo.docx` calls that subsection the incapacity ground. Because § 911.6(b)(4) is the death-of-claimant provision while incapacity is § 911.6(b)(3), this is a repeated, core California-law error in the world's late-claim strategy; replace each incapacity reference with § 911.6(b)(3) and revise the related explanation.
+
+[P0] Coherence Flag Ratio
+
+The passenger government-claims package conflicts with the police, final safety, schedule/dispatch, and video record by describing the collision as on "Southbound South Main Street" and the struck standard as on the west side, while the controlling records place Trip 06 northbound and the standard on the east curb. Separately, the 12/15/2025 reserve memo and ledger describe a specific $48,500 City property-damage demand even though the City's actual demand was received 02/02/2026 and its supporting invoice was dated 02/01/2026. The same ledger says the December reset followed "LCP workup," directly contradicting the contemporaneous memo's statement that no life-care plan or medical-economic workup was yet on file; the actual plan is dated May 20, 2026. These errors leave core facts and chronology unreliable across otherwise central records.
+
+[P0] Anomaly Detection Catch-All
+
+Required multi-app state is absent. In `③ Tasks`, row 2 says that every task uses both designated apps and that nine of ten require a Docuseal state change, while T3 requires a Wiki.js update; T1 and T3 also require accessing and changing the live Halstead & Cruz matter-calendar record (A62). The complete manifest lists only the 62 ordinary task filesystem documents and reference/spec files—no Docuseal submissions, Wiki.js pages, practice-management record, database, or app seed—so archival, routing, correction, and verification actions are impossible to perform or evaluate. Seed and mount the specified initial application records, including the erroneous Wiki.js pages, relevant Docuseal submissions, and A62 matter-calendar state.
+
+Finding #1: Required Docuseal, Wiki.js, and matter-calendar state is not mounted (Major)
+
+[P0] Format-Native Feature Fidelity
+
+TCR.pdf (custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf) is a blank four-page CHP 555 template rather than a populated collision report. Page 4 shows an empty factual-diagram grid and unmarked north circle while retaining the instruction to import a graphic; pages 1-3 likewise display unfilled collision, coding, and injury/witness fields. These are reserved case-content and diagram slots that the layout plainly expects to be filled, so this materially fails sub-check (b) and leaves the artifact unusable without case-specific completion. Populate the report and its factual diagram with the collision facts, or remove the blank template from the mounted world.
+
+Finding #1: Uncompleted TCR collision-report template (Major)
+
+[P0] Built Files Match Spec Inventory
+
+A09 does not match the registry's required email attribution or content: the registry calls for a 03:15 email from W. Tran to G. Espinoza and D. Farkas with subject "Overnight incident - Route 512," but the built EML is addressed to a dispatch-supervisors list, copies M. Okonkwo, uses a different subject, and contains a substantially expanded incident account. A52 likewise conflicts with the registry's specified personal-device exchange: the built PDF is five pages and begins at 2:47 a.m., runs through October 24, and ends with 32 messages, instead of the narrow 10/18/2025 03:20-03:40 three-message exchange. These are separately fixable material departures from the registry's Purpose & Content / Author requirements.
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+The Document Authenticity Texture And Markings and Visual Genre Fit clauses fail. The World Spec describes `Shared/Police/scene_photos_2025-1018.pdf` as a "Captioned scene-photograph set" with "~10-15 captioned photos," but the current eight-page file is headed "SCENE / RECOVERED-PARTS PHOTO LOG" and contains zero embedded image objects across all eight pages; it supplies only written `P-001` etc. descriptions. `ACTD/Video/onboard_video_still_log.pdf` likewise labels itself "ONBOARD VIDEO / CAMERA SYSTEM — STILL-FRAME LOG," but all six current pages are metadata and timestamp/description tables with zero embedded image objects; it visually impersonates a still-frame artifact without any still frames. Add the promised images or clearly retitle/reclassify each as a description/index log.
+
+Finding #1: Scene-photo set contains no photographs (Minor)
+Finding #2: Onboard still-frame log contains no still frames (Minor)
+
+[P1] No Signposting of Load-Bearing Facts
+
+The final safety report artificially elevates its resolution of disputed liability facts. `IR_2025-1018_final.docx` labels itself "Supervisor-Reviewed / Controlling Report of Record," includes a "Report of Record; Relationship to Draft Report" section, certifies that it reflects the "controlling documentary record," and directly bolds the whole alcohol-impairment causal conclusion as well as the directive that the collision facts are "as set forth in this report." The reserve materials separately foreground the selected answer: `reserve_memo.docx` bolds both $250,000 and $3,250,000 together with "supersedes," labels $3,250,000 the "Controlling reserve," and marks the old amount "SUPERSEDED"; `production_tracker.csv` repeats "controlling $3,250,000 reserve; supersedes A42." These presentation choices steer readers to the intended course-and-scope/liability and reserve answers rather than presenting the evidence in ordinary documentary context.
+
+[P1] External Citations Resolve To Real Content
+
+FAIL. `LIFE CARE PLAN.pdf` retains three material external sources that no longer resolve to real content: the TreasuryDirect Historical Auction Query supporting the plan's discount-rate input (PDF p. 40), NY DFS's OON Guidance supporting the statement that FAIR Health may be used as an independent UCR source (pp. 115-116), and CMS's locality-configuration page supporting GAF geographic adjustments (p. 120). Exact resolution checks returned HTTP 505, HTTP 404, and HTTP 404, respectively; therefore readers cannot verify methodology on which the life-care pricing and present-value approach depends. Previously flagged citations were rechecked and remain broken.
+
+[P0] Built Files Match Spec Inventory (minor issues, additional)
+
+Minor issues noted in addition to the A09/A52 major departures above.

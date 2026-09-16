@@ -1,0 +1,14 @@
+TICKET 1 of 12  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Shared medical-damages accounting materially disagrees without an in-world reconciliation. `ACTD/Claims/medical_billing_ledger.csv` recomputes to $2,840,000 billed, $196,000 paid, $2,644,000 adjustments, and $3,200 patient responsibility, with every row at zero balance. In contrast, Exhibit A of `Shared/Settlement/Reyes_lien_EOB.pdf` states $2,640,800 adjustments plus $196,000 paid/accepted and separately says the $3,200 patient-responsibility total was paid; those allocations exceed the same $2,840,000 billed charges by $3,200. Revise the EOB adjustment/paid columns or state and calculate explicitly that patient responsibility is included in paid/accepted.
+
+Finding #1: Reyes lien/EOB double-counts paid patient responsibility (Major)

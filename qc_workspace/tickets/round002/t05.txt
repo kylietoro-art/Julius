@@ -1,0 +1,12 @@
+TICKET 5 of 12  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+The passenger government-claims package conflicts with the police, final safety, schedule/dispatch, and video record by describing the collision as on "Southbound South Main Street" and the struck standard as on the west side, while the controlling records place Trip 06 northbound and the standard on the east curb. Separately, the 12/15/2025 reserve memo and ledger describe a specific $48,500 City property-damage demand even though the City's actual demand was received 02/02/2026 and its supporting invoice was dated 02/01/2026. The same ledger says the December reset followed "LCP workup," directly contradicting the contemporaneous memo's statement that no life-care plan or medical-economic workup was yet on file; the actual plan is dated May 20, 2026. These errors leave core facts and chronology unreliable across otherwise central records.

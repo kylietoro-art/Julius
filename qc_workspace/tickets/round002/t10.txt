@@ -1,0 +1,12 @@
+TICKET 10 of 12  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+
+The final safety report artificially elevates its resolution of disputed liability facts. `IR_2025-1018_final.docx` labels itself "Supervisor-Reviewed / Controlling Report of Record," includes a "Report of Record; Relationship to Draft Report" section, certifies that it reflects the "controlling documentary record," and directly bolds the whole alcohol-impairment causal conclusion as well as the directive that the collision facts are "as set forth in this report." The reserve materials separately foreground the selected answer: `reserve_memo.docx` bolds both $250,000 and $3,250,000 together with "supersedes," labels $3,250,000 the "Controlling reserve," and marks the old amount "SUPERSEDED"; `production_tracker.csv` repeats "controlling $3,250,000 reserve; supersedes A42." These presentation choices steer readers to the intended course-and-scope/liability and reserve answers rather than presenting the evidence in ordinary documentary context.

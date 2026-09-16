@@ -1,0 +1,14 @@
+TICKET 7 of 12  |  round 2
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Format-Native Feature Fidelity
+
+TCR.pdf (custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf) is a blank four-page CHP 555 template rather than a populated collision report. Page 4 shows an empty factual-diagram grid and unmarked north circle while retaining the instruction to import a graphic; pages 1-3 likewise display unfilled collision, coding, and injury/witness fields. These are reserved case-content and diagram slots that the layout plainly expects to be filled, so this materially fails sub-check (b) and leaves the artifact unusable without case-specific completion. Populate the report and its factual diagram with the collision facts, or remove the blank template from the mounted world.
+
+Finding #1: Uncompleted TCR collision-report template (Major)
