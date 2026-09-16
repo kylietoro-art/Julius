@@ -1,0 +1,12 @@
+TICKET 10 of 10  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+
+FAIL. In the current LIFE CARE PLAN.pdf, the TreasuryDirect citation supporting the plan's real risk-free discount-rate methodology resolves to HTTP 505, the NY DFS OON Guidance citation supporting the FAIR Health/UCR assertion resolves to HTTP 404, and the CMS locality configuration citation supporting the geographic-adjustment-factor methodology resolves to HTTP 404. Each link is attached to a substantive method used or defended in the plan, so a reader cannot inspect the cited authority or data; replace each with a live authoritative source that supports the stated use.

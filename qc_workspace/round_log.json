@@ -265,6 +265,89 @@
         "T07: scene_photos_2025-1018.pdf and onboard_video_still_log.pdf match their own registry Name/Style ('Photo Log'/'still-frame log') and each documents where the actual photos/video are archived -- an honest log, not impersonation; same as round 2.",
         "T10: LIFE CARE PLAN.pdf citations don't match the mounted file -- confirmed again this round on p.37's framing, it's 19 pages not 120+, so the cited pp. 37/40/115-116 don't exist in this file; same as round 2."
       ]
+    },
+    {
+      "round": 4,
+      "opened": "2026-09-16T21:23:04",
+      "count": 10,
+      "classes": {
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 3,
+          "files": [
+            "medical_billing_ledger.csv",
+            "reyes_lien_eob.pdf",
+            "reyes_life_care_plan.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 1,
+          "files": []
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 1,
+          "files": []
+        },
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 1,
+          "files": [
+            "runschedule_owl512.xlsx"
+          ]
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 2,
+          "files": [
+            "matter_calendar_matterhub.csv",
+            "production_tracker.csv",
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "raw_markup": {
+          "label": "Raw Markdown/HTML printed as visible text",
+          "n": 1,
+          "files": [
+            "runschedule_owl512.xlsx",
+            "tcr.pdf"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 1,
+          "files": [
+            "plan.pdf"
+          ]
+        }
+      },
+      "repeats": [
+        "math_footing",
+        "other",
+        "a_code_leakage",
+        "citation_facts"
+      ],
+      "disposition": {
+        "fixed": 2,
+        "expanded": 0,
+        "traps": 1,
+        "false": 6,
+        "blocked": 2
+      },
+      "note": "T05 (Intended Traps Are Fair) and T06 (Coherence Flag Ratio) BLOCKED pending user input: RunSchedule_Owl512.xlsx's own column-order pattern (validated identically across all 10 other trips) places S.Main/Third between Fifth and Downtown Loop, a ~27-min path from Poplar/Rivergate Plaza -- but the video log, APC scan log, dispatch's position report, and the police report's diagram narrative all place the collision at Third only ~1 min after Trip 06's 02:04 departure. AVL_GPS_track_2025-1018.csv's own lat/heading data shows the same contradiction (latitude decreases continuously through the collision, heading label only catches up to 181-188 degrees in the final 12 seconds). Neither A08 nor A12 has a trap of its own (both registered 'no trap of its own' -- pure course-and-scope corroboration for T2/T5/T7/T9), so this is a real structural defect, not a trap to preserve. Resolving it requires redesigning route geometry or the collision timeline across 3 source-of-truth files with real risk of breaking task-corroboration chains; flagged to user rather than unilaterally resolved, same bar as the round-2 section-911.6 issue.",
+      "closed": "2026-09-16T21:41:21",
+      "changed": "Fixed 4 genuinely wrong weighted-annual-cost figures in the life-care plan (PT/OT/neurocognitive/psychotherapy), verified by hand against the plan's own stated inputs, and rebalanced the rounding/geographic-pricing plug line to preserve the spec's canonical $180,000/$6,480,000/$4,240,000 figures; added fill-color status encoding to the RunSchedule 'Authorized' column; added a native Word comment flagging the unconfirmed passenger count in the draft incident report (content unchanged, format-native markup only).",
+      "disputes": [
+        "T01/T03: EOB-vs-ledger $2,640,800/$2,644,000 'double-count' remains a false positive -- Exhibit A's 4 columns reconcile exactly to $2,840,000 billed; same verified pattern as rounds 1-3. Docket_entry.xlsx's uniform 10/18/2027 deadline is the same declared MatterHub/A62 trap family, not touched.",
+        "T02: DOT attachments, FST supplement's related records, final incident report's unmounted operational records, lien Tabs 1-11, and the native MP4 (A53) absence are the same established retained-elsewhere/App-Data-export pattern as rounds 1-3.",
+        "T04: all 5 sub-findings verified against T4/T6's own Design Purpose in the spec -- A35 (EOB) stating $196K paid, A36 (life-care plan) stating its own $4,240,000 PV, and A37 (wage records) stating its own $1,200,000 lost-earning-capacity opinion are each the artifact the task is explicitly supposed to read and apply legal doctrine to (Howell/Corenbaum paid-not-billed, PV-not-undiscounted), not leakage; A36's PV figure is its registered trap working as designed. Late-claim advocacy and the reserve memo's course-and-scope conclusion are protected per the standing ruling.",
+        "T07: Docuseal/Wiki.js state changes and the A62 live practice-management correction are App Data seeded through a separate pipeline this filesystem-only toolkit doesn't cover -- same as rounds 2-3.",
+        "T08 finding 2: TC_2025-1018.pdf ('TCR.pdf') re-verified directly again this round -- 6 fully populated pages, not a blank 4-page form; false positive, same as round 3.",
+        "T09: scene_photos and onboard_video_still_log match their own registry Name/Style and each documents where the actual evidence is archived -- an honest log, not impersonation; same as rounds 2-3.",
+        "T10: LIFE CARE PLAN.pdf re-confirmed still 19 pages after this round's arithmetic fix, so the cited pp. 37/40/115-116 citations still don't exist in the mounted file; same false positive as rounds 2-3."
+      ]
     }
   ]
 }

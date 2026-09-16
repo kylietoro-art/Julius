@@ -1,0 +1,12 @@
+TICKET 9 of 10  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+[Document Authenticity Texture And Markings / Visual Genre Fit] fails for two separately fixable files. Shared/Police/scene_photos_2025-1018.pdf visibly calls itself a "SCENE / RECOVERED-PARTS PHOTO LOG," and the World Spec calls it a "Captioned scene-photograph set," but all eight pages are prose entry tables and signature/custody material; the PDF has zero image objects on every page. ACTD/Video/onboard_video_still_log.pdf likewise labels itself "STILL-FRAME LOG," yet every one of its six pages contains only preservation metadata and timestamp/description tables, with zero image objects per page. These artifacts therefore impersonate photographic and still-frame evidence without supplying any reader-visible imagery; embed the corresponding captioned photos/representative frames, or retitle each as a description/index log. Previously flagged issue re-verified: both remain present. The format-matches-spec clause passes: the register declares A51 as PDF and the built file is PDF, and no declared-format contradiction was found in the register cross-check.

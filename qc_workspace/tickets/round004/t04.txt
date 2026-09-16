@@ -1,0 +1,18 @@
+TICKET 4 of 10  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — No Solution Or Reasoning Leakage. The solver-visible late-claim application affirmatively argues for the same relief the worker must independently assess as materially at risk, while the scope and settlement documents supply categorical liability conclusions and completed valuation outputs. These are direct, removable shortcuts rather than raw evidence requiring professional synthesis. The No Environment / Filesystem clause was checked separately and no answer key, grading artifact, script, cache, or hidden solution file was found in the 62-file task filesystem.
+
+Finding #1: Late-claim application advocates the requested legal result (Major)
+Finding #2: Internal materials pre-resolve course and scope (Major)
+Finding #3: EOB packet gives the past-medical legal answer (Major)
+Finding #4: Life-care report supplies the completed future-care calculation (Major)
+Finding #5: Wage packet states the final lost-earning-capacity result (Major)

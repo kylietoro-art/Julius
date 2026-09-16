@@ -1,0 +1,63 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Shared values and deadline constraints materially disagree without an in-world reconciliation. The EOB's Exhibit A allocates billed charges among adjustments, paid/accepted amounts, and separately paid patient responsibility in a way that exceeds billed charges by $3,200, while the detailed ledger balances every line and requires $2,644,000—not $2,640,800—in adjustments. Separately, the docket export applies 10/18/2027 to all claimants, despite the current rejection certificate establishing that Cho's and Mowbray's claims were mailed rejected on 02/18/2026 and therefore carry the six-month 08/18/2026 deadline; this can cause forfeiture and is not reconciled by any amendment.
+
+Finding #1: Reyes EOB double-counts paid patient responsibility (Major)
+Finding #2: Case-wide docket entry assigns passengers the wrong filing deadline (Major)
+
+[P1] No Broken Document References
+
+FAIL. Multiple current documents expressly represent distinct supporting records or attachments as preserved, attached, retained, or produced, but the 62-file mounted inventory contains no corresponding native video, operational reports, DOT attachment packet, FST related-record set, or lien/EOB tabs. These are concrete document classes and identifiers, not vague background references, so a reader cannot resolve material evidence that the world itself invokes; mounting the records (or revising each document to make clear that only the supplied summary/index is in scope) is required.
+
+Finding #1: Native onboard-video clip is absent (Major)
+Finding #2: Final incident report relies on unmounted operational records and DriveCam footage (Minor)
+Finding #3: DOT post-accident-test attachments are not mounted (Minor)
+Finding #4: FST supplement's four named related records do not resolve (Minor)
+Finding #5: Lien/EOB support packet is missing (Minor)
+
+[P1] Calculation & Fixture Accuracy
+
+Shared/Settlement/Reyes_life_care_plan.pdf, pp. 6-15, has incorrect weighted annual figures in its annual-cost fixture. From its own inputs, physical therapy is (3x$7,200 + 33x$3,600)/36 + $3,800 = $7,700, not $8,150; occupational therapy is (3x$5,250 + 33x$2,100)/36 + $95 = $2,457.50, not $4,845; neurocognitive rehabilitation is $4,573.33, not $7,320; and psychotherapy is $7,966.67, not $8,275. This materially breaks the $180,000 annual aggregate and the undiscounted future-care total derived from it; the sensitivity PV table also conflicts with the report's stated annuity formula. In addition, ACTD/Claims/medical_billing_ledger.csv totals adjustments at $2,644,000 while Shared/Settlement/Reyes_lien_EOB.pdf Exhibit A reports $2,640,800 in contractual adjustment/write-off plus $3,200 patient responsibility. The records therefore present incompatible components for the same $2,840,000 billing total and require reconciliation.
+
+Finding #1: Incorrect weighted annual-cost categories and downstream future-care fixture (Major)
+Finding #2: Medical billing adjustment allocation conflicts with linked lien exhibit (Minor)
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+
+FAIL — No Solution Or Reasoning Leakage. The solver-visible late-claim application affirmatively argues for the same relief the worker must independently assess as materially at risk, while the scope and settlement documents supply categorical liability conclusions and completed valuation outputs. These are direct, removable shortcuts rather than raw evidence requiring professional synthesis. The No Environment / Filesystem clause was checked separately and no answer key, grading artifact, script, cache, or hidden solution file was found in the 62-file task filesystem.
+
+Finding #1: Late-claim application advocates the requested legal result (Major)
+Finding #2: Internal materials pre-resolve course and scope (Major)
+Finding #3: EOB packet gives the past-medical legal answer (Major)
+Finding #4: Life-care report supplies the completed future-care calculation (Major)
+Finding #5: Wage packet states the final lost-earning-capacity result (Major)
+
+[P1] Intended Traps Are Fair
+
+The world contains an unresolvable route-and-time contradiction in its core collision evidence. RunSchedule_Owl512.xlsx identifies Trip 06 as northbound, departing Poplar/Rivergate Plaza at 02:04 and reaching S. Main/Third at 02:31; its separate 02:05 entry is explicitly a southbound-reference control point. Yet the dispatch log says that same Trip 06 began northbound at 02:04 and its AVL position was at S. Main/Third at 02:05, while the final incident report treats 02:05 at S. Main/Third as coincident with the published timepoint. No in-world correction explains how the bus could travel between those locations in one minute or why the schedule's 02:31 northbound time is displaced; the workbook's registered traps cover the off-book characterization, not this timetable conflict. Correct the Trip 06 route/times or the collision/AVL/dispatch timing so a single itinerary supports the collision.
+
+[P0] Coherence Flag Ratio
+
+The current AVL/GPS track is materially inconsistent with the rest of the collision record. At 02:05:00-02:05:12 it gives headings of 181° through 188° while latitude declines, and the earlier known northbound leg uses heading 0° with increasing latitude; that is affirmative southbound motion. In contrast, the video log records Trip 06 departing northbound at 02:04 and northbound at impact, while the APC log records the 02:05:37 South Main/Third event as NB; police and filings likewise place the collision northbound. This unresolved contradiction concerns the central accident direction in a key operational source and is a meaningful coherence defect; correct the AVL coordinates/headings (or reconcile it explicitly in-world) to the northbound collision record.
+
+Finding #1: AVL/GPS collision movement contradicts northbound accident record (Major)
+
+[P0] Anomaly Detection Catch-All
+
+The prior application-access issue is still present. The task sheet states that every task incorporates Docuseal and Wiki.js, nine tasks require a Docuseal state change, and T3 requires a Wiki.js page correction; it also requires T1 to correct the live A62 practice-management record and T9 to change the A17 production-tracker record. Yet the task metadata declares the target apps as docuseal and wiki_js while its apps, task_apps, and environment fields are null, and the complete mounted filesystem exposes only static CSV exports such as Legal/Reyes/matter_calendar_MatterHub.csv and ACTD/Litigation/production_tracker.csv. An agent can neither perform nor demonstrate the required archival, routing, page edits, submitter updates, or live-record changes, so these core deliverable components are materially unusable. Mount functioning Docuseal and Wiki.js/AppData surfaces (including writable A62 and A17 records), or remove and re-scope the application-state-change requirements to actions supported by the filesystem.
+
+[P0] Format-Native Feature Fidelity
+
+Format-native fidelity materially fails in three separately fixable ways. RunSchedule_Owl512.xlsx uses a Status column without color/status encoding, TCR.pdf leaves the collision-report fields and visual-diagram slot empty, and the clearly marked preliminary incident-report draft has no comments or tracked changes. These defects make status meaning nonvisual, preserve a blank reserved visual area in an essential case artifact, and strip the working-state markup that a document presenting as DRAFT must retain.
+
+Finding #1: Unencoded Status column in RunSchedule_Owl512.xlsx (Minor)
+Finding #2: TCR.pdf is an uncompleted collision-report template (Major)
+Finding #3: Draft incident report lacks working-state markup (Major)
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+
+[Document Authenticity Texture And Markings / Visual Genre Fit] fails for two separately fixable files. Shared/Police/scene_photos_2025-1018.pdf visibly calls itself a "SCENE / RECOVERED-PARTS PHOTO LOG," and the World Spec calls it a "Captioned scene-photograph set," but all eight pages are prose entry tables and signature/custody material; the PDF has zero image objects on every page. ACTD/Video/onboard_video_still_log.pdf likewise labels itself "STILL-FRAME LOG," yet every one of its six pages contains only preservation metadata and timestamp/description tables, with zero image objects per page. These artifacts therefore impersonate photographic and still-frame evidence without supplying any reader-visible imagery; embed the corresponding captioned photos/representative frames, or retitle each as a description/index log. Previously flagged issue re-verified: both remain present. The format-matches-spec clause passes: the register declares A51 as PDF and the built file is PDF, and no declared-format contradiction was found in the register cross-check.
+
+[P1] External Citations Resolve To Real Content
+
+FAIL. In the current LIFE CARE PLAN.pdf, the TreasuryDirect citation supporting the plan's real risk-free discount-rate methodology resolves to HTTP 505, the NY DFS OON Guidance citation supporting the FAIR Health/UCR assertion resolves to HTTP 404, and the CMS locality configuration citation supporting the geographic-adjustment-factor methodology resolves to HTTP 404. Each link is attached to a substantive method used or defended in the plan, so a reader cannot inspect the cited authority or data; replace each with a live authoritative source that supports the stated use.

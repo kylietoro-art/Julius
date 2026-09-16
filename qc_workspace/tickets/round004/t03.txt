@@ -1,0 +1,15 @@
+TICKET 3 of 10  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+
+Shared/Settlement/Reyes_life_care_plan.pdf, pp. 6-15, has incorrect weighted annual figures in its annual-cost fixture. From its own inputs, physical therapy is (3x$7,200 + 33x$3,600)/36 + $3,800 = $7,700, not $8,150; occupational therapy is (3x$5,250 + 33x$2,100)/36 + $95 = $2,457.50, not $4,845; neurocognitive rehabilitation is $4,573.33, not $7,320; and psychotherapy is $7,966.67, not $8,275. This materially breaks the $180,000 annual aggregate and the undiscounted future-care total derived from it; the sensitivity PV table also conflicts with the report's stated annuity formula. In addition, ACTD/Claims/medical_billing_ledger.csv totals adjustments at $2,644,000 while Shared/Settlement/Reyes_lien_EOB.pdf Exhibit A reports $2,640,800 in contractual adjustment/write-off plus $3,200 patient responsibility. The records therefore present incompatible components for the same $2,840,000 billing total and require reconciliation.
+
+Finding #1: Incorrect weighted annual-cost categories and downstream future-care fixture (Major)
+Finding #2: Medical billing adjustment allocation conflicts with linked lien exhibit (Minor)

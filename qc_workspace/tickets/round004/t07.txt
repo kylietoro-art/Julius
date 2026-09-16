@@ -1,0 +1,12 @@
+TICKET 7 of 10  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+
+The prior application-access issue is still present. The task sheet states that every task incorporates Docuseal and Wiki.js, nine tasks require a Docuseal state change, and T3 requires a Wiki.js page correction; it also requires T1 to correct the live A62 practice-management record and T9 to change the A17 production-tracker record. Yet the task metadata declares the target apps as docuseal and wiki_js while its apps, task_apps, and environment fields are null, and the complete mounted filesystem exposes only static CSV exports such as Legal/Reyes/matter_calendar_MatterHub.csv and ACTD/Litigation/production_tracker.csv. An agent can neither perform nor demonstrate the required archival, routing, page edits, submitter updates, or live-record changes, so these core deliverable components are materially unusable. Mount functioning Docuseal and Wiki.js/AppData surfaces (including writable A62 and A17 records), or remove and re-scope the application-state-change requirements to actions supported by the filesystem.

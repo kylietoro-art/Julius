@@ -471,3 +471,22 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Safety/IR_2025-1018_final.docx | para 13, para 42 [round3: distinguished from reserve_memo.docx (informal claims-manager assessment) -- this is the Director of Safety's OFFICIAL final report, with a section literally titled to match T5's task name and declaring a 'determination,' which a real safety report wouldn't naturally do. Kept all underlying facts (schedule/AVL/telemetry), removed only the legal-conclusion framing and task-name collision.] | 'The course-and-scope determination is therefore that...' sentence (para13); section 7 heading 'Course-and-Scope Determination' | → | sentence removed (redundant restatement using T5's own task-name vocabulary); heading renamed to 'Operator Assignment and Route Verification' |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_life_care_plan.pdf | pages 8-9, Physical/Occupational Therapy, Neurocognitive Rehab, Psychotherapy tables [round4: Calculation & Fixture Accuracy, weighted annual averages didn't match the tables' own stated frequency/unit-cost/year-range inputs] | $8,150 (PT) / $4,845 (OT) / $7,320 (neurocognitive) / $8,275 (psychotherapy) | → | $7,700 / $2,458 / $4,573 / $7,967 -- each recomputed by hand from the row's own stated inputs |
+| Shared/Settlement/Reyes_life_care_plan.pdf | page 13, Annual Cost Summary table [round4: same finding, cascading fix] | 4 category rows updated to match; Rounding/geographic-pricing adjustment $1,700 | → | Rounding/geographic-pricing adjustment $7,592 -- rebalanced so Total, weighted annual average still equals the spec's canonical $180,000 (and downstream $6,480,000 undiscounted / $4,240,000 PV, both unchanged) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Authorized Owl Routes sheet, F7:F12 [round4: Format-Native Feature Fidelity, Status column had no fill/badge encoding (only font color)] | white/cream fill behind existing dark-green "Authorized" text | → | light green #DCEFE0 fill added (5.32:1 contrast against the existing #2E6B3B text), giving the Status column an actual color-coded badge |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Safety/IR_2025-1018_draft.docx | para 13 ("Passengers aboard: approximately four...") [round4: Format-Native Feature Fidelity, a document presenting as DRAFT had no comments/tracked-changes markup] | no comment markup | → | added one native Word comment (author W. Tran) on "approximately four" reading "Confirm against APC/farebox pull before this goes anywhere -- don't want this to be the number that sticks." Text content unchanged; format-native markup only, verified via direct OOXML manipulation (well-formed XML confirmed on all 5 modified parts, full paragraph text diffed byte-identical to the original) |

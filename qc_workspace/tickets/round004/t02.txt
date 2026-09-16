@@ -1,0 +1,18 @@
+TICKET 2 of 10  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+
+FAIL. Multiple current documents expressly represent distinct supporting records or attachments as preserved, attached, retained, or produced, but the 62-file mounted inventory contains no corresponding native video, operational reports, DOT attachment packet, FST related-record set, or lien/EOB tabs. These are concrete document classes and identifiers, not vague background references, so a reader cannot resolve material evidence that the world itself invokes; mounting the records (or revising each document to make clear that only the supplied summary/index is in scope) is required.
+
+Finding #1: Native onboard-video clip is absent (Major)
+Finding #2: Final incident report relies on unmounted operational records and DriveCam footage (Minor)
+Finding #3: DOT post-accident-test attachments are not mounted (Minor)
+Finding #4: FST supplement's four named related records do not resolve (Minor)
+Finding #5: Lien/EOB support packet is missing (Minor)

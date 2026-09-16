@@ -1,0 +1,15 @@
+TICKET 1 of 10  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+
+Shared values and deadline constraints materially disagree without an in-world reconciliation. The EOB's Exhibit A allocates billed charges among adjustments, paid/accepted amounts, and separately paid patient responsibility in a way that exceeds billed charges by $3,200, while the detailed ledger balances every line and requires $2,644,000—not $2,640,800—in adjustments. Separately, the docket export applies 10/18/2027 to all claimants, despite the current rejection certificate establishing that Cho's and Mowbray's claims were mailed rejected on 02/18/2026 and therefore carry the six-month 08/18/2026 deadline; this can cause forfeiture and is not reconciled by any amendment.
+
+Finding #1: Reyes EOB double-counts paid patient responsibility (Major)
+Finding #2: Case-wide docket entry assigns passengers the wrong filing deadline (Major)

@@ -1,0 +1,12 @@
+TICKET 5 of 10  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Intended Traps Are Fair
+
+The world contains an unresolvable route-and-time contradiction in its core collision evidence. RunSchedule_Owl512.xlsx identifies Trip 06 as northbound, departing Poplar/Rivergate Plaza at 02:04 and reaching S. Main/Third at 02:31; its separate 02:05 entry is explicitly a southbound-reference control point. Yet the dispatch log says that same Trip 06 began northbound at 02:04 and its AVL position was at S. Main/Third at 02:05, while the final incident report treats 02:05 at S. Main/Third as coincident with the published timepoint. No in-world correction explains how the bus could travel between those locations in one minute or why the schedule's 02:31 northbound time is displaced; the workbook's registered traps cover the off-book characterization, not this timetable conflict. Correct the Trip 06 route/times or the collision/AVL/dispatch timing so a single itinerary supports the collision.

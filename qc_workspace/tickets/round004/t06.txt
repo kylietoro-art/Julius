@@ -1,0 +1,14 @@
+TICKET 6 of 10  |  round 4
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Coherence Flag Ratio
+
+The current AVL/GPS track is materially inconsistent with the rest of the collision record. At 02:05:00-02:05:12 it gives headings of 181° through 188° while latitude declines, and the earlier known northbound leg uses heading 0° with increasing latitude; that is affirmative southbound motion. In contrast, the video log records Trip 06 departing northbound at 02:04 and northbound at impact, while the APC log records the 02:05:37 South Main/Third event as NB; police and filings likewise place the collision northbound. This unresolved contradiction concerns the central accident direction in a key operational source and is a meaningful coherence defect; correct the AVL coordinates/headings (or reconcile it explicitly in-world) to the northbound collision record.
+
+Finding #1: AVL/GPS collision movement contradicts northbound accident record (Major)
