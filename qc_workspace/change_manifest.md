@@ -277,3 +277,21 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Claims/reserve_ledger.csv | row 6 (RL-2025-0104) [T05(c) round2: Coherence Flag Ratio, contradicts A43 (reserve_memo.docx) same-date statement that no LCP is on file yet] | Reset following C&S finding, lab BAC, LCP workup — see A43. | → | Reset following C&S finding, lab BAC, initial catastrophic-injury documentation — see A43. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Police/FST_supplement_2025-1018.pdf | section 11 heading + first bullet [T02 round2: No Broken Document References, attachments not mounted in filesystem] | 11. Attachments to This Supplement (photocopy) | → | 11. Related Records Referenced in This Supplement; dropped '(photocopy)' claim |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Compliance/DOT_655_Keeler.pdf | page 4, distribution list [T02 round2: No Broken Document References, attachments not mounted in filesystem] | Attachment A/B/C — [claimed physically enclosed] | → | Attachment A/B/C (retained in ACTD Compliance file): [same content, custody clarified] |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| Shared/Settlement/Reyes_lien_EOB.pdf | pages 1, 2, 3 heading, 4 (6 locations) [T02 round2: No Broken Document References, Tabs 1-11 not mounted in filesystem] | 'enclosed'/'Enclosure Index'/'Enclosures (Exhibit A; Tabs 1-11)' claiming Tabs 1-11 physically included | → | 'on file'/'Reference Index'/'Enclosures (Exhibit A); Tabs 1-11 retained in claims file' -- only Exhibit A (actually part of this PDF) still called enclosed |
