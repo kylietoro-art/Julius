@@ -453,3 +453,15 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/CAD/Dispatch_log_2025-1018.csv | lines 37, 45 [round3: Consistent Naming, no trap/subsystem-number justification found in spec] | ACTD-IR-2025-1018-001 (x2) | → | ACTD-IR-2025-1018 (matches all other 10 references in corpus) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Authorized Owl Routes sheet, A7:A12 [round3: Text Legibility And Contrast, ~2.9:1 contrast on cream-fill rows A8/A10/A12] | Route # column: gold #B8862B font (all rows) | → | dark navy #0E1B2C font, matching column B's body-text color |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/medical_billing_ledger.csv | last row [round3: CSV Formatted Correctly, every row after header must be a data record] | trailing TOTAL row (mixed schema, not a bill record) | → | removed; not a Must-match artifact for the billed/paid canonical values (that's A15), and the 82 line items independently foot to the same totals |
