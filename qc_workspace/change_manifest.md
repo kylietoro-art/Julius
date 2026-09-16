@@ -295,3 +295,15 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | Shared/Settlement/Reyes_lien_EOB.pdf | pages 1, 2, 3 heading, 4 (6 locations) [T02 round2: No Broken Document References, Tabs 1-11 not mounted in filesystem] | 'enclosed'/'Enclosure Index'/'Enclosures (Exhibit A; Tabs 1-11)' claiming Tabs 1-11 physically included | → | 'on file'/'Reference Index'/'Enclosures (Exhibit A); Tabs 1-11 retained in claims file' -- only Exhibit A (actually part of this PDF) still called enclosed |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Dispatch/email_offbook.eml | whole file (A09) [T08 round2: Built Files Match Spec Inventory, built file didn't match registry's Purpose & Content / Author requirements] | To: dispatch-supervisors@actd.gov, Cc: mokonkwo@actd.gov, Subject: 'FYI — Keeler incident on Owl — off-book run?', ~250-word body | → | To: gespinoza@actd.gov, dfarkas@actd.gov (no Cc), Subject: 'Overnight incident - Route 512', 3-sentence body per registry |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Dispatch/tran_text_thread.pdf | whole file (A52) [T08 round2: Built Files Match Spec Inventory, built file didn't match registry's narrow personal-device exchange] | 5 pages, 2:47am-Oct 24, 32 messages | → | 1 page, 3:20-3:40am 10/18/2025, 3 messages per registry |
