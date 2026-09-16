@@ -211,3 +211,15 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/HR/Keeler_personnel.docx | table header rows, 18 runs across 4 tables [white text on light gray D9D9D9 fill was effectively unreadable] | white (FFFFFF) header text on D9D9D9 fill, 4 tables (Date/Event, Item/Status, Cycle/Rating/Notes, Test type/History) | → | black (000000) header text, same fill, same labels |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | table1 row5 [T10 round2: de-signpost, stamp handed T6's remediation-path first step for free] | Prior initial reserve — SUPERSEDED | → | Prior initial reserve — Briggs, 10/28/2025 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Claims/reserve_memo.docx | para 14, para 30, table1 row5 [T10 round2: No Signposting of Load-Bearing Facts] | bold: $250,000 / $3,250,000 / supersedes (para 14); Controlling reserve label (para 30); Prior initial reserve — SUPERSEDED (table1 row5) | → | bold removed, text unchanged except table1 row5 label reworded |
