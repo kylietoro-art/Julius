@@ -490,3 +490,11 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | ACTD/Safety/IR_2025-1018_draft.docx | para 13 ("Passengers aboard: approximately four...") [round4: Format-Native Feature Fidelity, a document presenting as DRAFT had no comments/tracked-changes markup] | no comment markup | → | added one native Word comment (author W. Tran) on "approximately four" reading "Confirm against APC/farebox pull before this goes anywhere -- don't want this to be the number that sticks." Text content unchanged; format-native markup only, verified via direct OOXML manipulation (well-formed XML confirmed on all 5 modified parts, full paragraph text diffed byte-identical to the original) |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| ACTD/Ops/RunSchedule_Owl512.xlsx | Trip 06 row, S. Main/Third column [round4b: Intended Traps Are Fair -- user-directed fix, not a route redesign. A01/A02 register 02:05 as the canonical collision time; APC log's other 9 trips corroborate the schedule's own ~27-33min stop order (Poplar->AlderCreek->DowntownLoop->Third->Fifth). Both numbers are independently canonical and can't be reconciled by moving either one -- so state both plainly, explain neither.] | 02:05 (SB timepoint pass) / 02:31 | → | 02:31 scheduled (actual: 02:05, per incident record) |
+| ACTD/Ops/RunSchedule_Owl512.xlsx | rows 32-35, "Key Timepoint — S. Main / Third" explanatory block [round4b: same finding -- this block existed only to explain the confusing cell above; once the cell states both numbers plainly, the block is redundant, and its own wording ("headway anchor," "SB pass, mid-loop reference") was the same confusing jargon] | full block (header, 1-row table, trailing note) | → | removed (cell contents cleared, rows left blank; merged-range structure below re-verified intact) |
+| ACTD/CAD/Dispatch_log_2025-1018.csv | line 33, 02:06 radio_call entry [round4b: same finding -- matching cross-reference to the same confusing schedule concept] | AVL last position vicinity S. Main at Third Ave (SB reference timepoint 02:05). | → | AVL last position vicinity S. Main at Third Ave. |
