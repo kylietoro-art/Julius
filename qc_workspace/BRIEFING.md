@@ -45,6 +45,7 @@ expected, not a sign the reasoning was wrong.
 | EOB / life-care plan / wage records "supply the damages answer" (No Reachable Shortcut) | Checked directly against T4/T6's Design Purpose in the spec: A35 (EOB) stating $196K paid, A36 (life-care plan) stating its own $4,240,000 PV, A37 (wage records) stating its own $1,200,000 lost-earning-capacity opinion are each **exactly** the artifact the task is supposed to read and apply legal doctrine to (Howell/Corenbaum paid-not-billed; PV-not-undiscounted). None states the memo's actual synthesis (net of lien, comparative fault, combined total). A36's PV-vs-undiscounted gap is its *registered* trap, working as designed. | NOT LEAKAGE — disputed R4, new reasoning, should hold |
 | Late-claim application argues for the relief it's applying for; reserve memo reaches a course-and-scope conclusion | Advocacy document / internal memo drawing its own conclusion — protected by standing ruling #1. | PROTECTED — disputed R2-4 |
 | Production tracker's A42 (junior note) "first-pass" vs A43 (senior memo) "confirmed" privilege split | A17's registered trap, working as designed — T9's whole job is to independently correct A42's tag via CCP §2018.030, not defer to the tracker's own unreviewed status column. | TRAP — never touch |
+| AVL_GPS_track_2025-1018.csv heading/lat show the bus moving south away from S. Main/Fifth at collision time, conflicting with every other source's "traveling northbound" (Coherence Flag Ratio) | Not a separate GPS defect — it's the spatial face of the Trip 06 timing gap below. The crash happens 1 minute after the Rivergate-Plaza layover ends, nowhere near enough time to have actually driven the real NB route through Alder Creek/Broadway and Downtown Loop. Any edit that makes the direction read northbound has to also decide how much of the route the bus covered, which either keeps the trip too short to be a real NB run or stretches the timestamps and erases the gap R4 deliberately left unexplained. A12 is registered "no trap of its own," but it's downstream of the same T5 candor-test design (was Keeler actually on his assigned route). | PART OF TRIP 06 MYSTERY — disputed R5, do not edit AVL_GPS_track_2025-1018.csv's lat/lon/heading for this |
 
 ## Tool false-positive patterns (don't re-investigate these either)
 
@@ -107,6 +108,23 @@ test (was Keeler on his assigned route — not whether he took a shortcut mid-ro
 - Nothing else changed. If AutoQC flags "why does Trip 06 skip two stops" or similar
   in a future round, the answer is: that's now an intentionally unexplained fact for
   the task-solver to notice, not a defect to fix further.
+
+**R5 addendum — same mystery, different file.** AutoQC's Coherence Flag Ratio
+finding raised the *spatial* half of this same gap: `AVL_GPS_track_2025-1018.csv`
+shows the bus stationary at S. Main/Fifth (34.08498, this file's north terminus,
+visited dozens of times elsewhere as a layover point) until 02:00:30, then moving
+with falling latitude and a heading that reads 0 (north, by this file's own
+convention elsewhere) for 4.5 minutes before "correcting" to ~180 (south) only in
+the final 12 seconds before impact — i.e. the file shows it heading away from S.
+Main/Fifth, not arriving into it as Trip 06's NB direction requires. This is not a
+separate GPS data-entry error to fix: the crash timestamp (02:05:12) is only 1
+minute after the scheduled Rivergate-Plaza layover ends, so there is no way to
+redraw the position trace as a genuine northbound arrival without either (a)
+keeping the trip too short to be a real NB run (doesn't actually fix anything) or
+(b) stretching it to a realistic multi-stop northbound duration, which would erase
+the very timing gap this section exists to preserve. Decision: do not edit
+AVL_GPS_track_2025-1018.csv's lat/lon/heading fields for this. Disputed R5 with the
+same "candor test, deliberately unexplained" reasoning as the timing gap above.
 
 Note for future rounds: when editing this sheet, **clear cell contents rather than
 `ws.delete_rows()`** — openpyxl does not reliably shift merged-cell ranges on row
