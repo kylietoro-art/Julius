@@ -504,3 +504,45 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | filesystem/Legal/Reyes/intake_memo.docx | para 27 (Government Claims Act Posture section) | to grant the application on any of four enumerated grounds. | → | to grant the application if one or more of the statute's enumerated grounds is established. |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| filesystem/Shared/Settlement/Reyes_life_care_plan.pdf | p.9, attendant-care 11% loading (11% of $98,912 = $10,880.32) | $11,337 | → | $10,880 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| filesystem/Shared/Settlement/Reyes_life_care_plan.pdf | p.9 Subtotal attendant care; p.13 Personal care attendant hours row | $110,249 (attendant-care subtotal, p.9 and p.13) | → | $109,792 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| filesystem/Shared/Settlement/Reyes_life_care_plan.pdf | p.13 Annual Cost Summary, rebalanced to keep Total = $180,000 after the attendant-care fix | $7,592 (rounding/geo-pricing plug, p.13) | → | $8,049 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| filesystem/Shared/Settlement/Reyes_life_care_plan.pdf | p.16 Sensitivity Analysis; p.17 extended sensitivity table | $4,592,000 (PV @2.0%/36yr, p.16 and p.17) | → | $4,588,000 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| filesystem/Shared/Settlement/Reyes_life_care_plan.pdf | p.16 Sensitivity Analysis; p.17 extended sensitivity table | $3,921,000 (PV @3.0%/36yr, p.16 and p.17) | → | $3,930,000 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| filesystem/Shared/Settlement/Reyes_life_care_plan.pdf | p.17 extended sensitivity table | $4,929,000 (PV @2.0%/40yr, p.17) | → | $4,924,000 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| filesystem/Shared/Settlement/Reyes_life_care_plan.pdf | p.17 extended sensitivity table | $4,153,000 (PV @3.0%/40yr, p.17) | → | $4,161,000 |
