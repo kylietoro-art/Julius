@@ -11,7 +11,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 2 | 2026-09-16T16:54 | 12 | 7 | 6 | fixed 4, widened 0, traps 0, false 8, blocked 0 |
 | 3 | 2026-09-16T20:05 | 12 | 6 | 6 | fixed 7, widened 1, traps 3, false 4, blocked 0 |
 | 4 | 2026-09-16T21:23 | 10 | 7 | 4 | fixed 2, widened 0, traps 1, false 6, blocked 2 |
-| 5 | 2026-09-17T15:53 | 13 | 7 | 7 | _open_ |
+| 5 | 2026-09-17T15:53 | 13 | 7 | 7 | fixed 5, widened 0, traps 1, false 7, blocked 0 |
 
 ## Detail
 

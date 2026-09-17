@@ -416,8 +416,19 @@
         "a_code_leakage",
         "placeholder_synthetic"
       ],
-      "disposition": null,
-      "note": ""
+      "disposition": {
+        "fixed": 5,
+        "expanded": 0,
+        "traps": 1,
+        "false": 7,
+        "blocked": 0
+      },
+      "note": "",
+      "closed": "2026-09-17T16:40:02",
+      "changed": "Fixed intake_memo.docx's false 'four enumerated grounds' statute claim (T5), 4 life-care-plan arithmetic errors across the attendant-care loading and PV sensitivity tables (T3), A20 roster's schema mismatch against the External Files Registry (T9), a stale 'placeholder fields' heading in the IR draft (T10), and a bolded signposted date in intake_memo.docx (T12).",
+      "disputes": [
+        "T1/T3's EOB-vs-ledger allocation, T2's 9 App-Data inventory/reference mismatches, T4's advocacy-document conclusions, T7's Docuseal/Wiki.js/A62 app actions, T8's TCR.pdf, T11's photo/video logs, and T13's LCP citation page-counts are all re-disputed with the same verified reasoning as R1-4 (see BRIEFING.md); T6's AVL/GPS direction is disputed as the spatial half of the R4 Trip-06 timing gap, not a separate defect; T1's docket 10/18/2027 date is left untouched as a registered trap."
+      ]
     }
   ]
 }
