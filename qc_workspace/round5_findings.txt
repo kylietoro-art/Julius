@@ -1,0 +1,56 @@
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+FAIL. The EOB's Exhibit A allocates $2,840,000 billed among $2,640,800 adjustments, $196,000 paid/accepted, and $3,200 patient responsibility even though its notes say paid/accepted includes paid patient out-of-pocket amounts. The 81-row billing ledger instead balances every line at $2,840,000 billed, $196,000 paid, and $2,644,000 adjustments, making this a material $3,200 contradiction. Separately, both docket artifacts apply 10/18/2027 to the passengers, but their 02/18/2026 rejection notices impose a six-month filing period; the canonical sheet derives 08/18/2026, and the erroneous deadline has no reconciliation.
+Finding #1: Reyes lien EOB double-counts paid patient responsibility (Major)
+Finding #2: Case-wide docket assigns the passengers the wrong filing deadline (Major)
+
+[P1] No Broken Document References
+The world fails because numerous current documents represent discrete records, exhibits, attachments, or native media as preserved, retained, attached, produced, or available, but the complete mounted inventory has no corresponding files. The missing native onboard footage is especially material: both the still log and production tracker identify a specific MP4 and native-production identifier, yet no MP4/media export is mounted. The final incident report, DOT form, FST supplement, lien/EOB transmittal, life-care plan, and photo log each separately invoke additional defined supporting records that cannot be resolved from the mounted materials.
+Finding #1: Native onboard-video clip is unmounted (Major)
+Finding #2: Final incident report relies on absent operational and DriveCam records (Minor)
+Finding #3: DOT testing attachments are absent (Minor)
+Finding #4: FST supplement's related police/testing records do not resolve (Minor)
+Finding #5: Lien/EOB support packet is unmounted (Minor)
+Finding #6: Life-care-plan attachments are only referenced, not supplied (Minor)
+Finding #7: Photo-log hash manifest is missing (Minor)
+
+[P1] Calculation & Fixture Accuracy
+Shared/Settlement/Reyes_life_care_plan.pdf still contains inaccurate calculation fixtures. Its page 14-15 sensitivity tables conflict with its stated level-annuity formula: at $180,000 annually, 2% for 36 years is approximately $4.588M (not $4.592M) and 3% for 36 years is approximately $3.930M (not $3.921M), with additional 30- and 40-year discrepancies. On page 7, the stated $11,337 "blended 11% loading" does not equal 11% of the $93,440 attendant cost plus $5,472 respite cost ($10,880.32), so the attendant-cost fixture is also arithmetically unsupported. Separately, ACTD/Claims/medical_billing_ledger.csv totals $2,644,000 in adjustments while Shared/Settlement/Reyes_lien_EOB.pdf Exhibit A reports $2,640,800 adjustments plus $3,200 patient responsibility for the same $2,840,000 billed / $196,000 paid dataset; the conflicting allocation must be reconciled. Previously flagged weighted therapy figures were checked and are now corrected (PT $7,700; OT $2,458; neurocognitive $4,573; psychotherapy $7,967).
+Finding #1: Life-care sensitivity PV tables do not follow the stated annuity formula (Major)
+Finding #2: Attendant-care 11% loading is miscomputed (Minor)
+Finding #3: Billing ledger and lien exhibit allocate the same charges inconsistently (Minor)
+
+[P0] No Reachable Shortcut to the Answer (consolidated)
+FAIL - the No Solution Or Reasoning Leakage clause is not met. The late-claim application affirmatively states that the facts establish statutory incapacity and supports granting leave despite the contrary capacity and retention evidence; the reserve memo resolves course-and-scope and vicarious exposure; and the settlement package states the recoverable past-medical number and completed future-care and wage-loss present values. These are worker-readable conclusions and finished calculations that collapse the required legal and damages analysis. The No Environment / Filesystem clause was checked separately and no shortcut artifact was found in the 62-file mounted solver corpus.
+
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+FAIL - [Failing - U.S. Regional Requirements]. The California-specific late-claim analysis wrongly says the board must grant leave on "any of four enumerated grounds" and makes the Section 911.6(b)(4) "all of the time" rule central, while omitting the current Section 911.6(b)(5) partial-incapacity ground. The official California code text provides that (b)(5) applies when the claimant was incapacitated "during any of the time" specified in Section 911.2 and the application is presented within six months after incapacity ends; the world fixes recovery at 02/05/2026 and application on 05/15/2026. That unaddressed rule can materially alter Reyes's prospects and therefore makes this U.S.-centered litigation world's governing jurisdictional assumptions unreliable.
+
+[P0] Coherence Flag Ratio
+ACTD/CAD/AVL_GPS_track_2025-1018.csv remains materially inconsistent with the central collision record. At 02:05:00 through 02:05:12 its latitude falls from 34.07898 to 34.07852 while heading rises from 181 to 188 degrees, which is affirmative southbound travel. That conflicts with the APC log's 02:04:12 and 02:05:37 NB records, the onboard-video log's northbound departure and impact sequence, and the police report's statement that Bus #4177 was "traveling northbound"; the final incident report, civil complaint, and criminal complaint likewise say northbound. Because direction of travel is a core fact of the accident and the CSV is a key operational source, this unresolved cross-file contradiction is a meaningful coherence defect under the fail criterion.
+Finding #1: AVL/GPS collision movement contradicts the northbound accident record (Major)
+
+[P0] Anomaly Detection Catch-All
+The spec states that every task incorporates both designated apps, that nine require a Docuseal state change, and that T3 requires a Wiki.js page correction. T1 also requires an entry "directly into the firm's own practice-management system (A62)," while T9 requires correcting the production-tracker system (A17); however, task metadata has apps, task_apps, and environment all set to null, and the mounted counterparts are CSV text exports. Consequently an agent cannot perform or evidence the required submissions, signatures, archival, submitter updates, wiki correction, or persisted record corrections, which is a material anomaly not cured by the static files.
+Finding #1: Required application actions are not provisioned (Major)
+
+[P0] Format-Native Feature Fidelity
+Format-native feature fidelity fails under sub-check (b) in custom_fields/field_c88cc4bd7f065dfa97c92e1a75c2ecfa/13.pdf (TCR.pdf). The rendered four-page form has no entered collision, party, injury/witness, or preparer facts, and page 4 is an empty factual-diagram grid whose visible instruction says to import a graphic. This leaves a central collision-report artifact as an uncompleted template rather than a reader-usable report; populate the form and factual diagram for this matter or remove the template.
+Finding #1: TCR.pdf retains blank collision-report and factual-diagram slots (Major)
+
+Minor issues:
+
+[P0] Built Files Match Spec Inventory
+A20, Keeler Duty Roster / Timekeeping, materially diverges from the External Files Registry's stated content. The registry requires fields including employee_id, employee_name, shift_date, clock_in, assigned_run_id, clock_out, and status, with Keeler's clock-out blank/incident-truncated for the collision row; the built file instead has a different schema and records a definite 10/18/2025 02:35 sign-out. This changes the prescribed external record's content and state, so the built file does not match the registry's content intent.
+Finding #1: A20 roster does not match the registry-specified record (Minor)
+
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+task_fs/filesystem/ACTD/Safety/IR_2025-1018_draft.docx contains the visible heading "2. Preliminary Data - placeholder fields." The section beneath it presents case-specific entries, so calling them "placeholder fields" is an unresolved drafting/template label rather than a completed work-product designation. Rename the heading to "Preliminary Data" (or "Unverified Preliminary Data") to preserve the report's draft status without synthetic residue.
+
+[P1] Documents Look Like What They Claim To Be (consolidated)
+[Visual Genre Fit] fails for two separately fixable artifacts. Shared/Police/scene_photos_2025-1018.pdf is specified as a "Captioned scene-photograph set" of "~10-15 captioned photos" and labels itself "Scene / Recovered-Parts Photo Log," but the current eight-page PDF has zero images on every page and presents only descriptions, locations, timestamps, and operators; it visibly impersonates a photo-evidence log without any photographs. ACTD/Video/onboard_video_still_log.pdf similarly labels itself "ONBOARD VIDEO / CAMERA SYSTEM - STILL-FRAME LOG," yet each of its six pages has zero images and the rendered incident entries are solely a timestamp/camera/description table; add the corresponding representative still frames to make this log look like the evidence genre it claims to be.
+
+[P1] No Signposting of Load-Bearing Facts
+task_fs/filesystem/Legal/Reyes/intake_memo.docx artificially singles out the answer-bearing claim-window date by bolding "Monday, 04/20/2026" inside its Government Claims Act analysis. The same audit found the police photo log, rejection notice, and late-claim application use consistent table/form/pleading hierarchy rather than uniquely highlighting a fact, so the defect is confined to the intake memo. Remove the direct bold from the date (and keep it in the same body-text treatment as the surrounding analysis) so the deadline must be derived and assessed from the record rather than visually signposted.
+
+[P1] External Citations Resolve To Real Content
+FAIL. LIFE CARE PLAN.pdf still relies on a TreasuryDirect Historical Auction Query for the 0.60% real risk-free discount rate, but the exact printed URL resolves to HTTP 505. Its Sources and Methods attachment also cites the NY DFS OON guidance for the proposition that FAIR Health may be used as an independent UCR source, and the CMS locality-configuration page for the GAF adjustment; the exact URLs resolve to HTTP 404. These are substantive methods used to support prices and present value, leaving readers unable to inspect the cited authority or data; replace each printed URL with a live, authoritative source supporting the stated method.

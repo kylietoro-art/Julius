@@ -11,6 +11,7 @@ each one means that class was fixed at the instance level, not the class level.
 | 2 | 2026-09-16T16:54 | 12 | 7 | 6 | fixed 4, widened 0, traps 0, false 8, blocked 0 |
 | 3 | 2026-09-16T20:05 | 12 | 6 | 6 | fixed 7, widened 1, traps 3, false 4, blocked 0 |
 | 4 | 2026-09-16T21:23 | 10 | 7 | 4 | fixed 2, widened 0, traps 1, false 6, blocked 2 |
+| 5 | 2026-09-17T15:53 | 13 | 7 | 7 | _open_ |
 
 ## Detail
 
@@ -79,4 +80,20 @@ Note: Gate 6 blast_radius: 0 stale values; 2 footing flags (medical_billing_ledg
   - files named: plan.pdf
 
 Note: T05 (Intended Traps Are Fair) and T06 (Coherence Flag Ratio) BLOCKED pending user input: RunSchedule_Owl512.xlsx's own column-order pattern (validated identically across all 10 other trips) places S.Main/Third between Fifth and Downtown Loop, a ~27-min path from Poplar/Rivergate Plaza -- but the video log, APC scan log, dispatch's position report, and the police report's diagram narrative all place the collision at Third only ~1 min after Trip 06's 02:04 departure. AVL_GPS_track_2025-1018.csv's own lat/heading data shows the same contradiction (latitude decreases continuously through the collision, heading label only catches up to 181-188 degrees in the final 12 seconds). Neither A08 nor A12 has a trap of its own (both registered 'no trap of its own' -- pure course-and-scope corroboration for T2/T5/T7/T9), so this is a real structural defect, not a trap to preserve. Resolving it requires redesigning route geometry or the collision timeline across 3 source-of-truth files with real risk of breaking task-corroboration chains; flagged to user rather than unilaterally resolved, same bar as the round-2 section-911.6 issue.
+
+### Round 5, 2026-09-17T15:53
+
+- **Uncategorised, read the finding text**: 3 finding(s)  **(REPEAT)**
+  - files named: 13.pdf, tcr.pdf, onboard_video_still_log.pdf, scene_photos_2025-1018.pdf
+- **Totals don't foot / calculations disagree with inputs**: 2 finding(s)  **(REPEAT)**
+  - files named: medical_billing_ledger.csv, reyes_lien_eob.pdf, reyes_life_care_plan.pdf
+- **Solution or reasoning leaked into world files**: 2 finding(s)  **(REPEAT)**
+  - files named: intake_memo.docx
+- **Real-world references, citations or jurisdiction facts are wrong**: 2 finding(s)  **(REPEAT)**
+  - files named: plan.pdf
+- **Builder A## codes visible in world files**: 2 finding(s)  **(REPEAT)**
+- **A referenced document or value doesn't resolve**: 1 finding(s)  **(REPEAT)**
+  - files named: avl_gps_track_2025-1018.csv
+- **Placeholder, template residue, or synthetic filler**: 1 finding(s)  **(REPEAT)**
+  - files named: ir_2025-1018_draft.docx
 

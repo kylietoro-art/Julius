@@ -1,0 +1,13 @@
+TICKET 1 of 13  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Numerical Values Constraints And Structured Data Are Consistent
+FAIL. The EOB's Exhibit A allocates $2,840,000 billed among $2,640,800 adjustments, $196,000 paid/accepted, and $3,200 patient responsibility even though its notes say paid/accepted includes paid patient out-of-pocket amounts. The 81-row billing ledger instead balances every line at $2,840,000 billed, $196,000 paid, and $2,644,000 adjustments, making this a material $3,200 contradiction. Separately, both docket artifacts apply 10/18/2027 to the passengers, but their 02/18/2026 rejection notices impose a six-month filing period; the canonical sheet derives 08/18/2026, and the erroneous deadline has no reconciliation.
+Finding #1: Reyes lien EOB double-counts paid patient responsibility (Major)
+Finding #2: Case-wide docket assigns the passengers the wrong filing deadline (Major)

@@ -1,0 +1,11 @@
+TICKET 11 of 13  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Documents Look Like What They Claim To Be (consolidated)
+[Visual Genre Fit] fails for two separately fixable artifacts. Shared/Police/scene_photos_2025-1018.pdf is specified as a "Captioned scene-photograph set" of "~10-15 captioned photos" and labels itself "Scene / Recovered-Parts Photo Log," but the current eight-page PDF has zero images on every page and presents only descriptions, locations, timestamps, and operators; it visibly impersonates a photo-evidence log without any photographs. ACTD/Video/onboard_video_still_log.pdf similarly labels itself "ONBOARD VIDEO / CAMERA SYSTEM - STILL-FRAME LOG," yet each of its six pages has zero images and the rendered incident entries are solely a timestamp/camera/description table; add the corresponding representative still frames to make this log look like the evidence genre it claims to be.

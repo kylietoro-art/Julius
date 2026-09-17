@@ -1,0 +1,12 @@
+TICKET 9 of 13  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Built Files Match Spec Inventory
+A20, Keeler Duty Roster / Timekeeping, materially diverges from the External Files Registry's stated content. The registry requires fields including employee_id, employee_name, shift_date, clock_in, assigned_run_id, clock_out, and status, with Keeler's clock-out blank/incident-truncated for the collision row; the built file instead has a different schema and records a definite 10/18/2025 02:35 sign-out. This changes the prescribed external record's content and state, so the built file does not match the registry's content intent.
+Finding #1: A20 roster does not match the registry-specified record (Minor)

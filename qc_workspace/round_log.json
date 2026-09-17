@@ -348,6 +348,76 @@
         "T09: scene_photos and onboard_video_still_log match their own registry Name/Style and each documents where the actual evidence is archived -- an honest log, not impersonation; same as rounds 2-3.",
         "T10: LIFE CARE PLAN.pdf re-confirmed still 19 pages after this round's arithmetic fix, so the cited pp. 37/40/115-116 citations still don't exist in the mounted file; same false positive as rounds 2-3."
       ]
+    },
+    {
+      "round": 5,
+      "opened": "2026-09-17T15:53:24",
+      "count": 13,
+      "classes": {
+        "math_footing": {
+          "label": "Totals don't foot / calculations disagree with inputs",
+          "n": 2,
+          "files": [
+            "medical_billing_ledger.csv",
+            "reyes_lien_eob.pdf",
+            "reyes_life_care_plan.pdf"
+          ]
+        },
+        "other": {
+          "label": "Uncategorised, read the finding text",
+          "n": 3,
+          "files": [
+            "13.pdf",
+            "tcr.pdf",
+            "onboard_video_still_log.pdf",
+            "scene_photos_2025-1018.pdf"
+          ]
+        },
+        "answer_leakage": {
+          "label": "Solution or reasoning leaked into world files",
+          "n": 2,
+          "files": [
+            "intake_memo.docx"
+          ]
+        },
+        "citation_facts": {
+          "label": "Real-world references, citations or jurisdiction facts are wrong",
+          "n": 2,
+          "files": [
+            "plan.pdf"
+          ]
+        },
+        "broken_reference": {
+          "label": "A referenced document or value doesn't resolve",
+          "n": 1,
+          "files": [
+            "avl_gps_track_2025-1018.csv"
+          ]
+        },
+        "a_code_leakage": {
+          "label": "Builder A## codes visible in world files",
+          "n": 2,
+          "files": []
+        },
+        "placeholder_synthetic": {
+          "label": "Placeholder, template residue, or synthetic filler",
+          "n": 1,
+          "files": [
+            "ir_2025-1018_draft.docx"
+          ]
+        }
+      },
+      "repeats": [
+        "math_footing",
+        "other",
+        "answer_leakage",
+        "citation_facts",
+        "broken_reference",
+        "a_code_leakage",
+        "placeholder_synthetic"
+      ],
+      "disposition": null,
+      "note": ""
     }
   ]
 }

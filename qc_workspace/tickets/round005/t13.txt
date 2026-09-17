@@ -1,0 +1,11 @@
+TICKET 13 of 13  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] External Citations Resolve To Real Content
+FAIL. LIFE CARE PLAN.pdf still relies on a TreasuryDirect Historical Auction Query for the 0.60% real risk-free discount rate, but the exact printed URL resolves to HTTP 505. Its Sources and Methods attachment also cites the NY DFS OON guidance for the proposition that FAIR Health may be used as an independent UCR source, and the CMS locality-configuration page for the GAF adjustment; the exact URLs resolve to HTTP 404. These are substantive methods used to support prices and present value, leaving readers unable to inspect the cited authority or data; replace each printed URL with a live, authoritative source supporting the stated method.

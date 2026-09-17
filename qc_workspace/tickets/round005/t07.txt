@@ -1,0 +1,12 @@
+TICKET 7 of 13  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] Anomaly Detection Catch-All
+The spec states that every task incorporates both designated apps, that nine require a Docuseal state change, and that T3 requires a Wiki.js page correction. T1 also requires an entry "directly into the firm's own practice-management system (A62)," while T9 requires correcting the production-tracker system (A17); however, task metadata has apps, task_apps, and environment all set to null, and the mounted counterparts are CSV text exports. Consequently an agent cannot perform or evidence the required submissions, signatures, archival, submitter updates, wiki correction, or persisted record corrections, which is a material anomaly not cured by the static files.
+Finding #1: Required application actions are not provisioned (Major)

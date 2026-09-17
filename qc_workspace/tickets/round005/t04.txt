@@ -1,0 +1,11 @@
+TICKET 4 of 13  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P0] No Reachable Shortcut to the Answer (consolidated)
+FAIL - the No Solution Or Reasoning Leakage clause is not met. The late-claim application affirmatively states that the facts establish statutory incapacity and supports granting leave despite the contrary capacity and retention evidence; the reserve memo resolves course-and-scope and vicarious exposure; and the settlement package states the recoverable past-medical number and completed future-care and wage-loss present values. These are worker-readable conclusions and finished calculations that collapse the required legal and damages analysis. The No Environment / Filesystem clause was checked separately and no shortcut artifact was found in the 62-file mounted solver corpus.

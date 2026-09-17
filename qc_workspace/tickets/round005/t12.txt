@@ -1,0 +1,11 @@
+TICKET 12 of 13  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Signposting of Load-Bearing Facts
+task_fs/filesystem/Legal/Reyes/intake_memo.docx artificially singles out the answer-bearing claim-window date by bolding "Monday, 04/20/2026" inside its Government Claims Act analysis. The same audit found the police photo log, rejection notice, and late-claim application use consistent table/form/pleading hierarchy rather than uniquely highlighting a fact, so the defect is confined to the intake memo. Remove the direct bold from the date (and keep it in the same body-text treatment as the surrounding analysis) so the deadline must be derived and assessed from the record rather than visually signposted.

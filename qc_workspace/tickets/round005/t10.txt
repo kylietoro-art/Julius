@@ -1,0 +1,11 @@
+TICKET 10 of 13  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Synthetic Markers Template Residue Or Placeholder Data
+task_fs/filesystem/ACTD/Safety/IR_2025-1018_draft.docx contains the visible heading "2. Preliminary Data - placeholder fields." The section beneath it presents case-specific entries, so calling them "placeholder fields" is an unresolved drafting/template label rather than a completed work-product designation. Rename the heading to "Preliminary Data" (or "Unverified Preliminary Data") to preserve the report's draft status without synthetic residue.

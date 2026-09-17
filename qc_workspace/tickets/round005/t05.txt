@@ -1,0 +1,11 @@
+TICKET 5 of 13  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Real-World Facts, Institutions and Jurisdiction Stated Correctly (consolidated)
+FAIL - [Failing - U.S. Regional Requirements]. The California-specific late-claim analysis wrongly says the board must grant leave on "any of four enumerated grounds" and makes the Section 911.6(b)(4) "all of the time" rule central, while omitting the current Section 911.6(b)(5) partial-incapacity ground. The official California code text provides that (b)(5) applies when the claimant was incapacitated "during any of the time" specified in Section 911.2 and the application is presented within six months after incapacity ends; the world fixes recovery at 02/05/2026 and application on 05/15/2026. That unaddressed rule can materially alter Reyes's prospects and therefore makes this U.S.-centered litigation world's governing jurisdictional assumptions unreliable.

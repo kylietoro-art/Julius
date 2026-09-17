@@ -1,0 +1,18 @@
+TICKET 2 of 13  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] No Broken Document References
+The world fails because numerous current documents represent discrete records, exhibits, attachments, or native media as preserved, retained, attached, produced, or available, but the complete mounted inventory has no corresponding files. The missing native onboard footage is especially material: both the still log and production tracker identify a specific MP4 and native-production identifier, yet no MP4/media export is mounted. The final incident report, DOT form, FST supplement, lien/EOB transmittal, life-care plan, and photo log each separately invoke additional defined supporting records that cannot be resolved from the mounted materials.
+Finding #1: Native onboard-video clip is unmounted (Major)
+Finding #2: Final incident report relies on absent operational and DriveCam records (Minor)
+Finding #3: DOT testing attachments are absent (Minor)
+Finding #4: FST supplement's related police/testing records do not resolve (Minor)
+Finding #5: Lien/EOB support packet is unmounted (Minor)
+Finding #6: Life-care-plan attachments are only referenced, not supplied (Minor)
+Finding #7: Photo-log hash manifest is missing (Minor)

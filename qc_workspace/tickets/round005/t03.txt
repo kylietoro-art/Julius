@@ -1,0 +1,14 @@
+TICKET 3 of 13  |  round 5
+==============================================================================
+
+THE FINDING, VERBATIM. Read this immediately before you fix it, and quote it
+back in full. Then list every separate thing it asserts, one line each. A
+finding that says three things needs three lines, and a fix that answers two
+of them is not done.
+
+------------------------------------------------------------------------------
+[P1] Calculation & Fixture Accuracy
+Shared/Settlement/Reyes_life_care_plan.pdf still contains inaccurate calculation fixtures. Its page 14-15 sensitivity tables conflict with its stated level-annuity formula: at $180,000 annually, 2% for 36 years is approximately $4.588M (not $4.592M) and 3% for 36 years is approximately $3.930M (not $3.921M), with additional 30- and 40-year discrepancies. On page 7, the stated $11,337 "blended 11% loading" does not equal 11% of the $93,440 attendant cost plus $5,472 respite cost ($10,880.32), so the attendant-cost fixture is also arithmetically unsupported. Separately, ACTD/Claims/medical_billing_ledger.csv totals $2,644,000 in adjustments while Shared/Settlement/Reyes_lien_EOB.pdf Exhibit A reports $2,640,800 adjustments plus $3,200 patient responsibility for the same $2,840,000 billed / $196,000 paid dataset; the conflicting allocation must be reconciled. Previously flagged weighted therapy figures were checked and are now corrected (PT $7,700; OT $2,458; neurocognitive $4,573; psychotherapy $7,967).
+Finding #1: Life-care sensitivity PV tables do not follow the stated annuity formula (Major)
+Finding #2: Attendant-care 11% loading is miscomputed (Minor)
+Finding #3: Billing ledger and lien exhibit allocate the same charges inconsistently (Minor)
