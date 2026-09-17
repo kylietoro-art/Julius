@@ -546,3 +546,9 @@ Every automated change to this world, newest tool last. Skim it to confirm nothi
 | File | Location | Old | → | New |
 |---|---|---|---|---|
 | filesystem/Shared/Settlement/Reyes_life_care_plan.pdf | p.17 extended sensitivity table | $4,153,000 (PV @3.0%/40yr, p.17) | → | $4,161,000 |
+
+## manual edit
+
+| File | Location | Old | → | New |
+|---|---|---|---|---|
+| filesystem/ACTD/Ops/roster_2025-1018.csv | whole-file column restructure | schema: badge_number,operator_name,division,block_assignment,sign_in_time,sign_out_time,actual_hours,timekeeping_flag | → | schema: employee_id,employee_name,shift_date,clock_in,assigned_run_id,clock_out,status (matches External Files Registry A20); kept Keeler's clock_out=10/18/2025 02:35 (corroborated by dispatch log line 41, IR_2025-1018_final.docx, and Complaint_Keeler.pdf's arrest time -- did NOT blank it per the registry's 'blank/incident-truncated' phrasing, since that would contradict 3 other files) |
